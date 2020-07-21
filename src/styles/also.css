@@ -6,7 +6,6 @@
 }
 .also__header {
   color: #22356F;
-  text-transform: uppercase;
   font-size: 16px;
   line-height: 12px;
   letter-spacing: 0.06em;
@@ -25,16 +24,33 @@
 }
 .also__link {
   color: #FAB63E;
-  text-transform: uppercase;
-  text-decoration: none;
+  position: absolute;
+  bottom: 5%;
 }
 .also__link:hover {
   color: #62D0DF;
 }
 .also__image {
+  width: 480px;
   position: absolute;
   left: 0;
   top: 0;
+}
+@media screen and (max-width: 1280px) {
+  .also__header {
+    text-decoration: underline;
+  }
+  .also {
+    padding-top: 0;
+    padding-left: 500px;
+  }
+  .also__text {
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 18.75px;
+    font-size: 38px;
+    line-height: 53px;
+  }
 }
 
 /*# sourceMappingURL=also.css.map */

@@ -52,5 +52,10 @@
   position: relative;
   left: -6px;
 }
+.footer__call {
+  text-decoration: none;
+  color: rgba(34, 53, 111, 0.5);
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=footer.css.map */

@@ -246,6 +246,7 @@ input[type=button] {
   right: 15%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 26px;
   line-height: 50px;
   align-items: center;
@@ -291,6 +292,14 @@ input[type=button] {
   color: #62D0DF;
   background-color: #fff;
 }
+@media screen and (max-width: 1024px) {
+  .nav {
+    right: 0;
+    left: 5%;
+    top: 5%;
+    width: 80%;
+  }
+}
 
 .description {
   background-color: #f4f9e2;
@@ -327,6 +336,7 @@ input[type=button] {
   font-size: 16px;
   line-height: 23px;
   letter-spacing: 0.1em;
+  z-index: 3;
 }
 .description__button:hover {
   color: #fff;
@@ -337,7 +347,7 @@ input[type=button] {
   height: 545px;
   width: 800px;
   right: 0%;
-  top: 23%;
+  top: 25%;
   overflow: hidden;
   border-radius: 312px;
   transform: rotate(-30deg);
@@ -391,6 +401,26 @@ input[type=button] {
     line-height: 24px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .description {
+    width: 100%;
+  }
+  .description__image {
+    top: 25%;
+    left: 0;
+    opacity: 0.4;
+  }
+  .description__image-background {
+    display: none;
+  }
+  .description__text {
+    width: 80%;
+    font-size: 24px;
+  }
+  .description__logo--lower {
+    display: none;
+  }
+}
 
 .features {
   height: 605px;
@@ -420,21 +450,60 @@ input[type=button] {
   font-size: 20px;
 }
 .features__image {
-  height: 100%;
+  height: 605px;
   position: absolute;
   right: 0;
   top: 0;
 }
 @media screen and (max-width: 1280px) {
+  .features {
+    padding-left: 60px;
+  }
   .features__text-box {
-    width: 500px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .features__image {
+    left: 60%;
+  }
+  .features {
+    padding-left: 37.5px;
+    padding-top: 90px;
+  }
+  .features__text-box {
+    width: 50%;
+  }
+  .features__header {
+    margin-bottom: 37.5px;
+  }
+  .features__text--big {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .features__text--normal {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .features {
+    height: 907.5px;
+    overflow-y: hidden;
+  }
+  .features__image {
+    left: 0;
+    top: 605px;
+  }
+  .features__text-box {
+    width: 80%;
   }
 }
 
 .about {
   padding-top: 150px;
-  padding-left: 105px;
+  padding-left: 100px;
   height: 480px;
+  position: relative;
 }
 .about__header {
   text-transform: uppercase;
@@ -452,18 +521,23 @@ input[type=button] {
   line-height: 34px;
   letter-spacing: 0.005em;
   width: 590px;
-  margin-left: 225px;
   display: inline-block;
+  margin-left: 225px;
 }
-.about__card-header {
-  text-transform: uppercase;
-  color: rgba(34, 53, 111, 0.5);
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  margin-top: 76px;
-  margin-bottom: 24px;
+@media screen and (max-width: 1024px) {
+  .about__header {
+    top: 18.75px;
+    font-weight: 700;
+  }
+  .about {
+    padding-top: 75px;
+    padding-left: 37.5px;
+  }
+  .about__text {
+    font-size: 20px;
+    width: 90%;
+    margin-left: 0;
+  }
 }
 
 .blocks {
@@ -472,6 +546,7 @@ input[type=button] {
   align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 .blocks__text {
   position: relative;
@@ -486,16 +561,23 @@ input[type=button] {
   top: 40%;
   left: -20px;
 }
+.blocks:before {
+  content: "WE CAN HELP YOU WITH";
+  color: rgba(34, 53, 111, 0.5);
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.06em;
+  position: absolute;
+  top: -36px;
+}
 .blocks__square {
   font-size: 32px;
   line-height: 34px;
   letter-spacing: -0.006em;
   color: #fff;
-  width: 25%;
   flex: 1 0 25%;
   height: 360px;
   position: relative;
-  margin-bottom: 120px;
   padding-top: 90px;
   padding-left: 90px;
 }
@@ -526,10 +608,10 @@ input[type=button] {
   letter-spacing: -0.006em;
   color: #fff;
   height: 480px;
-  width: 33.33%;
+  flex: 1 0 33.33%;
   padding-top: 120px;
   position: relative;
-  padding-left: 115px;
+  padding-left: 112.5px;
 }
 .blocks__big-square:after {
   content: "";
@@ -544,7 +626,7 @@ input[type=button] {
   background-color: #22356f;
 }
 .blocks__big-square--mental {
-  background-color: #0052C1;
+  background-color: #F2F2F2;
 }
 .blocks__big-square--nutrition {
   background-image: url(../images/3.png);
@@ -560,6 +642,14 @@ input[type=button] {
 }
 .blocks__big-square--aerobics {
   background-color: #8f00ff;
+}
+@media screen and (max-width: 1024px) {
+  .blocks__square {
+    flex: 1 0 50%;
+  }
+  .blocks__big-square {
+    flex: 1 0 25%;
+  }
 }
 
 .text-blocks {
@@ -606,7 +696,6 @@ input[type=button] {
 }
 .also__header {
   color: #22356F;
-  text-transform: uppercase;
   font-size: 16px;
   line-height: 12px;
   letter-spacing: 0.06em;
@@ -625,16 +714,33 @@ input[type=button] {
 }
 .also__link {
   color: #FAB63E;
-  text-transform: uppercase;
-  text-decoration: none;
+  position: absolute;
+  bottom: 5%;
 }
 .also__link:hover {
   color: #62D0DF;
 }
 .also__image {
+  width: 480px;
   position: absolute;
   left: 0;
   top: 0;
+}
+@media screen and (max-width: 1280px) {
+  .also__header {
+    text-decoration: underline;
+  }
+  .also {
+    padding-top: 0;
+    padding-left: 500px;
+  }
+  .also__text {
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 18.75px;
+    font-size: 38px;
+    line-height: 53px;
+  }
 }
 
 .contact {
@@ -735,6 +841,11 @@ input[type=button] {
   position: relative;
   left: -6px;
 }
+.footer__call {
+  text-decoration: none;
+  color: rgba(34, 53, 111, 0.5);
+  cursor: pointer;
+}
 
 @font-face {
   font-family: "Larsseit";
@@ -746,7 +857,6 @@ input[type=button] {
 
 html {
   font-family: "Larsseit", serif;
-  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
 $sq-size: 360px;
 $big-sq-size: 480px;
 $circle-size: 12px;
+$card-pad: 90px;
 
 @mixin block-text {
 	font-size: 32px;
@@ -40,26 +41,33 @@ $circle-size: 12px;
 	align-items: stretch;
 	justify-content:center ;
 	flex-wrap: wrap;
+	position: relative;
 
 	&__text {
 		@include block-bullet;
 		position: relative;
 	}
 	
+	&:before {
+		content: "WE CAN HELP YOU WITH";
+		color: rgba(34, 53, 111, 0.5);
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 0.06em;
+		position: absolute;
+		top: -$sq-size/10;
+	}
+	
 	&__square {
 		
 		@include block-text;
 		@include block-line;
-		
-		width: 25%;
 		flex: 1 0 25%;
 		height: $sq-size;
 		position: relative;
 		
-		margin-bottom: 120px;
-		
 		padding-top: $sq-size / 4;
-		padding-left: 90px;
+		padding-left: $card-pad;
 		
 		&--lift {
 			background-color: #ffe2de;
@@ -84,18 +92,18 @@ $circle-size: 12px;
 		@include block-text;
 		
 		height: $big-sq-size;
-		width: 33.33%;
+		flex: 1 0 33.33%;
 		padding-top: $big-sq-size / 4 ;
 		position: relative;
 		
-		padding-left: 115px;
+		padding-left: $card-pad * 1.25;
 
 		&--physical {
 			background-color: #22356f;
 		}
 		
 		&--mental {
-			background-color: #0052C1;
+			background-color: #F2F2F2;
 		}
 		
 		&--nutrition {
@@ -118,5 +126,15 @@ $circle-size: 12px;
 		}
 	}
 	
+@media screen and (max-width: 1024px) {
+	&__square {
+		flex: 1 0 50%;
+	}
+	
+	&__big-square {
+		flex: 1 0 25%;
+	}
+}
+
 }
 

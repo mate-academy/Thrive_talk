@@ -1,3 +1,5 @@
+$text-color : rgba(34, 53, 111, 0.5);
+
 .footer {
 	height: 460px;
 	display: grid;
@@ -45,7 +47,7 @@
 		font-size: 14px;
 		line-height: 23px;
 		letter-spacing: -0.006em;
-		color: rgba(34, 53, 111, 0.5);
+		color: $text-color;
 	}
 	
 	&__copyright {
@@ -61,6 +63,12 @@
 			position: relative;
 			left: -6px;
 		}
+	}
+	
+	&__call {
+		text-decoration: none;
+		color: $text-color;
+		cursor: pointer;
 	}
 	
 }

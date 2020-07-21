@@ -33,6 +33,7 @@
   font-size: 16px;
   line-height: 23px;
   letter-spacing: 0.1em;
+  z-index: 3;
 }
 .description__button:hover {
   color: #fff;
@@ -43,7 +44,7 @@
   height: 545px;
   width: 800px;
   right: 0%;
-  top: 23%;
+  top: 25%;
   overflow: hidden;
   border-radius: 312px;
   transform: rotate(-30deg);
@@ -95,6 +96,26 @@
     font-size: 24px;
     width: 260px;
     line-height: 24px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .description {
+    width: 100%;
+  }
+  .description__image {
+    top: 25%;
+    left: 0;
+    opacity: 0.4;
+  }
+  .description__image-background {
+    display: none;
+  }
+  .description__text {
+    width: 80%;
+    font-size: 24px;
+  }
+  .description__logo--lower {
+    display: none;
   }
 }
 

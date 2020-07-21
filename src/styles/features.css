@@ -26,14 +26,52 @@
   font-size: 20px;
 }
 .features__image {
-  height: 100%;
+  height: 605px;
   position: absolute;
   right: 0;
   top: 0;
 }
 @media screen and (max-width: 1280px) {
+  .features {
+    padding-left: 60px;
+  }
   .features__text-box {
-    width: 500px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .features__image {
+    left: 60%;
+  }
+  .features {
+    padding-left: 37.5px;
+    padding-top: 90px;
+  }
+  .features__text-box {
+    width: 50%;
+  }
+  .features__header {
+    margin-bottom: 37.5px;
+  }
+  .features__text--big {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .features__text--normal {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .features {
+    height: 907.5px;
+    overflow-y: hidden;
+  }
+  .features__image {
+    left: 0;
+    top: 605px;
+  }
+  .features__text-box {
+    width: 80%;
   }
 }
 

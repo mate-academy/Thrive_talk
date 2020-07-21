@@ -1,14 +1,16 @@
 $font-color: #22356F;
+$base-margin: 150px;
+$image-width: 480px;
 
 .also {
 	height: 800px;
 	position: relative;
-	padding-left: 580px;
-	padding-top: 100px;
+	padding-left: $image-width + 100px;
+	padding-top: $base-margin/3*2;
 	
 	&__header {
 		color: $font-color;
-		text-transform: uppercase;
+	$base-transform: uppercase;
 		font-size: 16px;
 		line-height: 12px;
 		letter-spacing: 0.06em;
@@ -19,8 +21,8 @@ $font-color: #22356F;
 		line-height: 53px;
 		letter-spacing: -0.01em;
 		font-weight: bold;
-		margin-top: 225px;
-		margin-bottom: 150px;
+		margin-top: $base-margin*1.5;
+		margin-bottom: $base-margin;
 		width: 675px;
 	}
 	
@@ -30,8 +32,10 @@ $font-color: #22356F;
 	
 	&__link {
 		color: #FAB63E;
-		text-transform: uppercase;
-		text-decoration: none;
+		$base-transform: uppercase;
+		$base-decoration: none;
+		position: absolute;
+		bottom: 5%;
 		
 		&:hover {
 			color: #62D0DF;
@@ -39,8 +43,29 @@ $font-color: #22356F;
 	}
 	
 	&__image {
+		width: 480px;
 		position: absolute;
 		left: 0;
 		top: 0;
+	}
+	
+	@media screen and (max-width:1280px) {
+		&__header {
+			text-decoration: underline;
+		}
+		
+		& {
+			padding-top: 0;
+			padding-left: $image-width + 20px;
+		}
+		
+		&__text {
+			width: 90%;
+			margin-bottom: $base-margin/5;
+			margin-top: $base-margin/8;
+			
+			font-size: 38px;
+			line-height: 53px;
+		}
 	}
 }

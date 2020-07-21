@@ -5,6 +5,7 @@
 	right: 15%;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-top: 26px;
 	line-height: 50px;
 	align-items: center;
@@ -54,6 +55,15 @@
 		&:hover {
 			color: #62D0DF;
 			background-color: #fff;
+		}
+	}
+	
+	@media screen and (max-width: 1024px){
+		& {
+			right: 0;
+			left: 5%;
+			top: 5%;
+			width: 80%;
 		}
 	}
 	
