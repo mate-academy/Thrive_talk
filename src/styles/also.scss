@@ -1,16 +1,17 @@
 $font-color: #22356F;
 $base-margin: 150px;
 $image-width: 480px;
+$block-height: 800px;
 
 .also {
-	height: 800px;
+	height: $block-height;
 	position: relative;
 	padding-left: $image-width + 100px;
 	padding-top: $base-margin/3*2;
 	
 	&__header {
 		color: $font-color;
-	$base-transform: uppercase;
+		text-transform: uppercase;
 		font-size: 16px;
 		line-height: 12px;
 		letter-spacing: 0.06em;
@@ -32,10 +33,11 @@ $image-width: 480px;
 	
 	&__link {
 		color: #FAB63E;
-		$base-transform: uppercase;
-		$base-decoration: none;
+		text-transform: uppercase;
+		text-decoration: none;
 		position: absolute;
 		bottom: 5%;
+		left: $image-width + 100px;
 		
 		&:hover {
 			color: #62D0DF;
@@ -68,4 +70,30 @@ $image-width: 480px;
 			line-height: 53px;
 		}
 	}
+	
+	@media screen and (max-width: 800px){
+		
+		& {
+			height: $block-height*1.66;
+			padding-left: $base-margin/8;
+			padding-top: 0;
+		}
+		
+		&__text {
+			margin-top: $base-margin;
+		}
+		
+		&__link {
+			top: 45%;
+			left: $base-margin/8;
+		}
+		
+		&__image {
+			width: 100%;
+			left: 0;
+			top: 50%;
+		}
+		
+	}
+	
 }

@@ -696,6 +696,7 @@ input[type=button] {
 }
 .also__header {
   color: #22356F;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 12px;
   letter-spacing: 0.06em;
@@ -714,8 +715,11 @@ input[type=button] {
 }
 .also__link {
   color: #FAB63E;
+  text-transform: uppercase;
+  text-decoration: none;
   position: absolute;
   bottom: 5%;
+  left: 580px;
 }
 .also__link:hover {
   color: #62D0DF;
@@ -740,6 +744,25 @@ input[type=button] {
     margin-top: 18.75px;
     font-size: 38px;
     line-height: 53px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .also {
+    height: 1328px;
+    padding-left: 18.75px;
+    padding-top: 0;
+  }
+  .also__text {
+    margin-top: 150px;
+  }
+  .also__link {
+    top: 45%;
+    left: 18.75px;
+  }
+  .also__image {
+    width: 100%;
+    left: 0;
+    top: 50%;
   }
 }
 
@@ -845,6 +868,11 @@ input[type=button] {
   text-decoration: none;
   color: rgba(34, 53, 111, 0.5);
   cursor: pointer;
+}
+@media screen and (max-width: 1280px) {
+  .footer {
+    grid-template-areas: "card-1 card-2 card-3" "photo photo photo" "copyright copyright copyright";
+  }
 }
 
 @font-face {
