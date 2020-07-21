@@ -307,7 +307,6 @@ input[type=button] {
   width: 80%;
   padding-left: 180px;
   padding-top: 305px;
-  overflow-x: hidden;
 }
 .description__header {
   font-size: 48px;
@@ -347,7 +346,7 @@ input[type=button] {
   height: 545px;
   width: 800px;
   right: 0%;
-  top: 25%;
+  top: 24%;
   overflow: hidden;
   border-radius: 312px;
   transform: rotate(-30deg);
@@ -364,6 +363,7 @@ input[type=button] {
   background-image: url(../images/1.png);
   background-position: center;
   transform: rotate(30deg);
+  overflow: hidden;
 }
 .description__image-background {
   position: absolute;
@@ -429,6 +429,7 @@ input[type=button] {
   color: #fff;
   position: relative;
   padding: 150px 0 0 180px;
+  overflow-x: hidden;
 }
 .features__header {
   font-size: 36px;
@@ -806,9 +807,34 @@ input[type=button] {
   color: #62D0DF;
   text-decoration: none;
   text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
 }
 .contact__link:hover {
   color: #fab63e;
+}
+@media screen and (max-width: 1280px) {
+  .contact {
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+  .contact__text {
+    width: 40%;
+    font-size: 28px;
+  }
+  .contact__image {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contact__small-header {
+    text-decoration: overline;
+  }
+  .contact__large-header {
+    margin-top: 20px;
+    font-size: 36px;
+    width: 50%;
+  }
 }
 
 .footer {
@@ -820,11 +846,13 @@ input[type=button] {
   height: 380px;
   width: 570px;
   background-image: url(../images/6.png);
+  background-repeat: no-repeat;
+  background-position: center;
   grid-area: photo;
 }
 .footer__card {
   width: 200px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .footer__card--info {
   grid-area: card-1;
@@ -849,7 +877,7 @@ input[type=button] {
   font-size: 14px;
   line-height: 23px;
   letter-spacing: -0.006em;
-  color: rgba(34, 53, 111, 0.5);
+  color: r #22356f80;
 }
 .footer__copyright {
   height: 80px;
@@ -866,12 +894,20 @@ input[type=button] {
 }
 .footer__call {
   text-decoration: none;
-  color: rgba(34, 53, 111, 0.5);
+  color: r #22356f80;
   cursor: pointer;
 }
 @media screen and (max-width: 1280px) {
   .footer {
     grid-template-areas: "card-1 card-2 card-3" "photo photo photo" "copyright copyright copyright";
+  }
+  .footer__card {
+    padding: 50px 20px 0 0;
+    width: 150px;
+  }
+  .footer__image {
+    width: 100%;
+    background-color: #F3C577;
   }
 }
 

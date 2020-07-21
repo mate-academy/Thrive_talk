@@ -8,11 +8,13 @@
   height: 380px;
   width: 570px;
   background-image: url(../images/6.png);
+  background-repeat: no-repeat;
+  background-position: center;
   grid-area: photo;
 }
 .footer__card {
   width: 200px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .footer__card--info {
   grid-area: card-1;
@@ -37,7 +39,7 @@
   font-size: 14px;
   line-height: 23px;
   letter-spacing: -0.006em;
-  color: rgba(34, 53, 111, 0.5);
+  color: r #22356f80;
 }
 .footer__copyright {
   height: 80px;
@@ -54,12 +56,20 @@
 }
 .footer__call {
   text-decoration: none;
-  color: rgba(34, 53, 111, 0.5);
+  color: r #22356f80;
   cursor: pointer;
 }
 @media screen and (max-width: 1280px) {
   .footer {
     grid-template-areas: "card-1 card-2 card-3" "photo photo photo" "copyright copyright copyright";
+  }
+  .footer__card {
+    padding: 50px 20px 0 0;
+    width: 150px;
+  }
+  .footer__image {
+    width: 100%;
+    background-color: #F3C577;
   }
 }
 

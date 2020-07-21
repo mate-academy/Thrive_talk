@@ -1,12 +1,13 @@
 $font-color: #fff;
+$base-pad: 100px;
 
 .contact {
 	height: 800px;
 	background-color: #22356f;
 	color: $font-color;
 	position: relative;
-	padding-left: 180px;
-	padding-top: 100px;
+	padding-left: $base-pad*1.8;
+	padding-top: $base-pad;
 	
 	&__image {
 		position: absolute;
@@ -44,9 +45,39 @@ $font-color: #fff;
 		color: #62D0DF;
 		text-decoration: none;
 		text-transform: uppercase;
+		position: absolute;
+		bottom: $base-pad/5;
 		
 		&:hover {
 			color: #fab63e;
+		}
+	}
+	
+	@media screen and (max-width: 1280px) {
+		& {
+			padding-left: $base-pad/2;
+			padding-top: $base-pad/2;
+		}
+		
+		&__text {
+			width: 40%;
+			font-size: 28px;
+		}
+		
+		&__image {
+			width: 40%;
+			height: 100%;
+			object-fit: cover;
+		}
+		
+		&__small-header {
+			text-decoration: overline;
+		}
+		
+		&__large-header {
+			margin-top: $base-pad/5;
+			font-size: 36px;
+			width: 50%;
 		}
 	}
 	

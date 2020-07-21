@@ -17,9 +17,7 @@ $alternate-color: #FAB63E;
 	width: 80%;
 	padding-left: 180px;
 	padding-top: 305px;
-	
-	overflow-x: hidden;
-	
+		
 	&__header {
 		font-size: 48px;
 		line-height: 53px;
@@ -60,7 +58,7 @@ $alternate-color: #FAB63E;
 	&__image {
 		
 		@include image-frame;
-		top: 25%;
+		top: 24%;
 		overflow: hidden;
 		border-radius: 312px;
 		transform: rotate(-30deg);
@@ -78,6 +76,7 @@ $alternate-color: #FAB63E;
 				background-image: url(../images/1.png);
 				background-position: center;
 				transform: rotate(30deg);
+				overflow: hidden;
 		}
 	}
 	

@@ -10,6 +10,7 @@ $header-margin: 75px;
 	color: #fff;
 	position: relative;
 	padding: $left-pad 0 0 $top-pad;
+	overflow-x: hidden;
 	
 	&__header {
 	font-size: 36px;
