@@ -1,0 +1,97 @@
+.blocks {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.blocks__text {
+  position: relative;
+}
+.blocks__text:before {
+  content: "";
+  background-color: #e9b730;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: -20px;
+}
+.blocks__square {
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  color: #fff;
+  width: 25%;
+  flex: 1 0 25%;
+  height: 360px;
+  position: relative;
+  margin-bottom: 120px;
+  padding-top: 90px;
+  padding-left: 90px;
+}
+.blocks__square:after {
+  content: "";
+  width: 86%;
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  height: 1px;
+  background: #fff;
+}
+.blocks__square--lift {
+  background-color: #ffe2de;
+}
+.blocks__square--run {
+  background-color: #c4e769;
+}
+.blocks__square--pump {
+  background-color: #62d0df;
+}
+.blocks__square--pump-2 {
+  background-color: #0052c1;
+}
+.blocks__big-square {
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  color: #fff;
+  height: 480px;
+  width: 33.33%;
+  padding-top: 120px;
+  position: relative;
+  padding-left: 115px;
+}
+.blocks__big-square:after {
+  content: "";
+  width: 86%;
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  height: 1px;
+  background: #fff;
+}
+.blocks__big-square--physical {
+  background-color: #22356f;
+}
+.blocks__big-square--mental {
+  background-color: #0052C1;
+}
+.blocks__big-square--nutrition {
+  background-image: url(../images/3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.blocks__big-square--gymnastics {
+  background-color: #62d0df;
+}
+.blocks__big-square--crossfit {
+  background-color: #dee1ff;
+}
+.blocks__big-square--aerobics {
+  background-color: #8f00ff;
+}
+
+/*# sourceMappingURL=blocks.css.map */

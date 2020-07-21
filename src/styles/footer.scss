@@ -1,0 +1,66 @@
+.footer {
+	height: 460px;
+	display: grid;
+	grid-template-areas: 
+	"photo card-1 card-2 card-3"
+	"copyright copyright copyright copyright";
+	;
+	
+	&__image {
+		height: 380px;
+		width: 570px;
+		background-image: url(../images/6.png);
+		grid-area: photo;
+	}
+	
+	&__card {
+		width: 200px;
+		padding-top: 100px;
+				
+		&--info {
+			grid-area: card-1;
+		}
+		
+		&--address {
+			grid-area: card-2;
+		}
+		
+		&--hours {
+			grid-area: card-3;
+		}
+	}
+	
+	&__card-title {
+		text-transform: uppercase;
+		color: #22356f;
+		font-size: 14px;
+		line-height: 11px;
+		letter-spacing: -0.006em;
+		font-weight: bold;
+		height: 48px;
+		margin-bottom: 20px;
+	}
+	
+	&__card-text {
+		font-size: 14px;
+		line-height: 23px;
+		letter-spacing: -0.006em;
+		color: rgba(34, 53, 111, 0.5);
+	}
+	
+	&__copyright {
+		height: 80px;
+		background-color: #62d0df;
+		color: #fff;
+		padding-left: 200px;
+		line-height: 80px;
+		grid-area: copyright;
+		
+		&:before{
+			content: "\00a9";
+			position: relative;
+			left: -6px;
+		}
+	}
+	
+}

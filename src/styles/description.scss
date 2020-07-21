@@ -1,0 +1,125 @@
+$text-color: #22356F;
+$button-height: 50px;
+$button-width: 150px;
+$bg-color: #f4f9e2;
+$alternate-color: #FAB63E;
+
+@mixin image-frame {
+	position: absolute;
+	height: 545px;
+	width: 800px;
+	right: 0%;
+}
+
+.description {
+	background-color: $bg-color;
+	height: 840px;
+	width: 80%;
+	padding-left: 180px;
+	padding-top: 305px;
+	
+	overflow-x: hidden;
+	
+	&__header {
+		font-size: 48px;
+		line-height: 53px;
+		letter-spacing: -0.035em;
+		color: $text-color;
+		width: 480px;
+		height: 165px;
+	}
+	
+	&__text {
+		font-size: 24px;
+		line-height: 42px;
+		color: $text-color;
+		margin-top: 20px;
+		margin-bottom: 60px;
+		width: 480px;
+		height: 165px;
+	}
+	
+	&__button {
+		text-transform: uppercase;
+		color: $alternate-color;
+		height: $button-height;
+		width: $button-width;
+		border: 1px transparent;
+		background-color: $bg-color;
+		font-size: 16px;
+		line-height: 23px;
+		letter-spacing: 0.1em;
+		
+		&:hover {
+			color: #fff;
+			background-color: $alternate-color;
+		}
+	}
+	
+	&__image {
+		
+		@include image-frame;
+		top: 23%;
+		overflow: hidden;
+		border-radius: 312px;
+		transform: rotate(-30deg);
+		z-index: 2;
+		
+		
+		&:before {
+				content: "";
+				position: absolute;
+				width: 200%;
+				height: 200%;
+				top: -50%;
+				left: -50%;
+				z-index: -1;
+				background-image: url(../images/1.png);
+				background-position: center;
+				transform: rotate(30deg);
+		}
+	}
+	
+	&__image-background {
+		
+		@include image-frame;
+		background: #EDFDFF;
+		border-radius: 312.159px;
+		transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+		z-index: 1;
+		top: 10%;
+		
+	}
+
+	&__logo {
+		font-size: 24px;
+		line-height: 27px;
+		letter-spacing: -0.035em;
+		color: #62D0DF;
+		position: absolute;
+		
+		&--top {
+			top: 26px;
+		}
+		
+		&--lower {
+			top: 240px;
+		}
+	}
+	
+	@media screen and (max-width:1450px) {
+		
+		&__header {
+			width: 300px;
+			font-size: 38px;
+			font-weight: 700;
+		}
+
+		&__text {
+			font-size: 24px;
+			width: 260px;
+			line-height: 24px;
+		}
+	}
+	
+}

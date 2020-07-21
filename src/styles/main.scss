@@ -1,7 +1,24 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "reset";
+@import "nav";
+@import "description";
+@import "features";
+@import "about";
+@import "blocks";
+@import "text-blocks";
+@import "also";
+@import "contact";
+@import "footer";
 
-body {
-  background: $c-gray;
+@font-face {
+  font-family: "Larsseit";
+  src: url(../fonts/Larsseit/Larsseit-Medium.ttf) format("tff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Larsseit", serif;
+  overflow-x: hidden;
 }

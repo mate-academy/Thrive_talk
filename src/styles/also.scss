@@ -1,0 +1,46 @@
+$font-color: #22356F;
+
+.also {
+	height: 800px;
+	position: relative;
+	padding-left: 580px;
+	padding-top: 100px;
+	
+	&__header {
+		color: $font-color;
+		text-transform: uppercase;
+		font-size: 16px;
+		line-height: 12px;
+		letter-spacing: 0.06em;
+	}
+	
+	&__text {
+		font-size: 36px;
+		line-height: 53px;
+		letter-spacing: -0.01em;
+		font-weight: bold;
+		margin-top: 225px;
+		margin-bottom: 150px;
+		width: 675px;
+	}
+	
+	&__logo {
+		color: #62D0DF;
+	}
+	
+	&__link {
+		color: #FAB63E;
+		text-transform: uppercase;
+		text-decoration: none;
+		
+		&:hover {
+			color: #62D0DF;
+		}
+	}
+	
+	&__image {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}

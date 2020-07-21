@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.footer {
+  height: 460px;
+  display: grid;
+  grid-template-areas: "photo card-1 card-2 card-3" "copyright copyright copyright copyright";
+}
+.footer__image {
+  height: 380px;
+  width: 570px;
+  background-image: url(../images/6.png);
+  grid-area: photo;
+}
+.footer__card {
+  width: 200px;
+  padding-top: 100px;
+}
+.footer__card--info {
+  grid-area: card-1;
+}
+.footer__card--address {
+  grid-area: card-2;
+}
+.footer__card--hours {
+  grid-area: card-3;
+}
+.footer__card-title {
+  text-transform: uppercase;
+  color: #22356f;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: -0.006em;
+  font-weight: bold;
+  height: 48px;
+  margin-bottom: 20px;
+}
+.footer__card-text {
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.006em;
+  color: rgba(34, 53, 111, 0.5);
+}
+.footer__copyright {
+  height: 80px;
+  background-color: #62d0df;
+  color: #fff;
+  padding-left: 200px;
+  line-height: 80px;
+  grid-area: copyright;
+}
+.footer__copyright:before {
+  content: "©";
+  position: relative;
+  left: -6px;
+}
+
+/*# sourceMappingURL=footer.css.map */

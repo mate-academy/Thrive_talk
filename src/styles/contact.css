@@ -1,0 +1,46 @@
+.contact {
+  height: 800px;
+  background-color: #22356f;
+  color: #fff;
+  position: relative;
+  padding-left: 180px;
+  padding-top: 100px;
+}
+.contact__image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.contact__small-header {
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.contact__large-header {
+  font-size: 64px;
+  line-height: 94px;
+  letter-spacing: -0.01em;
+  margin-top: 230px;
+  margin-bottom: 75px;
+}
+.contact__text {
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.005em;
+  width: 500px;
+  margin-bottom: 50px;
+}
+.contact__link {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: #62D0DF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.contact__link:hover {
+  color: #fab63e;
+}
+
+/*# sourceMappingURL=contact.css.map */

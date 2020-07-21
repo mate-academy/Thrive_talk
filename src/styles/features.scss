@@ -1,0 +1,47 @@
+.features {
+	height: 605px;
+	width: 100%;
+	background-color: #62d0df;
+	color: #fff;
+	position: relative;
+	padding: 150px 0 0 180px;
+	
+	&__header {
+	font-size: 36px;
+	line-height: 27px;
+	letter-spacing: -0.006em;
+	margin-bottom: 75px;
+	}
+		
+	&__text-box {
+		width: 555px;
+	}
+	
+	&__text {
+		line-height: 35px;
+		
+		&--big {
+			font-size: 24px;
+			font-weight: bold;
+		}
+		
+		&--normal {
+			font-size: 20px;
+		}
+		
+	}
+	
+	&__image {
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	@media screen and (max-width: 1280px) {
+		&__text-box {
+			width: 500px;
+		}
+	}
+	
+}
