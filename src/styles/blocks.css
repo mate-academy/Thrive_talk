@@ -60,6 +60,10 @@
 .blocks__square--pump-2 {
   background-color: #0052c1;
 }
+.blocks__space {
+  height: 120px;
+  flex: 1 0 100%;
+}
 .blocks__big-square {
   font-size: 32px;
   line-height: 34px;
@@ -84,7 +88,7 @@
   background-color: #22356f;
 }
 .blocks__big-square--mental {
-  background-color: #F2F2F2;
+  background-color: #0052c1;
 }
 .blocks__big-square--nutrition {
   background-image: url(../images/3.png);

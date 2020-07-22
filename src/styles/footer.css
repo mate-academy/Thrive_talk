@@ -40,7 +40,7 @@
   font-size: 14px;
   line-height: 23px;
   letter-spacing: -0.006em;
-  color: r #22356f80;
+  color: rgba(34, 53, 111, 0.5);
 }
 .footer__copyright {
   height: 80px;
@@ -55,10 +55,15 @@
   position: relative;
   left: -6px;
 }
-.footer__call {
+.footer__phone-number {
   text-decoration: none;
-  color: r #22356f80;
   cursor: pointer;
+  color: rgba(34, 53, 111, 0.5);
+}
+.footer__email {
+  text-decoration: none;
+  cursor: pointer;
+  color: #207fff;
 }
 @media screen and (max-width: 1280px) {
   .footer {

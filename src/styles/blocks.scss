@@ -84,7 +84,11 @@ $card-pad: 90px;
 		&--pump-2 {
 			background-color: #0052c1;
 		}
-		
+	}
+	
+	&__space {
+		height: 120px;
+		flex: 1 0 100%;
 	}
 	
 	&__big-square {
@@ -103,7 +107,7 @@ $card-pad: 90px;
 		}
 		
 		&--mental {
-			background-color: #F2F2F2;
+			background-color: #0052c1;
 		}
 		
 		&--nutrition {
@@ -137,4 +141,3 @@ $card-pad: 90px;
 }
 
 }
-

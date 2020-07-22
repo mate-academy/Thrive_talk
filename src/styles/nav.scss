@@ -28,6 +28,7 @@
 		font-size: 14px;
 		line-height: 16px;
 		margin-right: 15px;
+		transition: all 500ms ease-in;
 		
 		&:hover{
 			color: #F9B640;
@@ -52,6 +53,7 @@
 		border-radius: 50px;
 		color: #fff;
 		border: 1px solid #62D0DF;
+		transition: all 1s ease-in-out;
 		
 		&:hover {
 			color: #62D0DF;

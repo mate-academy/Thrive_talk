@@ -33,7 +33,9 @@
   font-size: 16px;
   line-height: 23px;
   letter-spacing: 0.1em;
+  position: relative;
   z-index: 3;
+  transition: all 700ms ease-in-out;
 }
 .description__button:hover {
   color: #fff;

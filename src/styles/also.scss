@@ -25,6 +25,7 @@ $block-height: 800px;
 		margin-top: $base-margin*1.5;
 		margin-bottom: $base-margin;
 		width: 675px;
+		color: $font-color;
 	}
 	
 	&__logo {
@@ -102,10 +103,10 @@ $block-height: 800px;
 			font-size: 32px;
 			line-height: 44px;
 		}
-	}
-	
-	&__image {
-		top: 70%;
+		
+		&__image {
+			top: 70%;
+		}
 	}
 	
 }

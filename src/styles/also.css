@@ -19,6 +19,7 @@
   margin-top: 225px;
   margin-bottom: 150px;
   width: 675px;
+  color: #22356F;
 }
 .also__logo {
   color: #62D0DF;
@@ -82,9 +83,9 @@
     font-size: 32px;
     line-height: 44px;
   }
-}
-.also__image {
-  top: 70%;
+  .also__image {
+    top: 70%;
+  }
 }
 
 /*# sourceMappingURL=also.css.map */

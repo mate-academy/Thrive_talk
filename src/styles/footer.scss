@@ -1,5 +1,10 @@
-$text-color: r#22356f80;
+$text-color: rgba(34, 53, 111, 0.5);
 $base-pad: 100px;
+
+@mixin link-style {
+	text-decoration: none;
+	cursor: pointer;
+}
 
 .footer {
 	position: relative;
@@ -69,10 +74,15 @@ $base-pad: 100px;
 		}
 	}
 	
-	&__call {
-		text-decoration: none;
+	&__phone-number {
+		@include link-style;
 		color: $text-color;
-		cursor: pointer;
+
+	}
+	
+	&__email {
+		@include link-style;
+		color: #207fff;
 	}
 	
 	@media screen and (max-width:1280px) {
