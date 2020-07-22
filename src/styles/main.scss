@@ -10,8 +10,8 @@
 @import "footer";
 
 @font-face {
-  font-family: "Larsseit";
-  src: url(../fonts/Larsseit/Larsseit-Medium.ttf) format("tff");
+  font-family: Larsseit;
+  src: url(../fonts/Larsseit/Larsseit-Medium.ttf) format("truetype");
 }
 
 * {
@@ -19,5 +19,5 @@
 }
 
 html {
-  font-family: "Larsseit", serif;
+  font-family: Larsseit, serif !important;
 }

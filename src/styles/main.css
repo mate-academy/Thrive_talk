@@ -1034,15 +1034,15 @@ input[type=button] {
 }
 
 @font-face {
-  font-family: "Larsseit";
-  src: url(../fonts/Larsseit/Larsseit-Medium.ttf) format("tff");
+  font-family: Larsseit;
+  src: url(../fonts/Larsseit/Larsseit-Medium.ttf) format("truetype");
 }
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Larsseit", serif;
+  font-family: Larsseit, serif !important;
 }
 
 /*# sourceMappingURL=main.css.map */
