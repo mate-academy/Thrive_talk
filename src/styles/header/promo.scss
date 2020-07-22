@@ -1,0 +1,30 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+
+  &__name {
+    @extend %nameLogo;
+  }
+
+  &__title {
+    margin-top: 40px;
+    color: $textColor;
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.4em;
+  }
+
+  &__description {
+    margin-top: 80px;
+    line-height: 42px;
+    color: $textColor;
+  }
+
+  &__wrapper {
+    margin-top: 63px;
+  }
+
+  &__button {
+    margin-right: 38px;
+  }
+}

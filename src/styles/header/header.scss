@@ -1,0 +1,50 @@
+.header {
+  padding-top: 27px;
+  padding-bottom: 75px;
+
+  &__container {
+    padding-left: $containerLeftPadding;
+    padding-right: 131px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    @extend %nameLogo;
+  }
+
+  &__button {
+    background-color: $highlightedColor;
+    width: $buttonHeaderSize * 3;
+    height: $buttonHeaderSize;
+    border-radius: $buttonHeaderSize;
+    border: none;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__promo {
+    margin-top: 165px;
+    width: 480px;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/main/header.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+}
