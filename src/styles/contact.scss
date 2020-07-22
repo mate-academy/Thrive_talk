@@ -81,4 +81,15 @@ $base-pad: 100px;
 		}
 	}
 	
+	@media screen and (max-width: 490px) {
+		& {
+			padding-left: $base-pad/5;
+		}
+		
+		&__text {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+	
 }

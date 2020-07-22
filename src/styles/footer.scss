@@ -2,6 +2,7 @@ $text-color: r#22356f80;
 $base-pad: 100px;
 
 .footer {
+	position: relative;
 	height: 460px;
 	display: grid;
 	grid-template-areas: 
@@ -39,7 +40,7 @@ $base-pad: 100px;
 		text-transform: uppercase;
 		color: #22356f;
 		font-size: 14px;
-		line-height: 11px;
+		line-height: 20px;
 		letter-spacing: -0.006em;
 		font-weight: bold;
 		height: 48px;
@@ -57,7 +58,7 @@ $base-pad: 100px;
 		height: 80px;
 		background-color: #62d0df;
 		color: #fff;
-		padding-left: 200px;
+		padding-left: $base-pad*2;
 		line-height: 80px;
 		grid-area: copyright;
 		
@@ -75,6 +76,7 @@ $base-pad: 100px;
 	}
 	
 	@media screen and (max-width:1280px) {
+		
 		& {
 			grid-template-areas:
 			"card-1 card-2 card-3"
@@ -83,13 +85,44 @@ $base-pad: 100px;
 		}
 		
 		&__card {
-			padding: $base-pad/2 $base-pad/5 0 0;
+			padding: $base-pad/2 $base-pad/5 0;
 			width: 150px;
 		}
 		
 		&__image {
 			width: 100%;
 			background-color: #F3C577;
+		}
+	}
+	
+	@media screen and (max-width:460px) {
+		
+		& {
+			grid-template-areas:
+			"card-1"
+			"card-2"
+			"card-3"
+			"photo"
+			"copyright";
+			
+			width: 100%;
+		}
+		
+		&__image {
+			width: 100%;
+			background-size: cover;
+		}
+		
+		&__card {
+			width: 100%;
+		}
+		
+		&__card-title {
+			margin-bottom: 0;
+		}
+		
+		&__copyright {
+			padding-left: $base-pad/4;
 		}
 	}
 	

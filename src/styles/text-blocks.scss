@@ -27,7 +27,7 @@
 		letter-spacing: -0.03em;
 	}
 	
-	@media screen and (max-width: 1280px){
+	@media screen and (max-width: 1280px) {
 		&__block {
 			height: 360px;
 			padding-top: 25px;
@@ -36,5 +36,11 @@
 			font-size: 14px;
 		}
 	}
+	
+	@media screen and (max-width: 490px) {
+		&__block {
+			width: 50%;
+		}
+	}
+	
 }
-

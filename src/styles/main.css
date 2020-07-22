@@ -266,6 +266,7 @@ input[type=button] {
   color: #22356F;
   font-size: 14px;
   line-height: 16px;
+  margin-right: 15px;
 }
 .nav__link:hover {
   color: #F9B640;
@@ -306,7 +307,8 @@ input[type=button] {
   height: 840px;
   width: 80%;
   padding-left: 180px;
-  padding-top: 305px;
+  padding-top: 300px;
+  position: relative;
 }
 .description__header {
   font-size: 48px;
@@ -345,7 +347,7 @@ input[type=button] {
   position: absolute;
   height: 545px;
   width: 800px;
-  right: 0%;
+  right: -10%;
   top: 24%;
   overflow: hidden;
   border-radius: 312px;
@@ -363,13 +365,12 @@ input[type=button] {
   background-image: url(../images/1.png);
   background-position: center;
   transform: rotate(30deg);
-  overflow: hidden;
 }
 .description__image-background {
   position: absolute;
   height: 545px;
   width: 800px;
-  right: 0%;
+  right: -10%;
   background: #EDFDFF;
   border-radius: 312.159px;
   transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
@@ -402,6 +403,12 @@ input[type=button] {
   }
 }
 @media screen and (max-width: 1280px) {
+  .description__image-background {
+    display: none;
+  }
+  .description__logo--lower {
+    display: none;
+  }
   .description {
     width: 100%;
   }
@@ -410,15 +417,61 @@ input[type=button] {
     left: 0;
     opacity: 0.4;
   }
-  .description__image-background {
-    display: none;
-  }
   .description__text {
     width: 80%;
     font-size: 24px;
   }
+  .description__logo--top {
+    position: absolute;
+    left: 5%;
+    top: 3%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .description__image-background {
+    display: none;
+  }
   .description__logo--lower {
     display: none;
+  }
+  .description {
+    width: 100%;
+  }
+  .description {
+    padding-left: 5%;
+    padding-top: 150px;
+  }
+  .description__image {
+    display: none;
+  }
+  .description__header {
+    width: 90%;
+  }
+  .description__text {
+    width: 90%;
+  }
+  .description:after {
+    content: "";
+    background-image: url(../images/1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 490px) {
+  .description {
+    padding-top: 200px;
+  }
+  .description__header {
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 
@@ -499,6 +552,14 @@ input[type=button] {
     width: 80%;
   }
 }
+@media screen and (max-width: 490px) {
+  .features__text-box {
+    width: 90%;
+  }
+  .features__text {
+    line-height: 30px;
+  }
+}
 
 .about {
   padding-top: 150px;
@@ -521,9 +582,11 @@ input[type=button] {
   font-size: 24px;
   line-height: 34px;
   letter-spacing: 0.005em;
-  width: 590px;
+  width: 40%;
   display: inline-block;
-  margin-left: 225px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 @media screen and (max-width: 1024px) {
   .about__header {
@@ -535,7 +598,7 @@ input[type=button] {
     padding-left: 37.5px;
   }
   .about__text {
-    font-size: 20px;
+    font-size: 18px;
     width: 90%;
     margin-left: 0;
   }
@@ -688,6 +751,11 @@ input[type=button] {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 490px) {
+  .text-blocks__block {
+    width: 50%;
+  }
+}
 
 .also {
   height: 800px;
@@ -716,6 +784,7 @@ input[type=button] {
 }
 .also__link {
   color: #FAB63E;
+  height: 53px;
   text-transform: uppercase;
   text-decoration: none;
   position: absolute;
@@ -765,6 +834,16 @@ input[type=button] {
     left: 0;
     top: 50%;
   }
+}
+@media screen and (max-width: 490px) {
+  .also__text {
+    margin-top: 50px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+.also__image {
+  top: 70%;
 }
 
 .contact {
@@ -836,8 +915,18 @@ input[type=button] {
     width: 50%;
   }
 }
+@media screen and (max-width: 490px) {
+  .contact {
+    padding-left: 20px;
+  }
+  .contact__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 
 .footer {
+  position: relative;
   height: 460px;
   display: grid;
   grid-template-areas: "photo card-1 card-2 card-3" "copyright copyright copyright copyright";
@@ -867,7 +956,7 @@ input[type=button] {
   text-transform: uppercase;
   color: #22356f;
   font-size: 14px;
-  line-height: 11px;
+  line-height: 20px;
   letter-spacing: -0.006em;
   font-weight: bold;
   height: 48px;
@@ -902,12 +991,31 @@ input[type=button] {
     grid-template-areas: "card-1 card-2 card-3" "photo photo photo" "copyright copyright copyright";
   }
   .footer__card {
-    padding: 50px 20px 0 0;
+    padding: 50px 20px 0;
     width: 150px;
   }
   .footer__image {
     width: 100%;
     background-color: #F3C577;
+  }
+}
+@media screen and (max-width: 460px) {
+  .footer {
+    grid-template-areas: "card-1" "card-2" "card-3" "photo" "copyright";
+    width: 100%;
+  }
+  .footer__image {
+    width: 100%;
+    background-size: cover;
+  }
+  .footer__card {
+    width: 100%;
+  }
+  .footer__card-title {
+    margin-bottom: 0;
+  }
+  .footer__copyright {
+    padding-left: 25px;
   }
 }
 

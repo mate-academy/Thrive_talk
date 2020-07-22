@@ -75,5 +75,13 @@
     width: 80%;
   }
 }
+@media screen and (max-width: 490px) {
+  .features__text-box {
+    width: 90%;
+  }
+  .features__text {
+    line-height: 30px;
+  }
+}
 
 /*# sourceMappingURL=features.css.map */

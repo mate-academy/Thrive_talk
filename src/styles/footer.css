@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .footer {
+  position: relative;
   height: 460px;
   display: grid;
   grid-template-areas: "photo card-1 card-2 card-3" "copyright copyright copyright copyright";
@@ -29,7 +30,7 @@
   text-transform: uppercase;
   color: #22356f;
   font-size: 14px;
-  line-height: 11px;
+  line-height: 20px;
   letter-spacing: -0.006em;
   font-weight: bold;
   height: 48px;
@@ -64,12 +65,31 @@
     grid-template-areas: "card-1 card-2 card-3" "photo photo photo" "copyright copyright copyright";
   }
   .footer__card {
-    padding: 50px 20px 0 0;
+    padding: 50px 20px 0;
     width: 150px;
   }
   .footer__image {
     width: 100%;
     background-color: #F3C577;
+  }
+}
+@media screen and (max-width: 460px) {
+  .footer {
+    grid-template-areas: "card-1" "card-2" "card-3" "photo" "copyright";
+    width: 100%;
+  }
+  .footer__image {
+    width: 100%;
+    background-size: cover;
+  }
+  .footer__card {
+    width: 100%;
+  }
+  .footer__card-title {
+    margin-bottom: 0;
+  }
+  .footer__copyright {
+    padding-left: 25px;
   }
 }
 

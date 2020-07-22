@@ -3,12 +3,29 @@ $button-height: 50px;
 $button-width: 150px;
 $bg-color: #f4f9e2;
 $alternate-color: #FAB63E;
+$base-pad: 300px;
 
 @mixin image-frame {
 	position: absolute;
 	height: 545px;
 	width: 800px;
-	right: 0%;
+	right: -10%;
+}
+
+@mixin remove-element {
+	
+	&__image-background {
+		display: none;
+	}
+	
+	&__logo--lower {
+		display: none;
+	}
+	
+	& {
+		width: 100%;
+	}
+	
 }
 
 .description {
@@ -16,7 +33,8 @@ $alternate-color: #FAB63E;
 	height: 840px;
 	width: 80%;
 	padding-left: 180px;
-	padding-top: 305px;
+	padding-top: $base-pad;
+	position: relative;
 		
 	&__header {
 		font-size: 48px;
@@ -76,7 +94,6 @@ $alternate-color: #FAB63E;
 				background-image: url(../images/1.png);
 				background-position: center;
 				transform: rotate(30deg);
-				overflow: hidden;
 		}
 	}
 	
@@ -123,29 +140,74 @@ $alternate-color: #FAB63E;
 	}
 	
 	@media screen and (max-width:1280px) {
-		& {
-			width: 100%;
-		}
+		
+		@include remove-element;
 		
 		&__image {
 			top: 25%;
 			left: 0;
 			opacity: 0.4;
 		}
-		
-		&__image-background {
-			display: none;
-		}
-		
+				
 		&__text {
 			width: 80%;
 			font-size: 24px;
 		}
 		
-		&__logo--lower {
+		&__logo--top {
+			position: absolute;
+			left: 5%;
+			top: 3%;
+		}
+	}
+	
+	@media screen and (max-width: 900px) {
+		
+		@include remove-element;
+		
+		& {
+			padding-left: 5%;
+			padding-top: $base-pad/2;
+		}
+		
+		&__image {
 			display: none;
 		}
 		
+		&__header {
+			width: 90%;
+		}
+		
+		&__text {
+			width: 90%;
+		}
+		
+		&:after {
+			content: "";
+			background-image: url(../images/1.png);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			opacity: 0.3;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
+	
+	@media screen and (max-width: 490px) {
+		
+		& {
+			padding-top: $base-pad/1.5;
+		}
+		
+		&__header {
+			font-size: 28px;
+			line-height: 36px;
+		}
 	}
 	
 }

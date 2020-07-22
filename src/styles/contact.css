@@ -67,5 +67,14 @@
     width: 50%;
   }
 }
+@media screen and (max-width: 490px) {
+  .contact {
+    padding-left: 20px;
+  }
+  .contact__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 
 /*# sourceMappingURL=contact.css.map */

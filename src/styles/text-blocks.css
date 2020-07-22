@@ -33,5 +33,10 @@
     font-size: 14px;
   }
 }
+@media screen and (max-width: 490px) {
+  .text-blocks__block {
+    width: 50%;
+  }
+}
 
 /*# sourceMappingURL=text-blocks.css.map */

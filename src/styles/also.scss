@@ -33,6 +33,7 @@ $block-height: 800px;
 	
 	&__link {
 		color: #FAB63E;
+		height: 53px;
 		text-transform: uppercase;
 		text-decoration: none;
 		position: absolute;
@@ -93,7 +94,18 @@ $block-height: 800px;
 			left: 0;
 			top: 50%;
 		}
-		
+	}
+	
+	@media screen and (max-width: 490px) {
+		&__text {
+			margin-top: $base-margin/3;
+			font-size: 32px;
+			line-height: 44px;
+		}
+	}
+	
+	&__image {
+		top: 70%;
 	}
 	
 }
