@@ -1,0 +1,24 @@
+.about {
+  position: relative;
+  padding-top: 150px;
+  background-color: #fff;
+
+  &__title {
+    position: absolute;
+    left: 106px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $textColor;
+  }
+
+  &__description {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+
+    font-weight: bold;
+    color: $textColor;
+    letter-spacing: 0.01em;
+  }
+}

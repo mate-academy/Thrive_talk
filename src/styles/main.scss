@@ -2,12 +2,15 @@
 @import "reset";
 @import "placeholder";
 @import "button";
+@import "grid-block";
 
 @import "header/header";
 @import "header/navigation";
 @import "header/promo";
 
 @import "main/why";
+@import "main/about";
+@import "main/help";
 
 * {
   box-sizing: border-box;

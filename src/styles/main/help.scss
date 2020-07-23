@@ -1,0 +1,32 @@
+.help {
+  padding-top: 76px;
+  background-color: #fff;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: rgba(34, 53, 111, 0.5);
+  }
+
+  &__grid {
+    display: grid;
+    margin-top: 24px;
+    grid-template-columns: repeat(4, 360px);
+    grid-auto-rows: 360px;
+
+    &-block--1 {
+      background-image: url(../images/help/1.jpg);
+    }
+    &-block--2 {
+      background-image: url(../images/help/2.jpg);
+    }
+    &-block--3 {
+      background-image: url(../images/help/3.jpg);
+    }
+    &-block--4 {
+      background-image: url(../images/help/4.png);
+    }
+  }
+}
