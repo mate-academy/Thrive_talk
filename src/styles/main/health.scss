@@ -1,0 +1,14 @@
+.health {
+  margin-top: 120px;
+
+  &__grid {
+    display: grid;
+    margin-top: 24px;
+    grid-template-columns: repeat(3, 480px);
+    grid-auto-rows: 480px;
+
+    &-block-- {
+      background-image: url(../images/help/1.jpg);
+    }
+  }
+}
