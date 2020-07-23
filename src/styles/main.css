@@ -308,7 +308,7 @@ input[type=button] {
   background-color: #f4f9e2;
   height: 840px;
   width: 80%;
-  padding-left: 180px;
+  padding-left: 150px;
   padding-top: 300px;
   position: relative;
 }
@@ -394,7 +394,7 @@ input[type=button] {
 .description__logo--lower {
   top: 240px;
 }
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1650px) {
   .description__header {
     width: 300px;
     font-size: 38px;
@@ -406,7 +406,7 @@ input[type=button] {
     line-height: 24px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1400px) {
   .description__image-background {
     display: none;
   }
@@ -415,6 +415,9 @@ input[type=button] {
   }
   .description {
     width: 100%;
+  }
+  .description {
+    padding-left: 100px;
   }
   .description__image {
     top: 25%;
@@ -443,13 +446,13 @@ input[type=button] {
   }
   .description {
     padding-left: 5%;
-    padding-top: 150px;
+    padding-top: 200px;
   }
   .description__image {
     display: none;
   }
   .description__header {
-    width: 90%;
+    width: 70%;
   }
   .description__text {
     width: 90%;
@@ -886,7 +889,6 @@ input[type=button] {
   line-height: 53px;
   letter-spacing: -0.005em;
   width: 500px;
-  margin-bottom: 50px;
 }
 .contact__link {
   font-size: 16px;
@@ -908,7 +910,8 @@ input[type=button] {
   }
   .contact__text {
     width: 40%;
-    font-size: 28px;
+    font-size: 26px;
+    line-height: 40px;
   }
   .contact__image {
     width: 40%;

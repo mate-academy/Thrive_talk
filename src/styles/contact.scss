@@ -35,7 +35,6 @@ $base-pad: 100px;
 		line-height: 53px;
 		letter-spacing: -0.005em;
 		width: 500px;
-		margin-bottom: 50px;
 	}
 	
 	&__link {
@@ -61,7 +60,8 @@ $base-pad: 100px;
 		
 		&__text {
 			width: 40%;
-			font-size: 28px;
+			font-size: 26px;
+			line-height: 40px;
 		}
 		
 		&__image {

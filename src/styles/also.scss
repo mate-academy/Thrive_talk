@@ -74,7 +74,6 @@ $block-height: 800px;
 	}
 	
 	@media screen and (max-width: 800px){
-		
 		& {
 			height: $block-height*1.66;
 			padding-left: $base-margin/8;

@@ -130,14 +130,14 @@ $card-pad: 90px;
 		}
 	}
 	
-@media screen and (max-width: 1024px) {
-	&__square {
-		flex: 1 0 50%;
+	@media screen and (max-width: 1024px) {
+		&__square {
+			flex: 1 0 50%;
+		}
+		
+		&__big-square {
+			flex: 1 0 25%;
+		}
 	}
-	
-	&__big-square {
-		flex: 1 0 25%;
-	}
-}
 
 }

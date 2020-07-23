@@ -29,7 +29,6 @@
   line-height: 53px;
   letter-spacing: -0.005em;
   width: 500px;
-  margin-bottom: 50px;
 }
 .contact__link {
   font-size: 16px;
@@ -51,7 +50,8 @@
   }
   .contact__text {
     width: 40%;
-    font-size: 28px;
+    font-size: 26px;
+    line-height: 40px;
   }
   .contact__image {
     width: 40%;
