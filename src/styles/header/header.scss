@@ -36,11 +36,12 @@
   }
 
   &__image {
+    z-index: -1;
     position: absolute;
     right: 0;
-    bottom: 90px;
-    width: 500px;
-    height: 500px;
+    top: 0;
+    width: 807px;
+    height: 545px;
     background-image: url(../images/main/header.png);
     background-position: center;
     background-size: contain;
