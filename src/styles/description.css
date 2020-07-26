@@ -35,7 +35,7 @@
   letter-spacing: 0.1em;
   position: relative;
   z-index: 3;
-  transition: all 700ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .description__button:hover {
   color: #fff;
@@ -45,7 +45,7 @@
   position: absolute;
   height: 545px;
   width: 800px;
-  right: -10%;
+  left: 80%;
   top: 24%;
   overflow: hidden;
   border-radius: 312px;
@@ -68,12 +68,12 @@
   position: absolute;
   height: 545px;
   width: 800px;
-  right: -10%;
+  left: 80%;
   background: #EDFDFF;
   border-radius: 312.159px;
   transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
   z-index: 1;
-  top: 10%;
+  top: 7%;
 }
 .description__logo {
   font-size: 24px;
@@ -90,14 +90,20 @@
 }
 @media screen and (max-width: 1650px) {
   .description__header {
-    width: 300px;
+    width: 450px;
     font-size: 38px;
     font-weight: 700;
   }
   .description__text {
     font-size: 24px;
-    width: 260px;
+    width: 450px;
     line-height: 24px;
+  }
+  .description__image {
+    left: 70%;
+  }
+  .description__image-background {
+    left: 70%;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -115,7 +121,7 @@
   }
   .description__image {
     top: 25%;
-    left: 0;
+    left: 10%;
     opacity: 0.4;
   }
   .description__text {

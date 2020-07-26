@@ -83,8 +83,13 @@
     font-size: 32px;
     line-height: 44px;
   }
+  .also__link {
+    top: 45%;
+    left: 18.75px;
+  }
   .also__image {
-    top: 70%;
+    top: 50%;
+    height: 50%;
   }
 }
 

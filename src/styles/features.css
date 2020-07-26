@@ -69,18 +69,24 @@
   }
   .features__image {
     left: 0;
-    top: 605px;
+    top: 50%;
+    height: 50%;
+    width: 100%;
   }
-  .features__text-box {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 490px) {
   .features__text-box {
     width: 90%;
   }
+}
+@media screen and (max-width: 490px) {
+  .features {
+    padding-top: 20px;
+  }
+  .features__text-box {
+    width: 95%;
+  }
   .features__text {
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 

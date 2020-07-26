@@ -125,6 +125,7 @@ $base-pad: 100px;
 		
 		&__card {
 			width: 100%;
+			padding-bottom: $base-pad/5;
 		}
 		
 		&__card-title {
@@ -133,6 +134,13 @@ $base-pad: 100px;
 		
 		&__copyright {
 			padding-left: $base-pad/4;
+		}
+	}
+	
+	@media screen and (min-width: 1920px) {
+		& {
+			width: 1920px;
+			margin: auto;
 		}
 	}
 	

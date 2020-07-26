@@ -103,8 +103,14 @@ $block-height: 800px;
 			line-height: 44px;
 		}
 		
+		&__link {
+			top: 45%;
+			left: $base-margin/8;
+		}
+		
 		&__image {
-			top: 70%;
+			top: 50%;
+			height: 50%;
 		}
 	}
 	

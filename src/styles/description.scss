@@ -9,7 +9,7 @@ $base-pad: 300px;
 	position: absolute;
 	height: 545px;
 	width: 800px;
-	right: -10%;
+	left: 80%;
 }
 
 @mixin remove-element {
@@ -67,7 +67,7 @@ $base-pad: 300px;
 		letter-spacing: 0.1em;
 		position: relative;
 		z-index: 3;
-		transition: all 700ms ease-in-out;
+		transition: all 500ms ease-in-out;
 		
 		&:hover {
 			color: #fff;
@@ -104,7 +104,7 @@ $base-pad: 300px;
 		border-radius: 312.159px;
 		transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
 		z-index: 1;
-		top: 10%;
+		top: 7%;
 	}
 
 	&__logo {
@@ -125,15 +125,23 @@ $base-pad: 300px;
 	
 	@media screen and (max-width:1650px) {
 		&__header {
-			width: 300px;
+			width: 450px;
 			font-size: 38px;
 			font-weight: 700;
 		}
 
 		&__text {
 			font-size: 24px;
-			width: 260px;
+			width: 450px;
 			line-height: 24px;
+		}
+		
+		&__image {
+			left: 70%;
+		}
+		
+		&__image-background {
+			left: 70%;
 		}
 	}
 	
@@ -145,7 +153,7 @@ $base-pad: 300px;
 		
 		&__image {
 			top: 25%;
-			left: 0;
+			left: 10%;
 			opacity: 0.4;
 		}
 		

@@ -110,7 +110,15 @@
     flex: 1 0 50%;
   }
   .blocks__big-square {
-    flex: 1 0 25%;
+    flex: 1 0 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blocks__square {
+    flex: 1 0 100%;
+  }
+  .blocks__big-square {
+    flex: 1 0 100%;
   }
 }
 
