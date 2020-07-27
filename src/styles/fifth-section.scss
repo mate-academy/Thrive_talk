@@ -1,0 +1,44 @@
+$cLightBlue: #62d0df;
+
+.cLightBlue {
+  color: $cLightBlue;
+}
+
+.fifth-section {
+  color: #22356f;
+  display: grid;
+  grid-template-columns: 555px 1fr ;
+
+  font-size: 24px;
+  line-height: 35px;
+  &__article {
+
+    display: grid;
+    &__title {
+      font-size: 16px;
+      line-height: 12px;
+      font-weight: normal;
+      padding-top: 100px;
+    }
+
+    &__text {
+      font-size: 36px;
+      line-height: 53px;
+      margin-bottom: 75px;
+      font-weight: bold;
+      width: 676px;
+    }
+
+    &__nav {
+      @include button;
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+  &__photo {
+    background-image: url(/images/fifth-section.png);
+    height: 800px;
+    width: 480px;
+    background-repeat: no-repeat;
+  }
+}

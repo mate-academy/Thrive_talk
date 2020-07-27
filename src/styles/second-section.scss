@@ -1,0 +1,26 @@
+.second-section {
+  padding-left: 180px;
+  background-color: #62d0df;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 555px 1fr ;
+  grid-template-rows: 2;
+  font-size: 24px;
+  line-height: 35px;
+  &__article {
+    align-self: center;
+    &__title {
+      margin-bottom: 75px;
+      &--bold-text {
+        font-weight: bold;
+      }
+    }
+  }
+  &__photo {
+    background-image: url(/images/second-section.png);
+    height: 605px;
+    width: 525px;
+    background-repeat: no-repeat;
+    justify-self: end;
+  }
+}

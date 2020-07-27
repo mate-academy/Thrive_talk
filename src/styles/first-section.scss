@@ -1,0 +1,76 @@
+@mixin button {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  color: #fab63e;
+  border: 1px solid transparent;
+  transition: 0.25s;
+  &:hover {
+    background-color: #fab63e;
+    color: #fff;
+  }
+}
+
+.first__section {
+  padding: 25px 0 75px 180px;
+  background-color: #f4f9e2;
+  width: 70%;
+
+  &__article__description {
+    padding-top: 175px;
+    width: 36%;
+    color: #22356f;
+    &__h1 {
+      font-size: 48px;
+      line-height: 53px;
+      letter-spacing: -0.04em;
+    }
+
+    &__p {
+      font-size: 24px;
+      line-height: 42px;
+    }
+    &__nav {
+      display: flex;
+      padding-top: 30px;
+
+      &__item {
+        @include button;
+      }
+    }
+  }
+
+  &__photo-shadow {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 810px;
+    height: 545px;
+    background: #edfdff;
+    border-radius: 310px;
+    transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+  }
+
+  &__photo {
+    position: absolute;
+    top: 100px;
+    right: -100px;
+    width: 810px;
+    height: 545px;
+    border-radius: 312px;
+    overflow: hidden;
+    transform: rotate(-25deg);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: -200px;
+      background-image: url(/images/first_section.png);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 150%;
+      transform: rotate(25deg);
+    }
+  }
+}

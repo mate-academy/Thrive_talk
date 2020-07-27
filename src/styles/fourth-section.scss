@@ -1,0 +1,142 @@
+$four-blockSizeX: 360px;
+$four-blockSizeY: 360px;
+$three-blockSizeX: 480px;
+$three-blockSizeY: 480px;
+
+@mixin spanBefore {
+  content: "\2022";
+  color: #e9b730;
+  padding-right: 15px;
+}
+
+@mixin contentBefore {
+  content: "";
+  display: block;
+  border-top: 2px solid #fff;
+  width: 80%;
+  margin: 70px auto 20px;
+}
+
+.section-title {
+  color: rgba(34, 53, 111, 0.5);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.four-block {
+  display: flex;
+  height: $four-blockSizeY;
+
+  &__item {
+    flex-basis: $four-blockSizeX;
+    flex-grow: 1;
+    font-size: 32px;
+    line-height: 34px;
+    color: #fff;
+
+    &:nth-child(1) {
+      background-color: #ffe2de;
+    }
+    &:nth-child(2) {
+      background-color: #c4e769;
+    }
+    &:nth-child(3) {
+      background-color: #62d0df;
+    }
+    &:nth-child(4) {
+      background-color: #0052c1;
+    }
+
+    &__span {
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 10%;
+    }
+
+    &__span:before {
+      @include spanBefore;
+    }
+
+    &:before {
+      @include contentBefore;
+
+    }
+  }
+}
+
+.three-block {
+  padding-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+
+  &__item {
+    flex-grow: 1;
+    flex-basis: $three-blockSizeX;
+    height: $three-blockSizeY;
+    font-size: 32px;
+    line-height: 34px;
+
+    &:nth-child(1) {
+      background-color: #22356f;
+    }
+
+    &:nth-child(2) {
+      background-color: #0052c1;
+    }
+
+    &:nth-child(3) {
+      background-image: url(/images/nutrion.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &:nth-child(4) {
+      background-color: #62d0df;
+    }
+
+    &:nth-child(5) {
+      background-color: #dee1ff;
+    }
+
+    &:nth-child(6) {
+      background-color: #8f00ff;
+    }
+
+    &__span {
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 10%;
+    }
+
+    &__span:before {
+      @include spanBefore;
+    }
+
+    &:before {
+      @include contentBefore;
+      margin-top: 95px;
+    }
+  }
+}
+
+.discription {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  &__block {
+    padding: 55px 105px;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 33px;
+    color: #22356f;
+  }
+
+  &__text {
+    color: rgba(34, 53, 111, 0.5);
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
