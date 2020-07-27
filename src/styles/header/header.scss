@@ -17,6 +17,7 @@
   }
 
   &__button {
+    position: relative;
     z-index: 4;
     background-color: $highlightedColor;
     width: $buttonHeaderSize * 3;
@@ -28,6 +29,21 @@
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+
+    &:hover {
+      color: $highlightedColor;
+      border: 2px solid;
+      background-color: #fff;
+      box-shadow: 1px 10px 26px -6px rgba(250,181,62,1);
+      transform: scale(0.9);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__promo {

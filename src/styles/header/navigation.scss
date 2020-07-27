@@ -5,10 +5,10 @@
   }
 
   &__item {
+    z-index: 4;
     position: relative;
 
     &--active {
-
       &::after {
         content: "";
         position: absolute;
@@ -16,7 +16,10 @@
         right: 5%;
         width: 90%;
         height: 1px;
-        background-color: $navigationTextColor;
+        background-color: $highlightedColor;
+      }
+      & a {
+        color: $highlightedColor;
       }
     }
   }

@@ -15,10 +15,12 @@
     margin-top: 24px;
     grid-template-columns: repeat(4, 359.5px);
     grid-auto-rows: 360px;
+    // overflow: hidden;
 
     &-block--1 {
       background-image: url(../images/help/1.jpg);
     }
+
     &-block--2 {
       background-image: url(../images/help/2.jpg);
     }
