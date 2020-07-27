@@ -4,8 +4,17 @@
   background-color: #22356f;
 
   &__info {
-    margin: 103px 0 42px 180px;
+    margin: 103px 0 42px $containerLeftPadding;
     width: 580px;
+
+    @media (max-width: 1300px) {
+      margin-left: $containerLeftPadding1300px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-left: $containerLeftPadding1024px;
+      margin-right: 50px;
+    }
   }
 
   &__title {
@@ -20,6 +29,11 @@
     font-size: 64px;
     line-height: 94px;
     color: $contactTextColor;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+      margin-top: 100px;
+    }
   }
 
   &__description {
@@ -27,11 +41,25 @@
     font-size: 36px;
     line-height: 53px;
     color: $contactTextColor;
+
+    @media (max-width: 1024px) {
+      font-size: 30px;
+      margin-top: 50px;
+    }
   }
 
   &__button {
     margin-top: 60px;
     margin-left: -$buttonHorizontalPadding;
     color: #62d0df;
+  }
+
+  &__image {
+    object-fit: cover;
+    width: 480px;
+
+    @media (max-width: 1199px) {
+      width: 350px;
+    }
   }
 }

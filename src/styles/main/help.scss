@@ -13,9 +13,15 @@
   &__grid {
     display: grid;
     margin-top: 24px;
-    grid-template-columns: repeat(4, 359.5px);
-    grid-auto-rows: 360px;
-    // overflow: hidden;
+    grid-template-columns: repeat(4, minmax(300px, 360px));
+    grid-auto-rows: 300px;
+    @media (min-width: 1437px) {
+      grid-auto-rows: 360px;
+    }
+
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
 
     &-block--1 {
       background-image: url(../images/help/1.jpg);

@@ -6,7 +6,21 @@
   &__wrapper {
     margin-top: $whyPaddingTop;
     margin-left: $containerLeftPadding;
+    margin-bottom: 95px;
     width: 555px;
+
+    @media (max-width: 1437px) {
+      width: 500px;
+    }
+
+    @media (max-width: 1300px) {
+      margin-left: $containerLeftPadding1300px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-left: $containerLeftPadding1024px;
+      margin-top: 70px;
+    }
   }
 
   &__title {
@@ -27,7 +41,11 @@
 
   &__image {
     width: 525px;
-    height: 100%;
     object-fit: cover;
+    object-position: left;
+
+    @media (max-width: 1200px) {
+      width: 350px;
+    }
   }
 }

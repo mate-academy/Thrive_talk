@@ -1,7 +1,11 @@
 .training {
   display: grid;
-  grid-template-columns: repeat(3, 479.5px);
+  grid-template-columns: repeat(3, minmax(400px, 479.5px));
   padding-top: 22px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
 
   background-color: $backgroundColor;
 

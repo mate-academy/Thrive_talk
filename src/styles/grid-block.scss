@@ -49,6 +49,10 @@
     margin-top: 25%;
     margin-left: 20%;
 
+    @media (max-width: 1199px) {
+      margin-top: 15%;
+    }
+
     &::after {
       content: "";
       position: absolute;

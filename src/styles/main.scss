@@ -36,10 +36,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1300px;
   position: relative;
-
-  @media (min-width: 1900px) {
-    width: 1437px;
-  }
+  max-width: 1437px;
+  overflow: hidden;
 }

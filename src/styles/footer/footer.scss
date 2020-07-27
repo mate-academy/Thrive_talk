@@ -8,13 +8,22 @@
   &__image {
     width: 570px;
     object-fit: cover;
+
+    @media (max-width: 1199px) {
+      width: 350px;
+    }
   }
 
   &__info {
     display: flex;
     justify-content: space-between;
     width: 750px;
-    margin: 98px 40px 99px 0;
+    margin: 98px 0 99px;
+
+    @media (max-width: 1436px) {
+      margin-right: 0;
+      margin-left: 50px;
+    }
   }
 
   &__info-wrapper {

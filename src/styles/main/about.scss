@@ -10,6 +10,10 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: $textColor;
+
+    @media (max-width: 1024px) {
+      left: $containerLeftPadding1024px;
+    }
   }
 
   &__description {
