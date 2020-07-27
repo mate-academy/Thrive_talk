@@ -1,10 +1,11 @@
 .health {
-  margin-top: 120px;
+  padding-top: 120px;
+  background-color: $backgroundColor;
 
   &__grid {
     display: grid;
     margin-top: 24px;
-    grid-template-columns: repeat(3, 480px);
+    grid-template-columns: repeat(3, 479.5px);
     grid-auto-rows: 480px;
 
     &-block--1 {

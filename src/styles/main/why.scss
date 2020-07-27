@@ -1,11 +1,11 @@
 .why {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   background-color: #62d0df;
-  padding-top: $whyPaddingTop;
-  padding-bottom: $whyPaddingBottom;
-  padding-left: $containerLeftPadding;
 
   &__wrapper {
+    margin-top: $whyPaddingTop;
+    margin-left: $containerLeftPadding;
     width: 555px;
   }
 
@@ -26,11 +26,8 @@
   }
 
   &__image {
-    position: absolute;
     width: 525px;
     height: 100%;
     object-fit: cover;
-    right: 0;
-    top: 0;
   }
 }

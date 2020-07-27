@@ -12,6 +12,11 @@
 @import "main/about";
 @import "main/help";
 @import "main/health";
+@import "main/training";
+@import "main/should-know";
+@import "main/contact";
+
+@import "footer/footer";
 
 * {
   box-sizing: border-box;
@@ -26,7 +31,7 @@ html {
 }
 
 body {
-  background: #f4f9e2;
+  background: #e5e5e5;
 }
 
 .container {

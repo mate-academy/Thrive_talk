@@ -1,0 +1,37 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  background-color: #22356f;
+
+  &__info {
+    margin: 103px 0 42px 180px;
+    width: 580px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $contactTextColor;
+  }
+
+  &__subtitle {
+    margin-top: 230px;
+    font-size: 64px;
+    line-height: 94px;
+    color: $contactTextColor;
+  }
+
+  &__description {
+    margin-top: 75px;
+    font-size: 36px;
+    line-height: 53px;
+    color: $contactTextColor;
+  }
+
+  &__button {
+    margin-top: 60px;
+    margin-left: -$buttonHorizontalPadding;
+    color: #62d0df;
+  }
+}

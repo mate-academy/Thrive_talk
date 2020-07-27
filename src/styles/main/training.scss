@@ -1,0 +1,24 @@
+.training {
+  display: grid;
+  grid-template-columns: repeat(3, 479.5px);
+  padding-top: 22px;
+
+  background-color: $backgroundColor;
+
+  &__type {
+    padding: 55px 77px 37px 105px;
+  }
+
+  &__title {
+    font-size: 28px;
+    letter-spacing: -0.05em;
+    color: $textColor;
+  }
+
+  &__description {
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(34, 53, 111, 0.5);
+  }
+}

@@ -1,0 +1,37 @@
+.should-know {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $backgroundColor;
+
+  &__image {
+    object-fit: cover;
+    width: 480px;
+  }
+
+  &__wrapper {
+    margin: 103px 175px 42px 0;
+    width: 676px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 300;
+    color: $textColor;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-top: 225px;
+    font-size: 36px;
+    line-height: 53px;
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    color: $textColor;
+  }
+
+  &__button {
+    margin-top: 152px;
+    margin-left: -$buttonHorizontalPadding;
+  }
+}
