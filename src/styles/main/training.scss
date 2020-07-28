@@ -7,10 +7,20 @@
     grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
 
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(1, minmax(300px, 370px));
+    padding-bottom: 40px;
+    padding-right: $containerPadding425px;
+  }
+
   background-color: $backgroundColor;
 
   &__type {
     padding: 55px 77px 37px 105px;
+
+    @media (max-width: 425px) {
+      padding: 40px 0 0 20%;
+    }
   }
 
   &__title {
@@ -24,5 +34,9 @@
     font-size: 16px;
     line-height: 25px;
     color: rgba(34, 53, 111, 0.5);
+
+    @media (max-width: 425px) {
+      margin-top: 15px;
+    }
   }
 }

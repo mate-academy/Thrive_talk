@@ -3,6 +3,10 @@
     background-color: $backgroundColor;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 425px) {
+      flex-direction: column;
+    }
   }
 
   &__image {
@@ -11,6 +15,10 @@
 
     @media (max-width: 1199px) {
       width: 350px;
+    }
+    @media (max-width: 425px) {
+      order: 2;
+      width: 100%;
     }
   }
 
@@ -30,6 +38,12 @@
       grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
       justify-content: center;
       margin-top: $containerPadding1024px;
+    }
+
+    @media (max-width: 425px) {
+      margin: $containerPadding425px;
+      justify-content: start;
+      width: 100%;
     }
   }
 
@@ -51,6 +65,10 @@
     }
     &:last-child::after {
       display: none;
+
+      @media (max-width: 899px) {
+        display: flex;
+      }
     }
   }
 
@@ -85,6 +103,18 @@
     font-size: 14px;
     line-height: 80px;
 
+    @media (max-width: 1300px) {
+      padding-left: $containerLeftPadding1300px;
+    }
+
+    @media (max-width: 1024px) {
+      padding-left: $containerPadding1024px;
+    }
+
+    @media (max-width: 425px) {
+      padding-left: $containerPadding1024px;
+    }
+
     &:after {
       content: "";
       position: absolute;
@@ -97,6 +127,18 @@
       background-repeat: no-repeat;
       width: 9px;
       height: 9px;
+
+      @media (max-width: 1300px) {
+        left: calc(#{$containerLeftPadding1300px} - 15px);
+      }
+
+      @media (max-width: 1024px) {
+        left: calc(#{$containerPadding1024px} - 15px);
+      }
+
+      @media (max-width: 425px) {
+        left: $containerPadding425px;
+      }
     }
   }
 }

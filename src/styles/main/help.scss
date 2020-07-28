@@ -19,12 +19,17 @@
     margin-top: 24px;
     grid-template-columns: repeat(4, minmax(300px, 360px));
     grid-auto-rows: 300px;
+    justify-content: center;
     @media (min-width: 1437px) {
       grid-auto-rows: 360px;
     }
 
     @media (max-width: 1199px) {
       grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+
+    @media (max-width: 599px) {
+      grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
 
     &-block--1 {

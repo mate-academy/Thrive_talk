@@ -50,11 +50,10 @@
       border: 2px solid;
       background-color: #fff;
       box-shadow: 1px 10px 26px -6px rgba(250,181,62,1);
-      transform: scale(0.9);
     }
 
     &:active {
-      transform: translateY(2px);
+      transform: scale(0.9);
     }
   }
 

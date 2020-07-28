@@ -13,6 +13,13 @@
     padding-top: $containerPadding1024px;
   }
 
+  @media (max-width: 425px) {
+    flex-direction: column;
+    padding-top: $containerPadding425px;
+    padding-right: $containerPadding425px;
+    padding-left: $containerPadding425px;
+  }
+
   &__title {
     position: absolute;
     left: 106px;
@@ -37,6 +44,12 @@
     @media (max-width: 1024px) {
       margin: 0;
       width: 70%;
+      font-size: 14px;
+    }
+
+    @media (max-width: 425px) {
+      margin-top: 50px;
+      width: 100%;
       font-size: 14px;
     }
   }
