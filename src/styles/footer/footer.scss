@@ -24,6 +24,13 @@
       margin-right: 0;
       margin-left: 50px;
     }
+
+    @media (max-width: 900px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+      justify-content: center;
+      margin-top: $containerPadding1024px;
+    }
   }
 
   &__info-wrapper {

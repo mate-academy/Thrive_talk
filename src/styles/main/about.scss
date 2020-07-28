@@ -2,6 +2,16 @@
   position: relative;
   padding-top: 150px;
   background-color: $backgroundColor;
+  @media (max-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    padding-right: $containerPadding1024px;
+    padding-left: $containerPadding1024px;
+  }
+
+  @media (max-width: 900px) {
+    padding-top: $containerPadding1024px;
+  }
 
   &__title {
     position: absolute;
@@ -12,7 +22,7 @@
     color: $textColor;
 
     @media (max-width: 1024px) {
-      left: $containerLeftPadding1024px;
+      position: static;
     }
   }
 
@@ -24,5 +34,10 @@
     font-weight: bold;
     color: $textColor;
     letter-spacing: 0.01em;
+    @media (max-width: 1024px) {
+      margin: 0;
+      width: 70%;
+      font-size: 14px;
+    }
   }
 }
