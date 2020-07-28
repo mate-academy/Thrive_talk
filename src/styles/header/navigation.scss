@@ -32,5 +32,9 @@
     margin: 0 8px;
     padding: 5px;
     @include hover(color, $highlightedColor);
+
+    @media (max-width: 350px) {
+      margin: 0 4px;
+    }
   }
 }
