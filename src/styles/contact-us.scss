@@ -1,0 +1,65 @@
+.contact-us {
+  position: relative;
+  background-color: $main-color;
+  color: $secondary-color;
+  height: 800px;
+
+  padding: 100px 40vw 42px 12vw;
+
+  &__text-container {
+    width: 580px;
+    
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  
+  &__subtitle {
+    margin-top: 230px;
+
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-top: 76px;
+
+    font-size: 36px;
+    line-height: 53px;
+
+    color: $secondary-color;
+  }
+
+  &__photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 480px;
+    height: 800px;
+
+    background-image: url(/images/5.png);
+    z-index: 100;
+  }
+
+  &__help {
+    margin-top: 65px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    color: $logo-color;
+    text-transform: uppercase;
+  }
+}

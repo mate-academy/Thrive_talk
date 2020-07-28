@@ -1,0 +1,45 @@
+.about-us {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  padding: 150px 12vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $secondary-color;
+
+  &__title {
+    top: 150px;
+    left: 7vw;
+    position: absolute;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $main-color;
+  }
+
+  &__text {
+    max-width: 600px;
+    position: relative;
+
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: bold;
+    color: $main-color;
+  }
+
+  &__subtitle {
+    margin-top: 75px;
+
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: rgba(34, 53, 111, 0.5);
+  }
+}

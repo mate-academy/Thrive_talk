@@ -1,0 +1,21 @@
+.footer {
+  height: 80px;
+  padding: 0 12vw;
+  display: flex;
+  align-items: center;
+  background-color: $logo-color;
+
+  &__text {
+    position: absolute;
+    font-size: 14px;
+    line-height: 11px;
+
+    color: $secondary-color;
+
+    &::before {
+      position: relative;
+      content: "©";
+      left: -6px;
+    }
+  }
+}

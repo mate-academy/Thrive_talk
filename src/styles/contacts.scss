@@ -1,0 +1,52 @@
+.contacts {
+  position: relative;
+  height: 380px;
+
+  &__photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 380px;
+    width: 570px;
+
+    background-image: url(/images/6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__text-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 650px;
+  }
+
+  &__info {
+    margin-top: 100px;
+    width: 230px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 11px;
+
+    color: $main-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 30px;
+
+    color: rgba(34, 53, 111, 0.5);
+  }
+  
+  &__link {
+    color: rgba(34, 53, 111, 0.5);
+
+    &--blue {
+      color: #006dff;
+    }
+  }
+}
