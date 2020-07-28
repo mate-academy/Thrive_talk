@@ -1,0 +1,36 @@
+//
+.sixth-section {
+  overflow: hidden;
+  background-color: #22356f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  line-height: 35px;
+  &__article {
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    line-height: 53px;
+    flex-basis: 580px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 100px 0 0 180px;
+    &__contact {
+      font-size: 16px;
+      line-height: 12px;
+    }
+
+    &__nav {
+      @include button;
+      color: #62d0df;
+      font-size: 16px;
+      line-height: 23px;
+    }
+    &__title {
+      margin-bottom: 75px;
+      font-size: 64px;
+      line-height: 94px;
+    }
+  }
+}

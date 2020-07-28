@@ -1,0 +1,19 @@
+.seventh-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  &__img {
+    background-image: url(/images/autumn-goodman-242825.png);
+    width: 570px;
+    height: 380px;
+  }
+  &__info-block {
+    padding: 100px 68px 0;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(34, 53, 111, 0.5);
+    &__title {
+      color: #22356f;
+    }
+  }
+
+}

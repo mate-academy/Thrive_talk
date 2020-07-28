@@ -8,6 +8,8 @@
 @import "third-section";
 @import "fourth-section";
 @import "fifth-section";
+@import "sixth-section";
+@import "seventh-section";
 
 @font-face {
   font-family: Larsseit;
@@ -17,4 +19,10 @@
 body {
   font-family: Larsseit, sans-serif;
   overflow-x: hidden;
+}
+
+.footer {
+  background-color: #62d0df;
+  padding: 30px 180px;
+  color: #fff;
 }

@@ -17,7 +17,7 @@
 
   &__article__description {
     padding-top: 175px;
-    width: 36%;
+    max-width: 485px;
     color: #22356f;
     &__h1 {
       font-size: 48px;
@@ -72,5 +72,30 @@
       height: 150%;
       transform: rotate(25deg);
     }
+  }
+}
+
+@media (max-width: 1380px) {
+  .first__section {
+    padding: 25px 0 75px 80px;
+    &__article__description {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .first__section {
+    &__photo {
+      opacity: 0.5;
+    }
+
+  }
+}
+
+@media (max-width: 1000px) {
+  .first__section {
+    width: 100%;
   }
 }
