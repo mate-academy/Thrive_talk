@@ -26,18 +26,29 @@
   transform: translate(-50%);
 }
 @media screen and (max-width: 1024px) {
-  .about__header {
-    top: 18.75px;
-    font-weight: 700;
-  }
   .about {
-    padding-top: 75px;
-    padding-left: 37.5px;
+    padding: 100px 37.5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__header {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .about__text {
+    font-size: 24px;
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+  }
+}
+@media screen and (max-width: 520px) {
+  .about {
+    padding: 5%;
   }
   .about__text {
     font-size: 18px;
-    width: 90%;
-    margin-left: 0;
   }
 }
 

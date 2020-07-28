@@ -60,35 +60,32 @@
 }
 @media screen and (max-width: 800px) {
   .also {
-    height: 1328px;
+    height: 480px;
     padding-left: 18.75px;
     padding-top: 0;
   }
   .also__text {
-    margin-top: 150px;
+    margin-top: 75px;
   }
   .also__link {
-    top: 45%;
+    top: 92%;
     left: 18.75px;
   }
   .also__image {
-    width: 100%;
-    left: 0;
-    top: 50%;
+    display: none;
   }
 }
 @media screen and (max-width: 490px) {
   .also__text {
-    margin-top: 50px;
+    margin-top: 25px;
     font-size: 32px;
     line-height: 44px;
   }
   .also__link {
-    top: 45%;
     left: 18.75px;
   }
   .also__image {
-    top: 50%;
+    top: 80%;
     height: 50%;
   }
 }

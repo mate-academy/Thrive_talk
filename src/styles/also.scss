@@ -75,41 +75,41 @@ $block-height: 800px;
 	
 	@media screen and (max-width: 800px){
 		& {
-			height: $block-height*1.66;
+			height: $block-height*0.6;
 			padding-left: $base-margin/8;
 			padding-top: 0;
 		}
 		
 		&__text {
-			margin-top: $base-margin;
+			margin-top: $base-margin/2;
 		}
 		
 		&__link {
-			top: 45%;
+			top: 92%;
 			left: $base-margin/8;
 		}
 		
 		&__image {
-			width: 100%;
-			left: 0;
-			top: 50%;
+			// width: 100%;
+			// left: 0;
+			// top: 50%;
+			display: none;
 		}
 	}
 	
 	@media screen and (max-width: 490px) {
 		&__text {
-			margin-top: $base-margin/3;
+			margin-top: $base-margin/6;
 			font-size: 32px;
 			line-height: 44px;
 		}
 		
 		&__link {
-			top: 45%;
 			left: $base-margin/8;
 		}
 		
 		&__image {
-			top: 50%;
+			top: 80%;
 			height: 50%;
 		}
 	}

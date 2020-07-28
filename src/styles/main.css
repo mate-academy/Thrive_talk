@@ -267,7 +267,8 @@ input[type=button] {
   font-size: 14px;
   line-height: 16px;
   margin-right: 15px;
-  transition: all 500ms ease-in;
+  transition: all 300ms ease-in;
+  position: relative;
 }
 .nav__link:hover {
   color: #F9B640;
@@ -400,24 +401,6 @@ input[type=button] {
 .description__logo--lower {
   top: 240px;
 }
-@media screen and (max-width: 1650px) {
-  .description__header {
-    width: 450px;
-    font-size: 38px;
-    font-weight: 700;
-  }
-  .description__text {
-    font-size: 24px;
-    width: 450px;
-    line-height: 24px;
-  }
-  .description__image {
-    left: 70%;
-  }
-  .description__image-background {
-    left: 70%;
-  }
-}
 @media screen and (max-width: 1400px) {
   .description__image-background {
     display: none;
@@ -430,11 +413,19 @@ input[type=button] {
   }
   .description {
     padding-left: 100px;
+    overflow: hidden;
   }
   .description__image {
-    top: 25%;
-    left: 10%;
-    opacity: 0.4;
+    top: unset;
+    bottom: 0;
+    left: 0%;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+  }
+  .description__image:before {
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .description__text {
     width: 80%;
@@ -492,6 +483,15 @@ input[type=button] {
     font-size: 28px;
     line-height: 36px;
   }
+  .description__button {
+    position: absolute;
+  }
+  .description__button--1 {
+    bottom: 12%;
+  }
+  .description__button--2 {
+    bottom: 4%;
+  }
 }
 
 .features {
@@ -527,13 +527,18 @@ input[type=button] {
   position: absolute;
   right: 0;
   top: 0;
+  object-fit: cover;
 }
 @media screen and (max-width: 1280px) {
   .features {
     padding-left: 60px;
   }
   .features__text-box {
-    width: 400px;
+    width: 50%;
+  }
+  .features__image {
+    width: 40%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -614,18 +619,29 @@ input[type=button] {
   transform: translate(-50%);
 }
 @media screen and (max-width: 1024px) {
-  .about__header {
-    top: 18.75px;
-    font-weight: 700;
-  }
   .about {
-    padding-top: 75px;
-    padding-left: 37.5px;
+    padding: 100px 37.5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__header {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .about__text {
+    font-size: 24px;
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+  }
+}
+@media screen and (max-width: 520px) {
+  .about {
+    padding: 5%;
   }
   .about__text {
     font-size: 18px;
-    width: 90%;
-    margin-left: 0;
   }
 }
 
@@ -647,7 +663,8 @@ input[type=button] {
   width: 12px;
   border-radius: 50%;
   position: absolute;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
   left: -20px;
 }
 .blocks:before {
@@ -668,7 +685,7 @@ input[type=button] {
   height: 360px;
   position: relative;
   padding-top: 90px;
-  padding-left: 90px;
+  padding-left: 7%;
 }
 .blocks__square:after {
   content: "";
@@ -704,7 +721,7 @@ input[type=button] {
   flex: 1 0 33.33%;
   padding-top: 120px;
   position: relative;
-  padding-left: 112.5px;
+  padding-left: 7%;
 }
 .blocks__big-square:after {
   content: "";
@@ -787,6 +804,10 @@ input[type=button] {
     padding-right: 10px;
     font-size: 14px;
   }
+  .text-blocks__title {
+    padding: 15% 0;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 490px) {
   .text-blocks__block {
@@ -797,6 +818,9 @@ input[type=button] {
   .text-blocks__block {
     width: 100%;
     height: 280px;
+  }
+  .text-blocks__text {
+    width: 80%;
   }
 }
 
@@ -862,35 +886,32 @@ input[type=button] {
 }
 @media screen and (max-width: 800px) {
   .also {
-    height: 1328px;
+    height: 480px;
     padding-left: 18.75px;
     padding-top: 0;
   }
   .also__text {
-    margin-top: 150px;
+    margin-top: 75px;
   }
   .also__link {
-    top: 45%;
+    top: 92%;
     left: 18.75px;
   }
   .also__image {
-    width: 100%;
-    left: 0;
-    top: 50%;
+    display: none;
   }
 }
 @media screen and (max-width: 490px) {
   .also__text {
-    margin-top: 50px;
+    margin-top: 25px;
     font-size: 32px;
     line-height: 44px;
   }
   .also__link {
-    top: 45%;
     left: 18.75px;
   }
   .also__image {
-    top: 50%;
+    top: 80%;
     height: 50%;
   }
 }
@@ -968,9 +989,18 @@ input[type=button] {
   .contact {
     padding-left: 20px;
   }
+  .contact__small-header {
+    text-decoration: underline;
+  }
+  .contact__large-header {
+    margin-bottom: 50px;
+    width: 5%;
+  }
   .contact__text {
-    font-size: 18px;
-    line-height: 22px;
+    height: 50%;
+    width: 45%;
+    font-size: 26px;
+    line-height: 32px;
   }
 }
 
@@ -1043,10 +1073,11 @@ input[type=button] {
 @media screen and (max-width: 1280px) {
   .footer {
     grid-template-areas: "card-1 card-2 card-3" "photo photo photo" "copyright copyright copyright";
+    grid-template-columns: repeat(3, 1fr);
   }
   .footer__card {
-    padding: 50px 20px 0;
-    width: 150px;
+    padding: 5% 20%;
+    width: 100%;
   }
   .footer__image {
     width: 100%;
@@ -1056,6 +1087,7 @@ input[type=button] {
 @media screen and (max-width: 460px) {
   .footer {
     grid-template-areas: "card-1" "card-2" "card-3" "photo" "copyright";
+    grid-template-columns: repeat(1, 1fr);
     width: 100%;
   }
   .footer__image {
@@ -1063,11 +1095,13 @@ input[type=button] {
     background-size: cover;
   }
   .footer__card {
+    padding: 5% 25%;
     width: 100%;
-    padding-bottom: 20px;
+    text-align: center;
   }
   .footer__card-title {
     margin-bottom: 0;
+    text-align: center;
   }
   .footer__copyright {
     padding-left: 25px;

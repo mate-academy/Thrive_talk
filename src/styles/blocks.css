@@ -16,7 +16,8 @@
   width: 12px;
   border-radius: 50%;
   position: absolute;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
   left: -20px;
 }
 .blocks:before {
@@ -37,7 +38,7 @@
   height: 360px;
   position: relative;
   padding-top: 90px;
-  padding-left: 90px;
+  padding-left: 7%;
 }
 .blocks__square:after {
   content: "";
@@ -73,7 +74,7 @@
   flex: 1 0 33.33%;
   padding-top: 120px;
   position: relative;
-  padding-left: 112.5px;
+  padding-left: 7%;
 }
 .blocks__big-square:after {
   content: "";

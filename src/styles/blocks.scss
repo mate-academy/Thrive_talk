@@ -30,7 +30,8 @@ $card-pad: 90px;
 		width: $circle-size;
 		border-radius: 50%;
 		position: absolute;
-		top: 40%;
+		top: 50%;
+		transform: translateY(-50%);
 		left: -20px;
 	}
 }
@@ -67,7 +68,7 @@ $card-pad: 90px;
 		position: relative;
 		
 		padding-top: $sq-size / 4;
-		padding-left: $card-pad;
+		padding-left: 7%;
 		
 		&--lift {
 			background-color: #ffe2de;
@@ -100,7 +101,7 @@ $card-pad: 90px;
 		padding-top: $big-sq-size / 4 ;
 		position: relative;
 		
-		padding-left: $card-pad * 1.25;
+		padding-left: 7%;
 
 		&--physical {
 			background-color: #22356f;

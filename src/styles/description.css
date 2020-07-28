@@ -88,24 +88,6 @@
 .description__logo--lower {
   top: 240px;
 }
-@media screen and (max-width: 1650px) {
-  .description__header {
-    width: 450px;
-    font-size: 38px;
-    font-weight: 700;
-  }
-  .description__text {
-    font-size: 24px;
-    width: 450px;
-    line-height: 24px;
-  }
-  .description__image {
-    left: 70%;
-  }
-  .description__image-background {
-    left: 70%;
-  }
-}
 @media screen and (max-width: 1400px) {
   .description__image-background {
     display: none;
@@ -118,11 +100,19 @@
   }
   .description {
     padding-left: 100px;
+    overflow: hidden;
   }
   .description__image {
-    top: 25%;
-    left: 10%;
-    opacity: 0.4;
+    top: unset;
+    bottom: 0;
+    left: 0%;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+  }
+  .description__image:before {
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .description__text {
     width: 80%;
@@ -179,6 +169,15 @@
   .description__header {
     font-size: 28px;
     line-height: 36px;
+  }
+  .description__button {
+    position: absolute;
+  }
+  .description__button--1 {
+    bottom: 12%;
+  }
+  .description__button--2 {
+    bottom: 4%;
   }
 }
 

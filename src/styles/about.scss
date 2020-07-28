@@ -31,22 +31,38 @@ $padding-base: 150px;
 	}
 		
 	@media screen and (max-width: 1024px) {
-		&__header {
-			top: $padding-base/8;
-			font-weight: 700;
-		}
+
 		
 		& {
-			padding-top: $padding-base/2;
-			padding-left: $padding-base/4;
+			padding: $padding-base/1.5 $padding-base/4;
+			display: flex;
+			flex-direction: column;
+			
+			&__header {
+				font-weight: 700;
+				position: relative;
+				margin-bottom: 40px;
+			}
+			
+			&__text {
+				font-size: 24px;
+				width: 100%;
+				margin-left: 0;
+				position: relative;
+			}
+			
+			
+		}
+	}
+	
+	@media screen and (max-width: 520px) {
+		
+		& {
+			padding: 5%;
 		}
 		
 		&__text {
 			font-size: 18px;
-			width: 90%;
-			margin-left: 0;
 		}
-		
 	}
-	
 }

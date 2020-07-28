@@ -71,9 +71,18 @@
   .contact {
     padding-left: 20px;
   }
+  .contact__small-header {
+    text-decoration: underline;
+  }
+  .contact__large-header {
+    margin-bottom: 50px;
+    width: 5%;
+  }
   .contact__text {
-    font-size: 18px;
-    line-height: 22px;
+    height: 50%;
+    width: 45%;
+    font-size: 26px;
+    line-height: 32px;
   }
 }
 
