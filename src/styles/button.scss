@@ -6,9 +6,9 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $buttonColor;
+  border: 1px solid transparent;
 
   background-color: transparent;
-  border: none;
   transition: box-shadow 0.5s;
   cursor: pointer;
   outline: none;
@@ -19,7 +19,7 @@
   }
 
   &:hover {
-    border: 1px solid;
+    border-color: rgba(250,181,62,1);
     box-shadow: 1px 10px 26px -6px rgba(250,181,62,1);
   }
 
@@ -27,8 +27,10 @@
     color: #fff;
     background-color: $buttonColor;
     &:hover {
-      border: none;
-      box-shadow: none;
+      border: 1px solid;
+      color: rgba(250,181,62,1);
+      background-color: #fff;
+      box-shadow: 1px 10px 26px -6px rgba(250,181,62,1);
     }
   }
 }
