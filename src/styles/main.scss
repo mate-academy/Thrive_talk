@@ -18,13 +18,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/*
-@font-face {
-  font-family: "Larsseit";
-  src: url(/fonts/Larsseit/Larsseit-Bold.eot);
-  font-weight: normal;
-  font-style: normal;
-}*/
 
 html {
   font-family: "LarsseitBold", sans-serif;
@@ -32,18 +25,17 @@ html {
 }
 
 body {
-  /*background-color: #f4f9e2;*/
-  background-color: $secondary-color;
+  background-color: #f4f9e2;
 }
 
 .container {
   position: relative;
   max-width: 1440px;
-  margin: 0 auto;
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1440px) {
     -webkit-box-shadow: 0 0 50px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 0 0 50px 0 rgba(0,0,0,0.75);
     box-shadow: 0 0 50px 0 rgba(0,0,0,0.75);
+    margin: 0 auto;
   }
 }

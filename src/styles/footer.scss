@@ -5,6 +5,10 @@
   align-items: center;
   background-color: $logo-color;
 
+  @media (max-width: 992px) {
+    padding: 0 5vw;
+  }
+
   &__text {
     position: absolute;
     font-size: 14px;

@@ -11,27 +11,38 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header">
         <nav class="header__nav">
           <h3 class="header__subtitle">Thrivetalk</h3>
+          <input
+          type="checkbox"
+          id="header__input"
+          name="header__input"
+          class="header__input"
+          >
+          <label for="header__input" class="header__label">
+            <div class="header__label--line1"></div>
+            <div class="header__label--line2"></div>
+            <div class="header__label--line3"></div>
+          </label>
           <ul class="header__nav-list">
-            <li class="">
+            <li>
               <a href="#" class="header__nav-link">
                 Home
               </a>
             </li>
-            <li class="">
+            <li>
               <a href="#about" class="header__nav-link">
                 About
               </a>
             </li>
-            <li class="">
-              <a href="#sevices" class="header__nav-link">
+            <li>
+              <a href="#services" class="header__nav-link">
                 Services
               </a>
             </li>
-            <li class="">
-              <a href="#about" class="header__nav-link">
+            <li>
+              <a href="#also" class="header__nav-link">
                 Blog
               </a>
             </li>
@@ -42,17 +53,6 @@
         </nav>
 
         <section class="header__content">
-          <h3 class="header__content-subtitle">
-            Thrivetalk
-          </h3>
-          <h1 class="header__title">
-            HELPING YOU THRIVE IN ALL AREAS OF LIFE
-          </h1>
-          <p class="header__text">
-            Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
-          </p>
-          <button class="header__button">who am i</button>
-          <button class="header__button">what do i do</button>
           <div class="header__bgc-container">
             <div class="header__bgc"></div>
             <div class="header__bgc-2"></div>
@@ -63,6 +63,19 @@
                 alt="consulitation photo"
               >
             </div>
+          </div>
+          <h3 class="header__content-subtitle">
+            Thrivetalk
+          </h3>
+          <h1 class="header__title">
+            HELPING YOU THRIVE IN ALL AREAS OF LIFE
+          </h1>
+          <p class="header__text">
+            Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+          </p>
+          <div class="header__button-container">
+            <button class="header__button">who am i</button>
+            <button class="header__button">what do i do</button>
           </div>
         </section>
       </header>
@@ -81,11 +94,10 @@
             </p>
           </div>
           <div class="why-thrive__image">
-
           </div>
         </article>
 
-        <article class="about-us" id="#about">
+        <article class="about-us" id="about">
           <h3 class="about-us__title">about us</h3>
           <p class="about-us__text">
             We want to help you thrive! Whether you are just looking for someone to talk to, or are struggling with a mental wellness issue we’re here to help. Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
@@ -95,94 +107,98 @@
           </span>
         </article>
 
-        <section class="blocks blocks-small">
-          <div class="blocks__block blocks__block--pink">
-            <span class="blocks__block-caption">
-              Weight Lifting
-            </span>
-          </div>
-          <div class="blocks__block blocks__block--green">
-            <span class="blocks__block-caption">
-              Running & Spinning
-            </span>
-          </div>
-          <div class="blocks__block blocks__block--light-blue">
-            <span class="blocks__block-caption">
-              Pumping Iron
-            </span>
-          </div>
-          <div class="blocks__block blocks__block--blue">
-            <span class="blocks__block-caption">
-              Pumping Iron
-            </span>
-          </div>
+        <section class="blocks" id="services">
+          <section class="blocks-small">
+            <div class="blocks__block blocks__block--pink">
+              <span class="blocks__block-caption">
+                Weight Lifting
+              </span>
+            </div>
+            <div class="blocks__block blocks__block--green">
+              <span class="blocks__block-caption">
+                Running & Spinning
+              </span>
+            </div>
+            <div class="blocks__block blocks__block--light-blue">
+              <span class="blocks__block-caption">
+                Pumping Iron
+              </span>
+            </div>
+            <div class="blocks__block blocks__block--blue">
+              <span class="blocks__block-caption">
+                Pumping Iron
+              </span>
+            </div>
+          </section>
+
+          <section class="blocks-big">
+            <div class="blocks__block blocks__block--dark-blue">
+              <span class="blocks__block-caption">
+                Physical Health
+              </span>
+            </div>
+
+            <div class="blocks__block blocks__block--blue">
+              <span class="blocks__block-caption">
+                Mental Health
+              </span>
+            </div>
+
+            <div class="blocks__block blocks__block--img-bg">
+              <span class="blocks__block-caption">
+                Nutrition
+              </span>
+            </div>
+
+            <div class="blocks__block blocks__block--light-blue">
+              <span class="blocks__block-caption">
+                Gymnastics
+              </span>
+            </div>
+
+            <div class="blocks__block blocks__block--white">
+              <span class="blocks__block-caption">
+                Crossfit
+              </span>
+            </div>
+
+            <div class="blocks__block blocks__block--purple">
+              <span class="blocks__block-caption">
+                Aerobics
+              </span>
+            </div>
+          </section>
+
+          <section class="text-blocks" id="#services">
+            <div class="blocks__text">
+              <h2 class="blocks__text-title">Nutritional Plans</h2>
+              <p class="blocks__text-content">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy</p>
+            </div>
+            <div class="blocks__text">
+              <h2 class="blocks__text-title">Weight Loss</h2>
+              <p class="blocks__text-content">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
+            </div>
+            <div class="blocks__text">
+              <h2 class="blocks__text-title">Mental Peace</h2>
+              <p class="blocks__text-content">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
+            </div>
+            <div class="blocks__text">
+              <h2 class="blocks__text-title">Home Training</h2>
+              <p class="blocks__text-content"> Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
+            </div>
+            <div class="blocks__text">
+              <h2 class="blocks__text-title">Work/Life Balance</h2>
+              <p class="blocks__text-content">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
+            </div>
+            <div class="blocks__text">
+              <h2 class="blocks__text-title">Cardio</h2>
+              <p class="blocks__text-content">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy</p>
+            </div>
+
+          </section>
         </section>
-        <section class="blocks blocks-big">
-          <div class="blocks__block blocks__block--dark-blue">
-            <span class="blocks__block-caption">
-              Physical Health
-            </span>
-          </div>
 
-          <div class="blocks__block blocks__block--blue">
-            <span class="blocks__block-caption">
-              Mental Health
-            </span>
-          </div>
-
-          <div class="blocks__block blocks__block--img-bg">
-            <span class="blocks__block-caption">
-              Nutrition
-            </span>
-          </div>
-
-          <div class="blocks__block blocks__block--light-blue">
-            <span class="blocks__block-caption">
-              Gymnastics
-            </span>
-          </div>
-
-          <div class="blocks__block blocks__block--white">
-            <span class="blocks__block-caption">
-              Crossfit
-            </span>
-          </div>
-
-          <div class="blocks__block blocks__block--purple">
-            <span class="blocks__block-caption">
-              Aerobics
-            </span>
-          </div>
-        </section>
-        <section class="blocks text-blocks" id="#services">
-          <div class="blocks__text">
-            <h2 class="blocks__text-title">Nutritional Plans</h2>
-            <p class="blocks__text-content">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy</p>
-          </div>
-          <div class="blocks__text">
-            <h2 class="blocks__text-title">Weight Loss</h2>
-            <p class="blocks__text-content">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
-          </div>
-          <div class="blocks__text">
-            <h2 class="blocks__text-title">Mental Peace</h2>
-            <p class="blocks__text-content">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
-          </div>
-          <div class="blocks__text">
-            <h2 class="blocks__text-title">Home Training</h2>
-            <p class="blocks__text-content"> Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
-          </div>
-          <div class="blocks__text">
-            <h2 class="blocks__text-title">Work/Life Balance</h2>
-            <p class="blocks__text-content">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
-          </div>
-          <div class="blocks__text">
-            <h2 class="blocks__text-title">Cardio</h2>
-            <p class="blocks__text-content">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy</p>
-          </div>
-
-        </section>
-
-        <article class="also">
+        <article class="also" id="also">
           <div class="also__photo"></div>
           <div class="also__text-container">
             <span class="also__title">
@@ -220,7 +236,7 @@
           <div class="contact-us__photo"></div>
         </article>
 
-        <article class="contacts" id="#contacts">
+        <article class="contacts" id="contacts">
           <div class="contacts__photo">
           </div>
           <div class="contacts__text-container">

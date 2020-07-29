@@ -1,7 +1,5 @@
 .blocks-small {
-  margin-top: 100px;
   display: grid;
-  justify-content: center;
   
   grid-template-columns: repeat(4, minmax(100px, 360px));
   grid-template-rows: repeat(1, 360px);
@@ -9,32 +7,45 @@
   @media (max-width: 992px) {
     grid-template: repeat(2, minmax(200px, 360px)) / repeat(2, 1fr);
   }
+  
+  @media (max-width: 600px) {
+    grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+  }
 }
 
 .blocks-big {
   margin-top: 120px;
   display: grid;
   grid-template: repeat(2, minmax(360px, 480px)) /
-    repeat(3, minmax(360px, 480px));
+    repeat(3, minmax(300px, 480px));
 
   @media (max-width: 992px) {
     grid-template: repeat(3, minmax(200px, 360px)) / repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+    margin-top: 0;
   }
 }
 
 .text-blocks {
   margin-top: 20px;
-  max-height: 600px;
 
   display: grid;
   grid-template: repeat(2, 240px) / repeat(3, minmax(360px, 480px));
 
   @media (max-width: 992px) {
-    grid-template: repeat(3, 240px) / repeat(2, 1fr);
+    grid-template: repeat(3, minmax(200px, 300px)) / repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template: repeat(4, 1fr) / repeat(1, 1fr);
   }
 }
 
 .blocks {
+  background-color: $secondary-color;
 
   &__block {
     text-align: start;
@@ -55,6 +66,20 @@
       height: 2px;
       background-color: $secondary-color;
       content: "";
+    }
+
+    @media (max-width: 992px) {
+      padding-top: 20%;
+    }
+  
+    @media (max-width: 600px) {
+      padding-top: 15%;
+      height: 360px;
+    }
+
+    @media (max-width: 400px) {
+      padding-top: 20%;
+      height: 360px;
     }
 
     &--pink {
@@ -115,6 +140,14 @@
     justify-items: center;
     align-items: flex-start;
     padding: 55px 105px 37px;
+
+    @media (max-width: 992px) {
+      padding: 55px 5vw 37px;
+    }
+
+    @media (max-width: 600px) {
+      padding: 55px 5vw 37px;
+    }
   }
 
   &__text-title {
