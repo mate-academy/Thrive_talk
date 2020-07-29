@@ -685,7 +685,7 @@ input[type=button] {
   height: 360px;
   position: relative;
   padding-top: 90px;
-  padding-left: 7%;
+  padding-left: 57.2px;
 }
 .blocks__square:after {
   content: "";
@@ -721,7 +721,7 @@ input[type=button] {
   flex: 1 0 33.33%;
   padding-top: 120px;
   position: relative;
-  padding-left: 7%;
+  padding-left: 65.6px;
 }
 .blocks__big-square:after {
   content: "";

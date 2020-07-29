@@ -1,6 +1,7 @@
 $sq-size: 360px;
 $big-sq-size: 480px;
 $circle-size: 12px;
+$circle-offset: 20px;
 $card-pad: 90px;
 
 @mixin block-text {
@@ -32,7 +33,7 @@ $card-pad: 90px;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		left: -20px;
+		left: -$circle-offset;
 	}
 }
 
@@ -68,7 +69,7 @@ $card-pad: 90px;
 		position: relative;
 		
 		padding-top: $sq-size / 4;
-		padding-left: 7%;
+		padding-left: $sq-size/100*7 + $circle-size + $circle-offset;
 		
 		&--lift {
 			background-color: #ffe2de;
@@ -101,7 +102,7 @@ $card-pad: 90px;
 		padding-top: $big-sq-size / 4 ;
 		position: relative;
 		
-		padding-left: 7%;
+		padding-left: $big-sq-size/100*7 + $circle-size + $circle-offset;
 
 		&--physical {
 			background-color: #22356f;
