@@ -12,6 +12,11 @@
     padding: 100px 40% 40px 12vw;
     min-width: 750px;
 
+    @media (min-width: 1440px) {
+      padding: 100px 0 40px 180px;
+      width: 900px;
+    }
+
     @media (max-width: 992px) {
       padding: 0 20vw 20px 5vw;
       width: 50%;

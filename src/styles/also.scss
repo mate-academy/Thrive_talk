@@ -35,6 +35,11 @@
     padding: 100px 12vw 42px 50%;
     min-width: 750px;
 
+    
+    @media (min-width: 1440px) {
+      padding: 100px 180px 42px 580px;
+    }
+
     @media (max-width: 992px) {
       padding: 100px 0 42px 50vw;
     }

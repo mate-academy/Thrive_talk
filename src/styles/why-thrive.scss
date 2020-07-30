@@ -6,6 +6,10 @@
   background-color: $logo-color;
   color: $secondary-color;
 
+  @media (min-width: 1440px) {
+    padding: 150px 180px 80px;
+  }
+
   @media (max-width: 998px) {
     padding: 50px 5vw;
   }

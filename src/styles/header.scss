@@ -33,7 +33,7 @@
 
   &__label {
     position: absolute;
-    right: 5vw;
+    margin-right: 4vw;
     top: 40px;
     color: $logo-color;
     visibility: hidden;
@@ -41,10 +41,6 @@
 
     @media (max-width: 768px) {
       visibility: visible;
-      right: 5vh;
-    }
-
-    @media (max-width: 600px) {
       right: 4vw;
     }
 
@@ -87,6 +83,10 @@
     font-size: 24px;
     line-height: 27px;
 
+    @media (min-width: 1440px) {
+      margin-left: 180px;
+    }
+
     @media (max-width: 992px) {
       margin-left: 5vw;
     }
@@ -111,7 +111,7 @@
       font-size: 20px;
       background-color: $logo-color;
       color: $secondary-color;
-      border-radius: 20px;
+      border-radius: 50px;
 
       visibility: hidden;
       opacity: 0;
@@ -230,6 +230,10 @@
       transform: scale(1.1);
     }
 
+    @media (min-width: 1440px) {
+      margin-right: 180px;
+    }
+
     @media (max-width: 992px) {
       margin-right: 5vw;
     }
@@ -243,6 +247,10 @@
   &__content {
     padding: 190px 12vw 0;
     max-width: 1000px;
+
+    @media (min-width: 1440px) {
+      padding: 190px 180px 0;
+    }
 
     @media (max-width: 992px) {
       padding: 100px 5vw 5vw;
@@ -330,6 +338,10 @@
     top: 0;
     overflow: hidden;
     z-index: -1;
+
+    @media (min-width: 1440px) {
+      height: 840px;
+    }
 
     @media (max-width: 992px) {
       display: none;

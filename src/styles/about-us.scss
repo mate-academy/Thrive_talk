@@ -26,6 +26,10 @@
 
     color: $main-color;
 
+    @media (min-width: 1440px) {
+      left: 180px;
+    }
+
     @media (max-width: 998px) {
       position: static;
       margin-bottom: 40px;
