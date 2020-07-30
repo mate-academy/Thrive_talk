@@ -1,4 +1,4 @@
-$sq-size: 360px;
+$small-sq-size: 360px;
 $big-sq-size: 480px;
 $circle-size: 12px;
 $circle-offset: 20px;
@@ -14,10 +14,10 @@ $card-pad: 90px;
 @mixin block-line {
 	&:after {
 		content: "";
-		width: 86%;
+		width: $small-sq-size;
 		position: absolute;
-		top: 20%;
-		left: 7%;
+		left: -5%;
+		top: -30%;
 		height: 1px;
 		background: #fff;
 	}
@@ -31,9 +31,9 @@ $card-pad: 90px;
 		width: $circle-size;
 		border-radius: 50%;
 		position: absolute;
+		left: -5%;
 		top: 50%;
 		transform: translateY(-50%);
-		left: -$circle-offset;
 	}
 }
 
@@ -44,11 +44,6 @@ $card-pad: 90px;
 	justify-content:center ;
 	flex-wrap: wrap;
 	position: relative;
-
-	&__text {
-		@include block-bullet;
-		position: relative;
-	}
 	
 	&:before {
 		content: "WE CAN HELP YOU WITH";
@@ -57,19 +52,26 @@ $card-pad: 90px;
 		line-height: 19px;
 		letter-spacing: 0.06em;
 		position: absolute;
-		top: -$sq-size/10;
+		top: -$small-sq-size/10;
+	}
+
+	&__text {
+		@include block-bullet;
+		@include block-line;
+		padding-left: 2%;
+		display: flex;
+		position: relative;
 	}
 	
 	&__square {
 		
 		@include block-text;
-		@include block-line;
+
 		flex: 1 0 25%;
-		height: $sq-size;
+		height: $small-sq-size;
 		position: relative;
 		
-		padding-top: $sq-size / 4;
-		padding-left: $sq-size/100*7 + $circle-size + $circle-offset;
+		padding: 72px 52px;
 		
 		&--lift {
 			background-color: #ffe2de;
@@ -94,15 +96,28 @@ $card-pad: 90px;
 	}
 	
 	&__big-square {
-		@include block-line;
 		@include block-text;
+		
+		& > .blocks__text {
+			@mixin block-line {
+				&:after {
+					content: "";
+					width: $big-sq-size;
+					position: absolute;
+					left: -5%;
+					top: -20%;
+					height: 1px;
+					background: #fff;
+				}
+			}
+		}
 		
 		height: $big-sq-size;
 		flex: 1 0 33.33%;
-		padding-top: $big-sq-size / 4 ;
+		padding-top: 96px;
 		position: relative;
 		
-		padding-left: $big-sq-size/100*7 + $circle-size + $circle-offset;
+		padding-left: 72px;
 
 		&--physical {
 			background-color: #22356f;
