@@ -58,9 +58,6 @@
     height: 100%;
     object-fit: cover;
   }
-  .contact__small-header {
-    text-decoration: overline;
-  }
   .contact__large-header {
     margin-top: 20px;
     font-size: 36px;
@@ -70,9 +67,6 @@
 @media screen and (max-width: 490px) {
   .contact {
     padding-left: 20px;
-  }
-  .contact__small-header {
-    text-decoration: underline;
   }
   .contact__large-header {
     margin-bottom: 50px;

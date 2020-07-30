@@ -22,6 +22,11 @@
 		}
 	}
 	
+	&__button-link {
+		text-decoration: none;
+		color: #fff;
+	}
+	
 	&__link {
 		text-decoration: none;
 		color: #22356F;
@@ -59,6 +64,10 @@
 		&:hover {
 			color: #62D0DF;
 			background-color: #fff;
+			
+			& > .nav__button-link {
+				color: #62D0DF;
+			}
 		}
 	}
 	

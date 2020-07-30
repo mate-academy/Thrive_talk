@@ -9,15 +9,17 @@
   <body>
     <nav class="nav">
       <li class="nav__list">
-        <ul><a href="#" class="nav__link">Home</a></ul>
-        <ul><a href="#" class="nav__link">About</a></ul>
-        <ul><a href="#" class="nav__link">Services</a></ul>
+        <ul><a href="#home" class="nav__link">Home</a></ul>
+        <ul><a href="#about" class="nav__link">About</a></ul>
+        <ul><a href="#services" class="nav__link">Services</a></ul>
         <ul><a href="#" class="nav__link">Blog</a></ul>
       </li>
-      <button class="nav__button">Contact Us</button>
+      <button class="nav__button">
+        <a href="#contact" class="nav__button-link">Contact Us</a>
+      </button>
     </nav>
     <main class="main">
-      <section class="description">
+      <section class="description" id="home">
         <span class="description__logo description__logo--top">Thrivetalk</span>
         <span class="description__logo description__logo--lower">Thrivetalk</span>
         <h1 class="description__header">HELPING YOU THRIVE IN ALL AREAS OF LIFE</h1>
@@ -44,7 +46,7 @@
         </div>
         <img src="/2.34844cc1.png" alt="features image" class="features__image">
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="about__header">About Us</h2>
         <p class="about__text">
           We want to help you thrive! Whether you are just looking for someone to talk to, or are struggling 
@@ -85,7 +87,7 @@
           <span class="blocks__text">Aerobics</span>
         </div>
       </section>
-      <section class="text-blocks">
+      <section class="text-blocks" id="services">
         <div class="text-blocks__block">
           <h1 class="text-blocks__title">Nutritional Plans</h1>
           <p class="text-blocks__text">
@@ -134,7 +136,7 @@
         <a href="#" class="also__link">Get Help Now</a>
         <img src="/4.f13eda07.png" alt="also image" class="also__image">
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2 class="contact__small-header">Contact Us</h2>
         <h1 class="contact__large-header">Ready. Set. Smile</h1>
         <p class="contact__text">

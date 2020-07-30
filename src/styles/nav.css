@@ -20,6 +20,10 @@
 .nav__list ul {
   position: relative;
 }
+.nav__button-link {
+  text-decoration: none;
+  color: #fff;
+}
 .nav__link {
   text-decoration: none;
   color: #22356F;
@@ -54,6 +58,9 @@
 .nav__button:hover {
   color: #62D0DF;
   background-color: #fff;
+}
+.nav__button:hover > .nav__button-link {
+  color: #62D0DF;
 }
 @media screen and (max-width: 1024px) {
   .nav {

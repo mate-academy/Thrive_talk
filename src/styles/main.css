@@ -261,6 +261,10 @@ input[type=button] {
 .nav__list ul {
   position: relative;
 }
+.nav__button-link {
+  text-decoration: none;
+  color: #fff;
+}
 .nav__link {
   text-decoration: none;
   color: #22356F;
@@ -295,6 +299,9 @@ input[type=button] {
 .nav__button:hover {
   color: #62D0DF;
   background-color: #fff;
+}
+.nav__button:hover > .nav__button-link {
+  color: #62D0DF;
 }
 @media screen and (max-width: 1024px) {
   .nav {
@@ -979,9 +986,6 @@ input[type=button] {
     height: 100%;
     object-fit: cover;
   }
-  .contact__small-header {
-    text-decoration: overline;
-  }
   .contact__large-header {
     margin-top: 20px;
     font-size: 36px;
@@ -991,9 +995,6 @@ input[type=button] {
 @media screen and (max-width: 490px) {
   .contact {
     padding-left: 20px;
-  }
-  .contact__small-header {
-    text-decoration: underline;
   }
   .contact__large-header {
     margin-bottom: 50px;
@@ -1081,6 +1082,10 @@ input[type=button] {
   .footer__card {
     padding: 5% 20%;
     width: 100%;
+  }
+  .footer__card-title {
+    margin-bottom: 12px;
+    height: auto;
   }
   .footer__image {
     width: 100%;
