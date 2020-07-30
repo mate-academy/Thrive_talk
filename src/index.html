@@ -3,11 +3,73 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Thrive Talk</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <div class="header__image"></div>
+      <div class="header__image-bg"></div>
+      <div class="header__image-bg2"></div>
+      <article class="header__wrapper">
+        <div class="header__company">
+          ThriveTalk
+        </div>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active">
+              <a href="#home" class="nav__link">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="header__button">
+          Contact us
+        </button>
+      </article>
+
+      <article class="promo header__promo">
+        <div class="promo__company">
+          Thrivetalk
+        </div>
+
+        <h1 class="promo__title">
+          HELPING YOU THRIVE IN ALL AREAS OF LIFE
+        </h1>
+
+        <p class="promo__description">
+          Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+        </p>
+
+        <div class="promo__wrapper">
+          <button class="button button--isActive promo__button">
+            WHO AM I
+          </button>
+
+          <button class="button promo__button">
+            WHAT DO I DO
+          </button>
+        </div>
+
+      </article>
+    </header>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
