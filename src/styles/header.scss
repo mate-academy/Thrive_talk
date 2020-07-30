@@ -2,6 +2,10 @@
   background: #f4f9e2;
   padding-top: 27px;
   padding-bottom: 75px;
+  
+  @media (max-width: 425px) {
+    height: 100vh;
+  }
 
   &__image {
     z-index: 3;
@@ -14,6 +18,11 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media (max-width: 1024px) {
+      width: 700px;
+      height: 445px;
+    }
   }
 
   &__image-bg {
@@ -76,6 +85,33 @@
     margin-top: 165px;
     margin-left: 178px;
     width: 480px;
+
+    @media (max-width: 1300px) {
+      margin-left: $containerLeftPadding1300px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-left: $containerPadding1024px;
+      margin-top: 100px;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 70px;
+      width: 50%;
+    }
+
+    @media (max-width: 685px) {
+      width: 55%;
+    }
+
+    @media (max-width: 425px) {
+      margin: 70px $containerPadding425px;
+      width: 85%;
+    }
+
+    @media (max-height: 720px) {
+      margin-top: 30px;
+    }
   }
 
   &__company {

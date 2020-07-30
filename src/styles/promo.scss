@@ -29,11 +29,39 @@
     margin-top: 80px;
     line-height: 42px;
     color: $textColor;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      width: 100%;
+    }
+
+    @media (max-width: 625px) {
+      width: 80%;
+    }
+
+    @media (max-height: 720px) {
+      margin-top: 30px;
+    }
+
+    @media (max-height: 600px) {
+      line-height: 30px;
+    }
   }
 
   &__wrapper {
     display: flex;
     margin-top: 63px;
+
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 625px) {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__button {
