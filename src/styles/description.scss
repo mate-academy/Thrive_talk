@@ -72,7 +72,17 @@ $base-pad: 300px;
 		&:hover {
 			color: #fff;
 			background-color: $alternate-color;
+			
+			& > a {
+				color:#fff;
+			}
 		}
+	}
+	
+	&__link {
+		color: $alternate-color;
+		text-decoration: none;
+
 	}
 	
 	&__image {

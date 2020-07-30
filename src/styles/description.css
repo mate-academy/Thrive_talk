@@ -41,6 +41,13 @@
   color: #fff;
   background-color: #FAB63E;
 }
+.description__button:hover > a {
+  color: #fff;
+}
+.description__link {
+  color: #FAB63E;
+  text-decoration: none;
+}
 .description__image {
   position: absolute;
   height: 545px;
