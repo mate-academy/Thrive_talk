@@ -1,12 +1,14 @@
 @import "utils";
 @import "reset";
+@import "container";
 @import "header";
 @import "nav";
 @import "button";
 @import "promo";
+@import "why";
 
 body {
-  background: #e5e5e5;
+  background: #fff;
 }
 
 html {
