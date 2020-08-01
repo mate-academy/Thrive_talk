@@ -7,12 +7,43 @@
     height: 380px;
   }
   &__info-block {
-    padding: 100px 68px 0;
+    padding: 100px 20px 0;
     font-size: 14px;
     line-height: 23px;
+    max-width: 200px;
     color: rgba(34, 53, 111, 0.5);
+    &__discription a {
+      color: #fff;
+    }
     &__title {
       color: #22356f;
+    }
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .seventh-section {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(91, 99, 109, 0.5),
+    rgba(24, 23, 23, 0.5)),
+      url(/images/autumn-goodman-242825.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__info-block {
+
+      &__title {
+        color: #fff;
+      }
+      color: rgb(255, 255, 255);
+      padding: 0 20px;
+      width: 300px;
+    }
+    &__img {
+      display: none;
     }
   }
 

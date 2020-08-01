@@ -14,3 +14,14 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 1000px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 500px;
+    @include mobFontStyleArticle;
+  }
+}

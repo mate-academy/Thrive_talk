@@ -1,22 +1,12 @@
-@mixin button {
-  padding: 10px 30px;
-  text-transform: uppercase;
-  color: #fab63e;
-  border: 1px solid transparent;
-  transition: 0.25s;
-  &:hover {
-    background-color: #fab63e;
-    color: #fff;
-  }
-}
-
 .first__section {
-  padding: 25px 0 75px 180px;
-  background-color: #f4f9e2;
-  width: 70%;
-
+  overflow: hidden;
+  background: linear-gradient(to right, #f4f9e2 80%,#fff 80%,#fff 100%);
+  position: relative;
   &__article__description {
-    padding-top: 175px;
+    position: relative;
+    z-index: 3;
+    margin-top: 175px;
+    padding: 0 0 30px;
     max-width: 485px;
     color: #22356f;
     &__h1 {
@@ -41,6 +31,7 @@
 
   &__photo-shadow {
     position: absolute;
+    z-index: 1;
     top: 0;
     right: -100px;
     width: 810px;
@@ -52,6 +43,7 @@
 
   &__photo {
     position: absolute;
+    z-index: 2;
     top: 100px;
     right: -100px;
     width: 810px;
@@ -75,16 +67,6 @@
   }
 }
 
-@media (max-width: 1380px) {
-  .first__section {
-    padding: 25px 0 75px 80px;
-    &__article__description {
-      position: relative;
-      z-index: 1;
-    }
-  }
-}
-
 @media (max-width: 1250px) {
   .first__section {
     &__photo {
@@ -96,6 +78,27 @@
 
 @media (max-width: 1000px) {
   .first__section {
+    &__article__description {
+      padding: 20px;
+      &__h1 {
+        @include mobFontStyleTitle;
+      }
+      &__p {
+        @include mobFontStyleArticle;
+      }
+
+      &__nav__item {
+        font-size: 12px;
+        color: rgb(7, 7, 7);
+      }
+    }
     width: 100%;
+  }
+
+  .header {
+    &__nav,
+    &__name {
+      display: none;
+    }
   }
 }

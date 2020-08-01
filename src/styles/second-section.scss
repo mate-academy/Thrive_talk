@@ -3,15 +3,13 @@
   background-color: #62d0df;
   color: #fff;
   display: flex;
+  flex-shrink: 1;
   justify-content: space-between;
   font-size: 24px;
   line-height: 35px;
   &__article {
     align-self: center;
-    flex-basis: 555px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    padding-left: 180px;
+    padding: 50px 50px 0 0;
     &__title {
       margin-bottom: 75px;
       &--bold-text {
@@ -20,15 +18,35 @@
     }
   }
   &__photo {
+
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    justify-self: end;
+
   }
 }
 
-@media (max-width:1360px) {
+@media (max-width: 1000px) {
   .second-section {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(59, 67, 75, 0.5),
+    rgba(24, 23, 23, 0.5)),
+      url(/images/second-section.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+
     &__article {
-      padding: 0 20px 0 80px;
+      color: rgb(255, 255, 255);
+      padding: 50px 20px;
+      font-size: 26px;
+      @include mobFontStyleArticle;
+
+    }
+    &__photo {
+      display: none;
     }
   }
+
 }

@@ -12,6 +12,8 @@ $cLightBlue: #62d0df;
 
   &__photo {
     width: 480px;
+    height: 800px;
+    background-image: url(/images/fifth-section.png);
   }
 
   &__article {
@@ -33,4 +35,32 @@ $cLightBlue: #62d0df;
       line-height: 23px;
     }
   }
+}
+
+@media (max-width: 1000px) {
+  .fifth-section {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(60, 65, 71, 0.5),
+    rgba(24, 23, 23, 0.5)),
+      url(/images/fifth-section.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__article {
+      color: rgb(255, 255, 255);
+      padding: 0 20px;
+      @include mobFontStyleArticle;
+      max-width: 500px;
+      &__nav {
+        background-color: rgba(6, 53, 110, 0.5);
+      }
+    }
+
+    &__photo {
+      display: none;
+    }
+  }
+
 }

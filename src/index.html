@@ -9,21 +9,40 @@
   </head>
   <body>
     <script type="text/javascript" src="scripts/main.js"></script>
-    <section class="first__section">
+    <section class="first__section container padding-left" id="first-section">
       <header class="header">
         <div class="header__name" >
           <h3 class="company__name">Thrivetalk</h3>
         </div>
         <nav class="header__nav">
           <ul class="nav__list">
-            <a href=""><li class="nav__list__item">Home</li></a>
-            <a href=""><li class="nav__list__item">About</li></a>
-            <a href=""><li class="nav__list__item">Services</li></a>
+            <a href="#first-section"><li class="nav__list__item">Home</li></a>
+            <a href="#third-section"><li class="nav__list__item">About</li></a>
+            <a href="#fourth-section"><li class="nav__list__item">Services</li></a>
             <a href=""><li class="nav__list__item">Blog</li></a>
           </ul>
         </nav>
         <div>
-          <button class="header__button">Contact us</button>
+          <a href="#seventh-section"><button class="header__button">Contact us</button></a>
+        </div>
+        <div class="header__mob-menu">
+          <input
+           type="checkbox"
+           class="header__mob-menu__check"
+           id="checked"
+           checked
+           >
+          <label class="header__mob-menu__burger" for="checked">
+            <span class="header__mob-menu__burger__item top"></span>
+            <span class="header__mob-menu__burger__item middle"></span>
+            <span class="header__mob-menu__burger__item bottom"></span>
+          </label>
+          <ul class="header__mob-menu__nav-list">
+            <a href="#first-section"><li class="nav__list__item">Home</li></a>
+            <a href="#third-section"><li class="nav__list__item">About</li></a>
+            <a href="#fourth-section"><li class="nav__list__item">Services</li></a>
+            <a href=""><li class="nav__list__item">Blog</li></a>
+          </ul>
         </div>
       </header>
       <article class="first__section__article__description">
@@ -45,7 +64,7 @@
       </div>
     </section>
 
-    <section class="second-section">
+    <section class="second-section container padding-left" id="second-section">
       <article class="second-section__article">
         <h3 class="second-section__article__title">Why Thrive?</h3>
         <p class="second-section__article__title__text">
@@ -63,7 +82,7 @@
       >
     </section>
 
-    <section class="third-section">
+    <section class="third-section container" id="third-section">
       <article class="about-us">
         <h5 class="about-us__title">About us</h5>
         <p class="about-us__text">
@@ -75,7 +94,7 @@
       </article>
     </section>
 
-    <section class="fourth-section">
+    <section class="fourth-section container" id="fourth-section">
       <h2 class="section-title">WE CAN HELP YOU WITH</h2>
       <ul class="four-block">
         <li class="four-block__item"><span class="four-block__item__span">Weight Lifting</span></li>
@@ -138,13 +157,8 @@
       </div>
     </section>
 
-    <section class="fifth-section">
-      <img
-        class="fifth-section__photo"
-        src="./images/fifth-section.png"
-        alt=""
-      >
-
+    <section class="fifth-section container" id="fifth-section">
+      <div class="fifth-section__photo"></div>
       <article class="fifth-section__article">
         <h3 class="fifth-section__article__title">YOU SHOULD ALSO KNOW</h3>
         <p class="fifth-section__article__text">
@@ -157,7 +171,7 @@
       </article>
     </section>
 
-    <section class="sixth-section">
+    <section class="sixth-section container" id="sixth-section">
       <article class="sixth-section__article reverce-article">
         <h5 class="sixth-section__article__contact">CONTACT US</h5>
         <h2 class="sixth-section__article__title big-text">Ready. Set. Smile</h2>
@@ -173,7 +187,7 @@
         alt="">
     </section>
 
-    <section class="seventh-section">
+    <section class="seventh-section container" id="seventh-section">
       <div class="seventh-section__img"></div>
       <div class="seventh-section__info-block">
         <h5 class="seventh-section__info-block__title">SOME INFO</h5>
@@ -198,6 +212,7 @@
           Mo-Fr: 8:00-19:00 <br> Sa: 8:00-14:00 <br> Su: closed
         </p>
       </div>
+
     </section>
     <nav class="footer"><span class="footer__text">&#169 Copyright - ThriveTalk  2017</span></nav>
   </body>

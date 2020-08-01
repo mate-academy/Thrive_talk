@@ -2,6 +2,7 @@ $four-blockSizeX: 360px;
 $four-blockSizeY: 360px;
 $three-blockSizeX: 480px;
 $three-blockSizeY: 480px;
+$mobThree-blockSizeY: 300px;
 
 @mixin spanBefore {
   content: "\2022";
@@ -65,7 +66,7 @@ $three-blockSizeY: 480px;
 }
 
 .three-block {
-  padding-top: 120px;
+  margin-top: 120px;
   display: flex;
   flex-wrap: wrap;
   color: #fff;
@@ -138,5 +139,33 @@ $three-blockSizeY: 480px;
     color: rgba(34, 53, 111, 0.5);
     font-size: 16px;
     line-height: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .discription {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+    &__block {
+      padding: 0;
+    }
+  }
+
+  .three-block {
+    margin-top: 540px;
+
+    &__item {
+      height: $mobThree-blockSizeY;
+    }
+  }
+  .four-block {
+    flex-wrap: wrap;
+
+    &__item {
+      height: 300px;
+    }
   }
 }
