@@ -2,6 +2,15 @@
 @import "fonts";
 @import "typography";
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Larrseit, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
 body {
   background: $c-gray;
 }
