@@ -1,6 +1,5 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
-  }
+@mixin font-manage($font-size, $line-height, $letter-spacing) {
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
 }

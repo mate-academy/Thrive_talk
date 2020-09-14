@@ -1,4 +1,10 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+%title {
+  @include font-manage (24px, 27px, -0.04em);
+  color: $service-color;
+}
+
+%header-img {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

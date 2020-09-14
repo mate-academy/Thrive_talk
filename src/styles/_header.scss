@@ -1,0 +1,137 @@
+.header {
+  position: relative;
+  background: linear-gradient(to right, $header-color 81%, #fff 19%);
+  padding: 27px 8vw 20px 5vw;
+  overflow: hidden;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+  }
+
+  &__title {
+    @extend %title;
+  }
+
+  &__button {
+    z-index: 3;
+    width: 150px;
+    height: 50px;
+    background-color: $service-color;
+    border-radius: 50px;
+    border-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+
+    &:focus,
+    &:hover {
+      color: $service-color;
+      background-color: white;
+      border: 1px solid $service-color;
+    }
+  }
+
+  &__burger {
+    visibility: hidden;
+    position: absolute;
+    top: 35px;
+    right: 8vw;
+    background-image: url(../images/menu.svg);
+    width: 18px;
+    height: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+
+  &__toggler {
+    display: none;
+
+    &:checked ~ .header__burger {
+      background-image: url(../images/close.svg);
+      @extend %header-img;
+      width: 18px;
+      height: 12px;
+    }
+
+    &:checked ~ .header__nav {
+      display: block;
+    }
+
+    &:checked ~ .header__title {
+      display: none;
+    }
+  }
+
+  &__info {
+    max-width: 490px;
+  }
+
+  &__figure {
+    z-index: 1;
+    position: absolute;
+    right: -170px;
+    top: -20px;
+    width: 800px;
+    height: 545px;
+    background-image: url(../images/header-part.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__image {
+    z-index: 2;
+    position: absolute;
+    top: 40px;
+    right: -170px;
+    width: 800px;
+    height: 545px;
+    background-image: url(../images/header-img.png);
+    @extend %header-img;
+  }
+}
+
+@media (max-width: $large-breakpoint) {
+  .header {
+    background: $header-color;
+
+    &__figure {
+      display: none;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__info {
+      margin: 0 auto;
+      min-width: 100%;
+    }
+  }
+}
+
+@media (max-width: $small-breakpoint) {
+  .header {
+    
+    &__nav {
+      display: none;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__burger {
+      visibility: visible;
+    }
+  }
+}

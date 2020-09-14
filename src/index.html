@@ -3,11 +3,82 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Trive Talk</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      rel="shortcut icon"
+      href="./images/icon.png"
+      type="image/png"
+    >
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page">
+    <header class="page__header header">
+      <div class="header__top">
+
+        <input
+            id="burger"
+            type="checkbox"
+            class="header__toggler"
+        >
+        <label class="header__burger burger" for="burger">
+          <span class="burger__line"></span>
+        </label>
+
+        <h3 class="header__title">
+          Thrivetalk
+        </h3>
+
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item_active">
+              <a href="#" class="nav__link">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="header__button">
+          contact us
+        </button>
+      </div>
+
+      <div class="header__info info">
+        <h3 class="info__title">
+          Thrivetalk
+        </h3>
+        <h1 class="info__heading">
+          HELPING YOU THRIVE IN ALL AREAS OF LIFE
+        </h1>
+        <p class="info__text">
+          Our highly talented therapists can help you with a range of issues including relationships,
+          sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+        </p>
+        <button class="info__button info__button_active">
+          WHO AM I
+        </button>
+        <button class="info__button">
+          WHAT DO I DO
+        </button>
+      </div>
+
+      <div class="header__image"></div>
+      <div class="header__figure"></div>
+    </header>
   </body>
 </html>
