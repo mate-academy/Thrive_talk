@@ -1,0 +1,26 @@
+.header {
+  position: relative;
+  background-color: #f4f9e2;
+  padding-left: 179px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-top: 35px;
+    margin-bottom: 187px;
+  }
+
+  &__nav {
+    margin-top: 27px;
+    
+  }
+
+  &__button {
+    margin: 27px 190px 0 0;
+    white-space: nowrap;
+    z-index: 3;
+  }
+}

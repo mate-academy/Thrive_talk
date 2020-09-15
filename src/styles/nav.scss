@@ -1,0 +1,30 @@
+.nav {
+  
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  &__item {
+    padding: 0 20px;
+
+    &--is-active {
+      font-weight: bold;
+
+      &::before {
+        position: absolute;
+        top: 63px;
+        content: "";
+        width: 38px;
+        height: 1px;
+        background-color: #22356f;
+      }
+    }
+  }
+
+  &__link {
+    color: #22356f;
+    text-decoration: none;
+  }
+}

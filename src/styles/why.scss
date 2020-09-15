@@ -1,0 +1,39 @@
+.why {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 179px;
+  color: #fff;
+  background-color: #62d0df;
+  margin: 0;
+
+  &__description {
+    width: 555px;
+  }
+
+  &__heading {
+    margin-top: 0;
+    padding-top: 151px;
+    color: #fff;
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 35px;
+    padding: 45px 0 90px;
+  }
+
+  &__strong {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__picture {
+    width: 525px;
+    height: 604px;
+    background-image: url("../images/christopher-campbell-40367.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

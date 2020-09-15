@@ -1,0 +1,33 @@
+.about {
+  display: flex;
+  padding: 150px 0 24px 108px;
+
+  &__heading {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #22356f;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    position: relative;
+    left: calc(50% - 434px);
+    width: 592px;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+
+    &::after {
+      display: block;
+      content: "We can help you with";
+      text-transform: uppercase;
+      margin-top: 75px;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: rgba(34, 53, 111, 0.5);
+    }
+  }
+}
