@@ -21,14 +21,14 @@
     background-color: $service-color;
     border-radius: 50px;
     border-color: transparent;
-    font-size: 14px;
+    @include font-manage(14px, 50px, normal);
+    text-align: center;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
     cursor: pointer;
     transition: color 0.3s, background-color 0.3s;
 
-    &:focus,
     &:hover {
       color: $service-color;
       background-color: white;
@@ -57,7 +57,7 @@
 
     &:checked ~ .header__burger {
       background-image: url(../images/close.svg);
-      @extend %header-img;
+      @extend %img-template;
       width: 18px;
       height: 12px;
     }
@@ -68,6 +68,13 @@
 
     &:checked ~ .header__title {
       display: none;
+    }
+
+    &:checked ~ .header__button {
+      visibility: visible;
+      position: absolute;
+      top: 180px;
+      right: 20px;
     }
   }
 
@@ -96,12 +103,11 @@
     width: 800px;
     height: 545px;
     background-image: url(../images/header-img.png);
-    @extend %header-img;
+    @extend %img-template;
   }
-}
 
-@media (max-width: $large-breakpoint) {
-  .header {
+  @media (max-width: $large-breakpoint) {
+
     background: $header-color;
 
     &__figure {
@@ -117,17 +123,15 @@
       min-width: 100%;
     }
   }
-}
 
-@media (max-width: $small-breakpoint) {
-  .header {
-    
+  @media (max-width: $small-breakpoint) {
+      
     &__nav {
       display: none;
     }
 
     &__button {
-      display: none;
+      visibility: hidden;
     }
 
     &__burger {

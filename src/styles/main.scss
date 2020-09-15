@@ -4,6 +4,14 @@
 @import "header";
 @import "nav";
 @import "info";
+@import "why-thrive";
+@import "about";
+@import "services";
+@import "block";
+@import "health";
+@import "training";
+@import "should-know";
+@import "contact";
 
 html {
   font-family: "Larsseit", sans-serif;
@@ -11,4 +19,5 @@ html {
   line-height: 34px;
   font-weight: normal;
   font-style: normal;
+  scroll-behavior: smooth;
 }

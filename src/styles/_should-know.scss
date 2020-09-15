@@ -1,0 +1,65 @@
+.should-know {
+  display: flex;
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__description {
+    padding: 103px 40px 42px 106px;
+  }
+
+  &__title {
+    @include font-manage(16px, 12px, 0.06em);
+    font-weight: normal;
+    color: $text-color1;
+    margin-bottom: 225px;
+  }
+
+  &__text {
+    @include font-manage(36px, 53px, -0.01em);
+    font-weight: bold;
+    color: $text-color1;
+    max-width: 675px;
+    margin-bottom: 152px;
+
+    &_colored {
+      color: $service-color;
+    }
+  }
+
+  &__link {
+    @include font-manage(16px, 23px, 0.1em);
+    color: #fab63e;
+    padding-bottom: 5px;
+    transition: border-bottom 0.3s, color 0.3s;
+
+    &:hover {
+      border-bottom: 1px solid $text-color1;
+      color: $text-color1;
+    }
+  }
+
+  @media (max-width: $large-breakpoint) {
+
+    &__img {
+      display: none;
+    }
+
+    &__description {
+      padding: 40px 5vw;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      margin-bottom: 50px;
+      max-width: 579px;
+    }
+  }
+}

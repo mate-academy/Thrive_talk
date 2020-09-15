@@ -1,0 +1,39 @@
+.health {
+  &__range {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(33vw, 1fr));
+    grid-template-rows: repeat(2, minmax(480px, 1fr));
+
+    @media (max-width: $large-breakpoint) {
+      grid-template-columns: repeat(2, minmax(50vw, 1fr));
+      grid-template-rows: repeat(3, minmax(400px, 1fr));
+    }
+
+    @media (max-width: $small-breakpoint) {
+      grid-template-columns: repeat(1, minmax(100vw, 1fr));
+      grid-template-rows: repeat(6, minmax(300px, 1fr));
+    }
+  }
+
+  &__item {
+
+    &:nth-child(1) {
+      background-color: #22356f;
+    }
+    &:nth-child(2) {
+      background-color: #0052c1;
+    }
+    &:nth-child(3) {
+      background-color: #c5dddd;
+    }
+    &:nth-child(4) {
+      background-color: #62d0df;
+    }
+    &:nth-child(5) {
+      background-color: #dee1ff;
+    }
+    &:nth-child(6) {
+      background-color: #8f00ff;
+    }
+  }
+}

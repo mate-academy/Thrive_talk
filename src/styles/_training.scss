@@ -1,0 +1,37 @@
+.training {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(33vw, 1fr));
+  grid-template-rows: repeat(2, minmax(240, 1fr));
+  padding-top: 20px;
+  align-items: center;
+
+  @media (max-width: $large-breakpoint) {
+    grid-template-columns: repeat(2, minmax(50vw, 1fr));
+    grid-template-rows: repeat(3, minmax(240px, 1fr));
+  }
+
+  @media (max-width: $small-breakpoint) {
+    grid-template-columns: repeat(1, minmax(100vw, 1fr));
+    grid-template-rows: repeat(6, minmax(230px, 1fr));
+  }
+
+  &__item {
+    padding: 55px 0 37px 5vw;
+    @media (max-width: $small-breakpoint) {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    @include font-manage(28px, 33px, -0.03em);
+    font-weight: normal;
+    color: $text-color1;
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    @include font-manage(16px, 25px, -0.03em);
+    color: $text-color2;
+    max-width: 298px;
+  }
+}

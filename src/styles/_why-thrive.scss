@@ -1,0 +1,47 @@
+.why-thrive {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: $service-color;
+
+  &__info {
+    padding: 151px 5vw 95px;
+  }
+
+  &__heading {
+    @include font-manage(36px, 27px, -0.01em);
+    color: white;
+    margin-bottom: 75px;
+  }
+
+  &__text {
+    @include font-manage(20px, 35px, normal);
+    color: white;
+    max-width: 525px;
+
+    &_bold {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: left;
+  }
+
+  @media (max-width: $large-breakpoint) {
+
+    &__info {
+      padding: 75px 5vw 45px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}

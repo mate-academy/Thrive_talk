@@ -1,0 +1,36 @@
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 150px 4vw 76px;
+
+  &__title {
+    position: absolute;
+    top: 150px;
+    left: 4vw;
+    @include font-manage(16px, 23px, 0.06em);
+    font-weight: normal;
+    color: $text-color1;
+  }
+
+  &__text {
+    @include font-manage(24px, 34px, 0.01em);
+    color: $text-color1;
+    max-width: 592px;
+  }
+
+  @media (max-width: $large-breakpoint) {
+    flex-direction: column;
+    text-align: center;
+    padding: 75px 3vw 45px;
+
+    &__title {
+      position: static;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      margin: 0 auto;
+    }
+  }
+}
