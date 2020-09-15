@@ -1,0 +1,31 @@
+.footer {
+
+  font-size: $font-size-xxsmall;
+  
+  &__info {
+    display: flex;
+  }
+
+  &__info-block-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding: $padding-global / 2;
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__p {
+    height: 80px;
+
+    padding: 0 $padding-global;
+
+    line-height: 80px;
+    color: white;
+    
+    background-color: $cyan;
+  }
+}

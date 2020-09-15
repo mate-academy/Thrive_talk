@@ -4,3 +4,11 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin padding-global {
+  padding: 0 $padding-global;
+}
+
+@mixin scale($var) {
+  transform: scale($var);
+}

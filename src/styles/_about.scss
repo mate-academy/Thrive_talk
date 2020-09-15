@@ -1,0 +1,22 @@
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+  padding: $padding-global ($padding-global / 2);
+  color: $navyblue;
+  line-height: 34px;
+
+  &__h {
+    position: absolute;
+    left: $padding-global / 2;
+    font-size: $font-size-xsmall;
+    white-space: nowrap;
+    margin-right: $padding-global;
+  }
+
+  &__p {
+    max-width: 600px;
+    font-size: $font-size-small;
+  }
+}

@@ -1,0 +1,27 @@
+.introduction {
+  position: absolute;
+  bottom: 75px;
+
+  max-width: 470px;
+
+  color: $navyblue;
+
+  &__h {
+    margin-bottom: 40px;
+
+    font-size: $font-size-xxlarge;
+  }
+
+  &__p {
+    margin-bottom: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__button:first-child {
+    margin-right: 10px;
+  }
+
+}

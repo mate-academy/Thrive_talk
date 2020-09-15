@@ -1,0 +1,54 @@
+.card {
+  height: 480px;
+  padding: 70px;
+
+  font-size: $font-size-large;
+
+  color: white;
+
+  &__hr {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-bottom: 23px;
+  }
+
+  &__p {
+    position: relative;
+    font-size: $font-size-large;
+
+    &::before {
+      content: "•";
+
+      position: absolute;
+      left: -25px;
+      
+      color: $orange;
+    }
+  }
+
+  &--small {
+    height: 360px;
+
+    @each $num, $color in $common-cards-colors {
+      &:nth-child(#{$num}) {
+        background-color: $color;
+      }
+    }
+  }
+
+  &--medium {
+    height: 360px;
+
+    @each $num, $color in $constituents-cards-colors {
+      &:nth-child(#{$num}) {
+        background: $color;
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url(../images/joanna-kosinska-340748.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.info-block {
+  max-width: 200px;
+
+  padding: 0 10px;
+
+  font-size: $font-size-xxsmall;
+
+  &__h {
+    color: $navyblue;
+    margin-bottom: 23px;
+  }
+
+  &__p {
+    line-height: 23px;
+    color: $transblue;
+  }
+
+  &__link {
+    display: block;
+
+    color: $cyan;
+    text-decoration: none;
+
+    transition: transform $transition;
+
+    &:hover {
+      @include scale(1.1);
+    }
+  }
+}

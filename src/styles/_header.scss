@@ -1,0 +1,45 @@
+.header {
+  @include padding-global;
+  position: relative;
+  height: 100vh;
+
+  background-color: $dimgrey;
+
+  &__top {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    font-size: $font-size-xxsmall;
+  }
+
+  &__ul {
+    display: flex;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+
+    margin: 5px;
+    padding: 10px;
+
+    text-decoration: none;
+    color: $navyblue;
+
+    border-bottom: 2px solid transparent;
+
+    transition: transform $transition;
+
+    &--active {
+      border-color: $navyblue;
+    }
+
+    &:hover {
+      @include scale(1.1);
+    }
+  }
+}

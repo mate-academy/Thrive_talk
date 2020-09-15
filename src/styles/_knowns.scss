@@ -1,0 +1,28 @@
+.knowns {
+  display: flex;
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: $padding-global;
+    color: $navyblue;
+  }
+
+  &__h {
+    font-size: $font-size-xsmall;
+  }
+
+  &__p {
+    font-size: $font-size-large;
+  }
+
+  &__mark {
+    color: $cyan;
+  }
+
+  &__button {
+    margin-bottom: 10px;
+  }
+}

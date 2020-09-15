@@ -1,0 +1,38 @@
+.button {
+  width: 150px;
+  height: 50px;
+
+  font-size: $font-size-xsmall;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+
+  background: transparent;
+  border: none;
+
+  transition: transform $transition;
+
+  &:hover {
+    @include scale(1.1);
+    cursor: pointer;
+  }
+
+  &--top {
+    font-size: $font-size-xxsmall;
+
+    background-color: $cyan;
+    border-radius: 25px;
+  }
+
+  &--orrange {
+    background-color: $orange;
+  }
+
+  &--white {
+    color: $orange;
+  }
+
+  &--cyan {
+    color: $cyan;
+  }
+}

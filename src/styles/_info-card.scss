@@ -1,0 +1,15 @@
+.info-card {
+  padding: 55px;
+
+  line-height: 25px;
+  color: $navyblue;
+
+  &__h {
+    margin-bottom: 28px;
+    font-size: $font-size-medium;
+  }
+
+  &__p {
+    font-size: $font-size-xsmall;
+  }
+}
