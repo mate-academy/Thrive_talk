@@ -5,35 +5,48 @@
     grid-template-rows: repeat(2, minmax(480px, 1fr));
 
     @media (max-width: $large-breakpoint) {
-      grid-template-columns: repeat(2, minmax(50vw, 1fr));
+      grid-template-columns: repeat(2, minmax(50%, 1fr));
       grid-template-rows: repeat(3, minmax(400px, 1fr));
     }
 
     @media (max-width: $small-breakpoint) {
-      grid-template-columns: repeat(1, minmax(100vw, 1fr));
+      grid-template-columns: 1fr;
       grid-template-rows: repeat(6, minmax(300px, 1fr));
     }
   }
 
   &__item {
+    @extend %block-transition;
 
     &:nth-child(1) {
-      background-color: #22356f;
+      background-image: url(../images/physical.jpg);
     }
     &:nth-child(2) {
-      background-color: #0052c1;
+      background-image: url(../images/mental.jpg);
     }
     &:nth-child(3) {
-      background-color: #c5dddd;
+      background-image: url(../images/nutrition.jpg);
     }
     &:nth-child(4) {
-      background-color: #62d0df;
+      background-image: url(../images/gymnastic.jpg);
     }
     &:nth-child(5) {
-      background-color: #dee1ff;
+      background-image: url(../images/crossfit.jpg);
     }
     &:nth-child(6) {
-      background-color: #8f00ff;
+      background-image: url(../images/aerobic.jpg);
+    }
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        @extend %block-img-template;
+      }
+    }
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}):hover {
+        opacity: 1;
+      }
     }
   }
 }

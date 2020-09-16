@@ -8,3 +8,13 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+%block-img-template {
+  background-size: cover;
+  background-position: center;
+}
+
+%block-transition {
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}

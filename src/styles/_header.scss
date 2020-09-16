@@ -73,8 +73,9 @@
     &:checked ~ .header__button {
       visibility: visible;
       position: absolute;
-      top: 180px;
-      right: 20px;
+      top: 230px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 

@@ -18,6 +18,7 @@
   &__item {
     padding: 55px 0 37px 5vw;
     @media (max-width: $small-breakpoint) {
+      text-align: center;
       margin: 0 auto;
     }
   }
