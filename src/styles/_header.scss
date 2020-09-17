@@ -11,6 +11,7 @@
   }
 
   &__title {
+    z-index: 3;
     @extend %title;
   }
 
@@ -37,6 +38,7 @@
   }
 
   &__burger {
+    z-index: 3;
     visibility: hidden;
     position: absolute;
     top: 35px;
@@ -73,9 +75,11 @@
     &:checked ~ .header__button {
       visibility: visible;
       position: absolute;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
       top: 230px;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 3vw;
     }
   }
 
@@ -109,7 +113,10 @@
 
   @media (max-width: $large-breakpoint) {
 
-    background: $header-color;
+    background-image: url(../images/header-img-full.jpg);
+    background-size: cover;
+    background-position: 80% 50%;
+    background-blend-mode: color;
 
     &__figure {
       display: none;
@@ -117,6 +124,16 @@
 
     &__image {
       display: none;
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+      // width: 100%;
+      // height: 100%;
+      // opacity: 0.2;
+      // background-image: url(../images/header-img-full.jpg);
+      // background-size: cover;
+      // background-position: 85% 50%;
     }
 
     &__info {

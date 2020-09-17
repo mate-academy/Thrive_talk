@@ -41,14 +41,34 @@
       box-shadow: 0 15px 20px $button-color;
     }
   }
-}
 
-@media (max-width: 437px) {
-  .info {
+  @media (max-width: $large-breakpoint) {
+
+    &__title {
+      display: none;
+    }
+
+    &__heading {
+      margin-bottom: 40px;
+      text-shadow: 1px 0 5px $service-color;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+      text-shadow: 1px 0 2px $service-color;
+    }
+  }
+
+  @media (max-width: 437px) {
+  
     &__button {
       display: block;
       margin: 0 0 30px;
       width: 100%;
+    }
+
+    &__heading {
+      @include font-manage(36px, 40px, -0.04em);
     }
   }
 }
