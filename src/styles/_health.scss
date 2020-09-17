@@ -1,23 +1,28 @@
 .health {
   &__range {
     display: grid;
-    grid-template-columns: repeat(3, minmax(33vw, 1fr));
-    grid-template-rows: repeat(2, minmax(480px, 1fr));
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(2, 480px);
 
     @media (max-width: $large-breakpoint) {
-      grid-template-columns: repeat(2, minmax(50%, 1fr));
-      grid-template-rows: repeat(3, minmax(400px, 1fr));
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(3, 400px);
     }
 
     @media (max-width: $small-breakpoint) {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, minmax(300px, 1fr));
+      grid-template-rows: repeat(6, 320px);
       grid-row-gap: 1px;
     }
   }
 
   &__item {
     @extend %block-transition;
+    @extend %block-img-template;
+
+    &:hover {
+      opacity: 1;
+    }
 
     &:nth-child(1) {
       background-image: url(../images/physical.jpg);
@@ -36,18 +41,6 @@
     }
     &:nth-child(6) {
       background-image: url(../images/aerobic.jpg);
-    }
-
-    @for $i from 1 through 6 {
-      &:nth-child(#{$i}) {
-        @extend %block-img-template;
-      }
-    }
-
-    @for $i from 1 through 6 {
-      &:nth-child(#{$i}):hover {
-        opacity: 1;
-      }
     }
   }
 }

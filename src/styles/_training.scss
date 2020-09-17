@@ -1,18 +1,19 @@
 .training {
   display: grid;
-  grid-template-columns: repeat(3, minmax(33vw, 1fr));
-  grid-template-rows: repeat(2, minmax(240, 1fr));
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(2, 240px );
   padding-top: 20px;
   align-items: center;
+  overflow: hidden;
 
   @media (max-width: $large-breakpoint) {
-    grid-template-columns: repeat(2, minmax(50%, 1fr));
-    grid-template-rows: repeat(3, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 220px);
   }
 
   @media (max-width: $small-breakpoint) {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(6, minmax(200px, 1fr));
+    grid-template-rows: repeat(6, 200px);
   }
 
   &__item {
