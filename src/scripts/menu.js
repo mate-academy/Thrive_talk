@@ -1,6 +1,6 @@
 'use strict';
 
-const toggleMenu = (() => {
+(function toggleMenu() {
   const navToggler = document.querySelector('.nav-toggler');
   const nav = document.querySelector('.header__nav');
   const links = document.querySelectorAll('.header__link');
