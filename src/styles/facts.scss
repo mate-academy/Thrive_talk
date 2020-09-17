@@ -1,6 +1,5 @@
 .facts {
   display: flex;
-  margin-top: 40px;
 
   &__picture {
     width: 480px;
@@ -43,5 +42,32 @@
 
   &__name {
     color: #62d0df;
+  }
+}
+
+@media (max-width: 1279px) {
+  .facts {
+
+    &__link {
+      padding-top: 46px;
+      margin-left: 30px;
+    }
+
+    &__picture {
+      display: none;
+    }
+
+    &__heading {
+      font-size: 30px;
+      overflow: hidden;
+      margin-top: 48px;
+      padding: 30px;
+      width: 90%;
+
+      &::after {
+        top: 0;
+        left: 30px;
+      }
+    }
   }
 }

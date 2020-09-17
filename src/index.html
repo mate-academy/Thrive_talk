@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Thrivetalk</title>
+    <link rel="icon" href="./images/png-transparent-computer-icons-online-chat-emoticon-icon-design-chat-miscellaneous-orange-speech-balloon.png">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
@@ -18,17 +19,17 @@
                Home
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">
+              <a href="#about" class="nav__link">
                 About
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">
+              <a href="#services" class="nav__link">
                 Services
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">
+              <a href="#blog" class="nav__link">
                 Blog
               </a>
             </li>
@@ -40,7 +41,7 @@
           </a>
         </div>
       </div>
-      <div class="intro">
+      <div class="intro header__intro">
         <div class="logo intro__logo">
           Thrivetalk
         </div>
@@ -61,8 +62,10 @@
           What do I do
         </a>
       </div>
-      <div class="header__background"></div>
+      <div class="header__image"></div>
       <div class="header__figure"></div>
+      <div class="header__rectangle"></div>
+
     </div>
     <main class="main">
       <section class="why">
@@ -84,37 +87,34 @@
         <div class="why__picture"></div>
       </section>
 
-      <section class="about main__about">
-        <h3 class="about__heading">
-          About us
-        </h3>
-        <p class="about__text">
+      <section class="about" id="about">
+        <div class="about__text">
           We want to help you thrive! Whether you are just looking for
           someone to talk to, or are struggling with a mental wellness
           issue we’re here to help.  Our highly talented therapists can
           help you with a range of issues including relationships, sex,
           PTSD, depression, social anxiety, or even just caring for yourself more.
-        </p>
+        </div>
       </section>
 
       <section class="help main__help">
-        <div class="help__card">
-          <div class="card">
+        <div class="help__card" id="services">
+          <div class="card main__card">
             Weight Lifting
           </div>
         </div>
         <div class="help__card">
-          <div class="card">
+          <div class="card main__card">
             Running & Spinning
           </div>
         </div>
         <div class="help__card">
-          <div class="card">
+          <div class="card main__card">
             Pumping Iron
           </div>
         </div>
         <div class="help__card">
-          <div class="card">
+          <div class="card main__card">
             Pumping Iron
           </div>
         </div>
@@ -122,38 +122,38 @@
 
       <section class="activities main__activities">
         <div class="activities__card">
-          <div class="card">
+          <div class="card main__card">
             Physical Health
           </div>
         </div>
         <div class="activities__card">
-          <div class="card">
+          <div class="card main__card">
             Mental Health
           </div>
         </div>
         <div class="activities__card">
-          <div class="card">
+          <div class="card main__card">
             Nutrition
           </div>
         </div>
         <div class="activities__card">
-          <div class="card">
+          <div class="card main__card">
             Gymnastics
           </div>
         </div>
         <div class="activities__card">
-          <div class="card">
+          <div class="card main__card">
             Crossfit
           </div>
         </div>
         <div class="activities__card">
-          <div class="card">
+          <div class="card main__card">
             Aerobics
           </div>
         </div>
       </section>
 
-      <section class="text-cards">
+      <section class="text-cards main__text-cards" id="blog">
         <div class="text-cards__card">
           <h4 class="text-cards__heading">
             Nutritional Plans
@@ -216,7 +216,7 @@
         </div>
       </section>
 
-      <section class="facts">
+      <section class="facts main__facts">
         <div class="facts__picture"></div>
         <div class="facts__block">
           <p class="facts__heading">
@@ -296,7 +296,7 @@
       </section>
     </main>
     <footer class="footer">
-      &copy;&nbsp;&nbsp;Copyright - ThriveTalk  2020
+      <p class="footer__text">&copy;&nbsp;&nbsp;Copyright - ThriveTalk  2020</p>
     </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>

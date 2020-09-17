@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 16.67vw);
-  margin-top: 22px;
+  
 
   &__card {
     padding: 4% 16% 8% 22%;
@@ -19,5 +19,24 @@
     line-height: 25px;
     letter-spacing: -0.03em;
     color: rgba(34, 53, 111, 0.5);
+  }
+}
+
+@media (max-width: 1279px) {
+  .text-cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 150px);
+
+    &__card {
+      padding: 30px;
+    }
+
+    &__heading {
+      line-height: 30px;
+    }
+
+    &__text {
+      line-height: 20px;
+    }
   }
 }

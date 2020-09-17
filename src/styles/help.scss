@@ -1,8 +1,8 @@
 .help {
   display: flex;
-  margin-bottom: 120px;
 
   &__card {
+    
     display: flex;
     justify-content: center;
     width: 25vw;
@@ -23,6 +23,16 @@
 
     &:nth-child(4) {
       background-color: #0052c1;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .help {
+    flex-direction: column;
+
+    &__card {
+      width: 100%;
     }
   }
 }

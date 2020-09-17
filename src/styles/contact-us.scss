@@ -1,12 +1,11 @@
 .contact-us {
   display: flex;
   justify-content: space-between;
-  padding-left: 179px;
   color: #fff;
   background-color: #22356f;
-  margin: 0;
 
   &__textarea {
+    padding-left: 179px;
     max-width: 580px;
   }
 
@@ -53,5 +52,28 @@
     background-image: url("../images/charles-etoroma-390119.jpg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media (max-width: 1279px) {
+  .contact-us {
+    overflow: hidden;
+
+    &__heading {
+      padding-top: 30px;
+
+      &::before {
+        top: 0;
+      }
+    }
+
+    &__picture {
+      display: none;
+    }
+
+    &__textarea {
+      width: 100%;
+      padding: 30px;
+    }
   }
 }

@@ -20,3 +20,22 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+.main {
+  &__help {
+    margin-bottom: 120px;
+  }
+
+  &__text-cards {
+    margin-top: 22px;
+  }
+
+  &__facts {
+    margin-top: 40px;
+  }
+
+  &__card {
+    position: relative;
+    padding-top: 26px;
+  }
+}
