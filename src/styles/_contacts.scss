@@ -1,8 +1,12 @@
 .contacts {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
 
   &__article {
+    @include adaptive-padding-all;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,10 +19,12 @@
   }
 
   &__h {
+    margin-bottom: 50px;
     font-size: $font-size-xsmall;
   }
 
   &__p {
+    margin-bottom: 50px;
     font-size: $font-size-xlarge;
 
     &--strong {
@@ -31,8 +37,9 @@
   }
 
   &__img {
+    @include mix-image(925px, 0.2);
+
     object-fit: cover;
     object-position: center;
-
   }
 }

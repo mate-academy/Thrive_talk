@@ -1,8 +1,13 @@
 .thrive {
+  position: relative;
+  z-index: 1;
   display: flex;
   background-color: $cyan;
 
   &__article {
+    @include adaptive-padding-all;
+
+    min-width: 50%;
     padding: $padding-global;
     color: white;
   }
@@ -18,6 +23,8 @@
   }
 
   &__img {
+    @include mix-image(768px, 0.1);
+
     object-fit: cover;
     object-position: left;
   }

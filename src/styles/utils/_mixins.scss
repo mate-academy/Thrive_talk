@@ -12,3 +12,32 @@
 @mixin scale($var) {
   transform: scale($var);
 }
+
+@mixin adaptive-padding-hor {
+  @media (max-width: 992px) {
+    padding: 0 ($padding-global / 4);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 ($padding-global / 8);
+  }
+}
+
+@mixin adaptive-padding-all {
+  @media (max-width: 992px) {
+    padding: $padding-global / 2;
+  }
+
+  @media (max-width: 600px) {
+    padding: $padding-global / 4;
+  }
+}
+
+@mixin mix-image($width, $opacity) {
+  @media (max-width: $width) {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: $opacity;
+  }
+}

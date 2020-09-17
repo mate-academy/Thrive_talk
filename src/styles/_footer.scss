@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
 
   font-size: $font-size-xxsmall;
   
@@ -7,18 +8,27 @@
   }
 
   &__info-block-wrapper {
+
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 
     padding: $padding-global / 2;
+
+    @include adaptive-padding-all;
+  }
+
+  &__info-block {
+    margin: 30px 5px;
   }
 
   &__img {
+    @include mix-image(1111px, 0.2);
     object-fit: cover;
     object-position: center;
   }
 
   &__p {
+    @include adaptive-padding-hor;
     height: 80px;
 
     padding: 0 $padding-global;

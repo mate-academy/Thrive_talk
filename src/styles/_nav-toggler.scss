@@ -1,0 +1,37 @@
+.nav-toggler {
+  display: none;
+
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  z-index: 3;
+
+  width: 24px;
+  height: 17px;
+  
+
+  background-image: url(../images/menu.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transform: translate(-50%, 0);
+
+  transition: transform $transition;
+
+  &:hover {
+    transform: translate(-50%, 0) scale(1.2);
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+
+    &--active {
+      position: fixed;
+      right: 25px;
+      left: unset;
+  
+      background-image: url(../images/menu-open.svg);
+    }
+  }
+}

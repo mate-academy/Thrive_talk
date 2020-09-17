@@ -1,7 +1,17 @@
 .knowns {
+  position: relative;
   display: flex;
 
+  &__img {
+    @include mix-image(992px, 0.2);
+
+    object-fit: cover;
+    object-position: center;
+  }
+
   &__article {
+    @include adaptive-padding-all;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,10 +21,14 @@
   }
 
   &__h {
+    margin-bottom: 50px;
+
     font-size: $font-size-xsmall;
   }
 
   &__p {
+    margin-bottom: 50px;
+    
     font-size: $font-size-large;
   }
 

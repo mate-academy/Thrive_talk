@@ -14,15 +14,39 @@
     grid-template-columns: repeat(4, 1fr);
 
     margin-bottom: 120px;
+
+    @media (max-width: 968px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 440px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__constituents {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 968px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 440px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__info-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 968px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    @media (max-width: 440px) {
+      grid-template-columns: 1fr;
+    }
   }
 }

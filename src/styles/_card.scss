@@ -1,6 +1,5 @@
 .card {
-  height: 480px;
-  padding: 70px;
+  padding: 5vw;
 
   font-size: $font-size-large;
 
@@ -24,20 +23,43 @@
       
       color: $orange;
     }
+
   }
 
   &--small {
-    height: 360px;
+    width: 100%;
+    height: 25vw;
 
     @each $num, $color in $common-cards-colors {
       &:nth-child(#{$num}) {
         background-color: $color;
       }
     }
+
+    @media (max-width: 992px) {
+      width: 100%;
+      height: 50vw;
+    }
+
+    @media (max-width: 440px) {
+      width: 100%;
+      height: 100vw;
+    }
   }
 
   &--medium {
-    height: 360px;
+    width: 100%;
+    height: 33.33vw;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      height: 50vw;
+    }
+
+    @media (max-width: 440px) {
+      width: 100%;
+      height: 100vw;
+    }
 
     @each $num, $color in $constituents-cards-colors {
       &:nth-child(#{$num}) {
@@ -50,5 +72,9 @@
       background-size: cover;
       background-position: center;
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 30px 30px 40px;
   }
 }

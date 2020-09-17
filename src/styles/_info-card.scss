@@ -12,4 +12,8 @@
   &__p {
     font-size: $font-size-xsmall;
   }
+
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
 }

@@ -1,4 +1,6 @@
 .about {
+  @include adaptive-padding-all;
+
   position: relative;
   display: flex;
   justify-content: center;
@@ -18,5 +20,14 @@
   &__p {
     max-width: 600px;
     font-size: $font-size-small;
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    &__h {
+      position: static;
+    }
   }
 }
