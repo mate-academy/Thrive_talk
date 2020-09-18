@@ -5,8 +5,8 @@
   background-color: #22356f;
 
   &__textarea {
-    padding-left: 179px;
-    max-width: 580px;
+    padding: 0 0 30px 179px;
+    max-width: 720px;
   }
 
   &__heading {
@@ -59,6 +59,11 @@
   .contact-us {
     overflow: hidden;
 
+    &__textarea {
+      width: 100%;
+      padding-left: 30px;
+    }
+
     &__heading {
       padding-top: 30px;
 
@@ -69,11 +74,6 @@
 
     &__picture {
       display: none;
-    }
-
-    &__textarea {
-      width: 100%;
-      padding: 30px;
     }
   }
 }
