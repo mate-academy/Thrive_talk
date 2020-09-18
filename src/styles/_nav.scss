@@ -1,5 +1,5 @@
 .nav {
-  z-index: 3;
+  z-index: 1;
 
   &__list {
     display: flex;
@@ -8,8 +8,7 @@
   &__item {
     position: relative;
     margin-left: 50px;
-    padding: 0 0 10px;
-    @include font-manage(14px, 16px, normal);
+    padding-bottom: 10px;
     cursor: pointer;
     transition: transform 0.3s;
 
@@ -19,6 +18,10 @@
     
     &:hover {
       transform: translateY(-5px);
+    }
+
+    &:hover > a {
+      color: $service-color;
     }
 
     &_active {
@@ -37,19 +40,20 @@
 
   &__link {
     color: $text-color1;
+    padding-bottom: 10px;
+  }
 
-    &:hover {
-      color: $service-color;
+  @media (max-width: $large-breakpoint) {
+
+    &__item {
+      @include font-manage(18px, 18px, normal);
     }
   }
-}
 
-@media (max-width: $small-breakpoint) {
-  .nav {
+  @media (max-width: $small-breakpoint) {
 
     &__list {
-      display: flex;
-      flex-direction: column;
+      display: block;
     }
 
     &__item {

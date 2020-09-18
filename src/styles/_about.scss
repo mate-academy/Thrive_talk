@@ -14,9 +14,9 @@
   }
 
   &__text {
+    max-width: 592px;
     @include font-manage(24px, 34px, 0.01em);
     color: $text-color1;
-    max-width: 592px;
   }
 
   @media (max-width: $large-breakpoint) {

@@ -10,15 +10,15 @@
   }
 
   &__heading {
+    margin-bottom: 75px;
     @include font-manage(36px, 27px, -0.01em);
     color: white;
-    margin-bottom: 75px;
   }
 
   &__text {
+    max-width: 525px;
     @include font-manage(20px, 35px, normal);
     color: white;
-    max-width: 525px;
 
     &_bold {
       font-size: 24px;
@@ -47,9 +47,9 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
+      transform: translate(-50%, -50%);
       opacity: 0.2;
     }
   }

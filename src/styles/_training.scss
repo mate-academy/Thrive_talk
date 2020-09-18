@@ -20,21 +20,21 @@
     padding: 55px 0 37px 5vw;
     @media (max-width: $small-breakpoint) {
       padding: 30px 0 20px;
-      text-align: center;
       margin: 0 auto;
+      text-align: center;
     }
   }
 
   &__title {
+    margin-bottom: 28px;
     @include font-manage(28px, 33px, -0.03em);
     font-weight: normal;
     color: $text-color1;
-    margin-bottom: 28px;
   }
 
   &__text {
+    max-width: 298px;
     @include font-manage(16px, 25px, -0.03em);
     color: $text-color2;
-    max-width: 298px;
   }
 }

@@ -21,33 +21,33 @@
   }
 
   &__title {
+    margin-bottom: 65px;
     @include font-manage(14px, 11px, -0.01em);
     color: $text-color1;
-    margin-bottom: 65px;
   }
 
   &__text {
+    max-width: 210px;
     @include font-manage(14px, 23px, -0.01em);
     color: $text-color2;
-    max-width: 210px;
   }
 
   &__phone {
+    margin-top: 45px;
     @include font-manage(14px, 23px, -0.01em);
     color: $text-color2;
-    margin-top: 45px;
   }
 
   &__email {
     @include font-manage(14px, 23px, -0.01em);
+    padding-bottom: 5px;
     color: $service-color;
     font-weight: bold;
-    padding-bottom: 5px;
     transition: color 0.2s;
 
     &:hover {
-      color: #f5cb80;
       border-bottom: 1px solid #f5cb80;
+      color: #f5cb80;
     }
   }
 
@@ -68,17 +68,17 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
+      transform: translate(-50%, -50%);
       opacity: 0.1;
     }
 
     &__info {
       flex-direction: column;
       width: 100%;
-      text-align: center;
       padding: 40px 0 30px;
+      text-align: center;
     }
     
     &__inner {
