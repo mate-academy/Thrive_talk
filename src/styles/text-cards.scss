@@ -18,7 +18,7 @@
     font-size: 16px;
     line-height: 25px;
     letter-spacing: -0.03em;
-    color: rgba(34, 53, 111, 0.5);
+    color: $textCardsColor;
   }
 }
 
@@ -28,7 +28,7 @@
     grid-template-rows: repeat(6, 150px);
 
     &__card {
-      padding: 30px;
+      padding: 40px;
     }
 
     &__heading {

@@ -18,7 +18,7 @@
       font-size: 16px;
       line-height: 23px;
       letter-spacing: 0.06em;
-      color: #22356f;
+      color: $mainTextColor;
       text-transform: uppercase;
     }
 
@@ -31,7 +31,7 @@
       line-height: 19px;
       text-align: center;
       letter-spacing: 0.06em;
-      color: rgba(34, 53, 111, 0.5);
+      color: $textCardsColor;
     }
   }
 }
@@ -39,12 +39,12 @@
 @media (max-width: 1279px) {
   .about {
     &__text {
-      padding: 55px 30px 20px;
+      padding: 55px 40px 20px;
       width: 100%;
 
       &::before {
         top: 20px;
-        left: 30px;
+        left: 40px;
       }
 
       &::after {

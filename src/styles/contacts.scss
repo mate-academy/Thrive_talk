@@ -12,12 +12,14 @@
   &__item {
     display: flex;
     justify-content: space-between;
-    padding: 98px 40px 100px 68px;
+    padding: 80px 0 0 12px;
   }
 
   &__card {
-    width: 240px;
-    padding-left: 30px;
+    width: 233px;
+    height: 172px;
+    margin-left: 40px;
+    text-decoration: none;
     
     &--shadow {
       box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.05);
@@ -25,31 +27,39 @@
   }
 
   &__heading {
+    padding-bottom: 35px;
     font-size: 14px;
+    color: $mainTextColor;
     line-height: 11px;
     letter-spacing: -0.01em;
     text-transform: uppercase;
   }
 
   &__text {
+    padding-bottom: 32px;
     font-size: 14px;
     line-height: 23px;
     letter-spacing: -0.01em;
-    color: rgba(34, 53, 111, 0.5);
+    color: $textCardsColor;
   }
 
   &__link {
     font-size: inherit;
-    color: #62d0df;
+    color: $secondLinkColor;
     margin-bottom: 15px;
+    text-decoration: none;
   }
 }
 
 @media (max-width: 1279px) {
   .contacts {
+
     &__item {
       flex-direction: column;
-      padding: 30px;
+    }
+
+    &__heading {
+      padding-bottom: 0;
     }
 
     &__picture {

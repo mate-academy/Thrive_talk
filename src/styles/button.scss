@@ -6,7 +6,7 @@
   transition: background-color 300ms;
 
   &__link {
-    color: #fff;
+    color: $mainLinkColor;
     text-decoration: none;
   }
 }

@@ -5,13 +5,13 @@
 html {
   font-family: Larsseit, Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+  color: $mainTextColor;
 }
 
 body {
   margin: 0;
   font-size: 14px;
   line-height: 16px;
-  color: #22356f;
 }
 
 @font-face {
@@ -37,5 +37,11 @@ body {
   &__card {
     position: relative;
     padding-top: 26px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .main__help {
+    margin-bottom: 10px;
   }
 }

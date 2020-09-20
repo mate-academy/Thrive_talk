@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <div class="header">
+    <div class="header"  id="home">
       <div class="header__top">
         <div class="logo header__logo">
           Thrivetalk
         </div>
         <nav class="nav header__nav">
           <ul class="nav__list">
-            <li class="nav__item nav__item--is-active">
-               Home
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                Home
+              </a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">
@@ -229,7 +231,7 @@
             can help you.
           </p>
           <p class="facts__text">
-            <a href="#" class="facts__link">
+            <a href="tel:1-234-555-5555" class="facts__link">
               Get help now
             </a>
           </p>
@@ -237,7 +239,7 @@
       </section>
 
       <section class="contact-us">
-        <div class="contact-us__textarea">
+        <div class="contact-us__texts">
           <h2 class="contact-us__heading">
             Ready. Set. Smile
           </h2>
@@ -271,8 +273,7 @@
             <p class="contacts__text">
               Main Street 1, Olcott
               <br>Buffalo, United States
-            </p>
-            <p>
+              <br><br>
               <a href="tel:555-283-784-333" class="contacts__link">
                 +555 283 784 333
               </a>

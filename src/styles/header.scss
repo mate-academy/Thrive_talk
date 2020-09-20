@@ -1,5 +1,5 @@
 .header {
-  background-color: #f4f9e2;
+  background-color: $headerBackground;
 
   &__intro {
     margin-left: 180px;
@@ -20,7 +20,7 @@
   }
 
   &__button {
-    background-color: #62d0df;
+    background-color: $mainColor;
     border-radius: 50px;
     padding: 19px 0;
     margin: 27px 190px 0 0;
@@ -30,7 +30,7 @@
 
     &:hover {
       transform: scale(1.1);
-      background-color: #4699a4;
+      background-color: $headerButtonHover;
     }
   }
 
@@ -65,8 +65,8 @@
     top: 0;
     right: 0;
     width: 323px;
-    height: 100%;
-    background-color: #fff;
+    height: 850px;
+    background-color: $mainLinkColor;
   }
 }
 
@@ -74,24 +74,25 @@
   .header {
 
     &__logo {
-      margin-left: 20px;
+      margin-left: 0;
       transform: scale(1.2);
     }
 
     &__top,
     &__intro {
-      margin-left: 10px;
+      margin-left: 40px;
     }
 
     &__image,
     &__figure,
     &__rectangle {
-      opacity: 10%;
+      display: none;
     }
 
     &__button {
       position: absolute;
       top: 90px;
+      left: 30px;
     }
   }
 }
