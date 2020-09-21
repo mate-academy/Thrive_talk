@@ -39,15 +39,19 @@
     color: $introButtonColor;
     text-decoration: none;
     text-transform: uppercase;
+    transition: transform 300ms, color 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+      color: $introButtonHover;
+    }
   }
 
   &__name {
     color: $mainColor;
   }
-}
 
-@media (max-width: 1279px) {
-  .facts {
+  @media (max-width: 1279px) {
 
     &__link {
       padding-top: 46px;

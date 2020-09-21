@@ -24,6 +24,10 @@ body {
 .main {
   &__help {
     margin-bottom: 120px;
+
+    @media (max-width: 1279px) {
+      margin-bottom: 0;
+    }
   }
 
   &__text-cards {
@@ -37,11 +41,5 @@ body {
   &__card {
     position: relative;
     padding-top: 26px;
-  }
-}
-
-@media (max-width: 1279px) {
-  .main__help {
-    margin-bottom: 10px;
   }
 }

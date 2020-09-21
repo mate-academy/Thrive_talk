@@ -35,10 +35,8 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-}
 
-@media (max-width: 1279px) {
-  .why {
+  @media (max-width: 1279px) {
     &__description {
       margin: 0 40px;
       width: 100%;

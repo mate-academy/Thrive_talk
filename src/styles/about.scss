@@ -34,10 +34,9 @@
       color: $textCardsColor;
     }
   }
-}
 
-@media (max-width: 1279px) {
-  .about {
+  @media (max-width: 1279px) {
+
     &__text {
       padding: 55px 40px 20px;
       width: 100%;

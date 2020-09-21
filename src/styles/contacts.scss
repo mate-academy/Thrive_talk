@@ -44,15 +44,19 @@
   }
 
   &__link {
+    display: inline-block;
     font-size: inherit;
     color: $secondLinkColor;
-    margin-bottom: 15px;
     text-decoration: none;
-  }
-}
+    transition: transform 300ms, color 300ms;
 
-@media (max-width: 1279px) {
-  .contacts {
+    &:hover {
+      transform: scale(1.2);
+      color: $mainColor;
+    }
+  }
+
+  @media (max-width: 1279px) {
 
     &__item {
       flex-direction: column;

@@ -20,10 +20,8 @@
     letter-spacing: -0.03em;
     color: $textCardsColor;
   }
-}
 
-@media (max-width: 1279px) {
-  .text-cards {
+  @media (max-width: 1279px) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 150px);
 
@@ -39,4 +37,5 @@
       line-height: 20px;
     }
   }
+
 }

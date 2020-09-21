@@ -9,10 +9,7 @@
     color: $mainLinkColor;
     text-decoration: none;
   }
-}
-
-button:hover {
-  .button {
+  &:hover {
     background-color: #54cfdf;
   }
 }

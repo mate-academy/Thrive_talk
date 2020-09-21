@@ -9,6 +9,7 @@
   &__item {
     position: relative;
     padding: 0 20px;
+    transition: transform 300ms, background-color 300ms;
 
     &::before {
       display: none;
@@ -21,6 +22,8 @@
     }
 
     &:hover {
+      transform: scale(1.1);
+      background-color: $mainColor;
 
       &::before {
         display: inherit;
@@ -34,28 +37,28 @@
     color: $mainTextColor;
     text-decoration: none;
   }
-}
 
-@media (max-width: 1279px) {
-  .nav__list {
-    flex-direction: column;
+  @media (max-width: 1279px) {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      padding-bottom: 20px;
+      margin-right: 30px;
+      font-size: 22px;
+    }
   }
 
-  .nav__item {
-    padding-bottom: 20px;
-    margin-right: 30px;
-    font-size: 22px;
-  }
-}
+  @media (max-width: 360px) {
+    &__list {
+      flex-direction: column;
+    }
 
-@media (max-width: 360px) {
-  .nav__list {
-    flex-direction: column;
-  }
-
-  .nav__item {
-    padding-bottom: 20px;
-    margin-right: 0;
-    font-size: 16px;
+    &__item {
+      padding-bottom: 20px;
+      margin-right: 0;
+      font-size: 16px;
+    }
   }
 }
