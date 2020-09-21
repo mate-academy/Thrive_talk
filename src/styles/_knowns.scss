@@ -30,10 +30,10 @@
     margin-bottom: 50px;
     
     font-size: $font-size-large;
-  }
 
-  &__mark {
-    color: $cyan;
+    &--marked {
+      color: $cyan;
+    }
   }
 
   &__button {

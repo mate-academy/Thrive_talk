@@ -21,6 +21,12 @@
     justify-content: space-between;
   }
 
+  &__button {
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
   &__nav {
     font-size: $font-size-xxsmall;
     @media (max-width: 768px) {

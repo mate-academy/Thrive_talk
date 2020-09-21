@@ -1,4 +1,7 @@
 .info-block {
+  position: relative;
+  z-index: 1;
+  
   min-width: 180px;
   max-width: 200px;
 

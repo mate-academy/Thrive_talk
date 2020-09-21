@@ -29,6 +29,8 @@
 
   &__p {
     @include adaptive-padding-hor;
+    position: relative;
+    
     height: 80px;
 
     padding: 0 $padding-global;
