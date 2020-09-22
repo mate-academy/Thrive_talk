@@ -31,6 +31,7 @@
   &__item {
     @extend %block-transition;
     @extend %block-img-template;
+    cursor: pointer;
 
     &:hover {
       opacity: 1;

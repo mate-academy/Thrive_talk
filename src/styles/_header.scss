@@ -17,7 +17,7 @@
   }
 
   &__button {
-    z-index: 3;
+    z-index: 1;
     width: 150px;
     height: 50px;
     border-radius: 50px;
@@ -29,12 +29,11 @@
     color: white;
     text-transform: uppercase;
     cursor: pointer;
-    transition: color 0.3s, background-color 0.3s, text-shadow 0.3s;
+    transition: transform 0.3s;
 
     &:hover {
-      color: $service-color;
-      background-color: #f4fae2;
-      border: 1px solid $service-color;
+      transform: translateY(-7px);
+      box-shadow: 0 15px 20px #9c7736;
     }
   }
 
