@@ -1,0 +1,35 @@
+.main {
+
+  &__why-thrive-wrapper {
+    background-color: $service-color;
+  }
+
+  &__why-thrive {
+    max-width: $main-max-width;
+    margin: 0 auto;
+  }
+
+  &__about {
+    max-width: $main-max-width;
+    margin: 0 auto;
+  }
+
+  &__training {
+    max-width: $main-max-width;
+    margin: 0 auto;
+  }
+
+  &__should-know {
+    max-width: $main-max-width;
+    margin: 0 auto;
+  }
+
+  &__contact-wrapper {
+    background-color: $text-color1;
+  }
+
+  &__contact {
+    max-width: $main-max-width;
+    margin: 0 auto;
+  }
+}

@@ -4,6 +4,11 @@
   padding: 27px 5vw 20px;
   overflow: hidden;
 
+  &__wrapper {
+    max-width: $main-max-width;
+    margin: 0 auto;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;

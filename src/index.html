@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trive Talk</title>
+    <title>Thrive Talk</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <link
       rel="shortcut icon"
@@ -12,103 +12,108 @@
     >
   </head>
   <body class="page">
+
     <header class="page__header header">
-      <div class="header__top">
+      <div class="header__wrapper">
+        <div class="header__top">
 
-        <input
-            id="burger"
-            type="checkbox"
-            class="header__toggler"
-        >
-        <label class="header__burger burger" for="burger">
-          <span class="burger__line"></span>
-        </label>
+          <input
+              id="burger"
+              type="checkbox"
+              class="header__toggler"
+          >
+          <label class="header__burger burger" for="burger">
+            <span class="burger__line"></span>
+          </label>
 
-        <h3 class="header__title">
-          Thrivetalk
-        </h3>
+          <h3 class="header__title">
+            Thrivetalk
+          </h3>
 
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item nav__item_active">
-              <a href="#" class="nav__link">
-                Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">
-                Services
-              </a>
-            </li>
-            <li class="nav__item">
-              <a
-                href="https://www.thrivetalk.com/blog/"
-                class="nav__link"
-                target="blank"
-              >
-                Blog
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item_active">
+                <a href="#" class="nav__link">
+                  Home
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">
+                  About
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">
+                  Services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="https://www.thrivetalk.com/blog/"
+                  class="nav__link"
+                  target="blank"
+                >
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-        <a href="#info" class="header__button">
-          contact us
-        </a>
+          <a href="#info" class="header__button">
+            contact us
+          </a>
+        </div>
+
+        <div class="header__info info">
+          <h3 class="info__title">
+            Thrivetalk
+          </h3>
+          <h1 class="info__heading">
+            HELPING YOU THRIVE IN ALL AREAS OF LIFE
+          </h1>
+          <p class="info__text">
+            Our highly talented therapists can help you with a range of issues including relationships,
+            sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+          </p>
+          <a href="#services" class="info__button info__button_active">
+            WHO AM I
+          </a>
+          <a href="#health" class="info__button">
+            WHAT DO I DO
+          </a>
+        </div>
+
+        <div class="header__figure"></div>
+        <div class="header__image"></div>
       </div>
-
-      <div class="header__info info">
-        <h3 class="info__title">
-          Thrivetalk
-        </h3>
-        <h1 class="info__heading">
-          HELPING YOU THRIVE IN ALL AREAS OF LIFE
-        </h1>
-        <p class="info__text">
-          Our highly talented therapists can help you with a range of issues including relationships,
-          sex, PTSD, depression, social anxiety, or even just caring for yourself more.
-        </p>
-        <a href="#services" class="info__button info__button_active">
-          WHO AM I
-        </a>
-        <a href="#health" class="info__button">
-          WHAT DO I DO
-        </a>
-      </div>
-
-      <div class="header__figure"></div>
-      <div class="header__image"></div>
     </header>
 
-    <main class="page__main">
-      <section class="why-thrive">
-        <div class="why-thrive__info">
-          <h2 class="why-thrive__heading">
-            Why Thrive?
-          </h2>
-          <p class="why-thrive__text">
-            <span class="why-thrive__text_bold">Want to improve your well-being from the comfort of your own couch?
-            Are you having trouble finding the right therapist?
-            </span>
-            Here at ThriveTalk,
-            our licensed therapists provide the same quality care you would get in
-            office from anywhere you can access your laptop or mobile phone.
-            Become your best self with ThriveTalk.  Start therapy now with a licensed therapist!
-          </p>
-        </div>
-        <img
-            src="./images/why-thrive-img.jpg"
-            alt="christopher campbell"
-            class="why-thrive__img"
-        >
-      </section>
+    <main class="page__main main">
+      <div class ="main__why-thrive-wrapper">
+        <section class="why-thrive main__why-thrive">
+          <div class="why-thrive__info">
+            <h2 class="why-thrive__heading">
+              Why Thrive?
+            </h2>
+            <p class="why-thrive__text">
+              <span class="why-thrive__text_bold">Want to improve your well-being from the comfort of your own couch?
+              Are you having trouble finding the right therapist?
+              </span>
+              Here at ThriveTalk,
+              our licensed therapists provide the same quality care you would get in
+              office from anywhere you can access your laptop or mobile phone.
+              Become your best self with ThriveTalk.  Start therapy now with a licensed therapist!
+            </p>
+          </div>
+          <img
+              src="./images/why-thrive-img.jpg"
+              alt="christopher campbell"
+              class="why-thrive__img"
+          >
+        </section>
+      </div>
 
-      <section class="about" id="about">
+      <section class="about main__about" id="about">
         <h3 class="about__title">About us</h3>
         <p class="about__text">
           We want to help you thrive! Whether you are just looking for someone to talk to,
@@ -118,7 +123,7 @@
         </p>
       </section>
 
-      <section class="services" id="services">
+      <section class="services main__services" id="services">
         <h3 class="services__title">
           WE CAN HELP YOU WITH
         </h3>
@@ -154,7 +159,7 @@
         </div>
       </section>
 
-      <section class="health" id="health">
+      <section class="health main__health" id="health">
         <div class="health__range">
           <div class="health__item block">
             <div class="block__top">
@@ -201,7 +206,7 @@
         </div>
       </section>
 
-      <section class="training">
+      <section class="training main__training">
         <div class="training__item">
           <h3 class="training__title">
             Nutritional Plans
@@ -252,7 +257,7 @@
         </div>
       </section>
 
-      <section class="should-know">
+      <section class="should-know main__should-know">
         <img
           src="./images/blog-img.jpg"
           alt="linkedin sales navigator"
@@ -265,9 +270,9 @@
           <p class="should-know__text">
             MDD affects more than 16.1 million American adults, or about 6.7%of the U.S.
             population age 18 and older in a given year. We at
-              <a href="#info" class="should-know__text_colored">
-                ThriveTalk
-              </a>
+            <a href="#info" class="should-know__text_colored">
+              ThriveTalk
+            </a>
             can help you.
           </p>
           <a href="#info" class="should-know__link">
@@ -276,27 +281,29 @@
         </div>
       </section>
 
-      <section class="contact">
-        <div class="contact__description">
-          <h3 class="contact__title">
-            CONTACT US
-          </h3>
-          <h2 class="contact__catchword">
-            Ready. Set. Smile
-          </h2>
-          <p class="contact__text">
-            Take the free online assessment to see if you are a candidate and get started on your journey.
-          </p>
-          <a href="#info" class="contact__link">
-            GET HELP NOW
-          </a>
-        </div>
-        <img
-          src="./images/contact-img.jpg"
-          alt="charles etoroma"
-          class="contact__img"
-        >
-      </section>
+      <div class="main__contact-wrapper">
+        <section class="contact main__contact">
+          <div class="contact__description">
+            <h3 class="contact__title">
+              CONTACT US
+            </h3>
+            <h2 class="contact__catchword">
+              Ready. Set. Smile
+            </h2>
+            <p class="contact__text">
+              Take the free online assessment to see if you are a candidate and get started on your journey.
+            </p>
+            <a href="#info" class="contact__link">
+              GET HELP NOW
+            </a>
+          </div>
+          <img
+            src="./images/contact-img.jpg"
+            alt="charles etoroma"
+            class="contact__img"
+          >
+        </section>
+      </div>
     </main>
     <footer class="page__footer footer">
       <section class="footer__top" id="info">

@@ -28,6 +28,10 @@
 
     &_colored {
       color: $service-color;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 
