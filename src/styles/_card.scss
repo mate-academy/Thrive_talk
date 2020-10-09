@@ -5,6 +5,13 @@
 
   color: white;
 
+  transition: transform $transition;
+
+  &:hover {
+    cursor: pointer;
+    transform: translate(0, -5px) scale(1.01);
+  }
+
   &__hr {
     border-bottom: 1px solid white;
     margin-bottom: 23px;
