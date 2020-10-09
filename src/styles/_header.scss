@@ -2,8 +2,10 @@
   @include padding-global;
   @include adaptive-padding-hor;
   position: relative;
+
   height: 100vh;
   min-height: 540px;
+  max-width: 1700px;
 
   background: url(../images/header-img.png),
     url(../images/Rectangle.png),
