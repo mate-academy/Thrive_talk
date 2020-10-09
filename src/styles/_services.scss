@@ -5,6 +5,7 @@
   &__title {
     @include font-manage(16px, 19px, 0.06em);
     font-weight: normal;
+    text-transform: uppercase;
     color: $text-color2;
     margin: 0 auto 24px;
   }

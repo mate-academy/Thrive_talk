@@ -1,4 +1,4 @@
-.block {
+.card {
   position: relative;
 
   &::before {
@@ -9,7 +9,7 @@
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: #e9b730;
+    background-color: $card-service-color;
   }
   
 

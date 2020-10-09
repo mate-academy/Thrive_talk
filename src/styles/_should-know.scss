@@ -15,6 +15,7 @@
   &__title {
     @include font-manage(16px, 12px, 0.06em);
     font-weight: normal;
+    text-transform: uppercase;
     color: $text-color1;
     margin-bottom: 225px;
   }
@@ -37,7 +38,8 @@
 
   &__link {
     @include font-manage(16px, 23px, 0.1em);
-    color: #fab63e;
+    color: $alternative-link-color;
+    text-transform: uppercase;
     padding-bottom: 5px;
     transition: border-bottom 0.3s, color 0.3s;
 
