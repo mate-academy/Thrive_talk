@@ -4,6 +4,7 @@
   grid-template-rows: repeat(2, 240px );
   padding-top: 20px;
   align-items: center;
+
   overflow: hidden;
 
   @media (max-width: $large-breakpoint) {
@@ -18,15 +19,18 @@
 
   &__item {
     padding: 55px 0 37px 5vw;
+
     @media (max-width: $small-breakpoint) {
       padding: 30px 0 20px;
       margin: 0 auto;
+
       text-align: center;
     }
   }
 
   &__title {
     margin-bottom: 28px;
+
     @include font-manage(28px, 33px, -0.03em);
     font-weight: normal;
     color: $text-color1;
@@ -34,6 +38,7 @@
 
   &__text {
     max-width: 298px;
+    
     @include font-manage(16px, 25px, -0.03em);
     color: $text-color2;
   }
