@@ -23,13 +23,13 @@
     margin: 30px 5px;
   }
 
-  &__img {
+  &__image {
     @include mix-image(1111px, 0.2);
     object-fit: cover;
     object-position: center;
   }
 
-  &__p {
+  &__text {
     @include adaptive-padding-hor;
     position: relative;
     

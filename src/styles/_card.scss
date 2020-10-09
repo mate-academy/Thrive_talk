@@ -12,12 +12,12 @@
     transform: translate(0, -5px) scale(1.01);
   }
 
-  &__hr {
+  &__line {
     border-bottom: 1px solid $white;
     margin-bottom: 23px;
   }
 
-  &__p {
+  &__text {
     position: relative;
     margin-left: 20px;
     font-size: $font-size-large;

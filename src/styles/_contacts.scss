@@ -18,12 +18,12 @@
     color: $white;
   }
 
-  &__h {
+  &__heading {
     margin-bottom: 50px;
     font-size: $font-size-xsmall;
   }
 
-  &__p {
+  &__text {
     margin-bottom: 50px;
     font-size: $font-size-xlarge;
 
@@ -36,7 +36,7 @@
     margin-bottom: 10px;
   }
 
-  &__img {
+  &__image {
     @include mix-image(925px, 0.2);
 
     object-fit: cover;

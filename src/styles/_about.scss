@@ -9,7 +9,7 @@
   color: $navyblue;
   line-height: 34px;
 
-  &__h {
+  &__heading {
     position: absolute;
     left: $padding-global / 2;
     font-size: $font-size-xsmall;
@@ -17,7 +17,7 @@
     margin-right: $padding-global;
   }
 
-  &__p {
+  &__text {
     max-width: 600px;
     font-size: $font-size-small;
   }
@@ -26,7 +26,7 @@
     flex-direction: column;
     margin-bottom: 60px;
 
-    &__h {
+    &__heading {
       position: static;
     }
   }

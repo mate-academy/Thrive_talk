@@ -42,7 +42,7 @@
     }
   }
 
-  &__nav {
+  &__navigation {
     font-size: $font-size-xxsmall;
     @media (max-width: 768px) {
       display: none;
@@ -62,7 +62,7 @@
     }
   }
 
-  &__ul {
+  &__list {
     display: flex;
     list-style: none;
 

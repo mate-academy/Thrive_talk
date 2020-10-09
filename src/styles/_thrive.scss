@@ -12,17 +12,17 @@
     color: $white;
   }
 
-  &__h {
+  &__heading {
     margin-bottom: 75px;
     font-size: $font-size-xlarge;
   }
 
-  &__p {
+  &__text {
     font-size: $font-size-small;
     line-height: 35px;
   }
 
-  &__img {
+  &__image {
     @include mix-image(768px, 0.1);
 
     object-fit: cover;
