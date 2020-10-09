@@ -11,8 +11,8 @@
     url(../images/Rectangle.png),
     linear-gradient(90deg, $dimgrey 0%,
     $dimgrey 79%,
-    white 80%,
-    white 100%);
+    $white 80%,
+    $white 100%);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
