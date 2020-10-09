@@ -17,6 +17,18 @@
   background-position: right;
   background-repeat: no-repeat;
 
+  &__nav-toggler {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    z-index: 3;
+  }
+
+  &__introduction {
+    position: absolute;
+    bottom: 75px;
+  }
+
   &__top {
     padding: 20px 0;
     display: flex;
