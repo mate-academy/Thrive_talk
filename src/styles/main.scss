@@ -26,4 +26,8 @@ html {
   font-family: Larsseit, Arial, Helvetica, sans-serif;
   font-size: $font-size-small;
   scroll-behavior: smooth;
+
+  @media (min-width: 2000px) {
+    font-size: $font-size-small-lg-screen;
+  }
 }

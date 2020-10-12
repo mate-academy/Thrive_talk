@@ -10,7 +10,8 @@
   }
 
   &__article {
-    @include adaptive-padding-all;
+    @include adaptive-padding-all;margin-left: 40px;
+    font-size: $font-size-large;
 
     display: flex;
     flex-direction: column;
@@ -18,18 +19,30 @@
 
     padding: $padding-global;
     color: $navyblue;
+
+    @media (max-width: 2000px) {
+      font-size: $font-size-large-lg-screen;
+    }
   }
 
   &__heading {
     margin-bottom: 50px;
 
     font-size: $font-size-xsmall;
+
+    @media (min-width: 2000px) {
+      font-size: $font-size-xsmall-lg-screen;
+    }
   }
 
   &__text {
     margin-bottom: 50px;
     
     font-size: $font-size-large;
+
+    @media (min-width: 2000px) {
+      font-size: $font-size-large-lg-screen;
+    }
 
     &--marked {
       color: $cyan;

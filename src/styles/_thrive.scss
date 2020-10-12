@@ -15,11 +15,18 @@
   &__heading {
     margin-bottom: 75px;
     font-size: $font-size-xlarge;
+    @media (min-width: 2000px) {
+      font-size: $font-size-xlarge-lg-screen;
+    }
   }
 
   &__text {
     font-size: $font-size-small;
     line-height: 35px;
+    @media (min-width: 2000px) {
+      font-size: $font-size-small-lg-screen;
+      line-height: $font-size-small-lg-screen * 1.4;
+    }
   }
 
   &__image {

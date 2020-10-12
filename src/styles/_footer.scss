@@ -1,8 +1,6 @@
 .footer {
   position: relative;
 
-  max-width: 1700px;
-
   font-size: $font-size-xxsmall;
   
   &__info {
@@ -17,6 +15,13 @@
     padding: $padding-global / 2;
 
     @include adaptive-padding-all;
+
+    @media (min-width: 2000px) {
+      position: relative;
+      left: 30%;
+
+      transform: translate(-50%, 0);
+    }
   }
 
   &__info-block {

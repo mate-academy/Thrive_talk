@@ -13,6 +13,8 @@
 
     padding: $padding-global;
 
+    width: 100%;
+
     background-color: $navyblue;
 
     color: $white;
@@ -21,14 +23,26 @@
   &__heading {
     margin-bottom: 50px;
     font-size: $font-size-xsmall;
+
+    @media (min-width: 2000px) {
+      font-size: $font-size-xsmall-lg-screen;
+    }
   }
 
   &__text {
     margin-bottom: 50px;
     font-size: $font-size-xlarge;
 
+    @media (min-width: 2000px) {
+      font-size: $font-size-xlarge-lg-screen;
+    }
+
     &--strong {
       font-size: $font-size-xxxlarge;
+
+      @media (min-width: 2000px) {
+        font-size: $font-size-xxxlarge-lg-screen;
+      }
     }
   }
 

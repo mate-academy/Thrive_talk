@@ -1,5 +1,5 @@
 .introduction {
-  max-width: 470px;
+  // max-width: 470px;
   width: 90vw;
 
   color: $navyblue;
@@ -28,5 +28,8 @@
 
   @media (max-width: 768px) {
     text-shadow: 0 0 10px white;
+  }
+  @media (min-width: 2000px) {
+    width: 40vw;
   }
 }

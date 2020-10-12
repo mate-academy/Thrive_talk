@@ -1,7 +1,7 @@
 .button {
   position: relative;
   z-index: 1;
-  
+
   width: 150px;
   height: 50px;
 
@@ -18,6 +18,17 @@
 
   transition: transform $transition;
 
+  @media (min-width: 2000px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 100px;
+
+    font-size: $font-size-xsmall-lg-screen;
+  }
+
   &:hover {
     @include scale(1.1);
     cursor: pointer;
@@ -28,6 +39,12 @@
 
     background-color: $cyan;
     border-radius: 25px;
+
+    @media (min-width: 2000px) {
+      font-size: $font-size-xxsmall-lg-screen;
+
+      border-radius: 100px;
+    }
   }
 
   &--orrange {

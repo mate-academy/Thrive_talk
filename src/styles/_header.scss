@@ -5,7 +5,7 @@
 
   height: 100vh;
   min-height: 540px;
-  max-width: 1700px;
+  max-height: 1024px;
 
   background: url(../images/header-img.png),
     url(../images/Rectangle.png),
@@ -44,6 +44,7 @@
 
   &__navigation {
     font-size: $font-size-xxsmall;
+
     @media (max-width: 768px) {
       display: none;
 
@@ -55,6 +56,10 @@
       right: 0;
 
       background-color: $dimgrey;
+    }
+
+    @media (min-width: 2000px) {
+      font-size: $font-size-xxsmall-lg-screen;
     }
 
     &--active {

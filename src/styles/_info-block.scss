@@ -9,13 +9,17 @@
 
   font-size: $font-size-xxsmall;
 
+  @media (min-width: 2000px) {
+    font-size: $font-size-xxsmall-lg-screen;
+    line-height: $font-size-xxsmall-lg-screen * 1.2;
+  }
+
   &__heading {
     color: $navyblue;
     margin-bottom: 23px;
   }
 
   &__text {
-    line-height: 23px;
     color: $transblue;
   }
 

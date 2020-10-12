@@ -3,4 +3,8 @@
   z-index: 3;
   font-size: $font-size-small;
   color: $cyan;
+
+  @media (min-width: 2000px) {
+    font-size: $font-size-small-lg-screen;
+  }
 }

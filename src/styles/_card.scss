@@ -1,8 +1,6 @@
 .card {
   padding: 5vw;
 
-  font-size: $font-size-large;
-
   color: $white;
 
   transition: transform $transition;
@@ -22,6 +20,11 @@
     margin-left: 20px;
     font-size: $font-size-large;
 
+    @media (min-width: 2000px) {
+      margin-left: 40px;
+      font-size: $font-size-large-lg-screen;
+    }
+
     &::before {
       content: "•";
       position: absolute;
@@ -30,6 +33,10 @@
       margin-right: 12px;
       
       color: $orange;
+
+      @media (min-width: 2000px) {
+        left: -40px;
+      }
     }
 
   }
