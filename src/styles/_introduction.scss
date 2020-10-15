@@ -1,6 +1,5 @@
 .introduction {
-  // max-width: 470px;
-  width: 90vw;
+  width: 80vw;
 
   color: $navyblue;
 
@@ -16,6 +15,8 @@
 
   &__text {
     margin-bottom: 30px;
+
+    text-shadow: 0 0 10px white;
   }
 
   &__buttons {
@@ -26,9 +27,6 @@
     margin-right: 10px;
   }
 
-  @media (max-width: 768px) {
-    text-shadow: 0 0 10px white;
-  }
   @media (min-width: 2000px) {
     width: 40vw;
   }
