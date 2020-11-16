@@ -1,0 +1,27 @@
+@import "utils";
+@import "typography";
+
+@import "reset";
+@import "header";
+@import "main";
+@import "why-thrive";
+@import "about-us";
+@import "help-you";
+@import "card";
+@import "details";
+@import "facts";
+@import "contact-us";
+@import "contacts";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $background-color;
+}
+
+html {
+  font-family: Larsseit, Helvetica, sans-serif;
+}

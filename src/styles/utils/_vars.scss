@@ -1,1 +1,25 @@
-$c-gray: #eee;
+$white: #fff;
+$cyan: #62d0df;
+$purple: #ffe2de;
+$green: #c4e769;
+$blue: #0052c1;
+$gray: #dee1ff;
+$violet: #8f00ff;
+$darkblue: #22356f;
+
+$background-color: $white;
+$header-main-color: $cyan;
+$why-thrive-color: $cyan;
+
+$little-card-colors:
+  1 $purple,
+  2 $green,
+  3 $cyan,
+  4 $blue;
+
+$medium-card-colors:
+  1 $darkblue,
+  2 $blue,
+  4 $cyan,
+  5 $gray,
+  6 $violet;

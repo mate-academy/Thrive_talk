@@ -1,0 +1,73 @@
+.contacts {
+  display: flex;
+
+  &__picture {
+    width: 570px;
+    height: 380px;
+    background-image: url("../images/autumn-goodman-242825.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 0 12px;
+  }
+
+  &__card {
+    width: 233px;
+    height: 172px;
+    margin-left: 40px;
+    text-decoration: none;
+
+    &--shadow {
+      box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  &__heading {
+    padding-bottom: 35px;
+    font-size: 14px;
+    color: #22356f;
+    line-height: 11px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+    color: rgba(34, 53, 111, 0.5);
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: inherit;
+    color: #016dff;
+    text-decoration: none;
+    transition: transform 300ms, color 300ms;
+
+    &:hover {
+      transform: scale(1.2);
+      color: #62d0df;
+    }
+  }
+
+  @media (max-width: 1279px) {
+
+    &__item {
+      flex-direction: column;
+    }
+
+    &__heading {
+      padding-bottom: 0;
+    }
+
+    &__picture {
+      display: none;
+    }
+  }
+}

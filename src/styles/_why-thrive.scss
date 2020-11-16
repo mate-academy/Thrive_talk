@@ -1,0 +1,33 @@
+.why-thrive {
+  padding: 151px 0 166px 178px;
+  background-color: $why-thrive-color;
+  position: relative;
+
+  &__title {
+    font-size: 36px;
+    line-height: 27px;
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    color: white;
+
+    margin-bottom: 75px;
+  }
+
+  &__description {
+    color: white;
+  }
+
+  &__photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 75px 10px;
+
+    &__photo {
+      display: none;
+    }
+  }
+}

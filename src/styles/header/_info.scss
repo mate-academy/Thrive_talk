@@ -1,0 +1,38 @@
+.info {
+  &__thrivetalk {
+    width: 484px;
+    margin-bottom: 40px;
+
+    color: $header-main-color;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+  }
+
+  &__description1 {
+    width: 484px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    color: #22356f;
+  }
+
+  &__description2 {
+    width: 469px;
+    margin-bottom: 73px;
+    font-size: 24px;
+    line-height: 42px;
+    color: #22356f;
+  }
+
+  @media screen and (max-width: 500px) {
+    &__thrivetalk,
+    &__description1,
+    &__description2 {
+      width: 100%;
+    }
+  }
+}

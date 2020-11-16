@@ -1,0 +1,24 @@
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__description {
+    height: 240px;
+  }
+
+  &__title {
+    margin: 55px 0 28px 105px;
+  }
+
+  &__info {
+    margin-left: 105px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(1, 1fr);
+
+    &__info {
+      margin-left: 10px;
+    }
+  }
+}
