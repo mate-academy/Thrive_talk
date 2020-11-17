@@ -28,7 +28,7 @@
 
     margin-top: -15px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 17px;
     background-color: $header-main-color;
     border-radius: 50px;
   }
@@ -85,5 +85,9 @@
     &__rectangle {
       display: none;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
   }
 }
