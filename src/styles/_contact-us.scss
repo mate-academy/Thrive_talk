@@ -64,8 +64,7 @@
     overflow: hidden;
 
     &__texts {
-      width: 100%;
-      padding: 0 40px;
+      padding: 40px;
     }
 
     &__heading {
@@ -78,6 +77,10 @@
 
     &__picture {
       display: none;
+    }
+
+    &__link {
+      margin-bottom: 15px;
     }
   }
 }

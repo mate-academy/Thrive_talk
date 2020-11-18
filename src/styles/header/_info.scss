@@ -29,10 +29,20 @@
   }
 
   @media screen and (max-width: 500px) {
+
     &__thrivetalk,
     &__description1,
     &__description2 {
       width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    &__thrivetalk,
+    &__description1,
+    &__description2 {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
