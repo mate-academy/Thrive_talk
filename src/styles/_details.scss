@@ -3,26 +3,35 @@
   grid-template-columns: repeat(3, 1fr);
 
   &__description {
-    width: 480px;
     height: 240px;
   }
 
   &__title {
-    margin: 55px 0 28px 105px;
+    width: 300px;
+    position: relative;
+    left: 22%;
+    margin: 55px 0 28px;
 
     font-size: 28px;
     font-family: Larsseit, sans-serif;
+
+    color: #22356f;
   }
 
   &__info {
-    margin-left: 105px;
+    width: 300px;
+    position: relative;
+    left: 22%;
+
+    color: rgba(34, 53, 111, 0.5);
   }
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 1200px) {
     grid-template-columns: repeat(2, 1fr);
 
     &__title,
     &__info {
+      left: 0%;
       margin-left: 35px;
     }
 
@@ -36,7 +45,12 @@
 
     &__info,
     &__title {
+      left: 0%;
       margin-left: 10px;
+    }
+
+    &__description {
+      height: 200px;
     }
   }
 }
