@@ -37,6 +37,13 @@
     }
   }
 
+  @media screen and (max-width: 500px) {
+    &__who-am-i,
+    &__what-do-i-do {
+      font-size: 14px;
+    }
+  }
+
   @media screen and (max-width: 1280px) {
     justify-content: center;
   }
