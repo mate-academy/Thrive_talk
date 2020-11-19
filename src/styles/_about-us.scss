@@ -21,6 +21,12 @@
     color: #22356f;
   }
 
+  @media screen and (min-width: 1000px) {
+    &__description {
+      width: 592px;
+    }
+  }
+
   @media screen and (max-width: 1000px) {
     padding: 75px 10px;
     flex-direction: column;
