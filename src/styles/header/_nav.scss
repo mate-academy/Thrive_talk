@@ -16,16 +16,21 @@
   }
 
   @media screen and (max-width: 1000px) {
-    &__list {
-      flex-direction: column;
-    }
-
     &__item {
       margin-bottom: 20px;
 
       &--is-active {
         border: none;
       }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    &__list {
+      width: 50px;
+      display: block;
+      position: relative;
+      left: 115px;
     }
   }
 }
