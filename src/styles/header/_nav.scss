@@ -10,7 +10,7 @@
   &__item {
     padding: 0 25px;
 
-    &--is-active {
+    &:hover {
       border-bottom: 2px solid black;
     }
   }
