@@ -1,7 +1,15 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "reset.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/thrivetalk-block.scss";
+@import "blocks/why-thrive.scss";
+@import "blocks/about.scss";
 
 body {
   background: $c-gray;
+  font-family: "Larsseit", sans-serif;
 }

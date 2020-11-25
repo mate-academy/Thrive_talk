@@ -1,0 +1,12 @@
+.nav {
+  font-size: 14px;
+  line-height: 16px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(80px, 1fr));
+  }
+
+  &__link {
+    color: #22356f;
+  }
+}

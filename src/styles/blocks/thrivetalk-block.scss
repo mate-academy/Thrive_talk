@@ -1,0 +1,40 @@
+.thrivetalk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 484px;
+  }
+
+  &__img {
+    .img {
+      border-radius: 312.16px;
+      transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0) rotate(0deg);
+    }
+  }
+}
+
+.text {
+  color: #22356f;
+
+  &__subtittle {
+    color: #87dae0;
+  }
+}
+
+.first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.one {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
