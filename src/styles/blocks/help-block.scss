@@ -1,3 +1,118 @@
 .help {
-  margin: 0;
+  background-color: #fff;
+  color: #fff;
+  font-size: 32px;
+  line-height: 34px;
+  display: grid;
+  justify-items: center;
+
+  &__header {
+    padding-top: 76px;
+    font-size: 16px;
+    color: rgba(34, 53, 111, 0.5);
+  }
+
+  &__small-blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 360px);
+
+  }
+
+  &__small {
+    width: 360px;
+    height: 360px;
+
+    &::before {
+      content: url(../images/Ellipse.jpg) " ";
+    }
+
+    &--pink {
+      background-color: #ffe2de;
+    }
+
+    &--green {
+      background-color: #c4e769;
+    }
+
+    &--blue {
+      background-color: #62d0df;
+    }
+
+    &--darkblue {
+      background-color: #0052c1;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: #fff;
+    height: 100%;
+    padding: 100px 20px 20px;
+  }
+
+  &__big-blocks {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 480px);
+  }
+
+  &__big {
+    height: 480px;
+    width: 480px;
+    color: #fff;
+
+    &--darkblue {
+      background-color: #22356f;
+    }
+
+    &--blue {
+      background-color: #0052c1;
+    }
+
+    &--image {
+      background-image: url(/images/joanna-kosinska-340748.jpg);
+    }
+
+    &--lightblue {
+      background-color: #62d0df;
+    }
+
+    &--white {
+      background-color: #dee1ff;
+    }
+
+    &--purple {
+      background-color: #8f00ff;
+    }
+  }
+
+  &__bottom-blocks {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, 480px);
+    grid-template-rows: repeat(2, 240px);
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 55px 105px;
+    width: 480px;
+    height: 240px;
+    background-color: #fff;
+  }
+
+  &__headers {
+    font-size: 28px;
+    line-height: 33px;
+    color: #22356f;
+  }
+
+  &__paragraph {
+    color: rgba(34, 53, 111, 0.5);
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+  }
 }

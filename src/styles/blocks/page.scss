@@ -1,7 +1,10 @@
 .page {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  max-width: 1500px;
+
+  position: relative;
+  margin: 0 auto;
 }
 
 .page__header {

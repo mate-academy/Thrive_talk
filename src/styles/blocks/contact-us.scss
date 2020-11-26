@@ -1,0 +1,44 @@
+.contact-us {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  grid-template-rows: 800px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 180px;
+    padding-right: 201px;
+    background: #22356f;
+  }
+
+  &__header {
+    font-size: 16px;
+    line-height: 12px;
+    color: #fff;
+    padding-top: 10px;
+  }
+
+  &__subtittle {
+    font-size: 64px;
+    line-height: 94px;
+    color: #fff;
+  }
+
+  &__paragraph {
+    font-size: 36px;
+    line-height: 53px;
+    color: #fff;
+  }
+
+  &__link {
+    padding-top: 100px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #62d0df;
+  }
+
+  &__image {
+    height: 800px;
+  }
+}

@@ -1,0 +1,24 @@
+.info {
+  display: grid;
+  grid-template-columns: 570px 1fr;
+
+  &__blocks {
+    display: flex;
+    flex-direction: row;
+    padding-left: 68px;
+    background-color: #fff;
+  }
+
+  &__header {
+    padding-top: 98px;
+    color: #22356f;
+  }
+
+  &__paragraph {
+    color: rgba(34, 53, 111, 0.5);
+  }
+
+  &__column {
+    padding-right: 40px;
+  }
+}

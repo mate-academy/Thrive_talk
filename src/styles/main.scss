@@ -8,6 +8,15 @@
 @import "blocks/thrivetalk-block.scss";
 @import "blocks/why-thrive.scss";
 @import "blocks/about.scss";
+@import "blocks/footer.scss";
+@import "blocks/help-block.scss";
+@import "blocks/also-know.scss";
+@import "blocks/contact-us.scss";
+@import "blocks/info.scss";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background: $c-gray;
