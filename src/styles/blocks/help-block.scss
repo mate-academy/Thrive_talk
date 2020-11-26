@@ -3,10 +3,11 @@
   color: #fff;
   font-size: 32px;
   line-height: 34px;
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
 
   &__header {
+    text-align: center;
     padding-top: 76px;
     font-size: 16px;
     color: rgba(34, 53, 111, 0.5);
@@ -14,16 +15,17 @@
 
   &__small-blocks {
     display: grid;
-    grid-template-columns: repeat(4, 360px);
-
+    grid-template-columns: repeat(auto-fill, 360px);
+    justify-content: center;
   }
 
   &__small {
-    width: 360px;
     height: 360px;
+    padding-top: 50px;
+    padding-left: 30px;
 
     &::before {
-      content: url(../images/Ellipse.jpg) " ";
+      content: url(../images/Rectangle2.1copy.svg);
     }
 
     &--pink {
@@ -44,22 +46,34 @@
   }
 
   &__link {
-    display: block;
-    color: #fff;
+    display: inline-block;
     height: 100%;
-    padding: 100px 20px 20px;
+    padding-top: 30px;
+
+    color: #fff;
+
+    &::before {
+      content: url(../images/Ellipse.svg) " ";
+    }
   }
 
   &__big-blocks {
     padding-top: 120px;
     display: grid;
-    grid-template-columns: repeat(3, 480px);
+    grid-template-columns: repeat(auto-fill, 480px);
+    justify-content: center;
   }
 
   &__big {
     height: 480px;
     width: 480px;
     color: #fff;
+    padding-top: 100px;
+    padding-left: 70px;
+
+    &::before {
+      content: url(../images/Rectangle2.1.svg);
+    }
 
     &--darkblue {
       background-color: #22356f;
@@ -77,7 +91,7 @@
       background-color: #62d0df;
     }
 
-    &--white {
+    &--light {
       background-color: #dee1ff;
     }
 
@@ -88,9 +102,8 @@
 
   &__bottom-blocks {
     display: grid;
-    grid-auto-flow: column;
     grid-template-columns: repeat(auto-fit, 480px);
-    grid-template-rows: repeat(2, 240px);
+    justify-content: center;
   }
 
   &__bottom {

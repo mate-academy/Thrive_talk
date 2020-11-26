@@ -1,24 +1,41 @@
 .thrivetalk {
   display: flex;
-  justify-content: center;
   align-items: center;
+  height: 740px;
 
   &__text {
-    display: flex;
-    flex-direction: column;
-    max-width: 484px;
+    padding-left: 179px;
+    height: 500px;
+    width: 650px;
     color: #22356f;
   }
 
   &__subtittle {
     color: #87dae0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  &__title {
+    color: #22356f;
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: bold;
+  }
+
+  &__paragraph {
+    font-size: 24px;
+    line-height: 42px;
+    color: #22356f;
+    padding-bottom: 63px;
   }
 
   &__img {
-    overflow: hidden;
+    position: absolute;
 
-    top: 0;
-    right: -200px;
+    top: 140px;
+    right: -100px;
     border-radius: 312px;
     width: 807px;
     height: 545px;
@@ -29,13 +46,30 @@
     background-size: cover;
     background-position: center;
   }
+
+  &__button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fab63e;
+
+    &--yellow {
+      background-color: #fab63e;
+      color: #fff;
+    }
+  }
 }
 
 .first {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -3;
 }
 
 .one {

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 480px 1fr;
   background-color: #fff;
+  grid-template-rows: 800px;
 
   &__image {
     height: 800px;
