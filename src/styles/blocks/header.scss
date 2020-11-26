@@ -5,7 +5,7 @@
   justify-content: space-around;
 
   &__name {
-    color: #87dae0;
+    color: $main-color;
     font-size: 24px;
     line-height: 27px;
     font-weight: bold;
@@ -18,9 +18,9 @@
 
     text-align: center;
     line-height: 50px;
-    color: #fff;
+    color: $step-color-light;
 
-    background-color: #62d0df;
+    background-color: $main-color;
     border-radius: 50px;
   }
 }

@@ -9,33 +9,33 @@
     justify-content: center;
     padding-left: 180px;
     padding-right: 201px;
-    background: #22356f;
+    background: $step-color-dark;
   }
 
   &__header {
     font-size: 16px;
     line-height: 12px;
-    color: #fff;
+    color: $step-color-light;
     padding-top: 10px;
   }
 
   &__subtittle {
     font-size: 64px;
     line-height: 94px;
-    color: #fff;
+    color: $step-color-light;
   }
 
   &__paragraph {
     font-size: 36px;
     line-height: 53px;
-    color: #fff;
+    color: $step-color-light;
   }
 
   &__link {
     padding-top: 100px;
     font-size: 16px;
     line-height: 23px;
-    color: #62d0df;
+    color: $main-color;
   }
 
   &__image {

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 100px 1fr;
   align-items: end;
-  background-color: #fff;
+  background-color: $step-color-light;
   height: 361px;
 
   &__header {
@@ -14,13 +14,13 @@
     font-size: 16px;
     line-height: 23px;
     letter-spacing: 0.06em;
-    color: #22356f;
+    color: $step-color-dark;
   }
 
   &__info {
     justify-self: center;
     font-size: 24px;
-    color: #22356f;
+    color: $step-color-dark;
     width: 592px;
   }
 }

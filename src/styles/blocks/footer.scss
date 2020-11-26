@@ -1,12 +1,12 @@
 .footer {
   height: 80px;
-  background-color: #62d0df;
+  background-color: $main-color;
   display: flex;
   align-items: center;
 
   &__copyright {
     padding-left: 179px;
-    color: #fff;
+    color: $step-color-light;
     font-size: 14px;
     line-height: 11px;
 

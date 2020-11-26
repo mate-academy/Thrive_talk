@@ -7,18 +7,18 @@
     padding-left: 179px;
     height: 500px;
     width: 650px;
-    color: #22356f;
+    color: $step-color-dark;
   }
 
   &__subtittle {
-    color: #87dae0;
+    color: $main-color;
     font-weight: bold;
     font-size: 24px;
     line-height: 27px;
   }
 
   &__title {
-    color: #22356f;
+    color: $step-color-dark;
     font-size: 48px;
     line-height: 53px;
     font-weight: bold;
@@ -27,7 +27,7 @@
   &__paragraph {
     font-size: 24px;
     line-height: 42px;
-    color: #22356f;
+    color: $step-color-dark;
     padding-bottom: 63px;
   }
 
@@ -56,11 +56,11 @@
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
-    color: #fab63e;
+    color: $btn-color;
 
     &--yellow {
-      background-color: #fab63e;
-      color: #fff;
+      background-color: $btn-color;
+      color: $step-color-light;
     }
   }
 }

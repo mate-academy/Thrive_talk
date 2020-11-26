@@ -1,6 +1,6 @@
 .help {
-  background-color: #fff;
-  color: #fff;
+  background-color: $step-color-light;
+  color: $step-color-light;
   font-size: 32px;
   line-height: 34px;
   display: flex;
@@ -50,7 +50,7 @@
     height: 100%;
     padding-top: 30px;
 
-    color: #fff;
+    color: $step-color-light;
 
     &::before {
       content: url(../images/Ellipse.svg) " ";
@@ -67,7 +67,7 @@
   &__big {
     height: 480px;
     width: 480px;
-    color: #fff;
+    color: $step-color-light;
     padding-top: 100px;
     padding-left: 70px;
 
@@ -76,7 +76,7 @@
     }
 
     &--darkblue {
-      background-color: #22356f;
+      background-color: $step-color-dark;
     }
 
     &--blue {
@@ -88,7 +88,7 @@
     }
 
     &--lightblue {
-      background-color: #62d0df;
+      background-color: $main-color;
     }
 
     &--light {
@@ -113,13 +113,13 @@
     padding: 55px 105px;
     width: 480px;
     height: 240px;
-    background-color: #fff;
+    background-color: $step-color-light;
   }
 
   &__headers {
     font-size: 28px;
     line-height: 33px;
-    color: #22356f;
+    color: $step-color-dark;
   }
 
   &__paragraph {

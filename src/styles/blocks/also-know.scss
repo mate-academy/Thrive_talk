@@ -1,7 +1,7 @@
 .also-know {
   display: grid;
   grid-template-columns: 480px 1fr;
-  background-color: #fff;
+  background-color: $step-color-light;
   grid-template-rows: 800px;
 
   &__image {
@@ -20,7 +20,7 @@
     padding-bottom: 225px;
     font-size: 16px;
     line-height: 13px;
-    color: #22356f;
+    color: $step-color-dark;
   }
 
   &__paragraph {
@@ -28,11 +28,11 @@
     line-height: 53px;
     letter-spacing: -0.01em;
 
-    color: #22356f;
+    color: $step-color-dark;
   }
 
   &__link {
     padding-top: 152px;
-    color: #fab63e;
+    color: $btn-color;
   }
 }
