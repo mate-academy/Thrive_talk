@@ -2,21 +2,30 @@
   display: grid;
   grid-template-columns: 1fr 480px;
   grid-template-rows: 800px;
+  background: $step-color-dark;
 
   &__text {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    max-height: 800px;
+    max-width: 600px;
+
     padding-left: 180px;
-    padding-right: 201px;
-    background: $step-color-dark;
+
+    @media screen and (max-width: 1100px) {
+      padding-left: 80px;
+    }
   }
 
   &__header {
+    position: absolute;
+    top: 103px;
     font-size: 16px;
     line-height: 12px;
     color: $step-color-light;
-    padding-top: 10px;
   }
 
   &__subtittle {
@@ -32,7 +41,9 @@
   }
 
   &__link {
-    padding-top: 100px;
+    position: absolute;
+    bottom: 42px;
+
     font-size: 16px;
     line-height: 23px;
     color: $main-color;

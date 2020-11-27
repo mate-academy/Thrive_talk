@@ -1,14 +1,13 @@
 .why-thrive {
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 525px;
   grid-template-rows: 604px;
   gap: 181px;
 
   background-color: #62d0df;
+
   &__image {
     object-fit: cover;
-    width: 536px;
     height: 604px;
   }
 }
@@ -17,7 +16,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 170px;
+  padding-left: 100px;
+
 }
 
 .text-why__header {

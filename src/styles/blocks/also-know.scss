@@ -9,6 +9,7 @@
   }
 
   &__text {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +18,9 @@
   }
 
   &__header {
-    padding-bottom: 225px;
+    position: absolute;
+    top: 103px;
+
     font-size: 16px;
     line-height: 13px;
     color: $step-color-dark;
@@ -32,7 +35,8 @@
   }
 
   &__link {
-    padding-top: 152px;
+    position: absolute;
+    bottom: 42px;
     color: $btn-color;
   }
 }
