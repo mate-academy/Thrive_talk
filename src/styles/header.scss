@@ -1,8 +1,8 @@
 
 .header {
   position: relative;
-  width: 100%;
   height: 840px;
+  padding-left: 179px;
   background: #f4f9e2;
   overflow: hidden;
 
@@ -54,14 +54,13 @@
   &__menu {
     position: relative;
     z-index: 2;
-    margin: 27px auto 0;
+    margin-top: 27px;
   }
 
   &__introduction {
     position: relative;
     z-index: 2;
-    margin: 187px auto 0;
-
+    margin-top: 187px;
   }
 }
 
@@ -79,7 +78,6 @@
   justify-content: space-between;
   align-items: baseline;
   max-width: 1130px;
-  padding-left: 50px;
 
   &__list {
     display: grid;
@@ -115,8 +113,6 @@
 
 .introduction {
   max-width: 1130px;
-  padding-left: 50px;
-
   &__heading {
     margin-top: 40px;
     color: #22356f;
