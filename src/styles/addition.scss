@@ -1,0 +1,50 @@
+.addition {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  height: 800px;
+
+  &__photo {
+    background-image: url(../images/smile-men.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .help {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 103px;
+    padding-left: 11%;
+    padding-bottom: 42px;
+
+    &__header {
+      font-size: 16px;
+      line-height: 12px;
+      color: #22356f;
+      text-transform: uppercase;
+
+    }
+
+    &__paragraph {
+      font-size: 36px;
+      line-height: 53px;
+      color: #22356f;
+
+      .help__thrive {
+        color: #62d0df;
+        text-decoration: none;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 23px;
+      color: #fab63e;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}

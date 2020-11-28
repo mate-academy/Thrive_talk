@@ -1,0 +1,50 @@
+.assessment {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  height: 800px;
+  background-color: #22356f;
+
+  .ready {
+    padding-top: 103px;
+    padding-left: 19%;
+
+    &__link {
+      font-size: 16px;
+      line-height: 12px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    &__header {
+      margin-top: 230px;
+      font-size: 64px;
+      line-height: 94px;
+      color: #fff;
+    }
+
+    &__paragraph {
+      margin-top: 75px;
+      font-size: 36px;
+      line-height: 53px;
+      color: #fff;
+    }
+
+    &__help {
+      display: inline-block;
+      margin-top: 70px;
+      font-size: 16px;
+      line-height: 23px;
+      color: #62d0df;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  &__photo {
+    background-image: url(../images/smile-man.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

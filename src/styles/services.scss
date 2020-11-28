@@ -1,0 +1,51 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__item {
+    height: 480px;
+
+    .services__list {
+      margin: 96px 15% 0;
+      padding-top: 30px;
+      max-width: 340px;
+      border-top: 2px solid #fff;
+
+      list-style-position: inside;
+      font-size: 32px;
+      line-height: 34px;
+      color: #fff;
+    }
+
+    .services__list::marker {
+      color: #e9b730;
+    }
+  }
+
+  .services__item--physic {
+    background-color: #22356f;
+  }
+
+  .services__item--ment {
+    background-color: #0052c1;
+  }
+
+  .services__item--nutr {
+    background-image: url(../images/strowbarry.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .services__item--gym {
+    background-color: #62d0df;
+  }
+
+  .services__item--cross {
+    background-color: #dee1ff;
+  }
+
+  .services__item--aero {
+    background-color: #8f00ff;
+  }
+}

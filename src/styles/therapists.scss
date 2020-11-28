@@ -1,0 +1,36 @@
+.therapists {
+  display: flex;
+  height: 604px;
+  padding-left: 179px;
+  background-color: #62d0df;
+
+  &__text {
+    flex-grow: 1;
+
+    .therapists__header {
+      margin-top: 151px;
+      font-size: 36px;
+      line-height: 27px;
+      color: #fff;
+    }
+
+    .therapists__paragraph {
+      margin-top: 75px;
+      font-size: 20px;
+      line-height: 29px;
+      color: #fff;
+
+      .therapists__span {
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+  }
+
+  &__photo {
+    width: 525px;
+    background-image: url(../images/girl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
