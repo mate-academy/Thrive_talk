@@ -1,0 +1,64 @@
+.footer {
+
+  &__contacts {
+    display: grid;
+    grid-template-columns: 570px 1fr;
+    height: 380px;
+
+    .footer__photo {
+      background: url(../images/smile-girl.png) no-repeat center;
+    }
+
+    .contacts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      grid-column-gap: 90px;
+      padding-top: 98px;
+      padding-left: 8%;
+
+      &__item {
+        .contacts__header {
+          font-size: 14px;
+          line-height: 11px;
+          color: #22356f;
+          text-transform: uppercase;
+        }
+
+        .contacts__paragraph {
+          margin-top: 55px;
+          font-size: 14px;
+          line-height: 23px;
+          color: rgba(34, 53, 111, 0.5);
+        }
+
+        .contacts__phone {
+          margin-top: 35px;
+          font-size: 14px;
+          line-height: 23px;
+          color: rgba(34, 53, 111, 0.5);
+        }
+
+        .contacts__email {
+          .contacts__link {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    padding-left: 12%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #62d0df;
+
+    &__text {
+      margin-right: 6px;
+      font-size: 14px;
+      line-height: 11px;
+      color: #fff;
+    }
+  }
+}
