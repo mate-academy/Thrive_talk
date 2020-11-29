@@ -1,0 +1,32 @@
+.advice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: 240px;
+
+    &-title{
+      margin-left: 105px;
+      margin-bottom: 28px;
+  
+      font-size: 28px;
+      line-height: 33px;
+      color: $colorBlue;
+    }
+
+    &-text {
+      margin-left: 105px;
+      padding-right: 70px;
+
+      font-size: 16px;
+      line-height: 25px;
+      color: rgba(34, 53, 111, 0.5);
+    }
+  }
+}

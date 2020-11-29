@@ -1,0 +1,57 @@
+.health {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__block {
+    padding-top: 126px;
+    padding-left: 70px;
+    width: 480px;
+    height: 480px;
+    
+    font-size: 32px;
+    color: #fff;
+
+    transition: 0.7s;
+
+    &:hover {
+      transform:translateY(-30px);
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      margin-right: 15px;
+
+      width: 12px;
+      height: 12px;
+
+      background-color: $colorOrange;
+      border-radius: 50%;
+    }
+
+    &_1 {
+      background-color: $colorBlue;
+    }
+
+    &_2 {
+      background-color: #0052c1;
+    }
+
+    &_3 {
+      background-image: url(/images/health.png);
+    }
+
+    &_4 {
+      background-color: $colorLightBlue;
+    }
+
+    &_5 {
+      background-color: #dee1ff;
+    }
+
+    &_6 {
+      background-color: #8f00ff;
+    }
+  }
+}

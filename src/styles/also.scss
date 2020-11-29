@@ -1,0 +1,55 @@
+.also {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 800px;
+
+  &__image {
+    background-image: url(/images/also-image.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__info {
+    margin-left: 106px;
+  }
+
+  &__title {
+    margin-top: 103px;
+
+    font-size: 16px;
+    color:$colorBlue;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 225px;
+    padding-right: 175px;
+
+    font-size: 36px;
+    line-height: 53px;
+    color: $colorBlue;
+
+    &-blue {
+      color: $colorLightBlue;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 132px;
+    padding:5px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    text-transform: uppercase;
+    color: $colorOrange;
+
+    transition-duration: 0.4s;
+
+    &:hover {
+      border: 2px solid $colorOrange;
+      transform:scale(1.1)
+    }
+  }
+}

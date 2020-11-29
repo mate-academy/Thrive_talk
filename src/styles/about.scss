@@ -1,0 +1,18 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  margin-top: 150px;
+  margin-bottom: 76px;
+  color: $colorBlue;
+
+  &__title {
+    position: relative;
+    left: 25%;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 24px;
+  }
+}

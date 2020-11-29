@@ -1,0 +1,21 @@
+.footer {
+  height: 80px;
+  position: relative;
+
+  color: $colorWhite;
+  background-color: $colorLightBlue;
+
+  &__string {
+    position: absolute;
+    left:179px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &::before {
+      content: "©";
+      display: inline-block;
+      transform: translateY(10%);
+      padding-right: 6px;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.header{
+  overflow: hidden;
+}
+
+.headpage {
+  display: grid;
+  position: relative;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 164px;
+  justify-items: center;
+  align-items: center;
+
+
+  &__card {
+    position: relative;
+    left: -25%;
+    transform: translateX(40%);
+    width: 484px;
+    color: $colorBlue;
+  }
+
+  &__name {
+    font-size: 24px;
+    color: $colorLightBlue;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    
+    font-size: 48px;
+    line-height: 53px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 42px;
+  }
+
+  &__button {
+    display: flex;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &_main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+      margin-right: 38px;
+      color: #fff;
+      background-color: $colorOrange;
+      border: 1px solid transparent;
+      transition: 0.4s;
+
+      &:hover {
+        transform:scale(1.1);
+        color: $colorBlue;
+        border: 1px solid $colorOrange;
+        opacity: 0.8;
+      }
+    }
+
+    &_additional {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 50px;
+
+      color: $colorOrange;
+      border: 1px solid transparent;
+
+      transition: 0.4s;
+
+      &:hover {
+        transform:scale(1.1);
+        color: $colorBlue;
+        border: 1px solid $colorOrange;
+      }
+    }
+  }
+
+  &__image-background {
+    position: absolute;
+    top: 335px;
+    right: 0;
+
+    width: 808px;
+    height: 545px;
+    border-radius: 312px;
+
+    background-color: #edfdff;
+
+    transform: rotate(-60deg);
+    transform-origin: 30% top;
+  }
+
+  &__image {
+    position: absolute;
+    top: 225px;
+    right: -65px;
+
+    width: 808px;
+    height: 545px;
+    border-radius: 312px;
+
+    transform: rotate(-30deg);
+    transform-origin: 30% top;
+    overflow: hidden;
+
+    &-object {
+      position: relative;
+      transform: rotate(30deg);
+      top: -105px;
+      left: -100px;
+      width: 900px;
+      height: 840px;
+      background-image: url(/images/nav-picture.png);
+      background-size: contain;
+    }
+  }
+}
