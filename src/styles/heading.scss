@@ -1,0 +1,45 @@
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 179px;
+  
+  @media screen and(max-width: 850px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__picture-back {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 323px;
+    background-color: white;
+  }
+
+  &__picture-shadow {
+    position: absolute;
+    z-index: -1;
+    background-image: url("../images/Rectangle 3.1(1).png");
+    background-repeat: no-repeat;
+    background-position: right;
+    top: -19px;
+    right: 0;
+    height: 840px;
+    width: 100%;
+  }
+
+  &__picture {
+    position: absolute;
+    z-index: -1;
+    background-image: url("../images/Mask Group.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    right: 0;
+    top: 0;
+    height: 840px;
+    width: 100%;
+  }
+}

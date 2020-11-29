@@ -1,0 +1,68 @@
+.intro {
+  padding-bottom: 75px;
+  background: rgba(244, 249, 226, 0.7);
+  @media screen and(max-width: 520px) {
+    &__logo {
+      text-align: center;
+    }
+    &__title {
+      transform: scale(0.8) translateY(-20px);
+      text-align: center;
+    }
+    &__text {
+      overflow: scroll;
+    }
+  }
+
+  &__logo {
+    display: block;
+    height: 64px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+    color: #62D0DF;
+  }
+
+  &__title {
+    display: block;
+    height: 167px;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 53px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #22356F;
+  }
+
+  &__text {
+    display: block;
+    height: 161px;
+    margin-top: 19px;
+    font-size: 24px;
+    line-height: 42px;
+    color: #22356F;
+  }
+  
+  &__button {
+    display: inline-block;
+    margin-top: 63px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background-color:#F9B640;
+  }
+
+  &__button--secondary {
+    margin-left: 33px;
+    text-align: left;
+    background-color: transparent;
+    color:#F9B640;
+  }
+}
