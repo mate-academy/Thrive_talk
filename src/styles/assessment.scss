@@ -5,16 +5,30 @@
   grid-template-columns: 1fr 480px;
   background-color: #22356f;
 
+  @media (max-width: $small-screen) {
+    display: block;
+  }
+
   .ready {
     padding-top: 103px;
     padding-left: $padding-middle;
 
+    @media (max-width: $small-screen) {
+      padding: 0;
+      text-align: center;
+    }
+
     &__link {
+      display: inline-block;
       font-size: 16px;
       line-height: 12px;
       color: #fff;
       text-decoration: none;
       text-transform: uppercase;
+
+      @media (max-width: $small-screen) {
+        margin-top: 20px;
+      }
     }
 
     &__header {
@@ -23,8 +37,13 @@
       line-height: 94px;
       color: #fff;
 
-      @media (max-width: 1279px) {
+      @media (max-width: $media-screen) {
         font-size: 42px;
+      }
+
+      @media (max-width: $small-screen) {
+        margin-top: 20px;
+        font-size: 32px;
       }
     }
 
@@ -34,8 +53,13 @@
       line-height: 53px;
       color: #fff;
 
-      @media (max-width: 1279px) {
+      @media (max-width: $media-screen) {
         font-size: 24px;
+      }
+      @media (max-width: $small-screen) {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 2;
       }
     }
 
@@ -48,11 +72,20 @@
       color: #62d0df;
       text-decoration: none;
       text-transform: uppercase;
+
+      @media (max-width: $small-screen) {
+        margin-top: 20px;
+      }
     }
   }
 
   &__photo {
     background: url(../images/smile-man.png) no-repeat center;
     background-size: cover;
+
+    @media (max-width: $small-screen) {
+      height: 350px;
+      width: 100%;
+    }
   }
 }

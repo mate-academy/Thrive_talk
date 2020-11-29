@@ -4,9 +4,18 @@
   display: grid;
   grid-template-columns: 480px 1fr;
 
+  @media (max-width: $small-screen) {
+    display: block;
+  }
+
   &__photo {
     background: url(../images/smile-men.png) no-repeat center;
     background-size: cover;
+
+    @media (max-width: $small-screen) {
+      height: 350px;
+      width: 100%;
+    }
   }
 
   .help {
@@ -14,11 +23,20 @@
     padding-left: 11%;
     padding-bottom: 42px;
 
+    @media (max-width: $small-screen) {
+      padding: 0;
+      text-align: center;
+    }
+
     &__header {
       font-size: 16px;
       line-height: 12px;
       color: #22356f;
       text-transform: uppercase;
+
+      @media (max-width: $small-screen) {
+        margin-top: 20px;
+      }
 
     }
 
@@ -28,8 +46,14 @@
       line-height: 53px;
       color: #22356f;
 
-      @media (max-width: 1279px) {
+      @media (max-width: $media-screen) {
         font-size: 25px;
+      }
+
+      @media (max-width: $small-screen) {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 2;
       }
 
       .help__thrive {
@@ -47,6 +71,10 @@
       color: #fab63e;
       text-decoration: none;
       text-transform: uppercase;
+
+      @media (max-width: $small-screen) {
+        margin: 20px 0;
+      }
     }
   }
 }

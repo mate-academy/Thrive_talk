@@ -2,6 +2,11 @@
   position: relative;
   padding: 150px 0 76px;
 
+  @media (max-width: $small-screen) {
+    padding: 20px 0;
+    text-align: center;
+  }
+
   &__header {
     position: absolute;
     top: 156px;
@@ -9,6 +14,10 @@
     font-size: 16px;
     line-height: 23px;
     color: #22356f;
+
+    @media (max-width: $small-screen) {
+      position: static;
+    }
   }
 
   &__paragraph {
@@ -17,5 +26,9 @@
     font-size: 24px;
     line-height: 34px;
     color: #22356f;
+
+    @media (max-width: $small-screen) {
+      font-size: 12px;
+    }
   }
 }

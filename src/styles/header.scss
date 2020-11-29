@@ -1,4 +1,6 @@
 @import "variables";
+@import "menu";
+@import "introduction";
 
 .header {
   position: relative;
@@ -6,19 +8,25 @@
   background: #f4f9e2;
   overflow: hidden;
 
-  @media (max-width: 1279px) {
+  @media (max-width: $media-screen) {
     padding-left: $padding-middle;
+  }
+
+  @media (max-width: $small-screen) {
+    padding: 5px;
   }
 
   &__rectangle {
     position: absolute;
     top: 0;
     right: 0;
-
     height: 100%;
     width: 320px;
-
     background-color: #fff;
+
+    @media (max-width: $small-screen) {
+      display: none;
+    }
   }
 
   &__oval {
@@ -65,6 +73,13 @@
     position: relative;
     z-index: 2;
     margin-top: 187px;
+
+    @media (max-width: $small-screen) {
+      margin-top: 50px;
+      background-color: #fff;
+      border-radius: 75px;
+      opacity: 0.7;
+    }
   }
 }
 
@@ -74,95 +89,5 @@
     font-weight: bold;
     color: #62d0df;
     text-decoration: none;
-  }
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  max-width: 1130px;
-
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 0 20px;
-    list-style: none;
-  }
-
-  &__link {
-    font-size: 14px;
-    text-decoration: none;
-  }
-
-  &__contact {
-    height: 50px;
-    width: 150px;
-    text-align: center;
-    background: #62d0df;
-    border-radius: 50px;
-  }
-
-  .contact__link {
-    display: inline-block;
-    padding: 0 30px;
-    line-height: 50px;
-    color: #fff;
-
-    font-size: 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-}
-
-.introduction {
-  max-width: 1130px;
-  &__heading {
-    margin-top: 40px;
-    color: #22356f;
-    font-size: 48px;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-
-  &__text {
-    margin-top: 80px;
-    font-size: 24px;
-    line-height: 42px;
-
-    color: #22356f;
-  }
-
-  &__links {
-    margin-top: 63px;
-    margin-bottom: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 320px;
-  }
-
-  &__link-who {
-    display: inline-block;
-    height: 50px;
-    width: 150px;
-    background-color: #f9b640;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 50px;
-    letter-spacing: 0.1em;
-  }
-
-  &__link-what {
-    color: #fab63e;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
   }
 }

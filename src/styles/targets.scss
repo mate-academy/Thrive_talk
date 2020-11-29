@@ -5,12 +5,21 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 22px 0 40px;
 
+  @media (max-width: $small-screen) {
+    display: block;
+    text-align: center;
+  }
+
   .target {
     padding: 55px 22% 37px;
     padding-right: 0;
 
-    @media (max-width: 1279px) {
+    @media (max-width: $media-screen) {
       padding-left: 25px;
+    }
+
+    @media (max-width: $small-screen) {
+      padding: 20px 0;
     }
 
     &__header {
