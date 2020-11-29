@@ -1,8 +1,13 @@
+@import "variables";
+
 .therapists {
   display: flex;
-  height: 604px;
-  padding-left: 179px;
+  padding-left: 12.5%;
   background-color: #62d0df;
+
+  @media (max-width: 1279px) {
+    padding-left: $padding-middle;
+  }
 
   &__text {
     flex-grow: 1;
@@ -16,13 +21,22 @@
 
     .therapists__paragraph {
       margin-top: 75px;
+      margin-bottom: 90px;
       font-size: 20px;
       line-height: 29px;
       color: #fff;
 
+      @media (max-width: 1279px) {
+        font-size: 15px;
+      }
+
       .therapists__span {
         font-size: 24px;
         line-height: 35px;
+
+        @media (max-width: 1279px) {
+          font-size: 18px;
+        }
       }
     }
   }

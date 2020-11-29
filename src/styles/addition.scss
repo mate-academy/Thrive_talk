@@ -1,19 +1,15 @@
+@import "variables";
+
 .addition {
   display: grid;
   grid-template-columns: 480px 1fr;
-  height: 800px;
 
   &__photo {
-    background-image: url(../images/smile-men.png);
-    background-repeat: no-repeat;
+    background: url(../images/smile-men.png) no-repeat center;
     background-size: cover;
-    background-position: center;
   }
 
   .help {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding-top: 103px;
     padding-left: 11%;
     padding-bottom: 42px;
@@ -27,9 +23,14 @@
     }
 
     &__paragraph {
+      margin-top: 225px;
       font-size: 36px;
       line-height: 53px;
       color: #22356f;
+
+      @media (max-width: 1279px) {
+        font-size: 25px;
+      }
 
       .help__thrive {
         color: #62d0df;
@@ -39,6 +40,7 @@
 
     &__link {
       display: inline-block;
+      margin-top: 150px;
       font-size: 16px;
       font-weight: bold;
       line-height: 23px;

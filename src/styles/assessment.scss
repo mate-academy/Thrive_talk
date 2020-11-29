@@ -1,12 +1,13 @@
+@import "variables";
+
 .assessment {
   display: grid;
   grid-template-columns: 1fr 480px;
-  height: 800px;
   background-color: #22356f;
 
   .ready {
     padding-top: 103px;
-    padding-left: 19%;
+    padding-left: $padding-middle;
 
     &__link {
       font-size: 16px;
@@ -21,6 +22,10 @@
       font-size: 64px;
       line-height: 94px;
       color: #fff;
+
+      @media (max-width: 1279px) {
+        font-size: 42px;
+      }
     }
 
     &__paragraph {
@@ -28,11 +33,16 @@
       font-size: 36px;
       line-height: 53px;
       color: #fff;
+
+      @media (max-width: 1279px) {
+        font-size: 24px;
+      }
     }
 
     &__help {
       display: inline-block;
       margin-top: 70px;
+      margin-bottom: 42px;
       font-size: 16px;
       line-height: 23px;
       color: #62d0df;
@@ -42,9 +52,7 @@
   }
 
   &__photo {
-    background-image: url(../images/smile-man.png);
-    background-repeat: no-repeat;
+    background: url(../images/smile-man.png) no-repeat center;
     background-size: cover;
-    background-position: center;
   }
 }

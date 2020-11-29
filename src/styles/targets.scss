@@ -1,3 +1,5 @@
+@import "variables";
+
 .targets {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -6,6 +8,10 @@
   .target {
     padding: 55px 22% 37px;
     padding-right: 0;
+
+    @media (max-width: 1279px) {
+      padding-left: 25px;
+    }
 
     &__header {
       font-size: 28px;

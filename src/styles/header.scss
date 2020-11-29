@@ -1,17 +1,21 @@
+@import "variables";
 
 .header {
   position: relative;
-  height: 840px;
-  padding-left: 179px;
+  padding-left: 12.5%;
   background: #f4f9e2;
   overflow: hidden;
+
+  @media (max-width: 1279px) {
+    padding-left: $padding-middle;
+  }
 
   &__rectangle {
     position: absolute;
     top: 0;
     right: 0;
 
-    height: 840px;
+    height: 100%;
     width: 320px;
 
     background-color: #fff;
@@ -131,6 +135,7 @@
 
   &__links {
     margin-top: 63px;
+    margin-bottom: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
