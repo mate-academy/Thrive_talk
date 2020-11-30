@@ -45,3 +45,13 @@
     grid-template-columns: repeat(3,480px);
   }
 }
+
+@media (max-width: 500px) {
+  .advice__block-title {
+    margin-left: 100px;
+  }
+
+  .advice__block-text {
+    margin-left: 100px;
+  }
+}
