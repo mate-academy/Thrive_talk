@@ -16,6 +16,21 @@
     }
   }
 
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    width: 80%;
+
+    &--2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -2;
+    }
+  }
+
   &__subtittle {
     color: $main-color;
     font-weight: bold;
@@ -74,18 +89,4 @@
       color: $step-color-light;
     }
   }
-}
-
-.first {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -3;
-}
-
-.one {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -2;
 }
