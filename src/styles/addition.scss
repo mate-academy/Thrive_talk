@@ -68,10 +68,16 @@
       line-height: 23px;
       color: #fab63e;
       text-transform: uppercase;
+      transition: background-color 0.5s, color 0.5s;
 
       @media (max-width: $small-screen) {
         margin: 20px 0;
       }
     }
+    &__link:hover {
+      background-color: #f9b640;
+      color: #fff;
+    }
+
   }
 }

@@ -21,21 +21,19 @@
 
     .courses__item {
       position: relative;
-      padding: 100px 0 0 78px;
       height: 360px;
-      font-size: 32px;
-      line-height: 34px;
+      padding: 100px 20px 0 78px;
+      transition: transform 0.5s, border-radius 0.5s;
 
       @media (max-width: $small-screen) {
         padding-left: 0;
         height: 250px;
       }
-
-      // .courses__item:hover {
-      //   transform: scale(1.2);
-      // }
-
       .courses__list {
+        max-width: 255px;
+        font-size: 32px;
+        line-height: 34px;
+
         @media (max-width: $small-screen) {
           width: fit-content;
           margin: 0 auto;
@@ -50,11 +48,23 @@
       content: "";
       display: block;
       height: 1px;
+      width: 255px;
       background-color: #fff;
       position: absolute;
       top: 72px;
-      left: 15%;
-      right: 15%;
+      left: calc(50% - 127.5px);
+      // right: 15%;
+
+    }
+
+    .courses__item:hover {
+      border-radius: 30px;
+      transform: scale(1.1);
+      z-index: 1;
+
+      @media (max-width: $small-screen) {
+        transform: none;
+      }
 
     }
 

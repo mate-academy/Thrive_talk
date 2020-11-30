@@ -10,8 +10,8 @@
   }
 
   .ready {
-    padding-top: 103px;
-    padding-left: $padding-middle;
+    padding-top: 90px;
+    padding-left: 12%;
 
     @media (max-width: $small-screen) {
       padding: 0;
@@ -20,17 +20,29 @@
 
     &__link {
       display: inline-block;
+      margin-left: -25px;
+      height: 50px;
+      width: 150px;
+      border-radius: 50px;
       font-size: 16px;
-      line-height: 12px;
+      line-height: 50px;
       text-transform: uppercase;
+      text-align: center;
+      transition: background-color 0.5s, color 0.5s;
 
       @media (max-width: $small-screen) {
         margin-top: 20px;
       }
     }
 
+    &__link:hover {
+      background-color: #fff;
+      color: $color-secondary;
+
+    }
+
     &__header {
-      margin-top: 230px;
+      margin-top: 185px;
       font-size: 64px;
       line-height: 94px;
 
@@ -66,10 +78,16 @@
       line-height: 23px;
       color: $color-main;
       text-transform: uppercase;
+      transition: background-color 0.5s, color 0.5s;
 
       @media (max-width: $small-screen) {
         margin-top: 20px;
       }
+    }
+
+    &__help:hover {
+      background-color: $color-main;
+      color: $color-secondary;
     }
   }
 
