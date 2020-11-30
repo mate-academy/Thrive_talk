@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
   .help__container {
     display: grid;
     grid-template-columns: 300px;
@@ -97,10 +97,8 @@
     width: 300px;
     height: 300px;
 
-    &::after{
+    &::after {
       width: 200px;
     }
   }
 }
-
-
