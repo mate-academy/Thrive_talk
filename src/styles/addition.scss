@@ -19,9 +19,8 @@
   }
 
   .help {
-    padding-top: 103px;
-    padding-left: 11%;
-    padding-bottom: 42px;
+    padding: 103px 11% 42px;
+    padding-right: 0;
 
     @media (max-width: $small-screen) {
       padding: 0;
@@ -31,7 +30,7 @@
     &__header {
       font-size: 16px;
       line-height: 12px;
-      color: #22356f;
+      color: $color-secondary;
       text-transform: uppercase;
 
       @media (max-width: $small-screen) {
@@ -44,7 +43,7 @@
       margin-top: 225px;
       font-size: 36px;
       line-height: 53px;
-      color: #22356f;
+      color: $color-secondary;
 
       @media (max-width: $media-screen) {
         font-size: 25px;
@@ -57,8 +56,7 @@
       }
 
       .help__thrive {
-        color: #62d0df;
-        text-decoration: none;
+        color: $color-main;
       }
     }
 
@@ -69,7 +67,6 @@
       font-weight: bold;
       line-height: 23px;
       color: #fab63e;
-      text-decoration: none;
       text-transform: uppercase;
 
       @media (max-width: $small-screen) {

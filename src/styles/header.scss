@@ -64,15 +64,15 @@
   }
 
   &__menu {
+    margin-top: 27px;
     position: relative;
     z-index: 2;
-    margin-top: 27px;
   }
 
   &__introduction {
+    margin-top: 187px;
     position: relative;
     z-index: 2;
-    margin-top: 187px;
 
     @media (max-width: $small-screen) {
       margin-top: 50px;
@@ -84,10 +84,25 @@
 }
 
 .title {
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  border-radius: 50px;
+  transition: background-color 0.5s;
+
   &__link {
     font-size: 24px;
     font-weight: bold;
-    color: #62d0df;
+    color: $color-main;
     text-decoration: none;
+    line-height: 50px;
+    transition: color 0.5s;
+  }
+}
+
+.title:hover {
+  background-color: $color-main;
+  .title__link {
+    color: #fff;
   }
 }

@@ -3,9 +3,17 @@
 .introduction {
   max-width: 1130px;
 
+  &__title {
+    margin-left: -20px;
+
+    @media (max-width: $small-screen) {
+      margin: 0 auto;
+    }
+  }
+
   &__heading {
     margin-top: 40px;
-    color: #22356f;
+    color: $color-secondary;
     font-size: 48px;
     font-weight: 900;
     text-transform: uppercase;
@@ -20,8 +28,7 @@
     margin-top: 80px;
     font-size: 24px;
     line-height: 42px;
-
-    color: #22356f;
+    color: $color-secondary;
 
     @media (max-width: $small-screen) {
       margin-top: 20px;
@@ -31,8 +38,7 @@
   }
 
   &__links {
-    margin-top: 63px;
-    margin-bottom: 75px;
+    margin: 63px 0 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +48,6 @@
       margin: 20px auto;
       font-size: 14px;
       width: 250px;
-
     }
   }
 
@@ -51,13 +56,13 @@
     height: 50px;
     width: 150px;
     background-color: #f9b640;
+
     text-align: center;
-    color: #fff;
     font-size: 16px;
     font-weight: 600;
-    text-decoration: none;
     text-transform: uppercase;
     line-height: 50px;
+    transition: background-color 0.5s, color 0.5s;
 
     @media (max-width: $small-screen) {
       font-size: 14px;
@@ -66,16 +71,35 @@
     }
   }
 
+  &__link-who:hover {
+    background-color: #f4f9e2;
+    color: #f9b640;
+  }
+
   &__link-what {
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+
     color: #fab63e;
-    text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
+    line-height: 50px;
+
+    transition: background-color 0.5s, color 0.5s;
 
     @media (max-width: $small-screen) {
       font-size: 14px;
+      width: 100px;
+      border-radius: 20px;
     }
+  }
+
+  &__link-what:hover {
+    background-color: #f9b640;
+    color: #fff;
   }
 
   @media (max-width: $small-screen) {

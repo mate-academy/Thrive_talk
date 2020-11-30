@@ -8,9 +8,14 @@ html {
 
 body,
 ul,
+li,
 h1,
 h2,
-p {
+div,
+p,
+a {
   margin: 0;
   padding: 0;
+  color: #fff;
+  text-decoration: none;
 }

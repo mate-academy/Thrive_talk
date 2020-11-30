@@ -29,9 +29,8 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       justify-content: center;
-      padding-top: 98px;
-      padding-left: 8%;
-      padding-bottom: 90px;
+      padding: 98px 8% 90px;
+      padding-right: 0;
 
       @media (max-width: $media-screen) {
         grid-template-columns: repeat(3, auto);
@@ -49,7 +48,7 @@
         .contacts__header {
           font-size: 14px;
           line-height: 11px;
-          color: #22356f;
+          color: $color-secondary;
           text-transform: uppercase;
 
           @media (max-width: $small-screen) {
@@ -61,7 +60,7 @@
           margin-top: 55px;
           font-size: 14px;
           line-height: 23px;
-          color: rgba(34, 53, 111, 0.5);
+          color: $color-thirty;
 
           @media (max-width: $small-screen) {
             margin-top: 10px;
@@ -72,7 +71,7 @@
           margin-top: 35px;
           font-size: 14px;
           line-height: 23px;
-          color: rgba(34, 53, 111, 0.5);
+          color: $color-thirty;
 
           @media (max-width: $small-screen) {
             margin-top: 10px;
@@ -81,7 +80,7 @@
 
         .contacts__email {
           .contacts__link {
-            text-decoration: none;
+            color: #006dff;
           }
         }
       }
@@ -92,13 +91,12 @@
     height: 80px;
     display: flex;
     align-items: center;
-    background-color: #62d0df;
+    background-color: $color-main;
 
     &__text {
       margin-right: 6px;
       font-size: 14px;
       line-height: 11px;
-      color: #fff;
     }
   }
 }
