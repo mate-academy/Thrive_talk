@@ -1,9 +1,9 @@
 .whyThrive {
   display: grid;
   grid-template-columns: 1.8fr 1fr;
-  height: 604px;
 
   &__description {
+    height: 604px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +16,7 @@
     left: -25%;
     transform: translateX(40%);
     padding-left: 12px;
+    padding-right: 12px;
     max-width: 555px;
   }
 
@@ -36,10 +37,32 @@
   }
 
   &__img {
+    height: 604px;
     background-image: url(/images/bc-image-2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center left;
 
+  }
+}
+
+@media (max-width: 1023px) {
+  .whyThrive {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+      order: 1;
+    }
+
+    &__description {
+      order: 2;
+    }
+
+    &__wrapper {
+      position: relative;
+      left: 0;
+      transform: translateX(0);
+    }
   }
 }

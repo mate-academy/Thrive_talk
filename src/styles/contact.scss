@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
 
-
   &__info {
     padding-left: 180px;
     padding-right: 200px;
@@ -25,7 +24,7 @@
     line-height: 94px;
   }
   &__text {
-    margin-top:75px;
+    margin-top: 75px;
 
     font-size: 36px;
     line-height: 53px;
@@ -35,7 +34,7 @@
     display: inline-block;
     margin-top: 55px;
     margin-bottom: 20px;
-    padding:5px;
+    padding: 5px;
 
     font-size: 16px;
     line-height: 23px;
@@ -49,7 +48,7 @@
 
     &:hover {
       border: 2px solid $colorLightBlue;
-      transform:scale(1.1);
+      transform: scale(1.1);
     }
   }
 
@@ -57,5 +56,31 @@
     background-image: url(/images/contact-image.png);
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      height: 400px;
+      order: 1;
+    }
+
+    &__info {
+      order: 2;
+      padding-left: 20px;
+      padding-right: 0px;
+    }
+
+    &__head {
+      margin-top: 50px;
+    }
+
+    &__title {
+      margin-top: 50px;
+    }
   }
 }

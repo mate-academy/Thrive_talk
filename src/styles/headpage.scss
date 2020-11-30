@@ -1,4 +1,4 @@
-.header{
+.header {
   overflow: hidden;
 }
 
@@ -10,13 +10,13 @@
   justify-items: center;
   align-items: center;
 
-
   &__card {
     position: relative;
     left: -25%;
     transform: translateX(40%);
     width: 484px;
     color: $colorBlue;
+    z-index: 1;
   }
 
   &__name {
@@ -56,7 +56,7 @@
       transition: 0.4s;
 
       &:hover {
-        transform:scale(1.1);
+        transform: scale(1.1);
         color: $colorBlue;
         border: 1px solid $colorOrange;
         opacity: 0.8;
@@ -76,7 +76,7 @@
       transition: 0.4s;
 
       &:hover {
-        transform:scale(1.1);
+        transform: scale(1.1);
         color: $colorBlue;
         border: 1px solid $colorOrange;
       }
@@ -120,6 +120,46 @@
       height: 840px;
       background-image: url(/images/nav-picture.png);
       background-size: contain;
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .headpage__card {
+    width: auto;
+    height: auto;
+  }
+
+  .headpage__image {
+    display: none;
+
+    &-background {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .headpage {
+    margin-top: 80px;
+    display: block;
+    flex-direction: column;
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 15px;
+      left: 0;
+      transform: translateX(0%);
+
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__name {
+      display: none;
     }
   }
 }

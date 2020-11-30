@@ -66,6 +66,7 @@
     color: #fff;
     text-transform: uppercase;
     background: $colorLightBlue;
+    border: 1px solid transparent;
     border-radius: 50px;
     transition-duration: 0.3s;
     z-index: 1;
@@ -73,5 +74,21 @@
     &:hover {
       opacity: 0.7;
     }
+
+    &:active {
+      color: $colorBlue;
+      background-color: transparent;
+      border: 1px solid $colorLightBlue;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

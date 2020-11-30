@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 10px;
   margin-bottom: 40px;
 
   &__block {
@@ -10,8 +11,15 @@
     justify-content: center;
     width: 480px;
     height: 240px;
+    box-shadow: 0px 0px 0px #62d0df;
 
-    &-title{
+    transition: 0.5s;
+
+    &:hover {
+      box-shadow: 1px 1px 10px #62d0df;
+    }
+
+    &-title {
       margin-left: 105px;
       margin-bottom: 28px;
   
@@ -28,5 +36,12 @@
       line-height: 25px;
       color: rgba(34, 53, 111, 0.5);
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .advice {
+    display: grid;
+    grid-template-columns: repeat(3,480px);
   }
 }
