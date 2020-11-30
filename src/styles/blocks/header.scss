@@ -22,5 +22,11 @@
 
     background-color: $main-color;
     border-radius: 50px;
+
+    transition: 0.7s;
+
+    &:hover {
+      background-color: $btn-color;
+    }
   }
 }

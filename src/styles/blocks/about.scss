@@ -5,6 +5,12 @@
   background-color: $step-color-light;
   height: 361px;
 
+  @media screen and (max-width: 750px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__header {
     display: block;
     width: 200px;

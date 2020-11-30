@@ -2,7 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 480px;
   grid-template-rows: 800px;
+
   background: $step-color-dark;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__text {
     position: relative;
@@ -21,8 +27,6 @@
   }
 
   &__header {
-    position: absolute;
-    top: 103px;
     font-size: 16px;
     line-height: 12px;
     color: $step-color-light;
@@ -41,9 +45,7 @@
   }
 
   &__link {
-    position: absolute;
-    bottom: 42px;
-
+    padding-top: 42px;
     font-size: 16px;
     line-height: 23px;
     color: $main-color;
@@ -51,5 +53,11 @@
 
   &__image {
     height: 800px;
+
+    @media screen and (max-width: 900px) {
+      object-fit: cover;
+      height: 500px;
+      width: 100%;
+    }
   }
 }

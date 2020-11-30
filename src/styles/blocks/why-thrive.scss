@@ -1,14 +1,22 @@
 .why-thrive {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 525px;
   grid-template-rows: 604px;
-  gap: 181px;
+  gap: 181px; */
+  display: flex;
 
   background-color: #62d0df;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   &__image {
     object-fit: cover;
     height: 604px;
+    width: 100%;
   }
 }
 
@@ -17,7 +25,6 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 100px;
-
 }
 
 .text-why__header {

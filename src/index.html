@@ -3,29 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Thrivetalk</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body class="page">
     <header class="page__header header">
-      <div class="header__name">Thrivetalk</div>
+      <a class="header__name">Thrivetalk</a>
       <nav class="header__nav nav">
         <lu class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">Home</a>
+            <a href="#" class="nav__link nav__link--active">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">About</a>
+            <a href="#about-us" class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Services</a>
+            <a href="#services" class="nav__link">Services</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Blog</a>
+            <a href="#blog" class="nav__link">Blog</a>
           </li>
         </lu>
       </nav>
-      <a class="header__contact">Contact us</a>
+      <a href="tel+555 283 784 333" class="header__contact">Contact us</a>
     </header>
     <main class="main">
       <section class="main__thrivetalk thrivetalk">
@@ -57,11 +57,11 @@
           src="./images/christopher-campbell-40367.png"
           alt="">
       </article>
-      <section class="main__about-us about">
+      <section class="main__about-us about" id="about-us">
         <h2 class="about__header">About us</h2>
         <p class="about__info">We want to help you thrive! Whether you are just looking for someone to talk to, or are struggling with a mental wellness issue we’re here to help.  Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</p>
       </section>
-      <section class="main__help help">
+      <section class="main__help help" id="services">
         <h2 class="help__header">We can help you with</h2>
         <div class="help__small-blocks">
           <div class="help__small help__small--pink">
@@ -147,7 +147,7 @@
           src="./images/charles-etoroma-390119.png"
           alt="">
       </section>
-      <section class="main__info info">
+      <section class="main__info info" id="blog">
         <img
           class="info__image"
           src="./images/autumn-goodman-242825.png"
@@ -159,19 +159,19 @@
           </div>
           <div class="info__column">
             <h3 class="info__header">Enfold health</h3>
-            <p class="info__paragraph">Main Street 1, Olcott
-              Buffalo, United States
-
-              +555 283 784 333
-              office@enfold-health.com
+            <p class="info__paragraph">
+              Main Street 1, Olcott Buffalo, United States <br> <br>
+              +555 283 784 333<br>
+              <a class="info__mail" href="mailto:office@enfold-health.com">office@enfold-health.com</a>
             </p>
           </div>
           <div class="info__column">
             <h3 class="info__header">Office hours</h3>
-            <p class="info__paragraph">Mo-Fr: 8:00-19:00
-              Sa: 8:00-14:00
-              Su: closed
-            </p>
+            <ul class="info__paragraph">
+              <li>Mo-Fr: 8:00-19:00</li>
+              <li>Sa: 8:00-14:00</li>
+              <li>Su: closed</li>
+            </ul>
           </div>
         </div>
       </section>

@@ -8,6 +8,12 @@
     height: 500px;
     width: 650px;
     color: $step-color-dark;
+
+    @media screen and (max-width: 1000px) {
+      padding-left: 30px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+    }
   }
 
   &__subtittle {
@@ -56,6 +62,12 @@
     text-align: center;
     text-transform: uppercase;
     color: $btn-color;
+    transition: all 1s;
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
 
     &--yellow {
       background-color: $btn-color;

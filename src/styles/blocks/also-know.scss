@@ -1,8 +1,14 @@
 .also-know {
-  display: grid;
-  grid-template-columns: 480px 1fr;
+  /* display: grid;
+  grid-template-columns: 480px 1fr; */
+  display: flex;
   background-color: $step-color-light;
   grid-template-rows: 800px;
+
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   &__image {
     height: 800px;
@@ -18,8 +24,7 @@
   }
 
   &__header {
-    position: absolute;
-    top: 103px;
+    padding-bottom: 103px;
 
     font-size: 16px;
     line-height: 13px;
@@ -35,8 +40,7 @@
   }
 
   &__link {
-    position: absolute;
-    bottom: 42px;
+    padding-top: 100px;
     color: $btn-color;
   }
 }
