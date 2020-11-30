@@ -1,0 +1,46 @@
+.footer {
+
+  &__part {
+    margin-right: 48px;
+    width: 225px;
+    height: 172px;
+    box-shadow: inset -1px rgba(0, 0, 0, 0.25);
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__article {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 98px;
+    padding-left: 68px;
+  }
+
+  &__header {
+    font-size: 14px;
+    line-height: 11px;
+    color: #22356f;
+    height: 48px;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(34, 53, 111, 0.5);
+  }
+
+  &__credits {
+    height: 80px;
+    background: #62d0df;
+    color: #fff;
+    font-size: 14px;
+    line-height: 11px;
+    padding-left: 179px;
+    padding-top: 34px;
+    font-weight: bold;
+  }
+
+}

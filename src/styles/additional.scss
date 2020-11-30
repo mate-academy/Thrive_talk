@@ -1,0 +1,26 @@
+.additional {
+  display: flex;
+  height: 800px;
+
+  &__header {
+    font-size: 16px;
+    line-height: 12px;
+    color: #22356f;
+    font-weight: 300;
+    margin-top: 103px;
+    margin-left: 106px;
+  }
+
+  &__text {
+    font-size: 36px;
+    line-height: 53px;
+    color: #22356f;
+    font-weight: bold;
+    margin: 225px 0 152px 106px;
+  }
+
+  .additional__link-help {
+    color: #fab63e;
+    margin-left: 106px;
+  }
+}

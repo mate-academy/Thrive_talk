@@ -1,0 +1,72 @@
+.intro {
+  padding-left: 179px;
+  display: flex;
+  background: #f4f9e2;
+
+  &__header {
+    font-size: 48px;
+    line-height: 53px;
+    color: #22356f;
+
+  }
+
+  &__text {
+    width: 550px;
+  }
+
+  &__paragraph {
+    font-size: 24px;
+    line-height: 42px;
+    color: #22356f;
+    margin-bottom: 70px;
+  }
+
+  &__links {
+    display: flex;
+    
+  }
+
+  &__whoiam {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 23px;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    background: #f9b640;
+    margin-right: 38px;
+    margin-bottom: 75px;
+  }
+
+  &__whatido {
+    color: #fab63e;
+    padding-top: 18px;
+  }
+
+}
+
+.header__img-down {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header__img-upper {
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+
+.main__header {
+  font-size: 24px;
+  line-height: 27px;
+  color: #62d0df;
+  font-weight: bold;
+  margin-top: 134px;
+}

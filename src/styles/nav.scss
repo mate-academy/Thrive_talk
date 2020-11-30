@@ -1,0 +1,40 @@
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 179px;
+  height: 60px;
+  background: #f4f9e2;
+
+  &__selflink {
+    font-size: 24px;
+    line-height: 27px;
+    color: #62d0df;
+    font-weight: bold;
+  }
+
+  &__item {
+    font-size: 14px;
+    line-height: 16px;
+    color: #22356f;
+    margin-right: 20px;
+  }
+
+  &__contact {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px ;
+    width: 150px;
+    height: 50px;
+    background: #62d0df;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+  }
+  
+}

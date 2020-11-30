@@ -1,0 +1,22 @@
+.about {
+  position: relative;
+  display: flex;
+  padding: 150px 0 76px;
+  color: #22356f;
+
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+
+  &__header {
+    position: absolute;
+    top: 156px;
+    left: 7%;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 300;
+  }
+}

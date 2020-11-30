@@ -1,0 +1,22 @@
+.target {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 240px;
+  margin-bottom: 500px;
+ 
+  &__item {
+    padding: 55px 15px 37px 105px;
+  }
+
+  &__header {
+    color: #22356f;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(34, 53, 111, 0.5);
+  }
+}
