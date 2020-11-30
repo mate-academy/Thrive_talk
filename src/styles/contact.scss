@@ -1,0 +1,55 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  background-color: $c-textDark;
+
+  &__info {
+    padding-top: 103px;
+    padding-left: 180px;
+  }
+  
+  &__title {
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $c-textLight;
+  }
+
+  &__slogan {
+    margin-top: 230px;
+    font-size: 64px;
+    line-height: 94px;
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    color: $c-textLight;
+  }
+
+  &__text {
+    margin-top: 45px;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    color: $c-textLight;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $c-logo;
+  }
+
+  &__picture {
+    background-image: url("../images/contact-us.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 480px;
+  }
+}

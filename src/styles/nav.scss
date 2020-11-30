@@ -15,12 +15,12 @@
     padding: 14px 7px;
     font-size: 14px;
     line-height: 16px;
-    color: #22356f;
+    color: $c-textDark;
     transition: color 0.3s;
   }
 
   &__link:hover {
-    color: #62d0df;
+    color: $c-logo;
 
     &::after {
       content: "";
@@ -30,7 +30,7 @@
       left: 0;
       height: 5px;
       width: 100%;
-      box-shadow: inset 0 -1px 0 #22356f;
+      box-shadow: inset 0 -1px 0 $c-textDark;
     }
   }
 }
