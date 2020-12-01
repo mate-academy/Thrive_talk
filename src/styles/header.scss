@@ -4,8 +4,7 @@
 
 .header {
   position: relative;
-  padding-left: 12.5%;
-  padding-right: 50px;
+  padding: 0 50px 0 12.5%;
   background: #f4f9e2;
   overflow: hidden;
 
@@ -14,7 +13,7 @@
   }
 
   @media (max-width: $small-screen) {
-    padding: 5px;
+    padding: $padding-small;
     height: 100vh;
   }
 
@@ -23,7 +22,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 320px;
+    width: $width-small;
     background-color: #fff;
 
     @media (max-width: $small-screen) {
@@ -99,7 +98,6 @@
     font-size: 24px;
     font-weight: bold;
     color: $color-main;
-    text-decoration: none;
     line-height: 50px;
     transition: color 0.5s;
   }

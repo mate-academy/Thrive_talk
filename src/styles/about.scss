@@ -4,7 +4,7 @@
   background-color: #fff;
 
   @media (max-width: $small-screen) {
-    padding: 20px 5px;
+    padding: 20px $padding-small;
     text-align: center;
   }
 
@@ -12,7 +12,6 @@
     position: absolute;
     top: 156px;
     left: 7%;
-    font-size: 16px;
     font-weight: 400;
     line-height: 23px;
     color: $color-secondary;
@@ -32,8 +31,8 @@
 
     @media (max-width: $small-screen) {
       font-size: 12px;
-      margin: 20px auto;
-      max-width: 320px;
+      margin: $margin-small auto;
+      max-width: $width-small;
       text-align: left;
     }
   }

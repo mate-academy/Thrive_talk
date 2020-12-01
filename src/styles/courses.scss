@@ -1,9 +1,9 @@
 .courses {
   padding-bottom: 120px;
   background-color: #fff;
+  
   &__header {
     margin: 0 auto;
-    font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: $color-thirty;
@@ -18,68 +18,68 @@
     @media (max-width: $small-screen) {
       display: block;
     }
+  }
 
-    .courses__item {
-      position: relative;
-      height: 360px;
-      padding: 100px 20px 0 78px;
-      transition: transform 0.5s, border-radius 0.5s;
+  &__item {
+    position: relative;
+    height: 360px;
+    padding: 100px 20px 0 78px;
+    transition: transform 0.5s, border-radius 0.5s;
 
-      @media (max-width: $small-screen) {
-        padding-left: 0;
-        height: 250px;
-      }
-      .courses__list {
-        max-width: 255px;
-        font-size: 32px;
-        line-height: 34px;
-
-        @media (max-width: $small-screen) {
-          width: fit-content;
-          margin: 0 auto;
-        }
-      }
-      .courses__list::marker {
-        color: #e9b730;
-      }
+    @media (max-width: $small-screen) {
+      padding-left: 0;
+      height: 250px;
     }
+  }
 
-    .courses__item::before {
-      content: "";
-      display: block;
-      height: 1px;
-      position: absolute;
-      top: 72px;
-      right: 15%;
-      left: 15%;
-      background-color: #fff;
+  &__list {
+    max-width: 255px;
+    font-size: 32px;
+    line-height: 34px;
+
+    @media (max-width: $small-screen) {
+      width: fit-content;
+      margin: 0 auto;
     }
+  }
+  &__list::marker {
+    color: #e9b730;
+  }
 
-    .courses__item:hover {
-      border-radius: 30px;
-      transform: scale(1.1);
-      z-index: 1;
+  &__item::before {
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 72px;
+    right: 15%;
+    left: 15%;
+    background-color: #fff;
+  }
 
-      @media (max-width: $small-screen) {
-        transform: none;
-      }
+  &__item:hover {
+    border-radius: 30px;
+    transform: scale(1.1);
+    z-index: 1;
 
+    @media (max-width: $small-screen) {
+      transform: none;
     }
+  }
 
-    .courses__item--lift {
-      background-color: #ffe2de;
-    }
+  &__item--lift {
+    background-color: #ffe2de;
+  }
 
-    .courses__item--run {
-      background-color: #c4e769;
-    }
+  &__item--run {
+    background-color: #c4e769;
+  }
 
-    .courses__item--pump {
-      background-color: $color-main;
-    }
+  &__item--pump {
+    background-color: $color-main;
+  }
 
-    .courses__item--iron {
-      background-color: #0052c1;
-    }
+  &__item--iron {
+    background-color: #0052c1;
   }
 }

@@ -28,16 +28,7 @@
 
     @media (max-width: $small-screen) {
       margin: 50px auto;
-      width: 320px;
-    }
-
-    .menu__item--active::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 1px;
-      margin-top: 12px;
-      background-color: $color-secondary;
+      width: $width-small;
     }
   }
 
@@ -49,8 +40,8 @@
 
   &__link {
     display: inline-block;
-    padding: 0 5px;
-    font-size: 14px;
+    padding: 0 $padding-small;
+    font-size: $fontSize-main;
     color: $color-secondary;
     transition: color 0.3s;
   }
@@ -72,7 +63,7 @@
     display: inline-block;
     padding: 0 30px;
     line-height: 50px;
-    font-size: 14px;
+    font-size: $fontSize-main;
     text-transform: uppercase;
     transition: color 0.5s;
   }
@@ -84,5 +75,14 @@
     .contact__link {
       color: $color-main;
     }
+  }
+
+  &__item--active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 12px;
+    background-color: $color-secondary;
   }
 }

@@ -18,47 +18,10 @@
   &__text {
     flex-grow: 1;
     padding-top: 151px;
-    padding-right: 5px;
-    
+    padding-right: $padding-small;
+
     @media (max-width: $small-screen) {
-      padding: 20px 5px;
-    }
-
-    .therapists__header {
-      font-size: 36px;
-      line-height: 27px;
-    }
-
-    .therapists__paragraph {
-      margin: 75px 0 90px;
-      max-width: 555px;
-      font-size: 20px;
-      line-height: 29px;
-
-      @media (max-width: $media-screen) {
-        font-size: 15px;
-      }
-
-      @media (max-width: $small-screen) {
-        font-size: 11px;
-        margin: 20px auto;
-        max-width: 320px;
-        text-align: left;
-
-      }
-
-      .therapists__span {
-        font-size: 24px;
-        line-height: 35px;
-
-        @media (max-width: $media-screen) {
-          font-size: 18px;
-        }
-
-        @media (max-width: $small-screen) {
-          font-size: 13px;
-        }
-      }
+      padding: 20px $padding-small;
     }
   }
 
@@ -70,6 +33,43 @@
     @media (max-width: $small-screen) {
       width: 100%;
       height: 350px;
+    }
+  }
+
+  &__header {
+    font-size: 36px;
+    line-height: 27px;
+  }
+
+  &__paragraph {
+    margin: 75px 0 90px;
+    max-width: 555px;
+    font-size: 20px;
+    line-height: 29px;
+
+    @media (max-width: $media-screen) {
+      font-size: 15px;
+    }
+
+    @media (max-width: $small-screen) {
+      font-size: 11px;
+      margin: $margin-small auto;
+      max-width: $width-small;
+      text-align: left;
+
+    }
+
+    &__span {
+      font-size: 24px;
+      line-height: 35px;
+
+      @media (max-width: $media-screen) {
+        font-size: 18px;
+      }
+
+      @media (max-width: $small-screen) {
+        font-size: 13px;
+      }
     }
   }
 }

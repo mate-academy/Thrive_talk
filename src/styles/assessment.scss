@@ -14,7 +14,7 @@
     padding-left: 12%;
 
     @media (max-width: $small-screen) {
-      padding: 0 5px;
+      padding: 0 $padding-small;
       text-align: center;
     }
 
@@ -24,14 +24,13 @@
       height: 50px;
       width: 150px;
       border-radius: 50px;
-      font-size: 16px;
       line-height: 50px;
       text-transform: uppercase;
       text-align: center;
       transition: background-color 0.5s, color 0.5s;
 
       @media (max-width: $small-screen) {
-        margin-top: 20px;
+        margin-top: $margin-small;
       }
     }
 
@@ -51,7 +50,7 @@
       }
 
       @media (max-width: $small-screen) {
-        margin-top: 20px;
+        margin-top: $margin-small;
         font-size: 32px;
       }
     }
@@ -66,10 +65,10 @@
         font-size: 32px;
       }
       @media (max-width: $small-screen) {
-        margin: 20px auto 0;
+        margin: $margin-small auto 0;
         font-size: 18px;
         line-height: 2;
-        max-width: 320px;
+        max-width: $width-small;
         text-align: left;
       }
     }
@@ -77,14 +76,13 @@
     &__help {
       display: inline-block;
       margin: 70px 0 42px;
-      font-size: 16px;
       line-height: 23px;
       color: $color-main;
       text-transform: uppercase;
       transition: color 0.3s;
 
       @media (max-width: $small-screen) {
-        margin-top: 20px;
+        margin-top: $margin-small;
       }
     }
 

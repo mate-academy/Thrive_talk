@@ -11,27 +11,11 @@
     height: 480px;
     padding-top: 125px;
     padding-left: 104px;
-
     transition: transform 0.5s, border-radius 0.5s;
 
     @media (max-width: $small-screen) {
       height: 250px;
       padding-left: 0;
-    }
-
-    .services__list {
-      max-width: 340px;
-      font-size: 32px;
-      line-height: 34px;
-
-      @media (max-width: $small-screen) {
-        margin: 0 auto;
-        width: fit-content;
-      }
-    }
-
-    .services__list::marker {
-      color: #e9b730;
     }
   }
 
@@ -54,31 +38,45 @@
     @media (max-width: $small-screen) {
       transform: none;
     }
-
   }
 
-  .services__item--physic {
+  &__list {
+    max-width: 340px;
+    font-size: 32px;
+    line-height: 34px;
+
+    @media (max-width: $small-screen) {
+      margin: 0 auto;
+      width: fit-content;
+    }
+  }
+
+  &__list::marker {
+    color: #e9b730;
+  }
+
+  &__item--physic {
     background-color: $color-secondary;
   }
 
-  .services__item--ment {
+  &__item--ment {
     background-color: #0052c1;
   }
 
-  .services__item--nutr {
+  &__item--nutr {
     background: url(../images/strowbarry.png) no-repeat center;
     background-size: cover;
   }
 
-  .services__item--gym {
+  &__item--gym {
     background-color: $color-main;
   }
 
-  .services__item--cross {
+  &__item--cross {
     background-color: #dee1ff;
   }
 
-  .services__item--aero {
+  &__item--aero {
     background-color: #8f00ff;
   }
 }

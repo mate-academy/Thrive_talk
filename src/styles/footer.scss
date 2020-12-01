@@ -14,17 +14,6 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .footer__photo {
-      height: 100%;
-      background: url(../images/smile-girl.png) no-repeat center;
-      background-size: cover;
-
-      @media (max-width: $small-screen) {
-        height: 350px;
-        width: 100%;
-      }
-    }
-
     .contacts {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -47,50 +36,61 @@
       &__item {
         max-width: 210px;
         margin: 0 auto;
-        .contacts__header {
-          font-size: 14px;
-          line-height: 11px;
-          color: $color-secondary;
-          text-transform: uppercase;
+      }
 
-          @media (max-width: $small-screen) {
-            margin-top: 20px;
-          }
+      &__header {
+        font-size: $fontSize-main;
+        line-height: 11px;
+        color: $color-secondary;
+        text-transform: uppercase;
+
+        @media (max-width: $small-screen) {
+          margin-top: $margin-small;
         }
+      }
 
-        .contacts__paragraph {
-          margin-top: 55px;
-          font-size: 14px;
-          line-height: 23px;
-          color: $color-thirty;
+      &__paragraph {
+        margin-top: 55px;
+        font-size: $fontSize-main;
+        line-height: 23px;
+        color: $color-thirty;
 
-          @media (max-width: $small-screen) {
-            margin: 10px auto 0;
-            text-align: left;
+        @media (max-width: $small-screen) {
+          margin: 10px auto 0;
+          text-align: left;
 
-          }
         }
+      }
 
-        .contacts__phone {
-          margin-top: 35px;
-          font-size: 14px;
-          line-height: 23px;
-          color: $color-thirty;
+      &__phone {
+        margin-top: 35px;
+        font-size: $fontSize-main;
+        line-height: 23px;
+        color: $color-thirty;
 
-          @media (max-width: $small-screen) {
-            margin: 10px auto 0;
-            text-align: left;
-          }
+        @media (max-width: $small-screen) {
+          margin: 10px auto 0;
+          text-align: left;
         }
+      }
 
-        .contacts__email {
-          .contacts__link {
-            color: #006dff;
-          }
-        }
+      &__link {
+        color: #006dff;
       }
     }
   }
+
+  &__photo {
+    height: 100%;
+    background: url(../images/smile-girl.png) no-repeat center;
+    background-size: cover;
+
+    @media (max-width: $small-screen) {
+      height: 350px;
+      width: 100%;
+    }
+  }
+
   .right {
     padding-left: 12%;
     height: 80px;
@@ -105,7 +105,7 @@
 
     &__text {
       margin-right: 6px;
-      font-size: 14px;
+      font-size: $fontSize-main;
       line-height: 11px;
     }
   }
