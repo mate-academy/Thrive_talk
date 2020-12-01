@@ -3,10 +3,12 @@
   justify-content: space-between;
   background-color: #22356f;
   color: #fff;
-
+  
   &__article {
-    padding-left: 180px;
-    padding-top: 103px;
+    padding-left: 10%;
+    padding-top: 100px;
+
+    padding-bottom: 40px;
 
   }
 
@@ -15,9 +17,9 @@
     line-height: 12px;
     color: #fff;
   }
-
+  
   &__header {
-    margin-top: 200px;
+    margin-top: 230px;
     margin-bottom: 75px;
     font-size: 64px;
     line-height: 94px;
@@ -34,5 +36,34 @@
     line-height: 23px;
     color: #62d0df;
   }
+  
+  &__photo {
+    width: 800px;
+  }
 
+  @media (max-width: 1125px) {
+    &__text {
+      font-size: 25px;
+      line-height: 44px;
+      margin-right: 10%;
+    }
+
+    &__header {
+      font-size: 48px;
+      line-height: 60px;
+    }
+  }
+
+  @media (max-width: 960px) {
+     
+    padding-bottom: 20px;
+
+    &__photo {
+      display: none;
+    }
+    
+    &__header {
+      margin-top: 80px;
+    }
+  }
 }

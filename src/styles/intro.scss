@@ -1,72 +1,127 @@
+$primary-dark-color: blue;
+$secondary-color: green;
+
 .intro {
-  padding-left: 179px;
+  z-index: 0;
+
+  padding-top: 187px;
+
   display: flex;
-  background: #f4f9e2;
+  justify-content: space-between;
 
-  &__header {
-    font-size: 48px;
-    line-height: 53px;
-    color: #22356f;
+  background-color: #f4f9e2;
 
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    width: 50%;
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+
+    position: relative;
+
+    height: 840px;
+
+    background: url("/images/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 600px) {
+      background-position: right;
+    }
+  }
+
+  &__shadow {
+    position: relative;
+
+    z-index: -1;
+    bottom: 45px;
+
+    height: 840px;
+
+    background-image: url("/images/Rectangle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 600px) {
+      background-position: right;
+    }
   }
 
   &__text {
-    width: 550px;
+    z-index: 2;
+
+    width: 469px;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+
   }
 
-  &__paragraph {
+  &__logo {
+    margin-bottom: 37px;
+  }
+
+  &__title {
+    margin-bottom: 19px;
+
+    width: 100%;
+    height: 167px;
+
+    font-size: 48px;
+    line-height: 53px;
+    text-transform: uppercase;
+
+    @media (max-width: 600px) {
+      font-size: 36px;
+    }
+
+  }
+
+  &__description {
+    margin-bottom: 63px;
+
+    width: 100%;
+
     font-size: 24px;
     line-height: 42px;
-    color: #22356f;
-    margin-bottom: 70px;
   }
 
-  &__links {
-    display: flex;
+  &__link {
     
-  }
-
-  &__whoiam {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    line-height: 23px;
-    align-items: center;
-    letter-spacing: 0.1em;
-    color: #fff;
-    width: 150px;
-    height: 50px;
-    background: #f9b640;
-    margin-right: 38px;
     margin-bottom: 75px;
+
+    height: 50px;
+    width: 150px;
+
+    line-height: 50px;
+
+    &--colored {
+      
+
+      &:hover {
+        background-color: $primary-dark-color;
+        color: $secondary-color;
+      }
+    }
+
+    &--transparent {
+      
+      &:hover {
+        color: $primary-dark-color;
+
+      }
+    }
   }
-
-  &__whatido {
-    color: #fab63e;
-    padding-top: 18px;
-  }
-
-}
-
-.header__img-down {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.header__img-upper {
-  top: 0;
-  position: absolute;
-  z-index: 1;
-  right: 0;
-}
-
-.main__header {
-  font-size: 24px;
-  line-height: 27px;
-  color: #62d0df;
-  font-weight: bold;
-  margin-top: 134px;
 }

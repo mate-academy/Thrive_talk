@@ -1,11 +1,9 @@
 .target {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  height: 240px;
-  margin-bottom: 500px;
  
   &__item {
-    padding: 55px 15px 37px 105px;
+    padding: 55px 10% 37px 25%;
   }
 
   &__header {
@@ -18,5 +16,26 @@
     font-size: 16px;
     line-height: 25px;
     color: rgba(34, 53, 111, 0.5);
+  }
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    &__paragraph {
+      padding: 0 10%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    
+    &__item {
+      padding: 10px;
+    }
   }
 }
