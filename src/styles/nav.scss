@@ -42,7 +42,7 @@
       width: 70%;
       text-align: center;
       height: 5px;
-      border-bottom: 1px solid $colorBlue;
+      border-bottom: 2px solid $colorBlue;
       opacity: 0;
       transition-duration: 0.3s;
     }
@@ -84,12 +84,37 @@
   }
 }
 
-@media (max-width: 500px) {
+.toggler {
+  display: none;
+
+  &__button {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
   .nav {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__link {
+      margin: 0;
+      font-weight: bold;
+
+      &:hover {
+        color: $colorWhite;
+      }
+    }
+  }
+
+  .toggler {
+    display: block;
+  
+    &__button {
+      display: block;
+    }
   }
 }

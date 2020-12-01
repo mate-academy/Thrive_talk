@@ -8,24 +8,38 @@
   </head>
   <body>
     <header class="header">
-      <a name="top"></a>
       <nav class="nav">
-        <a href="#" class="nav__logo">ThriveTalk</a>
+        <a 
+          href="#"
+          name= "top"
+          class="nav__logo"
+          >ThriveTalk
+        </a>
+
+        <input
+          type="checkbox"
+          class="nav__toggler toggler"
+          id="toggler"
+        >
+        <label for="toggler" class="toggler__button">
+          <span class="toggler__span"></span>
+        </label>
+
         <ul class="nav__list">
           <li class="nav item">
-            <a href="#" class="nav__link">Home</a>
+            <a href="#home" class="nav__link">Home</a>
           </li>
           <li class="nav item">
-            <a href="#" class="nav__link">About</a>
+            <a href="#about" class="nav__link">About</a>
           </li>
           <li class="nav item">
-            <a href="#" class="nav__link">Services</a>
+            <a href="#services" class="nav__link">Services</a>
           </li>
           <li class="nav item">
-            <a href="#" class="nav__link">Blog</a>
+            <a href="#blog" class="nav__link">Blog</a>
           </li>
         </ul>
-        <a href="#" class="nav__contact-us">contact us</a>
+        <a href="tel:+8 800 888 88 88" class="nav__contact-us">contact us</a>
       </nav>
 
       <div class="headpage">
@@ -42,6 +56,7 @@
           </div>
         </div>
       </div>
+      <div class="headpage__image-background-white"></div>
       <div class="headpage__image-background"></div>
       <div class="headpage__image">
         <div class="headpage__image-object"></div>
@@ -52,7 +67,9 @@
       <div class="whyThrive">
         <div class="whyThrive__description">
           <div class="whyThrive__wrapper">
-            <div class="whyThrive__title">Why Thrive?</div>
+            <div class="whyThrive__title">
+              <a name="home"></a>
+              Why Thrive?</div>
             <div class="whyThrive__text">
               <span class="whyThrive__text-bold">Want to improve your well-being from the
               comfort of your own couch?Are you having trouble finding the right
@@ -69,7 +86,10 @@
       </div>
 
       <div class="about">
-        <div class="about__title">About us</div>
+        <div class="about__title">
+          <a name="about"></a>
+          About us
+        </div>
         <div class="about__text">
           We want to help you thrive! Whether you are just looking for someone
           to talk to, or are struggling with a mental wellness issue we’re
@@ -80,7 +100,9 @@
       </div>
 
       <div class="help">
-        <div class="help__phrase">We can help with
+        <div class="help__phrase">
+          <a name="services"></a>
+          We can help with
         </div>
         <div class="help__container">
           <div class="help__block help__block-1">Weight Lifting</div>
@@ -153,7 +175,9 @@
       <div class="also">
         <div class="also__image"></div>
         <div class="also__info">
-          <div class="also__title">You should also know
+          <div class="also__title">
+            <a name=blog></a>
+            You should also know
           </div>
           <div class="also__text">MDD affects more than 16.1 million American
             adults, or about 6.7%of the U.S. population age 18 and older in a
@@ -161,7 +185,7 @@
             <span class="also__text-blue">ThriveTalk</span>
             can help you.
           </div>
-          <a href="#" class="also__link">Get Help now</a>
+          <a href="tel:+8 800 888 88 88" class="also__link">Get Help now</a>
         </div>
       </div>
 
@@ -192,8 +216,8 @@
               Buffalo, United States
               <br>
               <br>
-              +555 283 784 333
-              <a href="#" class="additional__block-email">office@enfold-health.com</a>
+              <a href="tel:+555 283 784 333" class="additional__block-tel">+555 283 784 333</a>
+              <a href="mailto:office@enfold-health.com" class="additional__block-email">office@enfold-health.com</a>
             </div>
           </div>
           <div class="additional__block">

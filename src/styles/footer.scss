@@ -1,15 +1,16 @@
 .footer {
   height: 80px;
-  position: relative;
+  display: flex;
+  padding-left: 179px;
+  padding-right: 10px;
+  justify-content: space-between;
 
   color: $colorWhite;
   background-color: $colorLightBlue;
 
   &__string {
-    position: absolute;
-    left: 179px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: inline-block;
+    margin-top: 30px;
 
     &::before {
       content: "©";
@@ -21,14 +22,16 @@
 
   &__anchor {
     color: $colorWhite;
-    position: absolute;
-    margin-right: 10px;
-    padding: 10px;
-    right: 1%;
-    top: 50%;
-    transform: translateY(-50%);
+    margin: 20px;
+    padding: 8px 5px;
     border: 1px solid $colorWhite;
     border-radius: 5px;
+
+    transition: .5s;
+
+    &:hover {
+    transform: translateY(-10px)
+  }
 
     &::after {
       content: " ^";
@@ -40,8 +43,12 @@
   }
 }
 
-@media (max-width: 500px) {
-  .footer__string {
-    left: 5px;
+@media (max-width: 570px) {
+  .footer {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
 }

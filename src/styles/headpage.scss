@@ -94,6 +94,16 @@
 
     transform: rotate(-60deg);
     transform-origin: 30% top;
+
+    &-white {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 22.4vw;
+      height: 100%;
+      background-color: $colorWhite;
+      z-index: 0;
+    }
   }
 
   &__image {
@@ -122,10 +132,10 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
   .headpage__card {
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
   }
 
   .headpage__image {
@@ -133,7 +143,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
   .headpage {
     margin-top: 10px;
     display: block;
@@ -143,18 +153,36 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-left: 15px;
+      padding: 0 10px;
       left: 0;
       transform: translateX(0%);
-
     }
 
     &__description {
+      text-align: center;
       margin-top: 10px;
+      
     }
 
     &__name {
       display: none;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    &__button {
+      padding: 0 10px;
+
+      &_main {
+        width: 120px;
+      }
+
+      &_additional {
+        width: 120px;
+      }
     }
   }
 }

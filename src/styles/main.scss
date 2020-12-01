@@ -6,9 +6,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.anchor {
+  display: none;
+}
+
 @import "__variables";
 @import "fonts";
 @import "reset";
+@import "toggler";
 @import "nav";
 @import "headpage";
 @import "whyThrive";
