@@ -65,4 +65,11 @@
   &__info > :nth-child(4) {
     background-color: #0052c1;
   }
+
+  @media screen and(max-width: 1280px) {
+
+    &__info {
+      grid-template-columns: repeat(2, minmax(255px, 1fr));
+    }
+  }
 }

@@ -1,4 +1,5 @@
 .contact {
+  position: relative;
   display: flex;
   justify-content: space-between;
   background-color: $c-textDark;
@@ -10,11 +11,12 @@
   
   &__title {
     font-size: 16px;
-    line-height: 12px;
+    line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: $c-textLight;
+    background-color: $c-textDark;
   }
 
   &__slogan {
@@ -24,6 +26,7 @@
     font-weight: bold;
     letter-spacing: -0.01em;
     color: $c-textLight;
+    background-color: $c-textOpacity;
   }
 
   &__text {
@@ -32,6 +35,7 @@
     line-height: 53px;
     letter-spacing: -0.01em;
     color: $c-textLight;
+    background-color: $c-textOpacity;
   }
 
   &__link {
@@ -43,6 +47,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: $c-logo;
+    background-color: $c-textDark;
   }
 
   &__picture {
@@ -51,5 +56,19 @@
     background-size: cover;
     height: 800px;
     width: 480px;
+  }
+
+  @media screen and(max-width: 1280px) {
+
+    &__info {
+      z-index: 1;
+      height: 800px;
+    }
+
+    &__picture {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 }

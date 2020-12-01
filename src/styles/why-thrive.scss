@@ -1,7 +1,6 @@
 .why-thrive {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 
   &__info {
@@ -33,7 +32,30 @@
     background-image: url("../images/whyThrive.png");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 604px;
     flex: 0 0 525px;
+  }
+
+  @media screen and(max-width: 1280px) {
+    flex-wrap: wrap;
+    
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 604px;
+      padding: 0;
+      text-align: center;
+    }
+
+    &__text {
+      align-self: center;
+      text-align: start;
+    }
+
+    &__picture {
+      flex: 1 1 100%;
+    }
   }
 }
