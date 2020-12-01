@@ -3,11 +3,13 @@
 .targets {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 22px 0 40px;
+  padding: 22px 5px 40px;
+  background-color: #fff;
 
   @media (max-width: $small-screen) {
     display: block;
-    text-align: center;
+
+    // text-align: center;
   }
 
   .target {
@@ -27,12 +29,24 @@
       line-height: 33px;
       color: $color-secondary;
     }
+    @media (max-width: $small-screen) {
+      margin: 0 auto ;
+      max-width: 320px;
+      text-align: center;
+    }
 
     &__paragraph {
       margin-top: 28px;
       font-size: 16px;
       line-height: 25px;
       color: $color-thirty;
+      max-width: 298px;
+
+      @media (max-width: $small-screen) {
+        margin: 20px auto 0;
+        max-width: 320px;
+        text-align: start;
+      }
     }
   }
 }

@@ -39,12 +39,11 @@
     content: "";
     display: block;
     height: 1px;
-    width: 340px;
-
+    top: 72px;
+    left: 15%;
+    right: 15%;
     background-color: #fff;
     position: absolute;
-    top: 72px;
-    right: calc(50% - 170px);
   }
 
   &__item:hover {

@@ -26,6 +26,11 @@
     gap: 0 10px;
     list-style: none;
 
+    @media (max-width: $small-screen) {
+      margin: 50px auto;
+      width: 320px;
+    }
+
     .menu__item--active::after {
       content: "";
       display: block;
@@ -33,6 +38,12 @@
       height: 1px;
       margin-top: 12px;
       background-color: $color-secondary;
+    }
+  }
+
+  &__item {
+    @media (max-width: $small-screen) {
+      justify-self: center;
     }
   }
 

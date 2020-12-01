@@ -15,6 +15,7 @@
 
   @media (max-width: $small-screen) {
     padding: 5px;
+    height: 100vh;
   }
 
   &__rectangle {
@@ -68,6 +69,9 @@
     margin-top: 27px;
     position: relative;
     z-index: 2;
+    @media (max-width: $small-screen) {
+      margin-top: 0;
+    }
   }
 
   &__introduction {
@@ -76,7 +80,7 @@
     z-index: 2;
 
     @media (max-width: $small-screen) {
-      margin-top: 50px;
+      margin-top: 140px;
       background-color: #fff;
       border-radius: 75px;
       opacity: 0.7;

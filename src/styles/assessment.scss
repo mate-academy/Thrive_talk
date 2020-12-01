@@ -14,7 +14,7 @@
     padding-left: 12%;
 
     @media (max-width: $small-screen) {
-      padding: 0;
+      padding: 0 5px;
       text-align: center;
     }
 
@@ -60,14 +60,17 @@
       margin-top: 75px;
       font-size: 36px;
       line-height: 53px;
+      max-width: 579px;
 
       @media (max-width: $media-screen) {
-        font-size: 24px;
+        font-size: 32px;
       }
       @media (max-width: $small-screen) {
-        margin-top: 20px;
+        margin: 20px auto 0;
         font-size: 18px;
         line-height: 2;
+        max-width: 320px;
+        text-align: left;
       }
     }
 
@@ -78,7 +81,7 @@
       line-height: 23px;
       color: $color-main;
       text-transform: uppercase;
-      transition: background-color 0.5s, color 0.5s;
+      transition: color 0.3s;
 
       @media (max-width: $small-screen) {
         margin-top: 20px;
@@ -86,8 +89,7 @@
     }
 
     &__help:hover {
-      background-color: $color-main;
-      color: $color-secondary;
+      color: #fab63e;
     }
   }
 

@@ -3,6 +3,7 @@
 .addition {
   display: grid;
   grid-template-columns: 480px 1fr;
+  background-color: #fff;
 
   @media (max-width: $small-screen) {
     display: block;
@@ -23,7 +24,7 @@
     padding-right: 0;
 
     @media (max-width: $small-screen) {
-      padding: 0;
+      padding: 0 5px;
       text-align: center;
     }
 
@@ -44,15 +45,18 @@
       font-size: 36px;
       line-height: 53px;
       color: $color-secondary;
+      max-width: 676px;
 
       @media (max-width: $media-screen) {
         font-size: 25px;
       }
 
       @media (max-width: $small-screen) {
-        margin-top: 20px;
+        margin: 20px auto 0;
         font-size: 16px;
         line-height: 2;
+        max-width: 320px;
+        text-align: left;
       }
 
       .help__thrive {
@@ -68,15 +72,14 @@
       line-height: 23px;
       color: #fab63e;
       text-transform: uppercase;
-      transition: background-color 0.5s, color 0.5s;
+      transition: color 0.3s;
 
       @media (max-width: $small-screen) {
         margin: 20px 0;
       }
     }
     &__link:hover {
-      background-color: #f9b640;
-      color: #fff;
+      color: $color-main;
     }
 
   }

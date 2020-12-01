@@ -17,19 +17,21 @@
 
   &__text {
     flex-grow: 1;
+    padding-top: 151px;
+    padding-right: 5px;
+    
+    @media (max-width: $small-screen) {
+      padding: 20px 5px;
+    }
 
     .therapists__header {
-      margin-top: 151px;
       font-size: 36px;
       line-height: 27px;
-
-      @media (max-width: $small-screen) {
-        margin-top: 20px;
-      }
     }
 
     .therapists__paragraph {
       margin: 75px 0 90px;
+      max-width: 555px;
       font-size: 20px;
       line-height: 29px;
 
@@ -39,7 +41,10 @@
 
       @media (max-width: $small-screen) {
         font-size: 11px;
-        margin: 20px 0;
+        margin: 20px auto;
+        max-width: 320px;
+        text-align: left;
+
       }
 
       .therapists__span {

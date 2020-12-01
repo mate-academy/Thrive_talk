@@ -1,7 +1,7 @@
 @import "variables";
 
 .footer {
-
+  background-color: #fff;
   &__contacts {
     display: grid;
     grid-template-columns: 570px 1fr;
@@ -45,6 +45,8 @@
       }
 
       &__item {
+        max-width: 210px;
+        margin: 0 auto;
         .contacts__header {
           font-size: 14px;
           line-height: 11px;
@@ -63,7 +65,9 @@
           color: $color-thirty;
 
           @media (max-width: $small-screen) {
-            margin-top: 10px;
+            margin: 10px auto 0;
+            text-align: left;
+
           }
         }
 
@@ -74,7 +78,8 @@
           color: $color-thirty;
 
           @media (max-width: $small-screen) {
-            margin-top: 10px;
+            margin: 10px auto 0;
+            text-align: left;
           }
         }
 
@@ -92,6 +97,11 @@
     display: flex;
     align-items: center;
     background-color: $color-main;
+
+    @media (max-width: $small-screen) {
+      padding: 0;
+      justify-content: center;
+    }
 
     &__text {
       margin-right: 6px;
