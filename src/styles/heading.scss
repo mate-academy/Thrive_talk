@@ -1,13 +1,7 @@
 .heading {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   padding-left: 179px;
-  
-  @media screen and(max-width: 850px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
   &__picture-back {
     position: absolute;
@@ -28,18 +22,43 @@
     top: -19px;
     right: 0;
     height: 840px;
-    width: 100%;
+    width: 545px;
   }
 
   &__picture {
     position: absolute;
+    top: 113px;
+    right: -148px;
     z-index: -1;
-    background-image: url("../images/rectPicture.png");
+    height: 545px;
+    width: 808px;
+    transform: rotate(150deg);
+    overflow: hidden;
+    border-radius: 312px;
+    background-color: $c-page;
+  }
+
+  &__image {
+    position: relative;
+    top: -50px;
+    left: 128px;
+    width: 750px;
+    height: 750px;
+    transform: rotate(-150deg);
+    background-image: url("../images/heading.png");
     background-repeat: no-repeat;
-    background-position: right;
-    right: 0;
-    top: 0;
-    height: 840px;
-    width: 100%;
+    background-size: contain;
+  }
+
+  @media screen and(max-width: 1280px) {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+  }
+
+  @media screen and(max-width: 850px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

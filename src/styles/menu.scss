@@ -7,15 +7,6 @@
   padding: 27px 131px 0 179px;
   width: 100%;
 
-  @media screen and(max-width: 850px) {
-    flex-direction: column;
-    align-items: center;
-    padding: 27px 20px 20px;
-    &__nav {
-      margin: 20px;
-    }
-  }
-
   &__logo {
     font-size: 25px;
     font-weight: bold;
@@ -30,12 +21,92 @@
     justify-content: center;
     font-size: 14px;
     font-weight: bold;
-    line-height: 16px;
     text-transform: uppercase;
     width: 150px;
     height: 50px;
     color: $c-textLight;
     background-color: $c-logo;
     border-radius: 50px;
+    z-index: 1;
+  }
+
+  &__label {
+    display: none;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 9px;
+    background-color: $c-logo;
+    transition-duration: 0.4s;
+    z-index: 1;
+    &::before {
+      @extend .menu__icon;
+      content: "";
+      top: -10px;
+      background-color: $c-whoAmI;
+    }
+    &::after {
+      @extend .menu__icon;
+      content: "";
+      top: 10px;
+    }
+  }
+  
+  &__hamburger {
+    display: none;
+    &:checked ~ .menu__label > .menu__icon {
+      transform: rotate(45deg);
+    }
+  
+    &:checked ~ .menu__label > .menu__icon::before {
+      top: 0;
+      transform: rotate(0);
+    }
+  
+    &:checked ~ .menu__label > .menu__icon::after {
+      top: -7px;
+      transform: rotate(90deg);
+    }
+  }
+
+  @media screen and(max-width: 1280px) {
+    justify-content: space-around;
+    padding: 27px 0 0 ;
+  }
+
+  @media screen and(max-width: 760px) {
+    flex-direction: column;
+    &__button {
+      visibility: hidden;
+      position: absolute;
+      top: 100%;
+    }
+    &__label {
+      display: flex;
+    }
+
+    &__humburger {
+      display: block;
+    }
+    &__hamburger:checked ~ &__nav {
+      visibility: visible;
+      width: 100%;
+      height: 70%;
+      transition-duration: 0.5s;
+    }
+    &__hamburger:checked ~ &__button {
+      visibility: visible;
+      position: absolute;
+      top: 20%;
+      transition-duration: 0.5s;
+      transition-delay: 1s;
+    }
   }
 }

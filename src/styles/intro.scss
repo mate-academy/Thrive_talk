@@ -1,21 +1,11 @@
 .intro {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 75px;
-  background: $c-headerOpacity;
-  @media screen and(max-width: 520px) {
-    &__logo {
-      text-align: center;
-    }
-    &__title {
-      transform: scale(0.8) translateY(-20px);
-      text-align: center;
-    }
-    &__text {
-      overflow: scroll;
-    }
-  }
+  background-color: $c-headerOpacity;
+  border-radius: 30px;
 
   &__logo {
-    display: block;
     height: 64px;
     font-size: 25px;
     font-weight: bold;
@@ -25,7 +15,7 @@
   }
 
   &__title {
-    display: block;
+    padding: 0 20px;
     height: 167px;
     font-size: 48px;
     font-weight: bold;
@@ -36,14 +26,18 @@
   }
 
   &__text {
-    display: block;
+    padding: 0 20px;
     height: 161px;
     margin-top: 19px;
     font-size: 24px;
     line-height: 42px;
     color: $c-textDark;
   }
-  
+
+  &__buttons {
+    display: flex;
+  }
+
   &__button {
     display: inline-block;
     margin-top: 63px;
@@ -60,9 +54,22 @@
   }
 
   &__button--secondary {
-    margin-left: 33px;
-    text-align: left;
+    margin-left: 25px;
+    text-align: center;
     background-color: transparent;
     color: $c-whoAmI;
+  }
+
+  @media screen and(max-width: 1280px) {
+    align-items: center;
+
+    &__logo {
+      visibility: hidden;
+    }
+
+    &__buttons {
+      justify-content: space-around;
+      width: 100%;
+    }
   }
 }

@@ -4,7 +4,10 @@
   justify-content: space-between;
 
   &__info {
-    padding: 151px 0 95px 179px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 151px;
     flex: 1 1 auto;
     background-color: $c-logo;
     color: $c-textLight;

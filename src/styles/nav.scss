@@ -33,4 +33,38 @@
       box-shadow: inset 0 -1px 0 $c-textDark;
     }
   }
+
+  @media screen and(max-width: 760px) {
+    visibility: hidden;
+    background-color: $c-header;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 0%;
+    border: 5px solid $c-whoAmI;
+    border-top-right-radius: 50px;
+
+    &__list {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    &__item {
+      text-align: center;
+    }
+
+    &__link {
+      font-size: 24px;
+      width: 100%;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    &__link:hover {
+      transform: scale(1.5);
+      box-shadow: -5px -5px 10px $c-logo;
+    }
+  }
 }
