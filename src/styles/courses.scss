@@ -1,38 +1,41 @@
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-position: inside;
-}
-
 .courses {
   margin-bottom: 120px;
 
   &__header {
-    font-size: 16px;
-    line-height: 19px;
     text-align: center;
-    color: rgba(34, 53, 111, 0.5);
+    font-size: $fontSizeStandart;
     font-weight: 300;
+    line-height: 19px;
+    color: rgba(34, 53, 111, 0.5);
   }
 
   .courses__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
   }
 
   &__item {
     position: relative;
-    text-align: center;
-    padding-top: 95px;
-    padding-right: 10%;
-    padding-left: 5%;
-    color: #e9b730;
     align-items: center;
+    height: 360px;
+    padding-top: 95px;
+    padding-right: $standratMargin;
+    padding-left: 5%;
+    transition: transform 0.5s;
+    transition-timing-function: linear;
+    
+    text-align: center;
+    color: #e9b730;
     font-size: 32px;
     line-height: 34px;
-    height: 360px;
   }
+
+  
+  .courses__item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
   
   &__text {
     color: #fff;
@@ -41,7 +44,7 @@ ul {
   &__item::before {
     content: "";
     position: absolute;
-    background: white;
+    background: #fff;
     top: 72px;
     left: 15%;
     right: 15%;
@@ -61,31 +64,37 @@ ul {
       grid-template-columns: repeat(1, 1fr);
     }
   }
-}
 
-.courses__item-lift {
-  background: #ffe2de;
-}
+  &__item-lift {
+    background: #ffe2de;
 
-.courses__item-run {
-  background: #c4e769;
-  padding-right: 40px;
-}
+    &:hover {
+      background: pink;
+    }
+  }
+  
+  &__item-run {
+    background: #c4e769;
+    padding-right: 40px;
 
-.courses__item-pump1 {
-  background: #62d0df;
-}
+    &:hover {
+      background: #9ec043;
+    }
+  }
+  
+  &__item-pump1 {
+    background: #62d0df;
 
-.courses__item-pump2 {
-  background: #0052c1;
-}
+    &:hover {
+      background: #3dabba;
+    }
+  }
+  
+  &__item-pump2 {
+    background: #0052c1;
 
-.marker {
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  background: #e9b730;
-  top: 107px;
-  left: 12%;
-  border-radius: 50%;
+    &:hover {
+      background: #517ace ;
+    }
+  }
 }

@@ -2,39 +2,35 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  @media (max-width: 960px) {
-
-    grid-template-columns: repeat(2, 1fr);
-
-    &__marker {
-      left: 5%;
-    }
-  }
-
-  @media (max-width: 600px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
+  
   &__item {
     position: relative;
+    padding-top: 126px;
+    padding-left: 35%;
     height: 480px;
+    
     font-size: 32px;
     line-height: 34px;
     color: #fff;
-    padding-left: 35%;
-    padding-top: 126px;
+    
+
+    transition: background-image 0.5s;
   }
 
   &__item::before {
     content: "";
     position: absolute;
-    background: white;
     top: 94px;
     left: 15%;
     right: 15%;
     height: 2px;
+    background: white;
   }
 
+  &__item:hover {
+    cursor: pointer;
+  }
+  
   &__marker {
     position: absolute;
     width: 12px;
@@ -44,28 +40,87 @@
     left: 22%;
     border-radius: 50%;
   }
-}
 
-.service_item-physic {
-  background: #22356f;
-}
+  @media (max-width: 960px) {
+  
+    grid-template-columns: repeat(2, 1fr);
+  
+    &__marker {
+      left: 20%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-.service_item-mental {
-  background: #0052c1;
-}
+  &__item-physic {
+    background: #22356f;
 
-.service_item-nutrition {
-  background-image: url(\images\joanna-kosinska-340748.png);
-}
+    &:hover {
+      @include backgroundImgposition;
+      background-image: url(\images\PhyHealth.jpg);
+      animation: fon-animation 1s;
+      @keyframes fon-animation {
 
-.service_item-gym {
-  background: #62d0df;
-}
+        from {
+          background-position: center ;
+          opacity: 0.7;
+        }
 
-.service_item-crossfit {
-  background: #dee1ff;
-}
+        to {
+          background-position: center left;
+          opacity: 1;
+        }
+      }
 
-.service_item-aerobics {
-  background: #8f00ff;
+    }
+  }
+
+  
+
+  &__item-mental {
+    background: #0052c1;
+
+    &:hover {
+      background-image: url(\images\mentHealth.jpg);
+      animation: fon-animation 1s;
+      @include backgroundImgposition;
+    }
+  }
+
+  &__item-nutrition {
+    background-image: url(\images\joanna-kosinska-340748.png);
+  }
+
+  &__item-gym {
+    background: #62d0df;
+
+    &:hover {
+      @include backgroundImgposition;
+      background-image: url(\images\gymn.jpg);
+      animation: fon-animation 1s;
+    }
+        
+  }
+
+  &__item-crossfit {
+    background: #dee1ff;
+
+    &:hover {
+      @include backgroundImgposition;
+      background-image: url(\images\cross.jpg);
+      animation: fon-animation 1s;
+    }
+  }
+
+  &__item-aerobics {
+    background: #8f00ff;
+
+    &:hover {
+      @include backgroundImgposition;
+      background-image: url(\images\aerobics.jpg);
+      animation: fon-animation 1s;
+    }
+  }
 }

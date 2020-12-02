@@ -1,19 +1,22 @@
+$dark-blue: #22356f; //contacts
+$fontSizeStandart: 16px;
+$light-blue: #62d0df;
+$standratMargin: 10%;
+
 .contacts {
   display: flex;
   justify-content: space-between;
-  background-color: #22356f;
+  background-color: $dark-blue;
   color: #fff;
   
   &__article {
     padding-left: 10%;
     padding-top: 100px;
-
     padding-bottom: 40px;
-
   }
 
   &__link {
-    font-size: 16px;
+    font-size: $fontSizeStandart;
     line-height: 12px;
     color: #fff;
   }
@@ -32,9 +35,9 @@
   }
 
   &__link-help {
-    font-size: 16px;
+    font-size: $fontSizeStandart;
     line-height: 23px;
-    color: #62d0df;
+    color: $light-blue;
   }
   
   &__photo {
@@ -45,7 +48,7 @@
     &__text {
       font-size: 25px;
       line-height: 44px;
-      margin-right: 10%;
+      margin-right: $standratMargin;
     }
 
     &__header {

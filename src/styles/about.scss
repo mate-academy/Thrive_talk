@@ -1,9 +1,7 @@
-$blue: #22356f;
-
 .about {
   display: flex;
   position: relative;
-  color: $blue;
+  color: $dark-blue;
 
   &__text {
     margin: 151px 15% 70px 20%;
@@ -15,8 +13,9 @@ $blue: #22356f;
   &__header {
     position: absolute;
     top: 156px;
-    left: 10%;
-    font-size: 16px;
+    left: $standratMargin;
+    
+    font-size: $fontSizeStandart;
     line-height: 23px;
     font-weight: 300;
   }
@@ -27,10 +26,6 @@ $blue: #22356f;
       position: absolute;
       top: 15px;
       left: 47%;
-      font-size: 16px;
-      line-height: 23px;
-      font-weight: 300;
     }
-
   }
 }

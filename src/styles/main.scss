@@ -1,5 +1,6 @@
 @import "utils";
 @import "typography";
+@import "Variables";
 @import "about";
 @import "courses";
 @import "services";
@@ -7,23 +8,7 @@
 @import "additional";
 @import "contacts";
 @import "footer";
-@import "nav";
 @import "intro";
 @import "therapy";
 @import "header";
-
-* {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-  color: #22356f;
-}
-
-body {
-  background-color: #fff;
-  font-family: Larsseit, sans-serif;
-  margin: 0;
-}
+@import "normilize";

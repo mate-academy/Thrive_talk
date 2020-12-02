@@ -1,11 +1,8 @@
-$dark-blue: #22356f;
-$secondary-color: green;
-
 .intro {
   z-index: 0;
-  padding-left: 10%;
+  padding-left: $standratMargin;
   padding-top: 187px;
-  color: #22356f;
+  color: $dark-blue;
   display: flex;
   justify-content: space-between;
 
@@ -100,31 +97,30 @@ $secondary-color: green;
   &__link {
     display: inline-block;
     margin-bottom: 75px;
+    margin-right: 10px;
+    
+    width: 150px;
+    height: 50px;
 
     text-align: center;
     line-height: 50px;
-    margin-right: 10px;
-    width: 150px;
-    height: 50px;
-    
 
     &--colored {
-      background-color: #fab63e;
+      background-color: $orange;
       color: #fff ;
 
       &:hover {
         background-color: $dark-blue;
-        color: #fab63e;
+        color: $orange;
       }
     }
 
     &--transparent {
       
-      color: #fab63e;
+      color: $orange;
 
       &:hover {
         color: $dark-blue;
-
       }
     }
   }

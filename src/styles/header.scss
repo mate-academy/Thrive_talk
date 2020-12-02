@@ -1,0 +1,168 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  padding-top: 27px;
+  padding-left: $standratMargin;
+  padding-right: $standratMargin;
+  
+  height: 65px;
+
+  background-color: #f4f9e2;
+
+  &__logo-link {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__toggler {
+    position: relative;
+    z-index: 2;
+
+    display: none;
+  }
+
+  &__toggler-label {
+    position: relative;
+    z-index: 2;
+
+    display: none;
+    margin: 0 auto 20px;
+
+    color: $dark-blue;
+    text-align: center;
+
+    @media (max-width: 900px) {
+      display: block;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "=";
+    }
+  }
+
+  &__toggler:checked ~ &__toggler-label {
+    &::after {
+      content: "x";
+    }
+  }
+
+  &__list {
+    position: relative;
+    z-index: 2;
+
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+
+    list-style-type: none;
+    
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  &__toggler:not(:checked) ~ &__list {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &__list-item {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    line-height: 16px;
+    
+    &:last-of-type {
+      padding-right: 0;
+
+      @media (max-width: 900px) {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+
+    position: relative;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: $dark-blue;
+
+    text-decoration: none;
+    transition: 0.3s;
+
+    @media (max-width: 900px) {
+      padding: 10px 0;
+
+      text-align: center;
+    }
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &:active::after {
+      content: "";
+
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+
+      width: 100%;
+      height: 1px;
+      background-color: $dark-blue;
+    }
+  }
+
+  &__contact {
+    position: relative;
+    z-index: 2;
+
+    display: inline-block;
+    margin: -15px 0 0 auto;
+
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+
+    background-color: $light-blue;
+    border-radius: 50px;
+
+    transition: 0.3s;
+
+    @media (max-width: 900px) {
+      margin-top: -10px;
+      width: 100px;
+      height: 40px;
+
+      font-size: 12px;
+      line-height: 40px;
+    }
+
+    @media (max-width: 640px) {
+      margin-top: -10px;
+      width: 80px;
+      height: 40px;
+
+      font-size: 10px;
+      line-height: 40px;
+    }
+
+    &:hover {
+      background-color: $dark-blue;
+    }
+  }
+}
