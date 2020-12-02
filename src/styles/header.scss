@@ -6,5 +6,9 @@
   
   &__menu {
     margin-bottom: 164px;
+
+    @include onMobile {
+      margin-bottom: 30px;
+    }
   }
 }

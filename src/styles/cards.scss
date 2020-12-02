@@ -2,6 +2,15 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(340px, 1fr));
   padding-top: 120px;
+  background-color: $c-page;
+
+  @include onTablet {
+    grid-template-columns: repeat(2, minmax(340px, 1fr));
+  }
+  @include onMobile {
+    grid-template-columns: repeat(1, minmax(340px, 480px));
+    justify-content: center;
+  }
 
   &__item {
     display: flex;
@@ -9,6 +18,14 @@
     position: relative;
     height: 480px;
     padding: 0 70px;
+    transition: transform 0.3s, border-radius 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+      border-radius: 30%;
+      @include shadowBox;
+      z-index: 1;
+    }
   }
 
   &__shadow {
@@ -41,35 +58,59 @@
 
   &__item--physical {
     background-color: $c-textDark;
+    &:hover {
+      background-image: url("../images/ph-h.jpeg");
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__item--mental {
     background-color: #0052c1;
+    &:hover {
+      background-image: url("../images/men-hel.jpg");
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__item--nutrition {
-    background-image: url("../images/nutrition.png");
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(196, 231, 105);
+    &:hover {
+      background-image: url("../images/nutrition.png");
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__item--gymnastics {
     background-color: $c-logo;
+    &:hover {
+      background-image: url("../images/gym.png");
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__item--crossfit {
     background-color: #dee1ff;
+    &:hover {
+      background-image: url("../images/cross.jpg");
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__item--aerobics {
     background-color: #8f00ff;
+    &:hover {
+      background-image: url("../images/aer.jpg");
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__description {
-    margin-top: 22px;
-  }
-
-  @media screen and(max-width: 1280px) {
-    grid-template-columns: repeat(2, minmax(340px, 1fr));
+    padding-top: 22px;
   }
 }

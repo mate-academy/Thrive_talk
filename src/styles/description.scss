@@ -1,11 +1,25 @@
 .description {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
+  background-color: $c-page;
+
+  @include onTablet {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+
+  @include onMobile {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
 
   &__item {
     height: 240px;
     padding-top: 55px;
     padding-left: 105px;
+
+    @include onTablet {
+      text-align: center;
+      padding-left: 0;
+    }
   }
 
   &__title {
@@ -24,16 +38,14 @@
     color: $c-textOpacity;
   }
 
-  &__should {
-    margin-top: 40px;
+  &__item:hover &__text {
+    transform: scale(1.4);
+    color: $c-whoAmI;
+    text-decoration: underline;
   }
 
-  @media screen and(max-width: 1280px) {
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  &__should {
+    padding-top: 40px;
     
-    &__item {
-      text-align: center;
-      padding-left: 0;
-    }
   }
 }

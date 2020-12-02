@@ -1,19 +1,45 @@
 .information {
   display: flex;
   justify-content: space-between;
-  padding-right: 170px;
+  background-color: $c-page;
+
+  @include onTablet {
+    flex-wrap: wrap;
+  }
 
   &__picture {
     object-fit: cover;
     height: 380px;
-    width: 570px;
+
+    @include onTablet {
+      flex: 1 1 100%;
+    }
+
+    @include onMobile {
+      width: 320px;
+      flex: 1 1 100%;
+    }
   }
 
   &__item {
     padding-top: 98px;
+
+    @include onTablet {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding-top: 50px;
+      flex: 1 1 33.33%;
+    }
+    @include onMobile {
+      text-align: center;
+      align-items: center;
+      flex: 1 1 100%;
+    }
   }
 
   &__title {
+    width: 200px;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -23,31 +49,20 @@
   }
 
   &__text {
+    width: 200px;
+    text-align: start;
     margin-top: 45px;
     font-size: 14px;
     line-height: 23px;
     letter-spacing: -0.01em;
     color: $c-textOpacity;
+
+    @include onMobile {
+      text-align: center;
+    }
   }
 
   &__link {
     color: $c-logo;
-  }
-
-  @media screen and(max-width: 1280px) {
-    flex-wrap: wrap;
-    padding-right: 0;
-    justify-items: center;
-    &__item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 50px;
-      flex: 1 1 33.3%;
-    }
-
-    &__picture {
-      flex: 1 1 100%;
-    }
   }
 }

@@ -3,6 +3,10 @@
   display: flex;
   justify-content: space-between;
 
+  @include onTablet {
+    flex-wrap: wrap;
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
@@ -11,6 +15,20 @@
     flex: 1 1 auto;
     background-color: $c-logo;
     color: $c-textLight;
+    @include shadowBox;
+
+    @include onTablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 604px;
+      padding: 0;
+      text-align: center;
+    }
+
+    @include onMobile {
+      padding: 30px;
+    }
   }
 
   &__title {
@@ -23,6 +41,18 @@
     margin-top: 75px;
     font-size: 20px;
     line-height: 35px;
+
+    @include onTablet {
+      align-self: center;
+      text-align: start;
+    }
+
+    @include onMobile {
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
   }
 
   &__text--bold {
@@ -38,27 +68,13 @@
     background-repeat: no-repeat;
     height: 604px;
     flex: 0 0 525px;
-  }
 
-  @media screen and(max-width: 1280px) {
-    flex-wrap: wrap;
-    
-    &__info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 604px;
-      padding: 0;
-      text-align: center;
-    }
-
-    &__text {
-      align-self: center;
-      text-align: start;
-    }
-
-    &__picture {
+    @include onTablet {
       flex: 1 1 100%;
+    }
+
+    @include onMobile {
+      background-position: left;
     }
   }
 }
