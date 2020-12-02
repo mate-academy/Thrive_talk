@@ -1,0 +1,26 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: percentage($number: 16px / 14px);
+    padding: 12px 5px;
+    border-bottom: 2px solid transparent;
+    transition: all $transition-duration;
+
+    &:hover {
+      font-weight: 500;
+      border-bottom-color: #22356f;
+    }
+  }
+}

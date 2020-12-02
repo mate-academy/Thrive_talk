@@ -1,0 +1,35 @@
+.header {
+  padding: 27px 131px 0 179px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-weight: 500;
+    color: $emphasis-color;
+    font-size: 24px;
+    line-height: percentage($number: 27px / 24px);
+  }
+
+  &__contact {
+    font-size: 14px;
+    line-height: percentage($number: 16px / 14px);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $light-color;
+    background-color: $emphasis-color;
+    padding: 20px 30px;
+    border-radius: 50px;
+    transition: all $transition-duration;
+
+    &:hover {
+      // Neon light
+      box-shadow: 0 0 10px $emphasis-color,
+        0 0 25px $emphasis-color,
+        0 0 40px $emphasis-color
+    }
+  }
+}
