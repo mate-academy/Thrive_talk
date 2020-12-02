@@ -132,14 +132,14 @@
   }
 }
 
-@media (max-width: 570px) {
-  .headpage__card {
-    width: 100vw;
-    height: 100vh;
-  }
+@media (max-width: 770px) {
 
   .headpage__image {
-    display: none;
+    opacity: 0.4;
+  }
+
+  .headpage__name {
+    font-weight: bold;
   }
 }
 
@@ -152,10 +152,13 @@
     &__card {
       display: flex;
       flex-direction: column;
-      align-items: center;
+
+      width: 100vw;
+      height: 100vh;
       padding: 0 10px;
       left: 0;
       transform: translateX(0%);
+      align-items: center;
     }
 
     &__description {
@@ -171,6 +174,10 @@
     &__title {
       text-align: center;
       font-size: 40px;
+    }
+
+    &__image {
+      display: none;
     }
 
     &__button {

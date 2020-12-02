@@ -27,11 +27,11 @@
     border: 1px solid $colorWhite;
     border-radius: 5px;
 
-    transition: .5s;
+    transition: 0.5s;
 
     &:hover {
-    transform: translateY(-10px)
-  }
+      transform: translateY(-10px);
+    }
 
     &::after {
       content: " ^";
