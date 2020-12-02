@@ -1,7 +1,7 @@
 .courses {
   padding-bottom: 120px;
   background-color: #fff;
-  
+
   &__header {
     margin: 0 auto;
     line-height: 19px;
@@ -42,6 +42,7 @@
       margin: 0 auto;
     }
   }
+  
   &__list::marker {
     color: #e9b730;
   }

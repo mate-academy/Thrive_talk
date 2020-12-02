@@ -59,23 +59,8 @@
     border-radius: 50px;
     transition: background-color 0.5s, border-color 0.5s;
   }
-  .contact__link {
-    display: inline-block;
-    padding: 0 30px;
-    line-height: 50px;
-    font-size: $fontSize-main;
-    text-transform: uppercase;
-    transition: color 0.5s;
-  }
-
-  &__contact:hover {
-    background-color: #fff;
-    border-color: $color-main;
-
-    .contact__link {
-      color: $color-main;
-    }
-  }
+  
+  @import "contact";
 
   &__item--active::after {
     content: "";

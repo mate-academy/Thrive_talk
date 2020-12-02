@@ -1,0 +1,38 @@
+@import "variables";
+
+.target {
+  padding: 55px 22% 37px;
+  padding-right: 0;
+
+  @media (max-width: $media-screen) {
+    padding-left: 25px;
+  }
+
+  @media (max-width: $small-screen) {
+    padding: $margin-small 0;
+  }
+
+  &__header {
+    font-size: 28px;
+    line-height: 33px;
+    color: $color-secondary;
+  }
+  @media (max-width: $small-screen) {
+    margin: 0 auto ;
+    max-width: $width-small;
+    text-align: center;
+  }
+
+  &__paragraph {
+    margin-top: 28px;
+    line-height: 25px;
+    color: $color-thirty;
+    max-width: 298px;
+
+    @media (max-width: $small-screen) {
+      margin: $margin-small auto 0;
+      max-width: $width-small;
+      text-align: left;
+    }
+  }
+}
