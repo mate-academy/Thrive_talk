@@ -1,0 +1,16 @@
+.hero {
+  width: 100%;
+
+  &__wrapper {
+    max-width: 1117px;
+    width: 100%;
+    position: relative;
+
+    background-color: $c-header-background;
+  }
+
+  &__header {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
