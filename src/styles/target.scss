@@ -1,6 +1,7 @@
 .target {
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  
  
   &__item {
     padding: 55px 10% 37px 25%;
@@ -20,9 +21,12 @@
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    align-items: center;
     text-align: center;
+  
+    
+    &__item {
+      padding: 40px 0;
+    }
     
     &__paragraph {
       padding: 0 10%;
@@ -31,11 +35,20 @@
 
   @media (max-width: 600px) {
     grid-template-columns: repeat(1,1fr);
-    justify-content: center;
-    align-items: center;
-    
+     
     &__item {
       padding: 10px;
+    }
+  }
+
+  @media (max-width: 300px) {
+
+    &__paragraph {
+      font-size: 12px;
+    }
+
+    &__header {
+      font-size: 16px;
     }
   }
 }

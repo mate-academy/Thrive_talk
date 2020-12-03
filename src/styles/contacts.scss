@@ -1,13 +1,9 @@
-$dark-blue: #22356f; //contacts
-$fontSizeStandart: 16px;
-$light-blue: #62d0df;
-$standratMargin: 10%;
-
 .contacts {
   display: flex;
   justify-content: space-between;
   background-color: $dark-blue;
   color: #fff;
+
   
   &__article {
     padding-left: 10%;
@@ -22,6 +18,8 @@ $standratMargin: 10%;
   }
   
   &__header {
+    display: block;
+    
     margin-top: 230px;
     margin-bottom: 75px;
     font-size: 64px;
@@ -58,7 +56,6 @@ $standratMargin: 10%;
   }
 
   @media (max-width: 960px) {
-     
     padding-bottom: 20px;
 
     &__photo {
@@ -66,7 +63,38 @@ $standratMargin: 10%;
     }
     
     &__header {
-      margin-top: 80px;
+      margin-top: 60px;
+    }
+
+    &__article {
+      padding-top: 40px;
+    }
+  }
+
+  @media (max-width: 600px) {
+  
+    &__header {
+      font-size: 54px;
+      margin-bottom: 0;
+      line-height: 60px;
+    }
+    
+    &__article {
+      display: block;
+      padding-left: 5%;
+      padding-bottom: 0;
+    }
+  }
+
+  @media (max-width: 300px) {
+
+    &__header {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 10px;
+      line-height: 20px;
     }
   }
 }

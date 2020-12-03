@@ -1,12 +1,15 @@
 .therapy {
   display: flex;
-  height: 604px;
   padding-left: $standratMargin;
   padding-bottom: 40px;
   color: #fff;
   background-color: $light-blue;
- 
+  max-height: 604px;
 
+  &__text {
+    flex-grow: 1;
+  }
+ 
   &__bold {
     font-size: 24px;
     line-height: 35px;
@@ -27,10 +30,14 @@
 
   @media (max-width: 980px) {
 
-    height: 500px;
+    max-height: max-content;
 
     &__photo {
       display: none;
+    }
+    
+    &__header {
+      margin-top: 60px;
     }
   }
 }

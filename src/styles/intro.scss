@@ -1,10 +1,15 @@
 .intro {
-  z-index: 0;
-  padding-left: $standratMargin;
-  padding-top: 187px;
-  color: $dark-blue;
   display: flex;
   justify-content: space-between;
+  padding-left: $standratMargin;
+  z-index: 0;
+  padding-top: 187px;
+  color: $dark-blue;
+  padding-bottom: 30px;
+
+  @media (max-width: 600px) {
+    padding-top: 100px;
+  }
 
   background-color: #f4f9e2;
 
@@ -17,7 +22,7 @@
     width: 50%;
 
     @media (max-width: 1125px) {
-      width: 100%;
+      width: 88%;
       opacity: 0.7;
     }
   }
@@ -26,7 +31,7 @@
 
     position: relative;
 
-    height: 840px;
+    max-height: 940px;
 
     background: url("/images/header.jpg");
     background-size: cover;
@@ -58,7 +63,6 @@
 
   &__text {
     z-index: 2;
-
     width: 469px;
 
     @media (max-width: 600px) {
@@ -83,6 +87,10 @@
       font-size: 36px;
     }
 
+    @media (max-width: 300px) {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
   }
 
   &__description {
@@ -92,12 +100,20 @@
 
     font-size: 24px;
     line-height: 42px;
+
+    @media (max-width: 600px) {
+      padding-right: 5%;
+    }
+
+    @media (max-width: 300px) {
+      font-size: 18px;
+    }
   }
 
   &__link {
     display: inline-block;
-    margin-bottom: 75px;
     margin-right: 10px;
+    margin-bottom: 10px;
     
     width: 150px;
     height: 50px;
@@ -105,23 +121,20 @@
     text-align: center;
     line-height: 50px;
 
-    &--colored {
+    &-colored {
       background-color: $orange;
       color: #fff ;
 
       &:hover {
-        background-color: $dark-blue;
+        background-color: #f4f9e2;
         color: $orange;
       }
     }
 
-    &--transparent {
+    @media (max-width: 300px) {
       
-      color: $orange;
-
-      &:hover {
-        color: $dark-blue;
-      }
+      width: 50px;
+      height: 100px;
     }
   }
 }

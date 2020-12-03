@@ -123,4 +123,10 @@
       animation: fon-animation 1s;
     }
   }
+
+  @media (max-width: 300px) {
+    &__item {
+      font-size: 12px;
+    }
+  }
 }

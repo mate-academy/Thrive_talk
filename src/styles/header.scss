@@ -165,4 +165,13 @@
       background-color: $dark-blue;
     }
   }
+
+  @media (max-width:300px) {
+    &__logo {
+      display: none;
+    }
+
+    
+    
+  }
 }

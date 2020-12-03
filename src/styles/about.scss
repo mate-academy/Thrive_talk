@@ -28,4 +28,18 @@
       left: 47%;
     }
   }
+  
+  @media (max-width: 960px) {
+  
+    &__text {
+      margin: 100px 5% 40px;
+    }
+  }
+
+  @media (max-width: 300px) {
+  
+    &__text {
+      font-size: 10px;
+    }
+  }
 }
