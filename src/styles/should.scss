@@ -89,7 +89,8 @@
 
   &__link {
     display: inline-block;
-    width: 100%;
+    width: 160px;
+    padding: 0 10px;
     font-size: 16px;
     font-weight: bold;
     line-height: 23px;
@@ -98,10 +99,15 @@
     color: $c-whoAmI;
     background-color: $c-page;
     transition: background-color 0.5s, transform 0.3s;
+
+    @include onMobile {
+      width: 100%;
+    }
+    
     &:hover {
       background-color: $activeBlue;
       transform: scale(1.2);
-      box-shadow: 2px 2px 2px $activeShadow;
+      box-shadow: 2px 2px 10px $activeShadow;
     }
   }
 }
