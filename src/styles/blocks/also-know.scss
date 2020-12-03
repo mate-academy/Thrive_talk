@@ -1,6 +1,4 @@
 .also-know {
-  /* display: grid;
-  grid-template-columns: 480px 1fr; */
   display: flex;
   background-color: $step-color-light;
   grid-template-rows: 800px;
@@ -8,10 +6,16 @@
   @media screen and (max-width: 1000px) {
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 20px;
   }
 
   &__image {
     height: 800px;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      height: 500px;
+    }
   }
 
   &__text {
@@ -21,6 +25,10 @@
     justify-content: center;
     padding-left: 106px;
     padding-right: 175px;
+
+    @media screen and (max-width: 600px) {
+      padding: 10px;
+    }
   }
 
   &__header {
@@ -29,6 +37,10 @@
     font-size: 16px;
     line-height: 13px;
     color: $step-color-dark;
+
+    @media screen and (max-width: 600px) {
+      padding: 10px;
+    }
   }
 
   &__paragraph {
@@ -37,10 +49,28 @@
     letter-spacing: -0.01em;
 
     color: $step-color-dark;
+
+    @media screen and (max-width: 600px) {
+      font-size: 26px;
+      line-height: 1.5;
+    }
+
+    &--color {
+      color: $main-color;
+    }
   }
 
   &__link {
     padding-top: 100px;
     color: $btn-color;
+
+    @media screen and (max-width: 600px) {
+      padding: 20px;
+    }
+
+    &:hover {
+      color: $main-color;
+      text-decoration: underline;
+    }
   }
 }

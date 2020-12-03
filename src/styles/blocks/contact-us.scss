@@ -16,13 +16,11 @@
     flex-direction: column;
     justify-content: center;
 
-    max-height: 800px;
-    max-width: 600px;
-
     padding-left: 180px;
 
     @media screen and (max-width: 1100px) {
       padding-left: 80px;
+      padding-bottom: 20px;
     }
   }
 
@@ -36,12 +34,25 @@
     font-size: 64px;
     line-height: 94px;
     color: $step-color-light;
+
+    @media screen and (max-width: 600px) {
+      font-size: 36px;
+      line-height: 1.5;
+      padding: 0;
+    }
   }
 
   &__paragraph {
+    padding-right: 201px;
     font-size: 36px;
     line-height: 53px;
     color: $step-color-light;
+
+    @media screen and (max-width: 600px) {
+      font-size: 24px;
+      line-height: 1.5;
+      padding: 0;
+    }
   }
 
   &__link {
@@ -49,6 +60,11 @@
     font-size: 16px;
     line-height: 23px;
     color: $main-color;
+
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
   }
 
   &__image {

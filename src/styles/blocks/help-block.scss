@@ -11,6 +11,10 @@
     padding-top: 76px;
     font-size: 16px;
     color: rgba(34, 53, 111, 0.5);
+
+    @media screen and (max-width: 600px) {
+      padding-top: 176px;
+    }
   }
 
   &__small-blocks {
@@ -19,7 +23,7 @@
     justify-content: center;
 
     @media screen and (max-width: 1439px) {
-      gap: 40px;
+      gap: 10px;
       grid-template-columns: repeat(2, 360px);
       justify-content: space-evenly;
     }
@@ -38,16 +42,24 @@
 
     @media screen and (max-width: 959px) {
       height: 200px;
+      width: 250px;
+      font-size: 28px;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 250px;
     }
 
     &:hover {
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       transform: scale(1.1);
+      z-index: 2;
     }
 
-    &::before {
+    /* ::before {
       content: url(../images/Rectangle2.1copy.svg);
-    }
+    }& */
 
     &--pink {
       background-color: #ffe2de;
@@ -88,6 +100,7 @@
     padding-top: 30px;
 
     color: $step-color-light;
+    border-top: 2px solid white;
 
     &::before {
       content: url(../images/Ellipse.svg) " ";
@@ -116,49 +129,78 @@
     transition: 1s;
 
     @media screen and (max-width: 959px) {
-      height: 200px;
+      height: 300px;
       width: 300px;
+      padding-left: 40px;
     }
 
     &:hover {
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       transform: scale(0.9);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: black;
     }
 
-    &::before {
+    /* &::before {
       content: url(../images/Rectangle2.1.svg);
-    }
+    } */
 
     &--darkblue {
       background-color: $step-color-dark;
+
+      &:hover {
+        background-image: url(/images/physical.jpg);
+      }
     }
 
     &--blue {
       background-color: #0052c1;
+
+      &:hover {
+        background-image: url(/images/mental.jpg);
+      }
     }
 
     &--image {
-      background-image: url(/images/joanna-kosinska-340748.jpg);
+      background-color: #618ac4;
+
+      &:hover {
+        background-image: url(/images/joanna-kosinska-340748.jpg);
+      }
     }
 
     &--lightblue {
       background-color: $main-color;
+
+      &:hover {
+        background-image: url(/images/gymnastic.jpg);
+      }
     }
 
     &--light {
       background-color: #dee1ff;
+
+      &:hover {
+        background-image: url(/images/crossfit.jpg);
+      }
     }
 
     &--purple {
       background-color: #8f00ff;
 
+      &:hover {
+        background-image: url(/images/aerobic.jpg);
+      }
     }
   }
 
   &__bottom-blocks {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 480px);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+
   }
 
   &__bottom {
@@ -171,6 +213,12 @@
     background-color: $step-color-light;
     transition: all 1s;
 
+    @media screen and (max-width: 600px) {
+      width: 310px;
+      height: 200px;
+      padding: 25px;
+    }
+
     &:hover {
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       transform: scale(0.9);
@@ -181,6 +229,10 @@
     font-size: 28px;
     line-height: 33px;
     color: $step-color-dark;
+
+    @media screen and (max-width: 600px) {
+      font-size: 22px;
+    }
   }
 
   &__paragraph {
@@ -188,5 +240,10 @@
     font-size: 16px;
     line-height: 25px;
     letter-spacing: -0.03em;
+
+    @media screen and (max-width: 600px) {
+      font-size: 14px;
+      line-height: 1.5;
+    }
   }
 }

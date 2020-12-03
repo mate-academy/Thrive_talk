@@ -1,8 +1,4 @@
 .why-thrive {
-  /* display: grid;
-  grid-template-columns: 1fr 525px;
-  grid-template-rows: 604px;
-  gap: 181px; */
   display: flex;
 
   background-color: #62d0df;
@@ -14,29 +10,44 @@
   }
 
   &__image {
-    object-fit: cover;
-    height: 604px;
+    object-fit: contain;
     width: 100%;
   }
-}
 
-.text-why {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 100px;
-}
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 180px;
+    padding-right: 181px;
 
-.text-why__header {
-  font-size: 36px;
-  line-height: 27px;
-  letter-spacing: -0.01em;
-  color: $step-color-light;
-}
+    @media screen and (max-width: 1090px) {
+      padding: 30px;
+    }
+  }
 
-.text-why__paragraph {
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: -0.01em;
-  color: $step-color-light;
+  &__header {
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+    color: $step-color-light;
+
+    @media screen and (max-width: 600px) {
+      font-size: 30px;
+      line-height: 1.5;
+    }
+  }
+
+  &__paragraph {
+
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    color: $step-color-light;
+
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
 }

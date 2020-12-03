@@ -8,27 +8,27 @@
   </head>
   <body class="page">
     <header class="page__header header">
-      <a class="header__name">Thrivetalk</a>
-      <nav class="header__nav nav">
-        <lu class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link nav__link--active">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about-us" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#blog" class="nav__link">Blog</a>
-          </li>
-        </lu>
-      </nav>
-      <a href="tel+555 283 784 333" class="header__contact">Contact us</a>
-    </header>
-    <main class="main">
-      <section class="main__thrivetalk thrivetalk">
+      <div class="header__wrapper">
+        <a class="header__name">Thrivetalk</a>
+        <nav class="header__nav nav">
+          <lu class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about-us" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">Blog</a>
+            </li>
+          </lu>
+        </nav>
+        <a href="#contact" class="header__contact">Contact us</a>
+      </div>
+      <section class="header__thrivetalk thrivetalk">
         <img
           class="thrivetalk__background"
           src="./images/1.svg"
@@ -40,20 +40,22 @@
           <a href="#" class="thrivetalk__button thrivetalk__button--yellow">Who am I</a>
           <a href="#" class="thrivetalk__button">What do I do</a>
         </div>
-        <div class="thrivetalk__img">
-        </div>
+        <div class="thrivetalk__img"></div>
         <img
           class="thrivetalk__background--2"
           src="./images/2.svg"
           alt="">
       </section>
+    </header>
+    <main class="main">
+
       <article class="main__why-thrive why-thrive">
-        <section class="why-thrive__text text-why">
-          <h2 class="text-why__header">Why Thrive?</h2>
-          <p class="text-why__paragraph">Want to improve your well-being from the comfort of your own couch? Are you having trouble finding the right therapist?  Here at ThriveTalk, our licensed therapists provide the same quality care you would get in office from anywhere you can access your laptop or mobile phone. Become your best self with ThriveTalk.  Start therapy now with a licensed therapist!</p>
+        <section class="why-thrive__text">
+          <h2 class="why-thrive__header">Why Thrive?</h2>
+          <p class="why-thrive__paragraph"><strong>Want to improve your well-being from the comfort of your own couch? Are you having trouble finding the right therapist?</strong> Here at ThriveTalk, our licensed therapists provide the same quality care you would get in office from anywhere you can access your laptop or mobile phone. Become your best self with ThriveTalk.  Start therapy now with a licensed therapist!</p>
         </section>
         <img
-          class="why_thrive__image"
+          class="why-thrive__image"
           src="./images/christopher-campbell-40367.png"
           alt="">
       </article>
@@ -131,23 +133,23 @@
           alt="">
         <div class="also-know__text">
           <h2 class="also-know__header">You should also know</h2>
-          <p class="also-know__paragraph">MDD affects more than 16.1 million American adults, or about 6.7%of the U.S. population age 18 and older in a given year. We at ThriveTalk can help you.</p>
-          <a class="also-know__link" href="#">Get help now</a>
+          <p class="also-know__paragraph">MDD affects more than 16.1 million American adults, or about 6.7%of the U.S. population age 18 and older in a given year. We at <span class="also-know__paragraph--color">ThriveTalk</span> can help you.</p>
+          <a class="also-know__link" href="#contact">Get help now</a>
         </div>
       </section>
-      <section class="main__contact-us contact-us">
+      <section class="main__contact-us contact-us" id="blog">
         <div class="contact-us__text">
           <h2 class="contact-us__header">Contact us</h2>
           <h3 class="contact-us__subtittle">Ready. Set. Smile</h3>
           <p class="contact-us__paragraph">Take the free online assessment to see if you are a candidate and get started on your journey.</p>
-          <a class="contact-us__link" href="#">Get help now</a>
+          <a class="contact-us__link" href="#contact">Get help now</a>
         </div>
         <img
           class="contact-us__image"
           src="./images/charles-etoroma-390119.png"
           alt="smiling man in a t-shirt">
       </section>
-      <section class="main__info info" id="blog">
+      <section class="main__info info" id="contact">
         <img
           class="info__image"
           src="./images/autumn-goodman-242825.png"
@@ -161,7 +163,8 @@
             <h3 class="info__header">Enfold health</h3>
             <p class="info__paragraph">
               Main Street 1, Olcott Buffalo, United States <br> <br>
-              +555 283 784 333<br>
+              <br>
+              <a class="info__mail" href="tel:+555 283 784 333">+555 283 784 333</a><br>
               <a class="info__mail" href="mailto:office@enfold-health.com">office@enfold-health.com</a>
             </p>
           </div>
@@ -177,7 +180,7 @@
       </section>
     </main>
     <footer class="page__footer footer">
-      <p class="footer__copyright">Copyright - ThriveTalk 2017</p>
+      <p class="footer__copyright">&copy; Copyright - ThriveTalk 2017</p>
     </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>

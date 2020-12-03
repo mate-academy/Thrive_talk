@@ -1,8 +1,11 @@
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  justify-content: space-around;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: space-around;
+  }
 
   &__name {
     color: $main-color;
@@ -24,6 +27,10 @@
     border-radius: 50px;
 
     transition: 0.7s;
+
+    @media screen and (max-width: 600px) {
+      width: 100px;
+    }
 
     &:hover {
       background-color: $btn-color;

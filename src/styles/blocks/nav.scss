@@ -20,15 +20,9 @@
     padding-bottom: 10px;
 
     &:hover {
-      background-color: $main-color;
       border-radius: 20%;
-      color: white;
+      color: $main-color;
       transform: scale(1.5);
-    }
-
-    &--active {
-      border-bottom: 1px solid black;
-      padding-bottom: 10px;
     }
   }
 }

@@ -3,6 +3,7 @@
 
   @media screen and (max-width: 1000px) {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__image {
@@ -19,12 +20,14 @@
 
   &__blocks {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 68px;
+    padding-bottom: 20px;
+
     background-color: $step-color-light;
     font-size: 14px;
     line-height: 23px;
     letter-spacing: -0.01em;
-    flex-wrap: wrap;
 
     @media screen and (max-width: 1000px) {
       flex-direction: column;
@@ -47,5 +50,6 @@
 
   &__column {
     padding-right: 40px;
+    padding-bottom: 20px;
   }
 }
