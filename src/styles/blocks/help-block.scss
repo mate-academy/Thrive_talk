@@ -57,10 +57,6 @@
       z-index: 2;
     }
 
-    /* ::before {
-      content: url(../images/Rectangle2.1copy.svg);
-    }& */
-
     &--pink {
       background-color: #ffe2de;
 
@@ -143,9 +139,6 @@
       color: black;
     }
 
-    /* &::before {
-      content: url(../images/Rectangle2.1.svg);
-    } */
 
     &--darkblue {
       background-color: $step-color-dark;
