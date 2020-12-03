@@ -1,4 +1,7 @@
 .nav {
+  position: relative;
+  z-index: 3;
+  
   &__list {
     display: flex;
     justify-content: space-between;

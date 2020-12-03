@@ -1,10 +1,31 @@
 .showcase {
-  padding-top: 170px;
-  padding-bottom: 75px;
-  padding-left: 179px;
+  padding: 170px 0 75px 179px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: percentage($number: 1117px / 1440px);
+    background-color: #f4f9e2;
+  }
+
+  &__image {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__container {
+    position: relative;
+  }
 
   &__content {
     max-width: 485px;
+    position: relative;
   }
 
   &__subtitle {
@@ -20,13 +41,13 @@
     line-height: percentage($number: 53px / 48px);
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   &__description {
     font-size: 24px;
     line-height: percentage($number: 42px / 24px);
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   &__links {

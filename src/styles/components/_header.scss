@@ -1,7 +1,19 @@
 .header {
   padding: 27px 131px 0 179px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: percentage($number: 1117px / 1440px);
+    background-color: #f4f9e2;
+  }
 
   &__container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +36,8 @@
     padding: 20px 30px;
     border-radius: 50px;
     transition: all $transition-duration;
+    position: relative;
+    z-index: 3;
 
     &:hover {
       // Neon light
@@ -31,5 +45,12 @@
         0 0 25px $emphasis-color,
         0 0 40px $emphasis-color
     }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .header {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

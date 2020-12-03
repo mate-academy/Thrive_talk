@@ -1,0 +1,45 @@
+.facts {
+  padding-right: 175px;
+
+  .container {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 690px;
+    padding-top: 103px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 225px;
+  }
+
+  &__paragraph {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: percentage($number: 53px / 36px);
+
+    span {
+      color: $emphasis-color;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .facts {
+    .container {
+      margin-left: auto;
+      padding-left: 15px;
+    }
+  }
+}
