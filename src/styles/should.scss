@@ -1,0 +1,113 @@
+.should {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: $c-page;
+
+  @include onTablet {
+    justify-content: end;
+  }
+  @include onMobile {
+    justify-content: center;
+  }
+
+  &__picture {
+    background-image: url("../images/youShouldAlso.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 480px;
+    &:hover {
+      box-shadow: inset 1px 1px 3px $activeShadow;
+    }
+
+    
+
+    @include onTablet {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    @include onMobile {
+      width: 100%;
+
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 103px 30px 42px;
+    
+
+    @include onTablet {
+      z-index: 1;
+      height: 800px;
+    }
+
+    @include onMobile {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $c-textDark;
+    background-color: $c-page;
+    @include shadowBox;
+  }
+
+  &__text {
+    padding-left: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    color: $c-textDark;
+    transition: background-color 0.5s;
+    background-color: $c-whiteOpacity;
+    
+    &:hover {
+      background-color: $c-page;
+    }
+
+    @include onMobile {
+      padding: 20px;
+      font-size: 29px;
+      line-height: 1.5;
+      border-radius: 20px;
+    }
+  }
+
+  &__text--selected {
+    color: $c-logo;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 160px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $c-whoAmI;
+    background-color: $c-page;
+    transition: background-color 0.5s, transform 0.3s;
+
+    @include onMobile {
+      width: 100%;
+    }
+    
+    &:hover {
+      background-color: $activeBlue;
+      transform: scale(1.2);
+      box-shadow: 2px 2px 10px $activeShadow;
+    }
+  }
+}

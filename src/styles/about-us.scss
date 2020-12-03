@@ -1,0 +1,58 @@
+.about-us {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  background-color: $c-page;
+
+  @include onTablet {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  
+  @include onMobile {
+    padding: 50px 30px;
+  }
+
+  &__title {
+    position: absolute;
+    left: 106px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $c-textDark;
+
+    @include onTablet {
+      position: static;
+    }
+
+    @include onMobile {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+    color: $c-textDark;
+    padding: 10px;
+
+    @include onTablet {
+      margin-top: 50px;
+    }
+
+    @include onMobile {
+      font-size: 20px;
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
+  }
+}

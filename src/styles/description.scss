@@ -1,0 +1,51 @@
+.description {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  background-color: $c-page;
+
+  @include onTablet {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+
+  @include onMobile {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+
+  &__item {
+    height: 240px;
+    padding-top: 55px;
+    padding-left: 105px;
+
+    @include onTablet {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+    color: $c-textDark;
+  }
+
+  &__text {
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: $c-textOpacity;
+  }
+
+  &__item:hover &__text {
+    transform: scale(1.2);
+    color: $c-whoAmI;
+    text-decoration: underline;
+  }
+
+  &__should {
+    padding-top: 40px;
+    
+  }
+}

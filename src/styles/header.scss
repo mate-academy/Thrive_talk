@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+  z-index: 0;
+  background-color: $c-header;
+  overflow: hidden;
+  
+  &__menu {
+    margin-bottom: 164px;
+
+    @include onMobile {
+      margin-bottom: 30px;
+    }
+  }
+}

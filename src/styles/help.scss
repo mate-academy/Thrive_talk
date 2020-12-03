@@ -1,0 +1,96 @@
+.help {
+  padding-top: 76px;
+  background-color: $c-page;
+
+  &__title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: $c-textOpacity;
+    text-transform: uppercase;
+
+    @include onMobile {
+      font-size: 20px;
+    }
+  }
+
+  &__info {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(255px, 1fr));
+
+    @include onTablet {
+      grid-template-columns: repeat(2, minmax(255px, 1fr));
+    }
+    @include onMobile {
+      grid-template-columns: repeat(1, minmax(255px, 1fr));
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 360px;
+    padding: 0 52px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(0.8) rotate(5deg);
+      box-shadow: inset 1px 1px 10px $activeShadow;
+    }
+  }
+  &__shadow {
+    align-self: center;
+    width: 100%;
+    height: 72px;
+    box-shadow: inset 0 -1px 0 $c-textLight;
+    transition-duration: 0.3s;
+    transition-delay: 0.8s;
+  }
+
+  &__card:hover .help__shadow {
+    // background-color: white;
+    // box-shadow: 1px 1px 5px $activeShadow;
+    transform: translateY(-30px);
+    background-color: #e9b83063;
+  }
+
+  &__text {
+    margin-left: 26px;
+    margin-top: 23px;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+    color: $c-textLight;
+  }
+
+  &__text::before {
+    content: "";
+    position: absolute;
+    left: 54px;
+    top: 107px;
+    height: 9px;
+    width: 9px;
+    background: $c-marker;
+    border-radius: 50%;
+  }
+
+  &__info > :nth-child(1) {
+    background-color: #ffe2de;
+  }
+
+  &__info > :nth-child(2) {
+    background-color: #c4e769;
+  }
+
+  &__info > :nth-child(3) {
+    background-color: $c-logo;
+  }
+
+  &__info > :nth-child(4) {
+    background-color: #0052c1;
+  }
+}
