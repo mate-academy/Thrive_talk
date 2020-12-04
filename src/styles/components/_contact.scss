@@ -5,7 +5,7 @@
 
     .container {
       margin-right: 0;
-      padding-right: 0;
+      padding: 0;
     }
   }
 
@@ -16,7 +16,8 @@
 
   &__top-info {
     padding-top: 103px;
-    max-width: 580px;
+    padding-left: 180px;
+    max-width: 720px;
   }
 
   &__top-subtitle {
@@ -52,7 +53,7 @@
   &__bottom {
     .container {
       margin-left: 0;
-      padding-left: 0;
+      padding: 0;
     }
   }
 
@@ -97,20 +98,154 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .contact {
     &__top {
       .container {
         margin-right: auto;
-        padding-right: 15px;
+        padding: 0 15px;
       }
     }
 
     &__bottom {
       .container {
         margin-left: auto;
-        padding-left: 15px;
+        padding: 0 15px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contact {
+    &__top-info {
+      padding-left: 20px;
+    }
+
+    &__top-title {
+      font-size: 40px;
+    }
+
+    &__top-paragraph {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .contact {
+    &__bottom-info {
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+
+    &__bottom-item {
+      padding-right: 20px;
+    }
+
+    &__bottom-item-title {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .contact {
+    &__top-subtitle,
+    &__top-title,
+    &__top-paragraph {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact {
+    &__top-info {
+      padding-top: 50px;
+      padding-right: 20px;
+    }
+
+    &__top-subtitle {
+      font-size: 14px;
+    }
+
+    &__top-title {
+      font-size: 32px;
+    }
+
+    &__top-paragraph {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    &__bottom-container {
+      flex-direction: column-reverse;
+    }
+
+    &__bottom-info {
+      justify-content: center;
+      margin-bottom: 30px;
+      flex-direction: column;
+      padding: 20px 15px 0;
+    }
+
+    &__bottom-item {
+      flex-basis: 0;
+      padding-right: 0;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+
+    &__bottom-item-title {
+      margin-bottom: 5px;
+    }
+
+    &__bottom-item-paragraph {
+      &--address {
+        margin-bottom: 5px;
+      }
+
+      &--email {
+        margin-top: 0;
+      }
+    }
+
+    &__bottom-image img {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    &__top-container {
+      flex-direction: column;
+    }
+
+    &__top-info {
+      padding: 50px 15px 0;
+      margin-bottom: 30px;
+    }
+
+    &__top-subtitle,
+    &__top-title,
+    &__top-link {
+      text-align: center;
+    }
+
+    &__top-paragraph {
+      text-align: justify;
+    }
+
+    &__top-image img {
+      margin: 0 auto;
     }
   }
 }

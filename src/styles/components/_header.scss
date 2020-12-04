@@ -24,6 +24,11 @@
     color: $emphasis-color;
     font-size: 24px;
     line-height: percentage($number: 27px / 24px);
+    transition: all $transition-duration;
+
+    &:hover {
+      transform: $transform-scale;
+    }
   }
 
   &__contact {
@@ -52,5 +57,38 @@
   .header {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    padding-right: 0;
+    padding-left: 0;
+
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 50px;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__logo,
+    &__nav {
+      margin-bottom: 20px;
+    }
   }
 }
