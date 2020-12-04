@@ -1,0 +1,58 @@
+.get-help {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  max-width: 1600px;
+  height: 100%;
+  background-color: #fff;
+
+  &__img {
+    width: 480px;
+    height: 800px;
+    background-color: chartreuse;
+    background-image: url("/images/get-help/get-help.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.info-box {
+  grid-column: 3 / span 4;
+
+  &__title {
+    margin-top: 103px;
+    margin-bottom: 220px;
+    font-family: Larsseit, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: #22356f;
+  }
+
+  &__description {
+    font-family: Larsseit, sans-serif;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    color: #22356f;
+    font-weight: 700;
+  }
+
+  &__help-link {
+    display: block;
+    margin-top: 150px;
+    font-family: Larsseit, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fab63e;
+    font-weight: 700;
+  }
+
+  &__desc-link {
+    text-decoration: none;
+    color: #62d0df;
+  }
+}

@@ -1,0 +1,48 @@
+.services {
+  max-width: 1600px;
+  background-color: #fff;
+  height: 100%;
+
+  &__container {
+    display: flex;
+    // grid-template-columns: repeat(13, 1fr);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    height: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+    margin: 0 auto;
+    padding-top: 77px;
+  }
+
+  &__item {
+    grid-column: 1 / span 3;
+    box-sizing: border-box;
+    max-width: 355px;
+    flex-basis: 33.33%;
+    height: 100%;
+    padding: 0 20px;
+    margin-bottom: 92px;
+
+    &-title {
+      font-family: Larsseit, sans-serif;
+      font-size: 28px;
+      line-height: 33px;
+      letter-spacing: -0.03em;
+      font-weight: 700;
+      color: #22356f;
+      margin-bottom: 28px;
+    }
+
+    &-description {
+      max-width: 300px;
+      font-family: Larsseit, sans-serif;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: -0.03em;
+      color: rgba(34, 53, 111, 0.5);
+    }
+  }
+}
