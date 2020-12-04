@@ -7,12 +7,18 @@
     position: absolute;
     top: 29px;
     right: -168px;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
 
     border-radius: 50px;
     background-color: $c-text-decor;
+
+    font-size: $fs-text-sub-heading;
+    font-weight: bold;
+    line-height: 16px;
     color: #fff;
+    text-transform: uppercase;
   }
 }

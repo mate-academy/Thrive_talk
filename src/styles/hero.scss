@@ -13,4 +13,8 @@
     max-width: 650px;
     margin: 0 auto;
   }
+
+  &__intro {
+    @extend .hero__header;
+  }
 }
