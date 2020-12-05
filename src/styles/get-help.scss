@@ -18,7 +18,7 @@
   grid-column: 3 / span 4;
 
   &__title {
-    margin-top: 103px;
+    margin-top: 98px;
     margin-bottom: 220px;
     font-family: Larsseit, sans-serif;
     text-transform: uppercase;
@@ -42,16 +42,48 @@
     margin-top: 150px;
     font-family: Larsseit, sans-serif;
     font-size: 16px;
+    width: 140px;
     line-height: 23px;
     letter-spacing: 0.1em;
     text-decoration: none;
     text-transform: uppercase;
     color: #fab63e;
     font-weight: 700;
+    transition: 0.5s;
+    margin-bottom: 42px;
+
+    &:hover {
+      color: #62d0df;
+      text-decoration: underline;
+    }
   }
 
   &__desc-link {
     text-decoration: none;
     color: #62d0df;
+    transition: all 0.5s;
+  }
+
+  &__desc-link:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1599px) {
+  .info-box {
+    &__description {
+      font-size: 32px;
+      margin-top: -20px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .info-box {
+    grid-column: 3 / span 5;
+
+    &__description {
+      font-size: 26px;
+    }
   }
 }

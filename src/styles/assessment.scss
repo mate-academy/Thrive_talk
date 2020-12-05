@@ -6,19 +6,25 @@
   height: 100%;
   background: #22356f;
 
+  &__img-container {
+    grid-column: 9 / span 4;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+  }
+
   &__img {
     width: 480px;
     height: 800px;
     background-image: url("/images/assessment/smile-man.svg");
     background-repeat: no-repeat;
     background-position: center;
-    justify-self: flex-end;
   }
 }
 
 .info {
-  grid-column: 3 / span 9;
-  max-width: 600px;
+  grid-column: 3 / span 5;
+  padding: 0 20px;
 
   &__name {
     display: block;
@@ -51,6 +57,8 @@
 
   &__help {
     display: block;
+    width: 140px;
+    text-decoration: none;
     margin-top: 75px;
     font-family: Larsseit, sans-serif;
     font-size: 16px;
@@ -58,5 +66,16 @@
     letter-spacing: 0.1em;
     color: #62d0df;
     text-transform: uppercase;
+
+    &:hover {
+      color: #62d0df;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .info {
+    grid-column: 2 / span 7;
   }
 }

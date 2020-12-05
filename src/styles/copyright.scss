@@ -15,5 +15,35 @@
     line-height: 11px;
     letter-spacing: -0.01em;
     color: #fff;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+      font-size: 18px;
+      animation: blur 0.75s ease-out forwards;
+    }
+  }
+
+  @keyframes blur {
+    from {
+      text-shadow: 0 0 10px #fff,
+        0 0 10px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 25px #fff,
+        0 0 50px #fff,
+        0 0 50px #fff,
+        0 0 50px #7b96b8,
+        0 0 150px #7b96b8,
+        0 10px 100px #7b96b8,
+        0 10px 100px #7b96b8,
+        0 10px 100px #7b96b8,
+        0 10px 100px #7b96b8,
+        0 -10px 100px #7b96b8,
+        0 -10px 100px #7b96b8;
+    }
   }
 }

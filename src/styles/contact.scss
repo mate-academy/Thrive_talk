@@ -44,6 +44,15 @@
       line-height: 23px;
       letter-spacing: -0.01em;
       color: rgba(34, 53, 111, 0.5);
+
+      &--adress {
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+          color: #62d0df;
+        }
+      }
     }
 
     &-tel {
@@ -55,6 +64,10 @@
       letter-spacing: -0.01em;
       text-decoration: none;
       color: rgba(34, 53, 111, 0.5);
+
+      &:hover {
+        color: #62d0df;
+      }
     }
 
     &-email {
@@ -65,6 +78,21 @@
       text-decoration: none;
       font-weight: 500;
       color: #60a3ff;
+
+      &:hover {
+        color: #62d0df;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    &__info-box {
+      grid-column: 3 / span 9;
+    }
+
+    &__item {
+      max-width: 120px;
     }
   }
 }

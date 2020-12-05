@@ -11,26 +11,26 @@
       <header class="header">
         <div class="header__container">
           <section class="header__menu menu">
-            <a href="#title" class="menu__logo">Thrivetalk</a>
+            <a href="/" class="menu__logo">Thrivetalk</a>
             <nav class="menu__nav nav">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a class="nav__link nav__link--is-active is-active" href="/">Home</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#about">About</a>
+                  <a class="nav__link nav__link--is-active is-active" href="#about">About</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#services">Services</a>
+                  <a class="nav__link nav__link--is-active is-active" href="#services">Services</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#blog">Blog</a>
+                  <a class="nav__link nav__link--is-active is-active" href="#blog">Blog</a>
                 </li>
               </ul>
             </nav>
-            <button class="menu__contact">Contact us</button>
+            <a href="#contact" class="menu__contact">Contact us</a>
           </section>
-          <section class="header__title-box title-box" id="title">
+          <section class="header__title-box title-box">
             <p class="title-box__name">Thrivetalk</p>
             <h1 class="title-box__title">
               Helping you thrive in all areas of live
@@ -41,8 +41,8 @@
               depression, social anxiety, or even just caring for
               yourself more.
             </p>
-            <button class="title-box__button title-box__button--active">Who am i</button>
-            <button class="title-box__button">What do i do</button>
+            <a href="#about" class="title-box__button title-box__button--active">Who am i</a>
+            <a href="#whatDo" class="title-box__button">What do i do</a>
           </section>
         </div>
         <div class="header__square"></div>
@@ -52,7 +52,7 @@
         </div>
       </header>
       <main>
-        <section class="why-thrive">
+        <section class="why-thrive" id="whatDo">
           <div class="why-thrive__container">
             <article class="why-thrive__title-box">
               <h1 class="why-thrive__title">Why Thrive?</h1>
@@ -69,7 +69,7 @@
           </div>
           <div class="why-thrive__img"></div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <p class="about__name">About us</p>
           <p class="about__description">
             We want to help you thrive! Whether you are just
@@ -183,7 +183,7 @@
             </div>
           </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
           <div class="services__container">
             <article class="services__item">
               <h1 class="services__item-title">Nutritional Plans</h1>
@@ -240,12 +240,12 @@
               <a href="/" class="info-box__desc-link">ThriveTalk</a>
               can help you.
             </p>
-            <a href="" class="info-box__help-link">
+            <a href="#contact" class="info-box__help-link">
               Get help now
             </a>
           </div>
         </section>
-        <section class="assessment">
+        <section class="assessment" id="blog">
           <article class="assessment__info-box info">
             <a class="info__name">Contact us</a>
             <h1 class="info__title">Ready.Set.Smile</h1>
@@ -253,11 +253,13 @@
               Take the free online assessment to see if you are a
               candidate and get started on your journey.
             </p>
-            <a class="info__help">Get help now</a>
+            <a href="#contact" class="info__help">Get help now</a>
           </article>
-          <div class="assessment__img"></div>
+          <div class="assessment__img-container">
+            <div class="assessment__img"></div>
+          </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
           <div class="contact__img"></div>
           <article class="contact__info-box">
             <div class="contact__item">
@@ -269,12 +271,15 @@
             </div>
             <div class="contact__item">
               <h1 class="contact__item-title">Enfold Health</h1>
-              <p class="contact__item-description">
+              <a
+                href="https://maps.google.com/?q=Main Street 1, Olcott Buffalo, United States"
+                class="contact__item-description contact__item-description--adress "
+              >
                 Main Street 1, Olcott
                 Buffalo, United States
-              </p>
-              <a href="/" class="contact__item-tel">+555 283 784 333</a>
-              <a href="/" class="contact__item-email">
+              </a>
+              <a href="tel: +555 283 784 333" class="contact__item-tel">+555 283 784 333</a>
+              <a href="https://kriesi.at/themes/enfold-health-coach/" class="contact__item-email">
                 office@enfold-health.com
               </a>
             </div>
@@ -293,7 +298,7 @@
       </main>
       <footer class="copyright">
         <p class="copyright__text">
-          © Copyright - ThriveTalk  2017
+          © Copyright - ThriveTalk  2020
         </p>
       </footer>
     </div>

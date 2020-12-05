@@ -23,7 +23,10 @@
     height: 360px;
     background: #ffe2de;
     flex-grow: 1;
+    border: 1px solid transparent;
     justify-content: center;
+    cursor: pointer;
+    transition: 1s;
 
     &--green {
       background-color: #c4e769;
@@ -36,10 +39,15 @@
     &--blue {
       background-color: #0052c1;
     }
+
+    &:hover {
+      transform: scale(1.1);
+      border: 1px solid #fff;
+    }
   }
 
   &__content {
-    max-width: 270px;
+    max-width: 75%;
     margin: auto;
   }
 
