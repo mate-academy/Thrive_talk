@@ -1,14 +1,19 @@
 .other-help__block {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
+  max-width: 1600px;
+  height: 100%;
 }
 
 .block {
+  display: flex;
+  height: 100%;
+
   &__big-item {
-    width: 480px;
+    width: 320px;
     height: 480px;
     background: #ffe2de;
+    flex-grow: 1;
     flex-basis: 33.33%;
     justify-content: center;
     border: 2px solid transparent;
@@ -62,7 +67,7 @@
       background-image: url("/images/help/strawberries.svg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 540px;
+      background-size: 550px;
     }
 
     &:hover {
@@ -91,5 +96,22 @@
     max-width: 230px;
     color: #e9b730;
     margin-left: -10px;
+  }
+
+  @media (max-width: 750px) {
+    & {
+      &__big-item {
+        flex-basis: 50%;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    & {
+      &__big-item {
+        height: 320px;
+        flex-basis: 100%;
+      }
+    }
   }
 }

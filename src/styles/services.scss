@@ -16,7 +16,6 @@
   }
 
   &__item {
-    grid-column: 1 / span 3;
     box-sizing: border-box;
     max-width: 355px;
     flex-basis: 33.33%;
@@ -41,6 +40,22 @@
       line-height: 25px;
       letter-spacing: -0.03em;
       color: rgba(34, 53, 111, 0.5);
+    }
+  }
+
+  @media (max-width: 740px) {
+    &__container {
+      justify-content: center;
+    }
+
+    &__item {
+      flex-basis: 50%;
+    }
+  }
+
+  @media (max-width: 540px) {
+    &__item {
+      flex-basis: 100%;
     }
   }
 }

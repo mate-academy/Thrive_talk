@@ -95,4 +95,39 @@
       max-width: 120px;
     }
   }
+
+  @media (max-width: 1023px) {
+    &__img {
+      grid-column: 1 / span 12;
+      background-size: 100%;
+      width: 100%;
+    }
+
+    &__info-box {
+      grid-column: 3 / span 8;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 570px) {
+    &__img {
+      grid-column: 1 / span 12;
+      background-size: 120%;
+      height: 250px;
+      width: 100%;
+    }
+
+    &__info-box {
+      grid-column: 1 / span 11;
+      margin: 30px 20px;
+    }
+
+    &__item {
+      margin: 0 auto;
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }

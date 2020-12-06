@@ -1,5 +1,5 @@
 .help-you {
-  height: 525px;
+  height: 100%;
   background-color: #fff;
 
   &__title {
@@ -38,6 +38,7 @@
 
     &--blue {
       background-color: #0052c1;
+      margin-bottom: 120px;
     }
 
     &:hover {
@@ -74,6 +75,16 @@
 
     &-text {
       color: #fff;
+    }
+  }
+
+  @media (max-width: 750px) {
+    & {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 250px;
     }
   }
 }

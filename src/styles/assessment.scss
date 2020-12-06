@@ -1,19 +1,21 @@
 .assessment {
   display: grid;
-  justify-content: space-between;
+  // justify-content: space-between;
   grid-template-columns: repeat(12, 1fr);
-  max-width: 1600px;
+  max-width: 100%;
   height: 100%;
   background: #22356f;
 
   &__img-container {
-    grid-column: 9 / span 4;
+    grid-column: 9 / span 5;
     display: flex;
     justify-content: flex-end;
     box-sizing: border-box;
   }
 
   &__img {
+    display: block;
+    justify-self: flex-end;
     width: 480px;
     height: 800px;
     background-image: url("/images/assessment/smile-man.svg");
@@ -77,5 +79,47 @@
 @media (max-width: 1270px) {
   .info {
     grid-column: 2 / span 7;
+  }
+}
+
+@media (max-width: 1023px) {
+  .assessment {
+    height: 110%;
+
+    &__img-container {
+      grid-column: 1 / span 12;
+      justify-content: center;
+    }
+
+    &__img {
+      background-size: 100%;
+      width: 100%;
+      height: 510px;
+    }
+
+    .info {
+      display: grid;
+      grid-column: 4 / span 6;
+      justify-self: center;
+      padding: 0;
+
+      &__name {
+        margin: 100px auto -50px;
+      }
+
+      &__title {
+        margin: 150px auto -30px;
+        font-size: 46px;
+      }
+
+      &__description {
+        font-size: 26px;
+        line-height: 36px;
+      }
+
+      &__help {
+        margin: 70px auto 30px;
+      }
+    }
   }
 }

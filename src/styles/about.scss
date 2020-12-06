@@ -27,4 +27,22 @@
     margin-bottom: 75px;
     font-weight: 400;
   }
+
+  @media (max-width: 1023px) {
+    &__name {
+      grid-column: 5 / span 4;
+      justify-self: center;
+    }
+
+    &__description {
+      grid-column: 4 / span 7;
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    &__description {
+      font-size: 18px;
+    }
+  }
 }
