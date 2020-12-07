@@ -70,7 +70,7 @@
 
   &__bottom-item {
     flex-basis: 220px;
-    padding-right: 60px;
+    padding-right: 59px;
   }
 
   &__bottom-item-title {
@@ -159,6 +159,12 @@
   }
 }
 
+@media screen and (max-width: 980px) {
+  .contact__bottom-item-paragraph--email {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .contact {
     &__top-info {
@@ -214,6 +220,7 @@
 
       &--email {
         margin-top: 0;
+        font-size: 14px;
       }
     }
 

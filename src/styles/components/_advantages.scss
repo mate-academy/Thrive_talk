@@ -2,6 +2,8 @@
   padding-left: 178px;
   background-color: $emphasis-color;
   color: $light-color;
+  position: relative;
+  z-index: 5;
 
   .container {
     padding-left: 0;

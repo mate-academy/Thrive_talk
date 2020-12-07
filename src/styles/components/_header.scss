@@ -31,6 +31,62 @@
     }
   }
 
+  &__mobile {
+    position: absolute;
+    top: 53px;
+    width: 100%;
+    background-color: #f4f9e2;
+    text-align: center;
+    z-index: 10;
+  }
+
+  &__mobile-list {
+    display: none;
+  }
+
+  &__mobile-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: percentage($number: 16px / 14px);
+    padding: 12px 5px;
+    border-bottom: 2px solid transparent;
+    transition: all $transition-duration;
+
+    &:hover {
+      font-weight: 500;
+      border-bottom-color: #22356f;
+    }
+  }
+
+  &__mobile-button {
+    position: absolute;
+    top: -46px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    color: #000;
+    font-size: 25px;
+    z-index: 6;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "icomoon", sans-serif;
+      content: "\e9bd";
+    }
+
+    &--opened {
+      font-size: 20px;
+
+      &::before {
+        content: "\ea0f";
+      }
+    }
+  }
+
   &__contact {
     font-size: 14px;
     line-height: percentage($number: 16px / 14px);
@@ -42,7 +98,7 @@
     border-radius: 50px;
     transition: all $transition-duration;
     position: relative;
-    z-index: 3;
+    z-index: 6;
 
     &:hover {
       // Neon light
@@ -89,6 +145,26 @@
     &__logo,
     &__nav {
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .header {
+    &__nav {
+      display: flex;
+    }
+
+    &__mobile {
+      display: none !important;
     }
   }
 }

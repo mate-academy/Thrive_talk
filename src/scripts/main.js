@@ -17,15 +17,15 @@ $(document).ready(function() {
     }
   });
 
-  // prevent .nav__item from widening on link hover
-  const array = $('.nav__link');
-
-  for (let i = 0; i < array.length; i++) {
-    array.eq(i).parent().css('width', array.eq(i).width() + 12);
-  }
-
   // Animations on scroll
   const wow = new WOW();
 
   wow.init();
+
+  // Mobile navigation
+  $('.header__mobile-button').on('click', function() {
+    $('.header__mobile-list').slideToggle();
+
+    $('.header__mobile-button').toggleClass('header__mobile-button--opened');
+  });
 });
