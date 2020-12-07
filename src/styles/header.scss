@@ -162,10 +162,6 @@ html {
     text-align: center;
     padding: 10px 0;
 
-    &:hover {
-      color: #62d0df;
-    }
-
     &--is-active {
       &::after {
         content: "";
@@ -177,11 +173,11 @@ html {
         content: "";
         position: absolute;
         transform: scaleX(5);
-        height: 3px;
+        height: 5px;
         text-align: center;
-        background: #62d0df;
         bottom: 0;
         left: 40%;
+        box-shadow: 0 1px 0 #22356f;
       }
     }
   }
@@ -201,7 +197,6 @@ html {
       padding: 20px 28px 20px 0;
       border-radius: 10%;
       margin: auto;
-      color: #62d0df;
       width: 100%;
       opacity: 0;
       z-index: 10;
@@ -214,12 +209,6 @@ html {
     &__item {
       padding: 10px;
       max-width: 100%;
-    }
-
-    &__link {
-      &:hover {
-        color: #62d0df;
-      }
     }
 
     &__toggler:checked ~ &__list {
