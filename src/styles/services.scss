@@ -44,7 +44,11 @@
   @media (max-width: 960px) {
   
     grid-template-columns: repeat(2, 1fr);
-  
+    
+    &__item {
+      height: 300px;
+    }
+
     &__marker {
       left: 20%;
     }
@@ -91,6 +95,7 @@
 
   &__item-nutrition {
     background-image: url(\images\joanna-kosinska-340748.png);
+    @include backgroundImgposition;
   }
 
   &__item-gym {
@@ -101,7 +106,7 @@
       background-image: url(\images\gymn.jpg);
       animation: fon-animation 1s;
     }
-        
+
   }
 
   &__item-crossfit {

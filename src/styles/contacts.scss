@@ -15,6 +15,11 @@
     font-size: $fontSizeStandart;
     line-height: 12px;
     color: #fff;
+    transition: color 0.5s;
+  }
+
+  &__link:hover {
+    color: $light-blue;
   }
   
   &__header {
@@ -36,6 +41,11 @@
     font-size: $fontSizeStandart;
     line-height: 23px;
     color: $light-blue;
+    transition: color 0.5s;
+  }
+
+  &__link-help:hover {
+    color: #fff;
   }
   
   &__photo {

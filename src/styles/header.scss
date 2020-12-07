@@ -13,6 +13,11 @@
   &__logo-link {
     position: relative;
     z-index: 2;
+    transition: transform 1s;
+  }
+
+  &__logo-link:hover {
+    transform: scale(1.07);
   }
 
   &__toggler {
@@ -170,8 +175,5 @@
     &__logo {
       display: none;
     }
-
-    
-    
   }
 }

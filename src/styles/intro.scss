@@ -69,6 +69,11 @@
       width: 100%;
     }
 
+    @media (max-width: 1000px) {
+      width: 100%;
+      margin-top: 500px;
+    }
+
   }
 
   
@@ -91,6 +96,14 @@
       font-size: 24px;
       margin-bottom: 30px;
     }
+  }
+
+  &__logo {
+    transition: transform 1s;
+  }
+
+  &__logo:hover {
+    transform: scale(1.15);
   }
 
   &__description {
