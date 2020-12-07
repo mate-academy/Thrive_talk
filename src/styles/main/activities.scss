@@ -1,0 +1,96 @@
+.activities {
+  background-color: $white;
+
+  &__blocks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(340px, 1fr));
+
+    @media (max-width: 1443px) {
+      grid-template-columns: repeat(2, minmax(340px, 1fr));
+      padding: 0 20px;
+    }
+
+    @media (max-width: $tablet-width) {
+      grid-template-columns: repeat(1, minmax(300px, 450px));
+      justify-content: center;
+    }
+
+    @media (max-width: $phone-width) {
+      grid-template-columns: repeat(1, minmax(300px, 350px));
+      padding: 0;
+    }
+  }
+
+  &__block {
+    position: relative;
+    overflow: hidden;
+    // width: 480px;
+    height: 480px;
+    perspective: 50em;
+    transition: all 0.4s ease-in-out;
+
+    &--darkblue {
+      background-color: $darkblue;
+      @include activity-image(url(../images/physical.jpg));
+    }
+
+    &--blue {
+      background-color: $blue;
+      @include activity-image(url(../images/mental.jpg));
+    }
+
+    &--photo {
+      background-image: url("../images/nutrition.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include activity-color;
+    }
+
+    &--lightblue {
+      background-color: $lightblue;
+      @include activity-image(url(../images/gymnastics.jpg));
+    }
+
+    &--lilac {
+      background-color: $lilac;
+      @include activity-image(url(../images/crossfit.jfif));
+    }
+
+    &--violet {
+      background-color: $violet;
+      @include activity-image(url(../images/aerobics.jpg));
+    }
+  }
+
+  &__block-title {
+    display: flex;
+    width: 340px;
+    margin: 96px auto 0;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.1em;
+    color: $white;
+    border-top: 1px solid $white;
+
+    &::before {
+      display: inline-block;
+      content: " ";
+      width: 9px;
+      height: 9px;
+      margin-right: 15px;
+      background-color: $sunny;
+      border-radius: 50%;
+      transform: translateY(150%);
+    }
+
+    @media (max-width: $phone-width) {
+      padding-left: 30px;
+    }
+  }
+
+  &__block-long-title {
+    display: flex;
+    flex-direction: column;
+  }
+}

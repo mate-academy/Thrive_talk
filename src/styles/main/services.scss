@@ -1,0 +1,124 @@
+.services {
+  padding-bottom: 120px;
+  background-color: $white;
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(34, 53, 111, 0.5);
+  }
+
+  &__blocks {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+
+    @media (max-width: 1443px) {
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+      justify-content: center;
+      padding: 0 20px 60px;
+    }
+
+    @media (max-width: $tablet-width) {
+      grid-template-columns: repeat(1, minmax(300px, 360px));
+      justify-content: center;
+    }
+  }
+
+  &__block {
+    // width: 360px;
+    height: 360px;
+
+    &--pink {
+      background-color: $pink;
+
+      background-position: -80px 0;
+      transition: background-position 1s ease-in-out,
+        background-image 1s ease-in-out,
+        background-color 0.5s;
+
+      &:hover {
+        background-color: rgba(255, 226, 222, 0.7);
+        background-position: 0 0;
+        background-image: url(../images/weight.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--lightgreen {
+      background-color: $lightgreen;
+
+      background-position: -250px 0;
+      transition: background-position 1s ease-in-out,
+        background-image 1s ease-in-out,
+        background-color 1s;
+
+      &:hover {
+        background-color: rgba(196, 231, 105, 0.6);
+        background-position: -130px 0;
+        background-image: url(../images/running.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--ligthblue {
+      background-color: $lightblue;
+
+      background-position: -80px 0;
+      transition: background-position 1s ease-in-out,
+        background-image 1s ease-in-out,
+        background-color 1s;
+
+      &:hover {
+        background-color: rgba(98, 208, 223, 0.5);
+        background-position: 0 0;
+        background-image: url(../images/pumping-iron1a.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--blue {
+      background-color: $blue;
+
+      background-position: -80px 0;
+      transition: background-position 1s ease-in-out,
+        background-image 1s ease-in-out,
+        background-color 1s;
+
+      &:hover {
+        background-color: rgba(0, 82, 193, 0.5);
+        background-position: 0 0;
+        background-image: url(../images/pumping-iron2a.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__block-title {
+    width: 255px;
+    margin: 72px auto 0;
+    padding-top: 23px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.1em;
+    color: $white;
+    border-top: 1px solid $white;
+
+    &::before {
+      display: inline-block;
+      content: " ";
+      width: 9px;
+      height: 9px;
+      margin-right: 15px;
+      background-color: $sunny;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

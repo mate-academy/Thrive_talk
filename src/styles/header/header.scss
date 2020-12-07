@@ -1,0 +1,63 @@
+@import "./nav.scss";
+
+.header {
+  position: relative;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 179px 0;
+    align-items: baseline;
+    height: 77px;
+
+    @media (max-width: $laptop-width) {
+      padding: 27px 50px;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding: 0 30px;
+    }
+
+    @media (max-width: $phone-width) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-left: -10px;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 1.12em;
+    font-weight: bold;
+    color: $lightblue;
+  }
+
+  &__contact-us {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $lightblue;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all 0.3s;
+
+    &:focus {
+      background-color: $white;
+      border-color: $lightblue;
+      color: $lightblue;
+    }
+
+    @media (max-width: $phone-width) {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  }
+}

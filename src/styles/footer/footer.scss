@@ -1,0 +1,17 @@
+.footer {
+  background-color: $lightblue;
+
+  @media (max-width: $laptop-width) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__copyright {
+    padding: 34px 0 34px 179px;
+    color: $white;
+
+    @media (max-width: $laptop-width) {
+      padding: 34px 0;
+    }
+  }
+}

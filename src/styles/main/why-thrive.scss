@@ -1,0 +1,79 @@
+.why-thrive {
+  display: flex;
+  justify-content: space-between;
+  background-color: $lightblue;
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $laptop-width) {
+    align-items: center;
+  }
+
+  &__content {
+    width: 555px + 178px;
+    padding: 151px 0 80px 178px;
+    color: $white;
+
+    @media (max-width: $laptop-width) {
+      width: 555px;
+      padding: 151px 0 80px;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 400px;
+    }
+
+    @media (max-width: $phone-width) {
+      width: 300px;
+      padding-top: 70px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 27px;
+
+    @media (max-width: $phone-width) {
+      width: 300px;
+      font-size: 26px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    margin-top: 75px;
+    font-size: 24px;
+    line-height: 1.45em;
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    &--normal {
+      font-weight: normal;
+    }
+
+    @media (max-width: $phone-width) {
+      width: 300px;
+      margin-top: 40px;
+      font-size: 16px;
+      line-height: 1.7em;
+    }
+  }
+
+  &__image {
+    width: 525px;
+    height: 604px;
+    background-image: url("../images/why-trive.png");
+    background-repeat: no-repeat;
+
+    @media (max-width: 1300px) {
+      width: 100%;
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
