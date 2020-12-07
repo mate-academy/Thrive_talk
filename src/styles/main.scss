@@ -1,7 +1,19 @@
 @import "utils";
 @import "fonts";
-@import "typography";
+
+@import "components";
+
+html {
+  overflow-x: hidden;
+}
 
 body {
-  background: $c-gray;
+  font-family: "Larsseit", sans-serif;
+  color: #22356f;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
