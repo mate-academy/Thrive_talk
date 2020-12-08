@@ -1,7 +1,28 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "reset.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/thrivetalk-block.scss";
+@import "blocks/why-thrive.scss";
+@import "blocks/about.scss";
+@import "blocks/footer.scss";
+@import "blocks/help-block.scss";
+@import "blocks/also-know.scss";
+@import "blocks/contact-us.scss";
+@import "blocks/info.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: $c-gray;
+  font-family: "Larsseit", sans-serif;
 }

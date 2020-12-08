@@ -1,0 +1,41 @@
+.header {
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: space-around;
+  }
+
+  &__name {
+    color: $main-color;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: bold;
+  }
+
+  &__contact {
+    position: relative;
+    top: -15px;
+    display: block;
+    width: 150px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+    color: $step-color-light;
+
+    background-color: $main-color;
+    border-radius: 50px;
+
+    transition: 0.7s;
+
+    @media screen and (max-width: 600px) {
+      width: 100px;
+    }
+
+    &:hover {
+      background-color: $btn-color;
+    }
+  }
+}

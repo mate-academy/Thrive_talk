@@ -1,0 +1,17 @@
+.footer {
+  height: 80px;
+  background-color: $main-color;
+  display: flex;
+  align-items: center;
+
+  &__copyright {
+    padding-left: 179px;
+    color: $step-color-light;
+    font-size: 14px;
+    line-height: 11px;
+
+    @media screen and (max-width: 600px) {
+      padding-left: 25px;
+    }
+  }
+}
