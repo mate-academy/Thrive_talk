@@ -13,7 +13,7 @@
   &__logo-link {
     position: relative;
     z-index: 2;
-    transition: transform 1s;
+    transition: transform 0.3s;
   }
 
   &__logo-link:hover {
@@ -59,8 +59,6 @@
   &__list {
     position: relative;
     z-index: 2;
-
-    padding: 0 40px;
     display: flex;
     justify-content: space-between;
 
@@ -69,6 +67,11 @@
 
     @media (max-width: 900px) {
       flex-direction: column;
+      background-color: #c7fbf3;
+      left: 3%;
+      right: 3%;
+
+      position: absolute;
     }
   }
 
@@ -79,9 +82,11 @@
   }
 
   &__list-item {
-    padding: 0 10px 10px;
+    padding-bottom: 10px;
     font-size: 14px;
     line-height: 16px;
+  
+    
     
     &:last-of-type {
       padding-right: 0;
@@ -108,10 +113,14 @@
       padding: 10px 0;
 
       text-align: center;
+      
+      &:hover {
+        background-color: #77aba3;
+      }
     }
 
     &:hover {
-      font-weight: 700;
+      color: $light-blue;
     }
 
     &:active::after {

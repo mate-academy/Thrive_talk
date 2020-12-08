@@ -94,8 +94,13 @@
   }
 
   &__item-nutrition {
-    background-image: url(\images\joanna-kosinska-340748.png);
-    @include backgroundImgposition;
+    background: #58ab00;
+    
+    &:hover {
+      background-image: url(\images\joanna-kosinska-340748.png);
+      @include backgroundImgposition;
+      animation: fon-animation 1s;
+    }
   }
 
   &__item-gym {

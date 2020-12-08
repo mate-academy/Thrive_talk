@@ -36,6 +36,18 @@
     color: rgba(34, 53, 111, 0.5);
   }
 
+  &__link {
+    font-size: $footerFontSize;
+    line-height: 23px;
+    color: rgba(34, 53, 111, 0.5);
+    transition: color 0.3s;
+  }
+
+  &__link:hover {
+    
+    color: $light-blue;
+  }
+
   &__credits {
     height: 80px;
     padding-left: 179px;

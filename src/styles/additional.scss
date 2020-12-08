@@ -24,7 +24,7 @@
 
   &__link {
     color: $light-blue;
-    transition: background-color 1s, color 1s;
+    transition: background-color 0.3s, color 0.3s;
   }
 
   &__link:hover {
@@ -43,7 +43,7 @@
     font-weight: bold;
     width: 140px;
     height: 40px;
-    transition: background-color 1s, color 1s;
+    transition: background-color 0.3s, color 0.3s;
   }
 
   &__link-help:hover {
