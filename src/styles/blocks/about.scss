@@ -23,6 +23,10 @@
     font-size: 16px;
     letter-spacing: 0.06em;
     color: $step-color-dark;
+
+    @media screen and (max-width: 600px) {
+      padding-left: 50px;
+    }
   }
 
   &__info {
@@ -31,5 +35,10 @@
     font-size: 24px;
     color: $step-color-dark;
     width: 592px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
   }
 }
