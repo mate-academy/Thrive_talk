@@ -1,0 +1,45 @@
+.about {
+  display: flex;
+  position: relative;
+  color: $dark-blue;
+
+  &__text {
+    margin: 151px 15% 70px 20%;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: bold;
+  }
+
+  &__header {
+    position: absolute;
+    top: 156px;
+    left: $standratMargin;
+    
+    font-size: $fontSizeStandart;
+    line-height: 23px;
+    font-weight: 300;
+  }
+
+  @media (max-width: 960px) {
+
+    &__header {
+      position: absolute;
+      top: 15px;
+      left: 47%;
+    }
+  }
+  
+  @media (max-width: 960px) {
+  
+    &__text {
+      margin: 100px 5% 40px;
+    }
+  }
+
+  @media (max-width: 300px) {
+  
+    &__text {
+      font-size: 10px;
+    }
+  }
+}

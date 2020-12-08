@@ -1,0 +1,22 @@
+$standratMargin: 10%;
+$dark-blue: #22356f;
+$fontSizeStandart: 16px;
+$orange: #fab63e;
+$light-blue: #62d0df;
+$footerFontSize: 14px;
+
+@mixin backgroundImgposition {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes fon-animation {
+  from {
+    background-position: center left;
+    opacity: 0.7;
+  }
+  to {
+    background-position: center center;
+    opacity: 1;
+  }
+}
