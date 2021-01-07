@@ -12,7 +12,7 @@
     width: fit-content;
     padding: 23px 5px 0;
 
-    text-align: center;
+    text-align: left;
     font-size: $fs-text-block;
     line-height: 34px;
     color: #fff;
@@ -23,7 +23,7 @@
     &:before {
       position: absolute;
       top: 29px;
-      left: -5px;
+      left: -14px;
       content: "";
       width: 9px;
       height: 9px;

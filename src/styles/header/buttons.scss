@@ -12,23 +12,13 @@
     align-items: center;
     padding: 10px 30px;
 
-    color: #fff;
+    background-color: $c-header-background;
+    color: #f9b640;
     text-transform: uppercase;
-    background-color: #f9b640;
 
     &:hover {
-      background-color: $c-header-background;
-      color: #f9b640;
-    }
-
-    &--revers {
-      background-color: $c-header-background;
-      color: #f9b640;
-
-      &:hover {
-        background-color: #f9b640;
-        color: #fff;
-      }
+      color: #fff;
+      background-color: #f9b640;
     }
   }
 }

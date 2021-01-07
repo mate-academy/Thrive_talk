@@ -19,6 +19,7 @@
   &__list {
     display: flex;
     align-items: center;
+    z-index: 3;
 
     @media (max-width: 990px) {
       display: none;
