@@ -14,7 +14,7 @@
     background-color: $c-text-decor;
 
     @media (max-width: 990px) {
-      padding: 0;
+      padding: 10px 0;
       text-align: center;
     }
 
@@ -28,6 +28,10 @@
 
     font-size: $fs-text-heading;
     color: #fff;
+
+    @media (max-width: 990px) {
+      margin-bottom: 20px;
+    }
   }
 
   .advantage__text {
