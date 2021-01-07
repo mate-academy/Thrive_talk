@@ -26,15 +26,6 @@
       height: 0;
       transition: height 1s;
     }
-
-    &--open {
-      display: flex;
-      position: absolute;
-      top: 21%;
-      left: 50%;
-      transform: translate(-50%);
-      height: 30px;
-    }
   }
 
   &__item {
@@ -61,6 +52,7 @@
 
     @media (max-width: 990px) {
       display: inline-block;
+      visibility: hidden;
       position: absolute;
       top: 6%;
       left: calc(50% - 10px);
@@ -69,6 +61,7 @@
         content: "";
         position: absolute;
         z-index: 4;
+        visibility: visible;
         width: 20px;
         height: 2px;
         background-color: $c-text-main;
@@ -76,7 +69,14 @@
       }
 
       &::after {
-        @extend .nav__toggler::before;
+        content: "";
+        position: absolute;
+        z-index: 4;
+        visibility: visible;
+        width: 20px;
+        height: 2px;
+        background-color: $c-text-main;
+        transition: all 0.3s;
         top: 5px;
       }
     }
@@ -85,7 +85,7 @@
       top: 180px;
     }
 
-    &--active {
+    &:checked {
       &::before {
         transform: rotate(45deg);
       }
@@ -94,6 +94,22 @@
         transform: rotate(-45deg);
         top: 0;
       }
+
+      & ~ .nav__list {
+        display: flex;
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%);
+        height: 30px;
+
+        @media (max-width: 492px) {
+          top: 23%;
+        }
+      }
     }
+  }
+  .togler-label {
+    display: none;
   }
 }
