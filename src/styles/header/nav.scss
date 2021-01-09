@@ -105,6 +105,12 @@
 
         @media (max-width: 492px) {
           top: 23%;
+
+          font-weight: bold;
+        }
+
+        @media (max-width: 344px) {
+          top: 20%;
         }
       }
     }

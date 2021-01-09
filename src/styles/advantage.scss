@@ -1,13 +1,4 @@
 .advantage {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 70% 30%;
-
-  @media (max-width: 822px) {
-    display: flex;
-    flex-direction: column;
-  }
-
   .advantage__desc {
     padding: 151px 181px 95px 178px;
 
