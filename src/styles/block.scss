@@ -20,6 +20,10 @@
 
     border-top: 1px solid #fff;
 
+    @media (max-width: 380px) {
+      font-size: 25px;
+    }
+
     &:before {
       position: absolute;
       top: 29px;
