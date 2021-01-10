@@ -9,6 +9,10 @@
     background-color: $c-text-main;
     color: #fff;
 
+    @media (max-width: 922px) {
+      padding: 80px 35px 48px 100px;
+    }
+
     @media (max-width: 822px) {
       padding: 10px;
     }
