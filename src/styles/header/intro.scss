@@ -1,6 +1,4 @@
 .intro {
-  position: relative;
-
   padding-top: 174px;
   padding-bottom: 75px;
 
@@ -51,8 +49,8 @@
   &__decor-block {
     position: absolute;
     z-index: 1;
-    top: -51px;
-    right: -702px;
+    top: 0;
+    right: -136px;
     width: 807.71px;
     height: 544.93px;
     background-size: cover;
@@ -67,11 +65,16 @@
 
   &__decor-img {
     position: absolute;
-    top: -63px;
-    right: -569px;
+    top: 0;
+    right: 0;
     z-index: 1;
     display: inline-block;
     width: auto;
+
+    @media (max-width: 1327px) {
+      top: 0;
+      right: 0;
+    }
 
     @media (max-width: 990px) {
       display: none;

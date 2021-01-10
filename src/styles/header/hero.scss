@@ -7,7 +7,6 @@
   }
 
   &__wrapper {
-    max-width: 1117px;
     width: 100%;
     position: relative;
     padding-left: 179px;
@@ -18,17 +17,5 @@
       margin: 0 auto;
       padding: 0 10px;
     }
-  }
-
-  &__header {
-    max-width: 650px;
-
-    @media (max-width: 990px) {
-      max-width: 100%;
-    }
-  }
-
-  &__intro {
-    @extend .hero__header;
   }
 }
