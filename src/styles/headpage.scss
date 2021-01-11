@@ -59,6 +59,10 @@
         border: 1px solid $colorOrange;
         opacity: 0.8;
       }
+
+      &:active {
+        transform: scale(0.9);
+      }
     }
 
     &_additional {
@@ -77,6 +81,10 @@
         transform: scale(1.1);
         color: $colorBlue;
         border: 1px solid $colorOrange;
+      }
+
+      &:active {
+        transform: scale(0.9);
       }
     }
   }

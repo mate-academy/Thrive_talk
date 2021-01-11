@@ -54,6 +54,10 @@
     &:hover::after {
       opacity: 1;
     }
+
+    &:active {
+      transform: scale(0.9);
+    }
   }
 
   &__contact-us {
@@ -80,6 +84,7 @@
       color: $colorBlue;
       background-color: transparent;
       border: 1px solid $colorLightBlue;
+      transform: scale(0.9);
     }
   }
 }
@@ -95,6 +100,7 @@
 @media (max-width: 570px) {
 
   .nav {
+    position: relative;
     display: flex;
     flex-direction: column;
   }
@@ -128,20 +134,17 @@
 
     background-color: $colorOrange;
 
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     z-index: 3;
   }
   .toggler__span::before {
     content: " ";
     top: -8px;
   }
+
   .toggler__span::after {
     content: " ";
     top: 8px;
-  }
-
-  .nav {
-    position: relative;
   }
 
   .nav__list {
@@ -162,7 +165,6 @@
     list-style: none;
 
     background-color: $colorGrey;
-    opacity: 0.8;
 
     transition-duration: 0.5s;
     z-index: 2;
@@ -179,15 +181,22 @@
     position: relative;
     padding: 20px;
 
-
+    color: $colorOrange;
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
 
-
     &:hover {
-      color: $colorBlue;
+      color: $colorOrange;
       transform: scale(1.2);
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &:active {
+      transform: scale(0.8);
     }
   }
 }
