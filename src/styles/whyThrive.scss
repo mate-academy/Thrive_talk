@@ -1,0 +1,69 @@
+.whyThrive {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+
+  &__description {
+    height: 604px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: $colorLightBlue;
+  }
+
+  &__wrapper {
+    position: relative;
+    left: -25%;
+    transform: translateX(40%);
+    padding-left: 12px;
+    padding-right: 12px;
+    max-width: 555px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 27px;
+    margin-bottom: 75px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 29px;
+
+    &-bold {
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+
+  &__img {
+    height: 604px;
+    background-image: url(/images/bc-image-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+
+  }
+}
+
+@media (max-width: 1023px) {
+  .whyThrive {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+      height: 400px;
+      order: 1;
+    }
+
+    &__description {
+      order: 2;
+    }
+
+    &__wrapper {
+      position: relative;
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
