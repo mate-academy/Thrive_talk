@@ -2,3 +2,60 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
+%link {
+  display: inline-block;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+%colored-link {
+  background-color: $secondary-color;
+  color: #fff;
+}
+
+%transparent-link {
+  color: $secondary-color;
+}
+
+%card-style {
+  position: relative;
+
+  font-size: 32px;
+  color: #fff;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 107px;
+    left: 54px;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: $secondary-color;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 70px;
+    left: 52px;
+    right: 52px;
+
+    height: 1px;
+
+    background-color: #fff;
+  }
+}

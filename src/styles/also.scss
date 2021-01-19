@@ -1,0 +1,74 @@
+.also {
+  display: flex;
+
+  padding: 103px $padding 0 0;
+
+  background-color: #fff;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    padding-right: 0;
+
+  }
+
+  &__image {
+    width: 1500px;
+
+    background-image: url("/images/also.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      height: $mobile-image-height;
+    }
+  }
+
+  &__text {
+    margin-left: 106px;
+    margin-top: 103px;
+
+    background-color: #fff;
+
+    @media (max-width: $mobile) {
+      margin-left: $small-padding;
+      padding-right: $small-padding;
+    }
+  }
+
+  &__title {
+    margin-bottom: 225px;
+
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: $primary-dark-color;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-bottom: 152px;
+
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    color: $primary-dark-color;
+  }
+
+  &__thrive {
+    text-decoration: none;
+    color: $primary-color;
+  }
+
+  &__link {
+    margin-bottom: 42px;
+
+    @extend %link;
+    @extend %transparent-link;
+
+    &:hover {
+      color: $primary-dark-color;
+    }
+  }
+}

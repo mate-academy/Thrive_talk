@@ -1,0 +1,59 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 240px);
+  gap: 60px;
+  justify-content: center;
+
+  padding: 85px $padding 0;
+
+  background-color: #fff;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 85px $mid-padding;
+  }
+
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(1, 298px);
+    grid-template-rows: repeat(6, 1fr);
+
+    padding: 85px 0;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: grid;
+    max-width: 298px;
+
+    @media (max-width: $tablet) {
+      grid-template-rows: 1fr 2fr;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+
+    @media (max-width: $tablet) {
+      font-size: 24px;
+    }
+  }
+
+  &__description {
+    width: 300px;
+
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: rgba(34, 53, 111, 0.5);
+
+    @media (max-width: $tablet) {
+      width: 100%;
+
+      font-size: 14px;
+    }
+  }
+}

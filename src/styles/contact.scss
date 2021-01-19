@@ -1,0 +1,78 @@
+.contact {
+  padding-top: 103px;
+  padding-bottom: 48px;
+  padding-left: $padding;
+
+  background-color: $primary-dark-color;
+
+  background-image: url("/images/contact.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+
+  @media (max-width: 1175px) {
+    padding-left: $mid-padding;
+    background-image: none;
+  }
+
+  @media (max-width: $mobile) {
+    padding-left: $small-padding;
+  }
+
+  &__title {
+    margin-bottom: 230px;
+
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+
+    color: #fff;
+  }
+
+  &__slogan {
+    margin-bottom: 75px;
+
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+
+    color: #fff;
+
+    @media (max-width: $mobile) {
+      font-size: 56px;
+    }
+  }
+
+  &__description {
+    width: 50%;
+
+    margin-bottom: 75px;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+
+    color: #fff;
+
+    @media (max-width: $mobile) {
+      padding-right: 30px;
+
+      width: 100%;
+
+      font-size: 24px;
+      line-height: 40px;
+    }
+  }
+
+  &__link {
+    @extend %link;
+
+    line-height: 23px;
+    letter-spacing: 0.1em;
+
+    color: #62d0df;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

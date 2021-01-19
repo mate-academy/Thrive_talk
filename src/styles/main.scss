@@ -1,7 +1,22 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "reset";
+@import "container";
+@import "header";
+@import "intro";
+@import "thesis";
+@import "about";
+@import "service";
+@import "categories";
+@import "features";
+@import "also";
+@import "contact";
+@import "footer";
 
 body {
-  background: $c-gray;
+  font-family: Larsseit, sans-serif;
+  color: $primary-dark-color;
+
+  background-color: #fff;
 }
