@@ -1,0 +1,5 @@
+@mixin onDesktop {
+  @media (max-width: 3640px) {
+    @content;
+  }
+}

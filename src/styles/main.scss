@@ -1,7 +1,30 @@
 @import "utils";
 @import "fonts";
+@import "mixin";
 @import "typography";
+@import "header";
+@import "help-you";
+@import "reset";
+@import "why-thrive";
+@import "about-us";
+@import "we-help";
+@import "cards";
+@import "text-cards";
+@import "more-info";
+@import "contact-us";
+@import "some-info";
+@import "footer";
 
 body {
-  background: $c-gray;
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+
+  @media (min-width: 1440px) {
+    box-shadow: 0 0 65px 0 rgba(0,0,0,0.2);
+    margin: 0 auto;
+  }
 }

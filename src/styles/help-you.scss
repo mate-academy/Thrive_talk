@@ -1,0 +1,276 @@
+.help-you {
+  max-height: 840px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #fff;
+
+  @media (max-width: 1400px) {
+    background: url(../images/linkedin-sales-navigator-406825.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.help-imag__rectangle--white {
+  position: absolute;
+  width: 810px;
+  height: 545px;
+  left: 800px;
+  top: 11px;
+
+  z-index: 1;
+
+  background: #edfdff;
+  border-radius: 312px;
+  transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+
+  @media (max-width: 1400px) {
+    display: none;
+  }
+}
+
+.help-imag__rectangle--photo {
+  display: flex;
+  justify-content: start;
+  position: absolute;
+  width: 807px;
+  height: 545px;
+  left: 842px;
+  top: 100px;
+
+  border-radius: 312px;
+  transform: matrix(1, -0.5, 0.5, 0.87, 0, 0);
+
+  overflow: hidden;
+
+  z-index: 1;
+
+  @media (max-width: 1400px) {
+    display: none;
+  }
+}
+
+.help-imag__rectangle--photo-img {
+  width: 900px;
+  height: 944px;
+
+  margin: -100px -150px;
+
+  transform: rotate(28deg);
+
+  background: url(../images/linkedin-sales-navigator-406825.jpg) no-repeat;
+
+  z-index: 0;
+
+  @media (max-width: 1400px) {
+    display: none;
+  }
+}
+
+.help {
+  position: relative;
+  font-size: 24px;
+  max-width: 1117px;
+  height: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  font-family: Larsseit, sans-serif;
+  line-height: 27px;
+  letter-spacing: -0.01em;
+
+  color: #62d0df;
+
+  @media (min-width: 1400px) {
+    background: #f4f9e2;
+  }
+
+  @media (max-width: 768px) {
+    background: #f4f9e2;
+    height: 100%;
+  }
+}
+
+.help__logotip-two {
+  margin-top: 187px;
+  margin-left: 179px;
+
+  @media (max-width: 800px) {
+    padding: 10vh 0 10vh 10vh;
+    margin: 0;
+    width: 100px;
+    display: none;
+  }
+}
+
+.help__head {
+  margin-top: 35px;
+  margin-left: 179px;
+  display: flex;
+  justify-content: flex-start;
+
+  width: 544px;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: #22356f;
+
+  @media (max-width: 800px) {
+    padding-top: 15vw;
+    width: 90%;
+    min-width: 100px;
+    text-align: center;
+    margin-left: 3vw;
+  }
+
+  @media (max-width: 570px) {
+    margin-top: 30vw;
+    width: 100%;
+    // min-width: 100px;
+    margin-left: 0;
+
+    padding-right: 2vw;
+    padding-left: 2vw;
+
+    font-size: 42px;
+    font-weight: 600;
+  }
+}
+
+.help__text {
+  margin-top: 35px;
+  margin-left: 179px;
+
+  width: 499px;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 26px;
+  line-height: 2;
+  
+  color: #22356f;
+
+  @media (max-width: 800px) {
+    margin: 15vw 0;
+    min-width: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 570px) {
+    line-height: 1.5;
+  }
+}
+
+.head__questions {
+  margin: 43px 0 0 179px;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    margin: 4vw;
+    width: 100%;
+    min-width: 100px;
+    margin-left: 0;
+    text-align: center;
+
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+.questions__one {
+  padding: 10px 24px;
+  border: #f4f9e2;
+
+  background-color: #f4f9e2;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #f9b640;
+  text-transform: uppercase;
+
+  transition: 1s;
+
+  @media (max-width: 450px) {
+    width: 130px;
+    height: 50px;
+    margin-top: 1vw;
+    min-width: 100px;
+    margin-left: 1vw;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+
+  &:hover {
+    background-color: #f9b640;
+    border: #f9b640;
+  
+    color: #fff;
+
+    box-shadow: 0 0 50px 0 rgba(98%, 71%, 5%, 0.75);
+
+    transition: color 0.6s,
+      background-color 0.6s,
+      box-shadow 0.6s;
+
+    z-index: 1;
+  }
+}
+
+.questions__two {
+  padding: 10px 24px;
+  border: #f4f9e2;
+  margin-left: 38px;
+
+  background-color: #f4f9e2;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #f9b640;
+  text-transform: uppercase;
+
+  transition: 1s;
+
+  @media (max-width: 450px) {
+    width: 150px;
+    height: 50px;
+    margin-top: 1vw;
+    
+    // width: 100%;
+    min-width: 100px;
+    margin-left: 1vw;
+    text-align: center;
+
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-color: #f9b640;
+    border: #f9b640;
+  
+    color: #fff;
+
+    box-shadow: 0 0 50px 0 rgba(98%, 71%, 5%, 0.75);
+
+    transition: color 0.6s,
+      background-color 0.6s,
+      box-shadow 0.6s;
+  }
+}

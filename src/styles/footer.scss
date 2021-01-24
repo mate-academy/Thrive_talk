@@ -1,0 +1,36 @@
+.footer {
+  height: 80px;
+  position: relative;
+
+  background: #62d0df;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 180px;
+
+  @media (max-width: 768px) {
+    padding-left: 70px;
+  }
+}
+
+.footer__item-sign {
+
+  font-family: Larsseit, sans-serif;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: -0.01em;
+
+  color: #fff;
+}
+
+.footer__item-text {
+  padding-left: 10px;
+
+  font-family: Larsseit, sans-serif;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: -0.01em;
+
+  color: #fff;
+}
