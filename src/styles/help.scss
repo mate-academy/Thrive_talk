@@ -1,0 +1,52 @@
+.help {
+  height: 800px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+
+.help__img {
+  width: 400px;
+  background-image: url(../images/help.png);
+}
+
+.help__main {
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 50% 25%;
+}
+
+.help__main--title {
+  padding-top: 103px;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+
+  color: #22356f;
+}
+
+.help__main--content {
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+  color: #22356f;
+  padding-top: 100px;
+}
+
+.span__text {
+  color: #62d0df;
+}
+
+.help__main--button {
+  margin-top: 100px;
+}
+
+.help__main--text {
+  font-size: 16px;
+  line-height: 23px;
+  color: #fab63e;
+}
+
+.help__main--text:hover {
+  color: #62d0df;
+}

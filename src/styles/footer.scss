@@ -1,0 +1,16 @@
+.footer {
+  height: 80px;
+  background-color: #62d0df;
+  align-items: center;
+  box-sizing: border-box;
+  display: grid;
+}
+
+.footer--text {
+  color: white;
+  padding-left: 12%;
+
+  font-size: 14px;
+  line-height: 11px;
+  // letter-spacing: -0.006em;
+}

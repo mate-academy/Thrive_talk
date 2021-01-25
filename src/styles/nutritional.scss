@@ -1,0 +1,34 @@
+.nutritional {
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  align-items: center;
+  height: 542px;
+}
+
+.nutritional__text--wrap {
+  margin-top: 25px;
+  width: 298px;
+  text-align: center;
+}
+
+.nutritional__box {
+  text-align: center;
+}
+
+.nutritional__title {
+  margin-top: 0;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: -0.03em;
+
+  color: #22356f;
+}
+
+.nutritional__text {
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+
+  color: rgba(34, 53, 111, 0.5);
+}

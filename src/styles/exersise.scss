@@ -1,0 +1,32 @@
+.exersice {
+  height: 480px;
+  width: 100%;
+  display: flex;
+}
+
+.exersice__wrap {
+  display: grid;
+  height: 360px;
+  width: 100%;
+  grid-template-columns: repeat(4 , 1fr);
+}
+
+.exersice__box {
+  height: 360px;
+}
+
+.exersice__box:nth-child(1) {
+  background-image: url(../images/Group1.png);
+}
+
+.exersice__box:nth-child(2) {
+  background-image: url(../images/Group2.png);
+}
+
+.exersice__box:nth-child(3) {
+  background-image: url(../images/Group3.png);
+}
+
+.exersice__box:nth-child(4) {
+  background-image: url(../images/Group4.png);
+}
