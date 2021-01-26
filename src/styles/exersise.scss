@@ -1,7 +1,7 @@
 .exersice {
-  height: 480px;
+
   width: 100%;
-  display: flex;
+
 }
 
 .exersice__wrap {
@@ -9,10 +9,12 @@
   height: 360px;
   width: 100%;
   grid-template-columns: repeat(4 , 1fr);
+  margin-bottom: 100px;
 }
 
 .exersice__box {
   height: 360px;
+
 }
 
 .exersice__box:nth-child(1) {

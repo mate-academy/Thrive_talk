@@ -131,14 +131,14 @@ src: local('Larsseit Light Italic'), local('Larsseit-LightItalic'),
 }
 
 @font-face {
-    font-family: 'Larsseit';
-    src: url('Larsseit-ThinItalic.eot');
-    src: local('Larsseit Thin Italic'), local('Larsseit-ThinItalic'),
-        url('Larsseit-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('Larsseit-ThinItalic.woff2') format('woff2'),
-        url('Larsseit-ThinItalic.woff') format('woff'),
-        url('Larsseit-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
+  font-family: "Larsseit";
+  src: url("Larsseit-ThinItalic.eot");
+  src: local("Larsseit Thin Italic") , local("Larsseit-ThinItalic"),
+    url('Larsseit-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('Larsseit-ThinItalic.woff2') format('woff2'),
+    url('Larsseit-ThinItalic.woff') format('woff'),
+    url('Larsseit-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
 }
  */

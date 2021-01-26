@@ -1,31 +1,31 @@
 .container__header {
+
+  box-sizing: border-box;
   background-color: #f4f9e2;
-  height: 840px;
-  position: relative;
-  width: 100%;
 }
 
 .logo {
-  position: relative;
-  left: 197px;
+  // padding-left: 197px;
+  display: grid;
+  justify-content: end;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 50px;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  justify-content: space-around;
   height: 60px;
   padding-top: 25px;
 }
 
 .nav {
-  display: flex;
+  display: grid;
   justify-content: space-around;
 }
 
 .nav_list {
-  display: flex;
-
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
   justify-content: center ;
 
   margin: 0;
@@ -37,7 +37,6 @@
 }
 
 .nav__link {
-  display: block;
 
   font-size: 14px;
   line-height: 16px;
@@ -57,7 +56,8 @@
   border-radius: 50px;
   background: #62d0df;
   text-align: center;
-  align-items: center;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .hedear__button--text {

@@ -39,14 +39,19 @@
 
 .help__main--button {
   margin-top: 100px;
+  width: 150px;
+
 }
 
 .help__main--text {
   font-size: 16px;
   line-height: 23px;
   color: #fab63e;
+  padding: 15px;
+
 }
 
 .help__main--text:hover {
-  color: #62d0df;
+  background-color: #f9b640;
+  color: white;
 }

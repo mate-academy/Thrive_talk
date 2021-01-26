@@ -1,20 +1,26 @@
 .container__question {
-  height: 607px;
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  justify-content: center;
   background-color: #62d0df;
-  margin: 0;
+
   box-sizing: border-box;
-  position: relative;
+
 }
 
 .question__main {
-  display: inline-block;
-  position: absolute;
-  top: 151px;
-  left: 178px;
+  padding: 120px 100px 95px;
+  display: grid;
+  justify-content: center;
   width: 555px;
 }
 
+.question_title {
+  display: grid;
+}
+
 .question__title--text {
+  padding-bottom: 50px;
   font-style: bold;
   font-size: 36px;
   color: white;
@@ -26,17 +32,14 @@
 }
 
 .question__content--text {
-  font-size: 20px;
+  font-size: 24px;
   color: white;
   line-height: 29px;
+
 }
 
 .qustion__img {
-  position: absolute;
-  width: 525px;
   height: 100%;
-  right: 0;
-  box-sizing: border-box;
-
   background-image: url(../images/christopher-campbell-40367.png);
+  background-size: cover;
 }
