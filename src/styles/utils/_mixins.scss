@@ -1,6 +1,22 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
+@mixin button {
+  height: 50px;
+  width: 150px;
+  
+  color: $regular-color;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  border-radius: 50px;
+  background-color: $leading-color;
+  border: none;
+
+  transition: background-color $buttons-transition , color $buttons-transition;
+  
   &:hover {
-    #{$_property}: $_toValue;
+    color: $leading-color;
+    background-color: $regular-color;
+    border: 2px solid $leading-color;
+    cursor: pointer;
   }
 }

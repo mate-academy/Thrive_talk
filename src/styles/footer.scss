@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+
+  background-color: $leading-color;
+
+  &__copyright {
+    position: relative;
+
+    padding-left: 100px;
+
+    color: $regular-color;
+
+    &::before {
+      position: absolute;
+      left: 31%;
+
+      content: url(\images\footer.png);
+    }
+  }
+}

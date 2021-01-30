@@ -1,0 +1,63 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, auto));
+  grid-auto-rows: 480px;
+  margin-top: 120px;
+
+  &__type {
+    display: grid;
+    justify-content: center;
+  }
+
+  &__type--physical {
+    background-color: $text-color;
+  }
+
+  &__type--mental {
+    background-color: #0052c1;
+  }
+
+  &__type--nutrition {
+    background: no-repeat url(\images\card-background.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__type--gymnastics {
+    background-color: $leading-color;
+  }
+
+  &__type--crossfit {
+    background-color: #dee1ff;
+
+  }
+
+  &__type--aerobics {
+    background-color: #8f00ff;
+  }
+
+  &__title {
+    width: 210px;
+    margin-top: 90px;
+
+    @extend %card-title;
+    line-height: 33px;
+
+    &::before {
+      top: 10%;
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .services {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-auto-rows: 300px;
+  }
+}
