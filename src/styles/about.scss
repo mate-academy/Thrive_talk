@@ -49,3 +49,22 @@
   line-height: 19px;
   letter-spacing: 0.06em;
 }
+
+@media screen and (max-width:850px) {
+  .about__main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+  }
+
+  .about__content {
+    margin: 0 auto;
+    width: 90vw;
+    padding: 40px 0;
+  }
+  .about__title {
+    margin: 0 auto;
+  }
+}

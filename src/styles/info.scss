@@ -1,11 +1,11 @@
 .info {
   display: grid;
   grid-template-columns: 35% 1fr;
-  height: 380px;
+
 }
 
 .info__img {
-  box-sizing: border-box;
+  box-sizing: content-box;
   background-image: url(../images/info.png);
   background-size: cover;
   background-position: center;
@@ -38,4 +38,30 @@
   padding-top: 10%;
   text-decoration: none;
   color: blue;
+}
+
+@media screen and (max-width:630px) {
+  .info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .info__img {
+    display: none;
+  }
+
+  .info__main {
+    display: grid;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .info__main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  .info__main--content {
+    padding-bottom: 20px;
+  }
 }

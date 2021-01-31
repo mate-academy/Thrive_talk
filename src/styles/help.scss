@@ -1,19 +1,20 @@
 .help {
-  height: 800px;
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 30% 1fr;
 }
 
 .help__img {
-  width: 400px;
+
   background-image: url(../images/help.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .help__main {
-  margin-left: 100px;
+  padding-left: 100px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 25% 50% 25%;
+  grid-template-rows: 1fr 2fr 1fr;
 }
 
 .help__main--title {
@@ -54,4 +55,40 @@
 .help__main--text:hover {
   background-color: #f9b640;
   color: white;
+}
+
+@media screen and (max-width:730px) {
+  .help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__main {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__main--content {
+      padding: 20px 0;
+    }
+
+    &__main--title {
+      text-align: center;
+    }
+
+    &__main--button {
+      margin-top: 20px;
+    }
+
+    &__img {
+      width: 100%;
+      height: 10vh;
+      background-position: center;
+      background-size: cover;
+      object-fit: fill;
+    }
+  }
+
 }

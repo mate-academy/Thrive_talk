@@ -39,7 +39,32 @@
 }
 
 .qustion__img {
-  height: 100%;
   background-image: url(../images/christopher-campbell-40367.png);
   background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 1040px) {
+  .question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__main {
+      width: 100%;
+      padding: 0 20vw;
+    }
+
+    &_title {
+      padding: 0 20vw;
+    }
+    &__content {
+      padding: 0 20vw;
+    }
+
+    &__img {
+      width: 100%;
+      height: 20vh;
+    }
+  }
 }

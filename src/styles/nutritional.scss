@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3 ,1fr);
   align-items: center;
-  height: 542px;
+  margin-bottom: 50px;
+
 }
 
 .nutritional__text--wrap {
@@ -31,4 +32,27 @@
   letter-spacing: -0.03em;
 
   color: rgba(34, 53, 111, 0.5);
+}
+
+@media screen and (max-width:900px) {
+  .nutritional {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    align-items: center;
+    margin-bottom: 50px;
+
+  }
+}
+
+@media screen and (max-width:600px) {
+  .nutritional {
+    display: block;
+    margin-bottom: 50px ;
+
+  }
+
+  .nutritional__box {
+    display: flex;
+    justify-content: center;
+  }
 }

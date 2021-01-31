@@ -1,11 +1,12 @@
 .contact {
   display: grid;
   grid-template-columns: 1fr 35%;
-  height: 800px;
 }
 
 .contact__img {
+  background-position: center;
   background-image: url(../images/contact.png);
+  background-size: cover;
 }
 
 .contact__main {
@@ -39,14 +40,16 @@
 
 .contact__main--wrap {
   display: grid;
-  grid-template-rows: 90% 10%;
+  row-gap: 20px;
+  grid-template-rows: 90% 1fr;
+  padding-bottom: 5vh;
 }
 
 .contact__content--text {
   font-size: 36px;
   line-height: 53px;
-  // letter-spacing: -0.05em;
-  width: 579px;
+
+  width: 37vw;
 
   color: #fff;
   padding: 5% 0 0 10%;
@@ -54,13 +57,41 @@
 
 .contact__content--footer {
   display: grid;
-  justify-content: center;
+  padding-left: 10%;
 
   letter-spacing: 0.1em;
   font-size: 16px;
-  line-height: 23px;
-  width: 150px;
+
   color: #62d0df;
 
-  padding-left: 10%;
+}
+
+@media screen and (max-width:820px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__main--wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__main--content {
+      padding: 20px 0;
+    }
+    &__content--text {
+      text-align: center;
+      width: 90vw;
+      padding: 20px 0;
+    }
+  }
 }
