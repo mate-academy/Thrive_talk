@@ -1,0 +1,20 @@
+.nav {
+  color: #22356f;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    padding: 0 15px;
+    list-style: none;
+    transition: transform 0.5s background-color 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+      background-color: #62d0df;
+    }
+  }
+  &__link {
+    color: #22356f;
+    text-decoration: none;
+  }
+}
