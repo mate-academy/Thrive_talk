@@ -1,35 +1,64 @@
 .kinds {
   display: grid;
   grid-template-columns: repeat(3 ,1fr);
+
+  &__title {
+    position: relative;
+    width: 210px;
+
+    margin-top: 90px;
+    padding: 27px 20px;
+
+    line-height: 33px;
+
+    color: white;
+    border-top: 2px solid #fff;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 10%;
+      width: 9px;
+      height: 9px;
+      content: "";
+      border-radius: 50%;
+      background: #e9b730;
+    }
+  }
 }
 
 .kinds__box {
+  display: grid;
+  justify-content: center;
+
   height: 480px;
   background-size: cover;
+
 }
 
 .kinds__box:nth-child(1) {
-  background-image: url(../images/kinds1.png);
+  background-color: #22356f;
 }
 
 .kinds__box:nth-child(2) {
-  background-image: url(../images/kinds2.png);
+  background-color: #0052c1;
 }
 
 .kinds__box:nth-child(3) {
-  background-image: url(../images/kinds3.png);
+  background-image: url(../images/kinds_barry.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .kinds__box:nth-child(4) {
-  background-image: url(../images/kinds4.png);
+  background-color: #62d0df;
 }
 
 .kinds__box:nth-child(5) {
-  background-image: url(../images/kinds5.png);
+  background-color: #dee1ff;
 }
 
 .kinds__box:nth-child(6) {
-  background-image: url(../images/kinds6.png);
+  background-color: #8f00ff;
 }
 
 @media screen and (max-width:1100px) {

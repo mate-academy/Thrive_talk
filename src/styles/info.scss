@@ -5,10 +5,8 @@
 }
 
 .info__img {
-  box-sizing: content-box;
-  background-image: url(../images/info.png);
-  background-size: cover;
-  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .info__main {
@@ -42,8 +40,8 @@
 
 @media screen and (max-width:630px) {
   .info {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
   .info__img {
     display: none;
