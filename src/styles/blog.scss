@@ -1,8 +1,8 @@
 .blog {
   display: grid;
-  grid-template-areas: "img txt"
-    "img txt"
-    "img txt";
+  grid-template-areas: "img text"
+    "img text"
+    "img text";
 
   &__img {
     justify-self: start;
@@ -14,7 +14,7 @@
 
   &__description {
     display: grid;
-    grid-area: txt;
+    grid-area: text;
     padding: 100px;
   }
 
@@ -58,7 +58,7 @@
 @media (max-width: 1100px) {
   .blog {
     grid-template-areas: "img"
-      "txt";
+      "text";
 
     &__img {
       justify-self: center;

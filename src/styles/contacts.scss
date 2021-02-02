@@ -1,7 +1,7 @@
 .contacts {
   display: grid;
-  grid-template-areas: "img txt adr hr"
-    "img txt adr hr";
+  grid-template-areas: "img text address hour"
+    "img text address hour";
   justify-items: center;
 
   &__img {
@@ -13,19 +13,19 @@
   }
 
   &__info {
-    grid-area: txt;
+    grid-area: text;
     padding-top: 98px;
   }
 
   &__address {
     display: flex;
     flex-direction: column;
-    grid-area: adr;
+    grid-area: address;
     padding-top: 98px;
   }
 
   &__work-time {
-    grid-area: hr;
+    grid-area: hour;
     padding-top: 98px;
   }
 
@@ -79,9 +79,9 @@
 @media (max-width: 1100px) {
   .contacts {
     grid-template-areas: "img"
-      "txt"
-      "adr"
-      "hr";
+      "text"
+      "address"
+      "hour";
     justify-items: center;
 
     &__img {

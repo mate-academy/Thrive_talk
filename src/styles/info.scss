@@ -1,7 +1,7 @@
 .info {
   display: grid;
-  grid-template-areas: "txt img"
-    "txt img";
+  grid-template-areas: "text img"
+    "text img";
 
   background-color: $leading-color;
 
@@ -9,7 +9,7 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
-    grid-area: txt;
+    grid-area: text;
     padding-bottom: 70px;
 
     color: $regular-color;
@@ -45,7 +45,7 @@
 
 @media (max-width: 1100px) {
   .info {
-    grid-template-areas: "txt"
+    grid-template-areas: "text"
       "img";
 
     &__img {
