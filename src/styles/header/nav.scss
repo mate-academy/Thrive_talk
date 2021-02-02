@@ -1,0 +1,130 @@
+.nav {
+  margin-right: 179px;
+
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: $fs-text-sub-heading;
+
+  @media (max-width: 990px) {
+    width: 100%;
+    padding: 0 50px;
+    margin-right: 0;
+  }
+
+  @media (max-width: 492px) {
+    flex-direction: column;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+
+    @media (max-width: 990px) {
+      display: none;
+      height: 0;
+      transition: height 1s;
+    }
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+
+    }
+
+    @media (max-width: 492px) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 13px 5px;
+
+    border-bottom: 1px solid $c-header-background;
+
+    &:hover {
+      border-bottom-color: $c-text-main;
+    }
+  }
+
+  &__toggler {
+
+    @media (max-width: 990px) {
+      display: inline-block;
+      visibility: hidden;
+      position: absolute;
+      top: 6%;
+      left: calc(50% - 10px);
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 4;
+        visibility: visible;
+        width: 20px;
+        height: 10px;
+        border-bottom: 2px solid $c-text-main;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 4;
+        visibility: visible;
+        width: 20px;
+        height: 2px;
+        background-color: $c-text-main;
+        transition: all 0.3s;
+        top: 3px;
+        cursor: pointer;
+      }
+    }
+
+    @media (max-width: 492px) {
+      top: 180px;
+    }
+
+    &:checked {
+      &::before {
+        transform: rotate(45deg);
+        height: 0;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        top: 0;
+      }
+
+      & ~ .nav__list {
+        display: flex;
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%);
+        height: 30px;
+
+        @media (max-width: 492px) {
+          top: 23%;
+
+          font-weight: bold;
+        }
+
+        @media (max-width: 344px) {
+          top: 20%;
+        }
+      }
+    }
+  }
+  .togler-label {
+    display: none;
+  }
+}

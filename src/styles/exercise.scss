@@ -1,0 +1,10 @@
+.exercise {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 33.3%);
+
+  margin-bottom: 20px;
+
+  @media (max-width: 990px) {
+    grid-template-columns: 100%;
+  }
+}

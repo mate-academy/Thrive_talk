@@ -1,0 +1,40 @@
+.also {
+  &__img {
+    background-image: url("/images/also.png");
+  }
+
+  &__desc {
+    padding: 103px 30px 48px 106px;
+
+    @media (max-width: 822px) {
+      padding: 10px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 152px;
+    max-width: 725px;
+
+    @media (max-width: 822px) {
+      margin: 0;
+      margin-bottom: 30px;
+    }
+
+    &--decor {
+      color: $c-text-decor;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+
+    border-bottom: 2px solid transparent;
+
+    color: #f9b640;
+    text-transform: uppercase;
+
+    &:hover {
+      border-bottom: 2px solid #f9b640;
+    }
+  }
+}

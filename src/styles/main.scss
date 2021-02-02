@@ -1,7 +1,20 @@
-@import "utils";
-@import "fonts";
-@import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "variables";
+@import "reset";
+@import "header/hero";
+@import "header/header";
+@import "header/nav";
+@import "header/logo";
+@import "header/intro";
+@import "header/buttons";
+@import "advantage";
+@import "about";
+@import "services";
+@import "block";
+@import "exercise";
+@import "facts/facts";
+@import "block-photo";
+@import "also/also";
+@import "contact/contact";
+@import "info/info";
+@import "footer/footer";
+@import "page-container";

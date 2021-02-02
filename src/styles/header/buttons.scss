@@ -1,0 +1,25 @@
+.buttons {
+  width: 315px;
+  display: flex;
+  justify-content: space-around;
+
+  font-size: $fs-text-buttons;
+  font-weight: bold;
+  line-height: 23px;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+
+    background-color: $c-header-background;
+    color: #f9b640;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #fff;
+      background-color: #f9b640;
+    }
+  }
+}

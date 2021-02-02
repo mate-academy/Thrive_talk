@@ -1,0 +1,21 @@
+.hero {
+  position: relative;
+  max-width: 100%;
+
+  @media (min-width: 991px) {
+    overflow-x: hidden;
+  }
+
+  &__wrapper {
+    width: 100%;
+    position: relative;
+    padding-left: 179px;
+
+    background-color: $c-header-background;
+
+    @media (max-width: 990px) {
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+  }
+}

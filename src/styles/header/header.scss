@@ -1,0 +1,38 @@
+.header {
+  padding-top: 27px;
+
+  @media (max-width: 990px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__logo {
+    @media (max-width: 492px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+
+    border-radius: 50px;
+    background-color: $c-text-decor;
+
+    font-size: $fs-text-sub-heading;
+    font-weight: bold;
+    line-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+
+    @media (max-width: 1180px) {
+      position: static;
+    }
+  }
+}

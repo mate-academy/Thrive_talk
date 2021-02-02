@@ -1,0 +1,48 @@
+.contact {
+  &__img {
+    background-image: url("../images/contact.png");
+  }
+
+  &__desc {
+    padding: 103px 0 48px 180px;
+
+    background-color: $c-text-main;
+    color: #fff;
+
+    @media (max-width: 990px) {
+      padding: 80px 35px 48px 80px;
+    }
+
+    @media (max-width: 822px) {
+      padding: 10px;
+    }
+  }
+
+  &__main-heading {
+    margin-bottom: 75px;
+  }
+
+  &__text {
+    max-width: 540px;
+    margin-bottom: 75px;
+
+    @media (max-width: 822px) {
+      max-width: 100%;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+
+    border-bottom: 2px solid transparent;
+
+    color: $c-text-decor;
+    text-transform: uppercase;
+
+    &:hover {
+      border-bottom: 2px solid $c-text-decor;
+    }
+  }
+}

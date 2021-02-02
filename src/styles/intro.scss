@@ -1,0 +1,43 @@
+.intro {
+  position: relative;
+
+  padding-top: 174px;
+  padding-bottom: 75px;
+
+  &__logo {
+    margin-bottom: 50px;
+  }
+
+  &__slogan {
+    margin-bottom: 100px;
+    max-width: 480px;
+
+    font-size: 48px;
+    line-height: 53px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 471px;
+    margin-bottom: 63px;
+
+    line-height: 42px;
+  }
+
+  &__decor-block {
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    right: -647px;
+    width: 807.71px;
+    height: 544.93px;
+    background-color: #edfdff;
+    border-radius: 312.16px;
+    transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+
+    &--img {
+      background: url("../images/intro-photo.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+}
