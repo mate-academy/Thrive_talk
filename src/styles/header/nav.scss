@@ -55,7 +55,6 @@
   }
 
   &__toggler {
-    display: none;
 
     @media (max-width: 990px) {
       display: inline-block;
@@ -70,8 +69,8 @@
         z-index: 4;
         visibility: visible;
         width: 20px;
-        height: 2px;
-        background-color: $c-text-main;
+        height: 10px;
+        border-bottom: 2px solid $c-text-main;
         transition: all 0.3s;
         cursor: pointer;
       }
@@ -97,6 +96,7 @@
     &:checked {
       &::before {
         transform: rotate(45deg);
+        height: 0;
       }
 
       &::after {
