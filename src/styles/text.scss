@@ -1,0 +1,23 @@
+.text__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 16.67vw);
+  
+
+  &_card {
+    padding: 4% 16% 8% 22%;
+  }
+
+  &_heading {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+  }
+
+  &_text {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: #22356f;
+  }
+}

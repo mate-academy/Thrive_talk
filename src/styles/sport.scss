@@ -1,0 +1,53 @@
+.sport {
+  display: flex;
+  &__card {
+    display: flex;
+    justify-content: center;
+    width: 25vw;
+    height: 25vh;
+    padding: 5vw 0 0 48px;
+    &:nth-child(1) {
+      background-color: #ffe2de;
+    }
+    &:nth-child(2) {
+      background-color: #c4e769;
+    }
+    &:nth-child(3) {
+      background-color: #62d0df;
+    }
+    &:nth-child(4) {
+      background-color: #0052c1;
+    }
+  }
+}
+
+.card {
+  width: 70%;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  color: #fff;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: -24px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #e9b730;
+  }
+}
+
+.main__sport {
+  margin-bottom: 120px;
+  position: relative;
+ 
+  &__card {
+    padding-top: 26px;
+  }
+}
