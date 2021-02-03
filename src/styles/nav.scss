@@ -13,35 +13,35 @@
 
 .nav {
   align-items: center;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 20px;
+
+    margin: 0 20px;
+    color: #22356f;
+    transition: color 0.5s;
+    text-decoration: none;
+
+    &:hover {
+      color: #1fc8db;
+    }
+  }
 }
 
 .logo {
   background-position: center;
   padding-top: 10px;
-}
-
-.nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  transition: height 2s;
-}
-
-.nav__item {
-  display: inline-block;
-}
-
-.nav__link {
-  display: inline-block;
-  font-size: 20px;
-
-  margin: 0 20px;
-  color: #22356f;
-  text-decoration: none;
-}
-
-.nav__link:hover {
-  color: #1fc8db;
 }
 
 .hedear__button {

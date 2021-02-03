@@ -67,5 +67,13 @@
       object-fit: fill;
       object-position: center;
     }
+
+    &__title--text {
+      padding-left: 20px;
+    }
+
+    &__content--text {
+      padding: 0 20px;
+    }
   }
 }
