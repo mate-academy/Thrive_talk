@@ -7,7 +7,7 @@
 
   &__description {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 150px 1fr;
     justify-content: center;
     grid-area: text;
     padding-bottom: 70px;
@@ -63,6 +63,11 @@
 
 @media  (max-width: 550px) {
   .info {
+
+    &__description {
+      padding: 0 10px 70px;
+    }
+
     &__text {
       width: 300px;
 

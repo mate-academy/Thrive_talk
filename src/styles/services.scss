@@ -59,5 +59,11 @@
   .services {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     grid-auto-rows: 300px;
+
+    &__title {
+      &::before {
+        top: 19%;
+      }
+    }
   }
 }
