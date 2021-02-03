@@ -1,0 +1,27 @@
+.buttons {
+  &__item {
+    padding: 10px 30px;
+    border: none;
+    
+    margin-right: 30px;
+
+    font-size: 16px;
+
+    color: #f9b640;
+    background: transparent;
+
+    transition: all 0.3s ease-in;
+    text-transform: uppercase;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__item:hover {
+    cursor: pointer;
+    
+    color: #fff;
+    background: #f9b640;
+  }
+}
