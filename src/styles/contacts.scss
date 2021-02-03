@@ -93,7 +93,6 @@
 
     &__text {
       align-self: center;
-      width: 200px;
     }
 
     &__title {
@@ -102,6 +101,10 @@
 
     &__link {
       width: 200px;
+    }
+
+    &__work-time {
+      padding: 20px 0 0 15px;
     }
   }
 }
