@@ -1,0 +1,55 @@
+.assessment {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  background-color: #22356f;
+
+  &__text {
+    padding: 0 0 30px 180px;
+    max-width: 720px;
+  
+    &_heading {
+      position: relative;
+      font-size: 64px;
+      line-height: 66px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      padding-top: 300px;
+      &::before {
+        position: absolute;
+        top: 60px;
+        left: 0;
+
+        font-size: 16px;
+        line-height: 12px;
+        letter-spacing: 0.06em;
+        content: "Contact us";
+        text-transform: uppercase;
+      }
+    }
+
+    &_text {
+      font-size: 36px;
+      line-height: 53px;
+      letter-spacing: -0.01em;
+      padding-bottom: 50px;
+    }
+
+    &_link {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1em;
+      color: #62d0df;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  &__img {
+    background-image: url("../images/charles-etoroma-390119.png");
+    height: 800px;
+    width: 480px;
+  }
+}
