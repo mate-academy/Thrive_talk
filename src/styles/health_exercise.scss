@@ -1,0 +1,28 @@
+.health-exercise {
+  &__container {
+    padding-bottom: 40px;
+  }
+  &__wrapp {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+.item {
+  height: 240px;
+  width: 480px;
+  padding-top: 55px;
+  padding-left: 104px;
+
+  display: grid;
+
+  &__title {
+    color: $navbar-color;
+    font-size: 28px;
+  }
+
+  &__caption {
+    font-size: $font-size-caption;
+    color: rgba(34, 53, 111, 0.5);
+  }
+}

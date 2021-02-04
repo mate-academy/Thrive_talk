@@ -1,0 +1,20 @@
+.genral-info {
+  height: 800px;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.caption {
+  display: grid;
+  &__title {
+    color: $navbar-color;
+    font-size: $font-size-caption;
+  }
+  &__text {
+    max-width: 676px;
+    color: $navbar-color;
+    font-size: 36px;
+  }
+}

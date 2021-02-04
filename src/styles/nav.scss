@@ -13,8 +13,10 @@
     &::after:hover {
       content: "";
       display: block;
+
       width: 100%;
       height: 2px;
+
       background-color: $navbar-color;
     }
   }
