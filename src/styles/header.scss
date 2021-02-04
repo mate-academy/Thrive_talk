@@ -70,6 +70,30 @@
     &:hover {
       transform: scale(1.1);
       background-color: #4699a4;
+      color: black;
     }
   }
 }
+
+@media screen and (max-width: 1279px) {
+  .header {
+    &__logo {
+      margin-left: 0;
+    }
+    &__top,
+    &__previev {
+      margin-left: 40px;
+    }
+    &__img,
+    &__oval,
+    &__rectangle {
+      display: none;
+    }
+    &__button {
+      position: absolute;
+      top: 90px;
+      left: 30px;
+    }
+  }
+}
+

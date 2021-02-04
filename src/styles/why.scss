@@ -35,7 +35,24 @@
     background-image: url("../images/christopher-campbell-40367.png");
     background-repeat: no-repeat;
     background-position: center;
-
   }
+}
 
+@media screen and (max-width: 1279px) {
+  .why {
+    &__choice {
+      margin: 0 40px;
+      width: 100%;
+    }
+    &__heading {
+      margin-top: 0;
+      padding-top: 45px;
+    }
+    &__text {
+      padding: 45px 0;
+    }
+    &__img {
+      display: none;
+    }
+  }
 }

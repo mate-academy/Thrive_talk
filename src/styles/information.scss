@@ -51,3 +51,26 @@
     color: #62d0df;
   }
 }
+
+@media screen and (max-width: 1279px) {
+  .information {
+    &__link {
+      padding-top: 46px;
+      margin-left: 30px;
+    }
+    &__picture {
+      display: none;
+    }
+    &__heading {
+      font-size: 30px;
+      overflow: hidden;
+      margin-top: 48px;
+      padding: 40px;
+      width: 90%;
+      &::after {
+        top: 5px;
+        left: 40px;
+      }
+    }
+  }
+}

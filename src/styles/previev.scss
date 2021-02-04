@@ -46,3 +46,14 @@
     }
   }
 }
+
+@media screen and (max-width: 1279px) {
+  .previev {
+    &__heading {
+      padding-right: 30px;
+    }
+    &__button {
+      margin: 40px;
+    }
+  }
+}

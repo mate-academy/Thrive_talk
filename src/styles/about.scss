@@ -37,3 +37,18 @@
     }
   }
 }
+
+@media screen and (max-width: 1279px) {
+  .about__text {
+    width: 100%;
+    padding: 60px 45px 20px;
+    &::before {
+      top: 20px;
+      left: 45px;
+    }
+    &::after {
+      margin: 45px;
+    }
+  }
+}
+
