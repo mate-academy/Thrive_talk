@@ -1,0 +1,66 @@
+.contacts {
+  
+  &__img {
+    height: 100%;
+    background-size: cover;
+  }
+
+  &__text {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    padding: 98px 0 90px 8%;
+  }
+
+  &__item {
+    max-width: 210px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 11px;
+    color: #22356f;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    margin-top: 55px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #22356f;
+    opacity: 0.5;
+  }
+
+  &__address {
+    margin-top: 55px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #22356f;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+
+  &__phone {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 23px;
+
+  }
+
+  &__number {
+    text-decoration: none;
+    color: #22356f;
+    opacity: 0.5;
+  }
+
+  &__mail {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #62d0df;
+  }
+}

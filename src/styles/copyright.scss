@@ -1,0 +1,14 @@
+.copyright {
+  padding-left: 179px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #62d0df;
+
+  &__text {
+    margin-right: 6px;
+    font-size: 14px;
+    line-height: 11px;
+    color: #fff;
+  }
+}
