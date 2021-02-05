@@ -10,7 +10,7 @@
   }
 
   &__type--physical {
-    background-color: #22356f;
+    background-color: $accent-color;
   }
 
   &__type--mental {
@@ -24,7 +24,7 @@
   }
 
   &__type--gymnastics {
-    background-color: #62d0df;
+    background-color: $base-color;
   }
 
   &__type--crossfit {

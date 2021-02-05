@@ -3,7 +3,7 @@
   grid-template-columns: 3fr 2fr;
   align-items: center;
   justify-items: center;
-  background-color: #62d0df;
+  background-color: $base-color;
 
   &__description {
     display: flex;
@@ -31,7 +31,7 @@
 
     &-bold {
       font-weight: 700;
-      font-size: 24px;
+      font-size: $accent-font-size;
       line-height: 35px;
     }
   }
@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: $small-screan) {
   .info {
     grid-template-columns: 1fr;
 

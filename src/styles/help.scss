@@ -2,13 +2,15 @@
   display: grid;
   grid-template-columns: 480px 1fr;
 
+  &__description {
+    padding: 103px 0 42px 11%;
+  }
+
   &__title {
-    font-size: 16px;
+    font-size: $base-font-size;
     line-height: 12px;
     letter-spacing: 0.06em;
-
-    color: #22356f;
-    padding: 103px 0 0 106px;
+    color: $accent-color;
   }
 
   &__text {
@@ -16,27 +18,28 @@
     line-height: 53px;
     letter-spacing: -0.01em;
 
-    font-weight: 700;
-    color: #22356f;
+    margin-top: 225px;
+    max-width: 676px;
 
-    padding: 225px 175px 152px 106px;
+    font-weight: 700;
+    color: $accent-color;
   }
 
   &__text-bold {
     font-weight: 700;
-    color: #62d0df;
+    color: $base-color;
   }
 
   &__button {
     width: 150px;
     height: 50px;
 
-    margin-left: 106px;
+    margin-top: 75px;
 
     font-size: 0.6rem;
     line-height: 23.5px;
     letter-spacing: 0.1em;
-    color: #f9b640;
+    color: $button-color;
 
     background-color: transparent;
     border: 1px;
@@ -49,9 +52,14 @@
     &:hover {
       width: 150px;
       height: 50px;
-      background-color: #f9b640;
+      background-color: $button-color;
       color: #fff;
     }
+  }
+
+  &__img {
+    background: no-repeat 50%;
+    background-size: cover;
   }
 }
 
@@ -66,13 +74,24 @@
       justify-self: end;
     }
 
-    &__text {
+    &__description {
       padding: 0;
-      margin: 20px auto 0;
-      font-size: 16px;
+      text-align: center;
+    }
+
+    &__title {
+      margin-top: 20px;
+    }
+
+    &__text {
+      margin: 20px 10px 0;
+      font-size: 20px;
       line-height: 2;
-      max-width: 320px;
       text-align: left;
+    }
+
+    &__button {
+      margin: 20px;
     }
   }
 }

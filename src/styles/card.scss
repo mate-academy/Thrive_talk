@@ -46,7 +46,7 @@
   }
 
   &__type--pumping {
-    background-color: #62d0df;
+    background-color: $base-color;
   }
 
   &__type--iron {
@@ -54,7 +54,7 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: $small-screan) {
   .card {
     grid-template-columns: repeat(2, 1fr);
   }

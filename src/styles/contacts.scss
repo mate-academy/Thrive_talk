@@ -1,5 +1,5 @@
 .contacts {
-  
+
   &__img {
     height: 100%;
     background-size: cover;
@@ -20,7 +20,7 @@
   &__title {
     font-size: 14px;
     line-height: 11px;
-    color: #22356f;
+    color: $accent-color;
     text-transform: uppercase;
   }
 
@@ -28,17 +28,15 @@
     margin-top: 55px;
     font-size: 14px;
     line-height: 23px;
-    color: #22356f;
-    opacity: 0.5;
+    color: $accent-50-color;
   }
 
   &__address {
     margin-top: 55px;
     font-size: 14px;
     line-height: 23px;
-    color: #22356f;
-    opacity: 0.5;
     text-decoration: none;
+    color: $accent-color;
   }
 
   &__phone {
@@ -50,8 +48,7 @@
 
   &__number {
     text-decoration: none;
-    color: #22356f;
-    opacity: 0.5;
+    color: $accent-50-color;
   }
 
   &__mail {
@@ -61,6 +58,36 @@
 
   &__link {
     text-decoration: none;
-    color: #62d0df;
+    color: $base-color;
+  }
+}
+
+@media (max-width: 1030px) {
+  .contacts {
+    &__img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+      justify-self: end;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts {
+
+    &__text {
+      display: block;
+      padding: 0;
+      text-align: center;
+    }
+
+    &__title {
+      margin-top: 20px;
+    }
+
+    &__paragraph {
+      margin: 10px auto;
+    }
   }
 }
