@@ -2,7 +2,7 @@
   display: flex;
   color: #fff;
   justify-content: space-between;
-  background-color: #22356f;
+  background-color: $mainFontColor;
 
   &__text {
     padding: 0 0 30px 180px;
@@ -39,10 +39,10 @@
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0.1em;
-      color: #62d0df;
+      color: $logoColor;
       text-decoration: none;
       &:hover {
-        color: white;
+        color: $textFontCol;
       }
     }
   }

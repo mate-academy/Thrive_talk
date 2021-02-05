@@ -1,5 +1,5 @@
 .nav {
-  color: #22356f;
+  color: $mainFontColor;
   &__list {
     display: flex;
   }
@@ -11,13 +11,13 @@
 
     &:hover {
       transform: scale(1.1);
-      background-color: #62d0df;
+      background-color: $logoColor;
       border: 1px solid;
       border-radius: 50px;
     }
   }
   &__link {
-    color: #22356f;
+    color: $mainFontColor;
     text-decoration: none;
   }
 }

@@ -3,14 +3,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #62d0df;
+  background-color: $logoColor;
   letter-spacing: -0.01em;
 
   &__text {
     padding-left: 179px;
     font-size: 14px;
     line-height: 11px;
-    color: #fff;
+    color: $textFontCol;
   }
 }
 @media screen and (max-width: 1279px) {

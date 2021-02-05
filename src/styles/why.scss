@@ -1,8 +1,8 @@
 .why {
   display: flex;
   justify-content: space-between;
-  color: #fff;
-  background-color: #62d0df;
+  color: $textFontCol;
+  background-color: $logoColor;
   
   &__choice {
     margin-left: 178px;
@@ -12,7 +12,7 @@
   &__heading {
     margin-top: 0;
     padding-top: 151px;
-    color: #fff;
+    color: $textFontCol;
     font-size: 36px;
     line-height: 27px;
   }

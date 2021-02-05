@@ -13,7 +13,7 @@
       background-color: #c4e769;
     }
     &:nth-child(3) {
-      background-color: #62d0df;
+      background-color: $logoColor;
     }
     &:nth-child(4) {
       background-color: #0052c1;
@@ -26,7 +26,7 @@
   font-size: 32px;
   line-height: 34px;
   letter-spacing: -0.01em;
-  color: #fff;
+  color: $textFontCol;
 
   &:hover {
     transform: scale(1.05);
@@ -41,14 +41,24 @@
     border-radius: 50%;
     background-color: #e9b730;
   }
+  &::before {
+    content: "";
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    background-color: $textFontCol;
+    top: -5px;
+  }
 }
 
 .main__sport {
   margin-bottom: 120px;
   position: relative;
+  
  
   &__card {
     padding-top: 26px;
+    
   }
 }
 
