@@ -40,6 +40,10 @@
 
 @media screen and (max-width: $smallScreen) {
   .why {
+    background-image: url("../images/christopher-campbell-40367.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     &__choice {
       margin: 0 40px;
       width: 100%;

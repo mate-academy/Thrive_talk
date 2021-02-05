@@ -77,6 +77,11 @@
 
 @media screen and (max-width: $smallScreen) {
   .header {
+    background-image: url("../images/photo5244513990699233475.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     &__logo {
       margin-left: 0;
     }
