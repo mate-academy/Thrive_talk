@@ -55,7 +55,6 @@
 }
 @media screen and (max-width: $smallScreen) {
   .assessment {
-    overflow: hidden;
     &__img {
       display: none;
     }
