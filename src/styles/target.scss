@@ -31,5 +31,12 @@
 @media (max-width: 600px) {
   .target {
     display: block;
+    width: 300px;
+    margin: 0 auto;
+
+    &__text {
+      text-align: center;
+      padding: 40px 0 0;
+    }
   }
 }

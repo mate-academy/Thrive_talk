@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: $large-screen) {
   .contacts {
     &__img {
       height: 400px;
@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $contacts-screen) {
   .contacts {
 
     &__text {

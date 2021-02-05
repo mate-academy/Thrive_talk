@@ -1,4 +1,4 @@
-.aid {
+.communication {
   display: grid;
   grid-template-columns: 3fr 1.5fr;
   align-items: center;
@@ -76,8 +76,8 @@
   }
 }
 
-@media (max-width: $small-screan) {
-  .aid {
+@media (max-width: $medium-screen) {
+  .communication {
     grid-template-columns: 1fr;
 
     &__img {

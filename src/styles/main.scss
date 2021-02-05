@@ -1,15 +1,6 @@
-@import "reset";
-@import "variables";
-@import "fonts";
-@import "header";
-@import "nav";
-@import "info";
-@import "about";
-@import "card";
-@import "services";
-@import "target";
-@import "help";
-@import "aid";
-@import "contacts";
-@import "footer";
-@import "copyright";
+.main {
+
+  &__section {
+    margin: 0 auto;
+  }
+}

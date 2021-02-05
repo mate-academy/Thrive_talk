@@ -6,6 +6,12 @@
   &__type {
     display: grid;
     justify-content: center;
+
+    transition: box-shadow 0.5s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 13px 27px rgba(36, 62, 92, 0.46);
+    }
   }
 
   &__title {
@@ -54,16 +60,16 @@
   }
 }
 
-@media (max-width: $small-screan) {
+@media (max-width: $medium-screen) {
   .card {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $small-screen) {
   .card {
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fit, minmax($card-width, auto));
+    grid-auto-rows: $card-width;
 
     &__title {
       &::before {

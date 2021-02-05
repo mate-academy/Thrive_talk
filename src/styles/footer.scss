@@ -1,10 +1,20 @@
-.footer__grid {
-  display: grid;
-  grid-template-columns: 570px 1fr;
+.footer {
+
+  &__section {
+    margin: 0 auto;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 570px 1fr;
+  }
 }
 
-@media (max-width: 1030px) {
-  .footer__grid {
-    display: block;
+@media (max-width: $large-screen) {
+  .footer {
+
+    &__grid {
+      display: block;
+    }
   }
 }
