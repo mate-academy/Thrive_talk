@@ -51,9 +51,19 @@
     @extend %opacity-text;
     line-height: 23px;
 
+    transition: color 500ms;
+
+    &:hover {
+      color: $leading-color;
+    }
+
     &:last-child {
       color: $leading-color;
       opacity: 1;
+
+      &:hover {
+        color: $text-color;
+      }
     }
   }
 }

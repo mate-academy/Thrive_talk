@@ -11,6 +11,12 @@
 
   background-color: #f4f9e2;
 
+  &__section {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
   &__img {
     position: absolute;
     z-index: -2;
