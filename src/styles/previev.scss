@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $smallScreen) {
   .previev {
     &__heading {
       padding-right: 30px;

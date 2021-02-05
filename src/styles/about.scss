@@ -38,7 +38,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $smallScreen) {
   .about__text {
     width: 100%;
     padding: 60px 45px 20px;

@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $smallScreen) {
   .health {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 33.3vw);

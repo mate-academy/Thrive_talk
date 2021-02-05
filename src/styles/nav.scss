@@ -22,7 +22,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $smallScreen) {
   .nav {
     &__list {
       flex-direction: column;

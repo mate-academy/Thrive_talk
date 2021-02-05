@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $smallScreen) {
   .sport {
     flex-direction: column;
     &__card {

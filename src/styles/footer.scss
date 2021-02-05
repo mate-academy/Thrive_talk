@@ -13,7 +13,7 @@
     color: $textFontCol;
   }
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $smallScreen) {
   .footer__text {
     padding-left: 10%;
   }

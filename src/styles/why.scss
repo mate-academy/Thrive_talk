@@ -38,7 +38,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $smallScreen) {
   .why {
     &__choice {
       margin: 0 40px;

@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $smallScreen) {
   .info-work {
     &__img {
       display: none;
