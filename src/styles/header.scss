@@ -33,21 +33,6 @@
     top: 35px;
     right: 0;
   }
-
-  &__oval {
-    background: red;
-    width: 200px;
-    height: 280px;
-    border-bottom-left-radius: 50% 25%;
-    border-bottom-right-radius: 50% 25%;
-    border-top-left-radius: 50% 25%;
-    border-top-right-radius: 50% 25%;
-    top: 10px;
-    right: 0;
-    position: absolute;
-    z-index: 1;
-  }
-
   &__rectangle {
     width: 320px;
     height: 900px;
