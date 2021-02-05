@@ -7,13 +7,19 @@
 }
 
 .caption {
-  display: grid;
+  position: relative;
+  max-width: 676px;
+  left: 106px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   &__title {
     color: $navbar-color;
     font-size: $font-size-caption;
   }
+
   &__text {
-    max-width: 676px;
     color: $navbar-color;
     font-size: 36px;
   }

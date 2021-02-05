@@ -1,0 +1,10 @@
+.footer {
+  &__container {
+    display: flex;
+
+    &__photo {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

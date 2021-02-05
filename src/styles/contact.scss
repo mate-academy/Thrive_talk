@@ -1,0 +1,43 @@
+.contact {
+  &__container {
+    display: flex;
+  }
+}
+
+.content {
+  width: 100%;
+  background: $navbar-color;
+  display: grid;
+  grid-template-rows: 80% 30% 20%;
+
+  &__title {
+    font-size: $font-size-caption;
+    font-weight: 400;
+  }
+
+  &__mood {
+    font-size: 64px;
+  }
+
+  &__caption {
+    font-size: 36px;
+    max-width: 579px;
+    line-height: 53px;
+    font-weight: 300;
+  }
+
+  &__anchor {
+    color: $button-color;
+    position: relative;
+    bottom: -59px;
+  }
+}
+
+.wrap {
+  display: grid;
+  max-width: 600px;
+  grid-template-rows: 2fr 1fr 2fr 1fr;
+  position: relative;
+  top: 103px;
+  left: 180px;
+}
