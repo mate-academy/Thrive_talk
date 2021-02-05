@@ -51,7 +51,7 @@
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: $notebook-width) {
   .header__img-container {
     right: -14%;
    

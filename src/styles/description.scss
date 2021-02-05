@@ -36,7 +36,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: calc(#{$tablet-width} + 100px)) {
   .description {
     display: flex;
     align-items: center;

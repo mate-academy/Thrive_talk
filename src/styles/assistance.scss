@@ -53,7 +53,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: calc(#{$notebook-width} + 250px)) {
   .assistance {
     grid-template-areas: "text"
       "img";
@@ -77,7 +77,7 @@
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: calc(#{$tablet-width} - 80px)) {
   .assistance__text {
     font-size: 28px;
     width: 250px;

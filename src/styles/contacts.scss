@@ -58,7 +58,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: calc(#{$notebook-width} + 200px)) {
   .contacts {
 
     &__info {
@@ -76,7 +76,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: calc(#{$notebook-width} + 100px)) {
   .contacts {
     grid-template-areas: "img"
       "text"

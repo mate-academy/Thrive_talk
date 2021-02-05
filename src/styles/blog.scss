@@ -43,7 +43,7 @@
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: calc(#{$notebook-width} + 350px)) {
   .blog {
     &__description {
       padding: 50px;
@@ -55,7 +55,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: calc(#{$notebook-width} + 100px)) {
   .blog {
     grid-template-areas: "img"
       "text";
@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: calc(#{$tablet-width} + 80px)) {
   .blog__text {
     width: 200px;
 

@@ -36,7 +36,7 @@
 
 }
 
-@media (max-width : 1000px) {
+@media (max-width : $notebook-width) {
   .about {
     grid-template-rows: auto;
     &__info {

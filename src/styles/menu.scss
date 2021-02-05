@@ -39,7 +39,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: calc(#{$tablet-width} + 100px)) {
   .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $tablet-width) {
   .menu {
     &__logo {
       justify-self: start;

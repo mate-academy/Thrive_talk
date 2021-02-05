@@ -49,13 +49,13 @@
   }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: $desktop-width) {
   .services {
     grid-template-columns: repeat(3, auto);
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: $mobile-width) {
   .services {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     grid-auto-rows: 300px;
