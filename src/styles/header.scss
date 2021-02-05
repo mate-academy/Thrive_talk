@@ -19,6 +19,8 @@
 
   &__nav {
     margin-top: 27px;
+    position: relative;
+    z-index: 4;
   }
 
   &__img {
