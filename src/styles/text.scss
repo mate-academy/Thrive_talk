@@ -26,5 +26,11 @@
   .text__cards {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 200px);
+    &_card {
+      padding: 40px;
+    }
+    &_heading {
+      line-height: 28px;
+    }
   }
 }

@@ -53,3 +53,22 @@
     width: 480px;
   }
 }
+@media screen and (max-width: 1279px) {
+  .assessment {
+    overflow: hidden;
+    &__img {
+      display: none;
+    }
+    &__text {
+      width: 100%;
+      padding: 0 40px;
+    
+      &_heading {
+        padding-top: 30px;
+        &::before {
+          top: 0;
+        }
+      }
+    }
+  }
+}

@@ -49,3 +49,23 @@
     }
   }
 }
+
+@media screen and (max-width: 1279px) {
+  .info-work {
+    &__img {
+      display: none;
+    }
+    &__item {
+      flex-direction: column;
+      margin: auto 0;
+      padding-top: 30px;
+    }
+    
+    &__card_heading {
+      padding-bottom: 0;
+      &_text {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
