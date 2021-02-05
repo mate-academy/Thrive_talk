@@ -1,7 +1,29 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "nav";
+@import "section";
+@import "logo";
+@import "info";
+@import "why-thrive";
+@import "about-us";
+@import "help";
+@import "item";
+@import "help-large";
+@import "articles";
+@import "should-know";
+@import "button";
+@import "contact-us";
+@import "adress";
+@import "footer";
 
-body {
-  background: $c-gray;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Larsseit" , "Larsseit-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
 }

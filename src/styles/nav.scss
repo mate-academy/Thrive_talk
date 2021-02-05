@@ -1,0 +1,21 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 243px;
+  }
+
+  &__link {
+    padding: 5px 2px;
+
+    font-size: 14px;
+    border-bottom: 1px solid transparent;
+    color: $link-color;
+    transition: border-bottom 0.5s;
+
+    &:hover {
+      border-color: $link-color;
+    }
+  }
+
+}

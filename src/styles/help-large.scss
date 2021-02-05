@@ -1,0 +1,60 @@
+.help-large {
+  padding-bottom: 22px;
+
+  &__item {
+    line-height: 34px;
+  }
+
+  &__card {
+    box-sizing: border-box;
+    padding: 26% 64px 59% 78px;
+
+    &:first-child {
+      background-color: #22356f;
+    }
+
+    &:nth-child(2) {
+      background-color: #0052c1;
+    }
+
+    &:nth-child(3) {
+      background-image: url("../images/fruit.jpg");
+      background-size: cover;
+
+    }
+
+    &:nth-child(4) {
+      background-color: $active-color;
+    }
+
+    &:nth-child(5) {
+      background-color: #dee1ff;
+    }
+
+    &:nth-child(6) {
+      background-color: #8f00ff;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}
+
+@media screen and(max-width: $middle-screen) {
+  .help-large {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and(max-width: $help-small-screen) {
+  .help-large {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

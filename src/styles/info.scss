@@ -1,0 +1,53 @@
+.info {
+  position: relative;
+  z-index: 5;
+  width: 600px;
+
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    font-size: 48px;
+    line-height: 53px;
+    color: $link-color;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-bottom: 63px;
+
+    font-size: 24px;
+    line-height: 42px;
+    color: $link-color;
+  }
+}
+
+@media screen and(max-width: $info-screen) {
+  .info {
+
+    &__logo {
+
+      &::before {
+        content: "";
+        display: block;
+        margin-bottom: 15px;
+        height: 3px;
+        width: 100vw;
+
+        background-color: $active-color;
+
+      }
+    }
+
+    &__title {
+      margin-bottom: 50px;
+
+      font-size: 25px;
+      line-height: 30px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+}

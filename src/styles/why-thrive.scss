@@ -1,0 +1,68 @@
+.why-thrive {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 179px;
+
+  background-color: $active-color;
+
+  &__img {
+    width: 525px;
+  }
+
+  &__content {
+    padding-top: 151px;
+  }
+
+  &__title {
+    margin-bottom: 76px;
+
+    font-size: 29px;
+    line-height: 27px;
+    color: #fff;
+  }
+
+  &__text {
+    max-width: 600px;
+
+    font-size: 20px;
+    line-height: 35px;
+    color: #fff;
+  }
+
+  &__strong {
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: bold;
+  }
+}
+
+@media screen and(max-width: $middle-screen) {
+  .why-thrive {
+    flex-direction: column;
+    padding: 0;
+
+    &__img {
+      width: 100vw;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    &__strong {
+      font-size: 20px;
+      line-height: 15px;
+      font-weight: bold;
+    }
+
+    &__content {
+      padding: 50px 20px;
+    }
+
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+}

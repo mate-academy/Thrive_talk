@@ -1,0 +1,137 @@
+.header {
+  position: relative;
+
+  height: 840px;
+  padding: 27px 137px 0 179px;
+
+  background-color: #f4f9e2;
+  overflow: hidden;
+
+  &__photo-border {
+
+    position: absolute;
+    z-index: 2;
+
+    right: -11%;
+    top: 12%;
+
+    width: 640px;
+    height: 440px;
+
+    border-radius: 312px;
+    background-position: left;
+    background-size: cover;
+    transform: rotate(-30deg);
+    overflow: hidden;
+  }
+
+  &__photo {
+    position: absolute;
+    z-index: -2;
+
+    width: 800px;
+    height: 544px;
+
+    object-fit: contain;
+    object-position: left;
+    transform: rotate(30deg);
+  }
+
+  &__decoration {
+    position: absolute;
+    top: 0;
+    right: -95px;
+
+    width: 540px;
+    height: 440px;
+
+    background-color: #edfdff;
+    border-radius: 312px;
+    transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+
+  }
+
+  &__top {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 174px;
+    max-width: 2000px;
+  }
+
+  &__button {
+    border: 2px solid $active-color;
+    border-radius: 50px;
+    background-color: $active-color;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+
+    &__link {
+      display: inline-block;
+      height: 50px;
+      width: 150px;
+
+      line-height: 50px;
+      font-size: 14px;
+      color: #fff;
+      transition: color 0.5s;
+
+      &:hover {
+        color: $active-color;
+      }
+    }
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:focus {
+      border-color: transparent;
+      outline: none;
+    }
+  }
+
+}
+
+@media screen and(max-width: $info-screen) {
+  .header {
+    padding: 10px 20px;
+    height: 750px;
+
+    &__photo-border,
+    &__photo,
+    &__decoration {
+      display: none;
+    }
+
+    &__logo {
+      margin-bottom: 30px;
+    }
+
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+    &__nav {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and(min-width: $large-screen) {
+  .header {
+    padding: 27px calc(50% - 600px) 0;
+
+    &__top {
+      padding-left: 200px;
+    }
+
+    &__photo-border {
+      right: -200px;
+    }
+  }
+}
