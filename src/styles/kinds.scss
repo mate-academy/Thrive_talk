@@ -24,41 +24,40 @@
       background: #e9b730;
     }
   }
-}
+  &__box {
+    display: grid;
+    justify-content: center;
 
-.kinds__box {
-  display: grid;
-  justify-content: center;
+    height: 480px;
+    background-size: cover;
 
-  height: 480px;
-  background-size: cover;
+  }
 
-}
+  &__box:nth-child(1) {
+    background-color: #22356f;
+  }
 
-.kinds__box:nth-child(1) {
-  background-color: #22356f;
-}
+  &__box:nth-child(2) {
+    background-color: #0052c1;
+  }
 
-.kinds__box:nth-child(2) {
-  background-color: #0052c1;
-}
+  &__box:nth-child(3) {
+    background-image: url(../images/kinds_barry.png);
+    background-position: center;
+    background-size: cover;
+  }
 
-.kinds__box:nth-child(3) {
-  background-image: url(../images/kinds_barry.png);
-  background-position: center;
-  background-size: cover;
-}
+  &__box:nth-child(4) {
+    background-color: #62d0df;
+  }
 
-.kinds__box:nth-child(4) {
-  background-color: #62d0df;
-}
+  &__box:nth-child(5) {
+    background-color: #dee1ff;
+  }
 
-.kinds__box:nth-child(5) {
-  background-color: #dee1ff;
-}
-
-.kinds__box:nth-child(6) {
-  background-color: #8f00ff;
+  &__box:nth-child(6) {
+    background-color: #8f00ff;
+  }
 }
 
 @media screen and (max-width:1100px) {

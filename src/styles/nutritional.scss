@@ -4,34 +4,33 @@
   align-items: center;
   margin-bottom: 50px;
 
-}
+  &__text--wrap {
+    margin-top: 25px;
+    width: 298px;
+    text-align: center;
+  }
 
-.nutritional__text--wrap {
-  margin-top: 25px;
-  width: 298px;
-  text-align: center;
-}
+  &__box {
+    text-align: center;
+  }
 
-.nutritional__box {
-  text-align: center;
-}
+  &__title {
+    margin-top: 0;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
 
-.nutritional__title {
-  margin-top: 0;
-  font-size: 28px;
-  line-height: 33px;
-  letter-spacing: -0.03em;
+    color: #22356f;
+  }
 
-  color: #22356f;
-}
+  &__text {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
 
-.nutritional__text {
-  padding-top: 20px;
-  font-size: 16px;
-  line-height: 25px;
-  letter-spacing: -0.03em;
-
-  color: rgba(34, 53, 111, 0.5);
+    color: rgba(34, 53, 111, 0.5);
+  }
 }
 
 @media screen and (max-width:900px) {
@@ -49,10 +48,9 @@
     display: block;
     margin-bottom: 50px ;
 
-  }
-
-  .nutritional__box {
-    display: flex;
-    justify-content: center;
+    &__box {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

@@ -4,13 +4,12 @@
   align-items: center;
   box-sizing: border-box;
   display: grid;
-}
 
-.footer--text {
-  color: white;
-  padding-left: 12%;
+  &__text {
+    color: white;
+    padding-left: 12%;
 
-  font-size: 14px;
-  line-height: 11px;
-  // letter-spacing: -0.006em;
+    font-size: 14px;
+    line-height: 11px;
+  }
 }

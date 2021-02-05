@@ -3,95 +3,95 @@
   grid-template-columns: 60% 40%;
   justify-content: space-between;
   z-index: 1;
-}
 
-.trive__main {
+  &__main {
 
-  display: grid;
-  // margin-left: 23vh;
-  justify-content: center;
-}
+    display: grid;
+    justify-content: center;
+  }
 
-.trive__main--title {
+  &__main--title {
 
-  height: 64px;
-  padding-top: 150px;
-}
+    height: 64px;
+    padding-top: 150px;
+  }
 
-.trive__main--text {
+  &__main--text {
 
-  color: #62d0df;
-  font-size: 24px;
-  line-height: 27px;
-}
+    color: #62d0df;
+    font-size: 24px;
+    line-height: 27px;
+  }
 
-.trive__title {
-  padding-bottom: 50px;
+  &__title {
+    padding-bottom: 50px;
 
-}
+  }
 
-.trive_title--text {
-  font-size: 48px;
-  color: #22356f;
-}
+  &__title--text {
+    font-size: 48px;
+    color: #22356f;
+  }
 
-.trive__contant {
-  box-sizing: border-box;
-}
+  &__contant {
+    box-sizing: border-box;
+  }
 
-.trive__contant--text {
-  font-size: 24px;
-  line-height: 42px;
-  letter-spacing: -0.04em;
-}
+  &__contant--text {
+    font-size: 24px;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+  }
 
-.trive__buttons {
-  display: flex;
-  padding-bottom: 50px;
-}
+  &__buttons {
+    display: flex;
+    padding-bottom: 50px;
+  }
 
-.trive__buttons--contain {
-  height: 50px;
-  margin-top: 25px;
-  text-align: center;
-  color: #f9b640;
-  transition: all 1s;
-}
+  &__buttons--contain {
+    height: 50px;
+    margin-top: 25px;
+    text-align: center;
+    color: #f9b640;
+    transition: all 1s;
+  }
 
-.trive__buttons--first {
-  margin-right: 25px;
-}
+  &__buttons--first {
+    margin-right: 25px;
+  }
 
-.trive__buttons--text {
-  padding-top: 18px;
-  margin: 0;
-}
+  &__buttons--text {
+    padding-top: 18px;
+    margin: 0;
+  }
 
-.trive__buttons--contain:hover {
-  background-color: #f9b640;
-  color: white;
-}
+  &__buttons--contain:hover {
+    background-color: #f9b640;
+    color: white;
+  }
 
-.trive_img {
-  background-image: url(../images/header.png) ;
+  &__img {
+    background-image: url(../images/header.png) ;
 
-  width: 807px;
-  height: 544px;
+    width: 807px;
+    height: 544px;
 
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 320px;
-  transform: matrix(-0.87, 0.5, 0.5, 0.85, 0, 0);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 320px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.85, 0, 0);
 
-}
+  }
 
-.trive_back {
-  width: 807px;
-  height: 544px;
+  &__back {
+    width: 807px;
+    height: 544px;
 
-  margin-left: -100px;
-  background: #edfdff;
-  border-radius: 320px;
-  transform: matrix(-0.5, 0.77, 0.77, 0.5, 0, 0);
+    margin-left: -100px;
+    background: #edfdff;
+    border-radius: 320px;
+    transform: matrix(-0.5, 0.77, 0.77, 0.5, 0, 0);
+
+  }
 
 }
 
@@ -100,14 +100,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &__back {
+      display: none;
+    }
+    &__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  .trive_back {
-    display: none;
-  }
-  .trive__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .trive {
+
+    &__main--title {
+      padding-top: 75px;
+    }
+
+    &__title {
+      padding: 0 10px 50px;
+    }
+
+    &__contant {
+      padding: 0 10px;
+    }
+
+    &__buttons {
+      flex-direction: column;
+    }
+    &__buttons--text {
+      width: 90vw;
+    }
+
+    &__buttons--first {
+      margin: 0;
+    }
   }
 }
