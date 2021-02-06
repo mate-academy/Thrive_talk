@@ -1,6 +1,8 @@
 .contact {
+
   &__container {
     display: flex;
+    height: 800px;
   }
 }
 
@@ -8,7 +10,6 @@
   width: 100%;
   background: $navbar-color;
   display: grid;
-  grid-template-rows: 80% 30% 20%;
 
   &__title {
     font-size: $font-size-caption;
@@ -36,8 +37,7 @@
 .wrap {
   display: grid;
   max-width: 600px;
-  grid-template-rows: 2fr 1fr 2fr 1fr;
+  grid-template-rows: 1.4fr 0.5fr 1fr 1.5fr;
   position: relative;
-  top: 103px;
   left: 180px;
 }
