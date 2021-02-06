@@ -31,18 +31,20 @@
 
   &__link {
     display: inline-block;
+    padding-left: 38px;
+
     font-size: 16px;
     line-height: 23px;
-    padding-left: 38px;
     color: #f9b640;
     white-space: nowrap;
+
     text-decoration: none;
     text-transform: uppercase;
     transition: transform 300ms, color 300ms;
 
     &:hover {
       transform: scale(1.1);
-      color: $buttonColor;
+      color: $orangeColor;
     }
   }
 }
@@ -55,5 +57,16 @@
     &__button {
       margin: 40px;
     }
+  }
+}
+@media screen and (max-width: $phoneScreen) {
+  .previev__button {
+    margin: 40px 20px;
+
+    position: relative;
+    right: 10px;
+  }
+  .previev__link {
+    padding-left: 15px;
   }
 }

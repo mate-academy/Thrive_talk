@@ -1,5 +1,5 @@
 .nav {
-  color: $mainFontColor;
+  color: $darkBlueColor;
   &__list {
     display: flex;
   }
@@ -12,12 +12,12 @@
 
     &:hover {
       transform: scale(1.1);
-      color: $logoColor;
-      border-bottom: 1px solid $mainFontColor;
+      color: $blueColor;
+      border-bottom: 1px solid $darkBlueColor;
     }
   }
   &__link {
-    color: $mainFontColor;
+    color: $darkBlueColor;
     text-decoration: none;
   }
 }

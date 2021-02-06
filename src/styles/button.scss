@@ -1,12 +1,13 @@
 .button {
-  text-transform: uppercase;
   width: 150px;
   height: 50px;
+
   text-align: center;
   transition: background-color 0.5s;
+  text-transform: uppercase;
 
   &__link {
-    color: $textFontCol;
+    color: $mainColor;
     text-decoration: none;
   }
   &:hover {

@@ -33,13 +33,15 @@
   &__link {
     display: block;
     padding-top: 116px;
+    
     font-size: 16px;
     line-height: 23px;
     letter-spacing: 0.1em;
     color: #f9b640;
+
     text-decoration: none;
     text-transform: uppercase;
-    transition: transform 300ms, color 300ms;
+    transition: transform 0.5s, color 0.5s;
 
     &:hover {
       transform: scale(1.05);
@@ -48,7 +50,7 @@
   }
 
   &__name {
-    color: $logoColor;
+    color: $blueColor;
   }
 }
 

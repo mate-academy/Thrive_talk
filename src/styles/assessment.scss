@@ -1,8 +1,9 @@
 .assessment {
   display: flex;
-  color: #fff;
   justify-content: space-between;
-  background-color: $mainFontColor;
+
+  color: $mainColor;
+  background-color: $darkBlueColor;
 
   &__text {
     padding: 0 0 30px 180px;
@@ -10,11 +11,13 @@
   
     &_heading {
       position: relative;
+      padding-top: 300px;
+
       font-size: 64px;
       line-height: 66px;
       font-weight: 500;
       letter-spacing: -0.01em;
-      padding-top: 300px;
+
       &::before {
         position: absolute;
         top: 60px;
@@ -23,6 +26,7 @@
         font-size: 16px;
         line-height: 12px;
         letter-spacing: 0.06em;
+
         content: "Contact us";
         text-transform: uppercase;
       }
@@ -32,6 +36,7 @@
       font-size: 36px;
       line-height: 53px;
       letter-spacing: -0.01em;
+
       padding-bottom: 50px;
     }
 
@@ -39,10 +44,11 @@
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0.1em;
-      color: $logoColor;
+      color: $blueColor;
       text-decoration: none;
+
       &:hover {
-        color: $textFontCol;
+        color: $mainColor;
       }
     }
   }

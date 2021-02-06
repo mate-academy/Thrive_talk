@@ -13,7 +13,7 @@
       background-color: #c4e769;
     }
     &:nth-child(3) {
-      background-color: $logoColor;
+      background-color: $blueColor;
     }
     &:nth-child(4) {
       background-color: #0052c1;
@@ -26,7 +26,7 @@
   font-size: 32px;
   line-height: 34px;
   letter-spacing: -0.01em;
-  color: $textFontCol;
+  color: $mainColor;
 
   &:hover {
     transform: scale(1.05);
@@ -46,8 +46,10 @@
     width: 90%;
     height: 2px;
     position: absolute;
-    background-color: $textFontCol;
     top: -5px;
+    
+    background-color: $mainColor;
+
   }
 }
 

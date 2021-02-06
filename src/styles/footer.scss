@@ -1,16 +1,19 @@
 .footer {
-  height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: $logoColor;
+
+  height: 80px;
+
+  background-color: $blueColor;
+
   letter-spacing: -0.01em;
 
   &__text {
     padding-left: 179px;
     font-size: 14px;
     line-height: 11px;
-    color: $textFontCol;
+    color: $mainColor;
   }
 }
 @media screen and (max-width: $smallScreen) {
