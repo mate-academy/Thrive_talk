@@ -6,6 +6,10 @@
   
   background: $header-bg-color;
 
+  &__info {
+    margin-top: 108px;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -18,7 +22,7 @@
     
     background: $button-color;
     color: #fff;
-    padding: 15px 30px;
+    padding: 15px;
     
     cursor: pointer;
     
@@ -50,7 +54,19 @@
     height: 550px;
     
     object-fit: cover;
-    // border-radius: 320px;
     z-index: 0;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .header {
+    padding: 20px;
+  
+    &__top {
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+    }
   }
 }

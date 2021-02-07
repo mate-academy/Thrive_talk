@@ -4,12 +4,16 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
+
+  &__photo {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
 }
 
 .caption {
-  position: relative;
   max-width: 676px;
-  left: 106px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

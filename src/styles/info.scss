@@ -1,9 +1,5 @@
 .info {
   display: grid;
-  max-width: 484px;
-  
-  position: relative;
-  top: 170px;
   
   &__caption {
     color: $button-color;
@@ -21,6 +17,8 @@
     text-decoration: none;
     font-size: 48px;
     font-weight: 700;
+
+    max-width: 484px;
     
     color: $navbar-color;
     margin-bottom: 20px;
@@ -28,9 +26,25 @@
 
   &__paragraph {
     color: $navbar-color;
-    
+
     font-size: 24px;
-    
+
+    max-width: 484px;
+
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .info {
+    justify-content: center;
+
+    &__caption {
+      text-align: center;
+    }
+
+    &__buttons {
+      margin: 0 auto;
+    }
   }
 }

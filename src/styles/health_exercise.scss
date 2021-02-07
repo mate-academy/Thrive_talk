@@ -2,9 +2,10 @@
   &__container {
     padding-bottom: 40px;
   }
+
   &__wrapp {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fill,minmax(400px,auto));
   }
 }
 
@@ -22,7 +23,15 @@
   }
 
   &__caption {
+    max-width: 276px;
+
     font-size: $font-size-caption;
     color: rgba(34, 53, 111, 0.5);
+  }
+}
+
+@media screen and (max-width:999px) {
+  .health-exercise__wrapp {
+    justify-items: center;
   }
 }
