@@ -1,11 +1,15 @@
 .sport {
   display: flex;
+  overflow: hidden;
+
   &__card {
     display: flex;
     justify-content: center;
     width: 25vw;
     height: 25vh;
     padding: 5vw 0 0 48px;
+    overflow: hidden;
+
     &:nth-child(1) {
       background-color: #ffe2de;
     }
@@ -23,6 +27,7 @@
 
 .card {
   width: 70%;
+
   font-size: 32px;
   line-height: 34px;
   letter-spacing: -0.01em;
@@ -36,18 +41,20 @@
     content: "";
     top: 13px;
     left: -24px;
+
     width: 9px;
     height: 9px;
+
     border-radius: 50%;
     background-color: #e9b730;
   }
   &::before {
     content: "";
-    width: 90%;
-    height: 2px;
     position: absolute;
     top: -5px;
-    
+
+    width: 90%;
+    height: 2px;
     background-color: $mainColor;
 
   }

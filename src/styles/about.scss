@@ -2,14 +2,15 @@
   display: flex;
 
   &__text {
+    position: relative;
+
     margin: 0 auto;
     padding: 150px 0 24px;
     width: 592px;
+
     font-size: 24px;
     line-height: 34px;
     letter-spacing: 0.01em;
-
-    position: relative;
 
     &::after {
       display: block;
@@ -20,7 +21,6 @@
       line-height: 19px;
       letter-spacing: 0.06em;
       color: $darkBlueColor;
-
       text-align: center;
       text-transform: uppercase;
     }
@@ -33,7 +33,6 @@
       font-size: 16px;
       line-height: 23px;
       letter-spacing: 0.06em;
-
       text-transform: uppercase;
       color: $darkBlueColor;
     }

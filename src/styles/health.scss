@@ -6,6 +6,7 @@
   &__card {
     display: flex;
     justify-content: center;
+    
     padding: 7vw 0 0 48px;
 
     &:nth-child(1) {
@@ -17,10 +18,7 @@
     }
 
     &:nth-child(3) {
-      background-image: url("../images/joanna-kosinska-340748.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      background: center/ cover no-repeat url("../images/joanna-kosinska-340748.png");
     }
 
     &:nth-child(4) {

@@ -1,6 +1,7 @@
 .why {
   display: flex;
   justify-content: space-between;
+
   color: $mainColor;
   background-color: $blueColor;
   
@@ -12,15 +13,17 @@
   &__heading {
     margin-top: 0;
     padding-top: 151px;
+
     color: $mainColor;
     font-size: 36px;
     line-height: 27px;
   }
 
   &__text {
+    padding: 45px 0 86px;
+
     font-size: 18px;
     line-height: 35px;
-    padding: 45px 0 86px;
   }
 
   &__strong {
@@ -29,21 +32,15 @@
   }
 
   &__img {
-    height: 604px;
     width: 525px;
 
-    background-image: url("../images/christopher-campbell-40367.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: center/ cover no-repeat url("../images/christopher-campbell-40367.png");
   }
 }
 
 @media screen and (max-width: $smallScreen) {
   .why {
-    background-image: url("../images/christopher-campbell-40367.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: center/ cover no-repeat url("../images/christopher-campbell-40367.png");
     
     &__choice {
       margin: 0 40px;

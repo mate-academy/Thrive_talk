@@ -4,9 +4,7 @@
     width: 570px;
     height: 380px;
 
-    background-image: url("../images/autumn-goodman-242825.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: center/ cover no-repeat url("../images/autumn-goodman-242825.png");
   }
   &__item {
     display: flex;
@@ -17,21 +15,21 @@
   &__card {
     width: 233px;
     height: 172px;
-
     margin-left: 40px;
 
     text-decoration: none;
     
-    &_heading {
+    &-heading {
       padding-bottom: 10px;
 
       font-size: 14px;
       color: $darkBlueColor;
       line-height: 11px;
       letter-spacing: -0.01em;
+
       text-transform: uppercase;
     }
-    &_text {
+    &-text {
       padding-bottom: 32px;
 
       font-size: 14px;
@@ -40,9 +38,10 @@
       color: $darkBlueColor;
       opacity: 0.5;
     }
-    &_link {
+    &-link {
       display: inline-block;
       padding-bottom: 5px;
+      
       text-decoration: none;
       color: $darkBlueColor;
       opacity: 0.5;
@@ -68,7 +67,7 @@
     
     &__card_heading {
       padding-bottom: 0;
-      &_text {
+      &-text {
         padding-bottom: 15px;
       }
     }

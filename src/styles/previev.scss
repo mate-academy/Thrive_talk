@@ -1,27 +1,29 @@
-.previev {
+.preview {
   max-width: 485px;
 
   &__heading {
     font-size: 48px;
     line-height: 54px;
     letter-spacing: -0.04em;
+
     text-transform: uppercase;
 
   }
 
   &__text {
-    font-size: 24px;
-    line-height: 42px;
     margin-right: 30px;
 
+    font-size: 24px;
+    line-height: 42px;
   }
 
   &__button {
     display: inline-block;
     padding: 19px 0;
     margin: 40px 0 80px;
+
     background-color: #f9b640;
-    transition: transform 300ms, background-color 300ms;
+    transition: transform 0.5s, background-color 0.5s;
 
     &:hover {
       transform: scale(1.1);
@@ -50,7 +52,7 @@
 }
 
 @media screen and (max-width: $smallScreen) {
-  .previev {
+  .preview {
     &__heading {
       padding-right: 30px;
     }
@@ -60,13 +62,15 @@
   }
 }
 @media screen and (max-width: $phoneScreen) {
-  .previev__button {
-    margin: 40px 20px;
-
-    position: relative;
-    right: 10px;
-  }
-  .previev__link {
-    padding-left: 15px;
+  .preview {
+    &__button {
+      position: relative;
+      right: 10px;
+      
+      margin: 40px 20px;
+    }
+    &__link {
+      padding-left: 15px;
+    }
   }
 }
