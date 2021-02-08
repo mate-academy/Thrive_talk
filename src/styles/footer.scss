@@ -61,3 +61,27 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width:$middle-break-point) {
+  .footer {
+    &__someinfo {
+      grid-template-columns: 1fr;
+      margin-top: 30px;
+      gap: 40px;
+    }
+  }
+}
+
+@media screen and (max-width:$small-break-point) {
+  .footer {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width:$small-break-point) {
+  .bottom {
+    text-align: center;
+  }
+}

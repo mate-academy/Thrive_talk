@@ -11,7 +11,7 @@
 
 .item {
   height: 240px;
-  width: 480px;
+  max-width: 480px;
   padding-top: 55px;
   padding-left: 104px;
 
@@ -33,5 +33,17 @@
 @media screen and (max-width:999px) {
   .health-exercise__wrapp {
     justify-items: center;
+  }
+}
+
+@media screen and (max-width:$small-break-point) {
+  .health-exercise__wrapp {
+    justify-items: flex-start;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .item {
+    padding-left: 10px;
   }
 }

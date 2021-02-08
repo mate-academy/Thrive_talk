@@ -18,7 +18,6 @@
     height: 800px;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(360px,auto));
-    // grid-template-rows: 360px;
   }
 
   &__card {
@@ -67,6 +66,18 @@
       width: 9px;
       background-color: $card-markup;
       border-radius: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: $small-break-point) {
+  .help {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+
+    &__card {
+      padding-left: 20px;
     }
   }
 }

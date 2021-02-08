@@ -81,5 +81,23 @@
 @media screen and (max-width:900px) {
   .additional-info {
     padding: 50px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    &__title {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width:$small-break-point) {
+  .about-us {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+
+    &__girl {
+      width: 100%;
+      height: 40vh;
+    }
   }
 }

@@ -60,6 +60,7 @@
 
 @media screen and (max-width:1000px) {
   .header {
+    height: auto;
     padding: 20px;
   
     &__top {
@@ -67,6 +68,17 @@
       justify-content: center;
       gap: 20px;
       align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width:550px) {
+  .header {
+    height: auto;
+    padding: 0;
+  
+    &__info {
+      justify-items: start;
     }
   }
 }
