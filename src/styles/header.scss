@@ -1,10 +1,11 @@
 .header {
   height: 840px;
   width: 100%;
-
-  padding: 27px 279px 75px 179px;
+  padding: 27px 180px 75px 179px;
   
   background: $header-bg-color;
+
+  overflow: hidden;
 
   &__info {
     margin-top: 108px;
@@ -26,7 +27,7 @@
     
     cursor: pointer;
     
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 50px;
     
     text-transform: uppercase;
@@ -37,25 +38,30 @@
       outline: none;
     }
     &:hover {
-      background-color: $header-bg-color;
+      background-color: transparent;
       color: $button-color;
-      border: 1px solid black;
+      border: 2px solid $button-color;
     }
   }
 
-  &__img {
-    display: block;
-    
-    position: absolute;
-    top: 38px;
-    right: 0;
-    
-    width: 800px;
-    height: 550px;
-    
-    object-fit: cover;
-    z-index: 0;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+
+  // &__img {
+  //   display: block;
+    
+  //   position: absolute;
+  //   top: 38px;
+  //   right: 0;
+    
+  //   width: 800px;
+  //   height: 550px;
+    
+  //   object-fit: cover;
+  //   z-index: 0;
+  // }
 }
 
 @media screen and (max-width:1000px) {
