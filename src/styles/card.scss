@@ -20,12 +20,12 @@
     padding: 27px 20px;
     width: 242px;
 
-    color: #fff;
+    color: $primary-color;
     font-size: 32px;
     font-weight: 700;
     line-height: 33px;
 
-    border-top: 2px solid #fff;
+    border-top: 2px solid $primary-color;
 
     &::before {
       position: absolute;
