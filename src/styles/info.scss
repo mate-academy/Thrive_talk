@@ -43,7 +43,7 @@
   }
 }
 
-@media (max-width: calc(#{$notebook-width} + 100px)) {
+@media (max-width: $notebook-width + 100px) {
   .info {
     grid-template-areas: "text"
       "img";
@@ -61,7 +61,7 @@
   }
 }
 
-@media  (max-width: calc(#{$mobile-width} + 50px)) {
+@media  (max-width: $mobile-width + 50px) {
   .info {
 
     &__description {

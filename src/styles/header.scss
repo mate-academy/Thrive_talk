@@ -9,7 +9,7 @@
 
   overflow: hidden;
 
-  background-color: #f4f9e2;
+  background-color: $header-background-color;
 
   &__section {
     width: 100%;
@@ -64,7 +64,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: $tablet-width + 100px) {
   .header {
     height: 700px;
     padding: 20px 30px;

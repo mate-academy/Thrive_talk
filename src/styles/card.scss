@@ -14,11 +14,11 @@
   }
 
   &__type--lifting {
-    background-color: #ffe2de;
+    background-color: $lifting-card-color;
   }
 
   &__type--running {
-    background-color: #c4e769;
+    background-color: $running-card-color;
   }
 
   &__type--pumping {
@@ -26,7 +26,7 @@
   }
 
   &__type--iron {
-    background-color: #0052c1;
+    background-color: $iron-card-color;
   }
 }
 
