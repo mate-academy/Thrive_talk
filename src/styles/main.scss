@@ -2,6 +2,19 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
-}
+@import "blocks/info";
+@import "blocks/nav";
+@import "blocks/why-thrive";
+@import "blocks/about";
+@import "blocks/help";
+@import "blocks/help-extra";
+@import "blocks/services";
+@import "blocks/should-know";
+@import "blocks/contact";
+@import "blocks/more";
+@import "blocks/item";
+@import "header";
+@import "reset";
+@import "footer";
+@import "logo";
+@import "button";
