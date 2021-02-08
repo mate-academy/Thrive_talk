@@ -1,5 +1,7 @@
 .header {
   background-color: #f4f9e2;
+  overflow: hidden;
+  position: relative;
 
   &__preview {
     z-index: 3;
@@ -42,12 +44,27 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 0;
 
     width: 320px;
     height: 900px;
 
     background-color: $mainColor;
+  }
+
+  &__oval {
+    position: absolute;
+    top: -75px;
+    right: 65px;
+    z-index: 1;
+
+    height: 760px;
+    width: 500px;
+    
+    border-radius: 312px;
+    background-color: #edfdff;
+    
+    transform: rotate(25deg);
   }
 
   &__button {
@@ -83,6 +100,7 @@
       margin-left: 40px;
     }
     &__img,
+    &__oval,
     &__rectangle {
       display: none;
     }
