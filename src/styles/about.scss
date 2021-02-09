@@ -25,7 +25,7 @@
   &__title--text {
     font-size: 16px;
     line-height: 23px;
-    color: #22356f;
+    color: $c-blue;
   }
 
   &__content--text {
@@ -33,7 +33,7 @@
     line-height: 34px;
     letter-spacing: 0.05em;
 
-    color: #22356f;
+    color: $c-blue;
   }
 
   &__footer {
@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:$bp-large-about) {
   .about {
     &__main {
       display: grid;

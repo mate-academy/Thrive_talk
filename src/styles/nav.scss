@@ -16,19 +16,19 @@
     font-size: 20px;
 
     margin: 0 20px;
-    color: #22356f;
+    color: $c-blue;
     transition: color 0.5s;
     text-decoration: none;
 
     &:hover {
-      color: #1fc8db;
+      color: $c-seablue;
     }
   }
 }
 
 .container__header {
   box-sizing: border-box;
-  background-color: #f4f9e2;
+  background-color: $bc-container-nav;
 }
 
 .header {
@@ -47,21 +47,23 @@
 .hedear__button {
   width: 150px;
   height: 50px;
+  box-sizing: border-box;
   border-radius: 50px;
-  background: #62d0df;
+  background: $c-seablue;
   text-align: center;
   cursor: pointer;
   z-index: 1;
+
 }
 
 .hedear__button--text {
   text-decoration: none;
   display: block;
-  color: white;
+  color: $c-white;
   padding-top: 15px;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:$bp-large-help) {
   .header {
     display: flex;
     flex-direction: column;

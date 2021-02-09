@@ -21,14 +21,14 @@
     line-height: 12px;
     letter-spacing: 0.06em;
 
-    color: #22356f;
+    color: $c-blue;
   }
 
   &__main--content {
     font-size: 36px;
     line-height: 53px;
     letter-spacing: -0.01em;
-    color: #22356f;
+    color: $c-blue;
     padding-top: 100px;
   }
 
@@ -41,22 +41,22 @@
   &__main--text {
     font-size: 16px;
     line-height: 23px;
-    color: #fab63e;
+    color: $c-yellowdark;
     padding: 15px;
     transition: all 1s;
 
     &:hover {
-      background-color: #f9b640;
-      color: white;
+      background-color: $c-yellow;
+      color: $c-white;
     }
   }
 }
 
 .span__text {
-  color: #62d0df;
+  color: $c-seablue;
 }
 
-@media screen and (max-width:730px) {
+@media screen and (max-width: $bp-large-help) {
   .help {
     display: flex;
     flex-direction: column;
@@ -89,7 +89,7 @@
 
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:$bp-small-help) {
   .help {
     &__main--button {
       width: auto;

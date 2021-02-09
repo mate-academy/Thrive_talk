@@ -13,11 +13,11 @@
     margin-top: 57px;
     padding: 27px 20px;
     width: 242px;
-    color: #fff;
+    color: $c-white;
     font-size: 32px;
     font-weight: 700;
     line-height: 33px;
-    border-top: 2px solid #fff;
+    border-top: 2px solid $c-white;
 
     &::before {
       position: absolute;
@@ -27,7 +27,7 @@
       height: 9px;
       content: "";
       border-radius: 50%;
-      background: #e9b730;
+      background: $c-yellow;
     }
   }
   &__wrap {
@@ -53,20 +53,20 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $bp-large-exersice) {
   .exersice__title {
     width: 200px;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: $bp-large-midium) {
   .exersice__wrap {
     display: grid ;
     grid-template-columns: repeat(2 ,1fr);
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: $bp-large-small) {
   .exersice__wrap {
     display: grid;
     grid-template-columns: 1fr;

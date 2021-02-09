@@ -1,13 +1,17 @@
 .nutritional {
   display: grid;
   grid-template-columns: repeat(3 ,1fr);
+  justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  column-gap: 50px;
+  padding: 50px;
 
   &__text--wrap {
+    display: grid;
+    justify-content: center;
     margin-top: 25px;
-    width: 298px;
     text-align: center;
+    max-width: 300px;
   }
 
   &__box {
@@ -20,7 +24,7 @@
     line-height: 33px;
     letter-spacing: -0.03em;
 
-    color: #22356f;
+    color: $c-blue;
   }
 
   &__text {
@@ -33,7 +37,7 @@
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:$bp-large-about) {
   .nutritional {
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
@@ -43,7 +47,7 @@
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:$bp-midium-contact) {
   .nutritional {
     display: block;
     margin-bottom: 50px ;

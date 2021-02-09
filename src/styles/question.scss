@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 65% 1fr;
   justify-content: center;
-  background-color: #62d0df;
+  background-color: $c-seablue;
 
   box-sizing: border-box;
 
@@ -23,7 +23,7 @@
   padding-bottom: 50px;
   font-style: bold;
   font-size: 36px;
-  color: white;
+  color: $c-white;
 }
 
 .question__content {
@@ -33,7 +33,7 @@
 
 .question__content--text {
   font-size: 24px;
-  color: white;
+  color: $c-white;
   line-height: 29px;
 
 }
@@ -42,14 +42,14 @@
   width: 100%;
 }
 
-.qustion__img--fhoto {
+.qustion__fhoto {
   object-fit: cover;
 
   width: 100%;
   height: 100%;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: $bp-large-midium) {
   .question {
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@
     &__img {
       height: 400px;
     }
-    &__img--fhoto {
+    &__fhoto {
       object-fit: cover;
       object-position: center;
     }

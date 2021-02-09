@@ -1,12 +1,12 @@
 .footer {
   height: 80px;
-  background-color: #62d0df;
+  background-color: $c-seablue;
   align-items: center;
   box-sizing: border-box;
   display: grid;
 
   &__text {
-    color: white;
+    color: $c-white;
     padding-left: 12%;
 
     font-size: 14px;
