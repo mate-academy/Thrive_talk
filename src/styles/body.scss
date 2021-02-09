@@ -1,6 +1,9 @@
 .body {
   &__header {
     position: relative;
+
+    max-width: 2000px;
+    margin: 0 auto;
   }
 
   &__footer {
