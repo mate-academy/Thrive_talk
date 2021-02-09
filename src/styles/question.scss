@@ -12,27 +12,25 @@
     width: 555px;
   }
 
-  &_title {
+  &__title {
     display: grid;
-  }
 
-  &__title--text {
-    padding-bottom: 50px;
-    font-style: bold;
-    font-size: 36px;
-    color: $c-white;
+    &--text {
+      padding-bottom: 50px;
+      font-style: bold;
+      font-size: 36px;
+      color: $c-white;
+    }
   }
-
   &__content {
-
     margin-top: 25px;
-  }
 
-  &__content--text {
-    font-size: 24px;
-    color: $c-white;
-    line-height: 29px;
+    &--text {
+      font-size: 24px;
+      color: $c-white;
+      line-height: 29px;
 
+    }
   }
 
   &__img {
