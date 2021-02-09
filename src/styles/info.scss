@@ -34,17 +34,3 @@
     margin-bottom: 60px;
   }
 }
-
-@media screen and (max-width:1000px) {
-  .info {
-    justify-content: center;
-
-    &__caption {
-      text-align: center;
-    }
-
-    &__buttons {
-      margin: 0 auto;
-    }
-  }
-}

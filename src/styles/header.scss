@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:$middle-break-point) {
   .header {
     height: auto;
     padding: 20px;
@@ -61,24 +61,9 @@
       gap: 20px;
       align-items: center;
     }
-  }
-}
 
-@media screen and (max-width:1100px) {
-  .header {
-    &__container {
-      grid-template-columns: 1fr;
-    }
-  }
-}
-
-@media screen and (max-width:550px) {
-  .header {
-    height: auto;
-    padding: 0;
-  
     &__info {
-      justify-items: start;
+      margin-left: 20px;
     }
   }
 }

@@ -1,0 +1,12 @@
+.bottom {
+  height: 80px;
+  background: $button-color;
+
+  &__text {
+    position: absolute;
+    font-weight: 300;
+    left: 194px;
+    line-height: 80px;
+    font-size: 14px;
+  }
+}

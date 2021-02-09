@@ -11,38 +11,3 @@
     height: 100%;
   }
 }
-
-.caption {
-  max-width: 676px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  &__title {
-    color: $navbar-color;
-    font-size: $font-size-caption;
-  }
-
-  &__text {
-    color: $navbar-color;
-    font-size: 36px;
-  }
-}
-
-@media screen and (max-width:$small-break-point) {
-  .genral-info {
-    height: auto;
-    &__container {
-      grid-template-columns: 1fr;
-    }
-
-    &__photo {
-      height: 50vh;
-      width: 100%;
-    }
-
-    &__caption {
-      align-items: center;
-    }
-  }
-}

@@ -1,0 +1,30 @@
+.block-info {
+  display: grid;
+  grid-template-rows: 68px;
+  max-width: 207px;
+
+  &__link {
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(34, 53, 111, 0.5);
+    
+    &:last-child {
+      font-size: 14px;
+      color: $button-color;
+    }
+  }
+
+  &__title {
+    color: $navbar-color;
+  }
+
+  &__suptitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: rgba(34, 53, 111, 0.5);
+
+    text-decoration: none;
+  }
+}

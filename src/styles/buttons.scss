@@ -9,18 +9,17 @@
     color: #f9b640;
     background: transparent;
 
-    transition: all 0.3s ease-in;
+    transition: background 0.3s ease-in , color 0.3s ease-in ;
     text-transform: uppercase;
     
-    &:focus {
-      outline: none;
+    margin-top: 30px;
+  
+    :hover {
+      cursor: pointer;
+      
+  
+      color: #fff;
+      background: #f9b640;
     }
-  }
-
-  &__item:hover {
-    cursor: pointer;
-    
-    color: #fff;
-    background: #f9b640;
   }
 }
