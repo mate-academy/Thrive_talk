@@ -42,15 +42,12 @@
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
     align-items: center;
-    margin-bottom: 50px;
-
   }
 }
 
 @media screen and (max-width:$bp-midium-contact) {
   .nutritional {
     display: block;
-    margin-bottom: 50px ;
 
     &__box {
       display: flex;
