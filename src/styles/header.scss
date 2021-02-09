@@ -20,6 +20,8 @@
   &__button {
     font-size: 14px;
     font-weight: 700;
+
+    text-decoration: none;
     
     background: $button-color;
     color: #fff;
@@ -47,23 +49,5 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width:$middle-break-point) {
-  .header {
-    height: auto;
-    padding: 20px;
-  
-    &__top {
-      flex-direction: column;
-      justify-content: center;
-      gap: 20px;
-      align-items: center;
-    }
-
-    &__info {
-      margin-left: 20px;
-    }
   }
 }

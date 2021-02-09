@@ -1,3 +1,21 @@
+// HEADER
+@media screen and (max-width:$middle-break-point) {
+  .header {
+    height: auto;
+    padding: 20px;
+  
+    &__top {
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+    }
+
+    &__info {
+      margin-left: 20px;
+    }
+  }
+}
 // ABOUT US
 @media screen and (max-width:$middle-break-point) {
   .about-us {
