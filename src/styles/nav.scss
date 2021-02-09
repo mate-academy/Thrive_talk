@@ -45,33 +45,12 @@
   }
 }
 
-.header {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-
-  padding-top: 25px;
-
-  &__container {
-    box-sizing: border-box;
-    background-color: $bc-container-nav;
-  }
-
-}
-
 .logo {
   background-position: center;
   padding-top: 10px;
 }
 
 @media screen and (max-width:$bp-large-help) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .nav {
     &__list {
       display: flex;
