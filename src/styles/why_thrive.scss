@@ -1,0 +1,48 @@
+.why_thrive {
+  @include flex_aligning ($horizontal: space-between);
+  background-color: #62d0df;
+
+  &__block-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 555px;
+    margin: 150px auto 0;
+    color: $color_white;
+    text-align: center;
+  }
+
+  &__title {
+    color: $color_white;
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+  }
+
+  &__paragraph {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  &__paragraph-bold {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  &__block-2 {
+    text-align: center;
+    height: 600px;
+  }
+
+  &__img {
+    max-width: 525px;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  .why_thrive {
+    display: flex;
+    flex-direction: column;
+  }
+}

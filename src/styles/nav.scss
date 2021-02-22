@@ -1,0 +1,19 @@
+.nav {
+
+  &__list {
+    @include flex_aligning($horizontal: space-between, $vertical: center);
+  }
+
+  &__item {
+    margin-right: 20px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 5px;
+    color: $color_dark_blue;
+    border: 1px solid transparent;
+    @include hover (border-bottom-color, $color_dark_blue);
+    @include hover (transform, scale(1.05));
+  }
+}

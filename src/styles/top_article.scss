@@ -1,0 +1,51 @@
+.top_article {
+  padding-bottom: 100px;
+
+  &__block--1 {
+    margin-top: 150px;
+    max-width: 470px;
+  }
+
+  &__span {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+    color: $color_sky_blue;
+    @include hover (transform, scale(1.05));
+  }
+
+  &__title {
+    margin-top: 20px;
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.04em;
+    color: $color_dark_blue;
+  }
+
+  &__paragraph {
+    font-size: 24px;
+    line-height: 42px;
+    color: $color_dark_blue;
+  }
+
+  &__link {
+    color: #fab63e;
+    padding: 10px 30px;
+    @include hover (color, $color_white);
+    @include hover (background-color, #fab63e);
+  }
+
+  &__background {
+    position: absolute;
+    width: 807.71px;
+    height: 544.93px;
+    right: 20.93px;
+    top: 0.66px;
+    background: #edfdff;
+    border-radius: 312.16px;
+    transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+    z-index: 1;
+  }
+
+}
