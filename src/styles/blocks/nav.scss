@@ -1,0 +1,16 @@
+.nav {
+  width: 233px;
+  margin: 0 319px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $colorDarkBlue;
+  }
+}
