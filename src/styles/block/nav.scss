@@ -1,0 +1,22 @@
+.nav {
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding-left: 20px;
+
+    &--active {
+      padding: 0 0 10px;
+      border-bottom: 1px solid $darkblue-color;
+    }
+  }
+
+  &__link {
+    color: $darkblue-color;
+  }
+}
