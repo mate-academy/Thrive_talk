@@ -16,21 +16,45 @@
   &__block {
     display: grid;
     justify-content: center;
+    transition: background $small-duration;
 
     &--first {
       background-color: $pink-color;
+
+      &:hover {
+        background-image: url(../images/ex1.jpg);
+      }
     }
 
     &--second {
       background-color: $lime-color;
+
+      &:hover {
+        background-image: url(../images/ex4.jpg);
+      }
     }
 
     &--third {
       background-color: $sky-color;
+
+      &:hover {
+        background-image: url(../images/ex2.jpg);
+      }
     }
 
     &--fourth {
       background-color: $blue-color;
+
+      &:hover {
+        background-image: url(../images/ex6.jpg);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 

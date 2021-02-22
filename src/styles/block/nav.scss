@@ -8,15 +8,27 @@
   }
 
   &__item {
-    padding-left: 20px;
+    margin-left: 20px;
 
     &--active {
       padding: 0 0 10px;
       border-bottom: 1px solid $darkblue-color;
+      transition: border $small-duration;
+
+      &:hover {
+        border: none;
+      }
     }
   }
 
   &__link {
+    padding: 0 0 10px;
     color: $darkblue-color;
+    transition: color $small-duration, border-bottom $small-duration;
+
+    &:hover {
+      color: $azur-color;
+      border-bottom: 1px solid $azur-color;
+    }
   }
 }

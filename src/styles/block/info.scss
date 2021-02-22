@@ -71,4 +71,14 @@
     max-width: 220px;
     color: $darkblue-alpha-color;
   }
+
+  &__link {
+    color: $darkblue-alpha-color;
+    transition: color $small-duration, border-bottom $small-duration;
+
+    &:hover {
+      color: $azur-color;
+      border-bottom: 1px solid $azur-color;
+    }
+  }
 }

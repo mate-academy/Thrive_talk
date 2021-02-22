@@ -15,29 +15,61 @@
   &__block {
     display: grid;
     justify-content: center;
+    transition: background $small-duration;
 
     &--first {
       background-color: $darkblue-color;
+
+      &:hover {
+        background-image: url(../images/ex1.jpg);
+      }
     }
 
     &--second {
       background-color: $blue-color;
+
+      &:hover {
+        background-image: url(../images/ex2.jpg);
+      }
     }
 
     &--third {
       background-color: $pink-color;
+
+      &:hover {
+        background-image: url(../images/ex3.jpg);
+      }
     }
 
     &--fourth {
       background-color: $azur-color;
+
+      &:hover {
+        background-image: url(../images/ex4.jpg);
+      }
     }
 
     &--fifth {
       background-color: $lightgrey-color;
+
+      &:hover {
+        background-image: url(../images/ex5.jpg);
+      }
     }
 
     &--sixth {
       background-color: $violet-color;
+
+      &:hover {
+        background-image: url(../images/ex6.jpg);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 

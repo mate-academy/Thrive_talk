@@ -19,5 +19,6 @@
 @import "./block/footer.scss";
 
 html {
-  font-family: Larsseit, Arial, sans-serif;
+  font-family: $larsseit-font;
+  scroll-behavior: smooth;
 }

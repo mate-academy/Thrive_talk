@@ -40,6 +40,7 @@
     background-color: $azur-color;
     font-weight: 700;
     z-index: 1;
+    cursor: pointer;
     transition: background-color $small-duration,
       color $small-duration,
       border $small-duration;
@@ -49,13 +50,21 @@
       color: $azur-color;
       border: 2px solid $azur-color;
     }
+
+    @media (max-width: $breakpoint-middle) {
+      display: none;
+    }
   }
 
   &__iner {
     position: absolute;
-    max-width: 500px; // ?
+    max-width: 500px;
     margin-top: 170px;
     z-index: 1;
+
+    @media (max-width: $breakpoint-small) {
+      margin-top: 100px;
+    }
   }
 
   &__title {
@@ -67,11 +76,12 @@
 
     @media (max-width: $breakpoint-middle) {
       font-size: 32px;
+      margin: 34px 0;
     }
   }
 
   &__text {
-    max-width: 500px; // ??
+    max-width: 500px;
     margin-bottom: 70px;
     font-size: 24px;
     color: $darkblue-color;
