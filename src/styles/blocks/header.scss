@@ -1,11 +1,24 @@
 .header {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: $width;
+  overflow: hidden;
   &__top {
-    margin: 27px 0 0 179px;
+    position: absolute;
+    top: 27px;
+    left: 179px;
+    margin: auto;
+    z-index: 2;
   }
-  // &__text {
-
-  // }
-  // &__picture {
-
-  // }
+  &__text {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  &__picture {
+    overflow: hidden;
+    z-index: 1;
+  }
 }
