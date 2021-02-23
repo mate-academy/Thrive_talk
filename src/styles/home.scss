@@ -1,0 +1,22 @@
+@import "_reset";
+@import "./fonts";
+@import "utils";
+@import ".//Blocks/container.scss";
+@import "./Blocks/header.scss";
+@import "./Blocks/nav.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Larsseit", sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  color: $lightBlueColor;
+}

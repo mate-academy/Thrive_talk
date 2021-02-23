@@ -1,0 +1,114 @@
+.nav {
+  margin-bottom: 187px;
+  @include flexBetween;
+  z-index: 100;
+
+  &__logo {
+    @include flexCenter;
+    align-items: center;
+  }
+
+  .burger__logo {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__list {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    height: auto;
+    width: auto;
+    @include flexBetween;
+    align-content: center;
+    gap: 58px;
+    list-style: none;
+
+    @include tablet {
+      gap: 20px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__item {
+    @include flexCenter;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $linkColor;
+    cursor: pointer;
+    transition: color $transition linear;
+
+    &:hover {
+      color: lighten($linkColor, 40%);
+    }
+
+    &--active {
+      padding-inline: 5px;
+      position: relative;
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -60%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $linkColor;
+      }
+    }
+  }
+
+  &__button {
+    @include flexCenter;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    margin-right: 130px;
+    cursor: pointer;
+    text-decoration: none;
+    color: $whiteColor;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 50px;
+    background-color: $lightBlueColor;
+    z-index: 3;
+    transition: color $transition, background-color $transition;
+
+    &:hover {
+      color: $lightBlueColor;
+      background-color: #f4f9e2;
+      border: 1px solid $lightBlueColor;
+    }
+
+    @include mobile {
+      margin-right: 20px;
+    }
+
+    @include laptop {
+      margin-right: 70px;
+    }
+
+    @include tablet {
+      margin-right: 20px;
+      width: 100px;
+    }
+  }
+}
