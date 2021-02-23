@@ -1,8 +1,12 @@
 .footer {
-  position: relative;
-  height: 80px;
+  max-height: 80px;
   background-color: $azur-color;
   color: $white-color;
+
+  &__wrapper {
+    position: relative;
+    height: 80px;
+  }
 
   &__copy {
     position: absolute;

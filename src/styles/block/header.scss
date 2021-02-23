@@ -1,9 +1,12 @@
 .header {
-  position: relative;
-  height: 840px;
-  padding: 0 30px;
-  overflow: hidden;
   background-color: $beige-color;
+
+  &__wrapper {
+    position: relative;
+    padding: 0 30px;
+    overflow: hidden;
+    height: 840px;
+  }
 
   &__nav {
     position: absolute;
