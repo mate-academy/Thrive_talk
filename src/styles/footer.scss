@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: $color_sky_blue;
+
+  &__paragraph {
+    margin-left: 180px;
+    font-size: 14px;
+    line-height: 11px;
+    color: $color_white;
+  }
+}

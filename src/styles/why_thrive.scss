@@ -1,5 +1,6 @@
 .why_thrive {
   @include flex_aligning ($horizontal: space-between);
+  align-items: center;
   background-color: #62d0df;
 
   &__block-content {
@@ -29,18 +30,18 @@
   }
 
   &__block-2 {
+    display: flex;
     text-align: center;
-    height: 600px;
   }
 
   &__img {
+    width: 100%;
     max-width: 525px;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .why_thrive {
     display: flex;
     flex-direction: column;

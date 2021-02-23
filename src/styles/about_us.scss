@@ -1,13 +1,15 @@
 .about_us {
-  height: 360px;
+  position: relative;
 
   &--wrapper {
-    margin-top: 150px;
+    padding-top: 150px;
   }
 
   &__title {
+    position: absolute;
     font-size: 16px;
     line-height: 22px;
+    font-weight: 500;
     color: $color_dark_blue;
     margin-left: 100px;
   }
@@ -21,8 +23,9 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .about_us__title {
-    text-align: center;
+    top: 50px;
+    right: 50%;
   }
 }

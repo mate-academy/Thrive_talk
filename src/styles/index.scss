@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @import "reset";
 @import "utils";
 @import "fonts";
@@ -13,4 +17,9 @@
 @import "nav.scss";
 @import "top_article";
 @import "why_thrive.scss";
-@import "about_us.scss"
+@import "about_us.scss";
+@import "we_can.scss";
+@import "you-should.scss";
+@import "contact.scss";
+@import "info.scss";
+@import "footer.scss";

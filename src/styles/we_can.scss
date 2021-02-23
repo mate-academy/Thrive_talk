@@ -1,0 +1,129 @@
+.we_can {
+  padding-top: 75px;
+
+  &__title {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color_dark_blue;
+    opacity: 0.5;
+    font-weight: 500;
+  }
+
+  &__sport {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+
+  &__sport_block {
+    @include grid_aligning($horizontal: center);
+    min-width: 300px;
+    height: 360px;
+    padding-top: 50px;
+
+  }
+
+  &__sport--title {
+    @extend %card__title;
+  }
+
+  &__block--1 {
+    background-color: #ffe2de;
+  }
+
+  &__block--2 {
+    background-color: #c4e769;
+  }
+
+  &__block--3 {
+    background-color: #62d0df;
+  }
+
+  &__block--4 {
+    background-color: #0052c1;
+  }
+
+  &__health {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 120px;
+  }
+
+  &__health_block {
+    @include grid_aligning ($horizontal: center);
+    height: 480px;
+    min-width: 300px;
+    padding-top: 50px;
+  }
+
+  &__health--title {
+    @extend %card__title;
+    padding: 30px 50px;
+  }
+
+  &__health_block--1 {
+    background-color: $color_dark_blue;
+  }
+
+  &__health_block--2 {
+    background-color: #0052c1;
+  }
+
+  &__health_block--3 {
+    background: url("../images/nutrition.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  &__health_block--4 {
+    background-color: #62d0df;
+  }
+
+  &__health_block--5 {
+    background-color: #dee1ff;
+  }
+
+  &__health_block--6 {
+    background-color: #8f00ff;
+  }
+
+  &__training {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 20px;
+  }
+
+  &__training_block {
+    @include grid_aligning ($horizontal: center);
+    height: 240px;
+    // min-width: 300px;
+    padding-top: 50px;
+  }
+
+  &__training--container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  &__training--title {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+    color: $color_dark_blue;
+  }
+}
+
+@media (max-width: 1200px) {
+  .we_can__sport,
+  .we_can__health,
+  .we_can__training {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 600px) {
+  .we_can__sport,
+  .we_can__health,
+  .we_can__training {
+    grid-template-columns: 1fr;
+  }
+}

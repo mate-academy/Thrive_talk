@@ -1,0 +1,9 @@
+.info {
+  display: flex;
+
+  &__title {
+    font-size: 14px;
+    line-height: 11px;
+    color: $color_dark_blue;
+  }
+}
