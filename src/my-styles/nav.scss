@@ -1,0 +1,135 @@
+.nav {
+  box-sizing: border-box;
+  background-color: transparent;
+  height: 80px;
+  max-width: $max-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: $color-blue;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    gap: 20px;
+  }
+
+  &__menu-link {
+    font-size: 14px;
+    color: $text-color;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 1s;
+  }
+
+  &__menu-link:hover {
+    font-weight: bold;
+    //transform: scale(2);
+  }
+
+  &__contact {
+    width: 150px;
+    height: 50px;
+    background: $color-blue;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3;
+
+    &-link {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.mobmenu {
+  display: none;
+}
+
+@include _mob {
+  .nav__menu {
+    display: none;
+  }
+
+  .mobmenu {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .mobmenu__link {
+    font-size: large;
+    text-decoration: none;
+    opacity: 1;
+  }
+
+  .mobmenu__burger {
+    display: flex;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background-color: cyan;
+    z-index: 99;
+  }
+  .mobmenu__burger span {
+    position: absolute;
+    background-color: black;
+    width: 20px;
+    height: 2px;
+    top: 9px;
+    z-index: 99;
+
+  }
+  .mobmenu__burger:before,
+  .mobmenu__burger:after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    left: 0;
+    z-index: 99;
+  }
+  .mobmenu__burger:before {
+    top: 0;
+    z-index: 99;
+  }
+  .mobmenu__burger:after {
+    bottom: 0;
+    z-index: 99;
+  }
+
+  .mobmenu__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: chartreuse;
+    opacity: 0.5;
+    z-index: 97;
+  }
+
+  .mobmenu__menu.active {
+    top: 0;
+  }
+}

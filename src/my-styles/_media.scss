@@ -1,0 +1,10 @@
+$max-width: 1960px;
+$color-blue: #62d0df;
+$text-color: #22356f;
+$color-button-header:#f9b640;
+
+@mixin _mob {
+  @media (max-width: 750px) { // вcе що нище 
+    @content;
+  }
+}
