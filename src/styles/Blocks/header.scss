@@ -20,6 +20,10 @@
 
   &__logo {
     margin-bottom: 38px;
+
+    @include wide {
+      margin-bottom: 50px;
+    }
   }
 
   &__content {
@@ -48,6 +52,10 @@
     letter-spacing: -0.04em;
     text-transform: uppercase;
     margin-bottom: 50px;
+
+    @include wide {
+      margin-bottom: 60px;
+    }
   }
 
   &__article {
@@ -64,6 +72,10 @@
     display: flex;
     gap: 38px;
     padding-bottom: 75px;
+
+    @include wide {
+      padding-bottom: 85px;
+    }
 
     @include tablet {
       justify-content: center;
