@@ -1,0 +1,36 @@
+.method {
+  &__title {
+    display: block;
+    height: 48px;
+    width: 240px;
+    margin: 0 23px 20px 0;
+    color: $colorDarkBlue;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: -0.01em;
+  }
+  &__value {
+    margin-right: 32px;
+    color: rgba(34, 53, 111, 0.5);
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+  }
+  &__phone {
+    display: block;
+    margin-top: 30px;
+    color: rgba(34, 53, 111, 0.5);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+  }
+  &__email {
+    color: #005ee2;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+  }
+}

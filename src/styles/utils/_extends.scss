@@ -1,4 +1,8 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+%title {
+  text-transform: uppercase;
+  font-style: regular;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: $colorDarkBlue;
 }

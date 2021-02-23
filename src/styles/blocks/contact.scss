@@ -1,0 +1,43 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  &__element {
+    display: flex;
+  }
+  &__text {
+    padding: 103px 201px 0 180px;
+    background-color: $colorDarkBlue;
+    color: $colorWhite;
+  }
+  &__title {
+    @extend %title;
+    color: $colorWhite;
+    margin-bottom: 230px;
+  }
+  &__motivation {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+    margin-bottom: 75px;
+  }
+  &__free {
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    margin-bottom: 40px;
+  }
+  &__info {
+    display: flex;
+    margin: 98px 40px 100px 68px;
+  }
+}
+
+.buttons__button--blue {
+  color: $colorBlue;
+  margin-bottom: 42px;
+  &:hover {
+    background-color: $colorBlue;
+    color: $colorDarkBlue;
+  }
+}

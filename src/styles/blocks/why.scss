@@ -1,0 +1,26 @@
+.why {
+  display: flex;
+  background-color: $colorBlue;
+  color: $colorWhite;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 151px 0 0 179px;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+    margin-bottom: 75px;
+  }
+  &__paragraph {
+    width: 555px;
+    font-size: 24px;
+    line-height: 35px;
+    margin-right: 181px;
+  }
+  &__photo {
+    position: relative;
+    right: 0;
+  }
+}

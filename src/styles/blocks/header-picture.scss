@@ -1,0 +1,30 @@
+.header-picture {
+  &__background {
+    position: absolute;
+    left: 825px;
+    top: 0;
+    width: 807.71px;
+    height: 544.93px;
+    background-color: #edfdff;
+    border-radius: 312.16px;
+    transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+  }
+  &__container {
+    position: absolute;
+    left: 805px;
+    top: 100px;
+    width: 807.71px;
+    height: 544.93px;
+    border-radius: 312.16px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+    overflow: hidden;
+  }
+  &__photo {
+    position: absolute;
+    right: 0;
+    top: -138px;
+    height: 750px;
+    width: 750px;
+    transform: rotate(331deg) scale(-1, 1);
+  }
+}

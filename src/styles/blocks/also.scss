@@ -1,0 +1,22 @@
+.also {
+  display: flex;
+  &__info {
+    margin: 103px  175px 42px 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    @extend %title;
+  }
+  &__text {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    color: $colorDarkBlue;
+    &--logo {
+      color: $colorBlue;
+    }
+  }
+}
