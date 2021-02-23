@@ -41,6 +41,12 @@
     .menu__line::after {
       top: 8px;
     }
+
+    &:checked {
+      position: fixed;
+      top: 40px;
+      right: 20px;
+    }
   }
 
   &__box {
@@ -52,7 +58,7 @@
     align-items: center;
     visibility: hidden;
     width: 100%;
-    height: 100%;
+    height: 800px;
     padding: 230px 24px 60px;
     background-color: $beige-color;
     transition-duration: $small-duration;
@@ -112,6 +118,11 @@
     &:checked ~ .menu__box {
       visibility: visible;
       top: 0;
+    }
+
+    &:checked ~ .menu__btn {
+      position: fixed;
+      top: 40px;
     }
   }
 }
