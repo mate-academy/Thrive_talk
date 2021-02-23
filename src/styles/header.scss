@@ -2,6 +2,7 @@
   max-width: 1440px;
   margin: 0 auto;
   background-color: #f4f9e2;
+  overflow: hidden;
 }
 
 .header {
@@ -26,10 +27,11 @@
     background-color: $color_sky_blue;
     color: $color_white;
     border-radius: 50px;
+    margin-right: 150px;
     border: 2px solid $color_sky_blue;
     @include hover (color, $color_sky_blue);
     @include hover (background-color, $color_white);
-    z-index: 2;
+    z-index: 1;
   }
 }
 

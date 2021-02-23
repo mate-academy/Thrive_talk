@@ -1,9 +1,13 @@
 .top_article {
   padding-bottom: 100px;
+  position: relative;
+  height: 840px;
 
   &__block--1 {
+    position: absolute;
     margin-top: 150px;
     max-width: 470px;
+    z-index: 1;
   }
 
   &__span {
@@ -40,12 +44,35 @@
     position: absolute;
     width: 807.71px;
     height: 544.93px;
-    right: 20.93px;
-    top: 0.66px;
+    right: -120.93px;
+    top: -65px;
     background: #edfdff;
     border-radius: 312.16px;
     transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
-    z-index: 1;
+  }
+
+  &__img {
+    position: absolute;
+    height: 550px;
+    width: 800px;
+    top: 30px;
+    right: -100px;
+    overflow: hidden;
+    border-radius: 310px;
+    transform: rotate(-30deg);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 80px;
+      top: -180px;
+      background-image: url("../images/top_image.png");
+      background-position: 50%;
+      background-size: cover;
+      width: 100%;
+      height: 150%;
+      transform: rotate(30deg);
+    }
   }
 
 }
