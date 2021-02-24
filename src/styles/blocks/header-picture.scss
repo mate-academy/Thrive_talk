@@ -1,7 +1,8 @@
 .header-picture {
   &__background {
     position: absolute;
-    left: 825px;
+    // left: 825px;
+    right: -100px;
     top: 0;
     width: 807.71px;
     height: 544.93px;
@@ -11,7 +12,8 @@
   }
   &__container {
     position: absolute;
-    left: 805px;
+    // left: 805px;
+    right: -100px;
     top: 100px;
     width: 807.71px;
     height: 544.93px;
@@ -26,5 +28,11 @@
     height: 750px;
     width: 750px;
     transform: rotate(331deg) scale(-1, 1);
+  }
+}
+
+@media(max-width:1437px) {
+  .header-picture {
+    opacity: 0.6;
   }
 }

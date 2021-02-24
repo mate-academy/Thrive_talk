@@ -21,3 +21,9 @@
     border-bottom: 1px solid $colorDarkBlue;
   }
 }
+
+@media(max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+}

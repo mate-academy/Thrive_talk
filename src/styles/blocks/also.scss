@@ -4,7 +4,7 @@
     display: flex;
   }
   &__info {
-    margin: 103px  175px 42px 106px;
+    margin: 103px 175px 42px 106px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,5 +21,38 @@
     &--logo {
       color: $colorBlue;
     }
+  }
+}
+
+@media (max-width: 1040px) {
+  .also__photo {
+    height: 500px;
+  }
+  .also__info {
+    margin: 50px;
+  }
+  .also__text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 770px) {
+  .also__container {
+    flex-direction: column;
+  }
+  .also__photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .also__text {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width:500px) {
+  .also__text {
+    font-size: 24px;
+    line-height: 40px;
   }
 }

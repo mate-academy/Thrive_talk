@@ -31,3 +31,44 @@
     right: 0;
   }
 }
+
+@media(max-width: 1437px) {
+  .why__text {
+    max-width: 60%;
+  }
+}
+
+@media(max-width: 1024px) {
+  .why__text {
+    margin: 151px 0 30px 30px;
+  }
+}
+
+@media(max-width: 1024px) {
+
+  .why__title {
+    font-size: 30px;
+  }
+  .why__paragraph {
+    max-width: 90%;
+    margin-right: 0;
+    font-size: 18px;
+    &--strong {
+      font-size: 20px;
+    }
+  }
+}
+
+@media(max-width:700px) {
+  .why__text {
+    max-width: 90%;
+    margin-top: 50px;
+  }
+  .why__photo {
+    height: 300px;
+    object-fit: cover;
+  }
+  .why__container {
+    flex-direction: column;
+  }
+}

@@ -4,14 +4,12 @@
     position: relative;
     margin: auto;
     display: flex;
-    flex-direction: column;
-    width: $width;
+    // flex-direction: column;
+    max-width: $width;
     overflow: hidden;
   }
   &__top {
     position: absolute;
-    top: 27px;
-    left: 179px;
     margin: auto;
     z-index: 2;
   }
@@ -23,5 +21,12 @@
   &__picture {
     overflow: hidden;
     z-index: 1;
+  }
+}
+
+@media(max-width:1437px) {
+  .container {
+    margin: 0;
+    width: 100%;
   }
 }

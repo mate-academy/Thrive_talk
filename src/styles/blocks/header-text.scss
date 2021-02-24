@@ -1,5 +1,5 @@
 .header-text {
-  width: 1117px;
+  width: 78%;
   height: 840px;
   background-color: #f4f9e2;
   &__container {
@@ -11,6 +11,7 @@
   }
   &__logo {
     height: 64px;
+    z-index: 2;
   }
   &__title {
     height: 167px;
@@ -19,13 +20,50 @@
     line-height: 53px;
     letter-spacing: -0.04em;
     color: $colorDarkBlue;
+    z-index: 2;
   }
   &__paragraph {
-    width: 469px;
+    max-width: 469px;
     height: 161px;
     margin-bottom: 63px;
     font-size: 24px;
     line-height: 42px;
     color: $colorDarkBlue;
+    z-index: 2;
+  }
+}
+
+@media(max-width:1024px) {
+  .header-text {
+    &__container {
+      left: 30px;
+    }
+    &__title {
+      height: 120px;
+      font-size: 38px;
+    }
+    &__paragraph {
+      margin-bottom: 50px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .header-text {
+    &__container {
+      top: 150px;
+      left: 30px;
+      margin: auto;
+    }
+    &__title {
+      height: fit-content;
+      font-size: 28px;
+    }
+    &__paragraph {
+      height: fit-content;
+      font-size: 20px;
+      margin: 0 0 50px;
+    }
   }
 }

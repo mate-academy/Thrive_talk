@@ -2,6 +2,7 @@
   &__container {
     @extend %container;
     display: flex;
+    margin: auto;
     flex-direction: column;
   }
   &__text {
@@ -28,5 +29,27 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: rgba(34, 53, 111, 0.5);
+  }
+}
+
+@media (max-width: 1024px) {
+  .about__text {
+    flex-direction: column;
+  }
+  .about__title {
+    margin: 0 0 30px;
+  }
+  .about__paragraph {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about__text {
+    margin: 50px 30px;
+  }
+  .about__paragraph {
+    width: 100%;
+    height: fit-content;
   }
 }

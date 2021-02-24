@@ -16,3 +16,9 @@
     letter-spacing: -0.01em;
   }
 }
+
+@media (max-width: 550px) {
+  .footer__copyright {
+    margin: 32px auto 26px;
+  }
+}

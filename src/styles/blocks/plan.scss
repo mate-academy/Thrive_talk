@@ -22,3 +22,39 @@
     letter-spacing: -0.03em;
   }
 }
+
+@media (max-width: 1437px) {
+  .plan {
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,240px);
+  }
+}
+
+@media (max-width:960px) {
+  .plan {
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,240px);
+  }
+}
+
+@media (max-width:720px) {
+  .plan {
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,200px);
+    &__title {
+      margin: 15px 15px 0;
+      font-size: 20px;
+    }
+    &__explain {
+      margin: 15px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width:500px) {
+  .plan {
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(6,150px);
+  }
+}

@@ -20,3 +20,16 @@
     margin: 96px;
   }
 }
+
+@media (max-width:960px) {
+  .item-content,
+  .item-content--2 {
+    width: 70%;
+  }
+}
+
+@media (max-width:720px) {
+  .item-content {
+    margin: 40px;
+  }
+}
