@@ -31,3 +31,14 @@
   display: flex;
   justify-content: center;
 }
+
+@mixin maxWidth {
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+@mixin background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

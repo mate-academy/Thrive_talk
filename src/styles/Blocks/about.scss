@@ -1,0 +1,46 @@
+.about {
+  @include maxWidth;
+  position: relative;
+  padding-top: 150px;
+  color: #22356f;
+  display: none;
+  margin-bottom: 76px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  @include mobile {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__us {
+    position: absolute;
+    top: 150px;
+    left: 106px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+
+    @include laptop {
+      left: 40px;
+    }
+
+    @include tablet {
+      position: static;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__article {
+    max-width: 592px;
+    font-size: 24px;
+    margin: 0 auto;
+  }
+}

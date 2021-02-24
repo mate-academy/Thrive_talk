@@ -1,4 +1,5 @@
 .header {
+  @include maxWidth;
   position: relative;
   padding: 25px 0 0 178px;
   display: flex;
@@ -14,12 +15,15 @@
   }
 
   @include mobile {
-    width: 100%;
-    padding-left: 30px;
+    padding-left: 10px;
   }
 
   &__logo {
     margin-bottom: 38px;
+
+    @include mobile {
+      width: 85%;
+    }
 
     @include wide {
       margin-bottom: 50px;
@@ -34,14 +38,13 @@
     color: $linkColor;
 
     @include tablet {
-      width: 50%;
-      min-width: 350px;
+      min-width: 310px;
       color: lighten($linkColor, 25%);
-      padding-right: 20px;
+      padding-right: 0;
     }
 
     @include mobile {
-      width: 100%;
+      max-width: 310px;
       color: lighten($linkColor, 25%);
     }
   }
@@ -56,6 +59,10 @@
     @include wide {
       margin-bottom: 60px;
     }
+
+    @include mobile {
+      width: 85%;
+    }
   }
 
   &__article {
@@ -65,6 +72,7 @@
 
     @include mobile {
       margin-bottom: 40px;
+      width: 85%;
     }
   }
 
@@ -82,7 +90,8 @@
     }
 
     @include mobile {
-      padding-right: 20px;
+      width: 94%;
+      gap: 20px;
     }
   }
 
@@ -109,6 +118,10 @@
     &:hover {
       border: 1px solid $orangeColor;
     }
+
+    @include mobile {
+      width: 85%;
+    }
   }
 
   &__portrait {
@@ -119,6 +132,10 @@
     right: 0;
     background-image: url(/images/helping-photo.png);
     z-index: 2;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__image {
@@ -130,6 +147,10 @@
     background-image: url(/images/helping-green.png);
     background-repeat: no-repeat;
     z-index: 1;
+
+    @include mobile {
+      // display: none;
+    }
   }
 
   &__white {
@@ -146,7 +167,7 @@
     }
 
     @include mobile {
-      display: none;
+      // display: none;
     }
   }
 }

@@ -1,9 +1,13 @@
 @import "_reset";
 @import "./fonts";
 @import "utils";
-@import ".//Blocks/container.scss";
 @import "./Blocks/header.scss";
 @import "./Blocks/nav.scss";
+@import "./Blocks/why.scss";
+@import "./Blocks/about.scss";
+@import "./Blocks/help.scss";
+@import "./Blocks/activities.scss";
+@import "./Blocks/advice.scss";
 
 * {
   box-sizing: border-box;
