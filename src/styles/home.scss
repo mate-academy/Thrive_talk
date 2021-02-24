@@ -8,6 +8,10 @@
 @import "./Blocks/help.scss";
 @import "./Blocks/activities.scss";
 @import "./Blocks/advice.scss";
+@import "./Blocks/know.scss";
+@import "./Blocks/contact.scss";
+@import "./Blocks/info.scss";
+@import "./Blocks/footer.scss";
 
 * {
   box-sizing: border-box;
@@ -15,6 +19,7 @@
 
 html {
   font-family: "Larsseit", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .logo {
