@@ -8,3 +8,8 @@ $color-button-header:#f9b640;
     @content;
   }
 }
+
+@mixin help-block {
+  height: 360px;
+  width: 360px;
+}

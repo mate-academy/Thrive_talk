@@ -1,0 +1,42 @@
+.details {
+  max-width: $max-width;
+  margin: 77px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 48px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 298px;
+  }
+
+  &__name {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+    color: $text-color;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: rgba(34, 53, 111, 0.5);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    gap: 10px;
+  }
+
+  .details__item {
+    width: 95%;
+  }
+}

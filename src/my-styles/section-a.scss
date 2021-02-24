@@ -8,12 +8,14 @@
   position: relative;
 
   &__left {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 510px;
     height: 510px;
     margin-top: 180px;
+    flex-shrink: 2;
   }
 
   &__logo {
@@ -38,6 +40,7 @@
     font-size: 24px;
     line-height: 42px;
     z-index: 1;
+    flex-shrink: 1;
   }
 
   &__buttons {
@@ -120,6 +123,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      margin-top: 80px;
     }
 
     &__logo {
@@ -139,11 +143,11 @@
     }
 
     &__link1 {
-      width: 120px;
+      width: 130px;
     }
 
     &__link2 {
-      width: 120px;
+      width: 130px;
     }
 
     &__right {
@@ -158,5 +162,44 @@
       background-position: center;
       opacity: 0.6;
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__left {
+    padding: 0;
+  }
+  .header__p {
+    max-width: 300px;
+    color: $text-color;
+    font-size: 24px;
+    line-height: 1.2;
+    z-index: 1;
+    flex-shrink: 1;
+  }
+
+  .header__name {
+    font-size: 30px;
+  }
+
+  .header__link1 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .header__link2 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
   }
 }

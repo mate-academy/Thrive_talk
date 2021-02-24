@@ -11,7 +11,7 @@
     padding-top: 150px;
     display: flex;
     flex-direction: column;
-    width: 555px;
+    max-width: 555px;
     z-index: 1;
   }
 
@@ -47,6 +47,15 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-bottom: 50px;
+
+    &__leftside {
+      padding: 0;
+      margin: 0;
+      padding-left: 20px;
+      padding-top: 30px;
+
+    }
 
     &__text {
       width: auto;
@@ -58,10 +67,3 @@
     }
   }
 }
-
-//.why__leftside {
-//  padding: 0;
-//   margin: 0;
-//  padding-left: 20px;
-//   padding-top: 30px;
-//   width: 290px; 
