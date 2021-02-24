@@ -1,7 +1,7 @@
 'use strict';
 
 const burger = document.getElementById('menu__toggle');
-const burgerItem = document.querySelector('menu__item');
+const burgerItem = document.getElementsByClassName('menu__item');
 let isToggled = false;
 
 const closeMenu = () => {

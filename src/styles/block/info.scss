@@ -7,6 +7,10 @@
     margin-top: 25px;
   }
 
+  @media (max-width: $breakpoint-small) {
+    margin-top: 0;
+  }
+
   &__row {
     display: flex;
     justify-content: space-between;
@@ -29,7 +33,7 @@
 
   &__about {
     display: flex;
-    margin: 80px 0 60px;
+    margin: 80px 40px 70px 20px;
 
     @media (max-width: $breakpoint-large) {
       margin: 30px 0;
@@ -41,22 +45,33 @@
   }
 
   &__columns {
-    margin-right: 40px;
+    padding-right: 15px;
     border-right: 1px solid $beige-color;
 
-    &:first-child {
-      margin-left: 30px;
+    &:nth-child(2) {
+      padding-left: 15px;
 
-      @media (max-width: $breakpoint-large) {
-        margin: 0;
+      @media (max-width: $breakpoint-small) {
+        padding: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      padding-left: 15px;
+
+      @media (max-width: $breakpoint-small) {
+        padding: 0;
       }
     }
 
     &:last-child {
+      padding-right: 0;
       border-right: none;
     }
 
     @media (max-width: $breakpoint-small) {
+      padding: 0;
+      border: none;
       margin: 0;
     }
 
@@ -74,7 +89,7 @@
   }
 
   &__text {
-    max-width: 220px;
+    max-width: 200px;
     color: $darkblue-alpha-color;
   }
 

@@ -16,10 +16,10 @@
   }
 
   &__block {
-    padding: 55px 0 35px 70px;
+    padding: 55px 30px 35px;
 
     @media (max-width: $breakpoint-middle) {
-      padding: 30px 25px 15px 35px;
+      padding: 30px 25px 15px;
     }
   }
 
