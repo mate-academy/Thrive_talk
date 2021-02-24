@@ -1,14 +1,5 @@
 @import "reset";
 @import "utils";
-@import "../fonts/LarsseitFamily/stylesheet.css";
 @import "fonts";
 @import "typography";
 @import "blocks";
-
-body {
-  background: $colorWhite;
-}
-
-html {
-  scroll-behavior: smooth;
-}
