@@ -1,6 +1,6 @@
 .details {
   max-width: $max-width;
-  margin: 77px auto;
+  margin: 300px auto 77px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -30,6 +30,7 @@
 
 @media screen and (max-width: 750px) {
   .details {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     width: 98%;

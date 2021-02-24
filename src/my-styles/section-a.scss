@@ -44,6 +44,7 @@
   }
 
   &__buttons {
+    box-sizing: border-box;
     z-index: 1;
   }
 
@@ -78,12 +79,14 @@
     color: $color-button-header;
     text-align: center;
     line-height: 50px;
-    transition: transform 1s;
+    transition: all 1s;
   }
 
   &__link2:hover {
+    box-sizing: border-box;
+    background-color: $color-button-header;
+    color: white;
     transform: scale(1.1);
-    border: 1px solid #fab63e;
   }
 
   &__right {
@@ -101,7 +104,7 @@
     height: 700px;
     top: 0;
     right: 0;
-    background-image: url("../images/Rectangle\ 3.1.svg");
+    background-image: url("../images/01.svg");
   }
 
   &__photo {
@@ -110,7 +113,7 @@
     height: 740px;
     top: 0;
     right: 0;
-    background-image: url("../images/Mask\ Group.png");
+    background-image: url("../images/02.png");
   }
 }
 

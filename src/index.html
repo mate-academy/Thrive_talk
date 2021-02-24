@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./my-styles/main.scss">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="box">
         <div class="mobmenu">
-          <div class="mobmenu__burger">
+          <div class="mobmenu__bur">
             <span></span>
           </div>
           <nav class="mobmenu__menu">
@@ -25,12 +25,12 @@
         <nav class="nav">
           <div class="nav__logo">Thrivetalk</div>
           <div class="nav__menu">
-            <a href="#" class="nav__menu-link">Home</a>
-            <a href="#" class="nav__menu-link">About</a>
-            <a href="#" class="nav__menu-link">Services</a>
-            <a href="#" class="nav__menu-link">Blog</a>
+            <a href="#home" class="nav__menu-link">Home</a>
+            <a href="#about" class="nav__menu-link">About</a>
+            <a href="#services" class="nav__menu-link">Services</a>
+            <a href="#blog" class="nav__menu-link">Blog</a>
           </div>
-          <a href="#" class="nav__contact">contact us</a>
+          <a href="#contact" class="nav__contact">contact us</a>
         </nav>
         <div class="header__left">
           <div class="header__logo">Thrivetalk</div>
@@ -68,13 +68,13 @@
         <div class="why__rightside"></div>
       </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
       <div class="about__text-one">ABOUT US</div>
       <div class="about__text-two">
         We want to help you thrive! Whether you are just looking for someone to talk to, or are struggling with a mental wellness issue we’re here to help.  Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
       </div>
     </div>
-    <div class="help">
+    <div class="help" id="services">
       <div class="help__name">we can help you with</div>
       <div class="help__block">
         <div class="help__item help__item-1">
@@ -111,7 +111,7 @@
         <span class="categories__text">Aerobics</span>
       </div>
     </div>
-    <div class="details">
+    <div class="details" id="blog">
       <div class="details__item">
         <h3 class="details__name">Nutritional Plans</h3>
         <p class="details__text">
@@ -169,7 +169,7 @@
         </h3>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="contact__leftside">
         <h3 class="contact__before-name">contact us</h3>
         <h2 class="contact__name">Ready. Set. Smile</h2>
@@ -183,7 +183,7 @@
       </div>
       <div class="contact__rightside"></div>
     </div>
-    <div class="info">
+    <div class="info" id="info">
       <div class="info__leftside"></div>
       <div class="info__rightside">
         <div class="info__block">
@@ -200,9 +200,9 @@
             <br>
             Buffalo, United States
             <br><br>
-            +555 283 784 333
+            <a href="tel:+12345555555">+1 234 555-55-55</a>
             <br>
-            <span>office@enfold-health.com</span>
+            <a href="mailto:office@enfold-health.com">office@enfold-health.com</a>
           </p>
         </div>
         <div class="info__block">
@@ -229,5 +229,6 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="./scripts/lib/main.js"></script>
   </body>
 </html>

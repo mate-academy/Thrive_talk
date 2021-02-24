@@ -29,11 +29,6 @@
     color: $text-color;
     cursor: pointer;
     text-decoration: none;
-    transition: transform 1s;
-  }
-
-  &__menu-link:hover {
-    font-weight: bold;
   }
 
   &__contact {
@@ -95,7 +90,7 @@
     }
   }
 
-  .mobmenu__burger {
+  .mobmenu__bur {
     display: flex;
     position: relative;
     margin: 30px auto;
@@ -104,7 +99,7 @@
     z-index: 99;
     
   }
-  .mobmenu__burger span {
+  .mobmenu__bur span {
     position: absolute;
     background-color: $text-color;
     width: 30px;
@@ -114,8 +109,8 @@
     transition: all 0.3s ease 0s;
 
   }
-  .mobmenu__burger:before,
-  .mobmenu__burger:after {
+  .mobmenu__bur:before,
+  .mobmenu__bur:after {
     content: "";
     background-color: $text-color;
     position: absolute;
@@ -125,26 +120,26 @@
     z-index: 99;
     transition: all 0.5s ease 0s;
   }
-  .mobmenu__burger:before {
+  .mobmenu__bur:before {
     top: 0;
     z-index: 99;
   }
-  .mobmenu__burger:after {
+  .mobmenu__bur:after {
     bottom: 0;
     z-index: 99;
   }
 
-  .mobmenu__burger.active:before {
+  .mobmenu__bur.active:before {
     transform: rotate(45deg);
     top: 9px;
   }
 
-  .mobmenu__burger.active:after {
+  .mobmenu__bur.active:after {
     transform: rotate(-45deg);
     bottom: 9px;
   }
 
-  .mobmenu__burger.active span {
+  .mobmenu__bur.active span {
     transform: scale(0);
   }
 
