@@ -1,12 +1,15 @@
 .contact {
   display: flex;
   flex-direction: column;
-  &__element {
+  &__container {
+    @extend %container;
     display: flex;
+  }
+  &__element--blue {
+    background-color: $colorDarkBlue;
   }
   &__text {
     padding: 103px 201px 0 180px;
-    background-color: $colorDarkBlue;
     color: $colorWhite;
   }
   &__title {

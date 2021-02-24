@@ -1,5 +1,8 @@
 .also {
-  display: flex;
+  &__container {
+    @extend %container;
+    display: flex;
+  }
   &__info {
     margin: 103px  175px 42px 106px;
     display: flex;

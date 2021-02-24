@@ -1,7 +1,9 @@
 .about {
-  width: $width;
-  display: flex;
-  flex-direction: column;
+  &__container {
+    @extend %container;
+    display: flex;
+    flex-direction: column;
+  }
   &__text {
     display: flex;
     margin: 156px 0 76px 106px;

@@ -1,10 +1,13 @@
 .header {
-  position: relative;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  width: $width;
-  overflow: hidden;
+  background: linear-gradient(to right, #f4f9e2 50%, 50%, $colorWhite 50%);
+  &__container {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: $width;
+    overflow: hidden;
+  }
   &__top {
     position: absolute;
     top: 27px;

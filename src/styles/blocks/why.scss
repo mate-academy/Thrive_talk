@@ -1,8 +1,11 @@
 .why {
-  display: flex;
   background-color: $colorBlue;
-  color: $colorWhite;
   &__container {
+    @extend %container;
+    display: flex;
+    color: $colorWhite;
+  }
+  &__text {
     display: flex;
     flex-direction: column;
     margin: 151px 0 0 179px;

@@ -1,12 +1,15 @@
 .footer {
   height: 80px;
-  display: flex;
-  align-items: center;
-  width: $width;
-  margin: auto;
   background-color: $colorBlue;
   color: $colorWhite;
+  &__container {
+    @extend %container;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
   &__copyright {
+    display: block;
     margin: 32px 0 26px 179px;
     font-size: 14px;
     line-height: 11px;

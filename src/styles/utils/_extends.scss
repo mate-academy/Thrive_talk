@@ -6,3 +6,8 @@
   letter-spacing: 0.06em;
   color: $colorDarkBlue;
 }
+
+%container {
+  width: $width;
+  margin: auto;
+}
