@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+
+  &__header {
+    background: #f4f9e2;
+  }
+
+  &__why {
+    background: $lightBlueColor;
+  }
+
+  &__about {
+    background: $whiteColor;
+  }
+
+  &__help {
+    background: $whiteColor;
+  }
+
+  &__activities {
+    background: $whiteColor;
+  }
+
+  &__advice {
+    background: $whiteColor;
+  }
+
+  &__know {
+    background: $whiteColor;
+  }
+
+  &__contact {
+    background: $linkColor;
+  }
+
+  &__info {
+    background: $whiteColor;
+  }
+
+  &__footer {
+    background: $lightBlueColor;
+  }
+}

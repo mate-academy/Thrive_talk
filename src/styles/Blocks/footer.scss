@@ -1,0 +1,19 @@
+.footer {
+  color: $whiteColor;
+  background-color: $lightBlueColor;
+  padding: 32px 0 26px 192px;
+
+  @include tablet {
+    padding-left: 0;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: -0.01em;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+}

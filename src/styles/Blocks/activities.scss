@@ -1,0 +1,98 @@
+.activities {
+  margin-bottom: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 480px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__block {
+    padding-top: 90px;
+    @include flexCenter;
+    background-image: none;
+    color: $whiteColor;
+    transition: background $imageTime;
+
+    &--1 {
+      background-color: $linkColor;
+
+      &:hover {
+        background-image: url(/images/weight.jpg);
+        @include background;
+      }
+    }
+
+    &--2 {
+      background-color: $blueColor;
+
+      &:hover {
+        background-image: url(/images/running.jpg);
+        @include background;
+      }
+    }
+
+    &--3 {
+      background-color: $lightGreenColor;
+
+      &:hover {
+        background-image: url(/images/iron.jpg);
+        @include background;
+      }
+    }
+
+    &--4 {
+      background-color: $lightBlueColor;
+
+      &:hover {
+        background-image: url(/images/iron.jpg);
+        @include background;
+      }
+    }
+
+    &--5 {
+      background-color: $greyColor;
+
+      &:hover {
+        background-image: url(/images/weight.jpg);
+        @include background;
+      }
+    }
+
+    &--6 {
+      background-color: $violetColor;
+
+      &:hover {
+        background-image: url(/images/weight.jpg);
+        @include background;
+      }
+    }
+  }
+
+  &__heading {
+    position: relative;
+    min-width: 240px;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+    padding: 30px 20px;
+    border-top: 2px solid;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 13%;
+      left: 0;
+      background: $dotColor;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+    }
+  }
+}

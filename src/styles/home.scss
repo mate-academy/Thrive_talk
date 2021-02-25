@@ -1,0 +1,35 @@
+@import "_reset";
+@import "./fonts";
+@import "utils";
+@import "./Blocks/wrapper.scss";
+@import "./Blocks/container.scss";
+@import "./Blocks/header.scss";
+@import "./Blocks/nav.scss";
+@import "./Blocks/burger.scss";
+@import "./Blocks/mobile.scss";
+@import "./Blocks/why.scss";
+@import "./Blocks/about.scss";
+@import "./Blocks/help.scss";
+@import "./Blocks/activities.scss";
+@import "./Blocks/advice.scss";
+@import "./Blocks/know.scss";
+@import "./Blocks/contact.scss";
+@import "./Blocks/info.scss";
+@import "./Blocks/footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Larsseit", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  color: $lightBlueColor;
+}
