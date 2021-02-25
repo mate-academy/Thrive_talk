@@ -147,31 +147,42 @@
   }
 }
 
-/*.help__item-1 {
-  background-color: #fff2de;
-  &:hover {
-    background-image: url("../images/1.jpg");
-  }
+.help__item-1.active {
+  transition: all 0.5s ease-in-out;
+  background-image: url("../images/1.jpg");
+  transform: scale(0.9);
+  box-shadow: -1px 0 14px 6px #ffe2de;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.help__item-2 {
-  background-color: #c4e769;
-
-  &:hover {
-    background-image: url("../images/завантаження\ \(1\).jpeg");
-  }
+.help__item-2.active {
+  transition: all 0.5s ease-in-out;
+  background-image: url("../images/111.jpg");
+  transform: scale(0.9);
+  box-shadow: -1px 0 14px 6px #c4e769;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.help__item-3 {
-  background-color: #62d0df;
-  &:hover {
-    background-image: url("../images/3.jpeg");
-  }
+.help__item-3.active {
+  transition: all 0.5s ease-in-out;
+  background-image: url("../images/3.jpeg");
+  transform: scale(0.9);
+  box-shadow: -1px 0 14px 6px #62d0df;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.help__item-4 {
-  background-color: #0052c1;
-  &:hover {
-    background-image: url("../images/4.jpg");
-  }
-}*/
+.help__item-4.active {
+  transition: all 0.5s ease-in-out;
+  background-image: url("../images/4.jpg");
+  transform: scale(0.9);
+  box-shadow: -1px 0 14px 6px #0052c1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
