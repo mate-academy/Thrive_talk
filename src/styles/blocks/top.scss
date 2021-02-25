@@ -19,6 +19,11 @@
     font-size: 14px;
     line-height: 16px;
     font-style: bold;
+    transition: transform 0.4s, box-shadow 0.4s;
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0,0,0,0.5);
+      transform: scale(1.05);
+    }
   }
 }
 

@@ -4,6 +4,7 @@
     @extend %container;
     display: flex;
     color: $colorWhite;
+    overflow: hidden;
   }
   &__text {
     display: flex;

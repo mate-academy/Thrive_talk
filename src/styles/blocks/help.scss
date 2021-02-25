@@ -128,3 +128,11 @@
     font-weight: 550;
   }
 }
+
+@media (max-width:500px) {
+  .help__item {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+}

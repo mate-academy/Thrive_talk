@@ -67,3 +67,9 @@
     }
   }
 }
+
+@media(max-width: 340px) {
+  .header-text__paragraph {
+    margin: 0 0 15px;
+  }
+}
