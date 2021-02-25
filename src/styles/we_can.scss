@@ -1,8 +1,14 @@
 .we_can {
   padding-top: 75px;
 
+  &__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
   &__title {
     text-align: center;
+    margin-bottom: 50px;
     font-size: 16px;
     line-height: 19px;
     color: $color_dark_blue;
@@ -29,18 +35,58 @@
 
   &__block--1 {
     background-color: #ffe2de;
+    transition: background $duration1,
+      opacity $duration,
+      transform $duration;
+
+    &:hover {
+      background: url("../images/sport/weight_lift_2.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
   }
 
   &__block--2 {
     background-color: #c4e769;
+    transition: background $duration1,
+      opacity $duration,
+      transform $duration;
+
+    &:hover {
+      background: url("../images/sport/running.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
   }
 
   &__block--3 {
     background-color: #62d0df;
+    transition: background $duration1,
+      opacity $duration,
+      transform $duration;
+
+    &:hover {
+      background: url("../images/sport/muscle_1.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
   }
 
   &__block--4 {
     background-color: #0052c1;
+    transition: background $duration1,
+      opacity $duration,
+      transform $duration;
+
+    &:hover {
+      background: url("../images/sport/muscle_2.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
   }
 
   &__health {
@@ -63,27 +109,86 @@
 
   &__health_block--1 {
     background-color: $color_dark_blue;
+    transition: background $duration1,
+      opacity $duration,
+      transform $duration;
+
+    &:hover {
+      background: url("../images/sport/Fitness_Old_man.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
   }
 
   &__health_block--2 {
     background-color: #0052c1;
+    transition: background $duration1,
+      opacity $duration,
+      transform $duration;
+
+    &:hover {
+      background: url("../images/sport/yoga_3.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
   }
 
   &__health_block--3 {
-    background: url("../images/nutrition.jpg") no-repeat;
-    background-size: cover;
+    background-color: #b0cecc;
+    transition: background $duration1,
+      opacity $duration,
+      transform $duration;
+
+    &:hover {
+      background: url("../images/nutrition.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
   }
 
   &__health_block--4 {
     background-color: #62d0df;
+    transition: background $duration1,
+      opacity $duration,
+      transform $duration;
+
+    &:hover {
+      background: url("../images/sport/gymnastic_2.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
   }
 
   &__health_block--5 {
     background-color: #dee1ff;
+    transition: background $duration1,
+      opacity $duration,
+      transform $duration;
+
+    &:hover {
+      background: url("../images/sport/gymnastic_3.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
   }
 
   &__health_block--6 {
     background-color: #8f00ff;
+    transition: background $duration1,
+      opacity $duration,
+      transform $duration;
+
+    &:hover {
+      background: url("../images/sport/gymnastic_5.jpg") no-repeat center;
+      background-size: cover;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
   }
 
   &__training {
@@ -95,7 +200,6 @@
   &__training_block {
     @include grid_aligning ($horizontal: center);
     height: 240px;
-    // min-width: 300px;
     padding-top: 50px;
   }
 

@@ -1,35 +1,71 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .header {
-  @include flex_aligning ($horizontal: space-between, $vertical: center);
-  padding-left: 50px;
   background-color: #f4f9e2;
-  position: relative;
 
-  &--wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
+  &__wrapper {
+    @include flex_aligning ($horizontal: space-between, $vertical: center);
+    position: relative;
+    padding-left: 50px;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title--front {
+    transform: rotateY(0deg);
+    z-index: 5;
+    backface-visibility: hidden;
+  }
+
+  &__title--back {
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+  }
+
+  &__test {
+    position: absolute;
+    left: 60px;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    animation: rotY 4s linear infinite;
   }
 
   &__title {
+    position: absolute;
     font-size: 24px;
     font-weight: 700;
     line-height: 27px;
     letter-spacing: -0.04em;
     color: $color_sky_blue;
-    @include hover (transform, scale(1.05));
   }
 
   &__link {
     position: relative;
+    display: inline-block;
     padding: 15px 25px;
     background-color: $color_sky_blue;
     color: $color_white;
     border-radius: 50px;
     margin-right: 50px;
-    border: 2px solid $color_sky_blue;
-    @include hover (color, $color_sky_blue);
-    @include hover (background-color, $color_white);
     z-index: 1;
+    border: 2px solid $color_sky_blue;
+    transition: box-shadow $duration,
+      transform $duration,
+      background-color $duration,
+      color $duration;
+
+    &:hover {
+      box-shadow: 0 5px 15px rgb(3, 202, 33);
+      transform: translateY(3px);
+      background-color: $color_white;
+      color: $color_sky_blue;
+    }
   }
 
   &__menu_checkbox {
@@ -69,7 +105,8 @@
       width: 40px;
       background-color: #444;
       top: 15px;
-      transition: transform $duration, background-color 1s;
+      transition: transform $duration,
+        background-color 1s;
     }
 
     &::after {
@@ -79,7 +116,8 @@
       width: 40px;
       background-color: #444;
       bottom: 15px;
-      transition: transform $duration, background-color 1s;
+      transition: transform $duration,
+        background-color 1s;
     }
   }
 
@@ -119,5 +157,27 @@
 
   .header__burger {
     display: block;
+  }
+}
+
+@keyframes rotX {
+  0% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes rotY {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes title_behavior {
+  0% {
+    text-shadow: 0 0 10px #2ffa06, 0 -10px 50px #ff1403;
   }
 }

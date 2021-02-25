@@ -1,15 +1,24 @@
 .why_thrive {
-  @include flex_aligning ($horizontal: space-between);
-  align-items: center;
   background-color: #62d0df;
+
+  &__wrapper {
+    @include flex_aligning ($horizontal: space-between);
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__block-1 {
+    margin: 0 auto;
+  }
 
   &__block-content {
     display: flex;
     flex-direction: column;
+    width: calc(100% - 60px);
     max-width: 555px;
     margin: 150px auto 0;
     color: $color_white;
-    text-align: center;
   }
 
   &__title {
@@ -23,7 +32,9 @@
   &__paragraph {
     font-size: 20px;
     line-height: 29px;
+    margin: 0 auto;
     transition: font-size $duration;
+
   }
 
   &__paragraph-bold {
@@ -45,9 +56,18 @@
 }
 
 @media (max-width: 950px) {
-  .why_thrive {
+  .why_thrive__wrapper {
     display: flex;
     flex-direction: column;
+  }
+
+  .why_thrive__block-content {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .why_thrive__paragraph {
+    margin-bottom: 50px;
   }
 }
 

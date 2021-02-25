@@ -1,8 +1,9 @@
 .you_should {
-  display: flex;
 
-  &--wrapper {
-    margin-top: 40px;
+  &__wrapper {
+    max-width: 1440px;
+    margin: 40px auto 0;
+    display: flex;
   }
 
   &__img {
@@ -41,12 +42,20 @@
   &__block--link {
     display: inline-block;
     color: #fab63e;
-    padding: 10px 0;
+    padding: 5px 10px;
     margin-top: 80px;
-    @include hover (color, $color_white);
-    @include hover (background-color, #fab63e);
-    @include hover (transform, scale(1.05));
+    transition: background-color $duration,
+      transform $duration,
+      border-radius $duration,
+      box-shadow $duration;
 
+    &:hover {
+      transform: scale(1.05);
+      background-color: #fab63e;
+      color: $color_white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px #756e62;
+    }
   }
 }
 
@@ -70,7 +79,7 @@
 }
 
 @media (max-width: 750px) {
-  .you_should {
+  .you_should__wrapper {
     flex-direction: column-reverse;
     justify-content: center;
   }

@@ -1,15 +1,17 @@
 .info {
   display: flex;
 
-  // &__img {
-
-  // }
+  &__wrapper {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 
   &__blocks {
     @include grid_aligning ($horizontal: space-around);
     grid-template-columns: repeat(3, auto);
     width: 100%;
-    padding-top: 100px;
+    padding: 100px 50px 50px;
   }
 
   &__block {
@@ -54,7 +56,7 @@
 }
 
 @media (max-width: 1024px) {
-  .info {
+  .info__wrapper {
     flex-direction: column;
   }
 
@@ -63,7 +65,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .info__img {
     width: 100%;
     max-width: 420px;

@@ -1,14 +1,19 @@
 .top_article {
   position: relative;
-  height: 840px;
-  transition: height $duration;
   background-color: #f4f9e2;
+
+  &__wrapper {
+    position: relative;
+    height: 840px;
+    transition: height $duration;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 
   &__block--1 {
     position: absolute;
     margin-top: 130px;
     max-width: 470px;
-    // padding-left: 10px;
     z-index: 1;
   }
 
@@ -18,9 +23,20 @@
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
+    padding: 5px;
     letter-spacing: -0.04em;
     color: $color_sky_blue;
-    @include hover (transform, scale(1.05));
+    transition: transform $duration,
+      border-radius $duration,
+      background-color $duration,
+      box-shadow $duration;
+
+    &:hover {
+      border-radius: 15px;
+      background-color: rgba(26, 2, 241, 0.51);
+      box-shadow: 0 3px 10px rgba(3, 27, 104, 0.99);
+      transform: scale(1.1);
+    }
   }
 
   &__title {
@@ -42,11 +58,22 @@
   }
 
   &__link {
+    display: inline-block;
     margin-left: 55px;
     color: #fab63e;
     padding: 10px 30px;
-    @include hover (color, $color_white);
-    @include hover (background-color, #fab63e);
+    transition: background-color $duration,
+      transform $duration,
+      border-radius $duration,
+      box-shadow $duration;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: #fab63e;
+      color: $color_white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px #756e62;
+    }
   }
 
   &__link--right {
@@ -176,7 +203,7 @@
     margin-left: 25px;
     font-size: 28px;
     line-height: 40px;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.1em;
     color: $color_dark_blue;
   }
 

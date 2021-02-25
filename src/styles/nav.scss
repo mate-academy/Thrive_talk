@@ -14,8 +14,14 @@
     padding: 10px 5px;
     color: $color_dark_blue;
     border: 1px solid transparent;
-    @include hover (border-bottom-color, $color_dark_blue);
-    @include hover (transform, scale(1.05));
+    transition: border-bottom-color $duration,
+      transform $duration;
+
+    &:hover {
+      border-bottom-color: $color_dark_blue;
+      transform: scale(1.05);
+      text-shadow: 0 0 10px rgb(209, 6, 250);
+    }
   }
 }
 
@@ -24,5 +30,4 @@
   .nav {
     display: none;
   }
-
 }
