@@ -29,6 +29,10 @@
     color: $text-color;
     cursor: pointer;
     text-decoration: none;
+
+    &:hover {
+      color: $color-blue;
+    }
   }
 
   &__contact {

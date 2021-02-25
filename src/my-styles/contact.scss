@@ -39,15 +39,6 @@
     line-height: 53px;
   }
 
-  &__after-name {
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: 0.1em;
-    color: $color-blue;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
   &__rightside {
     position: absolute;
     height: 100%;
@@ -91,4 +82,14 @@
       display: none;
     }
   }
+}
+
+.contact__after-name {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: #62d0df;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
 }
