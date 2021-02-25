@@ -22,13 +22,68 @@
     gap: 0;
   }
 
-  &__item {
+  &__item-1 {
     height: 360px;
     position: relative;
     cursor: default;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: #ffe2de;
 
     &:hover {
+      background-image: url("../images/1.jpg");
+      transform: scale(0.95);
+      box-shadow: -1px 0 14px 6px #ffe2de;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__item-2 {
+    height: 360px;
+    position: relative;
+    cursor: default;
+    background-color: #c4e769;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-image: url("../images/завантаження\ \(1\).jpeg");
+      transform: scale(0.95);
+      box-shadow: -1px 0 14px 6px #c4e769;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__item-3 {
+    height: 360px;
+    position: relative;
+    cursor: default;
+    background-color: #62d0df;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-image: url("../images/3.jpeg");
+      transform: scale(0.95);
+      box-shadow: -1px 0 14px 6px #62d0df;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &__item-4 {
+    height: 360px;
+    position: relative;
+    cursor: default;
+    background-color: #0052c1;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-image: url("../images/4.jpg");
+      transform: scale(0.95);
+      box-shadow: -1px 0 14px 6px #0052c1;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -79,15 +134,17 @@
     width: 99%;
   }
 
-  .help__item {
+  .help__item-1,
+  .help__item-2,
+  .help__item-3,
+  .help__item-4 {
     width: 95%;
     height: 320px;
   }
 }
 
-.help__item-1 {
+/*.help__item-1 {
   background-color: #fff2de;
-  transition: all 1s ease-out;
   &:hover {
     background-image: url("../images/1.jpg");
   }
@@ -95,7 +152,7 @@
 
 .help__item-2 {
   background-color: #c4e769;
-  transition: all 1s ease-out;
+
   &:hover {
     background-image: url("../images/завантаження\ \(1\).jpeg");
   }
@@ -103,7 +160,6 @@
 
 .help__item-3 {
   background-color: #62d0df;
-  transition: all 1s ease-out;
   &:hover {
     background-image: url("../images/3.jpeg");
   }
@@ -111,9 +167,7 @@
 
 .help__item-4 {
   background-color: #0052c1;
-  transition: all 1s ease-out;
   &:hover {
-    background-color: transparent;
     background-image: url("../images/4.jpg");
   }
-}
+}*/
