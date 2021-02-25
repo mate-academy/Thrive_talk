@@ -4,6 +4,11 @@
   height: 80px;
   background-color: $color_sky_blue;
 
+  &--wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
   &__paragraph {
     margin-left: 180px;
     font-size: 14px;

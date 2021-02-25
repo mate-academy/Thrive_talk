@@ -9,9 +9,9 @@
   line-height: 22px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background: hsla(73, 69%, 81%, 0.94);
+  background: hsla(72, 15%, 31%, 0.97);
   z-index: 2;
-  transform: rotate(-90deg);
+  transform: rotate(-270deg);
   transform-origin: right top;
   transition: transform $duration;
 
@@ -49,14 +49,14 @@
   &__link {
     padding: 5px;
     display: inline-block;
-    color: $color_dark_blue;
+    color: $color_white;
     @include hover(box-shadow, 0 5px 10px #094102);
     transition: border-radius $duration,
       transform $duration,
       background-color $duration;
 
     &:hover {
-      background-color: rgba(31, 252, 2, 0.4);
+      background-color: rgba(31, 252, 2, 0.2);
       border-radius: 15px;
       transform: scale(1.1) translateY(-2px);
     }
@@ -79,6 +79,5 @@
 @media (min-width: 801px) {
   .mobile {
     display: none;
-    transform: rotate(-90deg);
   }
 }

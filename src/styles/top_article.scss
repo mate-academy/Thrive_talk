@@ -3,18 +3,18 @@
   height: 840px;
   transition: height $duration;
   background-color: #f4f9e2;
-  // overflow: hidden;
 
   &__block--1 {
     position: absolute;
     margin-top: 130px;
     max-width: 470px;
-    padding-left: 10px;
+    // padding-left: 10px;
     z-index: 1;
   }
 
   &__title--link {
     display: inline-block;
+    margin-left: 55px;
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
@@ -24,6 +24,8 @@
   }
 
   &__title {
+    min-width: 500px;
+    margin-left: 55px;
     font-size: 45px;
     line-height: 53px;
     letter-spacing: -0.04em;
@@ -34,23 +36,38 @@
   &__paragraph {
     font-size: 24px;
     line-height: 42px;
+    margin-left: 55px;
     color: $color_dark_blue;
     transition: font-size $duration;
   }
 
   &__link {
+    margin-left: 55px;
     color: #fab63e;
     padding: 10px 30px;
     @include hover (color, $color_white);
     @include hover (background-color, #fab63e);
   }
 
+  &__link--right {
+    margin-left: 15px;
+  }
+
+  &__block--2 {
+    right: 0;
+    top: -75px;
+    position: absolute;
+    height: 100%;
+    width: 700px;
+    overflow: hidden;
+  }
+
   &__background {
     position: absolute;
-    width: 807.71px;
-    height: 544.93px;
-    right: -120.93px;
-    top: -65px;
+    width: 800px;
+    height: 544px;
+    right: -160px;
+    top: 5px;
     background: #edfdff;
     border-radius: 312.16px;
     transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
@@ -62,8 +79,8 @@
     position: absolute;
     height: 550px;
     width: 800px;
-    top: 30px;
-    right: -100px;
+    top: 100px;
+    right: -150px;
     overflow: hidden;
     border-radius: 310px;
     transform: rotate(-30deg);
@@ -73,7 +90,7 @@
     &::after {
       content: "";
       position: absolute;
-      right: 70px;
+      right: 90px;
       top: -180px;
       background-image: url("../images/top_image.png");
       background-position: 50%;
@@ -95,6 +112,8 @@
   .top_article__background {
     width: 600px;
     height: 450px;
+    top: -5px;
+    right: -120px;
     transition: width $duration,
       height $duration;
   }
@@ -102,8 +121,14 @@
   .top_article__img {
     height: 450px;
     width: 600px;
+    top: 80px;
+    right: -100px;
     transition: width $duration,
       height $duration;
+  }
+
+  .top_article__img::after {
+    right: 75px;
   }
 
   .top_article__title {
@@ -128,6 +153,7 @@
   .top_article__background {
     width: 400px;
     height: 300px;
+    top: 10px;
     transition: width $duration,
       height $duration;
   }
@@ -135,12 +161,19 @@
   .top_article__img {
     height: 300px;
     width: 400px;
-    top: 0;
+    top: 70px;
+    right: -100px;
     transition: width $duration,
       height $duration;
   }
 
+  .top_article__img::after {
+    right: 50px;
+    top: -150px;
+  }
+
   .top_article__title {
+    margin-left: 25px;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.04em;
@@ -148,12 +181,15 @@
   }
 
   .top_article__paragraph {
+    margin-left: 25px;
     font-size: 16px;
-    line-height: 28px;
-    margin-bottom: 50px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    max-width: 300px;
   }
 
   .top_article__link {
     padding: 5px 20px;
+    margin-left: 15px;
   }
 }

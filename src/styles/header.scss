@@ -54,7 +54,8 @@
     cursor: pointer;
     background-color: #444;
     transition: transform $duration,
-      opacity $duration;
+      opacity $duration,
+      background-color 1s;
 
     &:hover {
       transform: scale(1.1);
@@ -68,7 +69,7 @@
       width: 40px;
       background-color: #444;
       top: 15px;
-      transition: transform $duration;
+      transition: transform $duration, background-color 1s;
     }
 
     &::after {
@@ -78,7 +79,7 @@
       width: 40px;
       background-color: #444;
       bottom: 15px;
-      transition: transform $duration;
+      transition: transform $duration, background-color 1s;
     }
   }
 
@@ -88,15 +89,22 @@
 
   &__menu_checkbox:checked ~ .header__burger {
     transform: rotate(-45deg);
+    background-color: #fff;
+
   }
 
   &__menu_checkbox:checked ~ .header__burger::before {
     transform: rotate(90deg) translate(-15px, 0);
+    background-color: #fff;
+
   }
 
   &__menu_checkbox:checked ~ .header__burger::after {
     transform: translate(0, 15px);
+    background-color: #fff;
+
   }
+
 }
 
 .uppercase {
