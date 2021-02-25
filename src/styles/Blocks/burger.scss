@@ -14,6 +14,7 @@
     position: relative;
     cursor: pointer;
     z-index: 101;
+    padding-bottom: 10px;
 
     &:active {
       background: none;
@@ -26,14 +27,14 @@
 }
 
 .burger__toggle:checked ~ .mobile {
-  display: block;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .burger__toggle:checked ~ .burger__label::before {
   width: 24px;
-  height: 24px;
+  height: 28px;
   content: url(/images/close.svg);
-  margin-bottom: 20px;
 }
 
 @include mobile {

@@ -1,5 +1,4 @@
 .about {
-  @include maxWidth;
   position: relative;
   padding-top: 150px;
   color: $linkColor;
@@ -33,7 +32,8 @@
     @include tablet {
       position: static;
       text-align: center;
-      padding-bottom: 50px;
+      padding-bottom: 30px;
+      font-size: 14px;
     }
   }
 
@@ -41,5 +41,10 @@
     max-width: 592px;
     font-size: 24px;
     margin: 0 auto;
+
+    @include tablet {
+      padding-inline: 20px;
+      font-size: 20px;
+    }
   }
 }

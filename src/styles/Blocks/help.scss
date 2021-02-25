@@ -1,5 +1,4 @@
 .help {
-  @include maxWidth;
   margin-bottom: 120px;
 
   &__heading {
@@ -10,6 +9,10 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: rgba(34, 53, 111, 0.5);
+
+    @include tablet {
+      font-size: 14px;
+    }
   }
 
   &__blocks {
@@ -33,7 +36,7 @@
     color: $whiteColor;
     padding-top: 30px;
     @include flexCenter;
-    transition: background $transition;
+    transition: background $imageTime;
 
     &--1 {
       background-color: $pinkColor;

@@ -1,6 +1,8 @@
 .mobile {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
   z-index: 99;
+  transition: opacity 0.5s;
 
   &__list {
     display: flex;

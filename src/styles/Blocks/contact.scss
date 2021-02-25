@@ -1,5 +1,4 @@
 .contact {
-  @include maxWidth;
   @include flexBetween;
   color: $whiteColor;
   background: $linkColor;
@@ -29,15 +28,20 @@
     letter-spacing: 0.06em;
 
     @include tablet {
-      padding-bottom: 100px;
+      padding-bottom: 50px;
+      font-size: 14px;
     }
   }
 
   &__title {
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     font-size: 64px;
     line-height: 94px;
     letter-spacing: -0.01em;
+
+    @include tablet {
+      font-size: 40px;
+    }
   }
 
   &__article {
@@ -46,6 +50,10 @@
     font-size: 36px;
     line-height: 53px;
     letter-spacing: -0.01em;
+
+    @include tablet {
+      font-size: 24px;
+    }
   }
 
   &__button {
@@ -55,18 +63,18 @@
     color: $lightBlueColor;
     font-size: 16px;
     cursor: pointer;
-    line-height: 23px;
+    line-height: 24px;
     letter-spacing: 0.1em;
-    transition: background $transition, transform $transition;
+    transition: background $transition;
 
     &:hover {
-      transform: scale(1.2);
       background: $lightBlueColor;
       color: $whiteColor;
     }
 
     @include tablet {
-      margin: 0 auto;
+      padding-inline: 5px;
+      text-align: center;
     }
   }
 

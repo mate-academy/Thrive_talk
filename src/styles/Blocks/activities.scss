@@ -1,6 +1,5 @@
 .activities {
   margin-bottom: 22px;
-  @include maxWidth;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 480px;
@@ -18,7 +17,7 @@
     @include flexCenter;
     background-image: none;
     color: $whiteColor;
-    transition: background $transition;
+    transition: background $imageTime;
 
     &--1 {
       background-color: $linkColor;
@@ -42,7 +41,7 @@
       background-color: $lightGreenColor;
 
       &:hover {
-        background-image: url(/images/strawberries.png);
+        background-image: url(/images/iron.jpg);
         @include background;
       }
     }
