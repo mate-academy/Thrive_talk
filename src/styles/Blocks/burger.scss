@@ -21,6 +21,8 @@
     }
 
     &::before {
+      width: 24px;
+      height: 24px;
       content: url(/images/burger.svg);
     }
   }
@@ -33,7 +35,7 @@
 
 .burger__toggle:checked ~ .burger__label::before {
   width: 24px;
-  height: 28px;
+  height: 24px;
   content: url(/images/close.svg);
 }
 
