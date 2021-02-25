@@ -9,19 +9,27 @@
   &__photo {
     max-width: 480px;
     max-height: 800px;
+
+    @include tablet {
+      align-self: center;
+    }
+
+    @include mobile {
+      max-width: 320px;
+    }
   }
 
   &__content {
     padding: 103px 150px 42px 50px;
 
     @include laptop {
-      padding: 90px 120px 42px 50px;
+      padding: 90px 40px 42px;
     }
 
     @include tablet {
       text-align: center;
       align-self: center;
-      padding: 50px 20px 20px;
+      padding: 50px 20px 0;
     }
 
     @include mobile {
@@ -35,7 +43,7 @@
     font-size: 16px;
     line-height: 12px;
     letter-spacing: 0.06em;
-    color: #22356f;
+    color: $linkColor;
 
     @include laptop {
       padding-bottom: 100px;
@@ -53,7 +61,7 @@
     font-size: 36px;
     line-height: 53px;
     letter-spacing: -0.01em;
-    color: #22356f;
+    color: $linkColor;
 
     @include mobile {
       padding-bottom: 100px;
@@ -62,10 +70,10 @@
 
   &__link {
     display: inline-block;
-    color: #62d0df;
+    color: $lightBlueColor;
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform $transition;
 
     &:hover {
       transform: scale(1.1);
@@ -77,16 +85,16 @@
     display: inline-block;
     padding: 20px 30px;
     text-decoration: none;
-    color: #fab63b;
+    color: $orangeColor;
     font-size: 16px;
     cursor: pointer;
     line-height: 23px;
     letter-spacing: 0.1em;
-    transition: background 0.3s, color 0.3s;
+    transition: background $transition, color $transition;
 
     &:hover {
-      background: #fab63b;
-      color: #fff;
+      background: $orangeColor;
+      color: $whiteColor;
     }
   }
 }

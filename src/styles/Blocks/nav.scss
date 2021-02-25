@@ -3,9 +3,12 @@
   @include flexBetween;
   z-index: 100;
 
+  @include mobile {
+    margin-bottom: 50px;
+  }
+
   &__logo {
-    @include flexCenter;
-    align-items: center;
+    padding-top: 10px;
   }
 
   .burger__logo {

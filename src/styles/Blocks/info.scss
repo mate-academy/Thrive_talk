@@ -27,11 +27,13 @@
     }
 
     @include tablet {
+      margin: 0 auto;
       text-align: center;
+      padding-bottom: 50px;
     }
 
     @include mobile {
-      margin: 0 auto;
+      padding-bottom: 50px;
       grid-template-columns: 1fr;
     }
   }
@@ -43,7 +45,7 @@
   &__heading {
     text-transform: uppercase;
     padding-bottom: 40px;
-    color: #22356f;
+    color: $linkColor;
     font-size: 14px;
     line-height: 11px;
     letter-spacing: -0.01em;
@@ -70,7 +72,7 @@
 
   &__email {
     display: block;
-    color: #62d0df;
+    color: $lightBlueColor;
     cursor: pointer;
   }
 }

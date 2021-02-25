@@ -1,0 +1,45 @@
+.burger {
+  display: none;
+
+  &__toggle {
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__label {
+    display: flex;
+    align-self: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 101;
+
+    &:active {
+      background: none;
+    }
+
+    &::before {
+      content: url(/images/burger.svg);
+    }
+  }
+}
+
+.burger__toggle:checked ~ .mobile {
+  display: block;
+}
+
+.burger__toggle:checked ~ .burger__label::before {
+  width: 24px;
+  height: 24px;
+  content: url(/images/close.svg);
+  margin-bottom: 20px;
+}
+
+@include mobile {
+  .burger {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+}

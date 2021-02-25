@@ -1,7 +1,6 @@
 .why {
   @include maxWidth;
   display: flex;
-  // display: none;
 
   @include tablet {
     flex-direction: column;
@@ -24,11 +23,6 @@
     @include tablet {
       padding: 50px 20px 40px;
     }
-
-    @include mobile {
-      // width: 100vh;
-    }
-
   }
 
   &__heading {
@@ -57,6 +51,7 @@
     display: block;
     margin: 0;
     padding: 0;
+
     @include mobile {
       height: 100%;
     }

@@ -22,7 +22,7 @@
     margin-bottom: 38px;
 
     @include mobile {
-      width: 85%;
+      display: none;
     }
 
     @include wide {
@@ -38,13 +38,13 @@
     color: $linkColor;
 
     @include tablet {
+      width: 100%;
       min-width: 310px;
       color: lighten($linkColor, 25%);
-      padding-right: 0;
     }
 
     @include mobile {
-      max-width: 310px;
+      padding-inline: 20px;
       color: lighten($linkColor, 25%);
     }
   }
@@ -61,7 +61,7 @@
     }
 
     @include mobile {
-      width: 85%;
+      width: $headerWidth;
     }
   }
 
@@ -72,7 +72,7 @@
 
     @include mobile {
       margin-bottom: 40px;
-      width: 85%;
+      width: $headerWidth;
     }
   }
 
@@ -108,7 +108,7 @@
     font-size: 16px;
     line-height: 23px;
     letter-spacing: 0.1em;
-    transition: border 0.3s;
+    transition: border $transition;
 
     &--active {
       color: $whiteColor;
@@ -120,7 +120,7 @@
     }
 
     @include mobile {
-      width: 85%;
+      width: $headerWidth;
     }
   }
 
@@ -147,10 +147,6 @@
     background-image: url(/images/helping-green.png);
     background-repeat: no-repeat;
     z-index: 1;
-
-    @include mobile {
-      // display: none;
-    }
   }
 
   &__white {
@@ -164,10 +160,6 @@
 
     @include tablet {
       display: none;
-    }
-
-    @include mobile {
-      // display: none;
     }
   }
 }

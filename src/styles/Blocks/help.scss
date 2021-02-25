@@ -32,13 +32,11 @@
   &__block {
     color: $whiteColor;
     padding-top: 30px;
-    display: flex;
-    background-image: none;
-    justify-content: center;
-    transition: background 0.3s;
+    @include flexCenter;
+    transition: background $transition;
 
     &--1 {
-      background-color: #ffe2de;
+      background-color: $pinkColor;
 
       &:hover {
         background-image: url(/images/weight.jpg);
@@ -47,7 +45,7 @@
     }
 
     &--2 {
-      background-color: #c4e769;
+      background-color: $lightGreenColor;
 
       &:hover {
         background-image: url(/images/running.jpg);
@@ -65,7 +63,7 @@
     }
 
     &--4 {
-      background-color: #0052c1;
+      background-color: $blueColor;
 
       &:hover {
         background-image: url(/images/iron.jpg);

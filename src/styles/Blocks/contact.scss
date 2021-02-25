@@ -1,20 +1,23 @@
 .contact {
   @include maxWidth;
-  display: flex;
-  color: #fff;
-  background: #22356f;
-  justify-content: space-between;
+  @include flexBetween;
+  color: $whiteColor;
+  background: $linkColor;
 
   @include tablet {
     flex-direction: column-reverse;
   }
 
   &__content {
-    background-color: #22356f;
+    background-color: $linkColor;
     padding: 103px 0 42px 180px;
 
     @include laptop {
-      padding-left: 40px;
+      padding-inline: 40px;
+    }
+
+    @include mobile {
+      padding-inline: 20px;
     }
   }
 
@@ -48,18 +51,22 @@
   &__button {
     text-transform: uppercase;
     display: inline-block;
-    padding: 20px 30px;
     text-decoration: none;
-    color: #62d0df;
+    color: $lightBlueColor;
     font-size: 16px;
     cursor: pointer;
     line-height: 23px;
     letter-spacing: 0.1em;
-    transition: background 0.3s, color 0.3s;
+    transition: background $transition, transform $transition;
 
     &:hover {
-      background: #62d0df;
-      color: #fff;
+      transform: scale(1.2);
+      background: $lightBlueColor;
+      color: $whiteColor;
+    }
+
+    @include tablet {
+      margin: 0 auto;
     }
   }
 

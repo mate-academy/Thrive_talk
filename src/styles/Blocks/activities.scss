@@ -14,15 +14,14 @@
   }
 
   &__block {
-    color: $whiteColor;
     padding-top: 90px;
-    display: flex;
+    @include flexCenter;
     background-image: none;
-    justify-content: center;
-    transition: background 0.3s;
+    color: $whiteColor;
+    transition: background $transition;
 
     &--1 {
-      background-color: #22356f;
+      background-color: $linkColor;
 
       &:hover {
         background-image: url(/images/weight.jpg);
@@ -31,7 +30,7 @@
     }
 
     &--2 {
-      background-color: #0052c1;
+      background-color: $blueColor;
 
       &:hover {
         background-image: url(/images/running.jpg);
@@ -40,7 +39,7 @@
     }
 
     &--3 {
-      background-color: #c4e769;
+      background-color: $lightGreenColor;
 
       &:hover {
         background-image: url(/images/strawberries.png);
@@ -49,7 +48,7 @@
     }
 
     &--4 {
-      background-color: #62d0df;
+      background-color: $lightBlueColor;
 
       &:hover {
         background-image: url(/images/iron.jpg);
@@ -58,7 +57,7 @@
     }
 
     &--5 {
-      background-color: #dee1ff;
+      background-color: $greyColor;
 
       &:hover {
         background-image: url(/images/weight.jpg);
@@ -67,7 +66,7 @@
     }
 
     &--6 {
-      background-color: #8f00ff;
+      background-color: $violetColor;
 
       &:hover {
         background-image: url(/images/weight.jpg);
@@ -91,7 +90,7 @@
       position: absolute;
       top: 13%;
       left: 0;
-      background: #e9b730;
+      background: $dotColor;
       width: 9px;
       height: 9px;
       border-radius: 50%;
