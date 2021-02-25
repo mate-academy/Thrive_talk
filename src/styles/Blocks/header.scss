@@ -157,6 +157,10 @@
     background-color: $whiteColor;
     z-index: 0;
 
+    @media (min-width: 1401px) {
+      display: none;
+    }
+
     @include tablet {
       display: none;
     }
