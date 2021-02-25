@@ -47,7 +47,7 @@
     transition: all 0.5s ease-in-out;
 
     &:hover {
-      background-image: url("../images/завантаження\ \(1\).jpeg");
+      background-image: url("../images/111.jpg");
       transform: scale(0.95);
       box-shadow: -1px 0 14px 6px #c4e769;
       background-repeat: no-repeat;
@@ -122,8 +122,12 @@
     grid-template-rows: 1fr 1fr;
   }
 
-  .help__item {
-    width: 360px;
+  .help__item-1,
+  .help__item-2,
+  .help__item-3,
+  .help__item-4 {
+    width: 320px;
+    height: 320px;
   }
 }
 
