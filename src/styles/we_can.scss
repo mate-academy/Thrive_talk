@@ -112,7 +112,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .we_can__sport,
   .we_can__health,
   .we_can__training {
@@ -125,5 +125,10 @@
   .we_can__health,
   .we_can__training {
     grid-template-columns: 1fr;
+  }
+
+  .we_can__training--title,
+  .we_can__training--paragraph {
+    text-align: center;
   }
 }

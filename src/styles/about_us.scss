@@ -5,8 +5,11 @@
     padding-top: 150px;
   }
 
+  .about_us__container {
+    display: flex;
+  }
+
   &__title {
-    position: absolute;
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
@@ -23,9 +26,24 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
+  .about_us--wrapper {
+    padding-top: 30px;
+  }
+
+  .about_us__container {
+    flex-direction: column;
+  }
+
   .about_us__title {
-    top: 50px;
-    right: 50%;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .about_us__paragraph {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: calc(100% - 40px);
   }
 }

@@ -50,10 +50,10 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 
   .you_should__img {
-    max-width: 420px;
+    max-width: 480px;
   }
 
   .you_should__block {
@@ -87,5 +87,12 @@
 
   .you_should__block--link {
     margin: 0 auto 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .you_should__paragraph {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

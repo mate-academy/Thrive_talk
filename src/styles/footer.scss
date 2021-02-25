@@ -11,3 +11,9 @@
     color: $color_white;
   }
 }
+
+@media (max-width: 560px) {
+  .footer__paragraph {
+    margin: 0 auto;
+  }
+}

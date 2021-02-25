@@ -1,9 +1,84 @@
-// <!-- <input
-// id="burger"
-// type="checkbox"
-// class="header__menu_checkbox"
-// >
-// <label
-// for="burger"
-// class="header__burger">
-// </label> -->
+.mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 725px;
+  width: 100vw;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: hsla(73, 69%, 81%, 0.94);
+  z-index: 2;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+  transition: transform $duration;
+
+  &__menu {
+    margin: 80px 0 20px;
+  }
+
+  &__title--wrapper {
+    text-align: center;
+  }
+
+  &__title--link {
+    display: inline-block;
+    font-size: 38px;
+    color: $color_sky_blue;
+    @include hover (opacity, 0.8);
+    transition: text-shadow $duration,
+      transform $duration;
+
+    &:hover {
+      text-shadow: 0 0 10px rgb(6, 30, 250);
+      transform: scale(1.1);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__items {
+    margin-top: 35px;
+  }
+
+  &__link {
+    padding: 5px;
+    display: inline-block;
+    color: $color_dark_blue;
+    @include hover(box-shadow, 0 5px 10px #094102);
+    transition: border-radius $duration,
+      transform $duration,
+      background-color $duration;
+
+    &:hover {
+      background-color: rgba(31, 252, 2, 0.4);
+      border-radius: 15px;
+      transform: scale(1.1) translateY(-2px);
+    }
+  }
+
+  &__number {
+    display: inline-block;
+    font-size: 16px;
+    margin: 60px 0 0 30px;
+  }
+
+  &__link--contact {
+    display: inline-block;
+    border-bottom: 1px solid $color_dark_blue;
+    padding: 5px 10px 10px;
+    margin: 20px 0 0 30px;
+  }
+}
+
+@media (min-width: 801px) {
+  .mobile {
+    display: none;
+    transform: rotate(-90deg);
+  }
+}
