@@ -3,13 +3,15 @@
 
   &__wrapper {
     @include flex_aligning ($horizontal: space-between);
-    align-items: center;
     max-width: 1440px;
     margin: 0 auto;
   }
 
   &__block-1 {
+    display: flex;
     margin: 0 auto;
+    align-items: center;
+
   }
 
   &__block-content {
@@ -17,7 +19,7 @@
     flex-direction: column;
     width: calc(100% - 60px);
     max-width: 555px;
-    margin: 150px auto 0;
+    margin: 0 auto;
     color: $color_white;
   }
 
@@ -45,7 +47,8 @@
 
   &__block-2 {
     display: flex;
-    text-align: center;
+    // text-align: center;
+    
   }
 
   &__img {
@@ -68,6 +71,10 @@
 
   .why_thrive__paragraph {
     margin-bottom: 50px;
+  }
+
+  .why_thrive__block-2 {
+    margin: 0 auto;
   }
 }
 
