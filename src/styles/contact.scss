@@ -99,7 +99,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .contact__title--h2 {
     margin-top: 50px;
     font-size: 32px;
@@ -110,7 +110,9 @@
   }
 
   .contact__paragraph {
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 22px;
+    line-height: 35px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto 30px;
   }
 }

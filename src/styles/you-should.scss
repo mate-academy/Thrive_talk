@@ -31,6 +31,7 @@
     color: $color_dark_blue;
     font-weight: 700;
     margin-top: 175px;
+    max-width: calc(100% - 40px);
   }
 
   &__link {
@@ -90,7 +91,7 @@
 
   .you_should__img,
   .you_should__block {
-    min-width: 300px;
+    min-width: 280px;
     margin: 0 auto;
     text-align: center;
   }
@@ -102,7 +103,9 @@
 
 @media (max-width: 500px) {
   .you_should__paragraph {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
+    max-width: calc(100% - 40px);
+    margin: 100px auto 30px;
   }
 }
