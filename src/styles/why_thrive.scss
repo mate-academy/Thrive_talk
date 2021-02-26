@@ -24,6 +24,7 @@
   }
 
   &__title {
+    margin-bottom: 90px;
     color: $color_white;
     font-size: 36px;
     line-height: 27px;
@@ -47,8 +48,6 @@
 
   &__block-2 {
     display: flex;
-    // text-align: center;
-    
   }
 
   &__img {
@@ -67,6 +66,10 @@
   .why_thrive__block-content {
     margin-top: 50px;
     text-align: center;
+  }
+
+  .why_thrive__title {
+    margin-bottom: 50px;
   }
 
   .why_thrive__paragraph {
