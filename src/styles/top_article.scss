@@ -40,7 +40,7 @@
   }
 
   &__title {
-    min-width: 500px;
+    min-width: 470px;
     margin-left: 55px;
     font-size: 45px;
     line-height: 53px;
@@ -65,7 +65,8 @@
     transition: background-color $duration,
       transform $duration,
       border-radius $duration,
-      box-shadow $duration;
+      box-shadow $duration,
+      font-size $duration;
 
     &:hover {
       transform: scale(1.05);
@@ -200,6 +201,7 @@
   }
 
   .top_article__title {
+    min-width: 270px;
     margin-left: 25px;
     font-size: 28px;
     line-height: 40px;
@@ -212,11 +214,12 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 30px;
-    max-width: 300px;
+    max-width: 270px;
   }
 
   .top_article__link {
     padding: 5px 20px;
     margin-left: 15px;
+    font-size: 14px;
   }
 }
