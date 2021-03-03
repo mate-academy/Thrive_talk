@@ -1,0 +1,87 @@
+.should-know {
+  display: flex;
+
+  &__photo {
+    min-width: 480px;
+
+    background-image: url("../images/yellow-sofa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+  }
+
+  &__content {
+    padding: 103px 175px 42px 106px;
+
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 23.5%;
+
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: normal;
+    color: $dark-blue;
+  }
+
+  &__text {
+    margin-bottom: 15.9%;
+
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -1px;
+    color: $dark-blue;
+    font-weight: bold;
+  }
+
+  &__link {
+    margin-right: 6px;
+    font-size: inherit;
+  }
+}
+
+@media screen and (max-width: $average-screen-breakpoint) {
+  .should-know {
+    flex-wrap: wrap;
+
+    &__img {
+      width: 100vw;
+      height: 600px;
+
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+}
+
+@media screen and(max-width: $small-screen-breakpoint) {
+  .should-know {
+
+    &__content {
+      padding: 30px 35px 42px 40px;
+    }
+
+    &__img {
+      min-width: 320px;
+      height: 600px;
+    }
+
+    &__text {
+      font-size: 25px;
+      line-height: 40px;
+    }
+
+    &__link {
+      margin-right: 3px;
+
+      font-size: 25px;
+    }
+
+    &__button {
+      margin-left: calc( 50% - 91px);
+    }
+  }
+}

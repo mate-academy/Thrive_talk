@@ -1,0 +1,94 @@
+.contact {
+  display: flex;
+
+  background-color: $dark-blue;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 103px 201px 42px 180px;
+  }
+
+  &__link {
+    margin-bottom: 230px;
+
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 12px;
+    color: $white-color;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $orange-color;
+    }
+  }
+
+  &__title {
+    margin-bottom: 75px;
+
+    font-size: 64px;
+    line-height: 93.7px;
+    letter-spacing: -1px;
+    color: $white-color;
+  }
+
+  &__text {
+    margin-bottom: 75px;
+
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.5px;
+    color: $white-color;
+  }
+
+  &__link--help {
+    font-size: 16px;
+    line-height: 23.5px;
+    letter-spacing: 1.5px;
+    color: $main-color;
+
+    &:hover {
+      color: $orange-color;
+    }
+  }
+
+  &__img {
+    min-width: 480px;
+
+    background-image: url(../images/man-smiling.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+    overflow: hidden;
+
+  }
+}
+
+@media screen and(max-width: $average-screen-breakpoint) {
+  .contact-us {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and(max-width: $small-screen-breakpoint) {
+  .contact-us {
+    &__content {
+      padding: 30px 35px 42px 40px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+
+      font-size: 45px;
+      line-height: 60px;
+    }
+
+    &__link {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+}
