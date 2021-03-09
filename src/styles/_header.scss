@@ -1,0 +1,146 @@
+.header {
+  position: relative;
+
+  height: 840px;
+  padding: 27px 130px 0 179px;
+
+  background-color: #f4f9e2;
+
+  &__photo-container {
+    position: absolute;
+    z-index: 3;
+
+    right: 0;
+    top: 12%;
+
+    width: 662px;
+    height: 550px;
+
+    border-radius: 312px;
+    background-position: right;
+    background-size: cover;
+    transform: rotate(-30deg);
+    overflow: hidden;
+  }
+
+  &__photo {
+    position: absolute;
+    width: 512px;
+    height: 607px;
+    transform: rotate(30deg);
+    object-fit: cover;
+  }
+
+  &__blue-block {
+    position: absolute;
+    top: 0;
+    right: -95px;
+
+    width: 790px;
+    height: 540px;
+
+    background-color: #edfdff;
+    border-radius: 312px;
+    transform: rotate(-60deg);
+
+    z-index: 2;
+
+  }
+
+  &__white-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 300px;
+    height: 100%;
+
+    background-color: $white-color;
+
+  }
+
+  &__top {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 140px;
+    max-width: 2560px;
+  }
+
+  &__button {
+    border: 2px solid $main-color;
+    border-radius: 50px;
+    background-color: $main-color;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+
+    &--link {
+      display: block;
+      height: 50px;
+      width: 150px;
+
+      line-height: 50px;
+      font-size: 14px;
+      color: $white-color;
+      transition: color 0.5s;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+
+    &:hover {
+      background-color: $white-color;
+    }
+
+    &:focus {
+      border-color: transparent;
+      outline: none;
+    }
+  }
+
+}
+
+@media screen and(max-width: $info-screen) {
+  .header {
+    padding: 10px 20px;
+    height: 750px;
+
+    &__photo-container,
+    &__photo,
+    &__blue-block,
+    &__white-block {
+      display: none;
+    }
+
+    &__logo {
+      margin-bottom: 30px;
+    }
+
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+    &__nav {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and(min-width: $large-screen) {
+  .header {
+    padding: 27px calc(50% - 600px) 0;
+
+    &__top {
+      padding-left: 200px;
+    }
+
+    &__photo-container {
+      right: -200px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(420px, 1fr));
+  grid-template-rows: repeat(2,240px);
+  margin-bottom: 40px;
+
+  &__card {
+    padding: 55px 77px 37px 105px;
+  }
+
+  &__link {
+    font-size: 28px;
+    line-height: 33px;
+    color: $dark-blue;
+    transition: color 0.3s;
+    letter-spacing: -0.03em;
+
+    &:hover {
+      color: $orange-color;
+    }
+  }
+
+  &__text {
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 25px;
+    color: $dark-blue;
+    opacity: 0.5;
+    letter-spacing: -0.03em;
+  }
+}
+
+@media screen and(max-width: $small-screen) {
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+
+    &__card {
+      padding: 20px 20px 25px;
+    }
+  }
+}

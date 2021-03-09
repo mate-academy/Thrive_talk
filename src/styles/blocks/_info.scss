@@ -1,0 +1,44 @@
+.info {
+  position: relative;
+  z-index: 10;
+  width: 550px;
+
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    font-size: 48px;
+    line-height: 53px;
+    color: $dark-blue;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 63px;
+
+    font-size: 24px;
+    line-height: 42px;
+    color: $dark-blue;
+  }
+}
+
+@media screen and(max-width: $info-screen) {
+  .info {
+    &__logo {
+      visibility: hidden;
+
+    }
+    &__title {
+      margin-bottom: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 30px;
+      line-height: 30px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+}

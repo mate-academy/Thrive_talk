@@ -1,0 +1,109 @@
+.more {
+  display: flex;
+  background-color: $white-color;
+
+  &__img {
+    min-width: 570px;
+
+    background-image: url("../images/girl-with-wreath.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 98px 40px 74px 68px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 240px;
+
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.6px;
+    color: $dark-blue;
+    opacity: 0.5;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.6px;
+    color: $dark-blue;
+    opacity: 0.5;
+
+    &--phone {
+      margin-top: 30px;
+    }
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+
+  &__title {
+    margin-bottom: 57px;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 11px;
+    letter-spacing: -0.6px;
+    color: $dark-blue;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 1100px ) {
+  .more {
+    flex-direction: column;
+
+    &__content {
+      padding: 50px 30px 60px;
+    }
+
+    &__card {
+      padding-right: 10px;
+
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &__img {
+      width: 100vw;
+      height: 600px;
+
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+@media screen and(max-width: $info-screen) {
+  .more {
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__card {
+      flex: 150px;
+
+      font-size: 14px;
+      line-height: 23px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      min-width: 320px;
+      height: 600px;
+    }
+  }
+}
