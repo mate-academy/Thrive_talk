@@ -104,16 +104,15 @@
 
 }
 
-@media screen and(max-width: $average-screen-breakpoint) {
+@media screen and(max-width: $info-screen) {
   .header {
-    padding: 10px;
-    height: 700px;
+    padding: 10px 20px;
+    height: 750px;
 
-    &__photo-border,
+    &__photo-container,
     &__photo,
-    &__white-block,
     &__blue-block,
-    &__nav {
+    &__white-block {
       display: none;
     }
 
@@ -126,15 +125,22 @@
       align-items: center;
       margin-bottom: 100px;
     }
+    &__nav {
+      margin-bottom: 30px;
+    }
   }
 }
 
-@media screen and(min-width: $big-screen-breakpoint) {
+@media screen and(min-width: $large-screen) {
   .header {
-    padding: 20px calc(50% - 600px) 0;
+    padding: 27px calc(50% - 600px) 0;
 
     &__top {
       padding-left: 200px;
+    }
+
+    &__photo-container {
+      right: -200px;
     }
   }
 }

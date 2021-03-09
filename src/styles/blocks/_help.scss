@@ -59,7 +59,15 @@
   }
 }
 
-@media screen and(max-width: $average-screen-breakpoint) {
+@media screen and(max-width: $help-large-screen) {
+  .help {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media screen and(max-width: $help-small-screen) {
   .help {
     &__list {
       display: grid;

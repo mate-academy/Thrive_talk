@@ -59,8 +59,8 @@
   }
 }
 
-@media screen and (max-width: $average-screen-breakpoint ) {
-  .adress {
+@media screen and (max-width: 1100px ) {
+  .more {
     flex-direction: column;
 
     &__content {
@@ -80,6 +80,30 @@
 
       background-position: center;
       background-size: cover;
+    }
+  }
+}
+@media screen and(max-width: $info-screen) {
+  .more {
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__card {
+      flex: 150px;
+
+      font-size: 14px;
+      line-height: 23px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      min-width: 320px;
+      height: 600px;
     }
   }
 }

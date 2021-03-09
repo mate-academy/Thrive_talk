@@ -50,12 +50,18 @@
   }
 }
 
-@media screen and(max-width: $small-screen-breakpoint) {
-  .help-large {
+@media screen and(max-width: $middle-screen) {
+  .help-extra {
     &__list {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and(max-width: $help-small-screen) {
+  .help-extra {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

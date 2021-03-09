@@ -42,11 +42,11 @@
   }
 }
 
-@media screen and (max-width: $average-screen-breakpoint) {
+@media screen and (max-width: $middle-screen) {
   .should-know {
     flex-wrap: wrap;
 
-    &__img {
+    &__photo {
       width: 100vw;
       height: 600px;
 
@@ -57,14 +57,14 @@
 
 }
 
-@media screen and(max-width: $small-screen-breakpoint) {
+@media screen and(max-width: $small-screen) {
   .should-know {
 
     &__content {
       padding: 30px 35px 42px 40px;
     }
 
-    &__img {
+    &__photo {
       min-width: 320px;
       height: 600px;
     }

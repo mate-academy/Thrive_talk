@@ -23,7 +23,7 @@
   }
 }
 
-@media screen and(max-width: $average-screen-breakpoint) {
+@media screen and(max-width: $info-screen) {
   .info {
     &__logo {
       visibility: hidden;

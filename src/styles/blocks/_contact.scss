@@ -64,14 +64,22 @@
   }
 }
 
-@media screen and(max-width: $average-screen-breakpoint) {
-  .contact-us {
+@media screen and(max-width: $middle-screen ) {
+  .contact {
     flex-wrap: wrap;
+
+    &__img {
+      width: 100vw;
+      height: 600px;
+
+      background-position: center;
+      background-size: cover;
+    }
   }
 }
 
-@media screen and(max-width: $small-screen-breakpoint) {
-  .contact-us {
+@media screen and(max-width: $small-screen) {
+  .contact {
     &__content {
       padding: 30px 35px 42px 40px;
     }
@@ -79,7 +87,7 @@
     &__title {
       margin-bottom: 20px;
 
-      font-size: 40px;
+      font-size: 45px;
       line-height: 60px;
     }
 
@@ -89,6 +97,14 @@
 
     &__text {
       margin-bottom: 30px;
+    }
+
+    &__img {
+      min-width: 320px;
+      height: 600px;
+
+      background-position: center;
+      background-size: cover;
     }
   }
 }
