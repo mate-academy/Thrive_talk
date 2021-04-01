@@ -1,0 +1,81 @@
+.provide {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    height: 480px;
+    padding: 95px 70px 10px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+
+    &:first-child {
+      background-color: $extra-font-color;
+    }
+
+    &:nth-child(2) {
+      background-color: $sea-card;
+    }
+
+    &:nth-child(3) {
+      background: url("../images/3.jpg") center no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+    }
+
+    &:nth-child(4) {
+      background-color: $main-color;
+    }
+
+    &:nth-child(5) {
+      background-color: $grey-card;
+    }
+
+    &:last-child {
+      background-color: $purple-card;
+    }
+
+    &:hover {
+      border-radius: 10px;
+      transform: scale(1.02);
+    }
+  }
+
+  &__item:hover &__link {
+    color: $button-color;
+
+    &::after {
+      background-color: $button-color;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .provide {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      height: 200px;
+      padding: 72px 52.5px 10px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .provide {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      height: 150px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@media screen and (max-width: $small-screen) {
+  .page {
+    &__header,
+    &__footer {
+      padding: 0 $outer-size;
+    }
+  }
+}

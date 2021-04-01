@@ -1,0 +1,63 @@
+.reference {
+  line-height: 23px;
+  color: $main-color;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.4s linear;
+
+  &:hover {
+    &::after {
+      @include line-bottom;
+      top: 33px;
+      height: 2px;
+    }
+  }
+
+  &--main {
+    padding: 15px 25px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $main-font-color;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  &--filled {
+    padding: 15px 35px;
+    color: $main-font-color;
+
+    &:hover {
+      color: $button-color;
+    }
+  }
+
+  &--yellow {
+    color: $button-color;
+
+    &:hover {
+      &::after {
+        background-color: $button-color;
+      }
+    }
+  }
+
+  &--sky:hover {
+    &::after {
+      background-color: $main-color;
+    }
+  }
+
+  &--white {
+    position: relative;
+    font-weight: 400;
+    color: $main-font-color;
+
+    &:hover {
+      &::after {
+        background-color: $main-font-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.contact {
+  display: flex;
+  min-height: 380px;
+  gap: 20px;
+
+  &__photo {
+    max-width: 30vw;
+    object-fit: cover;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+    margin-top: 98px;
+  }
+
+  &__item {
+    width: 200px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 11px;
+    text-transform: uppercase;
+  }
+
+  &__text,
+  &__routine {
+    font-size: 14px;
+    line-height: 23px;
+    color: $font-color;
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .contact {
+    height: auto;
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin: 0 auto;
+      padding: 15px 0;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__photo {
+      max-width: 45vw;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .contact {
+    flex-direction: column;
+
+    &__photo {
+      @include photo-small;
+    }
+
+    &__list {
+      text-align: center;
+    }
+
+    &__item {
+      width: 300px;
+    }
+  }
+}

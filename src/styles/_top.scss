@@ -1,0 +1,25 @@
+.top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  &__title {
+    z-index: 1;
+  }
+
+  @media screen and (max-width: $small-screen) {
+    &__title {
+      order: 1;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .top {
+    flex-wrap: wrap;
+
+    &__title {
+      display: none;
+    }
+  }
+}

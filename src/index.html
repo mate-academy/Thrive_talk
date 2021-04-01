@@ -3,11 +3,345 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <title>ThriveTalk</title>
+    <link rel="stylesheet" href="styles/all.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <div class="page" id="home">
+      <header class="page__header header">
+        <section class="header__top top">
+          <h1 class="top__title word">ThriveTalk</h1>
+          <nav class="nav">
+            <input
+              type="checkbox"
+              id="small-menu"
+              name="toggle"
+              class="nav__input"
+            >
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  href="#home"
+                  class="nav__link link link--top"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link link link--top">
+                  About
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link link link--top">
+                  Services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#blog" class="nav__link link link--top"
+                >
+                  Blog
+                </a>
+              </li>
+            </ul>
+            <label for="small-menu" class="nav__toggle"></label>
+          </nav>
+          <button class="button button--blue">
+            <a href="#contact-us" class="top__link reference reference--main">
+              Contact us
+            </a>
+          </button>
+        </section>
+        <section class="header__info info">
+          <div class="info__block">
+            <h1 class="info__title word">ThriveTalk</h1>
+            <p class="info__content">
+              Helping you thrive in all areas of life
+            </p>
+            <p class="info__text">
+              Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+            </p>
+            <div class="info__buttons">
+              <button class="button button--yellow">
+                <a href="#about" class="info__link reference reference--filled">
+                Who am I
+                </a>
+              </button>
+              <a href="#services" class="info__link reference reference--yellow">
+                What do I do
+              </a>
+            </div>
+          </div>
+          <div class="info__images">
+            <div class="info__rectangle"></div>
+            <div class="info__image">
+              <img
+                src="images/1.jpg"
+                alt="Boys talk in cafe"
+                class="info__photo"
+              >
+            </div>
+          </div>
+        </section>
+      </header>
+      <main class="page__main main">
+        <div class="main__block main__block--blue">
+          <section class="main__thrive thrive">
+            <div class="thrive__block">
+              <h2 class="thrive__title">
+                Why Thrive?
+              </h2>
+              <p class="thrive__text">
+                <span class="thrive__paragraph">
+                  Want to improve your well-being from the comfort of your own couch? Are you having trouble finding the right therapist?
+                </span>
+                Here at ThriveTalk, our licensed therapists provide the same quality care you would get in office from anywhere you can access your laptop or mobile phone. Become your best self with ThriveTalk.  Start therapy now with a licensed therapist!
+              </p>
+            </div>
+            <img
+              src="images/2.jpg"
+              alt="Yoga girl"
+              class="thrive__photo"
+            >
+          </section>
+        </div>
+        <div class="main__block">
+          <section class="main__about about" id="about">
+            <h3 class="about__title title">
+              About us
+            </h3>
+            <p class="about__text">
+              We want to help you thrive! Whether you are just looking for someone to talk to, or are struggling with a mental wellness issue we’re here to help.  Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+            </p>
+          </section>
+        </div>
+        <div class="main__centering">
+          <section class="main__help help" id="services">
+            <h3 class="help__title title">
+              We can help you with
+            </h3>
+            <ul class="help__list">
+              <li class="help__item">
+                <a
+                  href="#" class="help__link partition partition--small">
+                  Weight Lifting
+                </a>
+              </li>
+              <li class="help__item">
+                <a href="#" class="help__link partition partition--small">
+                  Running  & Spinning
+                </a>
+              </li>
+              <li class="help__item">
+                <a href="#" class="help__link partition partition--small">
+                  Pumping Iron
+                </a>
+              </li>
+              <li class="help__item">
+                <a
+                  href="#" class="help__link partition partition--small"
+                >
+                  Pumping Iron
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="main__block">
+          <section class="main__provide provide" id="blog">
+            <ul class="provide__list">
+              <li class="provide__item">
+                <a href="#" class="provide__link partition partition--large">
+                  Physical <br>Health
+                </a>
+              </li>
+              <li class="provide__item">
+                <a href="#" class="provide__link partition partition--large">
+                  Mental <br>Health
+                </a>
+              </li>
+              <li class="provide__item">
+                <a href="#" class="provide__link partition partition--large">
+                  Nutrition
+                </a>
+              </li>
+              <li class="provide__item">
+                <a
+                  href="#" class="provide__link partition partition--large"
+                >
+                  Gymnastics
+                </a>
+              </li>
+              <li class="provide__item">
+                <a
+                  href="#" class="provide__link partition partition--large"
+                >
+                  Crossfit
+                </a>
+              </li>
+              <li class="provide__item">
+                <a
+                  href="#" class="provide__link partition partition--large"
+                >
+                  Aerobics
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="main__block">
+          <section class="main__advantages advantages">
+            <div class="advantages__item">
+              <h4 class="advantages__title">
+                Nutritional Plans
+              </h4>
+              <p class="advantages__text">
+                A healthy eating plan gives your body the nutrients it needs every day while staying within your daily calorie goal for weight loss. A healthy eating plan also will lower your risk for heart disease and other health conditions.
+              </p>
+            </div>
+            <div class="advantages__item">
+              <h4 class="advantages__title">
+                Weight Loss
+              </h4>
+              <p class="advantages__text">
+                Healthy weight loss isn’t just about a “diet” or “program”. It’s about an ongoing lifestyle that includes long-term changes in daily eating and exercise habits.
+              </p>
+            </div>
+            <div class="advantages__item">
+              <h4 class="advantages__title">
+                Mental Peace
+              </h4>
+              <p class="advantages__text">
+                Finding mental peace is not always easy. It may be difficult to find mental peace at first, but you can practice certain techniques to help you develop the peace you are looking for. 
+              </p>
+            </div>
+            <div class="advantages__item">
+              <h4 class="advantages__title">
+                Home Training
+              </h4>
+              <p class="advantages__text">
+                Home Workouts provides daily workout routines for all your main muscle groups. In just a few minutes a day, you can build muscles and keep fitness at home without having to go to the gym.
+              </p>
+            </div>
+            <div class="advantages__item">
+              <h4 class="advantages__title">
+                Work/Life Balance
+              </h4>
+              <p class="advantages__text">
+                Your work-life balance is how you organize your days, for example how many hours you spend at work, and how much time you spend with friends or doing things you enjoy.
+              </p>
+            </div>
+            <div class="advantages__item">
+              <h4 class="advantages__title">
+                Cardio
+              </h4>
+              <p class="advantages__text">
+                Cardiovascular exercise is exercise that gets your heart rate up. Though some people use it solely for weight loss, cardio has other benefits as well. 
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="main__block">
+          <section class="main__know know">
+            <img
+              src="images/4.jpg"
+              alt="guy talk"
+              class="know__photo"
+            >
+            <div class="know__block">
+              <h3 class="know__title title">
+                You should also know
+              </h3>
+              <p class="know__text">
+                MDD affects more than 16.1 million American adults, or about 6.7%of the U.S. population age 18 and older in a given year. We at <span class="word word--large">ThriveTalk</span> can help you.
+              </p>
+              <a href="#" class="know__link reference reference--yellow">
+                Get help now
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="main__block main__block--sea">
+          <section class="main__article article">
+            <div class="article__block">
+              <h3 class="article__title title">
+                <a href="#contact-us" class="reference reference--white">
+                  Contact us
+                </a>
+              </h3>
+              <p class="article__tagline">
+                Ready. Set. Smile
+              </p>
+              <p class="article__text">
+                Take the free online assessment to see if you are a candidate and get started on your journey.
+              </p>
+              <a href="#" class="article__link reference reference--sky">
+                Get help now
+              </a>
+            </div>
+            <img
+            src="images/5.jpg"
+            alt="Boy with smile"
+            class="article__photo"
+            >
+          </section>
+        </div>
+        <div class="main__block">
+          <section class="main__contact contact" id="contact-us">
+            <img
+              src="images/6.jpg"
+              alt="Girl with smile"
+              class="contact__photo"
+            >
+            <div class="contact__list">
+              <div class="contact__item">
+                <h4 class="contact__title">
+                  Some info
+                </h4>
+                <p class="contact__text">
+                  Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+                </p>
+              </div>
+              <div class="contact__item">
+                <h4 class="contact__title">
+                  Enfold Health
+                </h4>
+                <a
+                  href="https://goo.gl/maps/j5qwE7Xqp8nH6F136"
+                  target="_blank"
+                  class="contact__text link link--bottom"
+                >
+                  Main Street 1, Olcott<br>Buffalo, United States
+                </a>
+                <br>
+                <br>
+                <a href="tel:+555283784333" class="contact__text link link--bottom">
+                  +555 283 784 333
+                </a>
+                <br>
+                <a href="mailto:office@enfold-health.com" class="contact__text link link--blue">
+                  office@enfold-health.com
+                </a>
+              </div>
+              <div class="contact__item">
+                <h4 class="contact__title">
+                  Office hours
+                </h4>
+                <ul class="contact__routine">
+                  <li class="contact__hours">Mo-Fr: 8:00-19:00</li>
+                  <li class="contact__hours">Sa: 8:00-14:00</li>
+                  <li class="contact__hours">Su: closed</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="page__footer footer">
+        <p class="footer__text">Copyright - ThriveTalk  2017</p>
+      </footer>
+    </div>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,41 @@
+.link {
+  font-size: 14px;
+  transition: color 0.2s linear;
+
+  &--top {
+    position: relative;
+    padding: 0 5px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $extra-font-color;
+    transition: font-weight 0.2s linear;
+
+    &:hover::after {
+      @include line-bottom;
+      top: 29px;
+      height: 1px;
+      background-color: $extra-font-color;
+    }
+  }
+
+  &--blue {
+    position: relative;
+    color: $hover-color;
+    line-height: 23px;
+  }
+
+  &--blue,
+  &--bottom {
+    &:hover {
+      color: $button-color;
+    }
+  }
+
+  &:focus {
+    outline-color: $hover-color;
+  }
+
+  &:hover {
+    font-weight: 700;
+  }
+}

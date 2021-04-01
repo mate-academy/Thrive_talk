@@ -1,0 +1,26 @@
+@media screen and (min-width: $large-screen) {
+  .main {
+    background-color: $main-font-color;
+
+    &__block {
+      &--blue {
+        background-color: $main-color;
+      }
+
+      &--sea {
+        background-color: $extra-font-color;
+      }
+    }
+
+    &__thrive,
+    &__about,
+    &__help,
+    &__provide,
+    &__advantages,
+    &__know,
+    &__article,
+    &__contact {
+      @include large-center;
+    }
+  }
+}

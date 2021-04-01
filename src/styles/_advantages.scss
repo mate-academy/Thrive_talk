@@ -1,0 +1,41 @@
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-evenly;
+  background-color: $main-font-color;
+
+  &__title {
+    padding: 55px 0 28px;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+  }
+
+  &__text {
+    max-width: 300px;
+    padding-bottom: 37px;
+    color: $font-color;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .advantages {
+    grid-template-columns: repeat(2, 250px);
+
+    &__title {
+      padding: 35px 0 17px;
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .advantages {
+    grid-template-columns: repeat(1, 300px);
+
+    &__text {
+      padding-bottom: 20px;
+    }
+  }
+}

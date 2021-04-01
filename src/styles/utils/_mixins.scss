@@ -1,6 +1,55 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
-  }
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin large-center {
+  max-width: $large-screen;
+  margin: 0 auto;
+}
+
+@mixin rectangle {
+  position: absolute;
+  width: 805px;
+  height: 544px;
+  border-radius: 312px;
+}
+
+@mixin photo-small {
+  max-width: 100vw;
+  max-height: 250px;
+}
+
+@mixin header-photo-large {
+  top: 10%;
+  width: 50vw;
+  height: 78vh;
+  transform: none;
+}
+
+@mixin line-top {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  height: 1px;
+  background-color: $main-font-color;
+}
+
+@mixin point-position {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -25px;
+  background-color: $button-color;
+  border-radius: 50%;
+}
+
+@mixin line-bottom {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

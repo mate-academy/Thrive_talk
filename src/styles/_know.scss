@@ -1,0 +1,74 @@
+.know {
+  @include flex;
+  height: 800px;
+  background-color: $main-font-color;
+
+  &__photo {
+    height: 800px;
+    max-width: 33vw;
+    object-fit: cover;
+  }
+
+  &__block {
+    position: relative;
+    margin: 100px auto 42px;
+  }
+
+  &__title {
+    line-height: 12px;
+  }
+
+  &__text {
+    max-width: 675px;
+    padding-top: 225px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0.1px;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .know {
+    height: auto;
+    gap: 20px;
+
+    &__block {
+      margin: 25px $outer-size 20px;
+    }
+
+    &__text {
+      padding: 50px 0;
+      font-size: 34px;
+      line-height: 46px;
+    }
+
+    &__photo {
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .know {
+    flex-direction: column;
+
+    &__photo {
+      @include photo-small;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 26px;
+      padding-top: 30px;
+    }
+  }
+}

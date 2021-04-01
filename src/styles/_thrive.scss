@@ -1,0 +1,78 @@
+.thrive {
+  @include flex;
+  height: 600px;
+  color: $main-font-color;
+  background-color: $main-color;
+
+  &__block {
+    margin: 0 auto;
+    padding: 150px 0 15px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 27px;
+    margin-bottom: 75px;
+    letter-spacing: 0.6px;
+  }
+
+  &__text {
+    max-width: 550px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  &__paragraph {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+  }
+
+  &__photo {
+    height: 600px;
+    max-width: 36vw;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .thrive {
+    height: auto;
+
+    &__block {
+      padding: 30px $outer-size;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      font-size: 34px;
+    }
+
+    &__photo {
+      height: auto;
+      object-position: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-screen) {
+  .thrive {
+    flex-direction: column;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__paragraph {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__photo {
+      @include photo-small;
+    }
+  }
+}

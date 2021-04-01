@@ -1,0 +1,69 @@
+.partition {
+  position: relative;
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: $main-font-color;
+  transition: color 0.4s linear;
+
+  &--small {
+    &::before {
+      @include point-position;
+      width: $point-small;
+      height: $point-small;
+    }
+
+    &::after {
+      @include line-top;
+      top: -15px;
+      left: -23px;
+      width: 20vw;
+    }
+  }
+
+  &--large {
+    &::before {
+      @include point-position;
+      width: $point-large;
+      height: $point-large;
+    }
+
+    &::after {
+      @include line-top;
+      top: -20px;
+      left: -25px;
+      width: 26vw;
+      margin: 0 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $large-screen) {
+  .partition {
+    &--small {
+      &::after {
+        width: 320px;
+      }
+    }
+
+    &--large {
+      &::after {
+        width: 420px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .partition {
+    font-size: 26px;
+
+    &--small,
+    &--large {
+      &:after {
+        max-width: 250px;
+      }
+    }
+  }
+}

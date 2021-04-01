@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  height: 80px;
+  width: 100%;
+  background-color: $main-color;
+
+  &__text {
+    margin-left: 179px;
+    font-size: 14px;
+    line-height: 80px;
+    color: $main-font-color;
+
+    &::before {
+      content: "©";
+      position: relative;
+      right: 6px;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .footer {
+    height: 50px;
+    justify-content: center;
+
+    &__text {
+      margin-left: 0;
+      line-height: 50px;
+    }
+  }
+}
