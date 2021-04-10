@@ -1,0 +1,21 @@
+.button {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 16px;
+  background: none;
+  color: $orange-color;
+  font-weight: 700;
+  transition: background-color $small-duration, color $small-duration;
+
+  &:hover {
+    background-color: $orange-color;
+    color: $white-color;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+}

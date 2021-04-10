@@ -1,0 +1,134 @@
+.menu {
+  position: relative;
+  display: none;
+  letter-spacing: 2px;
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    margin: auto;
+    width: 140px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    width: 26px;
+    height: 26px;
+    align-items: center;
+    cursor: pointer;
+
+    > .menu__line,
+    > .menu__line::before,
+    > .menu__line::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $black-color;
+      transition-duration: $small-duration;
+    }
+
+    .menu__line::before {
+      top: -8px;
+    }
+
+    .menu__line::after {
+      top: 8px;
+    }
+
+    &:checked {
+      position: fixed;
+      top: 40px;
+      right: 20px;
+    }
+  }
+
+  &__box {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    width: 100%;
+    height: 800px;
+    padding: 230px 24px 60px;
+    background-color: $beige-color;
+    transition-duration: $small-duration;
+    z-index: 2;
+  }
+
+  &__item {
+    display: block;
+    padding: 12px 0;
+    color: $darkblue-color;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition-duration: $small-duration;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+  }
+
+  &__link {
+    color: $darkblue-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+
+    &:first-child {
+      margin-bottom: 16px;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $darkblue-color;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+#menu {
+  &__toggle {
+    opacity: 0;
+    &:checked ~ .menu__btn > .menu__line {
+      transform: rotate(45deg);
+    }
+    &:checked ~ .menu__btn > .menu__line::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    &:checked ~ .menu__btn > .menu__line::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    &:checked ~ .menu__box {
+      visibility: visible;
+      top: 0;
+    }
+
+    &:checked ~ .menu__btn {
+      position: fixed;
+      top: 40px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-middle) {
+  .menu {
+    display: block;
+  }
+}
