@@ -38,12 +38,12 @@
     height: 50px;
     font-size: 14px;
     border-radius: 50px;
+    padding: 15px 25px;
     color: $white-color;
     text-transform: uppercase;
     background-color: $azur-color;
     font-weight: 700;
     z-index: 1;
-    cursor: pointer;
     transition: background-color $small-duration,
       color $small-duration,
       border $small-duration;
@@ -93,6 +93,11 @@
     @media (max-width: $breakpoint-middle) {
       font-size: 18px;
     }
+
+    @media (max-width: $breakpoint-small) {
+      padding: 0 15px 0 0;
+      font-size: 16px;
+    }
   }
 
   &__right-half {
@@ -102,6 +107,10 @@
     width: 25%;
     height: 840px;
     background-color: $white-color;
+
+    @media (max-width: $breakpoint-middle) {
+      display: none;
+    }
   }
 
   &__ellipse {
