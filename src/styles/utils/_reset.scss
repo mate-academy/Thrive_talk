@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Larsseit", Arial, Helvetica, sans-serif;
+  color: $darkBlueColor;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 16px;
+}

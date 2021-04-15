@@ -1,0 +1,85 @@
+.wehelp {
+  display: flex;
+  overflow: hidden;
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 25vw;
+    height: 25vh;
+    padding: 5vw 0 0 48px;
+
+    &:nth-child(1) {
+      background-color: #ffe2de;
+    }
+    &:nth-child(2) {
+      background-color: #c4e769;
+    }
+    &:nth-child(3) {
+      background-color: $greenblueColor;
+    }
+    &:nth-child(4) {
+      background-color: #0052c1;
+    }
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  color: $mainColor;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: linear 0.5s;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 2px;
+    top: 0;
+    background-color: $mainColor;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -30px;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    top: 13px;
+    background-color: #e9b730;
+  }
+}
+
+.main__wehelp {
+  position: relative;
+  margin-bottom: 121px;
+  
+  &__box {
+    padding-top: 24px;
+    
+  }
+}
+
+@media (max-width: $Notebook) {
+  .wehelp {
+    flex-direction: column;
+
+    &__box {
+      width: 100%;
+    }
+  }
+
+  .main__wehelp {
+    margin-bottom: 0;
+  }
+}

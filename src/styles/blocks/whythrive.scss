@@ -1,0 +1,58 @@
+.whythrive {
+  display: flex;
+  justify-content: space-between;
+
+  color: $mainColor;
+  background-color: $greenblueColor;
+  
+  &__container {
+    margin-left: 178px;
+    width: 555px;
+  }
+  
+  &__heading {
+    margin-top: 0;
+    padding-top: 151px;
+
+    color: $mainColor;
+    font-size: 36px;
+    line-height: 27px;
+  }
+
+  &__paragraph {
+    padding: 45px 0 86px;
+
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__photo {
+    width: 525px;
+
+    background: center/ cover no-repeat url("../images/women1.png");
+  }
+}
+
+@media (max-width: $Notebook) {
+  .whythrive {
+    &__container {
+      margin: 0 40px;
+      width: 100%;
+    }
+    &__heading {
+      margin-top: 0;
+      padding-top: 45px;
+    }
+    &__paragraph {
+      padding: 45px 0;
+    }
+    &__photo {
+      display: none;
+    }
+  }
+}
