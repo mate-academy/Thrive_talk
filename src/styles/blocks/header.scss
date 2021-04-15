@@ -1,0 +1,342 @@
+.header {
+  background-image: url(../images/fone.png);
+  z-index: -10;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include container;
+    padding: 27px 135px 75px 50px;
+
+    @media (max-width: 1260px) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    @media (max-width: 600px) {
+      height: 100vh;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+
+    }
+  }
+
+  &__nav {
+    @media (max-width: 767px) {
+      position: absolute;
+      top: -200%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #a05e2b;
+      transition: 1s ease-out;
+    }
+  }
+
+  &__nav.animate {
+    transition: 0.8s ease-out;
+    top: 0;
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    color: $color2;
+    z-index: 100;
+
+    @media (max-width: 767px) {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
+    }
+
+    @media (max-width: 600px) {
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &__item:last-child {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 15px 5px 14px;
+    color: $color2;
+
+    @media (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 60px;
+      font-weight: bold;
+      font-size: 30px;
+      color: $color1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $color2;
+      visibility: hidden;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &:hover::after {
+      visibility: visible;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 187px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 100;
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    background-color: $color1;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $color3;
+    visibility: visible;
+    z-index: 100;
+
+    @media (max-width: 767px) {
+      visibility: hidden;
+    }
+  }
+
+  &__burger {
+
+    position: relative;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+
+    @media (min-width: 767px) {
+      display: none;
+    }
+
+    span {
+      position: absolute;
+      top: 9px;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $color1;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $color1;
+      transition: 0.5s;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &__burger span.active {
+    visibility: hidden;
+  }
+
+  &__burger.active::before {
+    transition: 0.5s;
+    top: 9px;
+    transform: rotate(45deg);
+  }
+
+  &__burger.active::after {
+    transition: 0.5s;
+    bottom: 9px;
+    transform: rotate(-45deg);
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (max-width: 1260px) {
+      top: -300%;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (max-width: 1260px) {
+      top: -300%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    flex: 0 1 500px;
+   
+    @media (max-width: 1260px) {
+      align-self: center;
+    }
+
+    @media (max-width: 600px) {
+      align-items: center;
+      flex: 0 1 300px;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+    color: $color1;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.04em;
+    font-weight: bold;
+    color: $color2;
+    margin-bottom: 85px;
+
+    @media (max-width: 600px) {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 42px;
+    color: $color2;
+    margin-bottom: 63px;
+
+    @media (max-width: 600px) {
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__bottom-bts {
+    display: flex;
+    gap: 38px;
+
+    @media (max-width: 1260px) {
+      justify-content: center;
+    }
+  }
+
+  &__btn1 {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #fab63e;
+    text-transform: uppercase;
+    transition: all 0.5s;
+
+    &_active {
+      background-color: #fab63e;
+      color: $color3;
+    }
+
+    @media (max-width: 767px) {
+      width: 120px;
+      height: 40px;
+      background-color: #fab63e;
+      color: $color3;
+    }
+  }
+
+  &__btn2 {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #fab63e;
+    text-transform: uppercase;
+    transition: all 0.5s;
+
+    @media (max-width: 767px) {
+      width: 120px;
+      height: 40px;
+      color: #fab63e;
+    }
+  }
+}
