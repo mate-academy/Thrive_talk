@@ -6,10 +6,29 @@ html {
   font-family: "Larsseit", Arial, Helvetica, sans-serif;
   color: $darkBlueColor;
   scroll-behavior: smooth;
+  margin: 0 auto;
 }
 
 body {
-  margin: 0 auto;
   font-size: 14px;
   line-height: 16px;
+  max-width: 2560px;
+  min-width: 320px;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+ul,
+ol,
+li,
+button,
+input,
+textarea,
+a {
+  margin: 0;
+  padding: 0;
 }

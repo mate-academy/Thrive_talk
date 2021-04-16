@@ -1,0 +1,74 @@
+.smile {
+  display: flex;
+  justify-content: space-between;
+  color: $mainColor;
+  background-color: $darkBlueColor;
+
+  &__container {
+    padding: 0 20px;
+    max-width: 720px;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+  &__heading {
+    position: relative;
+    font-size: 64px;
+    line-height: 66px;
+    font-weight: 500;
+    padding-top: 200px;
+    letter-spacing: -0.01em;
+
+    &::before {
+      position: absolute;
+      font-size: 16px;
+      line-height: 12px;
+      letter-spacing: 0.06em;
+      top: 60px;
+      left: 0;
+      content: "Contact us";
+      text-transform: uppercase;
+    }
+  }
+
+  &__info {
+    padding-bottom: 50px;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+  }
+
+  &__link {
+    color: $orangeColor;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    
+    &:hover {
+      color: $greenblueColor;
+    }
+  }
+}
+@media (min-width: $Mobile) {
+  .smile {
+    &__man {
+      background: center/ cover no-repeat url("../images/men2.png");
+      width: 480px;
+    }
+
+    &__container {
+      width: 100%;
+      padding: 0 40px;
+      padding-bottom: 20px;
+    }
+
+    &__heading {
+      padding-top: 30px;
+
+      &::before {
+        top: 0;
+      }
+    }
+  }
+}

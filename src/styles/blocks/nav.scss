@@ -23,7 +23,7 @@
   }
 }
 
-@media (max-width: $Notebook) {
+@media (max-width: $Mobile) {
   .nav {
     &__list {
       flex-direction: column;

@@ -1,0 +1,81 @@
+.boardinfo {
+  display: flex;
+  &__foto {
+    width: 570px;
+    height: 380px;
+    margin-right: 50px;
+
+    background: center/ cover no-repeat url("../images/women2.png");
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+  }
+
+  &__card {
+    width: 233px;
+    height: 172px;
+
+    text-decoration: none;
+    
+    &-heading {
+      padding-bottom: 10px;
+
+      font-size: 14px;
+      color: $darkBlueColor;
+      line-height: 11px;
+      letter-spacing: -0.01em;
+
+      text-transform: uppercase;
+    }
+    &-text {
+      padding-bottom: 32px;
+
+      font-size: 14px;
+      line-height: 23px;
+      letter-spacing: -0.01em;
+      color: $darkBlueColor;
+      opacity: 0.5;
+    }
+    &-link {
+      display: inline-block;
+      padding-bottom: 5px;
+      
+      text-decoration: none;
+      color: $darkBlueColor;
+      opacity: 0.5;
+      
+      &:last-child {
+        color: #207fff;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: $Mobile) {
+  .boardinfo {
+    &__foto {
+      display: none;
+    }
+
+    &__card {
+      text-align: center;
+    }
+
+    &__item {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    
+    &__card-heading {
+      padding-bottom: 0;
+
+      &-text {
+        text-align: center;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}

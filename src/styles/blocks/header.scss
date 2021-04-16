@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (max-width: $Notebook) {
+@media (max-width: $Mobile) {
   .header {
     background: center/ cover no-repeat url("../images/peoplefull.jpg");
     width: 100%;

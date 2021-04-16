@@ -1,0 +1,35 @@
+.text__boxs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  
+  &-card {
+    padding: 80px;
+  }
+
+  &-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+  }
+
+  &-text {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: $darkBlueColor;
+  }
+}
+
+@media (max-width: $Mobile) {
+  .text__boxs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 200px);
+    
+    &-card {
+      padding: 30px 40px 40px;
+    }
+  }
+}
