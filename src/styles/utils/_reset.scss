@@ -6,16 +6,6 @@ html {
   font-family: "Larsseit", Arial, Helvetica, sans-serif;
   color: $darkBlueColor;
   scroll-behavior: smooth;
-  margin: 0 auto;
-}
-
-body {
-  font-size: 14px;
-  line-height: 16px;
-  max-width: 2560px;
-  min-width: 320px;
-  overflow-x: hidden;
-  margin: 0;
 }
 
 p,
@@ -31,4 +21,14 @@ textarea,
 a {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 1600px;
+  min-width: $minwigth;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
 }

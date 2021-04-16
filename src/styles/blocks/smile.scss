@@ -50,6 +50,7 @@
     }
   }
 }
+
 @media (min-width: $Mobile) {
   .smile {
     &__man {
@@ -70,5 +71,11 @@
         top: 0;
       }
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .smile__man {
+    opacity: 20%;
   }
 }

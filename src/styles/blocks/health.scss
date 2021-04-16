@@ -1,12 +1,11 @@
 .health {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 33.3vw);
+  grid-template-rows: repeat(2, 480px);
 
   &__box {
-    display: flex;
-    justify-content: center;
-    padding: 90px 0 0 48px;
+    padding: 90px 0 0;
 
     &:nth-child(1) {
       background-color: $darkBlueColor;
@@ -34,9 +33,18 @@
   }
 }
 
-@media (max-width: $Notebook) {
+@media (max-width: 980px) {
   .health {
-    grid-template-rows: repeat(6, 33.3vw);
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+
+    &__box {
+      align-items: center;
+      width: 50%;
+      min-width: $minwigth;
+      height: 480px;
+    }
   }
 }
