@@ -77,6 +77,10 @@
 @media (max-width: $Mobile) {
   .smile {
 
+    &__container {
+      margin: 0 auto;
+    }
+
     &__heading {
       font-size: 32px;
       padding-top: 100px;
