@@ -66,11 +66,11 @@
     z-index: 3;
     background-color: $greenblueColor;
     border-radius: 50px;
-    transition: transform 0.5s, background-color 0.5s;
+    cursor: pointer;
 
     &:hover {
       transform: scale(1.1);
-      background-color: $greenblueColor;
+      transition: 0.5s linear;
     }
   }
 }
@@ -98,5 +98,12 @@
     &__button {
       margin-right: 40px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    background: #f4f9e2;
+    width: 100%;
   }
 }

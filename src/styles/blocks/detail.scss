@@ -20,10 +20,13 @@
     padding: 19px 0;
     margin: 40px 0 80px;
     background-color: $orangeColor;
+    cursor: pointer;
     transition: transform 0.5s, background-color 0.5s;
 
     &:hover {
       transform: scale(1.1);
+      transition: 0.5s linear;
+
     }
   }
 
@@ -36,11 +39,12 @@
     font-size: 16px;
     line-height: 23px;
     color: $orangeColor;
+    cursor: pointer;
     
-    transition: transform 300ms, color 300ms;
 
     &:hover {
       transform: scale(1.1);
+      transition: 0.5s linear;
       color: $orangeColor;
     }
   }
@@ -69,7 +73,6 @@
     &__text {
       font-size: 10px;
       font-weight: bold;
-      color: $mainColor;
     }
 
     &__button {

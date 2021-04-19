@@ -3,4 +3,9 @@
   line-height: 27px;
   letter-spacing: -0.03em;
   color: $greenblueColor;
+
+  &:hover {
+    color: $orangeColor;
+    transition: 0.5s linear;
+  }
 }

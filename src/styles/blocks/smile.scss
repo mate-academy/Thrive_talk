@@ -74,8 +74,18 @@
   }
 }
 
-@media (max-width: 900px) {
-  .smile__man {
-    opacity: 20%;
+@media (max-width: 767px) {
+  .smile {
+    &__heading {
+      font-size: 32px;
+      padding-top: 100px;
+      &::before {
+        top: 30px;
+      }
+    }
+
+    &__man {
+      display: none;
+    }
   }
 }

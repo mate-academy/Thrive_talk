@@ -84,3 +84,12 @@
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 767px) {
+  .wehelp {
+    &__box {
+      width: 100%;
+      margin-bottom: 80px;
+    }
+  }
+}

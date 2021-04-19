@@ -48,3 +48,12 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .health {
+    &__box {
+      width: 100%;
+      margin-bottom: 80px;
+    }
+  }
+}

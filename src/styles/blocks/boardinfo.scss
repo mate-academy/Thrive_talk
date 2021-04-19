@@ -7,6 +7,7 @@
 
     background: center/ cover no-repeat url("../images/women2.png");
   }
+
   &__item {
     display: flex;
     justify-content: space-between;
@@ -56,12 +57,9 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .boardinfo {
-    &__foto {
-      display: none;
-    }
-
+  
     &__card {
       text-align: center;
     }
@@ -78,6 +76,19 @@
         text-align: center;
         padding-bottom: 15px;
       }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .boardinfo {
+    &__foto {
+      display: none;
+    }
+
+    &__item {
+      margin: 0 auto;
+      text-align: center;
     }
   }
 }
