@@ -74,8 +74,9 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $Mobile) {
   .smile {
+
     &__heading {
       font-size: 32px;
       padding-top: 100px;

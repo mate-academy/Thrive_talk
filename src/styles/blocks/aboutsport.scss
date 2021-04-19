@@ -85,7 +85,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $Mobile) {
   .wehelp {
     &__box {
       width: 100%;

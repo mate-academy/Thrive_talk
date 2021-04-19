@@ -101,7 +101,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $Mobile) {
   .header {
     background: #f4f9e2;
     width: 100%;

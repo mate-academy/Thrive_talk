@@ -49,7 +49,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $Mobile) {
   .health {
     &__box {
       width: 100%;
