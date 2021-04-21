@@ -1,0 +1,98 @@
+.description {
+  @include max-width;
+  position: absolute;
+  top: 25%;
+  max-width: 550px;
+  padding-bottom: 40px;
+
+  z-index: 3;
+
+  &__heading {
+    margin-bottom: 50px;
+
+    font-size: 48px;
+    font-weight: $font-weight-bold;
+    line-height: 53px;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: $dark-color;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: $font-weight-regular;
+    line-height: 42px;
+    color: $dark-color;
+  }
+
+  &__button-link {
+    text-decoration: none;
+    color: white;
+    padding: 17px 19px;
+
+    &:hover {
+      color: $bright-color;
+    }
+  }
+
+  &__button {
+    width: 150px;
+    height: 50px;
+    margin: 120px 40px 70px 0;
+    padding: 0;
+
+    @include no-border-outline-uppercase;
+
+    background-color: $bright-color;
+    border-radius: 3px;
+
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.1em;
+    color: $light-color;
+
+    transition: background-color 500ms;
+
+    &:hover {
+      background-color: $main-color;
+      color: $bright-color;
+    }
+  }
+
+  @media screen and (max-width: $small-screen-breakpoint) {
+    top: 10%;
+    &__heading {
+      font-size: 24px;
+    }
+
+    &__text {
+      margin-bottom: 80px;
+    }
+
+    &__button {
+      width: 125px;
+      margin: 30px 10px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    top: 7%;
+    left: 10%;
+    max-width: 310px;
+
+    &__text {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &__heading {
+      margin-bottom: 50px;
+
+      font-size: 20px;
+      line-height: 36px;
+    }
+
+    &__button {
+      margin: 10px 10px 10px 0;
+    }
+  }
+}

@@ -1,7 +1,20 @@
 @import "utils";
 @import "fonts";
 @import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "reset.scss";
+@import "./blocks/description";
+@import "./blocks/reasons";
+@import "./blocks/about";
+@import "./blocks/help";
+@import "general.scss";
+@import "./blocks/activities";
+@import "./blocks/trainings";
+@import "./blocks/useful";
+@import "./blocks/assessment";
+@import "./blocks/info";
+@import "./blocks/links";
+@import "./blocks/footer";
+@import "./blocks/menu";
+@import "./blocks/logo";

@@ -1,0 +1,89 @@
+.useful {
+  @include max-width;
+  @include flex-spaced;
+  align-items: center;
+  background-color: $light-color;
+
+  &__img {
+    object-fit: contain;
+  }
+
+  &__message {
+    @include column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    padding-bottom: 225px;
+    padding-top: 100px;
+    
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: $dark-color;
+  }
+
+  &__text {
+    font-size: 36px;
+    font-weight: $font-weight-bold;
+    line-height: 53px;
+    letter-spacing: -1px;
+    color: $dark-color;
+  }
+
+  &__logo {
+    color: $accent-color;
+  }
+
+  &__after {
+    padding-top: 150px;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: $font-weight-bold;
+    color: $bright-color;
+  }
+  
+  &__link {
+    text-decoration: none;
+    color: $accent-color;
+  }
+
+  @media screen and (max-width: $ipad-pro-screen-breakpoint) {
+    &__message {
+      padding: 0 20px;
+    }
+    &__heading {
+      padding-bottom: 100px;
+    }
+  }
+
+  @media screen and (max-width: $small-screen-breakpoint) {
+    @include centered-column;
+    &__message {
+      padding: 20px;
+    }
+    &__heading {
+      padding: 50px 0;
+    }
+    
+    &__text {
+      font-size: 20px;
+    }
+    &__img {
+      width: 100%;
+      object-fit: cover;
+      height: 700px;
+    }
+  }
+
+  @media screen and (max-width: $mobile-screen-breakpoint) {
+    &__img {
+      height: 300px;
+    }
+  }
+}

@@ -1,6 +1,13 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: "Larsseit";
+  src: url("../fonts/LarsseitFamily/Larsseit-ExtraBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("../fonts/LarsseitFamily/Larsseit-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }

@@ -1,6 +1,39 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
-  }
+@mixin centered {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-spaced {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin no-border-outline-uppercase {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+@mixin centered-column {
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-align-centered {
+  display: flex;
+  align-items: center;
+}
+
+@mixin max-width {
+  max-width: 4000px;
 }

@@ -1,0 +1,96 @@
+.activities {
+  @include max-width;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 480px;
+
+  background-color: $accent-color;
+
+  &__block {
+    box-sizing: border-box;
+    @include centered;
+
+    &--physical-health {
+      background-color: $dark-color;
+    }
+
+    &--mental-health {
+      background-color: $accent-color-blue;
+    }
+  
+    &--nutrition {
+      background: url("../images/joanna-kosinska-340748.jpg") no-repeat;
+      background-size: cover;
+    }
+  
+    &--gymnastics {
+      background-color: $accent-color;
+    }
+  
+    &--crossfit {
+      background-color: $block-color-light;
+    }
+  
+    &--aerobics {
+      background-color: $block-color-dark;
+    }
+  }
+
+  &__text {
+    position: relative;
+    margin-top: 40px;
+    padding-top: 70px;
+    width: 50%;
+
+    font-size: 32px;
+    font-weight: $font-weight-bold;
+    line-height: 34px;
+    color: $light-color;
+    text-align: start;
+
+    transition: transform 500ms;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 10%;
+      
+      background-color: $light-color;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      color: $main-color;
+
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 12px;
+        left: -15%;
+        top: 18%;
+        
+        background-color: $bright-color;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  @media (max-width: $small-screen-breakpoint) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mobile-screen-breakpoint) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+
+    &__text {
+      padding-top: 40px;
+      font-size: 24px;
+    }
+  }
+}

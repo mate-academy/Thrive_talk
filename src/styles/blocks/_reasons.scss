@@ -1,0 +1,66 @@
+.reasons {
+  @include max-width;
+  @include flex-spaced;
+  background-color: $accent-color;
+
+  &__info {
+    @include centered;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 75px;
+  }
+
+  &__img {
+    object-fit: contain;
+  }
+
+  &__heading {
+    font-size: 36px;
+    font-weight: $font-weight-bold;
+    color: $light-color;
+  }
+
+  &__text {
+    max-width: 555px;
+    color: $light-color;
+  }
+
+  &__bold {
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    line-height: 35px;
+  }
+
+  &__paragraph {
+    font-size: 20px;
+    font-weight: $font-weight-regular;
+    line-height: 30px;
+  }
+
+  @media screen and (max-width: $ipad-pro-screen-breakpoint) {
+    &__info {
+      padding: 50px;
+    }
+  }
+
+  @media screen and (max-width: $small-screen-breakpoint) {
+    flex-direction: column;
+
+    &__info {
+      padding: 20px;
+    }
+  
+    &__img {
+      width: 100%;
+      object-fit: cover;
+      height: 700px;
+    }
+  }
+
+  
+  @media screen and (max-width: $mobile-screen-breakpoint) {
+    &__img {
+      height: 300px;
+    }
+  }
+}

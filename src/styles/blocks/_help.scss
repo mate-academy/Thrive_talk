@@ -1,0 +1,88 @@
+.help {
+  @include max-width;
+  padding-bottom: 120px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+  
+  background-color: $light-color;
+
+  &__block {
+    box-sizing: border-box;
+    @include centered;
+    
+    &--weight-lifting {
+      background-color: $block-color-jentle;
+    }
+
+    &--running {
+      background-color: $block-color-active;
+    }
+
+    &--iron {
+      background-color: $accent-color;
+    }
+
+    &--fitness {
+      background-color: $accent-color-blue;
+    }
+  }
+
+  &__text {
+    position: relative;
+    width: 50%;
+    margin-top: 20px;
+    padding-top: 50px;
+
+    font-size: 32px;
+    font-weight: $font-weight-bold;
+    line-height: 34px;
+    text-align: start;
+    color: $light-color;
+    transition: transform 500ms;
+
+    &:hover {
+      transform: scale(1.1);
+      color: $main-color;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 10%;
+      background-color: $light-color;
+    }
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 9px;
+      height: 9px;
+      left: -15%;
+      top: 20%;
+      background-color: $bright-color;
+      border-radius: 50%;
+    }
+  }
+
+  @media (max-width: $small-screen-breakpoint) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mobile-screen-breakpoint) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+
+    &__block {
+      padding-left: 20px;
+    }
+    &__text {
+      font-size: 24px;
+    }
+  }
+}

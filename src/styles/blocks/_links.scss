@@ -1,0 +1,14 @@
+.link {
+  text-decoration: none;
+  color: $accent-color-blue;
+  
+  &:visited {
+    color: $dark-color;
+  }
+  &:hover {
+    color: $accent-color;
+  }
+  &:active {
+    color: $block-color-active;
+  }
+}

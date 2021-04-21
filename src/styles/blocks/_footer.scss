@@ -1,0 +1,18 @@
+.footer {
+  @include max-width;
+  @include flex-align-centered;
+  height: 80px;
+  padding-left: 200px;
+
+  background-color: $accent-color;
+
+  &__text {
+    font-size: 14px;
+    line-height: 11px;
+    color: $light-color;
+  }
+
+  @media (max-width: $mobile-screen-breakpoint) {
+    padding-left: 50px;
+  }
+}

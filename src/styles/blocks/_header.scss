@@ -1,0 +1,129 @@
+.header {
+  @include max-width;
+  position: relative;
+  height: 840px;
+  padding-left: 180px;
+  overflow: hidden;
+  background-color: $main-color;
+  
+  &__menu {
+    display: none;
+  }
+
+  &__top {
+    position: absolute;
+    @include flex-spaced;
+
+    top: 27px;
+    left: 170px;
+    right: 170px;
+  }
+
+  &__logo {
+    &--up {
+      margin-left: 9px;
+    }
+
+    &--down {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    width: 150px;
+    height: 50px;
+
+    background-color: $accent-color;
+    border-radius: 50px;
+    @include no-border-outline-uppercase;
+
+    font-size: 14px;
+    font-weight: $font-weight-regular;
+    line-height: 14px;
+    color: $light-color;
+    z-index: 2;
+
+    transition: all 1s;
+
+    &:hover {
+      background-color: $light-color;
+      border: 1px solid $accent-color;
+      color: $accent-color;
+    }
+  }
+
+  &__button-link {
+    padding: 23px;
+
+    text-decoration: none;
+    color: $light-color;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    width: 900px;
+    height: 600px;
+
+    object-fit: contain;
+    object-position: left;
+
+    transform: rotate(35deg);
+  }
+
+  &__wrapper {
+    position: absolute;
+    right: -30px;
+    top: 17%;
+    width: 670px;
+    height: 460px;
+
+    overflow: hidden;
+    border-radius: 312px;
+    transform: rotate(-35deg);
+    z-index: 1;
+  }
+  
+  &__decoration {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    width: 565px;
+    height: 880px;
+
+    background-color: $decoration-color;
+    border-radius: 312px;
+    transform: rotate(30deg);
+    z-index: 0;
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__image {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: $small-screen-breakpoint) {
+    height: 640px;
+  
+    &__top {
+      left: 40px;
+      right: 40px;
+    }
+  
+    &__description {
+      margin-top: 50px;
+    }
+  }
+
+  @media screen and (max-width: $tablet-screen-breakpoint) {
+    padding-left: 50%;
+    &__top {
+      display: none;
+      
+    }
+  }
+}
