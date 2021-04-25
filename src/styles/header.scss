@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 25px;
+
+  &__container {
+    box-sizing: border-box;
+    background-color: $bc-container-nav;
+  }
+
+}
+
+@media screen and (max-width:$bp-large-help) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

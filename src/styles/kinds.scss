@@ -1,0 +1,75 @@
+.kinds {
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+
+  &__title {
+    position: relative;
+    width: 210px;
+
+    margin-top: 90px;
+    padding: 27px 20px;
+
+    line-height: 33px;
+
+    color: white;
+    border-top: 2px solid #fff;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 10%;
+      width: 9px;
+      height: 9px;
+      content: "";
+      border-radius: 50%;
+      background: #e9b730;
+    }
+  }
+  &__box {
+    display: grid;
+    justify-content: center;
+
+    height: 480px;
+    background-size: cover;
+
+  }
+
+  &__box:nth-child(1) {
+    background-color: $c-blue;
+  }
+
+  &__box:nth-child(2) {
+    background-color: #0052c1;
+  }
+
+  &__box:nth-child(3) {
+    background-image: url(../images/kinds_barry.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__box:nth-child(4) {
+    background-color: $c-seablue;
+  }
+
+  &__box:nth-child(5) {
+    background-color: #dee1ff;
+  }
+
+  &__box:nth-child(6) {
+    background-color: #8f00ff;
+  }
+}
+
+@media screen and (max-width:$bp-large-kinds) {
+  .kinds {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+  }
+}
+
+@media screen and (max-width:$bp-large-about) {
+  .kinds {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
