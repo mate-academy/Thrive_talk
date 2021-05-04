@@ -1,0 +1,37 @@
+%block-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax($help-side, auto));
+  grid-template-rows: auto;
+}
+
+%card-grid {
+  display: grid;
+  justify-items: center;
+  
+  font-size: 1.3rem;
+}
+
+%name-position {
+  position: relative;
+
+  width: 70%;
+
+  margin-top: 70px;
+  padding: 23px 15px 0;
+  
+  border-top: 1px solid $main-color-text;
+}
+
+%name-dot {
+  position: absolute;
+  top: 31px;
+  left: -5px;
+
+  content: "";
+  width: 9px;
+  height: 9px;
+
+  background-color: #e9b730;
+  border-radius: 50%;
+}

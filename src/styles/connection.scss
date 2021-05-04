@@ -1,0 +1,70 @@
+.connection {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  color: #22356f;
+
+  &__info {
+    @extend %block-grid;
+    grid-template-columns: repeat(auto-fit, minmax(207px, auto));
+    column-gap: 56px;
+    color: #22356f;
+    margin: 98px 40px 74px 68px;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 207px;
+  }
+
+  &__title {
+    justify-self: start;
+
+    line-height: 10.66px;
+    font-size: 0.6rem;
+    margin-bottom: 28px;
+    letter-spacing: -0.6%;
+  }
+
+  &__text {
+    max-width: 207px;
+    color: rgba(34,53,111,0.5);
+    font-size: 0.6rem;
+    line-height: 23px;
+    letter-spacing: -0.6%;
+  }
+
+  &__address {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+
+    &--email {
+      color: #9fc8ff;
+    }
+  }
+
+  &__photo {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: $middle-screen) {
+  .connection {
+    grid-template-columns: 1fr;
+
+    &__photo {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    &__item {
+      margin-bottom: 50px;
+    }
+  }
+}

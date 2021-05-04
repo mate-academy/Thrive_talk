@@ -1,0 +1,35 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: start;
+  align-items: center;
+
+  color: $header-color-text;
+
+  &__title {
+    margin: 0 auto;
+    align-self: start;
+  }
+
+  &__text {
+    max-width: 592px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: $middle-screen) {
+  .about {
+    grid-template-columns: 1fr;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      justify-self: center;
+      text-align: center;
+      padding: 0 15px;
+    }
+  }
+}

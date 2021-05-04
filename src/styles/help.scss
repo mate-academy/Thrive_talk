@@ -1,0 +1,10 @@
+.help {
+
+  &__title {
+    font-size: 0.6rem;
+    line-height: 18.75px;
+    letter-spacing: $medium-letter-spacing * 2;
+    text-align: center;
+    color: rgba(34, 53, 111, 0.5);
+  }
+}

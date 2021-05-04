@@ -1,0 +1,181 @@
+.header {
+  z-index: 1;
+  position: relative;
+  min-height: 840px;
+  background-color: $header-color-background;
+  color: $header-color-text;
+
+  overflow: hidden;
+
+  &__section {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    padding: 0 65px;
+    max-width: $max-screen;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+    margin-bottom: 30px;
+  }
+
+  &__button-top {
+    z-index: 1;
+    width: $button-width;
+    height: $button-height;
+    line-height: 16.41px;
+
+    font-size: 0.6em;
+    font-weight: bold;
+    color: $main-color-text;
+    background-color: $logo-color;
+    border: 3px solid $logo-color;
+    outline: transparent;
+    border-radius: 50px;
+
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: $logo-color;
+    }
+
+    &:active {
+      background-color: #edfdff;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+
+    max-width: 484px;
+  }
+
+  &__caption {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    line-height: 53px;
+    font-size: 2rem;
+    letter-spacing: $medium-letter-spacing;
+  }
+
+  &__description {
+    line-height: 42px;
+    margin-bottom: 60px;
+  }
+
+  &__button {
+    width: $button-width;
+    height: $button-height;
+
+    font-size: 0.6rem;
+    line-height: 23.5px;
+    letter-spacing: $medium-letter-spacing * 3;
+    color: #f9b640;
+
+    background-color: transparent;
+    border: 1px;
+    outline: transparent;
+
+    cursor: pointer;
+
+    transition: color 0.25s ease-in-out,
+      background-color 0.25s ease-in-out;
+
+    &:hover {
+      color: $main-color-text;
+      background-color: $btn-background;
+
+      &--active {
+        color: $btn-background;
+        background-color: transparent;
+      }
+    }
+
+    &--active {
+      color: $main-color-text;
+      background-color: $btn-background;
+
+      transition: color 0.25s ease-in-out,
+        background-color 0.25s ease-in-out;
+
+      &:hover {
+        color: $btn-background;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__background--photo {
+
+    position: absolute;
+    width: 707.71px;
+    max-height: 444.93px;
+    right: -90px;
+    top: 60px;
+
+    max-width: 100%;
+    height: auto;
+
+    object-fit: cover;
+
+    border-radius: 312px;
+    transform: rotate(-25deg);
+    z-index: -1;
+  }
+
+  &__background--color {
+    position: absolute;
+    width: 707.71px;
+    height: 444.93px;
+    right: -90px;
+    top: 60px;
+
+    border-radius: 312px;
+    transform: rotate(135deg);
+    z-index: -2;
+
+  }
+}
+
+@media (max-width: $middle-screen) {
+  .header {
+    &__section {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+      padding: 0 20px;
+    }
+
+    &__top {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__logo {
+      font-size: 1.5rem;
+      margin-bottom: 60px;
+    }
+
+    &__photos {
+      display: none;
+    }
+
+    &__button {
+      margin-bottom: 20px;
+    }
+  }
+}

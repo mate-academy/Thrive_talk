@@ -1,0 +1,40 @@
+.program {
+  @extend %block-grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, auto));
+
+  color: #22356f;
+
+  &__card {
+    @extend %card-grid;
+
+    height: 240px;
+    margin-bottom: 28px;
+
+    padding: 55px 77px 37px 105px;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  &__name {
+    justify-self: start;
+    font-size: 1.1rem;
+    letter-spacing: $medium-letter-spacing;
+  }
+
+  &__text {
+    max-width: 298px;
+    color: rgba(34,53,111,0.5);
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: $middle-screen) {
+  .program {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+
+    &__card {
+      padding: 0 20px;
+    }
+  }
+}

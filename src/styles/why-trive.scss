@@ -1,0 +1,52 @@
+.why-trive {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+  background-color: $logo-color;
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    max-width: 555px;
+
+    padding: 0 20px 65px;
+  }
+
+  &__title {
+    padding-top: 30px;
+    padding-bottom: 75px;
+
+    font-size: 1.5rem;
+    letter-spacing: $medium-letter-spacing / 4;
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    line-height: 35px;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-self: end;
+  }
+}
+
+@media (max-width: $middle-screen) {
+  .why-trive {
+    grid-template-columns: 1fr;
+
+    &__img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      justify-self: end;
+    }
+  }
+}

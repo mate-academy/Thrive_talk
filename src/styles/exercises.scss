@@ -1,0 +1,47 @@
+.exercises {
+  @extend %block-grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, auto));
+
+  &__card {
+    @extend %card-grid;
+    height: 480px;
+
+    &--physical {
+      background-color: #22356f;
+    }
+    &--mental {
+      background-color: #0052c1;
+    }
+    &--nutrition {
+      background: url(..\images\joanna-kosinska-340748.png) no-repeat;
+      background-size: cover;
+    }
+    &--gymnastics {
+      background-color: #62d0df;
+    }
+    &--crossfit {
+      background-color: #dee1ff;
+    }
+    &--aerobics {
+      background-color: #8f00ff;
+    }
+  }
+
+  &__name {
+    @extend %name-position;
+
+    
+
+    &::before {
+      @extend %name-dot;
+
+    }
+  }
+}
+
+@media (max-width: $middle-screen) {
+  .exercises {
+
+    grid-template-columns: 1fr;
+  }
+}

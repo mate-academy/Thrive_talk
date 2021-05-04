@@ -1,7 +1,16 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+.main {
+  color: $main-color-text;
 
-body {
-  background: $c-gray;
+  &__about {
+    margin-top: 150px;
+  }
+
+  &__help {
+    margin-bottom: 120px;
+  }
+
+  &__section {
+    max-width: $max-screen;
+    margin: 0 auto;
+  }
 }

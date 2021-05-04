@@ -1,0 +1,31 @@
+.footer {
+  height: 80px;
+  background-color: #62d0df;
+  
+  font-size: 0.6rem;
+  line-height: 10.66px;
+  color: $main-color-text;
+  letter-spacing: -0.6%;
+
+  &__section {
+    max-width: $max-screen;
+    margin: 0 auto;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 179px;
+    padding-top: 32px;
+  }
+}
+
+@media (max-width: $middle-screen) {
+  .footer {
+    &__info {
+      justify-content: center;
+      margin: 0;
+    }
+  }
+}
