@@ -1,17 +1,8 @@
-.box-text {
+.box--text {
   padding-bottom: 20px;
   position: relative;
   font-size: 16px;
   line-height: 25px;
 
   color: rgba(34, 53, 111, 0.5);
-
-  .box-text__title {
-    &__container-title {
-      font-size: 28px;
-      line-height: 33px;
-      color: #22356f;
-      margin-bottom: 28px;
-    }
-  }
 }

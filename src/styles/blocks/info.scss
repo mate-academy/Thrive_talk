@@ -13,10 +13,44 @@
     font-size: 24px;
     line-height: 42px;
   }
+
+  &__button {
+    display: inline-block;
+    padding: 19px 0;
+    margin: 40px 0 80px;
+    background-color: $brightOrange;
+    cursor: pointer;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.22);
+      transition: 1s linear;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 23px;
+    color: $brightOrange;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.22);
+      transition: 1s linear;
+    }
+  }
 }
 
 @media (max-width: $Notebook) {
   .info {
+    &__title {
+      padding-right: 30px;
+    }
+
     &__button {
       margin: 40px;
     }

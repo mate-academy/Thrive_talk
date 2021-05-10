@@ -8,6 +8,13 @@
     align-items: center;
     padding: 0 105px 20px;
   }
+
+  &__title {
+    font-size: 28px;
+    line-height: 33px;
+    color: #22356f;
+    margin-bottom: 28px;
+  }
 }
 
 @media (max-width: $Mobile) {
