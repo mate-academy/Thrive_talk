@@ -1,0 +1,83 @@
+.contact-us {
+  display: flex;
+
+  &__container {
+    padding-left: 180px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    background-color: $veryDarkBlue;
+  }
+
+  &__title {
+    width: 704px;
+    height: 66px;
+
+    font-size: 50px;
+    line-height: 60px;
+    color: $White;
+
+    &::before {
+      position: relative;
+      bottom: 250px;
+      content: "CONTACT US";
+      display: block;
+      color: $White;
+      font-size: 16px;
+      line-height: 12px;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    height: 800px;
+    background: center no-repeat url(../images/smile.svg);
+  }
+
+  &__text {
+    font-size: 36px;
+    line-height: 53px;
+
+    color: $White;
+    padding: 75px 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $softCyan;
+    padding-bottom: 42px;
+  }
+}
+
+@media (max-width: $Mobile) {
+  .contact-us {
+    &__container {
+      padding-left: 18px;
+    }
+  
+    &__title {
+      width: 274px;
+      padding: 60px 0 90px;
+
+      &::before {
+        bottom: 40px;
+      }
+    }
+  
+    &__photo {
+      display: none;
+    }
+  
+    &__text {
+      font-size: 30px;
+      line-height: 37px;
+      padding-bottom: 45px;
+    }
+  
+    &__link {
+      padding-bottom: 22px;
+    }
+  }
+}

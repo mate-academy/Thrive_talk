@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Larsseit";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Larsseit"),
+    url("../fonts/Larsseit\ family/Larsseit.woff2") format("woff2"),
+    url("../fonts/Larsseit\ family/Larsseit.woff") format("woff");
+}
+
+html {
+  font-family: "Larsseit", Arial, Helvetica, sans-serif;
+  color: $veryDarkBlue;
+  scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+button,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 16px;
+  max-width: $maxwigth;
+  min-width: $minwigth;
+}

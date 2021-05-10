@@ -1,0 +1,59 @@
+.why-thrive {
+  display: flex;
+  justify-content: space-between;
+  background-color: $softCyan;
+  color: $White;
+
+  &__container {
+    margin-left: 180px;
+    width: 555px;
+  }
+
+  &__title {
+    padding-top: 150px;
+
+    font-size: 36px;
+    line-height: 27px;
+    color: $White;
+  }
+
+  &__strong {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__text {
+    padding: 45px 0 86px;
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  &__girl {
+    width: 525px;
+    margin-left: 80px;
+    background: center/ cover no-repeat url("../images/girl.svg");
+  }
+}
+
+@media (max-width: $Mobile) {
+  .why-thrive {
+    &__container {
+      width: 555px;
+      margin: 0 40px;
+      text-align: center;
+    }
+
+    &__title {
+      margin-top: 0;
+      padding-top: 45px;
+    }
+
+    &__text {
+      padding: 45px;
+    }
+
+    &__girl {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.also-know {
+  display: flex;
+
+  &__photo {
+    width: 480px;
+    height: 800px;
+    background: center/ cover no-repeat url("../images/also-know.svg");
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 106px 20px;
+  }
+
+  &__text {
+    position: relative;
+    width: 676px;
+    height: 215px;
+    font-size: 36px;
+    line-height: 53px;
+    color: #22356f;
+    margin-bottom: 202px;
+
+    &::before {
+      position: absolute;
+      content: "YOU SHOULD ALSO KNOW";
+      top: -230px;
+
+      font-size: 16px;
+      line-height: 12px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    bottom: 30px;
+    color: $brightOrange;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  &__logo {
+    text-decoration: none;
+    color: $softCyan;
+  }
+}
+
+@media (max-width: 980px) {
+  .also-know {
+    &__container {
+      margin-top: 150px;
+      justify-content: start;
+      padding: 30px 70px;
+    }
+
+    &__text {
+      width: 276px;
+      height: 315px;
+      font-size: 26px;
+
+      &::before {
+        position: absolute;
+        content: "YOU SHOULD ALSO KNOW";
+        top: -100px;
+        font-size: 16px;
+        line-height: 12px;
+      }
+
+      &__photo {
+        display: none;
+      }
+    }
+  }
+}

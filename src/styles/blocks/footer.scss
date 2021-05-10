@@ -1,0 +1,21 @@
+.copyright {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  background-color: $softCyan;
+  color: $White;
+
+  &__text {
+    position: absolute;
+    left: 200px;
+    top: 35px;
+  }
+}
+
+@media (max-width: $Mobile) {
+  .copyright {
+    &__text {
+      left: 100px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.nav {
+  color: $veryDarkBlue;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    list-style: none;
+    padding: 0 10px 5px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.22);
+      transition: 0.3s linear;
+      border-bottom: 1px solid $veryDarkBlue;
+    }
+  }
+
+  &__link {
+    color: $veryDarkBlue;
+    padding: 10px;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: $Mobile) {
+  .nav {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-bottom: 5px;
+      padding: 5px;
+      align-items: center;
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+}

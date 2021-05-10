@@ -1,0 +1,18 @@
+.info-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  &__container {
+    display: grid;
+    align-items: center;
+    padding: 0 105px 20px;
+  }
+}
+
+@media (max-width: $Mobile) {
+  .info-block {
+    display: flex;
+    flex-direction: column;
+  }
+}

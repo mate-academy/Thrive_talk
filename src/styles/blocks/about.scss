@@ -1,0 +1,53 @@
+.about {
+  display: flex;
+
+  &__info {
+    margin: 0 auto;
+    padding: 100px 0 80px;
+    position: relative;
+    width: 590px;
+
+    font-size: 24px;
+    line-height: 34px;
+
+    &::before {
+      position: absolute;
+      text-align: center;
+      top: 110px;
+      left: -200px;
+      display: block;
+      content: "ABOUT US";
+      line-height: 23px;
+      font-size: 16px;
+      color: $veryDarkBlue;
+    }
+
+    &::after {
+      display: block;
+      content: "WE CAN HELP YOU WITH";
+      margin-top: 60px;
+
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: $veryDarkBlue;
+    }
+  }
+}
+
+@media (max-width: $Mobile) {
+  .about {
+    &__info {
+      width: 100%;
+      padding: 60px 45px 20px;
+
+      &::before {
+        top: 20px;
+      }
+
+      &::after {
+        margin: 45px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.additional-info {
+  display: flex;
+
+  &__photo {
+    width: 570px;
+    height: 380px;
+    background: center/ cover no-repeat url(../images/footer-smile.svg);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding-left: 68px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 11px;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    width: 240px;
+    height: 183px;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(34, 53, 111, 0.5);
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $softCyan;
+  }
+}
+
+@media (max-width: $Mobile) {
+  .additional-info {
+    &__photo {
+      display: none;
+    }
+  
+    &__container {
+      flex-direction: column;
+      padding: 68px 0 0 68px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.health {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 480px);
+  margin-bottom: 60px;
+
+  &__container {
+    padding: 125px 0 0;
+
+    &:nth-child(1) {
+      background: #22356f;
+    }
+    &:nth-child(2) {
+      background: #0052c1;
+    }
+    &:nth-child(3) {
+      background: center/ cover no-repeat url(../images/nutrition.svg);
+    }
+    &:nth-child(4) {
+      background-color: $softCyan;
+    }
+    &:nth-child(5) {
+      background-color: #dee1ff;
+    }
+    &:nth-child(6) {
+      background-color: #8f00ff;
+    }
+  }
+}
+
+@media (max-width: $Mobile) {
+  .health {
+    &__container {
+      width: 100%;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .health {
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+      min-width: $minwigth;
+      height: 480px;
+    }
+  }
+}
