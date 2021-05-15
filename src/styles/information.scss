@@ -1,0 +1,79 @@
+.information {
+  display: flex;
+
+  &__picture {
+    width: 480px;
+    height: 800px;
+    margin-right: 106px;
+
+    background: center/ cover no-repeat url("../images/linkedin-sales-navigator-402831.png");
+  }
+
+  &__heading {
+    position: relative;
+    margin-top: 348px;
+    width: 676px;
+
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+
+    &::after {
+      position: absolute;
+      content: "You should also know";
+      top: -225px;
+      left: 0;
+
+      font-size: 16px;
+      line-height: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding-top: 116px;
+    
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: #f9b640;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: transform 0.5s, color 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+      color: #a06e39;
+    }
+  }
+
+  &__name {
+    color: $blueColor;
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .information {
+    &__link {
+      padding-top: 46px;
+      margin-left: 30px;
+    }
+    &__picture {
+      display: none;
+    }
+    &__heading {
+      font-size: 30px;
+      overflow: hidden;
+      margin-top: 48px;
+      padding: 40px;
+      width: 90%;
+      &::after {
+        top: 5px;
+        left: 40px;
+      }
+    }
+  }
+}

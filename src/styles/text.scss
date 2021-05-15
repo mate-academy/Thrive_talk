@@ -1,0 +1,39 @@
+.text__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 16.67vw);
+  
+
+  &-card {
+    padding: 4% 16% 8% 22%;
+  }
+
+  &-heading {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+  }
+
+  &-text {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: $darkBlueColor;
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .text__cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 200px);
+    &-card {
+      padding: 30px 40px 40px;
+    }
+    &-heading {
+      line-height: 28px;
+    }
+    &-text {
+      opacity: 0.5;
+    }
+  }
+}

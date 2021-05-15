@@ -1,0 +1,85 @@
+.sport {
+  display: flex;
+  overflow: hidden;
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    width: 25vw;
+    height: 25vh;
+    padding: 5vw 0 0 48px;
+    overflow: hidden;
+
+    &:nth-child(1) {
+      background-color: #ffe2de;
+    }
+    &:nth-child(2) {
+      background-color: #c4e769;
+    }
+    &:nth-child(3) {
+      background-color: $blueColor;
+    }
+    &:nth-child(4) {
+      background-color: #0052c1;
+    }
+  }
+}
+
+.card {
+  width: 70%;
+
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  color: $mainColor;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 13px;
+    left: -24px;
+
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+    background-color: #e9b730;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+
+    width: 90%;
+    height: 2px;
+    background-color: $mainColor;
+
+  }
+}
+
+.main__sport {
+  margin-bottom: 120px;
+  position: relative;
+  
+ 
+  &__card {
+    padding-top: 26px;
+    
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .sport {
+    flex-direction: column;
+    &__card {
+      width: 100%;
+    }
+  }
+
+  .main__sport {
+    margin-bottom: 0;
+  }
+}
