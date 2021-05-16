@@ -1,19 +1,34 @@
 .nav {
+  position: absolute;
+  visibility: hidden;
   color: $veryDarkBlue;
+  width: 100%;
+
+  &.animate {
+    visibility: visible;
+  }
 
   &__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    padding-top: 90px;
+    list-style: none;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #22356f;
   }
 
   &__item {
-    list-style: none;
-    padding: 0 10px 5px;
-    margin: 0 10px;
+    padding: 0 10px 20px;
+    height: max-content;
 
     &:hover {
-      transform: scale(1.22);
-      transition: 0.3s linear;
-      border-bottom: 1px solid $veryDarkBlue;
+      color: $softCyan;
+      transition: 0.5s linear;
     }
   }
 
@@ -21,22 +36,32 @@
     color: $veryDarkBlue;
     padding: 10px;
     text-decoration: none;
+
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 
-@media (max-width: $Mobile) {
+@media (min-width: 690px) {
   .nav {
+    visibility: visible;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+
     &__list {
-      flex-direction: column;
+      display: flex;
+      padding: 0;
     }
 
     &__item {
-      margin-bottom: 5px;
-      padding: 5px;
-      align-items: center;
-      text-align: center;
-      font-size: 15px;
-      font-weight: bold;
+      padding: 10px 3px 0;
+
+      &:hover {
+        transform: scale(1.22);
+        transition: 0.3s linear;
+        border-bottom: 1px solid $veryDarkBlue;
+      }
     }
   }
 }

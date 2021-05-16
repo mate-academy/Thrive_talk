@@ -1,26 +1,23 @@
-.box--6 {
-  width: 100%;
-  position: relative;
-  padding-left: 105px;
+.box-6 {
   font-size: 32px;
   line-height: 34px;
   color: $White;
 
   &::before {
-    position: absolute;
-    bottom: 80px;
-    left: 85px;
+    position: relative;
+    top: -24px;
+    right: 10px;
     content: "";
     display: block;
-    width: 70%;
+    width: 120%;
     height: 1px;
     background-color: $White;
   }
 
   &::after {
-    position: absolute;
-    top: 10px;
-    left: 90px;
+    position: relative;
+    top: -25px;
+    left: -15px;
     content: "";
     display: block;
     width: 9px;

@@ -1,16 +1,20 @@
 .additional-info {
+  max-width: 1600px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
 
   &__photo {
-    width: 570px;
-    height: 380px;
+    height: 190px;
     background: center/ cover no-repeat url(../images/footer-smile.svg);
   }
 
   &__container {
     display: flex;
-    align-items: center;
-    padding-left: 68px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: baseline;
+    padding: 40px;
   }
 
   &__title {
@@ -20,8 +24,8 @@
   }
 
   &__text {
-    width: 240px;
-    height: 183px;
+    margin: 0 auto;
+    padding-bottom: 40px;
     font-size: 14px;
     line-height: 23px;
     color: rgba(34, 53, 111, 0.5);
@@ -33,15 +37,43 @@
   }
 }
 
-@media (max-width: $Mobile) {
+@media (min-width: 600px) {
   .additional-info {
+    &__text {
+      padding-right: 20px;
+    }
+
+    &__container {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .additional-info {
+    flex-direction: row;
+
     &__photo {
-      display: none;
+      width: 50%;
+      height: 380px;
+      max-width: 560px;
+    }
+
+    &__container {
+      width: 100%;
+      padding: 100px 10px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 30px;
     }
   
-    &__container {
-      flex-direction: column;
-      padding: 68px 0 0 68px;
+    &__text {
+      padding-bottom: 10px;
+      font-size: 14px;
+      line-height: 23px;
+      color: rgba(34, 53, 111, 0.5);
     }
   }
 }

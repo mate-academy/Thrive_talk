@@ -1,27 +1,28 @@
 .contact-us {
+  padding-left: 30px;
   display: flex;
+  justify-content: center;
+  background-color: $veryDarkBlue;
 
   &__container {
-    padding-left: 180px;
-    position: relative;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
-    align-content: center;
-    background-color: $veryDarkBlue;
+    max-width: 1600px;
+    position: relative;
+  }
+
+  &__text-container {
+    margin: 0 auto;
   }
 
   &__title {
-    width: 704px;
-    height: 66px;
-
-    font-size: 50px;
-    line-height: 60px;
+    padding-top: 60px;
     color: $White;
 
     &::before {
       position: relative;
-      bottom: 250px;
+      bottom: 30px;
       content: "CONTACT US";
       display: block;
       color: $White;
@@ -31,53 +32,90 @@
   }
 
   &__photo {
-    width: 100%;
-    height: 800px;
-    background: center no-repeat url(../images/smile.svg);
+    display: none;
   }
 
   &__text {
-    font-size: 36px;
-    line-height: 53px;
+    font-size: 15px;
+    line-height: 30px;
 
     color: $White;
-    padding: 75px 0;
+    padding: 55px 0;
   }
 
   &__link {
+    position: relative;
+    bottom: 10px;
     text-decoration: none;
     color: $softCyan;
-    padding-bottom: 42px;
   }
 }
 
-@media (max-width: $Mobile) {
+@media (min-width: 750px) {
   .contact-us {
-    &__container {
-      padding-left: 18px;
+    &__text {
+      font-size: 35px;
+      line-height: 35px;
     }
-  
     &__title {
-      width: 274px;
-      padding: 60px 0 90px;
-
+      padding-top: 60px;
+  
+      font-size: 35px;
+      line-height: 60px;
+      color: $White;
+  
       &::before {
-        bottom: 40px;
+        position: relative;
+        bottom: 30px;
+        content: "CONTACT US";
+        display: block;
+        color: $White;
       }
     }
-  
+
+    &__text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 100px;
+    }
+
     &__photo {
-      display: none;
+      display: block;
+      height: 100%;
+      width: 50%;
+      background: center/ cover no-repeat url(../images/smile.svg);
+      max-width: 480px;
+      max-height: 800px;
     }
-  
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-us {
+    &__photo {
+      width: 100%;
+      height: 800px;
+    }
+
     &__text {
-      font-size: 30px;
-      line-height: 37px;
-      padding-bottom: 45px;
+      font-size: 38px;
+      line-height: 50px;
+      padding: 55px 0;
     }
-  
-    &__link {
-      padding-bottom: 22px;
+
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+      &::before {
+        position: relative;
+        bottom: 200px;
+        content: "CONTACT US";
+        display: block;
+        color: $White;
+        font-size: 16px;
+        line-height: 12px;
+      }
     }
   }
 }
