@@ -1,7 +1,14 @@
 @import "utils";
-@import "fonts";
 @import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "Variables";
+@import "about";
+@import "courses";
+@import "services";
+@import "target";
+@import "additional";
+@import "contacts";
+@import "footer";
+@import "intro";
+@import "therapy";
+@import "header";
+@import "normilize";

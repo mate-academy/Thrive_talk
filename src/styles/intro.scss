@@ -1,0 +1,166 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  padding-left: $standratMargin;
+  z-index: 0;
+  padding-top: 5%;
+  color: $dark-blue;
+  padding-bottom: 30px;
+
+  @media (max-width: 600px) {
+    padding-top: 100px;
+  }
+
+  
+  @media (max-width: 1000px) {
+    padding-right: $standratMargin;
+  }
+
+  background-color: #f4f9e2;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    width: 50%;
+
+    @media (max-width: 1125px) {
+      width: 55%;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 1000px) {
+      width: 88%;
+    }
+  }
+
+  &__img {
+
+    position: relative;
+
+    max-height: 710px;
+
+    background: url("/images/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: 2600px) {
+      max-height: 750px;
+    }
+
+    @media (max-width: 600px) {
+      background-position: right;
+    }
+  }
+
+  &__shadow {
+    position: relative;
+
+    z-index: -1;
+    bottom: 45px;
+
+    height: 750px;
+
+    background-image: url("/images/Rectanglepng.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 600px) {
+      background-position: right;
+    }
+  }
+
+  &__text {
+    z-index: 2;
+    width: 469px;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      margin-top: 500px;
+    }
+
+  }
+
+  
+  &__title {
+    margin-bottom: 19px;
+    font-weight: 600;
+
+    width: 100%;
+    height: 110px;
+
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+
+    @media (max-width: 600px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 300px) {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__logo {
+    transition: transform 0.3s;
+  }
+
+  &__logo:hover {
+    transform: scale(1.15);
+  }
+
+  &__description {
+    margin-bottom: 63px;
+
+    width: 100%;
+
+    font-size: 24px;
+    line-height: 42px;
+
+    @media (max-width: 600px) {
+      padding-right: 5%;
+    }
+
+    @media (max-width: 300px) {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+    width: 150px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+
+    &-colored {
+      background-color: $orange;
+      color: #fff ;
+
+      &:hover {
+        background-color: #f4f9e2;
+        color: $orange;
+      }
+    }
+
+    @media (max-width: 300px) {
+      
+      width: 50px;
+      height: 100px;
+    }
+  }
+}

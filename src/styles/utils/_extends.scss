@@ -2,3 +2,14 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
+%link {
+  display: inline-block;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  transition: 0.3s;
+}
