@@ -52,7 +52,7 @@
       font-size: 14px;
       line-height: 18px;
     }
-  
+
     &__girl {
       display: block;
       img {
@@ -82,7 +82,13 @@
     &__text {
       font-size: 30px;
       line-height: 40px;
-      width: 80%;
+      // width: 80%;
+    }
+
+    &__girl {
+      img {
+        object-position: left;
+      }
     }
   }
 }

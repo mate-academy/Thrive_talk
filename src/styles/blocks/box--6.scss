@@ -26,7 +26,8 @@
     background-color: $brightOrange;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.1);
     transition: linear 0.5s;
   }

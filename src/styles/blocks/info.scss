@@ -42,7 +42,8 @@
     cursor: pointer;
     transition: transform 1s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       transform: scale(1.22);
       transition: 1s linear;
     }
@@ -61,7 +62,8 @@
     color: $brightOrange;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
       transform: scale(1.22);
       transition: 1s linear;
     }

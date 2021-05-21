@@ -44,14 +44,67 @@
   }
 
   &__link {
+    font-size: 1em;
+    width: fit-content;
     position: relative;
-    bottom: 10px;
+    bottom: 40px;
     text-decoration: none;
     color: $softCyan;
+    cursor: pointer;
+    border: $softCyan 0.13em solid;
+    border-radius: 0.3em;
+    padding: 0.25em 1.2em;
+
+    text-shadow: 0 0 0.13em hsl(0, 0%, 100% / 0.5), 0 0 0.45em $softCyan;
+    box-shadow: inset 0 0 0.5em 0 $softCyan, 0 0 0.5em 0 $softCyan;
+
+    &::before {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      background: $softCyan;
+      top: 120%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+      filter: blur(1em);
+      opacity: 0.7;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      box-shadow: 0 0 1em 0.5em $softCyan;
+      opacity: 0;
+      transition: opacity 100ms linear;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      opacity: 1;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $softCyan;
+      color: $veryDarkBlue;
+      text-shadow: none;
+    }
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 600px) {
   .contact-us {
     &__text {
       font-size: 35px;
@@ -78,6 +131,7 @@
       flex-direction: column;
       justify-content: flex-end;
       padding-bottom: 100px;
+      padding-right: 20px;
     }
 
     &__photo {
@@ -87,6 +141,11 @@
       background: center/ cover no-repeat url(../images/smile.svg);
       max-width: 480px;
       max-height: 800px;
+    }
+
+    &__link {
+      font-size: 2em;
+      bottom: 0;
     }
   }
 }
@@ -109,7 +168,7 @@
       line-height: 60px;
       &::before {
         position: relative;
-        bottom: 200px;
+        bottom: 130px;
         content: "CONTACT US";
         display: block;
         color: $White;

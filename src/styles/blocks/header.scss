@@ -11,7 +11,8 @@
   }
 
   &__logo {
-    margin: 35px 0 187px;
+    height: fit-content;
+    margin: 35px 0 180px;
     text-decoration: none;
     cursor: pointer;
 
@@ -19,7 +20,8 @@
     line-height: 27px;
     color: #62d0df;
 
-    &:hover {
+    &:hover,
+    &:focus {
       transition: 0.5s linear;
       transform: scale(1.22);
     }
@@ -90,7 +92,6 @@
 
   &__button {
     display: none;
-    margin: 27px 20px 0 0;
     padding: 19px 0;
     text-align: center;
     z-index: 1;
@@ -98,7 +99,8 @@
     background-color: $softCyan;
     border-radius: 50px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       transform: scale(1.22);
       transition: 1s linear;
     }
@@ -109,7 +111,7 @@
   .header {
     &__button {
       display: block;
-      margin: 23px 20px 0 0;
+      margin: 23px 0 0;
     }
 
     &__container {
@@ -121,7 +123,6 @@
 @media (min-width: 1024px) {
   .header {
     &__photo {
-      z-index: 0;
       position: absolute;
       right: 0;
       bottom: 0;
