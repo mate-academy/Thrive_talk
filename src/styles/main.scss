@@ -1,7 +1,20 @@
-@import "utils";
+@import "utils/utils";
 @import "fonts";
-@import "typography";
+@import "utils/typography";
+@import "utils/reset";
 
-body {
-  background: $c-gray;
+@import "header/style-for-header";
+@import "header/style-for-nav";
+@import "header/style-fot-contact";
+
+@import "content";
+
+@import "areas-of-life/areas-of-life";
+@import "areas-of-life/content__A-OF-L";
+
+@import "why-thrive/why-thrive";
+@import "why-thrive/contact__why-thrive";
+
+html {
+  font-family: Larsseit, sans-serif;
 }
