@@ -1,0 +1,103 @@
+$items: (
+  1: (
+    color: #22356f,
+    url: url("../images/strawberry.png")
+  ),
+  2: (
+    color: #0052c1,
+    url: url("../images/christopher-campbell-40367.png")
+  ),
+  3: (
+    color: #76b58b,
+    url: url("../images/strawberry.png")
+  ),
+  4: (
+    color: #62d0df,
+    url: url("../images/strawberry.png")
+  ),
+  5: (
+    color: #dee1ff,
+    url: url("../images/strawberry.png")
+  ),
+  6: (
+    color: #8f00ff,
+    url: url("../images/strawberry.png")
+  )
+);
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @each $key, $value in $items {
+    &__item:nth-child(#{$key}) {
+      background-color: map-get($value, "color");
+
+      &:hover {
+        background-image: map-get($value, "url");
+      }
+
+      .caption {
+        background-color: map-get($value, "color");
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: 480px;
+    cursor: pointer;
+
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transition: background-color 1s;
+      z-index: 1;
+    }
+
+    &:hover {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      .caption {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__text {
+    z-index: 2;
+    @include font;
+    font-size: 32px;
+    line-height: 33px;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 126px 219px 282px 104px;
+    position: absolute;
+
+    &:before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #e9b730;
+      position: absolute;
+      top: 143px;
+      left: 72px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 96px;
+      left: 70px;
+      right: 70px;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+}

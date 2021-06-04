@@ -1,0 +1,54 @@
+.add {
+  height: 800px;
+  max-width: $max-width;
+  position: relative;
+  display: flex;
+
+  &__rightside {
+    margin: 103px 175px 42px 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 676px;
+  }
+
+  &__name {
+    @include font;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @include font;
+    font-size: 36px;
+    color: $text-color;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+
+    & span {
+      color: $color-blue;
+    }
+  }
+
+  &__after-name {
+    @include font;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: #fab63e;
+    cursor: pointer;
+  }
+
+  &__leftside {
+    height: 100%;
+    width: 480px;
+    top: 0;
+    left: 0;
+    background-image: url("/images/linkedin-sales-navigator-402831.png");
+    background-repeat: no-repeat;
+  }
+}

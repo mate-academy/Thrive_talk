@@ -1,0 +1,30 @@
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 77px 0;
+  row-gap: 48px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 298px;
+  }
+
+  &__name {
+    @include font;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+    color: $text-color;
+  }
+
+  &__text {
+    @include font;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: rgba(34, 53, 111, 0.5);
+  }
+}

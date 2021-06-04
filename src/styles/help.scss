@@ -1,0 +1,79 @@
+$items: (
+  1: #ffe2de,
+  2: #c4e769,
+  3: #62d0df,
+  4: #0052c1,
+);
+
+.help {
+  margin-bottom: 120px;
+
+  &__name {
+    @include font;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: rgba(34, 53, 111, 0.5);
+    margin-top: 76px;
+    margin-bottom: 24px;
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @each $key, $value in $items {
+    &__item:nth-child(#{$key}) {
+      background-color: $value;
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: 360px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  &__item:hover {
+    transform: scale(0.95);
+    -webkit-box-shadow: -1px 0 14px 6px rgba(0,0,0,0.49);
+    -moz-box-shadow: -1px 0 14px 6px rgba(0,0,0,0.49);
+    box-shadow: -1px 0 14px 6px rgba(0,0,0,0.49);
+  }
+
+  &__text {
+    @include font;
+    font-size: 32px;
+    line-height: 33px;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 95px 50px 211px 78px;
+    position: absolute;
+
+    &:before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #e9b730;
+      position: absolute;
+      top: 107px;
+      left: 54px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 52px;
+      right: 52px;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+
+}

@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  background-color: $color-blue;
+  height: 80px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__block {
+    display: flex;
+    margin-left: 180px;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 9px;
+    height: 12px;
+  }
+
+  &__copyright {
+    @include font;
+    font-size: 14px;
+    line-height: 11px;
+    color: #fff;
+    margin-left: 6px;
+  }
+}

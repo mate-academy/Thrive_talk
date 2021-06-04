@@ -1,7 +1,37 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "utils/variables";
+@import "utils/mixins";
+@import "nav";
+@import "header";
+@import "why";
+@import "about";
+@import "categories";
+@import "help";
+@import "details";
+@import "add";
+@import "contact";
+@import "info";
+@import "footer";
+@import "media";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background: $c-gray;
+  margin: 0 auto;
+  max-width: $max-width;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
 }

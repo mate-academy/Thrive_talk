@@ -1,5 +1,7 @@
 # Thrive_talk landing page
+
 Implement landing page according to [Figma design](https://www.figma.com/file/aHd2rHMrnzDXhowLuIQjIyVQ/ThriveTalk-Landing-Page?node-id=0%3A1) - Use BEM and SCSS
+
 - Large screens 2560px
 - Full HD 1920px
 - The design 1600px
@@ -22,6 +24,7 @@ Implement landing page according to [Figma design](https://www.figma.com/file/aH
 1. Implement footer.
 
 ## Instructions
+
 1. **Fork** the repo.
 2. **Clone** the forked one. (The project link should have your name but not `mate-academy`)
 3. Run `npm install` (or just `npm i`).
@@ -35,7 +38,7 @@ Implement landing page according to [Figma design](https://www.figma.com/file/aH
 11. `git push origin develop` - to send you code for PR.
 12. Create a Pull Request (PR) from your branch `develop` to branch `master` of original repo.
 13. Replace `<your_account>` with your Github username in the
-  [DEMO LINK](https://<your_account>.github.io/Thrive_talk/).
+    [DEMO LINK](https://taniazt.github.io/Thrive_talk/).
 14. Copy `DEMO LINK` to the PR description.
 
 > To update you PR repeat steps 7-11.

@@ -1,0 +1,48 @@
+.info {
+  height: 380px;
+  max-width: $max-width;
+  position: relative;
+  display: flex;
+
+  &__rightside {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1390px;
+    width: 100%;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 207px;
+    margin-top: 90px;
+  }
+
+  &__name {
+    @include font;
+    font-size: 14px;
+    line-height: 11px;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @include font;
+    font-size: 14px;
+    color: rgba(34, 53, 111, 0.5);
+    line-height: 23px;
+
+    & span {
+      color: rgb(30, 27, 245);
+    }
+  }
+
+  &__leftside {
+    height: 100%;
+    min-width: 570px;
+    top: 0;
+    left: 0;
+    background-image: url("/images/autumn-goodman-242825.png");
+    background-repeat: no-repeat;
+  }
+}

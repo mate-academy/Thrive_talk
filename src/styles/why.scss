@@ -1,0 +1,39 @@
+.why {
+  height: 607px;
+  max-width: $max-width;
+  background-color: $color-blue;
+  position: relative;
+  display: flex;
+
+  &__leftside {
+    padding-left: 180px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    z-index: 1;
+  }
+
+  &__name {
+    @include font;
+    font-size: 36px;
+    color: #fff;
+  }
+
+  &__text {
+    @include font;
+    font-size: 24px;
+    color: #fff;
+    line-height: 35px;
+  }
+
+  &__rightside {
+    position: absolute;
+    height: 100%;
+    width: 525px;
+    top: 0;
+    right: 0;
+    background-image: url("/images/christopher-campbell-40367.png");
+    background-repeat: no-repeat;
+  }
+}

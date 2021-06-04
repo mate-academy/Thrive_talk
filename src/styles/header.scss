@@ -1,0 +1,111 @@
+.header {
+  background-color: #f4f9e2;
+  height: 840px;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 180px;
+  position: relative;
+
+  &__leftside {
+    display: flex;
+    flex-direction: column;
+    width: 510px;
+    padding-top: 150px;
+  }
+
+  &__logo {
+    color: $color-blue;
+    @include font;
+    font-size: 24px;
+  }
+
+  &__name {
+    @include font;
+    font-size: 46px;
+    color: $text-color;
+    text-transform: uppercase;
+    line-height: 53px;
+    z-index: 2;
+  }
+
+  &__p {
+    @include font;
+    font-size: 24px;
+    color: $text-color;
+    line-height: 42px;
+    width: 500px;
+    z-index: 2;
+  }
+
+  &__buttons {
+    margin-top: 50px;
+    z-index: 2;
+  }
+
+  &__link1 {
+    display: inline-block;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    background-color: #f9b640;
+    @include font;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+
+  &__link1:hover {
+    transform: scale(1.1);
+  }
+
+  &__link2 {
+    display: inline-block;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    @include font;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fab63e;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.3s;
+  }
+
+  &__link2:hover {
+    transform: scale(1.1);
+    border: 1px solid #fab63e;
+  }
+
+  &__rightside {
+    width: 25%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 840px;
+  }
+  &__img-blue {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 0;
+    right: 0;
+    background-image: url("/images/Rectangle1.png");
+    // z-index: 1;
+  }
+
+  &__picture {
+    position: absolute;
+    width: 743px;
+    height: 740px;
+    top: 0;
+    right: 0;
+    background-image: url("/images/MaskGroup.png");
+    // z-index: 2;
+  }
+}
