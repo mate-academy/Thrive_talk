@@ -1,0 +1,44 @@
+.content {
+  width: 100%;
+  background: $navbar-color;
+  display: grid;
+
+  &__title {
+    font-size: $font-size-caption;
+    font-weight: 400;
+
+    margin-top: 105px;
+  }
+
+  &__mood {
+    font-size: 64px;
+    margin-top: 230px;
+  }
+
+  &__caption {
+    font-size: 36px;
+    max-width: 579px;
+    line-height: 53px;
+    font-weight: 300;
+  }
+
+  &__anchor {
+    display: inline-block;
+
+    padding: 5px;
+    
+    color: $button-color;
+
+    text-decoration: none;
+    letter-spacing: 0.1em;
+
+    max-width: 200px;
+
+    margin-top: 90px;
+  }
+
+  &__wrap {
+    margin-left: 105px;
+    max-width: 600px;
+  }
+}

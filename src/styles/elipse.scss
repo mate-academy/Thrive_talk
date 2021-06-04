@@ -1,0 +1,45 @@
+.elipse {
+  &__description {
+    width: 640px;
+    height: 440px;
+
+    background: #edfdff;
+
+    border-radius: 312px;
+
+    transform: matrix(-0.5,0.87,0.87,0.5,0,0);
+
+    position: absolute;
+    top: 0;
+    right: -8%;
+  }
+
+  &__image {
+    position: absolute;
+    z-index: 1;
+
+    top: 12%;
+    right: -150px;
+
+    width: 640px;
+    height: 440px;
+
+    object-fit: contain;
+
+    object-position: left;
+    overflow: hidden;
+
+    border-radius: 312px;
+
+    transform: rotate(-30deg);
+  }
+}
+
+.inner-elipse {
+  width: 800px;
+  height: 550px;
+
+  object-fit: contain;
+  object-position: left;
+  transform: rotate(30deg);
+}

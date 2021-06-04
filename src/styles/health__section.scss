@@ -1,0 +1,80 @@
+.health {
+  &__container {
+    padding-bottom: 77px;
+  }
+
+  &__list {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fill,minmax(480px,auto));
+  }
+
+  &__cards {
+    height: 480px;
+    
+    padding-top: 126px;
+    padding-left: 104px;
+    
+    transition: box-shadow 0.4s ease-out , background 0.4s ease-out;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 1px 1px 8px #000;
+    }
+
+    &:nth-child(1) {
+      background: $navbar-color;
+    }
+
+    &:nth-child(2) {
+      background: $card-blue-color;
+    }
+
+    &:nth-child(3) {
+      background: url("../images/joanna-kosinska-340748.jpg")no-repeat;
+      background-size: cover;
+    }
+
+    &:nth-child(4) {
+      background: $button-color;
+    }
+
+    &:nth-child(5) {
+      background: #dee1ff;
+    }
+
+    &:nth-child(6) {
+      background: #8f00ff;
+    }
+  }
+
+  &__item {
+    max-width: 157px;
+    font-size: $font-size-cards;
+
+    position: relative;
+
+    transition: text-shadow 0.3s ease;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: -17px;
+      display: block;
+      width: 200%;
+      height: 1px;
+      background-color: #fff;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: -17px;
+      display: block;
+      width: 9px;
+      height: 9px;
+      background: $card-markup;
+      border-radius: 50%;
+    }
+  }
+}
