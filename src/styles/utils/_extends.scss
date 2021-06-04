@@ -1,4 +1,61 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+%header-description-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  margin-right: 30px;
+
+  font-size: 16px;
+  color: $links-color;
+  text-transform: uppercase;
+  font-weight: $fw-bold;
+
+  transition: color $buttons-transition, background-color $buttons-transition;
+
+  &:hover {
+    color: $regular-color;
+    background-color: $links-color;
+  }
+}
+
+%card-title {
+  position: relative;
+  margin-top: 57px;
+  padding: 27px 20px;
+  width: 242px;
+
+  color: $regular-color;
+  font-size: 32px;
+  font-weight: $fw-bold;
+  line-height: 33px;
+
+  border-top: 2px solid $regular-color;
+  
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 13%;
+    
+    width: 9px;
+    height: 9px;
+
+    content: "";
+
+    border-radius: 50%;
+
+    background: $point-color;
+  }
+}
+
+%features__title {
+  font-size: 28px;
+  color: $text-color;
+  padding-bottom: 28px;
+}
+
+%opacity-text {
+  font-size: 16px;
+  color: $text-color;
+  opacity: 0.5;
 }

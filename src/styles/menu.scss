@@ -1,0 +1,101 @@
+.menu {
+  display: grid;
+  grid-template-columns: 150px 300px 150px;
+  grid-template-rows: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 170px;
+
+  &__logo {
+    font-size: $fsz-m;
+    color: $leading-color;
+    font-weight: $fw-bold;
+    align-self: start;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__link {
+    margin-right: 20px;
+    padding: 0 3px 10px;
+    
+    color: $text-color;
+
+    border-bottom: 1px solid transparent;
+
+    transition: border-bottom 300ms;
+
+    &:hover {
+      border-bottom: 1px solid $text-color;
+    }
+  }
+
+  &__button {
+    @include button;
+  }
+}
+
+@media (max-width: $tablet-width + 100px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 5px;
+    align-items: center;
+    grid-template-areas: "logo btn"
+      "nav nav";
+    padding-bottom: 0;
+
+    &__logo {
+      justify-self: center;
+      align-self: center;
+      grid-area: logo;
+    }
+
+    &__button {
+      justify-self: center;
+      align-self: center;
+      grid-area: btn;
+    }
+
+    &__nav {
+      align-self: start;
+      grid-area: nav;
+    }
+
+    &__link {
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .menu {
+    &__logo {
+      justify-self: start;
+      align-self: flex-start;
+    }
+
+    &__nav {
+      align-self: start;
+    }
+
+    &__button {
+      justify-self: end;
+      align-self: start;
+      width: 90px;
+      height: 30px;
+
+      font-size: 10px;
+    }
+
+    &__link {
+      margin-right: 10px;
+    }
+  }
+}

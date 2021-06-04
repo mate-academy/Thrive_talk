@@ -1,0 +1,28 @@
+@import "reset";
+@import "utils";
+@import "fonts";
+@import "header";
+@import "menu";
+@import "description";
+@import "info";
+@import "about";
+@import "card";
+@import "services";
+@import "features";
+@import "blog";
+@import "assistance";
+@import "contacts";
+@import "footer";
+@import "main";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Larsseit" , "Larsseit-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 1.1;
+  
+  scroll-behavior: smooth;
+} 
