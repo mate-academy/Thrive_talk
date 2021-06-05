@@ -614,6 +614,7 @@
 
   &__container {
     display: flex;
+    justify-content: space-between;
     @include container;
 
     @media (max-width: 1000px) {
@@ -639,15 +640,21 @@
     }
   }
 
+  &__info {
+    display: flex;
+    justify-content: center;
+  }
+
   &__section {
     display: grid;
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(3, minmax(auto, 223px));
     grid-template-rows: 200px;
-    padding-left: 68px;
+    text-align: center;
+    padding-right: 68px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1300px) {
       padding-left: 34px;
     }
 
@@ -721,6 +728,10 @@
     @media (max-width: 767px) {
       text-align: center;
     }
+  }
+
+  &__address {
+    color: #006dff;
   }
 
   &__phone-number {

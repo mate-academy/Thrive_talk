@@ -1,6 +1,6 @@
 {
   "elementDivider": "__",
-  "modifierDivider": "--",
+  "modifierDivider": "_",
   "ignore": [
     "node_modules",
     "dist"

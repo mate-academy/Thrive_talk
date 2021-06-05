@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Thrive_talk</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png">
   </head>
   <body>
     <header class="header">
@@ -27,7 +28,7 @@
                 <a href="#services" class="header__link">Services</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">Blog</a>
+                <a href="#blog" class="header__link">Blog</a>
               </li>
               <li class="header__item">
                 <a href="#contactUs" class="header__link">Contact Us</a>
@@ -195,7 +196,7 @@
           </div>
         </div>
       </section>
-      <section class="should-know">
+      <section class="should-know" id="blog">
         <div class="should-know__container">
           <div class="should-know__photo"></div>
           <div class="should-know__section">
@@ -223,45 +224,54 @@
       <section class="contacts">
         <div class="contacts__container">
           <div class="contacts__img"></div>
-          <div class="contacts__section">
-            <div class="contacts__column">
-              <h3 class="contacts__title">
-                some info
-              </h3>
-              <div class="contacts__text">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+          <div class ="contacts__info">
+            <div class="contacts__section">
+              <div class="contacts__column">
+                <h3 class="contacts__title">
+                  some info
+                </h3>
+                <div class="contacts__text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+                </div>
               </div>
-            </div>
-            <div class="contacts__column">
-              <p class="contacts__title">
-                enfold health
-              </p>
-              <div class="contacts__text">
-                <p>Main Street 1, Olcott</p>
-                <p>Buffalo, United States</p>
-                <a
-                  class="contacts__phone-number"
-                  href="tel:+555283784333"
-                >
-                  +555 283 784 333
-                </a>
-                <br>
-                <a
-                  class="contacts__email"
-                  href="mailto:office@enfold-health.com"
-                >
-                  office@enfold-health.com
-                </a>
+              <div class="contacts__column">
+                <p class="contacts__title">
+                  enfold health
+                </p>
+                <div class="contacts__text">
+                  <a
+                    href="https://www.google.com.ua/maps/search/Main+Street+1,+Olcott++Buffalo,+United+States/@43.3353113,-78.7192763,15.7z?hl=ru"
+                    class="contacts__address"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <span>Main Street 1, Olcott</span>
+                    <span>Buffalo, United States</span>
+                  </a>
+                  <a
+                    class="contacts__phone-number"
+                    href="tel:+555283784333"
+                  >
+                    +555 283 784 333
+                  </a>
+                  <br>
+                  <a
+                    class="contacts__email"
+                    href="mailto:office@enfold-health.com"
+                  >
+                    office@enfold-health.com
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="contacts__column">
-              <div class="contacts__title">
-                office hours
-              </div>
-              <div class="contacts__text">
-                Mo-Fr: 8:00-19:00<br>
-                Sa: 8:00-14:00<br>
-                Su: closed
+              <div class="contacts__column">
+                <div class="contacts__title">
+                  office hours
+                </div>
+                <div class="contacts__text">
+                  Mo-Fr: 8:00-19:00<br>
+                  Sa: 8:00-14:00<br>
+                  Su: closed
+                </div>
               </div>
             </div>
           </div>
