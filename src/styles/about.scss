@@ -1,0 +1,39 @@
+.about {
+  position: relative;
+  padding: 150px 0 76px;
+  background-color: #fff;
+
+  @media (max-width: $small-screen) {
+    padding: 20px $padding-small;
+    text-align: center;
+  }
+
+  &__header {
+    position: absolute;
+    top: 156px;
+    left: 7%;
+    font-weight: 400;
+    line-height: 23px;
+    color: $color-secondary;
+    text-transform: uppercase;
+
+    @media (max-width: $small-screen) {
+      position: static;
+    }
+  }
+
+  &__paragraph {
+    margin: 0 auto;
+    max-width: 592px;
+    font-size: 24px;
+    line-height: 34px;
+    color: $color-secondary;
+
+    @media (max-width: $small-screen) {
+      font-size: 12px;
+      margin: $margin-small auto;
+      max-width: $width-small;
+      text-align: left;
+    }
+  }
+}

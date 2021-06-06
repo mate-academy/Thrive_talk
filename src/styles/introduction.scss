@@ -1,0 +1,86 @@
+@import "variables";
+
+.introduction {
+  max-width: 1130px;
+
+  @media (max-width: $small-screen) {
+    text-align: center;
+    padding-bottom: $padding-small;
+    padding-top: 10px;
+  }
+
+  &__title {
+    margin-left: -20px;
+
+    @media (max-width: $small-screen) {
+      margin: 0 auto;
+      display: none;
+    }
+  }
+
+  &__heading {
+    margin-top: 40px;
+    color: $color-secondary;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    @media (max-width: $small-screen) {
+      margin-top: 0;
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    max-width: 469px;
+    margin-top: 80px;
+    font-size: 24px;
+    line-height: 42px;
+    color: $color-secondary;
+
+    @media (max-width: $small-screen) {
+      margin: $margin-small auto 0;
+      max-width: $width-small;
+      font-size: $fontSize-main;
+      line-height: 2;
+      text-align: left;
+    }
+  }
+
+  &__links {
+    margin: 63px 0 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $width-small;
+
+    @media (max-width: $small-screen) {
+      margin: $margin-small auto;
+      font-size: $fontSize-main;
+      width: 250px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    background-color: #f9b640;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 50px;
+    transition: background-color 0.5s, color 0.5s;
+
+    @media (max-width: $small-screen) {
+      font-size: $fontSize-main;
+      width: 100px;
+      border-radius: 20px;
+    }
+  }
+
+  &__link:hover {
+    background-color: #f4f9e2;
+    color: #f9b640;
+  }
+}

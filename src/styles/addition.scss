@@ -1,0 +1,23 @@
+@import "variables";
+
+.addition {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  background-color: #fff;
+
+  @media (max-width: $small-screen) {
+    display: block;
+  }
+
+  &__photo {
+    background: url(../images/smile-men.png) no-repeat center;
+    background-size: cover;
+
+    @media (max-width: $small-screen) {
+      height: 350px;
+      width: 100%;
+    }
+  }
+
+  @import "help";
+}

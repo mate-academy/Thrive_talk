@@ -1,0 +1,20 @@
+@import "variables";
+
+.right {
+  padding-left: 12%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: $color-main;
+
+  @media (max-width: $small-screen) {
+    padding: 0;
+    justify-content: center;
+  }
+
+  &__text {
+    margin-right: 6px;
+    font-size: $fontSize-main;
+    line-height: 11px;
+  }
+}

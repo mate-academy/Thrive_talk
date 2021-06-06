@@ -1,0 +1,86 @@
+.courses {
+  padding-bottom: 120px;
+  background-color: #fff;
+
+  &__header {
+    margin: 0 auto;
+    line-height: 19px;
+    text-align: center;
+    color: $color-thirty;
+    text-transform: uppercase;
+  }
+
+  &__items {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: $small-screen) {
+      display: block;
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: 360px;
+    padding: 100px 20px 0 78px;
+    transition: transform 0.5s, border-radius 0.5s;
+
+    @media (max-width: $small-screen) {
+      padding-left: 0;
+      height: 250px;
+    }
+  }
+
+  &__list {
+    max-width: 255px;
+    font-size: 32px;
+    line-height: 34px;
+
+    @media (max-width: $small-screen) {
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+  
+  &__list::marker {
+    color: #e9b730;
+  }
+
+  &__item::before {
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 72px;
+    right: 15%;
+    left: 15%;
+    background-color: #fff;
+  }
+
+  &__item:hover {
+    border-radius: 30px;
+    transform: scale(1.1);
+    z-index: 1;
+
+    @media (max-width: $small-screen) {
+      transform: none;
+    }
+  }
+
+  &__item--lift {
+    background-color: #ffe2de;
+  }
+
+  &__item--run {
+    background-color: #c4e769;
+  }
+
+  &__item--pump {
+    background-color: $color-main;
+  }
+
+  &__item--iron {
+    background-color: #0052c1;
+  }
+}

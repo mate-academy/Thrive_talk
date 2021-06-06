@@ -1,0 +1,33 @@
+@import "variables";
+
+.footer {
+  background-color: #fff;
+
+  &__contacts {
+    display: grid;
+    grid-template-columns: 570px 1fr;
+
+    @media (max-width: $small-screen) {
+      display: block;
+    }
+
+    @media (max-width: $media-screen) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @import "contacts";
+  }
+
+  &__photo {
+    height: 100%;
+    background: url(../images/smile-girl.png) no-repeat center;
+    background-size: cover;
+
+    @media (max-width: $small-screen) {
+      height: 350px;
+      width: 100%;
+    }
+  }
+
+  @import "right";
+}

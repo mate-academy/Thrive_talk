@@ -1,0 +1,13 @@
+@import "variables";
+
+.assessment {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  background-color: $color-secondary;
+
+  @media (max-width: $small-screen) {
+    display: block;
+  }
+
+  @import "ready";
+}

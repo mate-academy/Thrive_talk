@@ -1,0 +1,14 @@
+@import "variables";
+
+.targets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 22px $padding-small 40px;
+  background-color: #fff;
+
+  @media (max-width: $small-screen) {
+    display: block;
+  }
+
+  @import "target";
+}

@@ -1,0 +1,90 @@
+@import "variables";
+@import "menu";
+@import "introduction";
+
+.header {
+  position: relative;
+  padding: 0 50px 0 12.5%;
+  background: #f4f9e2;
+  overflow: hidden;
+
+  @media (max-width: $media-screen) {
+    padding-left: $padding-middle;
+  }
+
+  @media (max-width: $small-screen) {
+    padding: $padding-small;
+    height: 100vh;
+  }
+
+  &__rectangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: $width-small;
+    background-color: #fff;
+
+    @media (max-width: $small-screen) {
+      display: none;
+    }
+  }
+
+  &__oval {
+    position: absolute;
+    top: 335px;
+    right: 0;
+    height: 545px;
+    width: 808px;
+    border-radius: 312px;
+    background: #edfdff;
+    transform: rotate(-60deg);
+    transform-origin: 30% top;
+  }
+
+  &__img {
+    position: absolute;
+    height: 545px;
+    width: 808px;
+    top: 230px;
+    right: -75px;
+    border-radius: 312px;
+    transform: rotate(-30deg);
+    transform-origin: 30% top;
+    overflow: hidden;
+  }
+
+  &__men {
+    position: relative;
+    transform: rotate(30deg);
+    top: -80px;
+    left: -100px;
+    width: 1117px;
+    height: 840px;
+    background-image: url(../images/men.png);
+  }
+
+  &__menu {
+    margin-top: 27px;
+    position: relative;
+    z-index: 2;
+    @media (max-width: $small-screen) {
+      margin-top: 0;
+    }
+  }
+
+  &__introduction {
+    margin-top: 187px;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: $small-screen) {
+      margin-top: 140px;
+      background-color: #fff;
+      border-radius: 75px;
+      opacity: 0.7;
+    }
+  }
+}
+
+@import"title";
