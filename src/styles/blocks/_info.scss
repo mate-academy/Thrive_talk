@@ -1,0 +1,68 @@
+.info {
+  //padding: 0 2vw;
+  max-width: 485px;
+  margin-top: 75px;
+
+  &__title {
+    @extend %title;
+    margin: 107px 0 37px;
+  }
+
+  &__item {
+    @include font (48px, 53px, -0.03em);
+    // font-family: "Larsseit";
+    // font-size: 48px;
+    // line-height: 53px;
+    // letter-spacing: -0.035em;
+
+    color: $color-text-and-contact-us;
+    margin-bottom: 70px;
+  }
+
+  &__text {
+    @include font (24px, 42px, normal);
+    max-width: 470px;
+    // font-family: "Larsseit";
+    // font-size: 24px;
+    // line-height: 42px;
+
+    color: $color-text-and-contact-us;
+  }
+
+  &__link {
+    margin-top: 63px;
+    display: flex;
+  }
+
+  &__link-wrapper {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:last-child {
+      margin-left: 35px;
+    }
+  }
+
+  &__link-element {
+    @include font (16px, 23px, 0.1em);
+    // font-size: 16px;
+    // line-height: 23px;
+    align-items: center;
+    // letter-spacing: 0.1em;
+
+    color: $color-link;
+  }
+
+  &__link-element_active {
+    background: $color-button;
+    padding: 10px 30px;
+
+    color: $white-color;
+  }
+
+  @media (max-width: $small-screen) {
+    padding: 0;
+  }
+}
