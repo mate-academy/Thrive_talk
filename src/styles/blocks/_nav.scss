@@ -1,0 +1,40 @@
+.nav {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 50px;
+    @include font (14px, 16px, normal);
+    padding-bottom: 10px;
+
+    color: $color-text-and-contact-us;
+
+    &:first-child {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: $color-text-and-contact-us;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    &__item:nth-child(1) {
+      margin: 0;
+    }
+
+    &__list {
+      padding: 0;
+    }
+  }
+}

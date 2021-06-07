@@ -1,0 +1,105 @@
+.header {
+  position: relative;
+  padding: 27px 6vw 75px;
+  background: linear-gradient(to right, $color-header 80%, $white-color 20%);
+
+  &__hidden {
+    position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+    color: $color-header;
+  }
+  &__container {
+    margin: 0 auto;
+    max-height: 700px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  &__logo {
+    @extend %title;
+  }
+
+  &__ellipse {
+    top: 100px;
+    right: 0;
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    background: #edfdff;
+    border-radius: 312px;
+    transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+  }
+
+  &__image {
+    bottom: 550px;
+    left: 550px;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 312px;
+    object-fit: contain;
+    object-position: left;
+    overflow: hidden;
+    transform: rotate(-30deg);
+
+  }
+
+  &__img {
+    position: absolute;
+    left: 10px;
+    top: -90px;
+    width: 850px;
+    height: 640px;
+    object-fit: contain;
+    object-position: left;
+    transform: rotate(30deg);
+  }
+
+  &__button {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #62d0df;
+    border-radius: 50px;
+    @include font (14px, 16px, normal);
+    color: $white-color;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  @media (max-width: 1100px) {
+    position: relative;
+
+    &__ellipse {
+      display: none;
+    }
+    &__image {
+      display: none;
+
+    }
+
+  }
+  @media (max-width: 850px) {
+    &__top {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & {
+      padding: 7vw 5vw 75px;
+    }
+  }
+}

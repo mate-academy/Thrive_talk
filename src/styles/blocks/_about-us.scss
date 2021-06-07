@@ -1,0 +1,40 @@
+.about-us {
+  position: relative;
+  margin-bottom: 75px;
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    position: absolute;
+    @include font (16px, 23px, 0.06em);
+    left: 60px;
+    top: 80px;
+
+    color: $color-text-and-contact-us;
+  }
+
+  &__content {
+    display: block;
+    max-width: 550px;
+    @include font (24px, 34px, 0.05em);
+
+    color: $color-text-and-contact-us;
+  }
+
+  @media (max-width: 955px) {
+    &__title {
+      position: static;
+      margin-bottom: 30px;
+    }
+    & {
+      flex-direction: column;
+      padding: 5vw 4vw;
+      margin: 3vw 0;
+    }
+    &__content {
+      padding-bottom: 4vw;
+    }
+  }
+}
