@@ -1,5 +1,5 @@
 .nav {
-
+  position: relative;
   &__list {
     display: flex;
   }
@@ -35,6 +35,27 @@
 
     &__list {
       padding: 0;
+    }
+  }
+  @media (max-width: 670px) {
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: absolute;
+      margin-left: 50vw;
+      padding-bottom: 2vw;
+      top: -50px;
+      right: 17vw;
+    }
+    &__item {
+      margin: 0;
+    }
+
+    &__link {
+      @include font (20px, 24px, normal);
     }
   }
 }

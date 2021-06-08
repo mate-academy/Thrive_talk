@@ -35,8 +35,12 @@
   }
 
   &__item {
-
     position: relative;
+
+    &:hover {
+      animation: decrease 0.5s linear 1;
+      border-radius: 10px;
+    }
 
     &:before {
       content: "";

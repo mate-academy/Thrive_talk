@@ -92,14 +92,79 @@
 
   }
   @media (max-width: 850px) {
-    &__top {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
 
     & {
       padding: 7vw 5vw 75px;
+    }
+  }
+
+  &__burger {
+    position: absolute;
+    top: 35px;
+    right: 10vw;
+
+    width: 18px;
+    height: 12px;
+
+    background-image: url(../images/hamburger-menu.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    visibility: hidden;
+
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+
+  &__toggler {
+    display: none;
+
+    &:checked ~ .header__burger {
+      width: 26px;
+      height: 20px;
+
+      background-image: url(../images/close-x.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &:checked ~ .header__menu {
+      display: block;
+    }
+
+    &:checked ~ .header__button {
+      position: absolute;
+      top: 150px;
+      right: 19vw;
+      height: 30px;
+      width: 100px;
+      @include font (14px, 16px, normal);
+      visibility: visible;
+    }
+  }
+  @media (max-width: 670px) {
+    &__top {
+      display: block;
+    }
+    & {
+      padding-top: 2vw;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__button {
+      visibility: hidden;
+    }
+
+    &__burger {
+      visibility: visible;
     }
   }
 }
