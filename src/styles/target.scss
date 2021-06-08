@@ -1,0 +1,42 @@
+.target {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 22px 0 40px;
+
+  &__text {
+    padding: 55px 0 37px 20%;
+  }
+
+  &__header {
+    font-size: 28px;
+    line-height: 33px;
+    color: $accent-color;
+  }
+
+  &__paragraph {
+    margin-top: 28px;
+    line-height: 25px;
+    color: rgb(34, 53, 111);
+    opacity: 0.5;
+    max-width: 298px;
+  }
+}
+
+@media (max-width: 900px) {
+  .target {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .target {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+
+    &__text {
+      text-align: center;
+      padding: 40px 0 0;
+    }
+  }
+}

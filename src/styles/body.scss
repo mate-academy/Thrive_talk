@@ -1,0 +1,11 @@
+.body {
+
+  &__background {
+    background-color: $page-background-color;
+  }
+
+  &__item {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

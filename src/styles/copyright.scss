@@ -1,0 +1,20 @@
+.copyright {
+  padding-left: 179px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: $base-color;
+
+  &__text {
+    margin-right: 6px;
+    font-size: 14px;
+    line-height: 11px;
+    color: $primary-color;
+  }
+}
+
+@media (max-width: 600px) {
+  .copyright {
+    padding-left: 50px;
+  }
+}

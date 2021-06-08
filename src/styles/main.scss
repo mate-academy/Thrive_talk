@@ -1,7 +1,6 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+.main {
 
-body {
-  background: $c-gray;
+  &__section {
+    margin: 0 auto;
+  }
 }

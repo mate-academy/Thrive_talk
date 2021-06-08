@@ -1,3 +1,4 @@
+/* stylelint-disable */
 @font-face {
     font-family: 'Larsseit';
     src: url('Larsseit-MediumItalic.eot');
@@ -141,4 +142,4 @@
     font-weight: 100;
     font-style: italic;
 }
-
+/* stylelint-enable */

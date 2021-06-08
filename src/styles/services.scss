@@ -1,0 +1,86 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 480px;
+  padding-top: 120px;
+
+  &__type {
+    display: grid;
+    justify-content: center;
+  }
+
+  &__type--physical {
+    background-color: $accent-color;
+  }
+
+  &__type--mental {
+    background-color: #0052c1;
+  }
+
+  &__type--nutrition {
+    background: no-repeat url(../images/smoothies.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__type--gymnastics {
+    background-color: $base-color;
+  }
+
+  &__type--crossfit {
+    background-color: #dee1ff;
+
+  }
+
+  &__type--aerobics {
+    background-color: #8f00ff;
+  }
+
+  &__title {
+    position: relative;
+    margin-top: 57px;
+    padding: 27px 20px;
+    width: 242px;
+
+    color: $primary-color;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33px;
+
+    border-top: 2px solid $primary-color;
+
+    transition: transform 0.7s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1) translate(0, 50px);
+    }
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 10%;
+
+      width: 9px;
+      height: 9px;
+
+      content: "";
+
+      border-radius: 50%;
+
+      background: #e9b730;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-auto-rows: 300px;
+
+    &__title {
+      &::before {
+        top: 19%;
+      }
+    }
+  }
+}
