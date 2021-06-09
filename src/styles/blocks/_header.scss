@@ -129,11 +129,11 @@
     &:checked ~ .header__menu {
       display: block;
       width: 100%;
-      height: 200px;
+      height: 100vh;
       position: absolute;
       top: 0;
       left: 0;
-      background-color: rgba(98, 208, 223, 0.2);
+      background-color: #cde5e9;
     }
 
     &:checked ~ .header__top {
@@ -141,7 +141,7 @@
     }
     &:checked ~ .header__button {
       position: absolute;
-      top: 155px;
+      top: 350px;
       left: 50%;
       height: 30px;
       width: 100px;
