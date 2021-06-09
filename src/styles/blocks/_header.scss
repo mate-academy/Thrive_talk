@@ -87,15 +87,8 @@
     }
     &__image {
       display: none;
-
     }
 
-  }
-  @media (max-width: 850px) {
-
-    & {
-      padding: 7vw 5vw 75px;
-    }
   }
 
   &__burger {
@@ -122,10 +115,10 @@
 
   &__toggler {
     display: none;
-
     &:checked ~ .header__burger {
       width: 26px;
       height: 20px;
+      z-index: 2;
 
       background-image: url(../images/close-x.svg);
       background-position: center;
@@ -135,14 +128,24 @@
 
     &:checked ~ .header__menu {
       display: block;
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(98, 208, 223, 0.2);
     }
 
+    &:checked ~ .header__top {
+      padding-bottom: 20px;
+    }
     &:checked ~ .header__button {
       position: absolute;
-      top: 150px;
-      right: 19vw;
+      top: 155px;
+      left: 50%;
       height: 30px;
       width: 100px;
+      margin-left: -50px;
       @include font (14px, 16px, normal);
       visibility: visible;
     }
@@ -152,7 +155,7 @@
       display: block;
     }
     & {
-      padding-top: 2vw;
+      padding-top: 27px;
     }
 
     &__menu {

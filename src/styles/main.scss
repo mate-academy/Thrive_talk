@@ -23,6 +23,10 @@
   src: url("../fonts/Larsseit family/Larsseit-Light.ttf");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Larsseit", sans-serif;
   font-size: 24px;
@@ -30,9 +34,11 @@ html {
   line-height: 34px;
   font-style: normal;
   overflow-y: scroll;
+
 }
 
 body {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }

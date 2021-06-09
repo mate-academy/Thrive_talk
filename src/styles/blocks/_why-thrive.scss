@@ -16,7 +16,6 @@
   }
 
   &__text {
-    max-width: 540px;
     @include font (24px, 35px, normal);
     padding-bottom: 75px;
     color: $white-color;
@@ -39,7 +38,7 @@
     justify-content: center;
     align-items: center;
     &__content {
-      padding: 0 8vw;
+      padding: 0 6vw;
       background: $why-thrive;
       width: 100%;
     }
