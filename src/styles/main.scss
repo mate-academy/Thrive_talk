@@ -1,7 +1,30 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "why-thrive";
+@import "about";
+@import "help";
+@import "other-help";
+@import "services";
+@import "get-help";
+@import "assessment";
+@import "contact";
+@import "copyright";
 
 body {
-  background: $c-gray;
+  margin: 0;
+  background-color: #f4f9e2;
+}
+
+h1,
+p,
+ul {
+  margin: 0;
+}
+
+.page-container {
+  max-width: 1600px;
+  height: 100%;
+  margin: auto;
 }
