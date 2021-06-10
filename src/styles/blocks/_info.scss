@@ -4,9 +4,7 @@
 
   &__title {
     @extend %title;
-    // margin: 107px 0 37px;
     margin: 107px 0 3vw;
-    // margin: 30vw 0 10vw;
   }
 
   &__item {
@@ -24,10 +22,7 @@
   }
 
   &__link {
-    // margin-top: 63px;
     margin-top: 3vw;
-    // margin: 63px 0 30px;
-    // padding-bottom: 63px;
     display: flex;
 
   }
