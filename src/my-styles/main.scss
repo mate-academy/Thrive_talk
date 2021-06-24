@@ -1,0 +1,18 @@
+@import "./reset";
+@import "./media";
+@import "./nav.scss";
+@import "./section-a.scss";
+@import "./why.scss";
+@import "./about.scss";
+@import "./helps.scss";
+@import "./categories.scss";
+@import "./detalis.scss";
+@import "./add.scss";
+@import "./contact.scss";
+@import "./info.scss";
+@import "./footer.scss";
+
+body {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

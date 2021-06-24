@@ -1,0 +1,37 @@
+.footer {
+  max-width: $max-width;
+  background-color: $color-blue;
+  height: 80px;
+  margin: 0 auto;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__block {
+    display: flex;
+    margin-left: 180px;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 9px;
+    height: 12px;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 11px;
+    color: #fff;
+    margin-left: 6px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer__block {
+    display: flex;
+    margin: 0 auto;
+  }
+}

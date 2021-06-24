@@ -1,0 +1,15 @@
+$max-width: 1960px;
+$color-blue: #62d0df;
+$text-color: #22356f;
+$color-button-header:#f9b640;
+
+@mixin _mob {
+  @media (max-width: 900px) { // вcе що нище 
+    @content;
+  }
+}
+
+@mixin help-block {
+  height: 360px;
+  width: 360px;
+}
