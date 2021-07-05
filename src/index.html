@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="./main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <div id="tank">
+      <div class="gun"></div>
+    </div>
+    <div id="timer">0</div>
+    <div id="loseBlock">
+      <div class="loseMessage">
+        <div class="justFlexWrapper">
+          <span class="wasted">WASTED</span>
+          <span class="score"></span>
+        </div>
+        <button class="playAgain">Play again</button>
+      </div>
+      <div class="help"><img src="textures/info.jpg" alt="info"><span></span></div>
+    </div>
+    <div class="start">
+      <button class="startPlaying">Start playing</button>
+      <div class="help"><img src="textures/info.jpg" alt="info"><span>Use "W", "S", "A", "D", keys to control tank and mouseclick to shoot</span></div>
+    </div>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
