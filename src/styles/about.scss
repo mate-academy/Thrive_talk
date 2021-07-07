@@ -1,0 +1,60 @@
+.about {
+  display: flex;
+  padding: 150px 11% 70px;
+
+  @media(max-width: 1000px) {
+    padding-top: 70px;
+  }
+
+  @media(max-width: 500px) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @media (min-width: 2000px) {
+    padding: 200px 12% 150px;
+  }
+
+  &__title {
+    width: 30%;
+
+    font-size: $middle-text-size;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media(max-width: 500px) {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: 2000px) {
+      font-size: $header-text-size;
+      line-height: 40px;
+    }
+  }
+
+  &__text {
+    width: 55%;
+
+    font-size: $header-text-size;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+
+    @media (min-width: 2000px) {
+      font-size: $big-title-size;
+      line-height: 60px;
+    }
+
+    @media(max-width: 1000px) {
+      width: 70%;
+      font-size: $middle-text-size;
+      line-height: 24px;
+    }
+
+    @media(max-width: 500px) {
+      width: 100%;
+    }
+  }
+}

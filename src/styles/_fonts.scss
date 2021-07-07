@@ -1,6 +1,20 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
+  src: url("../fonts/Larsseitfamily/Larsseit.woff") format("woff");
+  font-family: "Larsseit";
   font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/Larsseitfamily/Larsseit-Bold.woff") format("woff");
+  font-family: "Larsseit";
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("../fonts/Larsseitfamily/Larsseit-Medium.woff") format("woff");
+  font-family: "Larsseit";
+  font-style: normal;
+  font-weight: 500;
 }

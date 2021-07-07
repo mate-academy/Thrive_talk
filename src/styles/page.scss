@@ -1,0 +1,20 @@
+.page {
+  background-color: $c-gray;
+  @include small-font-size;
+
+  &__header {
+    margin: 0 auto;
+  }
+
+  &__main {
+    margin: 0 auto;
+
+    background-color: $c-white;
+  }
+
+  &__footer {
+    margin: 0 auto;
+
+    background-color: $c-white;
+  }
+}

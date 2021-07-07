@@ -1,7 +1,17 @@
 @import "utils";
-@import "fonts";
-@import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "_fonts";
+@import "card";
+@import "grid";
+@import "helpareas";
+@import "info-card";
+@import "additional";
+@import "contact-us";
+@import "footer";
+@import "header";
+@import "introduction";
+@import "nav";
+@import "about";
+@import "button";
+@import "page";
+@import "general";
+@import "slider";

@@ -1,0 +1,115 @@
+.footer {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 650px) {
+      justify-content: center;
+      padding: 0 11%;
+    }
+  }
+
+  &__img {
+    width: 40%;
+    object-fit: cover;
+    object-position: center;
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  &__info {
+    width: 57%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 240px));
+    gap: 40px;
+    justify-content: center;
+    padding-top: 80px;
+
+    @media (min-width: 1800px) {
+      gap: 100px;
+      grid-template-columns: repeat(3, 13vw);
+      padding-top: 150px;
+    }
+
+    @media (max-width: 900px) {
+      gap: 20px;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 650px) {
+      width: 100%;
+      grid-template-columns: repeat (3, 1fr);
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    line-height: 11px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @media (min-width:1800px) {
+      font-size: 24px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 23px;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+
+    color: rgba(34, 53, 111, 0.5);
+
+    @media (min-width:1800px) {
+      font-size: 24px;
+      line-height: 40px;
+    }
+  }
+
+  &__link {
+    display: block;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    color: $c-blue;
+    transition: color 0.3s;
+
+    @media (min-width:1800px) {
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    &:hover {
+      color: $c-dark-blue;
+    }
+
+    &--grey {
+      color: rgba(34, 53, 111, 0.5);
+    }
+  }
+
+  &__bottom {
+    display: block;
+    padding: 0 11%;
+    line-height: 80px;
+    height: 80px;
+
+    letter-spacing: -0.01em;
+    color: $c-white;
+
+    background: $c-light-blue;
+
+    @media (min-width:1800px) {
+      font-size: 24px;
+    }
+  }
+}

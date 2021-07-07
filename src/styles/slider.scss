@@ -1,0 +1,39 @@
+.slider {
+  &__item {
+    @media(max-width: 550px) {
+      display: none;
+    }
+
+    &--block {
+      @media(max-width: 550px) {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media(max-width: 550px) {
+      display: block;
+      margin: 30px auto 0;
+
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/right.png");
+      background-color: white;
+      background-position: center;
+      background-size: contain;
+      border: 1px transparent;
+      border-radius: 40%;
+      outline: none;
+
+      &:focus {
+        background-color: rgb(252, 250, 250);
+      }
+    }
+  }
+}

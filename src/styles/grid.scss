@@ -1,0 +1,34 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(230px, 1fr));
+  justify-content: center;
+  transition: opacity 0.3s;
+  cursor: pointer;
+
+  :hover {
+    opacity: 0.8;
+  }
+
+  @media(max-width:700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--vw-little {
+    @media (max-width: 550px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    height: 33vw;
+    transition: opacity 0.3s;
+
+    @media(max-width:1440px) {
+      height: 33vw;
+    }
+
+    @media(max-width:700px) {
+      height: 50vw;
+    }
+  }
+}

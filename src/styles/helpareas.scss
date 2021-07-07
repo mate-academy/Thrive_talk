@@ -1,0 +1,52 @@
+.help-areas {
+  padding-bottom: 100px;
+
+  &__title {
+    margin-bottom: 25px;
+
+    font-size: $middle-text-size;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: rgba(34, 53, 111, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (min-width: 2000px) {
+      font-size: $header-text-size;
+      margin-bottom: 75px;
+    }
+  }
+
+  &__row {
+    margin-bottom: 120px;
+
+    display: flex;
+    gap: 0;
+
+    cursor: pointer;
+
+    @media(max-width:700px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    width: 25%;
+    height: 25vw;
+
+    transition: transform 0.3s ease-out;
+
+    &:hover {
+      transform: translateY(-20%);
+    }
+
+    @media(max-width:1440px) {
+      height: 25vw;
+    }
+
+    @media(max-width:700px) {
+      width: 50vw;
+      height: 50vw;
+    }
+  }
+}
