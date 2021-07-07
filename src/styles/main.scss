@@ -1,7 +1,25 @@
 @import "utils";
 @import "fonts";
-@import "typography";
+@import "reset";
+@import "header";
+@import "nav";
+@import "info";
+@import "why-thrive";
+@import "about";
+@import "services";
+@import "card";
+@import "health";
+@import "training";
+@import "should-know";
+@import "contact";
+@import "footer";
+@import "page-main";
 
-body {
-  background: $c-gray;
+html {
+  font-family: "Larsseit", Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  font-style: normal;
+  scroll-behavior: smooth;
 }

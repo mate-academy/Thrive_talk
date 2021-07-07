@@ -1,0 +1,59 @@
+.services {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0 auto 24px;
+
+    @include font-manage(16px, 19px, 0.06em);
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $text-color2;
+  }
+
+  &__range {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(1, 360px);
+    margin-bottom: 120px;
+
+    @media (max-width: $large-breakpoint) {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(2, 300px);
+    }
+
+    @media (max-width: $small-breakpoint) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 240px);
+      grid-row-gap: 1px;
+    }
+
+  }
+
+  &__item {
+    @extend %block-transition;
+    @extend %block-img-template;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:nth-child(1) {
+      background-image: url(../images/weight-lift.jpg);
+    }
+
+    &:nth-child(2) {
+      background-image: url(../images/running.jpg);
+    }
+
+    &:nth-child(3) {
+      background-image: url(../images/pump-1.jpg);
+    }
+
+    &:nth-child(4) {
+      background-image: url(../images/pump-2.jpg);
+    }
+  }
+}

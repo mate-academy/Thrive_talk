@@ -1,0 +1,45 @@
+.training {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(2, 240px );
+  padding-top: 20px;
+  align-items: center;
+
+  overflow: hidden;
+
+  @media (max-width: $large-breakpoint) {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 220px);
+  }
+
+  @media (max-width: $small-breakpoint) {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 200px);
+  }
+
+  &__item {
+    padding: 55px 0 37px 5vw;
+
+    @media (max-width: $small-breakpoint) {
+      padding: 30px 0 20px;
+      margin: 0 auto;
+
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 28px;
+
+    @include font-manage(28px, 33px, -0.03em);
+    font-weight: normal;
+    color: $text-color1;
+  }
+
+  &__text {
+    max-width: 298px;
+    
+    @include font-manage(16px, 25px, -0.03em);
+    color: $text-color2;
+  }
+}

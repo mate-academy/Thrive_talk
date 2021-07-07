@@ -1,0 +1,41 @@
+.card {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 15%;
+    top: 108px;
+
+    width: 9px;
+    height: 9px;
+
+    background-color: $card-service-color;
+    border-radius: 50%;
+  }
+  
+
+  &__top {
+    position: absolute;
+    left: 50%;
+
+    width: 70%;
+    height: 72px;
+    margin-bottom: 23px;
+
+    border-bottom: 1px solid white;
+
+    transform: translateX(-50%);
+  }
+
+  &__name {
+    position: absolute;
+    top: 95px;
+    left: 20%;
+
+    max-width: 180px;
+
+    @include font-manage(32px, 34px, -0.01em);
+    color: white;
+  }
+}

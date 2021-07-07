@@ -1,0 +1,47 @@
+.health {
+  &__range {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(2, 480px);
+
+    @media (max-width: $large-breakpoint) {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(3, 400px);
+    }
+
+    @media (max-width: $small-breakpoint) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 320px);
+      grid-row-gap: 1px;
+    }
+  }
+
+  &__item {
+    @extend %block-transition;
+    @extend %block-img-template;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:nth-child(1) {
+      background-image: url(../images/physical.jpg);
+    }
+    &:nth-child(2) {
+      background-image: url(../images/mental.jpg);
+    }
+    &:nth-child(3) {
+      background-image: url(../images/nutrition.jpg);
+    }
+    &:nth-child(4) {
+      background-image: url(../images/gymnastic.jpg);
+    }
+    &:nth-child(5) {
+      background-image: url(../images/crossfit.jpg);
+    }
+    &:nth-child(6) {
+      background-image: url(../images/aerobic.jpg);
+    }
+  }
+}

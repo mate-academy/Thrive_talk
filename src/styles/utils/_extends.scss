@@ -1,4 +1,20 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+%title {
+  @include font-manage (24px, 27px, -0.04em);
+  color: $service-color;
+}
+
+%img-template {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+%block-img-template {
+  background-size: cover;
+  background-position: center;
+}
+
+%block-transition {
+  opacity: 0.7;
+  transition: opacity 0.2s;
 }
