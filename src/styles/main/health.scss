@@ -1,0 +1,44 @@
+.health {
+  padding-top: 120px;
+  background-color: $backgroundColor;
+
+  &__grid {
+    display: grid;
+    margin-top: 24px;
+    grid-template-columns: repeat(3, minmax(400px, 479.5px));
+    grid-auto-rows: 480px;
+    justify-content: center;
+
+    @media (max-width: 1199px) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    // overflow: hidden;
+
+    @media (min-width: 1437px) {
+      grid-auto-rows: 480px;
+    }
+
+    @media (max-width: 1436px) {
+      grid-auto-rows: 400px;
+    }
+
+    &-block--1 {
+      background-image: url(../images/health/1.jpg);
+    }
+    &-block--2 {
+      background-image: url(../images/health/2.jpg);
+    }
+    &-block--3 {
+      background-image: url(../images/health/3.png);
+    }
+    &-block--4 {
+      background-image: url(../images/health/4.jpg);
+    }
+    &-block--5 {
+      background-image: url(../images/health/5.jpg);
+    }
+    &-block--6 {
+      background-image: url(../images/health/6.jpg);
+    }
+  }
+}

@@ -1,7 +1,42 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+@import "reset";
+@import "placeholder";
+@import "button";
+@import "grid-block";
+
+@import "header/header";
+@import "header/navigation";
+@import "header/promo";
+
+@import "main/why";
+@import "main/about";
+@import "main/help";
+@import "main/health";
+@import "main/training";
+@import "main/should-know";
+@import "main/contact";
+
+@import "footer/footer";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Larsseit", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  scroll-behavior: smooth;
+}
 
 body {
-  background: $c-gray;
+  background: #e5e5e5;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1437px;
+  overflow: hidden;
 }

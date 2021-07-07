@@ -1,0 +1,101 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+
+  &__name {
+    @extend %nameLogo;
+
+    @media (max-width: 425px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    color: $textColor;
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.04em;
+    @media (max-width: 1024px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 30px;
+      width: 70%;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    @media (max-width: 624px) {
+      font-size: 24px;
+      width: 80%;
+    }
+
+    @media (max-width: 425px) {
+      margin-top: 0;
+    }
+
+    @media (max-height: 600px) {
+      line-height: 30px;
+    }
+  }
+
+  &__description {
+    margin-top: 80px;
+    line-height: 42px;
+    color: $textColor;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      width: 100%;
+    }
+
+    @media (max-width: 625px) {
+      width: 80%;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 16px;
+      width: 100%;
+    }
+
+    @media (max-height: 720px) {
+      margin-top: 30px;
+    }
+
+    @media (max-height: 600px) {
+      line-height: 30px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-top: 63px;
+
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 625px) {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    margin-right: 38px;
+
+    @media (max-width: 768px) {
+      margin: 0;
+    }
+
+    @media (max-width: 652px) {
+      margin: 15px 0;
+    }
+  }
+}
