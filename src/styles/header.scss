@@ -1,0 +1,94 @@
+.header {
+  position: absolute;
+  z-index: 4;
+  padding: 30px 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  &__button {
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #62d0df;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__mob-menu {
+    display: none;
+    &__check {
+      display: none;
+    }
+    &__nav-list {
+      position: absolute;
+      padding-top: 70px;
+      width: 50vw;
+      height: 100vh;
+      top: 0;
+      right: -25%;
+      background-color: rgba(182, 175, 175, 1);
+      transition: 0.5s;
+      z-index: 2;
+    }
+
+    &__check:checked ~ &__nav-list {
+      transform: translate(100%);
+    }
+
+    &__burger {
+      &__item {
+        display: block;
+        position: relative;
+        z-index: 3;
+        height: 3px;
+        width: 25px;
+        background-color: black;
+        margin: 5px auto;
+      }
+    }
+  }
+}
+
+.company__name {
+  @include h3Font;
+  color: $h3Color;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+
+  &__item {
+    padding: 10px;
+    color: $blueColor;
+    &:hover {
+      border-bottom: 1px solid $blueColor;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    align-items: center;
+    margin-left: 20px;
+    &__button {
+      padding: 10px;
+      font-size: 12px;
+    }
+
+    &__mob-menu {
+      display: block;
+    }
+  }
+}
