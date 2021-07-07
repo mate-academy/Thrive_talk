@@ -1,0 +1,15 @@
+.button {
+  text-transform: uppercase;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  transition: background-color 300ms;
+
+  &__link {
+    color: $mainLinkColor;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: #54cfdf;
+  }
+}

@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Larsseit, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  color: $mainTextColor;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("../fonts/Larsseitfamily/Larsseit.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main {
+  &__help {
+    margin-bottom: 120px;
+
+    @media (max-width: 1279px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-cards {
+    margin-top: 22px;
+  }
+
+  &__facts {
+    margin-top: 40px;
+  }
+
+  &__card {
+    position: relative;
+    padding-top: 26px;
+  }
+}

@@ -1,0 +1,96 @@
+.header {
+  background-color: $headerBackground;
+
+  &__intro {
+    margin-left: 180px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 179px;
+  }
+
+  &__logo {
+    margin: 35px 0 187px;
+  }
+
+  &__nav {
+    margin-top: 27px;
+  }
+
+  &__button {
+    background-color: $mainColor;
+    border-radius: 50px;
+    padding: 19px 0;
+    margin: 27px 190px 0 0;
+    white-space: nowrap;
+    z-index: 3;
+    transition: transform 300ms, background-color 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: $headerButtonHover;
+    }
+  }
+
+  &__image {
+    z-index: 2;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 626px;
+    height: 686px;
+    background-image: url("../images/header-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__figure {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 626px;
+    height: 626px;
+    background-image: url("../images/header-part.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__rectangle {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 323px;
+    height: 850px;
+    background-color: $mainLinkColor;
+  }
+
+  @media (max-width: 1279px) {
+
+    &__logo {
+      margin-left: 0;
+      transform: scale(1.2);
+    }
+
+    &__top,
+    &__intro {
+      margin-left: 40px;
+    }
+
+    &__image,
+    &__figure,
+    &__rectangle {
+      display: none;
+    }
+
+    &__button {
+      position: absolute;
+      top: 90px;
+      left: 30px;
+    }
+  }
+}
