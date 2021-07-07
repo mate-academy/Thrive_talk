@@ -1,7 +1,41 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "reset";
+@import "nav";
+@import "description";
+@import "features";
+@import "about";
+@import "blocks";
+@import "text-blocks";
+@import "also";
+@import "contact";
+@import "footer";
+
+@font-face {
+  font-family: Larsseit;
+  src: url(../fonts/Larsseit/Larsseit-Medium.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Larsseit, serif !important;
+}
 
 body {
-  background: $c-gray;
+  position: relative;
+  background-color: #f4f9e2;
+}
+
+.main {
+  overflow-x: hidden;
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 1920px) {
+  .main {
+    width: 1920px;
+  }
 }

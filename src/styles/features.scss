@@ -1,0 +1,130 @@
+$left-pad: 150px;
+$top-pad: 180px;
+$block-height: 605px;
+$header-margin: 75px;
+
+.features {
+	height: $block-height;
+	width: 100%;
+	background-color: #62d0df;
+	color: #fff;
+	position: relative;
+	padding: $left-pad 0 0 $top-pad;
+	overflow-x: hidden;
+	
+	&__header {
+	font-size: 36px;
+	line-height: 27px;
+	letter-spacing: -0.006em;
+	margin-bottom: $header-margin;
+	}
+		
+	&__text-box {
+		width: 555px;
+	}
+	
+	&__text {
+		line-height: 35px;
+		
+		&--big {
+			font-size: 24px;
+			font-weight: bold;
+		}
+		
+		&--normal {
+			font-size: 20px;
+		}
+	}
+	
+	&__image {
+		height: $block-height;
+		position: absolute;
+		right: 0;
+		top: 0;
+		object-fit: cover;
+	}
+	
+	@media screen and (max-width: 1280px) {
+		
+		& {
+			padding-left: $left-pad / 2.5;
+		}
+		
+		&__text-box {
+			width: 50%;
+		}
+		
+		&__image {
+			width: 40%;
+			height: 100%;
+		}
+	}
+	
+	@media screen and (max-width: 1024px){
+
+		&__image {
+			left: 60%;
+		}
+		
+		& {
+			padding-left: $left-pad / 4;
+			padding-top: $top-pad / 2;
+		}
+		
+		&__text-box {
+			width: 50%;
+		}
+		
+		&__header {
+			margin-bottom: $header-margin / 2;
+		}
+		
+		&__text {
+			&--big {
+				font-size: 20px;
+				font-weight: bold;
+			}
+			
+			&--normal {
+				font-size: 18px;
+			}
+		}
+		
+	}
+	
+	@media screen and (max-width: 525px){
+		& {
+			height: $block-height * 1.5;
+			overflow-y: hidden;
+		}
+		
+		&__image {
+			left: 0;
+			top: 50%;
+			height: 50%;
+			width: 100%;
+		}
+		
+		&__text-box {
+			width: 90%;
+		}
+	}
+
+	
+	@media screen and (max-width: 490px) {
+		
+		& {
+			padding-top: 20px;	
+		}
+		
+		&__text-box {
+			width: 95%;
+		}
+		
+		&__text {
+			font-size: 16px;
+			line-height: 26px;
+		}
+	}
+	
+}

@@ -1,0 +1,75 @@
+.text-blocks {
+	margin-top: 22px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	
+	&__block {
+		height: 240px;
+		width: 33.33%;
+		padding-left: 105px;
+		padding-top: 55px;
+		padding-right: 80px;
+		position: relative;
+		
+		&:after {
+			content: "";
+			width: 80%;
+			height: 2px;
+			background-color: #62D0DF;
+			position: absolute;
+			bottom: 0;
+			left: 5%;
+		}
+	}
+	
+	&__title {
+		color: #22356f;
+		font-size: 28px;
+		line-height: 33px;
+		letter-spacing: -0.03em;
+		margin-bottom: 28px;
+	}
+	
+	&__text {
+		color: rgba(34, 53, 111, 0.5);
+		font-size: 16px;
+		line-height: 25px;
+		letter-spacing: -0.03em;
+	}
+	
+	@media screen and (max-width: 1280px) {
+		&__block {
+			height: 360px;
+			padding-top: 25px;
+			padding-left: 15px;
+			padding-right: 10px;
+			font-size: 14px;
+		}
+		
+		&__title {
+			padding: 5% 0;
+			margin: 0;
+		}
+
+	}
+	
+	
+	@media screen and (max-width: 490px) {
+		&__block {
+			width: 50%;
+		}
+	}
+	
+	@media screen and (max-width: 360px) {
+		&__block {
+			width: 100%;
+			height: 280px;
+			padding-left: 5%;
+		}
+		
+		&__text {
+			width: 80%;
+		}
+	}
+}
