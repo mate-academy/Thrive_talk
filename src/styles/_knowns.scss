@@ -1,0 +1,55 @@
+.knowns {
+  position: relative;
+  display: flex;
+
+  &__image {
+    @include mix-image(992px, 0.2);
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__article {
+    @include adaptive-padding-all;
+    font-size: $font-size-large;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: $padding-global;
+    color: $navyblue;
+
+    @media (max-width: 2000px) {
+      font-size: $font-size-large-lg-screen;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 50px;
+
+    font-size: $font-size-xsmall;
+
+    @media (min-width: 2000px) {
+      font-size: $font-size-xsmall-lg-screen;
+    }
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    
+    font-size: $font-size-large;
+
+    @media (min-width: 2000px) {
+      font-size: $font-size-large-lg-screen;
+    }
+
+    &--marked {
+      color: $cyan;
+    }
+  }
+
+  &__button {
+    margin-bottom: 10px;
+  }
+}

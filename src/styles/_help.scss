@@ -1,0 +1,56 @@
+.help {
+
+  &__heading {
+    font-size: $font-size-xsmall;
+    text-align: center;
+    color: $transblue;
+    text-transform: uppercase;
+
+    transform: translate(0 , -50px);
+
+    @media (max-width: 2000px) {
+      font-size: $font-size-xsmall-lg-screen;
+    }
+  }
+
+  &__common {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-bottom: 120px;
+
+    @media (max-width: 968px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 440px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__constituents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 968px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 440px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 968px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    @media (max-width: 440px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

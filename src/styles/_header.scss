@@ -1,0 +1,108 @@
+.header {
+  @include padding-global;
+  @include adaptive-padding-hor;
+  position: relative;
+
+  height: 100vh;
+  min-height: 540px;
+  max-height: 1024px;
+
+  background: url(../images/header-img.png),
+    url(../images/Rectangle.png),
+    linear-gradient(90deg, $dimgrey 0%,
+    $dimgrey 79%,
+    $white 80%,
+    $white 100%);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  &__nav-toggler {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    z-index: 3;
+  }
+
+  &__introduction {
+    position: absolute;
+    bottom: 75px;
+  }
+
+  &__top {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button {
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  &__navigation {
+    font-size: $font-size-xxsmall;
+
+    @media (max-width: 768px) {
+      display: none;
+
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      background-color: $dimgrey;
+    }
+
+    @media (min-width: 2000px) {
+      font-size: $font-size-xxsmall-lg-screen;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+
+    @media (max-width: 768px) {
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    margin: 5px;
+    padding: 10px;
+
+    text-decoration: none;
+    color: $navyblue;
+
+    border-bottom: 2px solid transparent;
+
+    transition: transform $transition;
+
+    &--active {
+      border-color: $navyblue;
+    }
+
+    &:hover {
+      @include scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+}

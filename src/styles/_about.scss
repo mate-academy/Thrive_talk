@@ -1,0 +1,44 @@
+.about {
+  @include adaptive-padding-all;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+  padding: $padding-global ($padding-global / 2);
+  color: $navyblue;
+  line-height: 34px;
+
+  &__heading {
+    position: absolute;
+    left: $padding-global / 2;
+    font-size: $font-size-xsmall;
+    white-space: nowrap;
+    margin-right: $padding-global;
+
+    @media (min-width: 2000px) {
+      font-size: $font-size-xsmall-lg-screen;
+    }
+  }
+
+  &__text {
+    max-width: 600px;
+    font-size: $font-size-small;
+
+    @media (min-width: 2000px) {
+      max-width: 60%;
+
+      font-size: $font-size-small-lg-screen;
+      line-height: $font-size-small-lg-screen * 1.4;
+    }
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    &__heading {
+      position: static;
+    }
+  }
+}

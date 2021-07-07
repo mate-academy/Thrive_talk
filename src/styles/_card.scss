@@ -1,0 +1,101 @@
+.card {
+  padding: 5vw;
+
+  color: $white;
+
+  transition: transform $transition;
+
+  &:hover {
+    cursor: pointer;
+    transform: translate(0, -5px) scale(1.01);
+  }
+
+  &__line {
+    border-bottom: 1px solid $white;
+    margin-bottom: 23px;
+  }
+
+  &__text {
+    position: relative;
+    margin-left: 20px;
+    font-size: $font-size-large;
+
+    @media (min-width: 2000px) {
+      margin-left: 40px;
+      font-size: $font-size-large-lg-screen;
+    }
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: -20px;
+      
+      margin-right: 12px;
+      
+      color: $orange;
+
+      @media (min-width: 2000px) {
+        left: -40px;
+      }
+    }
+
+  }
+
+  &--small {
+    height: 25vw;
+
+    @each $num, $color in $common-cards-colors {
+      &:nth-child(#{$num}) {
+        background-color: $color;
+      }
+    }
+    @media (min-width: 1700px) {
+      height: 425px;
+    }
+
+    @media (max-width: 992px) {
+      height: 50vw;
+    }
+
+    @media (max-width: 440px) {
+      height: 100vw;
+    }
+
+  }
+
+  &--medium {
+    height: 33.33vw;
+
+    @media (min-width: 1700px) {
+      height: 566.66px;
+    }
+
+    @media (max-width: 992px) {
+      height: 50vw;
+    }
+
+    @media (max-width: 440px) {
+      height: 100vw;
+    }
+
+    @each $num, $color in $constituents-cards-colors {
+      &:nth-child(#{$num}) {
+        background: $color;
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url(../images/joanna-kosinska-340748.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    padding: 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
+}

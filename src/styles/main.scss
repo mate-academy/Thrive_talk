@@ -1,7 +1,33 @@
 @import "utils";
 @import "fonts";
-@import "typography";
+@import "reset";
+@import "header";
+@import "logo";
+@import "button";
+@import "introduction";
+@import "thrive";
+@import "about";
+@import "help";
+@import "card";
+@import "info-card";
+@import "knowns";
+@import "contacts";
+@import "info-block";
+@import "footer";
+@import "nav-toggler";
+@import "_main";
+@import "body";
 
-body {
-  background: $c-gray;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Larsseit, Arial, Helvetica, sans-serif;
+  font-size: $font-size-small;
+  scroll-behavior: smooth;
+
+  @media (min-width: 2000px) {
+    font-size: $font-size-small-lg-screen;
+  }
 }

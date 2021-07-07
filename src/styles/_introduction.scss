@@ -1,0 +1,33 @@
+.introduction {
+  width: 80vw;
+
+  color: $navyblue;
+
+  &__heading {
+    margin-bottom: 40px;
+
+    font-size: $font-size-xxlarge;
+
+    @media (max-width: 600px) {
+      font-size: $font-size-xlarge;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    text-shadow: 0 0 10px white;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__button:first-child {
+    margin-right: 10px;
+  }
+
+  @media (min-width: 2000px) {
+    width: 40vw;
+  }
+}

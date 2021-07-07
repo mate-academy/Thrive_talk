@@ -1,0 +1,50 @@
+.footer {
+  position: relative;
+
+  font-size: $font-size-xxsmall;
+  
+  &__info {
+    display: flex;
+  }
+
+  &__info-block-wrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: $padding-global / 2;
+
+    @include adaptive-padding-all;
+
+    @media (min-width: 2000px) {
+      position: relative;
+      left: 30%;
+
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &__info-block {
+    margin: 30px 5px;
+  }
+
+  &__image {
+    @include mix-image(1111px, 0.2);
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__text {
+    @include adaptive-padding-hor;
+    position: relative;
+    
+    height: 80px;
+
+    padding: 0 $padding-global;
+
+    line-height: 80px;
+    color: $white;
+    
+    background-color: $cyan;
+  }
+}
