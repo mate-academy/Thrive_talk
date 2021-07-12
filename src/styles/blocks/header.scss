@@ -1,0 +1,32 @@
+.header {
+  background: linear-gradient(to right, #f4f9e2 50%, 50%, $colorWhite 50%);
+  &__container {
+    position: relative;
+    margin: auto;
+    display: flex;
+    // flex-direction: column;
+    max-width: $width;
+    overflow: hidden;
+  }
+  &__top {
+    position: absolute;
+    margin: auto;
+    z-index: 2;
+  }
+  &__text {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  &__picture {
+    overflow: hidden;
+    z-index: 1;
+  }
+}
+
+@media(max-width:1437px) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+}

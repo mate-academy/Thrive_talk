@@ -1,0 +1,35 @@
+.item-content {
+  display: flex;
+  margin: 72px;
+  width: 255px;
+  padding-top: 23px;
+  border-top: 2px solid white;
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 10px;
+    width: 9px;
+    height: 9px;
+    background-color: #e9b730;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  &--2 {
+    width: 340px;
+    margin: 96px;
+  }
+}
+
+@media (max-width:960px) {
+  .item-content,
+  .item-content--2 {
+    width: 70%;
+  }
+}
+
+@media (max-width:720px) {
+  .item-content {
+    margin: 20px;
+  }
+}

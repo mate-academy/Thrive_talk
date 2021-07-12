@@ -1,0 +1,24 @@
+.footer {
+  height: 80px;
+  background-color: $colorBlue;
+  color: $colorWhite;
+  &__container {
+    @extend %container;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  &__copyright {
+    display: block;
+    margin: 32px 0 26px 179px;
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: -0.01em;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer__copyright {
+    margin: 32px auto 26px;
+  }
+}

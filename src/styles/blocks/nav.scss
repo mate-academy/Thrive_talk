@@ -1,0 +1,29 @@
+.nav {
+  width: 233px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: block;
+    box-sizing: border-box;
+    width: 50px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $colorDarkBlue;
+  }
+  &__item:hover {
+    border-bottom: 1px solid $colorDarkBlue;
+  }
+}
+
+@media(max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+}

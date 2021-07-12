@@ -1,6 +1,5 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
-  }
+@mixin animation($url) {
+  background: $url no-repeat;
+  animation: zoomin 0.5s linear;
+  animation-fill-mode: forwards;
 }

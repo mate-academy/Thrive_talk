@@ -1,0 +1,138 @@
+.help {
+  &__list {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 360px);
+    grid-template-rows: 360px;
+    &--next {
+      display: grid;
+      grid-template-columns: repeat(3, 480px);
+      grid-template-rows: repeat(2, 480px);
+      margin-top: 120px;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    color: $colorWhite;
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 550;
+    letter-spacing: -0.01em;
+    &--1 {
+      background-color: #ffe2de;
+      &:hover {
+        @include animation(url(/images/WeightLifting.jpg));
+      }
+    }
+    &--2 {
+      background-color: #c4e769;
+      &:hover {
+        @include animation(url(/images/RunningSpinning-3.jpg));
+      }
+    }
+    &--3 {
+      background-color: #62d0df;
+      &:hover {
+        @include animation(url(/images/Crossfi-1.jpg));
+      }
+    }
+    &--4 {
+      background-color: #0052c1;
+      &:hover {
+        @include animation(url(/images/PumpingIron-2.jpg));
+      }
+    }
+    &--next {
+      margin: 0;
+      &-1 {
+        background-color: #22356f;
+        &:hover {
+          @include animation(url(/images/PhysicalHealth-2.png));
+        }
+      }
+      &-2 {
+        background-color: #0052c1;
+        &:hover {
+          @include animation(url(/images/MentalHealth.jpg));
+        }
+      }
+      &-3 {
+        background-color: #5161f1;
+        &:hover {
+          @include animation(url(/images/nutrition.png));
+        }
+      }
+      &-4 {
+        background-color: #62d0df;
+        &:hover {
+          @include animation(url(/images/Gymnastics-1.jpg));
+        }
+      }
+      &-5 {
+        background-color: #dee1ff;
+        &:hover {
+          @include animation(url(/images/Crossfit.jpg));
+        }
+      }
+      &-6 {
+        background-color: #8f00ff;
+        &:hover {
+          @include animation(url(/images/Aerobics-2.jpg));
+        }
+      }
+    }
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 110%;
+  }
+}
+
+@media (max-width: 1437px) {
+  .help__list {
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,360px);
+    &--next {
+      grid-template-columns: repeat(2,50%);
+      grid-template-rows: repeat(3,480px);
+    }
+  }
+}
+
+@media (max-width:960px) {
+  .help__list--next {
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,360px);
+  }
+}
+
+@media (max-width:720px) {
+  .help__list {
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,160px);
+    &--next {
+      grid-template-columns: repeat(2,50%);
+      grid-template-rows: repeat(3,160px);
+      margin-top: 60px;
+    }
+  }
+  .help__item {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 550;
+  }
+}
+
+@media (max-width:500px) {
+  .help__item {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+}
