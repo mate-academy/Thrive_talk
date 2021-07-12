@@ -1,0 +1,138 @@
+.header {
+  padding: 0 40px;
+  background: #f4f9e2;
+
+  &__container {
+    max-width: 1600px;
+    margin: 0 auto;
+    max-height: 840px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__logo {
+    height: fit-content;
+    margin: 35px 0 180px;
+    text-decoration: none;
+    cursor: pointer;
+
+    font-size: 24px;
+    line-height: 27px;
+    color: #62d0df;
+
+    &:hover,
+    &:focus {
+      transition: 0.5s linear;
+      transform: scale(1.22);
+    }
+  }
+
+  &__menu {
+    z-index: 1;
+    padding-top: 58px;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+
+    @media (min-width: 690px) {
+      display: none;
+    }
+
+    div {
+      position: absolute;
+      bottom: 9px;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $softCyan;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $softCyan;
+      transition: 0.5s;
+    }
+
+    &::before {
+      bottom: 18px;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &__menu div.active {
+    visibility: hidden;
+  }
+
+  &__menu.active::before {
+    transition: 0.5s;
+    bottom: 10px;
+    transform: rotate(45deg);
+  }
+
+  &__menu.active::after {
+    transition: 0.5s;
+    bottom: 10px;
+    transform: rotate(-45deg);
+  }
+
+  &__nav {
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__button {
+    display: none;
+    padding: 19px 0;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    background-color: $softCyan;
+    border-radius: 50px;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.22);
+      transition: 1s linear;
+    }
+  }
+}
+
+@media (min-width: 690px) {
+  .header {
+    &__button {
+      display: block;
+      margin: 23px 0 0;
+    }
+
+    &__container {
+      height: 150px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    &__photo {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 570px;
+      height: 590px;
+      background: center/ cover no-repeat url(../images/oval.png);
+    }
+
+    &__button {
+      margin: 23px 20px 0 0;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.copyright {
+  height: 80px;
+  background-color: $softCyan;
+  color: $White;
+
+  &__text {
+    text-align: center;
+    position: relative;
+    top: 35px;
+  }
+}

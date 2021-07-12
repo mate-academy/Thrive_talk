@@ -1,7 +1,22 @@
 @import "utils";
-@import "fonts";
 @import "typography";
-
-body {
-  background: $c-gray;
-}
+// @import "fonts";
+@import "src/styles/blocks/reset";
+@import "src/styles/blocks/header";
+@import "src/styles/blocks/button";
+@import "src/styles/blocks/info";
+@import "src/styles/blocks/logo";
+@import "src/styles/blocks/nav";
+@import "src/styles/blocks/why-thrive";
+@import "src/styles/blocks/about";
+@import "src/styles/blocks/box";
+@import "src/styles/blocks/help-block";
+@import "src/styles/blocks/main__help-block";
+@import "src/styles/blocks/box--6";
+@import "src/styles/blocks/health";
+@import "src/styles/blocks/box-text";
+@import "src/styles/blocks/also-know";
+@import "src/styles/blocks/contact-us";
+@import "src/styles/blocks/additional-info";
+@import "src/styles/blocks/footer";
+@import "src/styles/blocks/info-block";
