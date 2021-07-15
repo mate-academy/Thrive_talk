@@ -1,10 +1,16 @@
 .why-thrive {
-  display: flex;
-  justify-content: space-between;
+  background: $why-thrive;
+  width: 100%;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__content {
     padding: 0 6vw;
-    background: $why-thrive;
   }
 
   &__title {

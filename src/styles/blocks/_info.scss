@@ -9,7 +9,7 @@
 
   &__item {
     @include font (48px, 53px, -0.03em);
-
+    font-weight: bold;
     color: $color-text-and-contact-us;
     margin-bottom: 70px;
   }
@@ -25,17 +25,6 @@
     margin-top: 3vw;
     display: flex;
 
-  }
-
-  &__link-wrapper {
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:last-child {
-      margin-left: 35px;
-    }
   }
 
   &__link-element {
@@ -55,6 +44,21 @@
       padding: 10px 30px;
 
       color: $white-color;
+    }
+  }
+
+  @media (max-width: 400px) {
+    margin-top: 20px;
+    &__title {
+      margin: 1px 0 3vw;
+    }
+    &__link {
+      flex-direction: column;
+    }
+    &__link-element {
+      &:nth-child(2) {
+        margin-left: 0;
+      }
     }
   }
 }

@@ -1,10 +1,11 @@
 .about-us {
   position: relative;
-  margin-bottom: 75px;
   padding-top: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto 75px;
+  max-width: 1200px;
 
   &__title {
     position: absolute;
@@ -30,7 +31,7 @@
     }
     & {
       flex-direction: column;
-      padding: 5vw 4vw;
+      padding: 5vw 6vw;
       margin: 3vw 0;
     }
     &__content {

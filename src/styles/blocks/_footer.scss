@@ -1,9 +1,12 @@
 .footer {
   height: 80px;
   background: $why-thrive;
+  width: 100%;
   position: relative;
 
   &__content {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 6vw;
     height: 100%;
     display: flex;
@@ -12,7 +15,7 @@
     @include font (14px, 11px, -0.01em);
     color: $white-color;
   }
-  
+
   &__item {
     margin-left: 10px;
   }

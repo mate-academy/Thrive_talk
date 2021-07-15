@@ -1,5 +1,7 @@
 .office {
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
 
   &__img {
     width: 40%;
@@ -43,6 +45,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 4vw;
 
     &__img {
       position: absolute;

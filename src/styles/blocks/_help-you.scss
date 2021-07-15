@@ -1,4 +1,6 @@
 .help-you {
+  margin: 0 auto;
+  max-width: 1200px;
 
   &__title {
     @include font (16px, 19px, 0.06em);

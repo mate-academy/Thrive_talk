@@ -1,10 +1,16 @@
 .contact-us {
-  display: flex;
-  justify-content: space-between;
+  background: #22356f;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 
   &__content {
     padding: 7vw 6vw;
-    background: #22356f;
   }
   &__item {
     @include font (16px, 12px, 0.06em);
@@ -40,10 +46,19 @@
   }
 
   @media (max-width: 955px) {
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    &__container {
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      @include font (30px, 94px, -0.01em);
+    }
+
+    &__text {
+      @include font (20px, 34px, -0.01em);
+    }
 
     &__content {
       z-index: 1;

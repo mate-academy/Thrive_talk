@@ -3,10 +3,11 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 200px);
   align-items: center;
-  margin: 40px 0;
+  margin: 40px auto 0;
+  max-width: 1200px;
 
   &__item {
-    padding: 0 30px;
+    padding: 0 30px 0 70px;
 
   }
 
@@ -28,6 +29,10 @@
   @media (max-width: 955px) {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, 200px);
+    &__item {
+      padding: 0 35px;
+
+    }
   }
 
   @media (max-width: 670px) {

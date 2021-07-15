@@ -1,6 +1,5 @@
 .header {
-  position: relative;
-  padding: 27px 6vw 75px;
+  width: 100%;
   background: linear-gradient(to right, $color-header 80%, $white-color 20%);
 
   &__hidden {
@@ -14,7 +13,10 @@
   }
   &__container {
     margin: 0 auto;
-    max-height: 700px;
+    max-height: 70vw;
+    max-width: 1200px;
+    position: relative;
+    padding: 27px 6vw 75px;
   }
 
   &__top {
@@ -40,9 +42,9 @@
   }
 
   &__image {
-    bottom: 550px;
-    left: 550px;
-    position: relative;
+    top: 150px;
+    right: -30px;
+    position: absolute;
     width: 600px;
     height: 350px;
     border-radius: 312px;
@@ -79,9 +81,10 @@
     z-index: 1;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1150px) {
     background: $color-header;
     position: relative;
+    min-height: 750px;
 
     &__ellipse {
       display: none;
@@ -128,6 +131,7 @@
     }
 
     &:checked ~ .header__menu {
+      padding: 0;
       display: block;
       width: 100%;
       height: 100vh;
@@ -143,7 +147,7 @@
     &:checked ~ .header__button {
       position: absolute;
       top: 350px;
-      left: 50%;
+      left: 50.5%;
       height: 30px;
       width: 100px;
       margin-left: -50px;
@@ -154,9 +158,6 @@
   @media (max-width: 670px) {
     &__top {
       display: block;
-    }
-    & {
-      padding-top: 27px;
     }
 
     &__menu {
@@ -170,5 +171,23 @@
     &__burger {
       visibility: visible;
     }
+  }
+  @media (max-width: 670px) {
+    min-height: 700px;
+  }
+  @media (max-width: 400px) {
+    &__container {
+      padding: 27px 6vw 20px;
+    }
+    min-height: 800px;
+  }
+  @media (max-width: 530px) {
+    min-height: 730px;
+  }
+  @media (max-width: 520px) {
+    min-height: 780px;
+  }
+  @media (max-width: 320px) {
+    min-height: 870px;
   }
 }
