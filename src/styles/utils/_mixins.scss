@@ -4,3 +4,9 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin decor {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}

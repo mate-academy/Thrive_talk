@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: $greenblueColor;
+
+  &__text {
+    font-size: 14px;
+    line-height: 11px;
+    color: $mainColor;
+  }
+
+  @media (max-width: $Mobile) {
+    & {
+      height: 40px;
+    }
+  }
+}
