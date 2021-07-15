@@ -1,0 +1,24 @@
+.footer {
+  background-color: $color1;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    @include container;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 180px;
+    color: $color3;
+
+    @media (max-width: 1000px) {
+      padding: 0;
+      justify-content: center;
+    }
+
+    span {
+      margin-left: 6px;
+    }
+  }
+}
