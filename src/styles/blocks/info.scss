@@ -1,0 +1,68 @@
+.info {
+  display: flex;
+
+  &__image {
+    flex: 1 1 33.33%;
+    @include image("../images/info.png");
+
+    @include onMobile {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    padding: 100px 40px 80px 70px;
+    flex: 1 1 66.66%;
+
+    @include onNotebook() {
+      padding: 75px 30px 60px 50px;
+    }
+
+    @include onTable {
+      padding: 50px 20px 40px 40px;
+    }
+
+    @include onMobile {
+      flex: 1 1 100%;
+      padding: 15px 0;
+    }
+  }
+
+  &__item {
+    flex: 1 1 33.33%;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 11px;
+    color: $colorBlue;
+    margin-bottom: 50px;
+
+    @include onMobile {
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    font-size: 14px;
+    line-height: 23px;
+
+    color: rgba(34, 53, 111, 0.5);
+
+    @include onTable {
+      width: 80%;
+    }
+
+    @include onMobile {
+      width: 100%;
+      padding: 15px;
+    }
+    & a {
+      color: blue;
+      text-decoration: none;
+    }
+  }
+}

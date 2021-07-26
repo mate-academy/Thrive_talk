@@ -1,0 +1,50 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  &__title {
+    flex: 1 1 40%;
+    padding-top: 75px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -3%;
+    color: $colorBlue;
+
+    @include onTable {
+      padding-top: 50px;
+      width: 80%;
+    }
+
+    @include onMobile {
+      padding-top: 25px;
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    flex: 1 1 60%;
+    width: 60%;
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -3%;
+    color: rgba(34, 53, 111, 0.5);
+
+    
+    @include onTable {
+      width: 80%;
+    }
+
+    @include onMobile {
+      width: 90%;
+      padding-top: 10px;
+    }
+  }
+}

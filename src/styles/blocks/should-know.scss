@@ -1,0 +1,91 @@
+.should-know {
+  display: flex;
+
+  &__image {
+    flex: 1 1 33.33%;
+    @include image("../images/should-know.png");
+
+    @include onMobile {
+      display: none;
+    }
+  }
+
+  &__content {
+    flex: 1 1 66.66%;
+    padding: 105px 175px 40px 105px;
+
+    @include onNotebook() {
+      padding: 80px 130px 30px 80px;
+    }
+
+    @include onTable {
+      padding: 50px 100px 20px 50px;
+    }
+
+    @include onMobile {
+      flex: 1 1 100%;
+      padding: 15px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 6%;
+    color: $colorBlue;
+
+    margin-bottom: 225px;
+
+    @include onNotebook() {
+      margin-bottom: 160px;
+    }
+
+    @include onTable {
+      margin-bottom: 100px;
+    }
+
+    @include onMobile {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    color: $colorBlue;
+
+    margin-bottom: 152px;
+
+    @include onNotebook() {
+      margin-bottom: 120px;
+    }
+
+    @include onTable {
+      margin-bottom: 75px;
+    }
+
+    @include onMobile {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 25px;
+    }
+
+    & span {
+      color: $colorSky;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    color: #fab63e;
+
+    @include onMobile {
+      text-align: center;
+    }
+  }
+}

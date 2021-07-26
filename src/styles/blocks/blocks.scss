@@ -1,0 +1,42 @@
+.blocks {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  $blocksColors:
+    "dark-blue" #22356f,
+    "blue" #0052c1,
+    "image" #fff,
+    "sky" #62d0df,
+    "corals" #dee1ff,
+    "violet" #8f00ff;
+
+  @each $name, $blockCardColor in $blocksColors {
+    &__card--#{$name} {
+      background: $blockCardColor;
+    }
+  }
+
+  &__card--image {
+    @include image("../images/item.png");
+  }
+  
+  &__card {
+    flex: 1 1 33.33%;
+
+    @include onLarge {
+      flex: 1 1 16%;
+    }
+
+    @include onFull {
+      flex: 1 1 16%;
+    }
+
+    @include onMobile {
+      flex: 1 1 50%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+
+.advices {
+  margin-bottom: 40px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1 1 33.33%;
+
+    @include onMobile {
+      flex: 1 1 100%;
+    }
+  }
+}

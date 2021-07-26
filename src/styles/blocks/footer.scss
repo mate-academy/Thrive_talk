@@ -1,0 +1,19 @@
+.footer {
+  padding: 30px 0;
+  background-color: $colorSky;
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 11px;
+    color: #fff;
+
+    @include onMobile {
+      text-align: center;
+    }
+  }
+}

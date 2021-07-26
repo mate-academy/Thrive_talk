@@ -1,0 +1,87 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  box-sizing: content-box;
+
+  @include onMobile {
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    align-self: flex-start;
+
+    @include onMobile {
+      padding-top: 10px;
+      order: 2;
+      display: inline-block;
+      width: 50%;
+      font-size: 20px;
+    }
+  }
+
+  &__menu {
+    @include onMobile {
+      order: 1;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__link--active {
+    font-weight: bold;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      position: absolute;
+      top: 25px;
+      border-bottom: 1px solid black;
+    }
+  }
+
+  &__btn {
+    width: 150px;
+    height: 50px;
+    left: 1159px;
+    top: 27px;
+
+    background: $colorSky;
+    border-radius: 50px;
+
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    @include onMobile {
+      order: 3;
+      width: 50%;
+      height: 40px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20%;
+    height: 1px;
+    width: 80%;
+    background-color: #fff;
+  }
+
+  &__text {
+    position: relative;
+    padding: 0 20%;
+    margin-top: 30%;
+    height: max-content;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.6%;
+    color: #fff;
+
+    @include onMobile {
+      font-size: 28px;
+      line-height: 30px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 83%;
+      display: block;
+      width: 10px;
+      height: 10px;
+
+      border-radius: 50%;
+      background-color: #e9b730;
+    }
+  }
+}

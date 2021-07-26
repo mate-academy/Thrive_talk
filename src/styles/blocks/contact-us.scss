@@ -1,0 +1,114 @@
+.contact-us {
+  display: flex;
+
+  &__content {
+    flex: 1 1 66.66%;
+    padding: 105px 200px 40px 180px;
+    background-color: $colorBlue;
+    color: #fff;
+
+    @include onNotebook {
+      padding: 80px 150px 30px 135px;
+    }
+
+    @include onTable {
+      padding: 50px 75px 20px;
+    }
+
+    @include onMobile {
+      flex: 1 1 100%;
+      padding: 15px;
+    }
+  }
+
+  &__image {
+    flex: 1 1 33.33%;
+    @include image("../images/contact-us.png");
+
+    @include onMobile {
+      display: none;
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 6%;
+
+    margin-bottom: 225px;
+
+    @include onNotebook() {
+      margin-bottom: 170px;
+    }
+
+    @include onTable {
+      margin-bottom: 100px;
+    }
+
+    @include onMobile {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -1%;
+    color: #fff;
+
+    margin-bottom: 75px;
+
+    @include onNotebook() {
+      margin-bottom: 60px;
+    }
+
+    @include onTable {
+      margin-bottom: 50px;
+    }
+
+    @include onMobile {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 32px;
+      line-height: 34px;
+    }
+  }
+
+  &__text {
+    font-size: 36px;
+    line-height: 53px;
+
+    margin-bottom: 152px;
+
+    @include onNotebook() {
+      margin-bottom: 120px;
+    }
+
+    @include onTable {
+      margin-bottom: 100px;
+    }
+
+    @include onMobile {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 25px;
+    }
+
+    & span {
+      color: $colorSky;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    color: #fab63e;
+
+    @include onMobile {
+      text-align: center;
+    }
+  }
+}
