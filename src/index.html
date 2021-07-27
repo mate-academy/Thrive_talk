@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      rel="shortcut icon"
+      href="/images/icon.png"
+      type="image/png">
     <title>Thrive talk</title>
   </head>
   <body>
@@ -11,7 +15,9 @@
       <section class="helping">
         <div class="helping__container">
           <nav class="nav helping__nav">
-            <div class="nav__logo logo">Thrivetalk</div>
+            <div class="nav__logo">
+              <a href="#" class="link logo">Thrivetalk</a>
+            </div>
             <div class="nav__menu">
               <ul class="nav__list">
                 <div class="nav__item">
@@ -35,25 +41,31 @@
             </div>
             <a class="nav__btn link" href="#">CONTACT US</a>
           </nav>
-
-          <div class="helping__content">
-            <div class="helping__logo logo">Thrivetalk</div>
-            <h1 class="helping__title">
-              HELPING YOU THRIVE IN ALL AREAS OF LIFE
-            </h1>
-            <div class="helping__text">
-              Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+          <div class="helping__wrapper">
+            <div class="helping__content">
+              <div class="helping__logo logo">Thrivetalk</div>
+              <h1 class="helping__title">
+                HELPING YOU THRIVE IN ALL AREAS OF LIFE
+              </h1>
+              <div class="helping__text">
+                Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+              </div>
+              <div class="helping__links">
+                <a href="#" class="link helping__link">
+                  WHO AM I
+                </a>
+                <a
+                  href="#"
+                  class="link helping__link helping__link--active"
+                >
+                  WHAT DO I DO
+                </a>
+              </div>
             </div>
-            <div class="helping__links">
-              <a href="#" class="link helping__link">
-                WHO AM I
-              </a>
-              <a
-                href="#"
-                class="link helping__link helping__link--active"
-              >
-                WHAT DO I DO
-              </a>
+            <div class="helping__background">
+              <div class="helping__background-image">
+                <img src="/images/helping-photo.jpg" alt="meeting">
+              </div>
             </div>
           </div>
         </div>
@@ -161,7 +173,7 @@
         <div class="should-know__content">
           <h4 class="should-know__title">YOU SHOULD ALSO KNOW</h4>
           <p class="should-know__text">
-            MDD affects more than 16.1 million American adults, or about 6.7%of the U.S. population age 18 and older in a given year. We at <span>ThriveTalk</span> can help you.
+            MDD affects more than 16.1 million American adults, or about 6.7%of the U.S. population age 18 and older in a given year. <span class="should-know__important"> We at ThriveTalk can help you.</span>
           </p>
           <p class="should-know__subtitle">GET HELP NOW</p>
         </div>
@@ -171,7 +183,7 @@
           <h4 class="contact-us__name">CONTACT US</h4>
           <h3 class="contact-us__title">Ready. Set. Smile</h3>
           <p class="contact-us__text">
-            Take the free online assessment to see if you are a candidate and get started on your journey.
+            <span class="contact-us__important">Take the free online assessment</span> to see if you are a candidate and get started on your journey.
           </p>
           <p class="contact-us__subtitle">GET HELP NOW</p>
         </div>

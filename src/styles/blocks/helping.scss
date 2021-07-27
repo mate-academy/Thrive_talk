@@ -18,20 +18,15 @@
 
   &__nav {
     padding-top: 30px;
-    margin-bottom: 180px;
+  }
 
-    @include onTable {
-      margin-bottom: 120px;
-    }
-
-    @include onMobile {
-      padding-top: 10px;
-      margin-bottom: 100px;
-    }
+  &__wrapper {
+    display: flex;
   }
 
   &_content {
     padding-bottom: 80px;
+    flex: 1 1 50%;
 
     @include onTable {
       padding-bottom: 60px;
@@ -44,6 +39,7 @@
   }
 
   &__title {
+    margin-top: 180px;
     font-size: 48px;
     line-height: 53px;
     color: $colorBlue;
@@ -96,6 +92,47 @@
     &--active {
       background: #fff;
       color: #f9b640;
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateX(10px);
+      }
     }
+  }
+
+  &__background {
+    flex: 0 0 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include onTable {
+      display: none;
+    }
+
+    @include onMobile {
+      display: none;
+    }
+
+    max-height: 100vh;
+  }
+
+  &__background-image {
+    width: 100%;
+    z-index: 10;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    overflow: hidden;
+    transform: rotate(-25deg) translate(50px,-50px);
+  }
+
+  &__background-image img {
+    object-fit: contain;
+    transform: rotate(25deg);
+    width: 125%;
+    margin: -80px 0 0 -150px;
   }
 }

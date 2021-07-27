@@ -3,7 +3,6 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   $blocksColors:
@@ -26,6 +25,13 @@
   
   &__card {
     flex: 1 1 33.33%;
+    transition: 0.5s;
+
+    &:hover {
+      z-index: 10;
+      transform: translateY(-20px);
+    }
+    
 
     @include onLarge {
       flex: 1 1 16%;

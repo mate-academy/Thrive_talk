@@ -34,6 +34,11 @@
   
   &__card {
     flex: 1 1 25%;
+    transition: 0.5s;
+
+    &:hover {
+      border-radius: 30%;
+    }
 
     @include onMobile {
       flex: 1 1 50%;
