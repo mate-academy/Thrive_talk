@@ -72,6 +72,7 @@
     height: 50px;
     left: 1159px;
     top: 27px;
+    z-index: 15;
 
     background: $colorSky;
     border-radius: 50px;
@@ -82,11 +83,13 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    transition-property: transform;
+    border: 2px solid $colorSky;
     transition-duration: 0.3s;
 
     &:hover {
-      transform: scale(0.95);
+      transform: translateY(-5px);
+      color: $colorSky;
+      background-color: #fff;
     }
 
     @include onMobile {
