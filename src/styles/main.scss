@@ -1,7 +1,25 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "./utils/resset";
+
+@import "./blocks/header";
+@import "./blocks/navigation";
+@import "./blocks/intro";
+@import "./blocks/container";
+@import "./blocks/why_thrive";
+@import "./blocks/about";
+@import "./blocks/services";
+@import "./blocks/activities";
 
 body {
   background: $c-gray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Larsseit", Arial, Helvetica, sans-serif;
 }

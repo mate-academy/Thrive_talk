@@ -1,0 +1,31 @@
+.navigation {
+  z-index: 2;
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    padding: 0 7px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #22356f;
+
+    &:hover {
+      border-bottom: 1px solid #22356f;
+    }
+
+  }
+}

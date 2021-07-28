@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+  box-sizing: border-box;
+  padding: 27px 179px 78px;
+  background-color: #f4f9e2;
+
+  @media screen and (max-width: 1024px) {
+    padding: 27px 60px 78px;
+  }
+
+  @media screen and (max-width: 320px) {
+    padding: 0;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 174px;
+  }
+
+  &__logo-link {
+    align-self: flex-start;
+    font-size: 24px;
+    color: $color-blue;
+    font-weight: bold;
+
+  }
+
+  &__link-call {
+    text-decoration: none;
+    display: block;
+    background-color: $color-blue;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 50px;
+    z-index: 2;
+  }
+}
