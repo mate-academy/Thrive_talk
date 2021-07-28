@@ -82,21 +82,30 @@
 
     font-size: 16px;
     line-height: 23px;
-    color: #fff;
     background: #f9b640;
+    border: 1px solid #f9b640;
+    color: #fff;
 
     width: 150px;
     height: 50px;
+    transition: 0.3s;
 
     margin-right: 40px;
 
-    &--active {
-      background: #fff;
+    &:hover {
+      border: 1px solid #f9b640;
+      background-color: #fff;
       color: #f9b640;
-      transition: 0.3s;
+    }
+
+    &--active {
+      background-color: inherit;
+      border: none;
+      color: #f9b640;
 
       &:hover {
-        transform: translateX(10px);
+        background-color: #fff;
+        color: #f9b640;
       }
     }
   }
