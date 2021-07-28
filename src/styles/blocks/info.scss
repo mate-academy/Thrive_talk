@@ -65,4 +65,104 @@
       text-decoration: none;
     }
   }
+
+  &__map {
+    position: relative;
+    display: block;
+    padding-left: 5px;
+    height: 50px;
+    margin-bottom: -25px;
+    transition: 0.3s;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+    &:hover:before {
+      display: block;
+    }
+    &:hover {
+      background-color: mistyrose;
+      color: $colorBlue;
+    }
+
+    &::before {
+      content: "We on map!";
+      display: none;
+      position: absolute;
+      text-align: center;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      height: 50px;
+      width: 65px;
+      left: -65px;
+      background-color: orange;
+      color: #fff;
+    }
+  }
+
+  &__tel {
+    position: relative;
+    display: block;
+    width: 120px;
+    margin-bottom: 10px;
+    line-height: 25px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+
+    &:hover:before {
+      display: block;
+    }
+    &:hover {
+      background-color: mistyrose;
+      color: $colorBlue;
+    }
+
+    &::before {
+      content: "Tel to us!";
+      display: none;
+      position: absolute;
+      text-align: center;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      height: 25px;
+      width: 65px;
+      left: -65px;
+      background-color: orange;
+      color: #fff;
+    }
+  }
+
+  &__email {
+    position: relative;
+    display: block;
+    line-height: 25px;
+    width: 180px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+
+    &:hover:before {
+      display: block;
+    }
+    &:hover {
+      background-color: mistyrose;
+      color: $colorBlue;
+    }
+
+    &::before {
+      display: none;
+      content: "Write to us!";
+      position: absolute;
+      text-align: center;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      height: 25px;
+      width: 80px;
+      left: -80px;
+      background-color: orange;
+      color: #fff;
+    }
+  }
 }
