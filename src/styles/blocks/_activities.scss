@@ -1,17 +1,4 @@
 .activities {
-  $colors:
-    "1"#22356f,
-    "2"#0052с1,
-    "4"#62d0df,
-    "5"#dee1ff,
-    "6"#8f00ff;
-
-  @each $index, $color in $colors {
-    &__item:nth-child(#{$index}) {
-      background: $color;
-    }
-  }
-
   display: grid;
   grid-template-columns: repeat(3, minmax(400px, 1fr));
   grid-auto-rows: 440px;
@@ -19,6 +6,13 @@
   @media (max-width: 1200px) {
     grid-template-columns: repeat(2, minmax(50%, 1fr));
     grid-auto-rows: auto;
+  }
+
+  @each $index,
+    $color in $colors {
+    &__item:nth-child(#{$index}) {
+      background: $color;
+    }
   }
 
   &__item {
@@ -55,6 +49,9 @@
       letter-spacing: -0.01em;
       color: #fff;
 
+      @media (min-width: 320px) and (max-width: 1024px) {
+        font-size: 1.3rem;
+      }
     }
 
     &--3 {

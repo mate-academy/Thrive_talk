@@ -4,12 +4,8 @@
   padding: 27px 179px 78px;
   background-color: #f4f9e2;
 
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     padding: 27px 60px 78px;
-  }
-
-  @media screen and (max-width: 320px) {
-    padding: 0;
   }
 
   &__top {
@@ -24,7 +20,6 @@
     font-size: 24px;
     color: $color-blue;
     font-weight: bold;
-
   }
 
   &__link-call {

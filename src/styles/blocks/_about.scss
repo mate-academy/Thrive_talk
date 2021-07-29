@@ -6,7 +6,7 @@
   box-sizing: border-box;
   padding-top: 150px;
 
-  @media only screen and (max-width: 1200px) {
+  @media (min-width:320px) and (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
   }
@@ -22,7 +22,7 @@
     font-weight: 500;
     color: #22356f;
 
-    @media only screen and (max-width: 1200px) {
+    @media (min-width: 320px) and (max-width: 1024px) {
       position: static;
       margin-bottom: 10px;
     }
@@ -36,7 +36,7 @@
     font-weight: bold;
     color: #223566;
 
-    @media only screen and (max-width: 1200px) {
+    @media (min-width: 320px) and (max-width: 1024px) {
       max-width: 350px;
     }
   }

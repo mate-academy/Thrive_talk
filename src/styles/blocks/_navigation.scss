@@ -3,6 +3,7 @@
 
   &__list {
     display: flex;
+
     list-style: none;
   }
 
@@ -22,6 +23,13 @@
     font-size: 14px;
     line-height: 16px;
     color: #22356f;
+
+    // @media (min-width: 320px){
+    //   display: block;
+    //   text-align: center;
+    //   font-size: 30px;
+    //   margin-bottom: 20px;
+    // }
 
     &:hover {
       border-bottom: 1px solid #22356f;

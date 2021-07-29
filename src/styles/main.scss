@@ -11,9 +11,11 @@
 @import "./blocks/about";
 @import "./blocks/services";
 @import "./blocks/activities";
+@import "./blocks/activities-cards";
+@import "./blocks/footer";
 
 body {
-  background: $c-gray;
+  background-color: $c-gray;
 }
 
 * {
@@ -22,4 +24,5 @@ body {
 
 html {
   font-family: "Larsseit", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }

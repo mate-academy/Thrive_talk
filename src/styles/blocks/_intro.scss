@@ -1,28 +1,38 @@
 .intro {
   width: 50%;
+
+  @media (min-width: 320px) and (max-width: 1024px) {
+    width: 100%;
+  }
+
   //   position: relative;
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
 
   &__logo-link {
+    display: block;
     color: $color-blue;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
     line-height: 27px;
     letter-spacing: -0.04em;
+    margin-bottom: 30px;
   }
 
   &__title {
     font-size: 48px;
     line-height: 53px;
     letter-spacing: -0.04em;
-
     color: #22356f;
+    margin-bottom: 60px;
   }
 
   &__text {
     font-size: 24px;
     line-height: 42px;
-
     color: #22356f;
   }
 
@@ -43,12 +53,13 @@
       color: #fff;
       background-color: #f9b640;
       margin-right: 20px;
-      transition: border-radius 0.2s linear;
+      transition: border-radius 0.2s linear,
+        background-color 0.2s linear;
 
       &:hover {
         color: #f9b640;
         border-radius: 50px;
-        background-color: #fff;
+        background-color: #f4f9e2;
       }
     }
 
@@ -71,6 +82,10 @@
     bottom: 0;
     width: 20%;
     background-color: #fff;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__background-blue {
@@ -81,6 +96,10 @@
     width: 50%;
     background-image: url(../images/ellipse.png);
     background-repeat: no-repeat;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__background-image {
@@ -93,9 +112,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.7;
     border-radius: 312.16px;
     transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0)
-      scale(-1, 1) rotate(25deg)
+      scale(-1, 1)
+      rotate(25deg)
       translateX(-10%);
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+      display: none;
+    }
   }
 }
