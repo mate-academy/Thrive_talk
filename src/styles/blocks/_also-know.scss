@@ -1,0 +1,76 @@
+.also-know {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: auto;
+  background-color: #fff;
+
+  @media (min-width:320px) and (max-width: 1024px) {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  &__photo {
+    height: 800px;
+    background-image: url(../images/also-know_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width:320px) and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 103px 0 42px;
+    margin-left: 106px;
+
+    @media (min-width:320px) and (max-width: 1024px) {
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 75px;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    font-weight: normal;
+    color: #22356f;
+
+    @media (min-width:320px) and (max-width: 1024px) {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    max-width: 676px;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    font-weight: bold;
+    color: #22356f;
+
+    @media (min-width:320px) and (max-width: 1024px) {
+      font-size: 28px;
+    }
+  }
+
+  &__call {
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fab63e;
+
+    @media (min-width:320px) and (max-width: 1024px) {
+      margin-top: 40px;
+    }
+  }
+}

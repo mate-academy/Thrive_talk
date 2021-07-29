@@ -36,6 +36,16 @@
     color: #22356f;
   }
 
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media (min-width: 320px) and (max-width:460px) {
+      justify-content: center;
+    }
+  }
+
   &__link {
     display: inline-block;
     margin-top: 63px;
@@ -55,6 +65,10 @@
       margin-right: 20px;
       transition: border-radius 0.2s linear,
         background-color 0.2s linear;
+
+      @media (min-width: 320px) and (max-width:460px) {
+        margin-right: 0;
+      }
 
       &:hover {
         color: #f9b640;

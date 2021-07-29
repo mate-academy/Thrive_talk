@@ -1,0 +1,80 @@
+.contact-us {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: auto;
+  background-color: #22356f;
+  padding-left: 180px;
+
+  @media (min-width:320px) and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  &__content {
+    @media (min-width:320px) and (max-width: 1024px) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-top: 103px;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: #fff;
+  }
+
+  &__subtitle {
+    margin-top: 230px;
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+    font-weight: bold;
+    color: #fff;
+
+    @media (min-width:320px) and (max-width: 1024px) {
+      margin-top: 80px;
+      line-height: 60px;
+      font-size: 45px;
+    }
+  }
+
+  &__description {
+    max-width: 579px;
+    margin-top: 75px;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+
+    color: #fff;
+
+    @media (min-width:320px) and (max-width: 1024px) {
+      font-size: 28px;
+    }
+  }
+
+  &__link {
+    margin: 75px 0 42px;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #62d0df;
+
+    @media (min-width:320px) and (max-width: 1024px) {
+      justify-content: center;
+    }
+  }
+
+  &__photo {
+    min-height: 800px;
+    background-image: url(../images/contact-us_photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width:320px) and (max-width: 1024px) {
+      display: none;
+    }
+  }
+}

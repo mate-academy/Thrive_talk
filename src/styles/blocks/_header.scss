@@ -8,11 +8,20 @@
     padding: 27px 60px 78px;
   }
 
+  // @media (min-width:320px) and (max-width: 460px) {
+  //   padding: 30px;
+  // }
+
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 174px;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      flex-direction: column;
+    }
   }
 
   &__logo-link {
@@ -20,6 +29,10 @@
     font-size: 24px;
     color: $color-blue;
     font-weight: bold;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin: 0 auto;
+    }
   }
 
   &__link-call {
@@ -34,5 +47,10 @@
     padding: 20px 30px;
     border-radius: 50px;
     z-index: 2;
+
+    @media (min-width: 320px) and (max-width:460px) {
+      margin-top: 30px;
+      padding: 10px 15px;
+    }
   }
 }

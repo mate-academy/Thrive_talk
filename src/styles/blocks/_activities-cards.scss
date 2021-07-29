@@ -1,0 +1,40 @@
+.activities-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(340px, 1fr));
+  grid-auto-rows: auto;
+  padding: 22px 0 40px;
+  background-color: #fff;
+
+  @media (min-width: 640px) and (max-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
+  }
+
+  @media (min-width: 320px) and (max-width: 640px) {
+    grid-template-columns: repeat(1, minmax(100%, 1fr));
+  }
+
+  &__activity {
+    padding: 55px 37px 37px 85px;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+      padding: 25px;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+
+    color: #22356f;
+  }
+
+  &__descrpiption {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+
+    color: #22346d;
+    opacity: 0.5;
+  }
+}
