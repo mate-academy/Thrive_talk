@@ -2,6 +2,10 @@
 .advices {
   margin-bottom: 40px;
 
+  @include onMobile {
+    margin-bottom: 125px;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +18,7 @@
     transition: 0.5s;
 
     &:hover {
-      transform: translate(25px,25px);
+      transform: translate(25px,-25px);
       box-shadow: -13px 21px 30px 2px rgba(98, 208, 223, 0.36);
     }
 

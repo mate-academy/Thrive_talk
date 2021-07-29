@@ -1,6 +1,10 @@
 .should-know {
   display: flex;
 
+  @include onMobile {
+    margin-bottom: 125px;
+  }
+
   &__important {
     transition: 1s;
     transition-delay: 0.3s;
@@ -79,8 +83,8 @@
     }
 
     @include onMobile {
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 28px;
+      line-height: 36px;
       margin-bottom: 25px;
     }
   }

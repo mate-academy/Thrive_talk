@@ -1,5 +1,9 @@
 .blocks {
 
+  @include onMobile {
+    margin-bottom: 100px;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;

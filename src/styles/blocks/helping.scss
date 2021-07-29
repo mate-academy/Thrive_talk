@@ -23,6 +23,13 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    @include onMobile {
+      display: block;
+      max-width: 100%;
+    }
   }
 
   &_content {
@@ -32,15 +39,24 @@
     @include onTable {
       padding-bottom: 60px;
     }
+
+    @include onMobile {
+      flex: 1 1 100%;
+      max-width: 100%;
+      width: 350px;
+    }
   }
 
   &__logo {
+    margin-top: 180px;
     height: 65px;
-    display: none;
+
+    @include onMobile {
+      margin-top: 125px;
+    }
   }
 
   &__title {
-    margin-top: 180px;
     font-size: 48px;
     line-height: 53px;
     color: $colorBlue;
@@ -54,7 +70,7 @@
     @include onMobile {
       font-size: 30px;
       line-height: 35px;
-      width: 80%;
+      max-width: 100%;
       height: auto;
     }
   }
@@ -130,19 +146,29 @@
 
   &__background-image {
     width: 100%;
+    height: 75%;
     z-index: 10;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     overflow: hidden;
-    transform: rotate(-25deg) translate(50px,-50px);
+    transform: rotate(-30deg);
   }
 
   &__background-image img {
     object-fit: contain;
-    transform: rotate(25deg);
-    width: 125%;
+    transform: rotate(30deg) translate(100px,-100px);
     margin: -80px 0 0 -150px;
+
+    @include onFull {
+      height: 200%;
+      transform: rotate(30deg) translate(-100px,-150px);
+    }
+
+    @include onLarge {
+      height: 300%;
+      transform: rotate(30deg) translate(-500px,-150px);
+    }
   }
 }

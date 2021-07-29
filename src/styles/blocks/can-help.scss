@@ -16,7 +16,7 @@
 
     @include onMobile {
       flex-wrap: wrap;
-      margin-bottom: 75px;
+      margin-bottom: 125px;
     }
   }
 
@@ -35,9 +35,10 @@
   &__card {
     flex: 1 1 25%;
     transition: 0.5s;
+    
 
     &:hover {
-      border-radius: 30%;
+      transform: translateY(-25px);
     }
 
     @include onMobile {

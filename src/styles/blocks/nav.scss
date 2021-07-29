@@ -11,6 +11,12 @@
 
   &__logo {
     align-self: flex-start;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+
+    &:hover {
+      border-bottom: 2px solid $colorSky;
+    }
 
     @include onMobile {
       padding-top: 10px;
@@ -48,22 +54,25 @@
     font-size: 14px;
     line-height: 20px;
     transition: 0.3s;
-
-    &:hover {
-      transform: translateY(-5px);
-    }
-  }
-
-  &__link--active {
-    font-weight: bold;
-    position: relative;
+    border: solid 1px transparent;
 
     &::before {
       content: "";
+      display: none;
       width: 100%;
       position: absolute;
       top: 25px;
       border-bottom: 1px solid black;
+    }
+
+    &:hover {
+      font-weight: bold;
+      position: relative;
+
+    }
+
+    &:hover:before {
+      display: block;
     }
   }
 
