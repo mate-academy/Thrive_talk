@@ -1,0 +1,61 @@
+.help-extra {
+  padding-bottom: 22px;
+
+  &__item {
+    line-height: 34px;
+  }
+
+  &__card {
+    box-sizing: border-box;
+    padding: 26% 64px 59% 78px;
+    transition: transform 0.5s;
+
+    &:first-child {
+      background-color: #22356f;
+    }
+
+    &:nth-child(2) {
+      background-color: #0052c1;
+    }
+
+    &:nth-child(3) {
+      background-image: url("../images/nutrition.jpg");
+      background-size: cover;
+
+    }
+
+    &:nth-child(4) {
+      background-color: $main-color;
+    }
+
+    &:nth-child(5) {
+      background-color: #dee1ff;
+    }
+
+    &:nth-child(6) {
+      background-color: #8f00ff;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      z-index: 2;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}
+
+@media screen and(max-width: $small-screen-breakpoint) {
+  .help-large {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+}

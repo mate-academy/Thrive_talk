@@ -1,0 +1,140 @@
+.header {
+  position: relative;
+
+  height: 840px;
+  padding: 27px 130px 0 179px;
+
+  background-color: #f4f9e2;
+
+  &__photo-container {
+    position: absolute;
+    z-index: 3;
+
+    right: 0;
+    top: 12%;
+
+    width: 662px;
+    height: 550px;
+
+    border-radius: 312px;
+    background-position: right;
+    background-size: cover;
+    transform: rotate(-30deg);
+    overflow: hidden;
+  }
+
+  &__photo {
+    position: absolute;
+    width: 512px;
+    height: 607px;
+    transform: rotate(30deg);
+    object-fit: cover;
+  }
+
+  &__blue-block {
+    position: absolute;
+    top: 0;
+    right: -95px;
+
+    width: 790px;
+    height: 540px;
+
+    background-color: #edfdff;
+    border-radius: 312px;
+    transform: rotate(-60deg);
+
+    z-index: 2;
+
+  }
+
+  &__white-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 300px;
+    height: 100%;
+
+    background-color: $white-color;
+
+  }
+
+  &__top {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 140px;
+    max-width: 2560px;
+  }
+
+  &__button {
+    border: 2px solid $main-color;
+    border-radius: 50px;
+    background-color: $main-color;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+
+    &--link {
+      display: block;
+      height: 50px;
+      width: 150px;
+
+      line-height: 50px;
+      font-size: 14px;
+      color: $white-color;
+      transition: color 0.5s;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+
+    &:hover {
+      background-color: $white-color;
+    }
+
+    &:focus {
+      border-color: transparent;
+      outline: none;
+    }
+  }
+
+}
+
+@media screen and(max-width: $average-screen-breakpoint) {
+  .header {
+    padding: 10px;
+    height: 700px;
+
+    &__photo-border,
+    &__photo,
+    &__white-block,
+    &__blue-block,
+    &__nav {
+      display: none;
+    }
+
+    &__logo {
+      margin-bottom: 30px;
+    }
+
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+@media screen and(min-width: $big-screen-breakpoint) {
+  .header {
+    padding: 20px calc(50% - 600px) 0;
+
+    &__top {
+      padding-left: 200px;
+    }
+  }
+}
