@@ -10,6 +10,9 @@
   @media (max-width: 1024px) {
     padding: 40px;
     grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
 
@@ -33,6 +36,7 @@
 
     @media (min-width: 320px) and (max-width: 1024px) {
       margin-bottom: 35px;
+      text-align: center;
     }
   }
 
