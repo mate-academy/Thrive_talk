@@ -1,5 +1,9 @@
 .contact-us {
-  display: flex;
+  background-color: $colorBlue;
+
+  &__block {
+    display: flex;
+  }
 
   @include onMobile {
     margin-bottom: 50px;

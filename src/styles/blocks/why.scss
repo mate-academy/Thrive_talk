@@ -1,6 +1,10 @@
 .why {
-  display: flex;
+  background-color: $colorSky;
   width: 100%;
+
+  &__block {
+    display: flex;
+  }
 
   &__space {
     flex: 1 1 10%;

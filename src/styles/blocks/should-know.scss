@@ -1,5 +1,8 @@
 .should-know {
-  display: flex;
+  
+  &__block {
+    display: flex;
+  }
 
   @include onMobile {
     margin-bottom: 125px;
