@@ -1,0 +1,215 @@
+.info {
+  display: flex;
+
+  &__image {
+    flex: 1 1 33.33%;
+    @include image("../images/info.png");
+
+    @include onMobile {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    padding: 100px 40px 80px 70px;
+    flex: 1 1 66.66%;
+
+    @include onNotebook() {
+      padding: 75px 30px 60px 50px;
+    }
+
+    @include onTable {
+      padding: 50px 20px 40px 40px;
+    }
+
+    @include onMobile {
+      flex: 0 0 100%;
+      flex-direction: column;
+      margin: 0;
+      max-width: 100%;
+      overflow: hidden;
+      padding: 15px 0;
+    }
+  }
+
+  &__item {
+    flex: 1 1 33.33%;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 11px;
+    color: $colorBlue;
+    margin-bottom: 50px;
+
+    @include onMobile {
+      font-size: 28px;
+      line-height: 30px;
+      color: $colorBlue;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    font-size: 14px;
+    line-height: 23px;
+
+    color: rgba(34, 53, 111, 0.5);
+
+    @include onTable {
+      width: 80%;
+    }
+
+    @include onMobile {
+      font-size: 20px;
+      line-height: 30px;
+      width: 100%;
+      padding: 40px;
+    }
+
+    & a {
+      color: blue;
+      text-decoration: none;
+
+      @include onMobile {
+        font-size: 16px;
+        line-height: 18px;
+        text-align: left;
+        width: 100%;
+        padding: 2px;
+      }
+    }
+  }
+
+  &__map {
+    position: relative;
+    display: block;
+    padding-left: 5px;
+    height: 50px;
+    margin-bottom: -25px;
+    transition: 0.3s;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+    &:hover:before {
+      display: block;
+
+      @include onMobile {
+        display: none;
+      }
+    }
+    &:hover {
+      background-color: mistyrose;
+      color: $colorBlue;
+
+      @include onMobile {
+        background-color: inherit;
+        color: $colorBlue;
+      }
+    }
+
+    &::before {
+      content: "We on map!";
+      display: none;
+      position: absolute;
+      text-align: center;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      height: 50px;
+      width: 65px;
+      left: -65px;
+      background-color: orange;
+      color: #fff;
+    }
+  }
+
+  &__tel {
+    position: relative;
+    display: block;
+    width: 120px;
+    margin-bottom: 10px;
+    line-height: 25px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+
+    &:hover:before {
+      display: block;
+
+      @include onMobile {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background-color: mistyrose;
+      color: $colorBlue;
+
+      @include onMobile {
+        background-color: inherit;
+        color: $colorBlue;
+      }
+    }
+
+    &::before {
+      content: "Tel to us!";
+      display: none;
+      position: absolute;
+      text-align: center;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      height: 25px;
+      width: 65px;
+      left: -65px;
+      background-color: orange;
+      color: #fff;
+
+    }
+  }
+
+  &__email {
+    position: relative;
+    display: block;
+    line-height: 25px;
+    width: 165px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+
+    &:hover:before {
+      display: block;
+
+      @include onMobile {
+        display: none;
+      }
+    }
+    &:hover {
+      background-color: mistyrose;
+      color: $colorBlue;
+
+      @include onMobile {
+        background-color: inherit;
+        color: $colorBlue;
+      }
+    }
+
+    &::before {
+      display: none;
+      content: "Write to us!";
+      position: absolute;
+      text-align: center;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      height: 25px;
+      width: 80px;
+      left: -80px;
+      background-color: orange;
+      color: #fff;
+    }
+  }
+}

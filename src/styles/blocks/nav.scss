@@ -1,0 +1,110 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  box-sizing: content-box;
+
+  @include onMobile {
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    align-self: flex-start;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+
+    &:hover {
+      border-bottom: 2px solid $colorSky;
+    }
+
+    @include onMobile {
+      padding-top: 10px;
+      order: 2;
+      display: inline-block;
+      width: 50%;
+      font-size: 20px;
+    }
+  }
+
+  &__menu {
+    @include onMobile {
+      order: 1;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+    line-height: 20px;
+    transition: 0.3s;
+    border: solid 1px transparent;
+
+    &::before {
+      content: "";
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 25px;
+      border-bottom: 1px solid black;
+    }
+
+    &:hover {
+      font-weight: bold;
+      position: relative;
+
+    }
+
+    &:hover:before {
+      display: block;
+    }
+  }
+
+  &__btn {
+    width: 150px;
+    height: 50px;
+    left: 1159px;
+    top: 27px;
+    z-index: 15;
+
+    background: $colorSky;
+    border-radius: 50px;
+
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 2px solid $colorSky;
+    transition-duration: 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+      color: $colorSky;
+      background-color: #fff;
+    }
+
+    @include onMobile {
+      order: 3;
+      width: 50%;
+      height: 40px;
+    }
+  }
+}
