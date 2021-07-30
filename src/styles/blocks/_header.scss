@@ -3,14 +3,29 @@
   box-sizing: border-box;
   padding: 27px 179px 78px;
   background-color: #f4f9e2;
+  overflow: hidden;
 
   @media (max-width: 1024px) {
     padding: 27px 60px 78px;
   }
 
-  // @media (min-width:320px) and (max-width: 460px) {
-  //   padding: 30px;
-  // }
+  &__menu-toggle-container {
+    display: none;
+    background-color: $color-blue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background-image: url(../images/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20%;
+
+    @media (min-width: 320px) and (max-width: 800px) {
+      display: block;
+    }
+  }
 
   &__top {
     display: flex;
@@ -21,6 +36,7 @@
 
     @media (min-width: 320px) and (max-width: 480px) {
       flex-direction: column;
+      margin-bottom: 80px;
     }
   }
 
@@ -39,6 +55,7 @@
     text-decoration: none;
     display: block;
     background-color: $color-blue;
+    border: 1px solid $color-blue;
     color: #fff;
     font-size: 14px;
     line-height: 16px;
@@ -47,10 +64,57 @@
     padding: 20px 30px;
     border-radius: 50px;
     z-index: 2;
+    transition: background-color 0.2s linear;
 
-    @media (min-width: 320px) and (max-width:460px) {
+    &:hover {
+      background-color: #fff;
+      color: $color-blue;
+    }
+
+    @media (min-width: 320px) and (max-width:480px) {
       margin-top: 30px;
       padding: 10px 15px;
+    }
+  }
+
+  &__background-white {
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    background-color: #fff;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__background-blue {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    height: 100%;
+    width: 50%;
+    background-image: url(../images/ellipse.png);
+    background-repeat: no-repeat;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__background-image {
+    position: absolute;
+    top: -50px;
+    right: -11%;
+    height: 750px;
+    width: 850px;
+    background-image: url(../images/header_photo1.png);
+    background-repeat: no-repeat;
+
+    @media (min-width: 320px) and (max-width: 1024px) {
+      display: none;
     }
   }
 }

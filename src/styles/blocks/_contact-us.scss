@@ -61,6 +61,12 @@
     align-items: center;
     letter-spacing: 0.1em;
     color: #62d0df;
+    text-decoration: none;
+    transition: text-decoration 0.2s linear;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     @media (min-width:320px) and (max-width: 1024px) {
       justify-content: center;

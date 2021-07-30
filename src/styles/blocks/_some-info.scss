@@ -59,4 +59,13 @@
     color: #22356f;
     opacity: 0.5;
   }
+
+  &__item-link {
+    text-decoration: none;
+
+    &--mail {
+      color: #129dc7;
+      font-weight: bold;
+    }
+  }
 }

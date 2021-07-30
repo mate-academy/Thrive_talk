@@ -15,28 +15,33 @@
           Thrivetalk
         </h1>
 
-        <nav class="header__nav navigation">
+        <a href="#menu" class="header__menu-toggle">
+          <div class="header__menu-toggle-container"></div>
+        </a>
+
+        <nav class="header__nav navigation" id="menu">
+          <a href="#" class="navigation__menu-toggle">X</a>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">
+              <a href="#why-thrive" class="navigation__link">
                 Home
               </a>
             </li>
 
             <li class="navigation__item">
-              <a href="#" class="navigation__link">
+              <a href="#about-us" class="navigation__link">
                 About
               </a>
             </li>
 
             <li class="navigation__item">
-              <a href="#" class="navigation__link">
+              <a href="#services" class="navigation__link">
                 Services
               </a>
             </li>
 
             <li class="navigation__item">
-              <a href="#" class="navigation__link">
+              <a href="#activities" class="navigation__link">
                 Blog
               </a>
             </li>
@@ -48,8 +53,6 @@
           Contact us
         </a>
       </section>
-
-
 
       <section class="header__intro intro">
         <article class="intro__content">
@@ -76,15 +79,16 @@
           </div>
 
         </article>
-        <div class="intro__background-white"></div>
-        <div class="intro__background-blue"></div>
-        <div class="intro__background-image"></div>
       </section>
 
-
+      <div class="header__background-white"></div>
+      <div class="header__background-blue"></div>
+      <div class="header__background-image"></div>
     </header>
+
     <main class="main">
       <section class="why-thrive container">
+        <a name="why-thrive" class="anchor"></a>
         <article class="why-thrive__content">
           <h3 class="why-thrive__title">
             Why Thrive?
@@ -104,6 +108,7 @@
       </section>
 
       <section class="about container">
+        <a name="about-us" class="anchor"></a>
         <h3 class="about__title">
           About us
         </h3>
@@ -116,6 +121,7 @@
       </section>
 
       <section class="services container">
+        <a name="services" class="anchor"></a>
         <h3 class="services__title">
           WE CAN HELP YOU WITH
         </h3>
@@ -190,6 +196,7 @@
       </section>
 
       <section class="activities-cards container">
+        <a name="activities" class="anchor"></a>
         <article class="activities-cards__activity">
           <h4 class="activities-cards__title">
             Nutritional Plans
@@ -312,9 +319,13 @@
               Buffalo, United States
               <br>
               <br>
-              +555 283 784 333
+              <a href="tel:+555 283 784 333" class="some-info__item-link">
+                +555 283 784 333
+              </a>
               <br>
-              office@enfold-health.com
+              <a href="mailto: office@enfold-health.com" class="some-info__item-link some-info__item-link--mail">
+                office@enfold-health.com
+              </a>
             </p>
           </div>
 

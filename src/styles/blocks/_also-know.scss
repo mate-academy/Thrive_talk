@@ -62,12 +62,22 @@
   &__call {
     font-size: 16px;
     line-height: 23px;
-    display: flex;
-    align-items: center;
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    max-width: 200px;
+    text-align: center;
     letter-spacing: 0.1em;
     font-weight: bold;
     text-decoration: none;
     color: #fab63e;
+
+    transition: border 0.2s linear;
+
+    &:hover {
+      font-weight: bold;
+      border: 1px solid #fab63e;
+    }
 
     @media (min-width:320px) and (max-width: 1024px) {
       margin-top: 40px;
