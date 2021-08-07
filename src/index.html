@@ -3,19 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thrive_talk</title>
+    <title>Futurra Group</title>
+    <link rel="icon" href="./images/Favicon.png">
     <link rel="stylesheet" href="./styles/main.scss">
-    <link rel="icon" href="./images/favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    >
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <div class="header__navigation">
         <div class="header__logo">
-          <a
-            href="#home"
-            class="header__logo logo"
-          >
-            Thrivetalk
+          <a href="#index.html">
+            <img
+              src="images/Logo.png"
+              alt="logo"
+              class="header__logo logo"
+            >
           </a>
         </div>
         <nav class="header__nav nav">
@@ -26,289 +33,268 @@
               </a>
             </li>
             <li class="nav__item">
+              <a href="#product" class="nav__link">
+                Product
+              </a>
+            </li>
+            <li class="nav__item">
               <a href="#about" class="nav__link">
                 About
               </a>
             </li>
             <li class="nav__item">
-              <a href="#services" class="nav__link">
-                Services
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#blog" class="nav__link">
-                Blog
+              <a href="#contact" class="nav__link">
+                Contact
               </a>
             </li>
           </ul>
         </nav>
         <div class="header__button button">
-          <a
-            href="tel:0637237763"
-            class="button__link"
-          >
-            Contact us
-          </a>
+          <div class="b-container">
+            <a href="javascript:PopUpShow()">
+              <button
+                type="submit"
+                class="button__link"
+              >
+                Sign Up
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="b-popup" id="popup1">
+          <div class="b-popup-content">
+              Hello,friend!<br>
+            <a href="javascript:PopUpHide()">continue</a>
+          </div>
         </div>
       </div>
-      <div class="header__detail detail">
-        <div class="dublicate__logo logo">
-          Thrivetalk
-        </div>
-        <h1 class="detail__helping">
-          Helping you thrive in all areas of life
-        </h1>
-        <p class="detail__text">
-          Our highly talented therapists can help you with a range
-          of issues including relationships, sex, PTSD, depression,
-          social anxiety, or even just caring for yourself more.
-        </p>
-        <div class="button detail__button">
-          <a href="tel:0637237763" class="button__link">
-            Who am I
-          </a>
-        </div>
-        <a href="tel:0637237763" class="detail__link">
-          What do I do
-        </a>
-      </div>
-      <div class="header__fotopeople"></div>
-      <div class="header__background"></div>
-      <div class="header__oval"></div>
     </header>
-
-
-    <main class="main">
-      <section class="whythrive">
-        <div class="whythrive__container">
-          <h2 class="whythrive__heading">
-            Why Trive?
-          </h2>
-          <p class="whythrive__paragraph">
-            <strong class="whythrive__text">
-              Want to improve your well-being from the comfort of your own couch?
-              Are you having trouble finding the right therapist?
-            </strong>
-              Here at ThriveTalk, our licensed therapists provide the same quality
-              care you would get in office from anywhere you can access your laptop or mobile phone.
-              Become your best self with ThriveTalk.  Start therapy now with a licensed therapist!
-          </p>
-        </div>
-        <div class="whythrive__photo"></div>
-      </section>
-
-
-      <section class="about" id="about">
-        <div class="about__text">
-          We want to help you thrive! Whether you are just looking for someone
-          to talk to, or are struggling with a mental wellness issue we’re here to help.
-          Our highly talented therapists can help you with a range of issues including
-          relationships, sex, PTSD, depression, social anxiety, or even just
-          caring for yourself more.
-        </div>
-      </section>
-
-      <section class="main__wehelp wehelp" id="services">
-        <div class="wehelp__box">
-          <div class="main__box box">
-            Weight Lifting
-          </div>
-        </div>
-        <div class="wehelp__box">
-          <div class="main__box box">
-            Running
-          </div>
-        </div>
-        <div class="wehelp__box">
-          <div class="main__box box">
-            Pumping Iron
-          </div>
-        </div>
-        <div class="wehelp__box">
-          <div class="main__box box">
-            Pumping Iron
-          </div>
-        </div>
-      </section>
-
-      <section class="health">
-        <div class="health__box">
-          <div class="box">
-            Physical Health
-          </div>
-        </div>
-        <div class="health__box">
-          <div class="box">
-            Mental Health
-          </div>
-        </div>
-        <div class="health__box">
-          <div class="box">
-            Nutrition
-          </div>
-        </div>
-        <div class="health__box">
-          <div class="box">
-            Gymnastics
-          </div>
-        </div>
-        <div class="health__box">
-          <div class="box">
-            Crossfit
-          </div>
-        </div>
-        <div class="health__box">
-          <div class="box">
-            Aerobics
-          </div>
-        </div>
-      </section>
-
-      <section class="text__boxs" id="readinfo">
-        <div class="text__boxs-card">
-          <h3 class="text__boxs-heading">
-            Nutritional Plans
-          </h3>
-          <p class="text__boxs-text">
-            Nutritional Facts on some shitty things
-            that you don’t care about and even we don’t ,
-            I need to replace this copy.
-          </p>
-        </div>
-        <div class="text__boxs-card">
-          <h3 class="text__boxs-heading">
-            Weight Loss
-          </h3>
-          <p class="text__boxs-text">
-            Nutritional Facts on some shitty things that
-            you don’t care about and even we don’t ,
-            I need to replace this copy.
-          </p>
-        </div>
-        <div class="text__boxs-card">
-          <h3 class="text__boxs-heading">
-            Mental Peace
-          </h3>
-          <p class="text__boxs-text">
-            Nutritional Facts on some shitty things
-            that you don’t care about and even we don’t ,
-            I need to replace this copy.
-          </p>
-        </div>
-        <div class="text__boxs-card">
-          <h3 class="text__boxs-heading">
-            Home Training
-          </h3>
-          <p class="text__boxs-text">
-            Nutritional Facts on some shitty things
-            that you don’t care about and even we don’t ,
-            I need to replace this copy.
-          </p>
-        </div>
-        <div class="text__boxs-card">
-          <h3 class="text__boxs-heading">
-            Work/Life Balance
-          </h3>
-          <p class="text__boxs-text">
-            Nutritional Facts on some shitty things
-            that you don’t care about and even we don’t ,
-            I need to replace this copy.
-          </p>
-        </div>
-        <div class="text__boxs-card">
-          <h3 class="text__boxs-heading">
-            Cardio
-          </h3>
-          <p class="text__boxs-text">
-            Nutritional Facts on some shitty things
-            that you don’t care about and even we don’t ,
-            I need to replace this copy.
-          </p>
-        </div>
-      </section>
-
-      <section class="facts" id="blog">
-        <div class="facts__foto"></div>
-        <div class="facts__block">
-          <p class="facts__heading">
-            MDD affects more than 16.1 million American adults,
-            or about 6.7% of the U.S. population age 18 and older
-            in a given year. We at
-            <span class="facts__logo">
-              ThriveTalk
-            </span>
-            can help you.
-          </p>
-          <p class="facts__text">
-            <a
-              href="tel:0637237763"
-              class="facts__link"
+    <main class="content">
+      <section class="content__article article" id="article">
+        <h2 class="article__title">
+          Lightning fast prototyping
+        </h2>
+        <p class="article__text">
+          Most calendars are designed for teams.
+          Slate is designed for
+          <br> freelancers who want a simple way to plan their schedule.
+        </p>
+        <div class="content__button btn">
+          <a href="#try">
+            <button
+              type="submit"
+              class="btn__link"
             >
-              Get help now
-            </a>
-          </p>
-        </div>
-      </section>
-
-      <section class="smile">
-        <div class="smile__container">
-          <h4 class="smile__heading">
-            Ready. Set. Smile
-          </h4>
-          <p class="smile__info">
-            Take the free online smile to see if you
-            are a candidate and get started on your journey.
-          </p>
-          <a href="tel:0637237763" class="smile__link">
-            GET HELP NOW
+              Try For Free
+            </button>
           </a>
         </div>
-        <div class="smile__man"></div>
       </section>
 
-      <section class="boardinfo">
-        <div class="boardinfo__foto"></div>
-        <div class="boardinfo__item">
-          <div class="boardinfo__card">
-            <h5 class="boardinfo__card-heading">
-              SOME INFO
-            </h5>
-            <p class="boardinfo__card-text">
-              i am Ivan! dolor sit amet,<br> consectetuer adipiscing elit.<br> Aenean commodo ligula.
-            </p>
-          </div>
-          <div class="boardinfo__card">
-            <h5 class="boardinfo__card-heading">
-              ENFOLD HEALTH
-            </h5>
-            <p class="boardinfo__card-text">
-              Main Street 1, Olcott<br> Buffalo, United States
-            </p>
-            <a href="tel:555 283 784 333"
-              class="boardinfo__card-link"
+      <section class="content__card card" id="product">
+        <div class="card__icons">
+          <a href="#">
+            <img
+              src="images/iconseffect.png"
+              alt="icons"
+              class="card__icons icons"
             >
-              +555 283 784 333
-            </a>
-            <a href="mailto: office@enfold-health.com"
-              class="boardinfo__card-link"
+          </a>
+        </div>
+        <div class="card__rating">
+          <a href="#">
+            <img
+              src="images/Rating.png"
+              alt="rating"
+              class="card__rating rating"
             >
-              office@enfold-health.com
-            </a>
+          </a>
+        </div>
+
+        <div class="card__background">
+          <a href="#">
+            <img
+              src="images/Rectangle.png"
+              alt="background"
+              class="card__background background"
+            >
+          </a>
+        </div>
+      </section>
+
+      <section class="content__statistics statistics" id="about">
+        <h2 class="statistics__title">
+          Fastest way to navigate
+        </h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <a href="#">
+                <img
+                  src="images/Card1.png"
+                  alt="statisticsCard"
+                  class="statistics__table table"
+                >
+              </a>
+            </div>
+            <div class="col-sm">
+              <a href="#">
+                <img
+                  src="images/Card2.png"
+                  alt="statisticsCard"
+                  class="statistics__table table"
+                >
+              </a>
+            </div>
           </div>
-          <div class="boardinfo__card">
-            <h5 class="boardinfo__card-heading">
-              OFFICE HOURS
-            </h5>
-            <p class="boardinfo__card-text">
-              Mo-Fr: 8:00-19:00<br> Sa: 8:00-14:00<br> Su: closed
-            </p>
+        </div>
+
+        <div class="statistics__button btnStatic">
+          <a href="#try">
+            <button
+              type="submit"
+              class="btnStatic__link"
+            >
+              Try For Free
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="container_adress adress">
+                <h3 class="adress__title">
+                  OpenType features and <br> Variable fonts
+                </h3>
+                <p class="adress__text">
+                  Most calendars are designed for teams.
+                  Slate is designed
+                  <br> for freelancers who want a simple way to plan
+                  <br> their schedule.
+                </p>
+                <form class="consultation-form contact__consultation-form">
+                  <input
+                    class="consultation-form__email"
+                    type="text"
+                    placeholder="Enter Your Adress Email"
+                    required
+                  >
+
+                  <div class="consultation__button btnContact">
+                    <a href="#subscribe">
+                      <button
+                        type="subscribe"
+                        class="btnContact__link"
+                      >
+                        Subscribe
+                      </button>
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="adress__background-sm">
+              <a href="#">
+                <img
+                  src="images/SCREEN MASK.png"
+                  alt="screen"
+                  class="adress__background screen"
+                >
+              </a>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="rating__facebook facebook">
+        <h2 class="facebook__title">
+          Work better together
+        </h2>
+        <p class="facebook__text">
+          Being a freelancer is a rollercoaster of emotions.
+          We built Slate to keep your
+          <br> freelance business less stressful.
+          We'd love to show you what we're building...
+        </p>
+
+        <div class="facebook__rating"></div>
+        <div class="rating__line"></div>
+        <div class="facebook__block block">
+          <p class="block__socialNetwork">
+            Facebook
+          </p>
+          <p class="block__count">
+            35,929
+          </p>
+        </div>
+
+        <div class="facebook__button btnFacebook">
+          <a href="#try">
+            <button
+              type="submit"
+              class="btnFacebook__link"
+            >
+              Try For Free
+            </button>
+          </a>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__text">&copy; Copyright - ThriveTalk 2017</p>
+      <div class="footer__logo">
+        <a href="#">
+          <img
+            id="footer"
+            src="images/LogoFooter.png"
+            alt="logo"
+            class="footer__logo logo"
+          >
+        </a>
+      </div>
+      <div class="footer__icons">
+        <a
+          class="fab fa-twitter"
+          href="https://twitter.com/?lang=ru"
+          target="_blank"
+          rel="noopener"
+        >
+        </a>
+        <a
+          class="fab fa-facebook-square"
+          href="https://www.facebook.com/NazarKudatsky"
+          target="_blank"
+          rel="noopener"
+        >
+        </a>
+        <a
+          class="fab fa-linkedin"
+          href="https://www.linkedin.com/in/nazar-kudatsky-0660ab214/"
+          target="_blank"
+          rel="noopener"
+        >
+        </a>
+      </div>
+      <p class="footer__text">
+        Just type what's on your mind and we'll
+      </p>
     </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/fe076a5322.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        PopUpHide();
+      });
+      function PopUpShow(){
+        $("#popup1").show();
+      }
+      function PopUpHide(){
+        $("#popup1").hide();
+      }
+    </script>
   </body>
 </html>

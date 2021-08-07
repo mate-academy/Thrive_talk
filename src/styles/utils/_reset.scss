@@ -4,7 +4,6 @@
 
 html {
   font-family: "Larsseit", Arial, Helvetica, sans-serif;
-  color: $darkBlueColor;
   scroll-behavior: smooth;
 }
 
@@ -21,14 +20,14 @@ textarea,
 a {
   margin: 0;
   padding: 0;
+  color: #fff;
 }
 
 body {
-  font-size: 14px;
-  line-height: 16px;
-  max-width: $maxwigth;
-  min-width: $minwigth;
-  margin: 0 auto;
-  right: 0;
-  left: 0;
+  margin: 0, auto;
+}
+
+.fab {
+  color: #fff;
+  text-decoration: none;
 }

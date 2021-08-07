@@ -1,10 +1,6 @@
 # Thrive_talk landing page
-[DEMO LINK](https://nazar-kudatsky.github.io/Thrive_talk/)
-[Figma design](https://www.figma.com/file/aHd2rHMrnzDXhowLuIQjIyVQ/ThriveTalk-Landing-Page?node-id=0%3A1)
-Technologies:
+[DEMO LINK](https://nazar-kudatsky.github.io/Futurra_Group/)
 
-HTML5, SCSS, Flex-box, Grid, JavaScript BEM, Gulp
+[Figma design](https://www.figma.com/file/bDmlLBR8sBsKnF4QT5KQeG/Test?node-id=0%3A228)
 
-Description:
-
-landing page for startup
+[Task](https://drive.google.com/file/d/1dE9gHkeNTL7GzZ9q6kpQy5dy8wUKTWyD/view?usp=sharing)

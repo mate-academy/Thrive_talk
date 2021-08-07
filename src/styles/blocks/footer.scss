@@ -1,19 +1,57 @@
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 80px;
-  background-color: $greenblueColor;
+  height: 133px;
+  background-color: #112d57;
 
-  &__text {
-    font-size: 14px;
-    line-height: 11px;
-    color: $mainColor;
+  &__logo {
+    margin-left: 86px;
   }
 
-  @media (max-width: $Mobile) {
-    & {
-      height: 40px;
+  &__icons {
+    color: #fff;
+    font-size: 40px;
+  }
+
+  &__text {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    color: #fff;
+    margin-right: 86px;
+  }
+
+  .fab.fa-twitter {
+    margin-right: 40px;
+    padding: 20px, 40px;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .fab.fa-facebook-square {
+    margin-right: 40px;
+    padding: 20px, 40px;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .fab.fa-linkedin {
+    padding: 20px, 40px;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
     }
   }
 }
