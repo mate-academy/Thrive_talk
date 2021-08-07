@@ -3,11 +3,298 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Futurra Group</title>
+    <link rel="icon" href="./images/Favicon.png">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    >
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page">
+    <header class="header">
+      <div class="header__navigation">
+        <div class="header__logo">
+          <a href="#index.html">
+            <img
+              src="images/Logo.png"
+              alt="logo"
+              class="header__logo logo"
+            >
+          </a>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#product" class="nav__link">
+                Product
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__button button">
+          <div class="b-container">
+            <a href="javascript:PopUpShow()">
+              <button
+                type="submit"
+                class="button__link"
+              >
+                Sign Up
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="b-popup" id="popup1">
+          <div class="b-popup-content">
+              Hello,friend!<br>
+            <a href="javascript:PopUpHide()">continue</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <section class="content__article article" id="article">
+        <h2 class="article__title">
+          Lightning fast prototyping
+        </h2>
+        <p class="article__text">
+          Most calendars are designed for teams.
+          Slate is designed for
+          <br> freelancers who want a simple way to plan their schedule.
+        </p>
+        <div class="content__button btn">
+          <a href="#try">
+            <button
+              type="submit"
+              class="btn__link"
+            >
+              Try For Free
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="content__card card" id="product">
+        <div class="card__icons">
+          <a href="#">
+            <img
+              src="images/iconseffect.png"
+              alt="icons"
+              class="card__icons icons"
+            >
+          </a>
+        </div>
+        <div class="card__rating">
+          <a href="#">
+            <img
+              src="images/Rating.png"
+              alt="rating"
+              class="card__rating rating"
+            >
+          </a>
+        </div>
+
+        <div class="card__background">
+          <a href="#">
+            <img
+              src="images/Rectangle.png"
+              alt="background"
+              class="card__background background"
+            >
+          </a>
+        </div>
+      </section>
+
+      <section class="content__statistics statistics" id="about">
+        <h2 class="statistics__title">
+          Fastest way to navigate
+        </h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <a href="#">
+                <img
+                  src="images/Card1.png"
+                  alt="statisticsCard"
+                  class="statistics__table table"
+                >
+              </a>
+            </div>
+            <div class="col-sm">
+              <a href="#">
+                <img
+                  src="images/Card2.png"
+                  alt="statisticsCard"
+                  class="statistics__table table"
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="statistics__button btnStatic">
+          <a href="#try">
+            <button
+              type="submit"
+              class="btnStatic__link"
+            >
+              Try For Free
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="container_adress adress">
+                <h3 class="adress__title">
+                  OpenType features and <br> Variable fonts
+                </h3>
+                <p class="adress__text">
+                  Most calendars are designed for teams.
+                  Slate is designed
+                  <br> for freelancers who want a simple way to plan
+                  <br> their schedule.
+                </p>
+                <form class="consultation-form contact__consultation-form">
+                  <input
+                    class="consultation-form__email"
+                    type="text"
+                    placeholder="Enter Your Adress Email"
+                    required
+                  >
+
+                  <div class="consultation__button btnContact">
+                    <a href="#subscribe">
+                      <button
+                        type="subscribe"
+                        class="btnContact__link"
+                      >
+                        Subscribe
+                      </button>
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="adress__background-sm">
+              <a href="#">
+                <img
+                  src="images/SCREEN MASK.png"
+                  alt="screen"
+                  class="adress__background screen"
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rating__facebook facebook">
+        <h2 class="facebook__title">
+          Work better together
+        </h2>
+        <p class="facebook__text">
+          Being a freelancer is a rollercoaster of emotions.
+          We built Slate to keep your
+          <br> freelance business less stressful.
+          We'd love to show you what we're building...
+        </p>
+
+        <div class="facebook__rating"></div>
+        <div class="rating__line"></div>
+        <div class="facebook__block block">
+          <p class="block__socialNetwork">
+            Facebook
+          </p>
+          <p class="block__count">
+            35,929
+          </p>
+        </div>
+
+        <div class="facebook__button btnFacebook">
+          <a href="#try">
+            <button
+              type="submit"
+              class="btnFacebook__link"
+            >
+              Try For Free
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="#">
+          <img
+            id="footer"
+            src="images/LogoFooter.png"
+            alt="logo"
+            class="footer__logo logo"
+          >
+        </a>
+      </div>
+      <div class="footer__icons">
+        <a
+          class="fab fa-twitter"
+          href="https://twitter.com/?lang=ru"
+          target="_blank"
+          rel="noopener"
+        >
+        </a>
+        <a
+          class="fab fa-facebook-square"
+          href="https://www.facebook.com/NazarKudatsky"
+          target="_blank"
+          rel="noopener"
+        >
+        </a>
+        <a
+          class="fab fa-linkedin"
+          href="https://www.linkedin.com/in/nazar-kudatsky-0660ab214/"
+          target="_blank"
+          rel="noopener"
+        >
+        </a>
+      </div>
+      <p class="footer__text">
+        Just type what's on your mind and we'll
+      </p>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/fe076a5322.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        PopUpHide();
+      });
+      function PopUpShow(){
+        $("#popup1").show();
+      }
+      function PopUpHide(){
+        $("#popup1").hide();
+      }
+    </script>
   </body>
 </html>
