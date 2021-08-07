@@ -1,4 +1,4 @@
-# Thrive_talk landing page
+# Futtura_Group landing page
 [DEMO LINK](https://nazar-kudatsky.github.io/Futurra_Group/)
 
 [Figma design](https://www.figma.com/file/bDmlLBR8sBsKnF4QT5KQeG/Test?node-id=0%3A228)
