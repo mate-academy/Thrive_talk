@@ -2,6 +2,18 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
-}
+@import "mixin";
+
+@import "blocks/page";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/button";
+@import "blocks/why";
+@import "blocks/about";
+@import "blocks/cda";
+@import "blocks/contact-us";
+@import "blocks/footer";
+@import "blocks/logo";
+@import "blocks/icon";
+@import "blocks/menu";

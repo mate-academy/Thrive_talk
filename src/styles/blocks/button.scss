@@ -1,0 +1,50 @@
+.button {
+  border: none;
+  background-color: #62d0df;
+  border-radius: 50px;
+  padding: 15px 30px;
+
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+
+  &__yellow {
+    display: block;
+    background-color: #f9b640;
+    text-decoration: none;
+    padding: 12px 30px 10px;
+    border: 1px solid #f9b640;
+
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+
+    @include onTab {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    color: #fff;
+
+    &:last-of-type {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: #f9b640;
+    }
+
+    &--transparent {
+      background-color: transparent;
+      border: 1px solid transparent;
+      color: #f9b640;
+
+      &:hover {
+        border: 1px solid #f9b640;
+      }
+    }
+  }
+}

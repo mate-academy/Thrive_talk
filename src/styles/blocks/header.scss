@@ -1,0 +1,91 @@
+.header {
+  position: relative;
+  background: #f4f9e2;
+
+  @include onTab {
+    background: linear-gradient(to right, #f4f9e2 80%, #fff 20%);
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__container {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    @include onTab {
+      padding-bottom: 75px;
+    }
+  }
+
+  &__button {
+    display: flex;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.04em;
+
+    color: #22356f;
+
+    @include onTab {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    @include onNotebook {
+      font-size: 48px;
+      line-height: 53px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 63px;
+
+    font-size: 12px;
+    line-height: 24px;
+
+    color: #22356f;
+
+    @include onTab {
+      font-size: 18px;
+      line-height: 34px;
+    }
+
+    @include onNotebook {
+      font-size: 24px;
+      line-height: 42px;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 0;
+    height: 80%;
+
+    @include onTab {
+      height: 100%;
+    }
+
+    &-container {
+      overflow: hidden;
+      z-index: 0;
+    }
+  }
+}
