@@ -74,11 +74,16 @@
   }
 
   &__photo {
-    position: absolute;
-    top: 40px;
-    right: 0;
-    z-index: 0;
-    height: 80%;
+    display: none;
+
+    @include onPhone {
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      z-index: 0;
+      height: 80%;
+    }
 
     @include onTab {
       height: 100%;
