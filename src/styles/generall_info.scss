@@ -1,0 +1,13 @@
+.genral-info {
+  height: 800px;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &__photo {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}

@@ -1,0 +1,78 @@
+.help {
+  background: $header-bg-color;
+
+  &__title {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 24px;
+    
+    color: rgba(34, 53, 111, 0.5);
+  }
+
+  &__container {
+    padding-bottom: 120px;
+  }
+
+  &__list {
+    display: grid;
+    height: 360px;
+    grid-template-columns: repeat(auto-fit,minmax(360px,auto));
+  }
+
+  &__card {
+    padding-top: 95px;
+    padding-left: 78px;
+    
+    &:nth-child(1) {
+      background: #ffe2de;
+    }
+    
+    &:nth-child(2) {
+      background: #c4e769;
+    }
+
+    &:nth-child(3) {
+      background: #62d0df;
+    }
+
+    &:nth-child(4) {
+      background: #0052c1;
+    }
+
+    transition: transform 0.4s ease-out;
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.98);
+      box-shadow: 1px 1px 5px #000;
+    }
+  }
+
+  &__item {
+    max-width: 230px;
+    font-size: $font-size-cards;
+    line-height: 1;
+    position: relative;
+    
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -20px;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -15px;
+      top: 10px;
+      height: 9px;
+      width: 9px;
+      background-color: $card-markup;
+      border-radius: 50%;
+    }
+  }
+}

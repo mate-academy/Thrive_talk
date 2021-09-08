@@ -1,0 +1,21 @@
+.caption {
+  max-width: 676px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__title {
+    color: $navbar-color;
+    font-size: $font-size-caption;
+
+  }
+
+  &__text {
+    color: $navbar-color;
+    font-size: 36px;
+
+  }
+}

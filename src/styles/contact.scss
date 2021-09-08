@@ -1,0 +1,13 @@
+.contact {
+
+  &__container {
+    display: flex;
+    height: 800px;
+  }
+
+  &__photo {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
