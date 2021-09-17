@@ -1,0 +1,43 @@
+.health {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 33.3vw);
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    
+    padding: 7vw 0 0 48px;
+
+    &:nth-child(1) {
+      background-color: $darkBlueColor;
+    }
+
+    &:nth-child(2) {
+      background-color: #0052c1;
+    }
+
+    &:nth-child(3) {
+      background: center/ cover no-repeat url("../images/joanna-kosinska-340748.png");
+    }
+
+    &:nth-child(4) {
+      background-color: $blueColor;
+    }
+
+    &:nth-child(5) {
+      background-color: #dee1ff;
+    }
+
+    &:nth-child(6) {
+      background-color: #8f00ff;
+    }
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .health {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 33.3vw);
+  }
+}

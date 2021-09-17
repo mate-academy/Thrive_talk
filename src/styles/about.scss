@@ -1,0 +1,54 @@
+.about {
+  display: flex;
+
+  &__text {
+    position: relative;
+
+    margin: 0 auto;
+    padding: 150px 0 24px;
+    width: 592px;
+
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+
+    &::after {
+      display: block;
+      content: "We can help you with";
+      margin-top: 75px;
+
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.06em;
+      color: $darkBlueColor;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &::before {
+      position: absolute;
+      content: "About us";
+      left: -318px;
+      top: 160px;
+
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: $darkBlueColor;
+    }
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .about__text {
+    width: 100%;
+    padding: 60px 45px 20px;
+    &::before {
+      top: 20px;
+      left: 45px;
+    }
+    &::after {
+      margin: 45px;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.header {
+  background-color: #f4f9e2;
+  overflow: hidden;
+  position: relative;
+
+  &__preview {
+    z-index: 3;
+
+    margin-left: 180px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 179px;
+  }
+
+  &__logo {
+    z-index: 3;
+
+    margin: 35px 0 187px;
+  }
+
+  &__nav {
+    position: relative;
+    z-index: 4;
+
+    margin-top: 27px;
+  }
+
+  &__img {
+    background: center/ cover no-repeat url("../images/header-imag.png");
+
+    position: absolute;
+    top: 35px;
+    right: 0;
+    z-index: 2;
+
+    width: 626px;
+    height: 686px;
+  }
+
+  &__rectangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+
+    width: 320px;
+    height: 900px;
+
+    background-color: $mainColor;
+  }
+
+  &__oval {
+    position: absolute;
+    top: -75px;
+    right: 65px;
+    z-index: 1;
+
+    height: 760px;
+    width: 500px;
+    
+    border-radius: 312px;
+    background-color: #edfdff;
+    
+    transform: rotate(25deg);
+  }
+
+  &__button {
+    z-index: 3;
+    white-space: nowrap;
+
+    padding: 19px 0;
+    margin: 27px 190px 0 0;
+
+    background-color: $blueColor;
+    border-radius: 50px;
+
+    transition: transform 0.5s, background-color 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: #4699a4;
+      color: black;
+    }
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .header {
+    background: center/ cover no-repeat url("../images/photo5244513990699233475.jpg");
+    width: 100%;
+
+    &__logo {
+      margin-left: 0;
+    }
+    &__top,
+    &__preview {
+      margin-left: 40px;
+    }
+    &__img,
+    &__oval,
+    &__rectangle {
+      display: none;
+    }
+    &__button {
+      position: absolute;
+      top: 90px;
+      left: 30px;
+    }
+  }
+}
