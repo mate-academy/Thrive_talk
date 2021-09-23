@@ -1,0 +1,40 @@
+.navigation {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    z-index: 4;
+    position: relative;
+
+    &--active {
+      &::after {
+        content: "";
+        position: absolute;
+        top: calc(100% + 5px);
+        right: 5%;
+        width: 90%;
+        height: 1px;
+        background-color: $highlightedColor;
+      }
+      & a {
+        color: $highlightedColor;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    font-size: 14px;
+    line-height: 16px;
+    color: $navigationTextColor;
+    margin: 0 8px;
+    padding: 5px;
+    @include hover(color, $highlightedColor);
+
+    @media (max-width: 350px) {
+      margin: 0 4px;
+    }
+  }
+}
