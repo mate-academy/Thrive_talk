@@ -1,7 +1,31 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "./utils/resset";
+
+@import "./blocks/header";
+@import "./blocks/navigation";
+@import "./blocks/intro";
+@import "./blocks/container";
+@import "./blocks/why_thrive";
+@import "./blocks/about";
+@import "./blocks/services";
+@import "./blocks/activities";
+@import "./blocks/activities-cards";
+@import "./blocks/contact-us";
+@import "./blocks/also-know";
+@import "./blocks/some-info";
+@import "./blocks/footer";
 
 body {
-  background: $c-gray;
+  background-color: $c-gray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Larsseit", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }

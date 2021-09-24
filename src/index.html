@@ -1,13 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Thrivetalk</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
+
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header container">
+      <section class="header__top">
+        <h1 class="header__logo-link">
+          Thrivetalk
+        </h1>
+
+        <a href="#menu" class="header__menu-toggle">
+          <div class="header__menu-toggle-container"></div>
+        </a>
+
+        <nav class="header__nav navigation" id="menu">
+          <a href="#" class="navigation__menu-toggle">X</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#why-thrive" class="navigation__link">
+                Home
+              </a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="#about-us" class="navigation__link">
+                About
+              </a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="#services" class="navigation__link">
+                Services
+              </a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="#activities" class="navigation__link">
+                Blog
+              </a>
+            </li>
+          </ul>
+
+        </nav>
+
+        <a href="tel:" class="header__link-call">
+          Contact us
+        </a>
+      </section>
+
+      <section class="header__intro intro">
+        <article class="intro__content">
+          <a href="" class="intro__logo-link">
+            Thrivetalk
+          </a>
+
+          <h2 class="intro__title">
+            HELPING YOU THRIVE
+            <br>
+            IN ALL AREAS OF LIFE
+          </h2>
+          <p class="intro__text">
+            Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD,
+            depression, social anxiety, or even just caring for yourself more.
+          </p>
+          <div class="intro__buttons">
+            <a href="#" class="intro__link intro__link--main">
+              Who am I
+            </a>
+            <a href="#" class="intro__link intro__link--additional">
+              What do I do
+            </a>
+          </div>
+
+        </article>
+      </section>
+
+      <div class="header__background-white"></div>
+      <div class="header__background-blue"></div>
+      <div class="header__background-image"></div>
+    </header>
+
+    <main class="main">
+      <section class="why-thrive container">
+        <a name="why-thrive" class="anchor"></a>
+        <article class="why-thrive__content">
+          <h3 class="why-thrive__title">
+            Why Thrive?
+          </h3>
+
+          <p class="why-thrive__text">
+            <span class="why-thrive__text-strong">
+              Want to improve your well-being from the comfort of your own couch? Are you having trouble finding the right
+              therapist?
+            </span>
+            Here at ThriveTalk, our licensed therapists provide the same quality care you would get in office from
+            anywhere you can access your laptop or mobile phone. Become your best self with ThriveTalk. Start therapy now
+            with a licensed therapist!
+          </p>
+        </article>
+        <div class="why-thrive__photo"></div>
+      </section>
+
+      <section class="about container">
+        <a name="about-us" class="anchor"></a>
+        <h3 class="about__title">
+          About us
+        </h3>
+
+        <p class="about__content">
+          We want to help you thrive! Whether you are just looking for someone to talk to, or are struggling with a mental
+          wellness issue we’re here to help. Our highly talented therapists can help you with a range of issues including
+          relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+        </p>
+      </section>
+
+      <section class="services container">
+        <a name="services" class="anchor"></a>
+        <h3 class="services__title">
+          WE CAN HELP YOU WITH
+        </h3>
+
+        <div class="services__blocks container">
+          <div class="services__block services__block--pink">
+            <span class="services__block-title">
+              Weight Lifting
+            </span>
+          </div>
+
+          <div class="services__block services__block--green">
+            <span class="services__block-title">
+              Running &
+              <br>
+              Spinning
+            </span>
+          </div>
+
+          <div class="services__block services__block--lightblue">
+            <span class="services__block-title">
+              Pumping Iron
+            </span>
+          </div>
+
+          <div class="services__block services__block--blue">
+            <span class="services__block-title">
+              Pumping Iron
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="activities container">
+        <div class="activities__item">
+          <span class="activities__item-title">
+            Physical
+            Health
+          </span>
+        </div>
+
+        <div class="activities__item">
+          <span class="activities__item-title">
+            Mental
+            Health
+          </span>
+        </div>
+
+        <div class="activities__item activities__item--3">
+          <span class="activities__item-title">
+            Nutrition
+          </span>
+        </div>
+
+        <div class="activities__item">
+          <span class="activities__item-title">
+            Gymnastics
+          </span>
+        </div>
+
+        <div class="activities__item">
+          <span class="activities__item-title">
+            Crossfit
+          </span>
+        </div>
+
+        <div class="activities__item">
+          <span class="activities__item-title">
+            Aerobics
+          </span>
+        </div>
+      </section>
+
+      <section class="activities-cards container">
+        <a name="activities" class="anchor"></a>
+        <article class="activities-cards__activity">
+          <h4 class="activities-cards__title">
+            Nutritional Plans
+          </h4>
+          <p class="activities-cards__descrpiption">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this
+            copy.
+          </p>
+        </article>
+
+        <article class="activities-cards__activity">
+          <h4 class="activities-cards__title">
+            Weight Loss
+          </h4>
+          <p class="activities-cards__descrpiption">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this
+            copy.
+          </p>
+        </article>
+
+        <article class="activities-cards__activity">
+          <h4 class="activities-cards__title">
+            Mental Peace
+          </h4>
+          <p class="activities-cards__descrpiption">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this
+            copy.
+          </p>
+        </article>
+
+        <article class="activities-cards__activity">
+          <h4 class="activities-cards__title">
+            Home Training
+          </h4>
+          <p class="activities-cards__descrpiption">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this
+            copy.
+          </p>
+        </article>
+
+        <article class="activities-cards__activity">
+          <h4 class="activities-cards__title">
+            Work/Life Balance
+          </h4>
+          <p class="activities-cards__descrpiption">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this
+            copy.
+          </p>
+        </article>
+
+        <article class="activities-cards__activity">
+          <h4 class="activities-cards__title">
+            Cardio
+          </h4>
+          <p class="activities-cards__descrpiption">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this
+            copy.
+          </p>
+        </article>
+      </section>
+
+      <section class="also-know container">
+        <div class="also-know__photo"></div>
+
+        <article class="also-know__content">
+          <h3 class="also-know__title">
+            YOU SHOULD ALSO KNOW
+          </h3>
+
+          <p class="also-know__description">
+            MDD affects more than 16.1 million American adults, or about 6.7%of the U.S. population age 18 and older in a
+            given year. We at ThriveTalk can help you.
+          </p>
+
+          <a href="tel: + 1 222 333 444 5" class="also-know__call">
+            GET HELP NOW
+          </a>
+        </article>
+      </section>
+
+      <section class="contact-us container">
+        <article class="contact-us__content">
+          <h3 class="contact-us__title">
+            CONTACT US
+          </h3>
+
+          <h4 class="contact-us__subtitle">
+            Ready. Set. Smile
+          </h4>
+
+          <p class="contact-us__description">
+            Take the free online assessment to see if you are a candidate and get started on your journey.
+          </p>
+
+          <a href="" class="contact-us__link">
+            GET HELP NOW
+          </a>
+        </article>
+
+        <div class="contact-us__photo"></div>
+      </section>
+
+      <section class="some-info container">
+        <div class="some-info__photo"></div>
+
+        <article class="some-info__info">
+          <div class="some-info__info-item">
+            <h3 class="some-info__item-title">SOME INFO</h3>
+
+            <p class="some-info__item-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+            </p>
+          </div>
+
+          <div class="some-info__info-item">
+            <h3 class="some-info__item-title">ENFOLD HEALTH</h3>
+
+            <p class="some-info__item-description">
+              Main Street 1, Olcott
+              Buffalo, United States
+              <br>
+              <br>
+              <a href="tel:+555 283 784 333" class="some-info__item-link">
+                +555 283 784 333
+              </a>
+              <br>
+              <a href="mailto: office@enfold-health.com" class="some-info__item-link some-info__item-link--mail">
+                office@enfold-health.com
+              </a>
+            </p>
+          </div>
+
+          <div class="some-info__info-item">
+            <h3 class="some-info__item-title">OFFICE HOURS</h3>
+
+            <p class="some-info__item-description">Mo-Fr: 8:00-19:00
+              Sa: 8:00-14:00
+              Su: closed
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="footer__copyright">
+        © Copyright - ThriveTalk 2017
+      </p>
+    </footer>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
+
 </html>

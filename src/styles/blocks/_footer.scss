@@ -1,0 +1,16 @@
+.footer {
+  background-color: #62d0df;
+  padding: 32px 194px 28px;
+
+  @media (max-width: 1200px) {
+    padding: 20px;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 11px;
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    color: #fff;
+  }
+}
