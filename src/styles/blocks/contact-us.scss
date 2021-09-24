@@ -1,0 +1,92 @@
+.contact-us {
+  background: #22356f;
+
+  @include onTab {
+    background: #22356f url("../images/contact_us-image.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40% 100%;
+
+    @include onDesktop {
+      background-size: contain;
+    }
+  }
+
+  &__text {
+    padding: 40px 0;
+    
+    @include onTab {
+      padding: 102px 0 42px;
+    }
+
+    &-top {
+      margin: 0;
+      margin-bottom: 60px;
+
+      font-size: 16px;
+      line-height: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      color: #fff;
+
+      @include onTab {
+        margin-bottom: 180px;
+      }
+
+      @include onNotebook {
+        margin-bottom: 230px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 80px;
+    letter-spacing: -0.01em;
+
+    color: #fff;
+
+    @include onTab {
+      margin-bottom: 75px;
+    }
+
+    @include onNotebook {
+      font-size: 64px;
+      line-height: 94px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    max-width: 580px;
+    margin-bottom: 50px;
+
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: -0.01em;
+
+    color: #fff;
+
+    @include onNotebook {
+      font-size: 36px;
+      line-height: 53px;
+    }
+  }
+
+  &__sign {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    color: #62d0df;
+  }
+}

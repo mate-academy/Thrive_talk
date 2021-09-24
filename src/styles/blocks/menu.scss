@@ -1,0 +1,36 @@
+.menu {
+  background-color: #f4f9e2;
+
+  &__content {
+    height: 100vh;
+    z-index: 2;
+  }
+
+  &__nav {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 68px;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #22356f;
+    text-decoration: none;
+  }
+
+  &__contact-us {
+    font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #22356f;
+  }
+}

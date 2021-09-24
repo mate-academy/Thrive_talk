@@ -1,6 +1,34 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-family: "Larsseit";
+  src: url("../fonts/Larsseit family/Larsseit-Light.eot");
+  src: url("../fonts/Larsseit family/Larsseit-Light.ttf") format("wolf"),
+    url("../fonts/Larsseit family/Larsseit-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("../fonts/Larsseit family/Larsseit-Medium.eot");
+  src: url("../fonts/Larsseit family/Larsseit-Medium.woff") format("wolf"),
+    url("../fonts/Larsseit family/Larsseit-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("../fonts/Larsseit family/Larsseit-Bold.eot");
+  src: url("../fonts/Larsseit family/Larsseit-Bold.woff") format("wolf"),
+    url("../fonts/Larsseit family/Larsseit-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+// @mixin medium {
+//   font-family: "Larsseit Medium", sans-serif;
+// }
+
+// @mixin bold {
+//   font-family: "Larsseit Bold", sans-serif;
+// }

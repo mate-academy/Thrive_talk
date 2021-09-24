@@ -1,0 +1,33 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+
+  @include onTab {
+    padding: 0 40px;
+  }
+
+  @include onNotebook {
+    padding: 0;
+  }
+
+  &--why {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include onTab {
+      padding-top: 150px;
+      padding-bottom: 95px;
+    }
+  }
+
+  &--about {
+    padding-top: 70px;
+
+    @include onTab {
+      padding-top: 150px;
+    }
+  }
+}

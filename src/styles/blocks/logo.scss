@@ -1,0 +1,26 @@
+.logo {
+  display: flex;
+  align-self: left;
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 27px;
+
+  letter-spacing: -0.04em;
+
+  color: #62d0df;
+
+  &__text {
+    display: none;
+    text-align: left;
+    margin-bottom: 35px;
+
+    @include onTab {
+      display: block;
+    }
+  }
+
+  &--text {
+    color: #62d0df;
+  }
+}

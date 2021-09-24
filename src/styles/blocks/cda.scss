@@ -1,0 +1,90 @@
+.cda {
+  background: #fff;
+
+  @include onTab {
+    background: #fff url("../images/cda-image.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 40% 100%;
+
+    @include onDesktop {
+      background-size: contain;
+    }
+  }
+
+  &__text {
+    padding-bottom: 20px;
+
+    @include onTab {
+      padding: 70px 0 20px;
+      padding-left: 40%;
+    }
+
+    @include onNotebook {
+      padding-top: 100px;
+      padding-bottom: 42px;
+      padding-left: 45%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #22356f;
+
+    @include onTab {
+      margin-bottom: 180px;
+    }
+
+    @include onNotebook {
+      margin-bottom: 225px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 80px;
+    max-width: 680px;
+    
+
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: -0.01em;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #fab63e;
+
+    color: #22356f;
+
+    @include onTab {
+      margin-bottom: 152px;
+    }
+
+    @include onNotebook {
+      font-size: 36px;
+      line-height: 53px;
+    }
+  }
+
+  &__sign {
+    margin: 0;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    color: #0052c1;
+
+    @include onTab {
+      color: #fab63e;
+    }
+  }
+}
