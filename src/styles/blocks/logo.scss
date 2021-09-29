@@ -1,0 +1,16 @@
+.logo {
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &__link {
+    color: $colorAzure;
+    text-decoration: none;
+    font-family: Larsseit, sans-serif;
+    font-weight: bold;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+  }
+}

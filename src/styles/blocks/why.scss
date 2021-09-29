@@ -1,0 +1,62 @@
+.why {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: $colorAzure;
+
+  padding-left: 178px;
+
+  @include onTablet {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  &__text-container {
+    padding-bottom: 95px;
+    margin-right: 50px;
+
+    @include onTablet {
+      padding: 0 50px;
+      margin: 0 auto 50px;
+    }
+  }
+
+  &__title {
+    margin-top: 151px;
+    margin-bottom: 75px;
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+    color: #fff;
+
+    @include onMobile {
+      line-height: 46px;
+    }
+  }
+ 
+  &__text {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--bold {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: bold;
+    }
+  }
+
+  &__image {
+    transition: 0.3s;
+
+    @include onTablet {
+      object-fit: cover;
+      height: 400px;
+      width: 100%;
+    }
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}

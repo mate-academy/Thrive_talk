@@ -1,13 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>ThriveTalk</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      rel="shorcut icon"
+      href="images/favicon.jpg"
+      type="image/jpg"
+    >
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page__body">
+    <section class="header">
+      <div class="header__text-container">
+        <nav class="header__nav nav">
+          <div class="nav__logo logo">
+            <a class="logo__link" href="#">ThriveTalk</a>
+          </div>
+
+          <div class="hamburger">
+            <input type="checkbox" id="hamburger__toggler">
+            <label class="hamburger__check" for="hamburger__toggler">
+              <span></span>
+            </label>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#why">
+                  Home
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#about">
+                  About
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#help">
+                  Services
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#know">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="header__button" href="tel:+555 283 784 333">
+            <p class="header__button-text">CONTACT US</p>
+            <img
+              src="images/button.svg"
+              alt="contacts"
+              class="header__button-image"
+            >
+          </a>
+        </nav>
+
+        <div class="header__logo logo">
+          <a class="logo__link" href="#">ThriveTalk</a>
+        </div>
+
+        <h1 class="header__title">
+          HELPING YOU THRIVE
+          <br>
+          IN ALL AREAS OF LIFE
+        </h1>
+
+        <p class="header__about">
+            Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+        </p>
+
+        <div class="header__links">
+          <a class="header__link" href="#why">
+            WHO AM I
+          </a>
+
+          <a class="header__link header__link--inversive" href="#why">
+            WHAT DO I DO
+          </a>
+        </div>
+      </div>
+
+      <div class="header__elips"></div>
+
+      <img
+        src="images/header.png"
+        alt="ThriveTalk"
+        class="header__image"
+      >
+    </section>
+
+    <section id="why" class="why">
+      <div class="why__text-container">
+        <h2 class="why__title">
+          Why Thrive?
+        </h2>
+
+        <span class="why__text why__text--bold">
+          Want to improve your well-being from the comfort of your own couch? Are you having trouble finding the right therapist?
+        </span>
+
+        <span class="why__text">
+          Here at ThriveTalk, our licensed therapists provide the same quality care you would get in office from anywhere you can access your laptop or mobile phone. Become your best self with ThriveTalk.  Start therapy now with a licensed therapist!
+        </span>
+      </div>
+
+      <img
+        class="why__image"
+        src="images/why.png"
+        alt="ThriveTalk"
+      >
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__container">
+        <h2 class="about__title">
+          ABOUT US
+        </h2>
+
+        <p class="about__text">
+          We want to help you thrive! Whether you are just looking for someone to talk to, or are struggling with a mental wellness issue we’re here to help.  Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
+        </p>
+      </div>
+    </section>
+
+    <section id="help" class="help">
+      <h2 class="help__title">
+        WE CAN HELP YOU WITH
+      </h2>
+
+      <div class="help__cards">
+        <div class="card">
+          Weight Lifting
+        </div>
+
+        <div class="card">
+          Running &
+          <br>
+          Spinning
+        </div>
+
+        <div class="card">
+          Pumping Iron
+        </div>
+
+        <div class="card">
+          Pumping Iron
+        </div>
+      </div>
+    </section>
+
+    <section class="boxes">
+      <div class="boxes__cards">
+        <div class="card boxes__card">
+          Physical
+          <br>
+          Health
+        </div>
+
+        <div class="card boxes__card">
+          Mental
+          <br>
+          Health
+        </div>
+
+        <div class="card boxes__card boxes__card--image">
+          Nutrition
+        </div>
+
+        <div class="card boxes__card">
+          Gymnastics
+        </div>
+
+        <div class="card boxes__card">
+          Crossfit
+        </div>
+
+        <div class="card boxes__card">
+          Aerobics
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="cards__container">
+        <div class="cards__card">
+          <div class="cards__title">
+            Nutritional Plans
+          </div>
+          <p class="cards__text">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.
+          </p>
+        </div>
+
+        <div class="cards__card">
+          <div class="cards__title">
+            Weight Loss
+          </div>
+          <p class="cards__text">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.
+          </p>
+        </div>
+
+        <div class="cards__card">
+          <div class="cards__title">
+            Mental Peace
+          </div>
+          <p class="cards__text">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.
+          </p>
+        </div>
+
+        <div class="cards__card">
+          <div class="cards__title">
+            Home Training
+          </div>
+          <p class="cards__text">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.
+          </p>
+        </div>
+
+        <div class="cards__card">
+          <div class="cards__title">
+            Work/Life Balance
+          </div>
+          <p class="cards__text">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.
+          </p>
+        </div>
+
+        <div class="cards__card">
+          <div class="cards__title">
+            Cardio
+          </div>
+          <p class="cards__text">
+            Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="know" class="know">
+      <img
+        class="know__image"
+        src="images/know.png"
+        alt="ThriveTalk"
+      >
+
+      <div class="know__text-container">
+        <h2 class="know__title">
+          YOU SHOULD ALSO KNOW
+        </h2>
+
+        <p class="know__text">
+          MDD affects more than 16.1 million American adults, or about 6.7%of the U.S. population age 18 and older in a given year. We at <span class="know__text--azure">ThriveTalk</span> can help you.
+        </p>
+
+        <a href="#contact-us" class="know__get">
+          GET HELP NOW
+        </a>
+      </div>
+    </section>
+
+    <section id="contact-us" class="contact-us">
+      <div class="contact-us__text-container">
+        <h3 class="contact-us__subtitle">
+          CONTACT US
+        </h3>
+
+        <h2 class="contact-us__title">
+          Ready. Set. Smile
+        </h2>
+
+        <p class="contact-us__text">
+          Take the free online assessment to see if you are a candidate and get started on your journey.
+        </p>
+
+        <a href="#" class="contact-us__get">
+          GET HELP NOW
+        </a>
+      </div>
+
+      <img
+        src="images/contact-us.png"
+        alt="ThriveTalk"
+        class="contact-us__image"
+      >
+    </section>
+
+    <section class="contacts">
+      <img
+        src="images/contacts.png"
+        alt="ThriveTalk"
+        class="contacts__image"
+      >
+
+      <div class="contacts__blocks">
+        <div class="contacts__block">
+          <h3 class="title">
+          SOME INFO
+          </h3>
+
+          <p class="text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+          </p>
+        </div>
+
+        <div class="contacts__block">
+          <h3 class="title">
+            ENFOLD HEALTH
+          </h3>
+
+          <p class="contacts__location">
+            <a
+              href="https://goo.gl/maps/V2NiuWhwtsjZ8gHm7"
+              class="text"
+              target="_blank"
+              rel="noopener"
+            >
+              Main Street 1, Olcott
+              <br>
+              Buffalo, United States
+            </a>
+          </p>
+
+          <a href="tel:+555 283 784 333" class="text">
+            +555 283 784 333
+          </a>
+
+          <div>
+            <a href="mailto:office@enfold-health.com" class="text text--email">
+              office@enfold-health.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contacts__block">
+          <h3 class="title">
+            OFFICE HOURS
+          </h3>
+
+          <p class="text">
+            Mo-Fr: 8:00-19:00
+            <br>
+            Sa: 8:00-14:00
+            <br>
+            Su: closed
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="footer__text">
+        &#169; Copyright - ThriveTalk 2017
+      </span>
+    </footer>
   </body>
 </html>

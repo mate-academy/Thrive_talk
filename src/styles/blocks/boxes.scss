@@ -1,0 +1,45 @@
+.boxes {
+  margin-bottom: 22px;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__card {
+    height: 480px;
+
+    @include onTablet {
+      height: 350px;
+    }
+
+    @include onMobile {
+      height: 150px;
+    }
+
+    &--image {
+      background-image: url(../images/boxes.png);
+    }
+
+    @each $index, $color in $colors-boxes {
+      &:nth-child(#{$index}) {
+        background-color: #{$color};
+      }
+    }
+    
+    &::before {
+      content: "";
+      margin-bottom: 30px;
+
+      height: 96px;
+
+      @include onMobile {
+        height: 35px;
+      }
+    }
+  }
+}
