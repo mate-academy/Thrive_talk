@@ -1,0 +1,95 @@
+.info {
+  height: 380px;
+  max-width: $max-width;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+
+  &__rightside {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1390px;
+    width: 100%;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 207px;
+    margin-top: 90px;
+
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 11px;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: rgba(34, 53, 111, 0.5);
+    line-height: 23px;
+
+    & span {
+      color: rgb(30, 27, 245);
+    }
+  }
+
+  &__leftside {
+    height: 100%;
+    min-width: 570px;
+    top: 0;
+    left: 0;
+    background-image: url("../images/last.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+
+  .info__leftside {
+    min-width: 400px;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .info__rightside {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20px;
+  }
+
+  .info__block {
+    margin-top: 30px;
+  }
+
+  .info__leftside {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .info {
+    height: 100%;
+    flex-direction: column;
+
+    &__rightside {
+      margin: auto;
+    }
+
+    &__block {
+      margin-top: 30px;
+      padding: 10px;
+    }
+
+    &__leftside {
+      height: 380px;
+      width: 100%;
+      min-width: 320px;
+    }
+  }
+}
