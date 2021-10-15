@@ -4,3 +4,25 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin button {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  color: #fab63e;
+  border: 1px solid transparent;
+  transition: 0.25s;
+  &:hover {
+    background-color: #fab63e;
+    color: #fff;
+  }
+}
+
+@mixin mobFontStyleTitle {
+  font-size: 26px;
+  line-height: 35px;
+}
+
+@mixin mobFontStyleArticle {
+  font-size: 20px;
+  line-height: 30px;
+}

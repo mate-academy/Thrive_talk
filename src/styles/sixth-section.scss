@@ -1,0 +1,67 @@
+//
+.sixth-section {
+  overflow: hidden;
+  background-color: #22356f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  line-height: 35px;
+  &__article {
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    line-height: 53px;
+    flex-basis: 580px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 100px 0 0 180px;
+    &__contact {
+      font-size: 16px;
+      line-height: 12px;
+    }
+
+    &__nav {
+      @include button;
+      color: #62d0df;
+      font-size: 16px;
+      line-height: 23px;
+    }
+    &__title {
+      margin-bottom: 75px;
+      font-size: 64px;
+      line-height: 94px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .sixth-section {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(143, 166, 192, 0.5),
+    rgba(24, 23, 23, 0.5)),
+      url(/images/fifth-section-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__article {
+      color: rgb(255, 255, 255);
+      padding: 0 20px;
+      @include mobFontStyleArticle;
+      max-width: 500px;
+      &__nav {
+        background-color: rgba(78, 76, 70, 0.5);
+      }
+      &__title {
+        @include mobFontStyleTitle;
+        margin-top: 70px;
+      }
+    }
+    &__photo {
+      display: none;
+    }
+  }
+
+}
