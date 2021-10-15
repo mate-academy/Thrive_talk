@@ -1,0 +1,97 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0;
+
+  @include onTablet {
+    flex-direction: column;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    @include onTablet {
+      margin: 0 auto 80px;
+
+      font-size: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    @include onTablet {
+      margin: 0 auto;
+    }
+
+    @media (max-width: 545px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    @include onMobile {
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin: 0;
+
+      transition: 0.3s;
+      visibility: hidden;
+    }
+  }
+
+  &__link {
+    color: $colorViolet;
+    text-decoration: none;
+    font-family: Larsseit, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+
+    padding: 0 10px;
+
+    transition: 0.3s;
+
+    @include onTablet {
+      font-size: 30px;
+      line-height: 32px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    margin: 0 10px;
+
+    text-decoration: none;
+    z-index: 1;
+
+    @media (max-width: 545px) {
+      margin: 20 10;
+      text-align: center;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 5px;
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      box-shadow: inset 0 -1px 0 $colorViolet;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}

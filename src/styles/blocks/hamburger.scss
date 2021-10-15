@@ -1,0 +1,50 @@
+#hamburger__toggler {
+  opacity: 0;
+
+  &:checked ~ .hamburger__check > span {
+    transform: rotate(45deg);
+  }
+  &:checked ~ .hamburger__check > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  &:checked ~ .hamburger__check > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  &:checked ~ .nav__list {
+    gap: 30px;
+    margin: 0 auto;
+    visibility: visible;
+  }
+}
+
+.hamburger {
+  @include onMobile {
+    &__check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 50px;
+
+      & > span,
+      & > span::before,
+      & > span::after {
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color: $colorViolet;
+        transition: 0.3s;
+      }
+      & > span::before {
+        content: "";
+        top: -8px;
+      }
+      & > span::after {
+        content: "";
+        top: 8px;
+      }
+    }
+  }
+}

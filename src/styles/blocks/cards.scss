@@ -1,0 +1,60 @@
+.cards {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 40px;
+
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include onMobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 77px 37px 105px;
+    height: 240px;
+
+    transition: 0.5s;
+
+    @include onTablet {
+      padding: 0;
+      margin: 20px;
+    }
+
+    @include onMobile {
+      height: 130px;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+    color: $colorViolet;
+    margin-bottom: 28px;
+
+    @include onTablet {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: $colorViolet;
+    opacity: 0.5;
+
+    @include onTablet {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

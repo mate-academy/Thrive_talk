@@ -1,0 +1,24 @@
+.text {
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  color: $colorViolet;
+  text-decoration: none;
+
+  opacity: 0.5;
+
+  transition: 0.3s;
+
+  @include onTablet {
+    text-align: center;
+  }
+
+  &--email {
+    color: #0052c1;
+    opacity: 100%;
+
+    &:hover {
+      color: #5383d8;
+    }
+  }
+}

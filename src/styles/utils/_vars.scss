@@ -1,1 +1,16 @@
-$c-gray: #eee;
+$colorAzure: #62d0df;
+$colorViolet:#22356f;
+$colorOrange:#f9b640;
+
+$colors-help:
+  "1"#FFE2DE,
+  "2"#C4E769,
+  "3"#0052C1,
+  "4" $colorViolet;
+
+  $colors-boxes:
+  "1"$colorViolet,
+  "2"#0052C1,
+  "4" $colorAzure,
+  "5" #DEE1FF,
+  "6" #8F00FF;
