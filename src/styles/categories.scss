@@ -1,0 +1,78 @@
+$catagory: "aerobics", "crossfit", "gymnastics", "mental", "nutrition",
+  "physical";
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 1439px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 959px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  background-color: #fff;
+
+  &__item {
+    @extend %card-style;
+
+    padding: 126px 219px 0 104px;
+
+    height: 480px;
+
+    transition: 0.3s;
+
+    @media (max-width: $tablet) {
+      padding-right: 100px;
+    }
+
+    @media (max-width: $mobile) {
+      padding-right: 40px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      top: 135px;
+    }
+
+    &--physical {
+      background-color: #22356f;
+    }
+
+    &--mental {
+      background-color: #0052c1;
+    }
+
+    &--nutrition {
+      background-color: #f28e80;
+    }
+
+    &--gymnastics {
+      background-color: #62d0df;
+    }
+
+    &--crossfit {
+      background-color: #dee1ff;
+    }
+
+    &--aerobics {
+      background-color: #8f00ff;
+    }
+  }
+}
+
+@each $item in $catagory {
+  .categories__item--#{$item} {
+    &:hover {
+      background-image: url("/images/category/#{$item}.jpg");
+    }
+  }
+}

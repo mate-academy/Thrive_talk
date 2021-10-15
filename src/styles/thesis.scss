@@ -1,0 +1,37 @@
+.thesis {
+  padding: 150px 0 95px 178px;
+
+  color: #fff;
+
+  background-image: url("/images/thesis.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-color: $primary-color;
+
+  @media (max-width: $tablet) {
+    padding-left: $mid-padding;
+    padding-right: $mid-padding;
+    background-image: none;
+  }
+
+  @media (max-width: $mobile) {
+    padding-left: $small-padding;
+  }
+
+  &__title {
+    margin-bottom: 75px;
+
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+  }
+
+  &__description {
+
+    max-width: 555px;
+
+    font-size: 24px;
+    line-height: 35px;
+  }
+}

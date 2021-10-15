@@ -1,0 +1,24 @@
+// .container {
+//   margin: 0 auto;
+//   max-width: 1280px;
+
+//   @media (max-width: $desktop) {
+//     padding: 0 120px;
+//   }
+//   @media (max-width: $tablet) {
+//     padding: 0 30px;
+//   }
+// }
+
+.container {
+  @media (min-width: 1600px) {
+    background-color: #f4f9e2;
+  }
+
+  &__item {
+    @media (min-width: 1600px) {
+      width: 1444px;
+      margin: 0 auto;
+    }
+  }
+}
