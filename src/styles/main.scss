@@ -1,7 +1,22 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+@import "reset";
+@import "container";
+@import "header";
+@import "nav";
+@import "button";
+@import "promo";
+@import "why";
+@import "about";
 
 body {
-  background: $c-gray;
+  background: #fff;
+}
+
+html {
+  background: #e5e5e5;
+  font-family: "Larsseit", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  scroll-behavior: smooth;
 }
