@@ -1,0 +1,13 @@
+.title {
+  padding-bottom: 48px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  font-weight: bold;
+  color: $colorViolet;
+
+  @include onMobile {
+    line-height: 24px;
+    text-align: center;
+  }
+}

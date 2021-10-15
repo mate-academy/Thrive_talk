@@ -1,0 +1,208 @@
+.header {
+  position: relative;
+
+  background-color: #f4f9e2;
+
+  &__text-container {
+    max-width: 1130px;
+
+    margin: 0 auto;
+
+    padding: 0 30px 75px;
+  }
+
+  &__nav {
+    padding-top: 30px;
+    margin-bottom: 180px;
+
+    @include onMobile {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    color: $colorViolet;
+
+    margin-bottom: 58px;
+    z-index: 1;
+
+    @include onTablet {
+      text-align: center;
+    }
+
+    @include onMobile {
+      font-size: 38px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 36px;
+
+    @include onTablet {
+      text-align: center;
+    }
+  }
+
+  &__about {
+    position: relative;
+
+    max-width: 470px;
+
+    margin-bottom: 63px;
+
+    font-family: Larsseit, sans-serif;
+    line-height: 42px;
+    color: $colorViolet;
+
+    z-index: 1;
+
+    @include onTablet {
+      text-align: center;
+      margin: 0 auto 63px;
+    }
+  }
+
+  &__links {
+    display: flex;
+
+    @include onTablet {
+      justify-content: space-evenly;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 150px;
+    height: 50px;
+    background-color: $colorOrange;
+
+    text-decoration: none;
+    font-family: Larsseit, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+
+    transition: 0.3s;
+
+    @include onTablet {
+      width: 200px;
+    }
+
+    @include onMobile {
+      line-height: 16px;
+      font-size: 12px;
+    }
+
+    &:hover {
+      color: $colorOrange;
+      background-color: #f4f9e2;
+      border: 2px solid $colorOrange;
+    }
+
+    &--inversive {
+      margin-left: 38px;
+
+      color: $colorOrange;
+      background-color: #f4f9e2;
+
+      &:hover {
+        border: 2px solid $colorOrange;
+      }
+    }
+  }
+
+  &__elips {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+
+    background-image: url(../images/ellipse.png);
+    background-repeat: no-repeat;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: $colorAzure;
+    z-index: 1;
+
+    font-family: Larsseit, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+    transition: 0.3s;
+
+    @include onTablet {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+
+      width: 50px;
+
+      background-color: rgba(0,0,0,0);
+    }
+
+    &-text {
+      @include onTablet {
+        display: none;
+      }
+    }
+
+    &-image {
+      display: none;
+
+      @include onTablet {
+        display: block;
+        object-fit: contain;
+        width: 50px;
+        border-radius: 50px;
+      }
+    }
+
+    &:hover {
+      color: $colorAzure;
+      background-color: #f4f9e2;
+      border: 2px solid $colorAzure;
+    }
+  }
+}
