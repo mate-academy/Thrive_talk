@@ -1,0 +1,159 @@
+.also {
+  @include LargeScreens {
+    display: flex;
+  }
+}
+
+.also__container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  margin: 0 auto;
+  @include Mobile {
+    width: 280px;
+    flex-direction: column;
+  }
+  @include SmallPhone {
+    width: 600px;
+    padding: 20px;
+    flex-direction: column;
+  }
+  @include Tablet {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  @include LargeScreens {
+    margin: 0 auto;
+  }
+
+}
+
+.also__image {
+  width: 480px;
+  height: 800px;
+  @include Mobile {
+    width: 280px;
+    height: 450px;
+  }
+  @include SmallPhone {
+    height: 1000px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  @include TheDesign {
+    width: 550px;
+    height: 100%;
+  }
+  @include FullHD {
+    width: 700px;
+    height: 100%;
+  }
+  @include LargeScreens {
+    width: 660px;
+    height: 100%;
+  }
+}
+
+.also__info {
+  padding-top: 103px;
+  padding-left: 106px;
+  @include Mobile {
+    padding: 40px 20px;
+  }
+  @include SmallPhone {
+    padding-top: 40px;
+    padding-left: 0;
+  }
+  @include Tablet {
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+  @include Notebook {
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  @include FullHD {
+    padding-left: 240px;
+  }
+}
+
+.also__title {
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+
+  color: #22356f;
+
+  text-transform: uppercase;
+}
+
+.also__text {
+  padding-top: 225px;
+  width: 676px;
+  height: 215px;
+  font-family: "Larsseit", sans-serif;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+
+  color: #22356f;
+  @include Mobile {
+    width: 250px;
+    height: 380px;
+    padding-top: 40px;
+    font-size: 24px;
+  }
+  @include SmallPhone {
+    width: 600px;
+    padding-top: 60px;
+    height: 260px;
+  }
+  @include Tablet {
+    width: 490px;
+    padding-top: 60px;
+    font-size: 48px;
+  }
+}
+
+.also__text_link {
+  color: #62d0df;
+}
+
+.also__link {
+  margin-top: 152px;
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+
+  color: #fab63e;
+  @include Mobile {
+    margin-top: 20px;
+  }
+  @include SmallPhone {
+    margin-top: 20px;
+  }
+  @include Tablet {
+    margin-top: 520px;
+  }
+  @include Notebook {
+    margin-top: 480px;
+  }
+  @include t1440 {
+    margin-top: 480px;
+  }
+  @include TheDesign {
+    margin-top: 490px;
+  }
+  @include FullHD {
+    margin-top: 720px;
+  }
+  @include LargeScreens {
+    margin-top: 700px;
+  }
+}
