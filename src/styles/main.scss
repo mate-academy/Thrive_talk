@@ -28,7 +28,7 @@ body {
 
 .page {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   @include Mobile {
     width: 320px;

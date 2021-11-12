@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1280px;
+  width: 1500px;
   padding-left: 179px;
   padding-top: 20px;
   @include Mobile {
@@ -45,11 +45,9 @@
 
   @include TheDesign {
     width: 1550px;
-    margin: 0 auto;
   }
   @include FullHD {
     width: 1900px;
-    margin: 0 auto;
   }
   @include LargeScreens {
     margin: 0 auto;
@@ -154,6 +152,8 @@
   }
   @include Tablet {
     margin-left: 330px;
+    z-index: 1;
+
   }
   @include t1440 {
     margin-left: 319px;
@@ -232,6 +232,7 @@
   display: flex;
   flex-direction: column;
   width: 484px;
+  z-index: 1;
   @include Mobile {
     width: 280px;
   }
@@ -240,6 +241,9 @@
   }
   @include Tablet {
     width: 1024px;
+  }
+  @media (min-width: 1025px) and (max-width: 1279px) {
+    width: 300px;
   }
   @include FullHD {
     width: 700px;
@@ -321,6 +325,9 @@
   @include Tablet {
     width: 1000px;
     margin-top: 40px;
+  }
+  @media (min-width: 1025px) and (max-width: 1279px) {
+    width: 300px;
   }
   @include Notebook {
     margin-top: 30px;
@@ -427,6 +434,10 @@
   @include Mobile {
     width: 280px;
   }
+  @media (min-width: 1025px) and (max-width: 1279px) {
+    width: 900px;
+    height: 1000px;
+  }
   @include t1440 {
     width: auto;
   }
@@ -439,11 +450,21 @@
   @media (max-width: 1024px) {
     display: none;
   }
-  @include Notebook {
-    background-size: 500px;
+  @media (min-width: 1025px) and (max-width: 1279px) {
+    position: relative;
+    top: -80px;
+    left: -30px;
+    background-size: 600px;
     background-repeat: no-repeat;
   }
+  @include Notebook {
+    position: relative;
+    top: -80px;
+    left: -30px;
+    background-size: 600px;
+    background-repeat: no-repeat;
 
+  }
   @include t1440 {
     position: relative;
     width: 700px;
@@ -458,8 +479,8 @@
   }
   @include FullHD {
     position: relative;
-    width: 790px;
-    top: -20px;
+    width: 850px;
+    top: -70px;
     left: 105px;
   }
   @include LargeScreens {
@@ -477,14 +498,19 @@
   @media (max-width: 1024px) {
     display: none;
   }
+  @media (min-width: 1025px) and (max-width: 1279px) {
+    width: 600px;
+    top: 50px;
+    left: 280px;
+  }
   @include Notebook {
     width: 600px;
     top: 10px;
-    left: 500px;
+    left: 480px;
   }
   @include t1440 {
-    width: 720px;
-    top: -20px;
+    width: 700px;
+    top: 0;
     left: 670px;
   }
 
@@ -494,9 +520,9 @@
     left: 650px;
   }
   @include FullHD {
-    width: 750px;
-    top: 20px;
-    left: 990px;
+    width: 850px;
+    top: -120px;
+    left: 950px;
   }
   @include LargeScreens {
     width: 750px;
