@@ -42,6 +42,11 @@
     margin: 0 auto;
     justify-content: space-between;
   }
+  @include t1440 {
+    width: 1280px;
+    padding-left: 100px;
+    margin: 0 auto;
+  }
 
   @include TheDesign {
     width: 1550px;
@@ -153,7 +158,10 @@
   @include Tablet {
     margin-left: 330px;
     z-index: 1;
-
+  }
+  @include Notebook {
+    margin-left: 330px;
+    z-index: 1;
   }
   @include t1440 {
     margin-left: 319px;
@@ -232,24 +240,33 @@
   display: flex;
   flex-direction: column;
   width: 484px;
-  z-index: 1;
-  @include Mobile {
-    width: 280px;
-  }
-  @include SmallPhone {
-    width: 620px;
-  }
   @include Tablet {
     width: 1024px;
+    z-index: 1;
   }
   @media (min-width: 1025px) and (max-width: 1279px) {
     width: 300px;
+    z-index: 1;
+  }
+  @include Notebook {
+    width: 700px;
+    z-index: 1;
+  }
+  @include t1440 {
+    width: 700px;
+    z-index: 1;
+  }
+  @include TheDesign {
+    width: 700px;
+    z-index: 1;
   }
   @include FullHD {
     width: 700px;
+    z-index: 1;
   }
   @include LargeScreens {
     width: 700px;
+    z-index: 1;
   }
 }
 
@@ -506,18 +523,18 @@
   @include Notebook {
     width: 600px;
     top: 10px;
-    left: 480px;
+    left: 580px;
   }
   @include t1440 {
     width: 700px;
     top: 0;
-    left: 670px;
+    left: 750px;
   }
 
   @include TheDesign {
     width: 700px;
     top: 10px;
-    left: 650px;
+    left: 830px;
   }
   @include FullHD {
     width: 850px;
@@ -527,7 +544,7 @@
   @include LargeScreens {
     width: 750px;
     top: 20px;
-    left: 1330px;
+    left: 1290px;
   }
 }
 
@@ -557,6 +574,7 @@
   background-color: #62d0df;
   height: 100vh;
   padding-left: 20px;
+  z-index: 1;
 }
 
 .menu__link {

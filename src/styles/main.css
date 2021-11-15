@@ -69,6 +69,13 @@ h1 {
     justify-content: space-between;
   }
 }
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .header__container {
+    width: 1280px;
+    padding-left: 100px;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 1600px) and (max-width: 1919px) {
   .header__container {
     width: 1550px;
@@ -206,6 +213,12 @@ h1 {
     z-index: 1;
   }
 }
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .header__button {
+    margin-left: 330px;
+    z-index: 1;
+  }
+}
 @media (min-width: 1440px) and (max-width: 1599px) {
   .header__button {
     margin-left: 319px;
@@ -306,36 +319,47 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 484px;
-  z-index: 1;
-}
-@media (min-width: 320px) and (max-width: 639px) {
-  .info__container {
-    width: 280px;
-  }
-}
-@media (min-width: 640px) and (max-width: 1023px) {
-  .info__container {
-    width: 620px;
-  }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .info__container {
     width: 1024px;
+    z-index: 1;
   }
 }
 @media (min-width: 1025px) and (max-width: 1279px) {
   .info__container {
     width: 300px;
+    z-index: 1;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .info__container {
+    width: 700px;
+    z-index: 1;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .info__container {
+    width: 700px;
+    z-index: 1;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .info__container {
+    width: 700px;
+    z-index: 1;
   }
 }
 @media (min-width: 1920px) and (max-width: 2559px) {
   .info__container {
     width: 700px;
+    z-index: 1;
   }
 }
 @media (min-width: 2560px) {
   .info__container {
     width: 700px;
+    z-index: 1;
   }
 }
 
@@ -669,21 +693,21 @@ h1 {
   .header__image {
     width: 600px;
     top: 10px;
-    left: 480px;
+    left: 580px;
   }
 }
 @media (min-width: 1440px) and (max-width: 1599px) {
   .header__image {
     width: 700px;
     top: 0;
-    left: 670px;
+    left: 750px;
   }
 }
 @media (min-width: 1600px) and (max-width: 1919px) {
   .header__image {
     width: 700px;
     top: 10px;
-    left: 650px;
+    left: 830px;
   }
 }
 @media (min-width: 1920px) and (max-width: 2559px) {
@@ -697,7 +721,7 @@ h1 {
   .header__image {
     width: 750px;
     top: 20px;
-    left: 1330px;
+    left: 1290px;
   }
 }
 
@@ -728,6 +752,7 @@ h1 {
   background-color: #62d0df;
   height: 100vh;
   padding-left: 20px;
+  z-index: 1;
 }
 
 .menu__link {
@@ -1199,7 +1224,7 @@ h1 {
 }
 @media (min-width: 640px) and (max-width: 1023px) {
   .help__container {
-    width: 580px;
+    width: 600px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -1250,7 +1275,7 @@ h1 {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -1273,11 +1298,6 @@ h1 {
 @media (min-width: 640px) and (max-width: 1023px) {
   .help__card {
     width: 300px;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .help__card {
-    margin-right: 40px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1439px) {
@@ -2005,17 +2025,17 @@ h1 {
 }
 @media (min-width: 320px) and (max-width: 639px) {
   .also__link {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 @media (min-width: 640px) and (max-width: 1023px) {
   .also__link {
-    margin-top: 20px;
+    margin-top: 80px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .also__link {
-    margin-top: 520px;
+    margin-top: 500px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1439px) {
@@ -2025,7 +2045,7 @@ h1 {
 }
 @media (min-width: 1440px) and (max-width: 1599px) {
   .also__link {
-    margin-top: 480px;
+    margin-top: 400px;
   }
 }
 @media (min-width: 1600px) and (max-width: 1919px) {

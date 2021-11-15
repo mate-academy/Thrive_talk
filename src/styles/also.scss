@@ -133,19 +133,19 @@
 
   color: #fab63e;
   @include Mobile {
-    margin-top: 20px;
+    margin-top: 50px;
   }
   @include SmallPhone {
-    margin-top: 20px;
+    margin-top: 80px;
   }
   @include Tablet {
-    margin-top: 520px;
+    margin-top: 500px;
   }
   @include Notebook {
     margin-top: 480px;
   }
   @include t1440 {
-    margin-top: 480px;
+    margin-top: 400px;
   }
   @include TheDesign {
     margin-top: 490px;

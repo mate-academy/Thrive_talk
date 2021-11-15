@@ -31,7 +31,7 @@
   flex-direction: column;
   margin: 0 auto;
   @include SmallPhone {
-    width: 580px;
+    width: 600px;
   }
   @include Tablet {
     margin: 0 auto;
@@ -73,7 +73,7 @@
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -91,9 +91,6 @@
   }
   @include SmallPhone {
     width: 300px;
-  }
-  @include Tablet {
-    margin-right: 40px;
   }
   @include Notebook {
     width: 320px;
