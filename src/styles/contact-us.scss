@@ -8,10 +8,10 @@
   margin: 0 auto;
   @include Mobile {
     flex-direction: column;
-    width: 280px;
+    width: 320px;
   }
   @include SmallPhone {
-    width: 600px;
+    width: 640px;
     flex-direction: column;
   }
   @include Tablet {
@@ -32,11 +32,11 @@
   @include Mobile {
     flex-direction: column;
     padding: 40px 20px;
-    width: 290px;
+    width: 320px;
   }
   @include SmallPhone {
     padding: 20px;
-    width: 600px;
+    width: 640px;
   }
   @include Tablet {
     padding-left: 20px;
@@ -142,13 +142,12 @@
   height: 900px;
   box-sizing: border-box;
   @include Mobile {
-    width: 280px;
+    width: 320px;
     height: 100%;
   }
   @include SmallPhone {
-    width: 600px;
+    width: 640px;
     height: 100%;
-    padding: 20px;
   }
   @include Tablet {
     width: 490px;

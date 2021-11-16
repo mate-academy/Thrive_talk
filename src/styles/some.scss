@@ -12,6 +12,7 @@
     margin: 0 auto;
   }
   @include SmallPhone {
+    width: 640px;
     flex-direction: column;
   }
   @include Tablet {
@@ -23,19 +24,20 @@
   display: flex;
   width: 570px;
   height: 380px;
-  margin: 0 auto;
   @include Mobile {
-    width: 280px;
+    width: 320px;
     height: 100%;
   }
   @include SmallPhone {
-    width: 600px;
+    width: 640px;
     height: 100%;
-    padding: 20px;
   }
   @include Tablet {
     width: 400px;
     height: 100%;
+  }
+  @include Notebook {
+    width: 595px;
   }
   @include LargeScreens {
     width: 555px;

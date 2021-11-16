@@ -37,8 +37,8 @@
     padding: 40px 20px;
   }
   @include SmallPhone {
-    padding-left: 20px;
     width: 620px;
+    padding: 40px 20px;
   }
   @include Tablet {
     padding-left: 20px;

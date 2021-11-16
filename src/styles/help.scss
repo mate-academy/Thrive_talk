@@ -31,7 +31,7 @@
   flex-direction: column;
   margin: 0 auto;
   @include SmallPhone {
-    width: 600px;
+    width: 640px;
   }
   @include Tablet {
     margin: 0 auto;
@@ -59,7 +59,7 @@
   flex-wrap: wrap;
   margin: 0 auto;
   @include Mobile {
-    width: 280px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +67,7 @@
     margin: 0 auto;
   }
   @include SmallPhone {
-    width: 600px;
+    width: 640px;
   }
   @include Tablet {
     width: 100%;
@@ -87,13 +87,22 @@
     border-radius: 50px;
   }
   @include Mobile {
-    width: 280px;
+    width: 320px;
   }
   @include SmallPhone {
-    width: 300px;
+    width: 320px;
+  }
+  @include Tablet {
+    width: 256px;
   }
   @include Notebook {
     width: 320px;
+  }
+  @include TheDesign {
+    width: 400px;
+  }
+  @include FullHD {
+    width: 480px;
   }
  
 }
@@ -200,7 +209,7 @@
   align-items: center;
   text-align: center;
   @include Mobile {
-    width: 280px;
+    width: 320px;
   }
 }
 
@@ -209,7 +218,7 @@
   align-items: center;
   padding-left: 15px;
   @include Mobile {
-    width: 280px;
+    width: 320px;
     padding-left: 0;
   }
   @include SmallPhone {
@@ -222,7 +231,7 @@
   align-items: center;
   text-align: center;
   @include Mobile {
-    width: 280px;
+    width: 320px;
   }
 }
 

@@ -4,20 +4,28 @@
   flex-wrap: wrap;
   margin: 0 auto;
   @include Mobile {
-    width: 280px;
+    width: 320px;
     display: flex;
     flex-direction: column;
   }
   @include SmallPhone {
-    width: 600px;
+    width: 640px;
   }
   @include Tablet {
     width: 1024px;
-    margin: 20px auto;
   }
   @include Notebook {
     width: 1280px;
-    margin: 20px auto;
+  }
+  @include t1440 {
+    width: 1440px;
+    margin-top: 120px;
+  }
+  @include TheDesign {
+    width: 1600px;
+  }
+  @include FullHD {
+    width: 1920px;
   }
 }
 
@@ -31,16 +39,22 @@
     border-radius: 50px;
   }
   @include Mobile {
-    width: 280px;
+    width: 320px;
   }
   @include SmallPhone {
-    width: 600px;
+    width: 640px;
   }
   @include Tablet {
-    margin: 20px auto;
+    width: 512px;
   }
   @include Notebook {
     width: 426px;
+  }
+  @include TheDesign {
+    width: 533.33px;
+  }
+  @include FullHD {
+    width: 640px;
   }
 }
 
@@ -56,6 +70,20 @@
   background-image: url(/images/image__cards/strawberry.png);
   @include SmallPhone {
     background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+  }
+  @include Tablet {
+    background-size: 100%;
+  }
+  @include TheDesign {
+    object-fit: cover;
+    background-size: 100%;
+  }
+  @include FullHD {
+    background-size: 100%;
+  }
+  @include LargeScreens {
     background-size: 100%;
   }
 }

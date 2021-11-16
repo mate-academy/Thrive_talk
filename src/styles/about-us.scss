@@ -1,8 +1,5 @@
 .about-us {
   background: #fff;
-  @include Mobile {
-    width: 280px;
-  }
   @include SmallPhone {
     width: 640px;
   }

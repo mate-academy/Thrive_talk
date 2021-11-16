@@ -11,12 +11,11 @@
   background-color: #fff;
   margin: 0 auto;
   @include Mobile {
-    width: 280px;
+    width: 320px;
     flex-direction: column;
   }
   @include SmallPhone {
-    width: 600px;
-    padding: 20px;
+    width: 640px;
     flex-direction: column;
   }
   @include Tablet {
@@ -33,12 +32,13 @@
   width: 480px;
   height: 800px;
   @include Mobile {
-    width: 280px;
-    height: 450px;
+    width: 320px;
+    height: 100%;
   }
   @include SmallPhone {
-    height: 1000px;
-    width: 100%;
+    height: 100%;
+    width: 640px;
+
     object-fit: contain;
   }
 
@@ -63,8 +63,7 @@
     padding: 40px 20px;
   }
   @include SmallPhone {
-    padding-top: 40px;
-    padding-left: 0;
+    padding: 40px 20px;
   }
   @include Tablet {
     padding-left: 40px;
@@ -73,6 +72,9 @@
   @include Notebook {
     padding-left: 40px;
     padding-top: 40px;
+  }
+  @include TheDesign {
+    padding-left: 220px;
   }
   @include FullHD {
     padding-left: 240px;
