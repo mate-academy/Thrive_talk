@@ -22,7 +22,7 @@
   padding-top: 20px;
   @include Mobile {
     width: 320px;
-    padding: 0 20px;
+    padding: 10px 20px;
   }
   @include SmallPhone {
     width: 640px;
@@ -154,6 +154,7 @@
   }
   @include SmallPhone {
     margin-left: 160px;
+    margin-right: 20px;
   }
   @include Tablet {
     margin-left: 330px;
@@ -195,7 +196,7 @@
 }
 
 .button:hover {
-  transform: scale(1.05) translate(-5px, -5px);
+  transform: scale(1.05) translate(-5px, 5px);
   box-shadow: 5px 9px 18px #62d0df;
 }
 
@@ -280,10 +281,10 @@
   margin-top: 187px;
   width: 200px;
   @include Mobile {
-    margin-top: 20px;
+    display: none;
   }
   @include SmallPhone {
-    margin-top: 40px;
+    display: none;
   }
   @include Tablet {
     margin-top: 60px;
