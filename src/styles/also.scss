@@ -9,50 +9,27 @@
   display: flex;
   flex-direction: row;
   background-color: #fff;
-  margin: 0 auto;
   @include Mobile {
-    width: 320px;
+    width: 100%;
     flex-direction: column;
   }
-  @include SmallPhone {
-    width: 640px;
-    flex-direction: column;
-  }
-  @include Tablet {
-    width: 1024px;
-    margin: 0 auto;
-  }
-  @include LargeScreens {
-    margin: 0 auto;
-  }
-
 }
 
 .also__image {
-  width: 480px;
-  height: 800px;
+  max-width: 1920px;
+  object-fit: cover;
+  height: 100%;
   @include Mobile {
-    width: 320px;
-    height: 100%;
+    width: 100%;
+    height: 300px;
   }
   @include SmallPhone {
-    height: 100%;
-    width: 640px;
-
-    object-fit: contain;
-  }
-
-  @include TheDesign {
-    width: 550px;
-    height: 100%;
-  }
-  @include FullHD {
-    width: 700px;
-    height: 100%;
+    object-fit: cover;
+    max-width: 1024px;
+    height: 500px;
   }
   @include LargeScreens {
-    width: 660px;
-    height: 100%;
+    max-width: 1440px;
   }
 }
 
@@ -150,12 +127,12 @@
     margin-top: 400px;
   }
   @include TheDesign {
-    margin-top: 490px;
+    margin-top: 390px;
   }
   @include FullHD {
-    margin-top: 720px;
+    margin-top: 400px;
   }
   @include LargeScreens {
-    margin-top: 700px;
+    margin-top: 400px;
   }
 }

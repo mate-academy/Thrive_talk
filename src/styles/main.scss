@@ -13,7 +13,7 @@
 @import "some.scss";
 @import "footer.scss";
 
-body {
+.body {
   background: $c-gray;
 }
 
@@ -30,57 +30,19 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
+  max-width: 1920px;
   @include Mobile {
-    width: 320px;
+    max-width: 100%;
   }
   @include SmallPhone {
-    width: 640px;
-  }
-  @include Tablet {
-    width: 1024px;
-  }
-  @include Notebook {
-    width: 1280px;
-  }
-  @include t1440 {
-    width: 1440px;
-  }
-  @include TheDesign {
-    width: 1600px;
-  }
-  @include FullHD {
-    width: 1920px;
-  }
-  @include LargeScreens {
-    width: 2560px;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 
 .main {
-  @include Mobile {
-    width: 320px;
-  }
-  @include SmallPhone {
-    width: 640px;
-  }
-  @include Tablet {
-    width: 1024px;
-  }
   @include Notebook {
-    width: 1280px;
     overflow-y: hidden;
     overflow-x: hidden;
-  }
-  @include t1440 {
-    width: 1440px;
-  }
-  @include TheDesign {
-    width: 1600px;
-  }
-  @include FullHD {
-    width: 1920px;
-  }
-  @include LargeScreens {
-    width: 2560px;
   }
 }

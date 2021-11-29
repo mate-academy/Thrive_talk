@@ -1,37 +1,18 @@
 .image__cards_container {
-  width: 1440px;
+  max-width: 1920px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   @include Mobile {
-    width: 320px;
     display: flex;
     flex-direction: column;
-  }
-  @include SmallPhone {
-    width: 640px;
-  }
-  @include Tablet {
-    width: 1024px;
-  }
-  @include Notebook {
-    width: 1280px;
-  }
-  @include t1440 {
-    width: 1440px;
-    margin-top: 120px;
-  }
-  @include TheDesign {
-    width: 1600px;
-  }
-  @include FullHD {
-    width: 1920px;
   }
 }
 
 .image__card {
   position: relative;
-  width: 480px;
+  max-width: 33.33%;
+  width: 100%;
   height: 480px;
   display: flex;
   flex-direction: column;
@@ -39,22 +20,10 @@
     border-radius: 50px;
   }
   @include Mobile {
-    width: 320px;
+    max-width: 100%;
   }
   @include SmallPhone {
-    width: 640px;
-  }
-  @include Tablet {
-    width: 512px;
-  }
-  @include Notebook {
-    width: 426px;
-  }
-  @include TheDesign {
-    width: 533.33px;
-  }
-  @include FullHD {
-    width: 640px;
+    max-width: 50%;
   }
 }
 
@@ -68,23 +37,16 @@
 
 .image__card3 {
   background-image: url(/images/image__cards/strawberry.png);
-  @include SmallPhone {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-  }
-  @include Tablet {
-    background-size: 100%;
-  }
-  @include TheDesign {
-    object-fit: cover;
-    background-size: 100%;
-  }
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  background-size: cover;
+  background-position: 50% 50%;
   @include FullHD {
-    background-size: 100%;
+    max-width: 640px;
   }
   @include LargeScreens {
-    background-size: 100%;
+    max-width: 640px;
   }
 }
 
@@ -101,7 +63,7 @@
 }
 
 .image__card_shadow1 {
-  width: 340px;
+  width: 70%;
   height: 96px;
   background: #22356f;
   box-shadow: inset 0 -1px 0 #fff;
@@ -110,13 +72,10 @@
     width: 280px;
     margin-left: 0;
   }
-  @include SmallPhone {
-    width: 400px;
-  }
 }
 
 .image__card_shadow2 {
-  width: 340px;
+  width: 70%;
   height: 96px;
   background: #0052c1;
   box-shadow: inset 0 -1px 0 #fff;
@@ -129,7 +88,7 @@
 }
 
 .image__card_shadow3 {
-  width: 340px;
+  width: 70%;
   height: 96px;
   box-shadow: inset 0 -1px 0 #fff;
   margin-left: 50px;
@@ -140,8 +99,8 @@
 }
 
 .image__card_shadow4 {
-  width: 340px;
   height: 96px;
+  width: 70%;
   background: #62d0df;
   box-shadow: inset 0 -1px 0 #fff;
   margin-left: 50px;
@@ -152,7 +111,7 @@
 }
 
 .image__card_shadow5 {
-  width: 340px;
+  width: 70%;
   height: 96px;
   background: #dee1ff;
   box-shadow: inset 0 -1px 0 #fff;
@@ -164,7 +123,7 @@
 }
 
 .image__card_shadow6 {
-  width: 340px;
+  width: 70%;
   height: 96px;
   background: #8f00ff;
   box-shadow: inset 0 -1px 0 #fff;

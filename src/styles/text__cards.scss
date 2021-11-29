@@ -2,32 +2,17 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1440px;
-  margin: 0 auto ;
+  max-width: 1920px;
   @include Mobile {
-    width: 320px;
     flex-direction: column;
   }
   @include SmallPhone {
-    width: 640px;
     justify-content: center;
-  }
-  @include Tablet {
-    width: 1024px;
-  }
-  @include Notebook {
-    width: 1280px;
-  }
-  @include TheDesign {
-    width: 1600px;
-  }
-  @include FullHD {
-    width: 1920px;
   }
 }
 
 .text__card {
-  width: 480px;
+  width: 33.33%;
   height: 240px;
   background: #fff;
   display: flex;
@@ -35,21 +20,21 @@
   padding-top: 55px;
   transition: all 0.5s ease-in-out;
   @include Mobile {
-    width: 320px;
-    padding-top: 0;
+    width: 100%;
+    padding-top: 20px;
     height: 100%;
   }
   @include SmallPhone {
-    width: 320px;
+    width: 50%;
   }
   @include Tablet {
-    width: 512px;
+    max-width: 33.33%;
   }
   @include Notebook {
-    width: 426px;
+    max-width: 33.33%;
   }
   @include TheDesign {
-    width: 533.33px;
+    width: 33.33%;
   }
   @include FullHD {
     width: 640px;
@@ -89,7 +74,7 @@
   text-align: center;
   margin: 0 auto;
   @include Mobile {
-    width: 100%;
+    width: 75%;
     padding: 20px;
     height: 150px;
   }

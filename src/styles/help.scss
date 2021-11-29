@@ -1,42 +1,8 @@
-.help {
-  @include Mobile {
-    width: 320px;
-  }
-  @include SmallPhone {
-    width: 640px;
-
-  }
-  @include Tablet {
-    width: 1024px;
-  }
-  @include Notebook {
-    width: 1280px;
-  }
-  @include t1440 {
-    width: 1440px;
-  }
-  @include TheDesign {
-    width: 1600px;
-  }
-  @include FullHD {
-    width: 1920px;
-  }
-  @include LargeScreens {
-    width: 2560px;
-  }
-}
-
 .help__container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  @include SmallPhone {
-    width: 640px;
-  }
-  @include Tablet {
-    margin: 0 auto;
-    width: 1024px;
-  }
+  width: 100%;
 }
 
 .help__title {
@@ -57,52 +23,58 @@
 .help__cards_container {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  max-width: 100%;
   @include Mobile {
-    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
   }
   @include SmallPhone {
-    width: 640px;
-  }
-  @include Tablet {
-    width: 100%;
+    justify-content: center;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
   }
 }
 
 .help__card {
   position: relative;
-  width: 360px;
   height: 360px;
   display: flex;
   flex-direction: column;
+  width: 100%;
   &:hover {
     border-radius: 50px;
   }
   @include Mobile {
-    width: 320px;
+    width: 100%;
   }
   @include SmallPhone {
-    width: 320px;
+    width: 100%;
+    max-width: 50%;
   }
   @include Tablet {
-    width: 256px;
+    width: 100%;
+    max-width: 25%;
+
   }
   @include Notebook {
-    width: 320px;
+    width: 100%;
+    max-width: 25%;
+
+  }
+  @include t1440 {
+    width: 100%;
+    max-width: 25%;
   }
   @include TheDesign {
-    width: 400px;
+    width: 100%;
+    max-width: 25%;
   }
   @include FullHD {
     width: 480px;
+  }
+  @include LargeScreens {
+    max-width: 25%;
   }
  
 }
@@ -209,7 +181,7 @@
   align-items: center;
   text-align: center;
   @include Mobile {
-    width: 320px;
+    width: 100%;
   }
 }
 
@@ -218,7 +190,7 @@
   align-items: center;
   padding-left: 15px;
   @include Mobile {
-    width: 320px;
+    width: 100%;
     padding-left: 0;
   }
   @include SmallPhone {
@@ -231,7 +203,7 @@
   align-items: center;
   text-align: center;
   @include Mobile {
-    width: 320px;
+    width: 100%;
   }
 }
 
