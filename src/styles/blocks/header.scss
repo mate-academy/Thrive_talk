@@ -1,0 +1,126 @@
+.header {
+  position: relative;
+  background: #f4f9e2;
+
+  &__container {
+    width: 100%;
+
+    box-sizing: border-box;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    margin: 82px 32px 0;
+
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    @include tablet {
+      margin-left: 78px;
+      margin-top: 164px;
+    }
+  }
+
+  &__tittle {
+    margin-top: 0;
+    margin-bottom: 18px;
+
+    width: fit-content;
+    font-size: 24px;
+    font-weight: bold;
+
+    color: $dark-blue;
+
+    @include notebook {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -0.15rem;
+      height: 168px;
+    }
+  }
+
+  &__paragraph {
+    max-width: 320px;
+    font-size: 16px;
+    font-style: normal;
+    color: $dark-blue;
+    margin-bottom: 62px;
+    // max-width: 280px;
+
+    @include notebook {
+      width: 468px;
+      font-size: 24px;
+      font-style: normal;
+      margin-bottom: 62px;
+    }
+  }
+
+  &__img {
+    display: none;
+
+    @media (min-width: 638px) {
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      z-index: 0;
+      height: 80%;
+    }
+  }
+
+  &__photo-container {
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  &__button {
+    display: flex;
+    position: relative;
+    gap: 38px;
+
+    border: none;
+    text-decoration: none;
+    max-width: 338px;
+    margin-bottom: 48px;
+
+    @include mobile {
+      gap: 16px;
+    }
+
+    &-yellow {
+      display: block;
+      background-color: #f9b640;
+      padding: 10px 30px;
+      border: 1px solid #f9b640;
+
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+
+      @include mobile {
+        font-size: 12px;
+        padding: 8px 15px 6px;
+      }
+  
+      &:hover {
+        background-color: transparent;
+        color: #f9b640;
+      }
+  
+      &--transparent {
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: #f9b640;
+  
+        &:hover {
+          border: 1px solid #f9b640;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  background-color: $dark-blue;
+
+  &__text-container {
+    @extend .you-should-also-know__text-container;
+  }
+
+  &__head-tittle {
+    @extend .you-should-also-know__tittle;
+    color: #fff;
+  }
+
+  &__tittle {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.01em;
+    color: #fff;
+
+    @include tablet {
+      font-size: 64px;
+      line-height: 94px;
+    }
+  }
+
+  &__paragraph {
+    @extend .you-should-also-know__paragraph;
+    color: #fff;
+  }
+
+  &__link {
+    display: flex;
+    margin-top: 152px;
+    color: $light-blue;
+
+    &:hover {
+      border-bottom: 1px solid $light-blue;
+      width: max-content;
+    }
+  }
+
+  &__photo-container {
+    @extend .you-should-also-know__photo-container;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}

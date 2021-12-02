@@ -2,6 +2,88 @@
 @import "fonts";
 @import "typography";
 
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/whyThrive.scss";
+@import "./blocks/aboutUs.scss";
+@import "./blocks/we-can-help-you-with.scss";
+@import "./blocks/squares.scss";
+@import "./blocks/cards-on-white.scss";
+@import "./blocks/cards.scss";
+@import "./blocks/you-should-also-know.scss";
+@import "./blocks/contact-us.scss";
+@import "./blocks/some-info.scss";
+@import "./blocks/footer.scss";
+
 body {
   background: $c-gray;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Larsseit", sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translateX(100%);
+    transition: 0.4s;
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+}
+//logo
+.logo {
+  display: flex;
+  align-items: left;
+  color: $light-blue;
+  font-weight: bold;
+  font-size: 24px;
+
+  &__text {
+    display: flex;
+    text-align: left;
+    letter-spacing: -0.02rem;
+    margin-bottom: 40px;
+  }
+}
+
+.white-space {
+  background-color: #fff;
+  height: 60px;
+  width: 100%;
+
+  @include tablet {
+    height: 120px;
+  }
+}
+
+.anchor {
+  display: none;
+}
+
+// get help link seperate block
+.get-help-link {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+// ---

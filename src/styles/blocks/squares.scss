@@ -1,0 +1,90 @@
+.squares {
+  @extend .we-can-help-you-with;
+
+  @media (min-width: 1080px) and (max-width: 1440px) {
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(3, minmax(480px, 1fr));
+  }
+
+  @include tablet {
+    grid-auto-rows: 480px;
+  }
+
+  $block-color:
+    1 #22356f,
+    2 #0052c1,
+    // 3 bg-image
+    4 #62d0df,
+    5 #dee1ff,
+    6 #8f00ff;
+
+  @each $num, $color in $block-color {
+    &__square--#{$num} {
+      background-color: #{$color};
+    }
+  }
+
+  &__ul {
+    display: flex;
+    @extend .square__ul;
+
+    @include tablet {
+      padding-top: 72px;
+    }
+  }
+
+  &__li {
+    display: flex;
+    @extend .square__li;
+    align-items: center;
+
+    &::before {
+      color: #e9b730;
+      content: "• ";
+    }
+  }
+
+  &__square {
+    width: 100%;
+
+    &--3 {
+      background-image: url(../images/main-block-photo.png);
+      object-fit: cover;
+      // background-repeat: no-repeat;
+    }
+  }
+}
+
+.square {
+  min-width: 100%;
+
+  &__ul {
+    padding-left: 40px;
+    padding-top: 32px;
+    align-self: center;
+
+    @include tablet {
+      padding-top: 72px;
+    }
+  }
+
+  &__li {
+    list-style-type: none;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+    color: #fff;
+    font-weight: 450;
+    border-top: 1px solid #fff;
+    margin-right: 40px;
+    padding-top: 24px;
+
+    &::before {
+      color: #e9b730;
+      content: "• ";
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.you-should-also-know {
+  display: flex;
+  background-color: #fff;
+
+  &__photo-container {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__text-container {
+    margin: 42px 48px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      margin-top: 102px;
+      margin-left: 106px;
+    }
+  }
+
+  &__tittle {
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+
+    color: $dark-blue;
+
+    width: max-content;
+    height: max-content;
+    margin-bottom: 72px;
+
+    @include tablet {
+      margin: 0;
+    }
+  }
+
+  &__paragraph {
+    max-width: 676px;
+    max-height: max-content;
+    margin-bottom: 72px;
+    flex-direction: column;
+
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    color: $dark-blue;
+
+    @include tablet {
+      font-size: 36px;
+      line-height: 53px;
+
+      margin-top: 224px;
+      margin-bottom: 0;
+    }
+
+    &--color-text {
+      width: max-content;
+      color: $light-blue;
+    }
+  }
+
+  &__link {
+    color: $yellow;
+    display: flex;
+    margin-top: 152px;
+
+    &:hover {
+      border-bottom: 1px solid $yellow;
+      width: max-content;
+    }
+  }
+}

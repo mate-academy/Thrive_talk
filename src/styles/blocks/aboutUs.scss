@@ -1,0 +1,59 @@
+.aboutUs {
+  height: max-content;
+  width: 100vw;
+  background-color: #fff;
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 32px;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 30vw;
+      justify-content: start;
+      padding-top: 150px;
+      padding-left: 106px;
+    }
+  }
+
+  &__tittle {
+    display: flex;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: $dark-blue;
+
+    margin-bottom: 0;
+    width: max-content;
+    white-space: nowrap;
+  }
+
+  &__paragraph {
+    display: flex;
+    font-size: 24px;
+    font-weight: 450;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+
+    color: $dark-blue;
+
+    margin-right: 32px;
+
+    max-width: 592px;
+
+    padding-bottom: 76px;
+  }
+
+  &__bottom-tittle {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: rgba(34, 53, 111, 0.5);
+    padding-bottom: 24px;
+    margin: 0;
+  }
+}
