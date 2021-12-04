@@ -12,5 +12,7 @@
     color: #fff;
 
     margin-left: 12.5vw;
+
+    @include hover(transform, scale(1.2));
   }
 }

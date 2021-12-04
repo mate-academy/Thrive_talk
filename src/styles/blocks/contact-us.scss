@@ -3,6 +3,11 @@
   justify-content: space-between;
   background-color: $dark-blue;
 
+  &__big-container {
+    display: flex;
+    height: max-content;
+  }
+
   &__text-container {
     @extend .you-should-also-know__text-container;
   }
@@ -26,7 +31,12 @@
 
   &__paragraph {
     @extend .you-should-also-know__paragraph;
+    max-width: 434px;
     color: #fff;
+
+    @include tablet {
+      max-width: 584px;
+    }
   }
 
   &__link {
@@ -42,6 +52,8 @@
 
   &__photo-container {
     @extend .you-should-also-know__photo-container;
+    position: relative;
+    right: -150px;
   }
 
   &__img {

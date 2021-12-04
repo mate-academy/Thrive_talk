@@ -9,6 +9,8 @@
     margin-left: 178px;
     margin-top: 26px;
 
+    @include hover(transform, scale(1.2));
+
     @include mobile {
       margin-left: 32px;
     }
@@ -30,6 +32,8 @@
 
     cursor: pointer;
     z-index: 2;
+
+    @include hover(transform, scale(1.2));
 
     &::before {
       @include burger-menu;
@@ -150,7 +154,7 @@
       width: 100vw;
       height: 200px;
 
-      transition-duration: 0.3s;
+      // transition-duration: 0.3s;
 
       align-items: center ;
       border-radius: 50px;

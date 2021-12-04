@@ -17,6 +17,7 @@
 
 body {
   background: $c-gray;
+  // max-width: 2560px;
 }
 
 a {
@@ -76,7 +77,8 @@ a {
 }
 
 .anchor {
-  display: none;
+  visibility: hidden;
+  position: absolute;
 }
 
 // get help link seperate block

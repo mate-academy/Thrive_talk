@@ -4,12 +4,17 @@
 
   &__container {
     width: 100%;
+    max-width: 1440px;
 
     box-sizing: border-box;
     height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  &__big-container {
+    display: flex;
   }
 
   &__block {
@@ -19,6 +24,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    z-index: 1;
 
     @include tablet {
       margin-left: 78px;
@@ -50,10 +56,11 @@
     font-style: normal;
     color: $dark-blue;
     margin-bottom: 62px;
+    margin-right: 32px;
     // max-width: 280px;
 
     @include notebook {
-      width: 468px;
+      max-width: 470px;
       font-size: 24px;
       font-style: normal;
       margin-bottom: 62px;
@@ -64,8 +71,8 @@
     display: none;
 
     @media (min-width: 638px) {
-      display: block;
-      position: absolute;
+      display: flex;
+      position: relative;
       top: 60px;
       right: 0;
       z-index: 0;
@@ -76,6 +83,9 @@
   &__photo-container {
     overflow: hidden;
     z-index: 0;
+    display: flex;
+    position: relative;
+    right: -158px;
   }
 
   &__button {
@@ -92,7 +102,7 @@
       gap: 16px;
     }
 
-    &-yellow {
+    &--yellow {
       display: block;
       background-color: #f9b640;
       padding: 10px 30px;
@@ -111,15 +121,23 @@
         background-color: transparent;
         color: #f9b640;
       }
-  
-      &--transparent {
-        background-color: transparent;
-        border: 1px solid transparent;
-        color: #f9b640;
-  
-        &:hover {
-          border: 1px solid #f9b640;
-        }
+    }
+
+    &--transparent {
+      // @extend header__button--yellow;
+      background-color: transparent;
+      border: 1px solid transparent;
+      color: #f9b640;
+      font-size: 16px;
+      font-weight: bold;
+
+      &:hover {
+        border: 1px solid #f9b640;
+      }
+
+      @include mobile {
+        font-size: 12px;
+        padding: 8px 15px 6px;
       }
     }
   }

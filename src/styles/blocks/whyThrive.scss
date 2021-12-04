@@ -7,13 +7,19 @@
 
   background: $light-blue;
 
+  &__big-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: max-content;
+  }
+
   &-text-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
     margin: 32px;
-    width: 240px;
+    justify-content: space-around;
+    // width: 240px;
 
     @include tablet {
       margin-top: 78px;
@@ -40,7 +46,7 @@
     color: #fff;
     font-size: 16px;
     line-height: 28px;
-    width: 200px;
+    width: 50vw;
 
     @include tablet {
       height: max-content;
@@ -59,9 +65,11 @@
   &-photo-container {
     position: relative;
     display: none;
+    object-fit: fill;
+    height: max-content;
 
     @include tablet {
-      left: 0;
+      right: -143px;
       height: 100%;
     }
 
