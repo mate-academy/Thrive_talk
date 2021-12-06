@@ -1,16 +1,16 @@
 .contact-us {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   background-color: $dark-blue;
   overflow-x: hidden;
 
+  max-width: 1440px;
+  margin: 0 auto;
+
   &__big-container {
     display: flex;
+    justify-content: space-between;
     height: max-content;
-
-    @media (min-width: 1400px) {
-      justify-content: space-around;
-    }
   }
 
   &__text-container {
@@ -57,10 +57,15 @@
   }
 
   &__photo-container {
-    display: flex;
+    display: none;
+
     @extend .you-should-also-know__photo-container;
     position: relative;
-    right: -150px;
+    // right: -150px;
+
+    @include tablet {
+      display: flex;
+    }
   }
 
   &__img {

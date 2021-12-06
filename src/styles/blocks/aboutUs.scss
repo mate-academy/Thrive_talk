@@ -2,6 +2,9 @@
   height: max-content;
   width: 100vw;
   background-color: #fff;
+
+  max-width: 1440px;
+  margin: 0 auto;
   
   &__container {
     display: flex;

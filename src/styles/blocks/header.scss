@@ -1,17 +1,45 @@
 .header {
+  display: flex;
   position: relative;
   background: #f4f9e2;
 
+  max-width: 1440px;
+  margin: 0 auto;
+
+  // @include mobile-big {
+  //   justify-content: center;
+  //   text-align: center;
+  // }
+
+  @media (min-width: 1400px) {
+    justify-content: space-around;
+  }
+
   &__container {
+    display: flex;
     width: 100%;
     max-width: 1440px;
-
-    box-sizing: border-box;
+    // box-sizing: border-box;
     height: max-content;
-    display: flex;
+
     flex-direction: column;
     justify-content: space-between;
+
+    // @include mobile-big {
+    //   width: 160%;
+    // }
+
+    @media (min-width: 1400px) {
+      position: relative;
+      left: 82px;
+    }
   }
+
+  // &__nav {
+  //   @include mobile-big {
+  //     display: flex;
+  //   }
+  // }
 
   &__big-container {
     display: flex;
@@ -27,13 +55,22 @@
     position: relative;
     z-index: 1;
 
+    // @include mobile-big {
+    //   align-items: center;
+    // }
+
     @include tablet {
       margin-left: 78px;
       margin-top: 164px;
     }
+
+    @media (min-width: 1400px) {
+      justify-content: flex-start;
+    }
   }
 
   &__tittle {
+    display: flex;
     margin-top: 0;
     margin-bottom: 18px;
 
@@ -58,7 +95,10 @@
     color: $dark-blue;
     margin-bottom: 62px;
     margin-right: 32px;
-    // max-width: 280px;
+
+    // @include mobile-big {
+    //   margin-right: 0;
+    // }
 
     @include notebook {
       max-width: 470px;
@@ -68,16 +108,40 @@
     }
   }
 
+  &__rectangle {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      position: absolute;
+      right: 0;
+    }
+  }
+
   &__img {
     display: none;
 
-    @media (min-width: 638px) {
+    @include tablet {
+      display: flex;
+      position: absolute;
+      top: -18px;
+      right: 0;
+      z-index: 0;
+      height: 100%;
+    }
+  }
+
+  &__img-1 {
+    display: none;
+
+    @include tablet {
       display: flex;
       position: relative;
       top: 60px;
       right: 0;
       z-index: 0;
       height: 80%;
+      visibility: hidden;
     }
   }
 
@@ -86,7 +150,7 @@
     z-index: 0;
     display: flex;
     position: relative;
-    right: -158px;
+    // right: -158px;
   }
 
   &__button {

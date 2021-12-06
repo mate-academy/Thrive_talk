@@ -2,9 +2,8 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: 1400px) {
-    justify-content: space-around;
-  }
+  max-width: 1440px;
+  margin: 0 auto;
 
   &__photo-container {
     display: none;
