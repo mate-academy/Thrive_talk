@@ -59,10 +59,15 @@ a {
   font-size: 24px;
 
   &__text {
-    display: flex;
+    display: none;
     text-align: left;
     letter-spacing: -0.02rem;
     margin-bottom: 40px;
+
+    
+    @media (min-width: 640px) {
+      display: flex;
+    }
   }
 }
 

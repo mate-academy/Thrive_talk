@@ -2,13 +2,19 @@
   display: flex;
   justify-content: space-between;
   background-color: $dark-blue;
+  overflow-x: hidden;
 
   &__big-container {
     display: flex;
     height: max-content;
+
+    @media (min-width: 1400px) {
+      justify-content: space-around;
+    }
   }
 
   &__text-container {
+    display: flex;
     @extend .you-should-also-know__text-container;
   }
 
@@ -51,6 +57,7 @@
   }
 
   &__photo-container {
+    display: flex;
     @extend .you-should-also-know__photo-container;
     position: relative;
     right: -150px;
