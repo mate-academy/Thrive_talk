@@ -14,8 +14,8 @@
 
     @include tablet {
       flex-direction: row;
-      gap: 30vw;
-      justify-content: start;
+      // gap: 30vw;
+      justify-content: space-evenly;
       padding-top: 150px;
       padding-left: 106px;
     }
