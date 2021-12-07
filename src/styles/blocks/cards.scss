@@ -1,0 +1,23 @@
+.cards {
+  padding: 15%;
+
+  &__tittle {
+    margin-bottom: 28px;
+
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+
+    color: $dark-blue;
+  }
+
+  &__paragraph {
+    max-width: 298px;
+
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+
+    color: rgba(34, 53, 111, 0.5);
+  }
+}

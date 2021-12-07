@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: $light-blue;
+
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__text {
+    font-size: 14px;
+    line-height: 11px;
+    font-weight: 450;
+    letter-spacing: -0.01em;
+    color: #fff;
+
+    margin-left: 12.5vw;
+
+    @include hover(transform, scale(1.2));
+  }
+}

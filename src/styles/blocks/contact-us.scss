@@ -1,0 +1,74 @@
+.contact-us {
+  // display: flex;
+  // justify-content: space-between;
+  background-color: $dark-blue;
+  overflow-x: hidden;
+
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__big-container {
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+  }
+
+  &__text-container {
+    display: flex;
+    @extend .you-should-also-know__text-container;
+  }
+
+  &__head-tittle {
+    @extend .you-should-also-know__tittle;
+    color: #fff;
+  }
+
+  &__tittle {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.01em;
+    color: #fff;
+
+    @include tablet {
+      font-size: 64px;
+      line-height: 94px;
+    }
+  }
+
+  &__paragraph {
+    @extend .you-should-also-know__paragraph;
+    max-width: 434px;
+    color: #fff;
+
+    @include tablet {
+      max-width: 584px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    margin-top: 152px;
+    color: $light-blue;
+
+    &:hover {
+      border-bottom: 1px solid $light-blue;
+      width: max-content;
+    }
+  }
+
+  &__photo-container {
+    display: none;
+
+    @extend .you-should-also-know__photo-container;
+    position: relative;
+    // right: -150px;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
