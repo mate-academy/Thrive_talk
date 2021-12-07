@@ -1,0 +1,143 @@
+.also {
+  @include LargeScreens {
+    display: flex;
+  }
+}
+
+.also__container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  max-width: 1920px;
+  @include Mobile {
+    width: 100%;
+    flex-direction: column;
+  }
+  @include LargeScreens {
+    width: 1920px;
+  }
+}
+
+.also__image {
+  max-width: 1920px;
+  object-fit: cover;
+  height: 100%;
+  @include Mobile {
+    width: 100%;
+    height: 300px;
+  }
+  @include SmallPhone {
+    object-fit: cover;
+    max-width: 1024px;
+    height: 500px;
+  }
+  @include LargeScreens {
+    max-width: 1440px;
+  }
+}
+
+.also__info {
+  padding-top: 103px;
+  padding-left: 106px;
+  @include Mobile {
+    padding: 40px 20px;
+  }
+  @include SmallPhone {
+    padding: 40px 20px;
+  }
+  @include Tablet {
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+  @include Notebook {
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  @include TheDesign {
+    padding-left: 220px;
+  }
+  @include FullHD {
+    padding-left: 240px;
+  }
+
+}
+
+.also__title {
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+
+  color: #22356f;
+
+  text-transform: uppercase;
+}
+
+.also__text {
+  padding-top: 225px;
+  width: 676px;
+  height: 215px;
+  font-family: "Larsseit", sans-serif;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+
+  color: #22356f;
+  @include Mobile {
+    width: 250px;
+    height: 380px;
+    padding-top: 40px;
+    font-size: 24px;
+  }
+  @include SmallPhone {
+    width: 600px;
+    padding-top: 60px;
+    height: 260px;
+  }
+  @include Tablet {
+    width: 490px;
+    padding-top: 60px;
+    font-size: 48px;
+  }
+}
+
+.also__text_link {
+  color: #62d0df;
+}
+
+.also__link {
+  margin-top: 152px;
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+
+  color: #fab63e;
+  @include Mobile {
+    margin-top: 50px;
+  }
+  @include SmallPhone {
+    margin-top: 80px;
+  }
+  @include Tablet {
+    margin-top: 500px;
+  }
+  @include Notebook {
+    margin-top: 480px;
+  }
+  @include t1440 {
+    margin-top: 400px;
+  }
+  @include TheDesign {
+    margin-top: 390px;
+  }
+  @include FullHD {
+    margin-top: 400px;
+  }
+  @include LargeScreens {
+    margin-top: 400px;
+  }
+}

@@ -1,0 +1,89 @@
+.text__cards_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  @include Mobile {
+    flex-direction: column;
+  }
+  @include SmallPhone {
+    justify-content: center;
+  }
+}
+
+.text__card {
+  width: 33.33%;
+  height: 240px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+  transition: all 0.5s ease-in-out;
+  @include Mobile {
+    width: 100%;
+    padding-top: 20px;
+    height: 100%;
+  }
+  @include SmallPhone {
+    width: 50%;
+  }
+  @include Tablet {
+    max-width: 33.33%;
+  }
+  @include Notebook {
+    max-width: 33.33%;
+  }
+  @include TheDesign {
+    width: 33.33%;
+  }
+  @include FullHD {
+    width: 640px;
+  }
+}
+
+.text__card_title {
+  font-family: "Larsseit", sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: -0.03em;
+
+  color: #22356f;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+  @include Mobile {
+    padding: 5px 20px;
+    height: 50px;
+  }
+  @include SmallPhone {
+    padding: 10px;
+  }
+}
+
+.text__card_info {
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+
+  color: rgba(34, 53, 111, 0.5);
+  width: 300px;
+  height: 84px;
+  padding: 20px;
+  padding-top: 28px;
+  text-align: center;
+  margin: 0 auto;
+  @include Mobile {
+    width: 75%;
+    padding: 20px;
+    height: 150px;
+  }
+  @include SmallPhone {
+    padding: 30px;
+    width: 100%;
+  }
+  @include Notebook {
+    padding-top: 50px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,57 @@
+.footer__container {
+  background: #62d0df;
+  height: 80px;
+  width: 100%;
+  padding-left: 179px;
+  @include Mobile {
+    padding: 20px;
+    height: 50px;
+  }
+  @include SmallPhone {
+    padding: 20px;
+  }
+  @include Tablet {
+    padding: 20px;
+  }
+  @include Notebook {
+    padding: 20px;
+
+  }
+  @include TheDesign {
+    padding-top: 20px;
+  }
+  @include FullHD {
+    padding-top: 20px;
+  }
+}
+
+.footer__text {
+  font-family: "Larsseit", sans-serif;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: -0.01em;
+
+  color: #fff;
+  padding-top: 32px;
+  @include Mobile {
+    padding-top: 0;
+  }
+  @include Tablet {
+    padding-top: 20px;
+  }
+  @include Notebook {
+    padding-top: 20px;
+  }
+  @include TheDesign {
+    padding-top: 20px;
+  }
+  @include FullHD {
+    padding-top: 20px;
+  }
+  &::before {
+    content: "\00a9";
+    width: 9px;
+    height: 12px;
+    padding-right: 6px;
+  }
+}

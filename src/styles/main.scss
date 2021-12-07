@@ -2,6 +2,47 @@
 @import "fonts";
 @import "typography";
 
-body {
+@import "header.scss";
+@import "why.scss";
+@import "about-us.scss";
+@import "help.scss";
+@import "image__cards.scss";
+@import "text__cards.scss";
+@import "also.scss";
+@import "contact-us.scss";
+@import "some.scss";
+@import "footer.scss";
+
+.body {
   background: $c-gray;
+}
+
+* {
+  scroll-behavior: smooth;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1920px;
+  @include Mobile {
+    max-width: 100%;
+  }
+  @include SmallPhone {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.main {
+  @include Notebook {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 }

@@ -1,0 +1,247 @@
+.help__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.help__title {
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: rgba(34, 53, 111, 0.5);
+  padding-top: 76px;
+  padding-bottom: 24px;
+  @include Mobile {
+    padding: 20px;
+  }
+}
+
+.help__cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  @include Mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @include SmallPhone {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+.help__card {
+  position: relative;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &:hover {
+    border-radius: 50px;
+  }
+  @include Mobile {
+    width: 100%;
+  }
+  @include SmallPhone {
+    width: 100%;
+    max-width: 50%;
+  }
+  @include Tablet {
+    width: 100%;
+    max-width: 25%;
+
+  }
+  @include Notebook {
+    width: 100%;
+    max-width: 25%;
+
+  }
+  @include t1440 {
+    width: 100%;
+    max-width: 25%;
+  }
+  @include TheDesign {
+    width: 100%;
+    max-width: 25%;
+  }
+  @include FullHD {
+    width: 480px;
+  }
+  @include LargeScreens {
+    max-width: 25%;
+  }
+ 
+}
+
+.card__title {
+  font-family: "Larsseit", sans-serif;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  display: inline-block;
+
+  color: #fff;
+  padding-top: 23px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: #e9b730;
+    left: 54px;
+    right: 0;
+    border-radius: 5px;
+    top: 105px;
+    @include Mobile {
+      left: 20px;
+    }
+    @include SmallPhone {
+      left: 15px;
+    }
+    @include Tablet {
+      left: 15px;
+    }
+    @include Notebook {
+      left: 15px;
+    }
+    @include t1440 {
+      left: 15px;
+    }
+    @include TheDesign {
+      left: 15px;
+    }
+    @include FullHD {
+      left: 15px;
+    }
+    @include LargeScreens {
+      left: 15px;
+    }
+  }
+}
+
+.card__title2 {
+  font-family: "Larsseit", sans-serif;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  display: inline-block;
+
+  color: #fff;
+  padding-top: 23px;
+  width: 230px;
+  height: 54px;
+  @include Mobile {
+    padding-left: 30px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: #e9b730;
+    left: 54px;
+    right: 0;
+    border-radius: 5px;
+    top: 105px;
+    @include Mobile {
+      left: 20px;
+    }
+    @include SmallPhone {
+      left: 10px;
+    }
+    @include Tablet {
+      left: 8px;
+    }
+    @include Notebook {
+      left: 10px;
+    }
+    @include t1440 {
+      left: 10px;
+    }
+    @include TheDesign {
+      left: 15px;
+    }
+    @include FullHD {
+      left: 15px;
+    }
+    @include LargeScreens {
+      left: 15px;
+    }
+  }
+}
+
+.card1 {
+  background: #ffe2de;
+  align-items: center;
+  text-align: center;
+  @include Mobile {
+    width: 100%;
+  }
+}
+
+.card2 {
+  background: #c4e769;
+  align-items: center;
+  padding-left: 15px;
+  @include Mobile {
+    width: 100%;
+    padding-left: 0;
+  }
+  @include SmallPhone {
+    padding-left: 0;
+  }
+}
+
+.card3 {
+  background: #62d0df;
+  align-items: center;
+  text-align: center;
+  @include Mobile {
+    width: 100%;
+  }
+}
+
+.card4 {
+  background: #0052c1;
+  align-items: center;
+  text-align: center;
+}
+
+.help__card_shadow {
+  width: 255px;
+  height: 72px;
+  background: #ffe2de;
+  box-shadow: inset 0 -1px 0 #fff;
+  margin: 0 auto;
+}
+
+.help__card_shadow2 {
+  width: 255px;
+  height: 72px;
+  background: #c4e769;
+  box-shadow: inset 0 -1px 0 #fff;
+  margin: 0 auto;
+}
+
+.help__card_shadow3 {
+  box-sizing: border-box;
+  width: 255px;
+  height: 72px;
+  background: #62d0df;
+  box-shadow: inset 0 -1px 0 #fff;
+  margin: 0 auto;
+}
+
+.help__card_shadow4 {
+  width: 255px;
+  height: 72px;
+  background: #0052c1;
+  box-shadow: inset 0 -1px 0 #fff;
+  margin: 0 auto;
+}

@@ -1,0 +1,108 @@
+.about-us {
+  background: #fff;
+  @include t1440 {
+    display: flex;
+  }
+  @include LargeScreens {
+    display: flex;
+  }
+}
+
+.about-us__title {
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+
+  color: #22356f;
+  text-transform: uppercase;
+  @include Mobile {
+    padding: 20px;
+  }
+  @include SmallPhone {
+    padding: 20px;
+  }
+}
+
+.about-us__container {
+  display: flex;
+  padding-top: 150px;
+  padding-left: 106px;
+  @include Mobile {
+    width: 260px;
+    padding: 20px;
+    display: inline;
+  }
+  @include SmallPhone {
+    width: 640px;
+    padding: 20px;
+    display: inline;
+  }
+  @include Tablet {
+    width: 1024px;
+    padding: 20px;
+  }
+  @include Notebook {
+    width: 1280px;
+    padding: 20px 40px;
+    margin: 0 auto;
+  }
+  @include t1440 {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  @include TheDesign {
+    width: 1600px;
+    padding: 40px 178px;
+  }
+  @include FullHD {
+    width: 1920px;
+    padding: 40px 178px;
+  }
+  @include LargeScreens {
+    margin: 0 auto;
+    width: 1440px;
+  }
+}
+
+.about-us__info_container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 225px;
+  @include Mobile {
+    padding: 20px;
+  }
+  @include SmallPhone {
+    padding: 20px;
+  }
+  @include Notebook {
+    padding-left: 470px;
+  }
+  @include t1440 {
+    padding-left: 280px;
+  }
+  @include TheDesign {
+    padding-left: 280px;
+  }
+  @include FullHD {
+    padding-left: 420px;
+  }
+  @include LargeScreens {
+    margin: 0 auto;
+  }
+
+}
+
+.about-us__info {
+  font-family: "Larsseit", sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+
+  color: #22356f;
+  max-width: 100%;
+  height: 210px;
+  @include Mobile {
+    height: 100%;
+  }
+}

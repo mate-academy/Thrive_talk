@@ -1,0 +1,169 @@
+.image__cards_container {
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  @include Mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.image__card {
+  position: relative;
+  max-width: 33.33%;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    border-radius: 50px;
+  }
+  @include Mobile {
+    max-width: 100%;
+  }
+  @include SmallPhone {
+    max-width: 50%;
+  }
+}
+
+.image__card1 {
+  background: #22356f;
+}
+
+.image__card2 {
+  background: #0052c1;
+}
+
+.image__card3 {
+  background-image: url(/images/image__cards/strawberry.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  background-size: cover;
+  background-position: 50% 50%;
+  @include FullHD {
+    max-width: 640px;
+  }
+  @include LargeScreens {
+    max-width: 640px;
+  }
+}
+
+.image__card4 {
+  background: #62d0df;
+}
+
+.image__card5 {
+  background: #dee1ff;
+}
+
+.image__card6 {
+  background: #8f00ff;
+}
+
+.image__card_shadow1 {
+  width: 70%;
+  height: 96px;
+  background: #22356f;
+  box-shadow: inset 0 -1px 0 #fff;
+  margin-left: 50px;
+  @include Mobile {
+    width: 280px;
+    margin-left: 0;
+  }
+}
+
+.image__card_shadow2 {
+  width: 70%;
+  height: 96px;
+  background: #0052c1;
+  box-shadow: inset 0 -1px 0 #fff;
+  margin-left: 50px;
+  box-sizing: border-box;
+  @include Mobile {
+    width: 280px;
+    margin-left: 0;
+  }
+}
+
+.image__card_shadow3 {
+  width: 70%;
+  height: 96px;
+  box-shadow: inset 0 -1px 0 #fff;
+  margin-left: 50px;
+  @include Mobile {
+    width: 280px;
+    margin-left: 0;
+  }
+}
+
+.image__card_shadow4 {
+  height: 96px;
+  width: 70%;
+  background: #62d0df;
+  box-shadow: inset 0 -1px 0 #fff;
+  margin-left: 50px;
+  @include Mobile {
+    width: 280px;
+    margin-left: 0;
+  }
+}
+
+.image__card_shadow5 {
+  width: 70%;
+  height: 96px;
+  background: #dee1ff;
+  box-shadow: inset 0 -1px 0 #fff;
+  margin-left: 50px;
+  @include Mobile {
+    width: 280px;
+    margin-left: 0;
+  }
+}
+
+.image__card_shadow6 {
+  width: 70%;
+  height: 96px;
+  background: #8f00ff;
+  box-shadow: inset 0 -1px 0 #fff;
+  margin-left: 50px;
+  @include Mobile {
+    width: 280px;
+    margin-left: 0;
+  }
+}
+
+.image__title {
+  font-family: "Larsseit", sans-serif;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  display: flex;
+
+  color: #fff;
+  padding-top: 30px;
+  padding-left: 92px;
+  width: 157px;
+  height: 72px;
+  @include Mobile {
+    width: 240px;
+    margin-left: 0;
+    padding-left: 40px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: #e9b730;
+    left: 72px;
+    right: 0;
+    border-radius: 5px;
+    top: 135px;
+    @include Mobile {
+      margin-left: 0;
+      left: 20px;
+    }
+  }
+}

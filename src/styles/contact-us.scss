@@ -1,0 +1,138 @@
+.contact-us {
+  display: flex;
+}
+
+.contact-us__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  @include Mobile {
+    flex-direction: column;
+  }
+  @include SmallPhone {
+    flex-direction: column;
+  }
+}
+
+.contact-us__info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 103px;
+  padding-left: 180px;
+  background: #22356f;
+  width: 100%;
+  @include Mobile {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  @include SmallPhone {
+    padding: 20px;
+  }
+  @include Tablet {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  @include Notebook {
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+}
+
+.contact-us__text {
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
+
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact-us__title {
+  font-family: "Larsseit", sans-serif;
+  font-size: 64px;
+  line-height: 94px;
+  letter-spacing: -0.01em;
+
+  color: #fff;
+  padding-top: 230px;
+  @include Mobile {
+    padding-top: 20px;
+    width: 260px;
+    font-size: 34px;
+  }
+  @include SmallPhone {
+    padding-top: 20px;
+  }
+}
+
+.contact-us__paragraph {
+  font-family: "Larsseit", sans-serif;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+
+  color: #fff;
+
+  width: 579px;
+  height: 253px;
+
+  padding-top: 75px;
+  @include Mobile {
+    padding-top: 20px;
+    font-size: 26px;
+    width: 260px;
+  }
+  @include SmallPhone {
+    height: 100%;
+  }
+  @include Tablet {
+    width: 480px;
+    padding-top: 60px;
+  }
+}
+
+.contact-us__link {
+  font-family: "Larsseit", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  box-sizing: border-box;
+
+  color: #62d0df;
+  margin-top: 27px;
+  @include Tablet {
+    width: 480px;
+    padding-top: 140px;
+  }
+  @include Notebook {
+    width: 480px;
+    margin-top: 240px;
+  }
+  @include t1440 {
+    padding-top: 280px;
+  }
+  @include TheDesign {
+    margin-top: 450px;
+  }
+  @include FullHD {
+    margin-top: 750px;
+  }
+  @include LargeScreens {
+    padding-top: 800px;
+  }
+}
+
+.contact-us__image {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  @include Mobile {
+    display: none;
+  }
+  @include SmallPhone {
+    display: none;
+  }
+}
