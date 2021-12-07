@@ -9,9 +9,13 @@
   display: flex;
   flex-direction: row;
   background-color: #fff;
+  max-width: 1920px;
   @include Mobile {
     width: 100%;
     flex-direction: column;
+  }
+  @include LargeScreens {
+    width: 1920px;
   }
 }
 
@@ -56,6 +60,7 @@
   @include FullHD {
     padding-left: 240px;
   }
+
 }
 
 .also__title {

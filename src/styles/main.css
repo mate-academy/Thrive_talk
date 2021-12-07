@@ -1727,11 +1727,17 @@ h1 {
   display: flex;
   flex-direction: row;
   background-color: #fff;
+  max-width: 1920px;
 }
 @media (min-width: 320px) and (max-width: 639px) {
   .also__container {
     width: 100%;
     flex-direction: column;
+  }
+}
+@media (min-width: 2560px) {
+  .also__container {
+    width: 1920px;
   }
 }
 
