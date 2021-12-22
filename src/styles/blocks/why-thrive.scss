@@ -1,0 +1,56 @@
+.why-thrive {
+  position: relative;
+  overflow: hidden;
+  background-color: $logoColor;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include laptopScreen {
+      align-items: start;
+    }
+    padding: 151px 0 71px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+
+    color: #fff;
+    margin-bottom: 75px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 35px;
+    text-align: justify;
+    color: #fff;
+
+    max-width: 600px;
+    @include tabletScreen {
+      max-width: 420px;
+    }
+
+    @include desktopScreen {
+      max-width: 555px;
+    }
+  }
+
+  &__img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+
+    @include laptopScreen {
+      height: 100%;
+      width: 40%;
+      object-fit: cover;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}

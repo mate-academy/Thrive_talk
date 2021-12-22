@@ -1,0 +1,85 @@
+.header {
+  position: relative;
+  background-color: $headerBackground;
+
+  &__content {
+    padding: 27px 0 77px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-text {
+    z-index: 1;
+  }
+
+  &__info-img {
+    @include laptopScreen {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 323px;
+        background-color: #fff;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    color: $logoColor;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: bold;
+
+    letter-spacing: -0.04em;
+    margin-bottom: 37px;
+  }
+
+  &__subtitle {
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.04em;
+
+    margin-bottom: 19px;
+  }
+
+  &__text {
+    max-width: 484px;
+    font-size: 24px;
+    line-height: 42px;
+    color: $hColor;
+
+    margin-bottom: 63px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 38px;
+    align-items: center;
+  }
+
+  &__link {
+    z-index: 1;
+  }
+}

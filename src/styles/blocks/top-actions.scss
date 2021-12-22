@@ -1,0 +1,14 @@
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 380px;
+
+  @include tabletScreen {
+    margin-bottom: 250px;
+  }
+
+  @include laptopScreen {
+    margin-bottom: 187px;
+  }
+}

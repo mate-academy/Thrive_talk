@@ -2,6 +2,24 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
-}
+@import "blocks/reset";
+@import "blocks/page";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/top-actions";
+@import "blocks/logo";
+@import "blocks/button";
+@import "blocks/nav";
+@import "blocks/menu";
+@import "blocks/icon";
+@import "blocks/featured-text";
+@import "blocks/why-thrive";
+@import "blocks/about-us";
+@import "blocks/workout";
+@import "blocks/card";
+@import "blocks/health";
+@import "blocks/support";
+@import "blocks/cta";
+@import "blocks/contact-us";
+@import "blocks/contacts";
+@import "blocks/footer";

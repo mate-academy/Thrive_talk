@@ -1,0 +1,32 @@
+.nav {
+  z-index: 1;
+  &--switcher {
+    display: none;
+
+    @include tabletScreen {
+      display: none;
+    }
+
+    @include laptopScreen {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 15px;
+
+    color: $hColor;
+    text-decoration: none;
+
+    @include hover(border-bottom, 1px solid $hColor);
+  }
+}

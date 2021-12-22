@@ -1,0 +1,20 @@
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+
+  &--shift {
+    padding: 0 20px;
+
+    @include tabletScreen {
+      padding: 0 40px;
+    }
+
+    @include laptopScreen {
+      padding: 0 80px;
+    }
+
+    @include desktopScreen {
+      padding: 0 180px;
+    }
+  }
+}

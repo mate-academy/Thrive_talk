@@ -1,0 +1,62 @@
+.contacts {
+  &__content {
+    background-color: #fff;
+
+    @include desktopScreen {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__img-container {
+    display: none;
+
+    @include desktopScreen {
+      display: block;
+    }
+  }
+
+  &__img {
+    @include desktopScreen {
+      width: inherit;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__infos {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px;
+
+    @include laptopScreen {
+      justify-content: space-around;
+      padding: 98px 0 74px;
+    }
+  }
+
+  &__info {
+    width: 240px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+
+    margin-bottom: 57px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+  }
+
+  &__email {
+    text-decoration: none;
+    color: #006dff;
+  }
+}

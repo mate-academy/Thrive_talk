@@ -1,0 +1,65 @@
+.health {
+  &__content {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    @include tabletScreen {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    @include laptopScreen {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    @include desktopScreen {
+      grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    }
+  }
+
+  &__box {
+    height: 250px;
+    padding: 65px 70px 0 58px;
+
+    @include tabletScreen {
+      padding: 75px 70px 0 58px;
+      height: 300px;
+    }
+
+    @include laptopScreen {
+      padding: 90px 70px 0 64px;
+      height: 400px;
+    }
+
+    @include desktopScreen {
+      padding: 126px 70px 0 104px;
+      height: 480px;
+    }
+
+    &:nth-child(1) {
+      background-color: #22356f;
+    }
+
+    &:nth-child(2) {
+      background-color: #0052c1;
+    }
+
+    &:nth-child(3) {
+      background-image: url(../images/services/joanna-kosinska-340748.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &:nth-child(4) {
+      background-color: $logoColor;
+    }
+    &:nth-child(5) {
+      background-color: #dee1ff;
+    }
+    &:nth-child(6) {
+      background-color: #8f00ff;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.logo {
+  color: $logoColor;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: bold;
+
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  z-index: 1;
+
+  @include hover(transform, scale(1.1));
+}
