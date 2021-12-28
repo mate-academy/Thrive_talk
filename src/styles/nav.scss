@@ -1,0 +1,33 @@
+.nav {
+
+  &__list {
+    @include flex_aligning($horizontal: space-between, $vertical: center);
+  }
+
+  &__item {
+    margin-right: 20px;
+    z-index: 1;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 5px;
+    color: $color_dark_blue;
+    border: 1px solid transparent;
+    transition: border-bottom-color $duration,
+      transform $duration;
+
+    &:hover {
+      border-bottom-color: $color_dark_blue;
+      transform: scale(1.05);
+      text-shadow: 0 0 10px rgb(209, 6, 250);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+
+  .nav {
+    display: none;
+  }
+}

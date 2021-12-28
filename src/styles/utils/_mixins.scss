@@ -1,6 +1,18 @@
 @mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
+  transition: #{$_property} $duration;
   &:hover {
     #{$_property}: $_toValue;
   }
+}
+
+@mixin flex_aligning ($horizontal: null, $vertical: null) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+@mixin grid_aligning ($horizontal: null, $vertical: null) {
+  display: grid;
+  justify-content: $horizontal;
+  align-items: $vertical;
 }
