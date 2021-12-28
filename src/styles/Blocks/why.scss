@@ -1,0 +1,58 @@
+.why {
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__content {
+    padding: 151px 181px 95px 178px;
+    background-color: $lightBlueColor;
+    color: $whiteColor;
+
+    @include laptop {
+      padding-left: 90px;
+      padding-right: 70px;
+    }
+
+    @include tablet {
+      padding: 50px 20px 40px;
+    }
+  }
+
+  &__heading {
+    padding-bottom: 75px;
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+  }
+
+  &__article {
+    font-size: 18px;
+    line-height: 35px;
+
+    @include tablet {
+      font-size: 22px;
+    }
+  }
+
+  &__bold {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  &__photo {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    @include mobile {
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,168 @@
+.header {
+  position: relative;
+  padding: 25px 0 0 178px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f9e2;
+
+  @include laptop {
+    padding-left: 90px;
+  }
+
+  @include tablet {
+    padding-left: 20px;
+  }
+
+  @include mobile {
+    padding-left: 10px;
+  }
+
+  &__logo {
+    margin-bottom: 38px;
+
+    @include mobile {
+      display: none;
+    }
+
+    @include wide {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 41%;
+    z-index: 100;
+    color: $linkColor;
+
+    @include tablet {
+      width: 100%;
+      min-width: 310px;
+      color: lighten($linkColor, 25%);
+    }
+
+    @include mobile {
+      padding-inline: 20px;
+      color: lighten($linkColor, 25%);
+    }
+  }
+
+  &__heading {
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+    @include wide {
+      margin-bottom: 60px;
+    }
+
+    @include mobile {
+      width: $headerWidth;
+    }
+  }
+
+  &__article {
+    margin-bottom: 63px;
+    font-size: 24px;
+    line-height: 42px;
+
+    @include mobile {
+      margin-bottom: 40px;
+      width: $headerWidth;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 38px;
+    padding-bottom: 75px;
+
+    @include wide {
+      padding-bottom: 85px;
+    }
+
+    @include tablet {
+      justify-content: center;
+    }
+
+    @include mobile {
+      width: 94%;
+      gap: 20px;
+    }
+  }
+
+  &__link {
+    width: 150px;
+    height: 50px;
+    @include flexCenter;
+    align-items: center;
+    font-family: $mainFont;
+    color: $orangeColor;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    transition: border $transition;
+
+    &--active {
+      color: $whiteColor;
+      background: $orangeColor;
+    }
+
+    &:hover {
+      border: 1px solid $orangeColor;
+    }
+
+    @include mobile {
+      width: $headerWidth;
+    }
+  }
+
+  &__portrait {
+    width: $portraitSize;
+    height: $portraitSize;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(/images/helping-photo.png);
+    z-index: 2;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__image {
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(/images/helping-green.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &__white {
+    width: 225px;
+    height: 800px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $whiteColor;
+    z-index: 0;
+
+    @media (min-width: 1401px) {
+      display: none;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+}

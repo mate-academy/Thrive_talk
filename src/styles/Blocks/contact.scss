@@ -1,0 +1,86 @@
+.contact {
+  @include flexBetween;
+  color: $whiteColor;
+  background: $linkColor;
+
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+
+  &__content {
+    background-color: $linkColor;
+    padding: 103px 0 42px 180px;
+
+    @include laptop {
+      padding-inline: 40px;
+    }
+
+    @include mobile {
+      padding-inline: 20px;
+    }
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    padding-bottom: 230px;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+
+    @include tablet {
+      padding-bottom: 50px;
+      font-size: 14px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 50px;
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+
+  &__article {
+    max-width: 579px;
+    padding-bottom: 70px;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+
+  &__button {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color: $lightBlueColor;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    transition: background $transition;
+
+    &:hover {
+      background: $lightBlueColor;
+      color: $whiteColor;
+    }
+
+    @include tablet {
+      padding-inline: 5px;
+      text-align: center;
+    }
+  }
+
+  &__image {
+    max-width: 480px;
+    max-height: 800px;
+  }
+}
