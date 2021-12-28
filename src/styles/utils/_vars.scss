@@ -1,1 +1,28 @@
-$c-gray: #eee;
+$larsseit-font: "Larsseit", "Arial", sans-serif;
+
+$azur-color: #62d0df;
+$darkblue-color: #22356f;
+$darkblue-alpha-color: rgba($color: $darkblue-color, $alpha: 0.5);
+$orange-color: #f9b640;
+$white-color: #fff;
+$black-color: #000;
+$beige-color: #f4f9e2;
+$pink-color: #ffe2de;
+$lime-color: #c4e769;
+$blue-color: #0052c1;
+$sky-color: #62d0ff;
+$ellipse-color: #edfdff;
+$violet-color: #8f00ff;
+$lightgrey-color: #dee1ff;
+
+$size-small-block: 360px;
+$size-small-circle: 9px;
+$size-big-block: 480px;
+
+$breakpoint-small: 575px;
+$breakpoint-middle: 767px;
+$breakpoint-large: 991px;
+$breakpoint-big: 1100px;
+$breakpoint-biggest: 1199px;
+
+$small-duration: 0.5s;

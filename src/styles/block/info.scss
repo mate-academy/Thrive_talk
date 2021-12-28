@@ -1,0 +1,105 @@
+.info {
+  font-size: 14px;
+  line-height: 22px;
+  color: $darkblue-color;
+
+  @media (max-width: $breakpoint-large) {
+    margin-top: 25px;
+  }
+
+  @media (max-width: $breakpoint-small) {
+    margin-top: 0;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-large) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__photo {
+    max-width: 570px;
+    max-height: 380px;
+
+    @media (max-width: $breakpoint-large) {
+      display: none;
+    }
+  }
+
+  &__about {
+    display: flex;
+    margin: 80px 40px 70px 20px;
+
+    @media (max-width: $breakpoint-large) {
+      margin: 30px 0;
+    }
+
+    @media (max-width: $breakpoint-small) {
+      flex-direction: column;
+    }
+  }
+
+  &__columns {
+    padding-right: 15px;
+    border-right: 1px solid $beige-color;
+
+    &:nth-child(2) {
+      padding-left: 15px;
+
+      @media (max-width: $breakpoint-small) {
+        padding: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      padding-left: 15px;
+
+      @media (max-width: $breakpoint-small) {
+        padding: 0;
+      }
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
+
+    @media (max-width: $breakpoint-small) {
+      padding: 0;
+      border: none;
+      margin: 0;
+    }
+
+    @media (max-width: $breakpoint-large) {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @media (max-width: $breakpoint-small) {
+      margin: 20px 0;
+    }
+  }
+
+  &__text {
+    max-width: 200px;
+    color: $darkblue-alpha-color;
+  }
+
+  &__link {
+    color: $darkblue-alpha-color;
+    transition: color $small-duration, border-bottom $small-duration;
+
+    &:hover {
+      color: $azur-color;
+      border-bottom: 1px solid $azur-color;
+    }
+  }
+}
