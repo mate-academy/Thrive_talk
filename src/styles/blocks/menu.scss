@@ -1,0 +1,55 @@
+.menu {
+  margin: 10px 0 0;
+  padding: 0;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  white-space: nowrap;
+  width: 100%;
+
+  @include menuTop {
+    display: flex;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: $c-darkblue;
+    text-decoration: none;
+
+    &:hover {
+      position: relative;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 130%;
+      height: 1px;
+      position: absolute;
+      left: -15%;
+      bottom: -14px;
+      border-radius: 2px;
+      background-color: $c-darkblue;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  &-mobile {
+    margin: 0;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    white-space: nowrap;
+  }
+}

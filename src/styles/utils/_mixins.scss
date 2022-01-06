@@ -4,3 +4,68 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin size425 {
+  @media (min-width: 425px) {
+    @content;
+  }
+}
+
+@mixin menuTop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onLaptop {
+  @media (min-width: 1240px) {
+    @content;
+  }
+}
+
+@mixin onDesign {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin titleSize48 {
+      font-size: 48px;
+      line-height: 53px;
+      letter-spacing: -0.035em;
+}
+
+@mixin titleSize36 {
+  font-size: 36px;
+  line-height: 27px;
+  letter-spacing: -0.006em;
+}
+
+@mixin titleSize32 {
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+}
+
+@mixin titleSize28 {
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: -0.03em;
+}
+
+@mixin textSize24_42 {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+@mixin textSize24_34 {
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.005em;
+}
+
+@mixin textSize16_23 {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+}
