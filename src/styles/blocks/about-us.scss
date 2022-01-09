@@ -1,0 +1,51 @@
+.about-us {
+  &__container {
+    margin: 0 auto;
+
+    padding: 150px 0 24px;
+    max-width: 1230px;
+  }
+
+  &__title {
+    &-top {
+      margin: 0;
+
+      color: $c-darkblue;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      @include textSize16_23;
+    }
+
+    &-down {
+      margin: 0 auto;
+
+      color: $c-gray;
+      text-align: center;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__paragraph {
+    margin: 76px auto;
+
+    color: $c-darkblue;
+    max-width: 590px;
+    text-align: center;
+    font-weight: 600;
+
+    @include textSize16_23;
+
+    @include size425 {
+      @include textSize24_34;
+    }
+
+    @include onTablet {
+      margin: -23px auto 76px;
+      text-align: left;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .header {
-  min-height: 840px;
+  // min-height: 840px;
   background: linear-gradient(to right, #f4f9e2 76%, #fff 24%);
   overflow: hidden;
 
@@ -25,9 +25,9 @@
   }
 
   &__container {
-    margin: 0 auto;
-    max-width: 1240px;
-  }
+    margin: 0 auto 75px;
+    max-width: 1080px;
+  } 
 
   &__nav {
     margin: 0 0 187px;
@@ -126,6 +126,7 @@
 
     max-width: 300px;
     color: $c-darkblue;
+    letter-spacing: 0.1em;
 
     @include textSize16_23;
 
@@ -146,6 +147,7 @@
     justify-content: center;
     align-items: center;
     gap: 38px;
+    font-weight: 600;
 
     @include menuTop {
       flex-direction: row;
@@ -165,7 +167,7 @@
       &-button {
         width: 110px;
         height: 50px;
-        color: $c-golden;
+        color: $c-gold;
       }
     }
   }
