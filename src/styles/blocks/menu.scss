@@ -5,51 +5,36 @@
   display: none;
   justify-content: space-between;
   align-items: center;
+  line-height: 100%;
   list-style: none;
   white-space: nowrap;
-  width: 100%;
 
   @include menuTop {
     display: flex;
   }
 
   &__link {
+    padding-bottom: 14px;
     font-size: 14px;
     line-height: 16px;
     color: $c-darkblue;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
 
-    &:hover {
-      position: relative;
-    }
-
-    &::after {
-      content: "";
-      display: block;
-      width: 130%;
-      height: 1px;
-      position: absolute;
-      left: -15%;
-      bottom: -14px;
-      border-radius: 2px;
-      background-color: $c-darkblue;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-
-    &:hover::after {
-      opacity: 1;
-    }
+    @include hover(border-color, $c-darkblue);
   }
 
   &-mobile {
     margin: 0;
-    padding: 20px 0;
 
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
     white-space: nowrap;
+    text-transform: uppercase;
+
+    @include textSize16_23;
   }
 }

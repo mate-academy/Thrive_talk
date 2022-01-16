@@ -1,0 +1,43 @@
+.nutritional-facts {
+  &__container {
+    margin: 0 0 40px;
+
+    display: grid;
+    grid-template-columns: repeat(1, minmax(33%, 1fr));
+
+    @include menuTop {
+      grid-template-columns: repeat(2, minmax(33%, 1fr));
+    }
+
+    @include onTablet {
+      grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+    }
+  }
+
+  &__block {
+    margin: 0;
+    height: 240px;
+  }
+
+  &__content {
+    margin: 55px 16% 37px 22%;
+
+    width: 62.5%;
+    max-width: 300px;
+  }
+
+  &__title {
+    margin: 0 0 28px;
+
+    min-width: 234px;
+    color: $c-darkblue;
+
+    @include titleSize28;
+  }
+
+  &__paragraph {
+    margin: 0;
+
+    width: 100%;
+  }
+}

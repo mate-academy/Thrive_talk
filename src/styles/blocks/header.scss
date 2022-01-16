@@ -6,11 +6,10 @@
   &__mobile-nav {
     position: fixed;
     padding: 43px 0 0 120px;
-    height: 42vh;
+    height: 100vh;
     min-height: 260px;
-    width: 300px;
+    width: 80vw;
     background: $c-cyan;
-    border-radius: 0 50px 0;
     z-index: 1;
 
     top: 0;
@@ -81,6 +80,7 @@
 
     &--menu {
       width: 233px;
+      z-index: 1;
     }
 
     &--contact-us {
@@ -149,6 +149,8 @@
     gap: 38px;
     font-weight: 600;
 
+    @include textSize16_23;
+
     @include menuTop {
       flex-direction: row;
       justify-content: start;
@@ -165,7 +167,7 @@
 
     &--item-2 {
       &-button {
-        width: 110px;
+        width: 125px;
         height: 50px;
         color: $c-gold;
       }

@@ -1,7 +1,6 @@
 .method {
   &__container {
-    background-color: antiquewhite;
-    margin: 0;
+    margin: 0 0 120px;
 
     display: grid;
     grid-template-columns: repeat(1, minmax(25%, 1fr));
@@ -17,7 +16,15 @@
 
   &__block {
     margin: 0;
-    height: 360px;
+    min-height: 240px;
+
+    @include menuTop {
+      min-height: 320px;
+    }
+
+    @include onLaptop {
+      min-height: 360px;
+    }
 
     &--1 {
       background-color: #ffe2de;
@@ -60,11 +67,15 @@
   }
 
   &__title {
-    margin: -17px 0 0 20px;
+    margin: -18px 0 0 24px;
 
     min-width: 195px;
     color: $c-white;
 
-    @include titleSize32;
+    @include titleSize28;
+
+    @include onLaptop {
+      @include titleSize32;
+    }
   }
 }

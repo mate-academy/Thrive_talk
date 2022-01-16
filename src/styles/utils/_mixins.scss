@@ -41,6 +41,12 @@
       letter-spacing: -0.035em;
 }
 
+@mixin titleSize36_53 {
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+}
+
 @mixin titleSize36 {
   font-size: 36px;
   line-height: 27px;
@@ -73,4 +79,11 @@
 @mixin textSize16_23 {
   font-size: 16px;
   line-height: 23px;
+  letter-spacing: 0.06em;
+}
+
+@mixin textSize16_12 {
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.06em;
 }
