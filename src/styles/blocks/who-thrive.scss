@@ -44,7 +44,7 @@
   &__paragraph {
     margin: 0;
 
-    max-width:  553px;
+    max-width: 553px;
     text-align: center;
     font-weight: 600;
     color: $c-white;
@@ -60,12 +60,12 @@
     }
 
     @include onTablet {
-      max-width:  450px;
+      max-width: 450px;
       text-align: left;
     }
 
     @include onLaptop {
-      max-width:  553px;
+      max-width: 553px;
     }
 
     &--textlight {

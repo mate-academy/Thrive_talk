@@ -2,7 +2,7 @@
   position: relative;
 
   &__image {
-    width: 100%; 
+    width: 100%;
 
     @include onTablet {
       position: absolute;
@@ -47,7 +47,7 @@
 
     font-size: 14px;
     line-height: 11px;
-    letter-spacing: -0.006em;
+    letter-spacing: -0.01em;
     color: $c-darkblue;
   }
 
@@ -57,7 +57,7 @@
     width: 207px;
     font-size: 14px;
     line-height: 23px;
-    letter-spacing: -0.006em;
+    letter-spacing: -0.01em;
     color: $c-gray;
 
     @include onTablet {
@@ -75,7 +75,7 @@
       width: 170px;
       font-size: 14px;
       line-height: 23px;
-      letter-spacing: -0.006em;
+      letter-spacing: -0.01em;
     }
 
     &--phone {
@@ -116,7 +116,7 @@
 
       font-size: 14px;
       line-height: 11px;
-      letter-spacing: -0.006em;
+      letter-spacing: -0.01em;
       color: $c-white;
     }
   }

@@ -38,16 +38,16 @@
     }
 
     @include menuTop {
-    font-size: 64px;
-    line-height: 94px;
-    letter-spacing: -0.01em;
+      font-size: 64px;
+      line-height: 94px;
+      letter-spacing: -0.01em;
     }
   }
 
   &__paragraph {
     margin: 0 0 50px;
 
-    max-width:  580px;
+    max-width: 580px;
     color: $c-white;
 
     @include textSize16_23;
@@ -75,7 +75,7 @@
     @include onLaptop {
       margin: 0 0 50px;
 
-      max-width:  580px;
+      max-width: 580px;
 
       @include titleSize36_53;
     }
