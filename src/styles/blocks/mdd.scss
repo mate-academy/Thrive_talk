@@ -20,11 +20,12 @@
   &__container {
     margin: 0 auto;
 
-    padding: 100px 0 42px;
+    padding: 100px 0;
     max-width: 676px;
 
     @include onTablet {
       margin: 0 0 0 47%;
+      padding: 100px 0 42px;
     }
 
     @include onLaptop {
@@ -37,8 +38,13 @@
 
     color: $c-darkblue;
     text-transform: uppercase;
+    text-align: center;
 
     @include textSize16_12;
+
+    @include menuTop {
+      text-align: left;
+    }
 
     @include onTablet {
       margin: 0 auto 225px;
@@ -46,11 +52,12 @@
   }
 
   &__paragraph {
-    margin: 0 0 152px;
+    margin: 0 0 42px;
 
     max-width: 676px;
     font-weight: 600;
     color: $c-darkblue;
+    text-align: justify;
 
     @include textSize16_23;
 
@@ -67,6 +74,8 @@
     }
 
     @include onTablet {
+      margin: 0 0 152px;
+
       font-size: 28px;
       line-height: 147%;
       letter-spacing: -0.01em;
@@ -83,11 +92,16 @@
 
   &__buttons {
     &--button {
+      margin: 0 auto;
       width: 125px;
       height: 42px;
       color: $c-gold;
 
       @include textSize16_23;
+
+      @include menuTop {
+        margin: 0;
+      }
     }
   }
 }

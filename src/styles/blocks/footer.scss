@@ -1,5 +1,10 @@
 .footer {
   position: relative;
+  margin: -4px 0 0;
+
+  @include onTablet {
+    margin: 0;
+  }
 
   &__image {
     width: 100%;

@@ -1,16 +1,22 @@
 .contact-us {
   position: relative;
-  background: $c-darkblue;
+  background: linear-gradient(to bottom, $c-darkblue 99%, transparent 1%);
+  // background: $c-darkblue;
 
   @include onTablet {
     height: 800px;
+    background: $c-darkblue;
   }
 
   &__container {
     margin: 0 auto;
 
-    padding: 103px 0 42px;
+    padding: 103px 0;
     max-width: 1080px;
+
+    @include onTablet {
+      padding: 100px 0 42px;
+    }
   }
 
   &__titleId {
@@ -18,8 +24,13 @@
 
     color: $c-white;
     text-transform: uppercase;
+    text-align: center;
 
     @include textSize16_12;
+
+    @include menuTop {
+      text-align: left;
+    }
 
     @include onTablet {
       margin: 0 auto 225px;
@@ -30,8 +41,13 @@
     margin: 0 auto 75px;
 
     color: $c-white;
+    text-align: center;
 
     @include textSize24_42;
+
+    @include menuTop {
+      text-align: left;
+    }
 
     @include size425 {
       @include titleSize28;
@@ -49,6 +65,7 @@
 
     max-width: 580px;
     color: $c-white;
+    text-align: justify;
 
     @include textSize16_23;
 
@@ -83,11 +100,16 @@
 
   &__buttons {
     &--button {
+      margin: 0 auto;
       width: 125px;
       height: 42px;
       color: $c-cyan;
 
       @include textSize16_23;
+
+      @include menuTop {
+        margin: 0;
+      }
     }
   }
 
