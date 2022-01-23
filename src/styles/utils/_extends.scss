@@ -1,4 +1,14 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+// %h1 {
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 400;
+// }
+
+%thrivetalk {
+  display: inline-flex;
+  font-weight: 700;
+  line-height: 1.13em;
+  letter-spacing: -0.04em;
+  color: #62d0df;
+
+  @include any-hover(color, $colorMain);
 }

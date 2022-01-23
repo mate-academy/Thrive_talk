@@ -1,6 +1,51 @@
-@mixin hover($_property, $_toValue) {
+@mixin any-hover($_property, $_toValue) {
   transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
+  @media (any-hover: hover) {
+    &:hover {
+      #{$_property}: $_toValue;
+    }
   }
+}
+
+//Адаптивное свойство
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+  $addSize: $startSize - $minSize;
+  @if $type==1 {
+    //Только если меньше контейнера
+    #{$property}: $startSize + px;
+    @media (max-width: #{$maxWidth + px}) {
+      #{$property}: calc(
+        #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320})
+      );
+    }
+  }
+  @else if $type==2 {
+    //Только если больше контейнера
+    #{$property}: $startSize + px;
+    @media (min-width: #{$maxWidth + px}) {
+      #{$property}: calc(
+        #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320})
+      );
+    }
+  }
+  @else {
+    //Всегда
+    #{$property}: calc(
+      #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320})
+    );
+  }
+}
+
+@mixin adaptiv-font($startSize, $minSize) {
+  $addSize: $startSize - $minSize;
+  $maxWidth: $maxWidth - 320;
+  
+  font-size: calc(
+    #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+}
+
+@mixin square($size) {
+  height: $size;
+  width: $size;
 }

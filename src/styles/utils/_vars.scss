@@ -1,1 +1,24 @@
-$c-gray: #eee;
+$minWidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1110;
+$md1: $maxWidthContainer + px;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainFont: "Larsseit", sans-serif;
+$fontSize: 1.5 + rem;
+$colorMain:#22356f;
+
+$colorsOne:
+  "1" #ffe2de,
+  "2" #c4e769,
+  "3" #62d0df,
+  "4" #0052c1;
+$colorsTwo:
+  "1" #22356f,
+  "2" #0052c1,
+  "3" #76b58b,
+  "4" #62d0df,
+  "5" #dee1ff,
+  "6" #8f00ff;
