@@ -44,6 +44,7 @@ if (menuLinks.length > 0) {
   });
 }
 
+// Кнопка вверх
 document.addEventListener('DOMContentLoaded', () => {
   const toTopBtn = document.querySelector('.up');
 

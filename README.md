@@ -1,7 +1,7 @@
 # Thrive_talk landing page
 landing page was implemented according to
 [Figma design](https://www.figma.com/file/aHd2rHMrnzDXhowLuIQjIyVQ/ThriveTalk-Landing-Page?node-id=0%3A1) - Use BEM, SCSS, JS.
-[DEMO LINK](https://<your_account>.github.io/Thrive_talk/).
+[DEMO LINK](https://Dmytryi-Bashlai.github.io/Thrive_talk/).
 
 1. Implemented the header with `nav`.
 2. Implemented `Helping you thrive in all areas of life` block.
