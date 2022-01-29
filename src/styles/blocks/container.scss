@@ -1,0 +1,8 @@
+.container {
+  margin: 0 4%;
+  max-width: 1440px;
+
+  @include onDesign {
+    margin: 0 auto;
+  }
+}

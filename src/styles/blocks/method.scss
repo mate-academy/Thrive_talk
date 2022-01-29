@@ -1,0 +1,81 @@
+.method {
+  &__container {
+    margin: 0 0 120px;
+
+    display: grid;
+    grid-template-columns: repeat(1, minmax(25%, 1fr));
+
+    @include menuTop {
+      grid-template-columns: repeat(2, minmax(25%, 1fr));
+    }
+
+    @include onTablet {
+      grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    }
+  }
+
+  &__block {
+    margin: 0;
+    min-height: 240px;
+
+    @include menuTop {
+      min-height: 320px;
+    }
+
+    @include onLaptop {
+      min-height: 360px;
+    }
+
+    &--1 {
+      background-color: #ffe2de;
+    }
+
+    &--2 {
+      background-color: #c4e769;
+    }
+
+    &--3 {
+      background-color: $c-cyan;
+    }
+
+    &--4 {
+      background-color: #0052c1;
+    }
+  }
+
+  &__line {
+    margin: 72px auto 0;
+
+    width: 71%;
+    height: 1px;
+    background-color: $c-white;
+  }
+
+  &__content {
+    margin: 35px auto 0;
+
+    width: 71%;
+  }
+
+  &__item {
+    margin: 0;
+
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: $c-lightgold;
+  }
+
+  &__title {
+    margin: -18px 0 0 24px;
+
+    min-width: 195px;
+    color: $c-white;
+
+    @include titleSize28;
+
+    @include onLaptop {
+      @include titleSize32;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.contact-us {
+  position: relative;
+  background: linear-gradient(to bottom, $c-darkblue 99%, transparent 1%);
+  // background: $c-darkblue;
+
+  @include onTablet {
+    height: 800px;
+    background: $c-darkblue;
+  }
+
+  &__container {
+    margin: 0 auto;
+
+    padding: 103px 0;
+    max-width: 1080px;
+
+    @include onTablet {
+      padding: 100px 0 42px;
+    }
+  }
+
+  &__titleId {
+    margin: 0 auto 103px;
+
+    color: $c-white;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include textSize16_12;
+
+    @include menuTop {
+      text-align: left;
+    }
+
+    @include onTablet {
+      margin: 0 auto 225px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 75px;
+
+    color: $c-white;
+    text-align: center;
+
+    @include textSize24_42;
+
+    @include menuTop {
+      text-align: left;
+    }
+
+    @include size425 {
+      @include titleSize28;
+    }
+
+    @include menuTop {
+      font-size: 64px;
+      line-height: 94px;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  &__paragraph {
+    margin: 0 0 50px;
+
+    max-width: 580px;
+    color: $c-white;
+    text-align: justify;
+
+    @include textSize16_23;
+
+    @include size425 {
+      font-size: 22px;
+      line-height: 147%;
+      letter-spacing: -0.01em;
+    }
+
+    @include menuTop {
+      text-align: left;
+
+      @include titleSize36_53;
+    }
+
+    @include onTablet {
+      margin: 0 0 75px;
+      max-width: 450px;
+      font-size: 28px;
+      line-height: 147%;
+      letter-spacing: -0.01em;
+    }
+
+    @include onLaptop {
+      margin: 0 0 50px;
+
+      max-width: 580px;
+
+      @include titleSize36_53;
+    }
+  }
+
+  &__buttons {
+    &--button {
+      margin: 0 auto;
+      width: 125px;
+      height: 42px;
+      color: $c-cyan;
+
+      @include textSize16_23;
+
+      @include menuTop {
+        margin: 0;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @include onTablet {
+      position: absolute;
+      right: 0;
+      top: 0;
+      max-width: 480px;
+      max-height: 100%;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.footer {
+  position: relative;
+  margin: -4px 0 0;
+
+  @include onTablet {
+    margin: 0;
+  }
+
+  &__image {
+    width: 100%;
+
+    @include onTablet {
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: 460px;
+      max-height: 100%;
+    }
+
+    @include onLaptop {
+      max-width: 570px;
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+
+    padding: 100px 0 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px ;
+    max-width: 870px;
+
+    @include onTablet {
+      margin: 0 0 0 50%;
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+      height: 306.5px;
+    }
+
+    @include onLaptop {
+      height: 380px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 54px;
+
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: -0.01em;
+    color: $c-darkblue;
+  }
+
+  &__paragraph {
+    margin: 0;
+
+    width: 207px;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+    color: $c-gray;
+
+    @include onTablet {
+      max-width: 140px;
+    }
+
+    @include onLaptop {
+      max-width: 207px;
+    }
+  }
+
+  &__adsress {
+    &--links {
+      margin: 35px 0 0;
+      width: 170px;
+      font-size: 14px;
+      line-height: 23px;
+      letter-spacing: -0.01em;
+    }
+
+    &--phone {
+      color: $c-gray;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+
+      @include hover(border-color, $c-gray);
+    }
+
+    &--email {
+      color: $c-blue;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+
+      @include hover(border-color, $c-blue);
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    padding: 0 0 0 12.5%;
+
+    display: flex;
+    align-items: center;
+    background: $c-cyan;
+    height: 80px;
+
+    &--image {
+      margin: 0;
+
+      width: 9px;
+      height: 9px;
+    }
+
+    &--paragraph {
+      margin: 0 0 0 6px;
+
+      font-size: 14px;
+      line-height: 11px;
+      letter-spacing: -0.01em;
+      color: $c-white;
+    }
+  }
+}
