@@ -1,0 +1,29 @@
+.footer {
+  background-color: #62d0df;
+
+  &__content {
+    display: flex;
+    height: 80px;
+    max-width: 1560px;
+    align-items: center;
+    margin-left: 180px;
+
+    &--text {
+      font-size: 14px;
+      line-height: 11px;
+      letter-spacing: -0.01em;
+      color: #fff;
+
+      &::before {
+        content: "";
+        background-image: url(../images/c.svg);
+        background-repeat: no-repeat;
+        width: 9px;
+        height: 12px;
+        display: inline-block;
+        margin-bottom: -3px;
+        margin-right: 6px;
+      }
+    }
+  }
+}

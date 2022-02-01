@@ -1,0 +1,106 @@
+.MDD {
+  background-color: #fff;
+
+  &__content {
+    display: flex;
+    max-width: 1560px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    @include miniTablet {
+      flex-direction: column;
+    }
+
+    &--photo {
+      background-image: url(../images/linkedin-sales-navigator-402831.svg);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 800px;
+      background-size: contain;
+      max-width: 100%;
+
+      @include mobile {
+        background-size: 100% auto;
+      }
+
+      @include miniTablet {
+        width: 100%;
+        background-size: 100% auto;
+        height: 1200px;
+        background-position: 0 50%;
+      }
+    }
+
+    &--description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 105px;
+      margin-left: 105px;
+      margin-bottom: 45px;
+      max-width: 680px;
+
+      @include mobile {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: justify;
+      }
+
+      @include miniTablet {
+        align-self: end;
+        text-align: justify;
+        margin-right: 100px;
+        min-height: 500px;
+      }
+
+      @include Tablet {
+        max-width: 400px;
+        min-width: 300px;
+        margin-left: auto;
+        margin-right: 50px;
+      }
+
+      &-title {
+        font-size: 16px;
+        line-height: 12px;
+        letter-spacing: 0.06em;
+        color: #22356f;
+        text-transform: uppercase;
+      }
+
+      &-text {
+        font-size: 36px;
+        line-height: 53px;
+        letter-spacing: -0.01em;
+        color: #22356f;
+        min-width: 300px;
+        
+        @include mobile {
+          margin: 40px 0;
+          font-size: 30px;
+        }
+
+        &__link {
+          text-decoration: none;
+          color: #62d0df;
+        }
+      }
+
+      &-link {
+        font-size: 16px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+        color: #fab63e;
+        text-decoration: none;
+
+        &:hover {
+          color: #62d111;
+        }
+      }
+    }
+  }
+}

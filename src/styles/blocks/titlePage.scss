@@ -1,0 +1,365 @@
+.titlePage {
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #fff 100%);
+  border-radius: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: "Halyard Display", sans-serif;
+    font-size: 56px;
+    line-height: 105%;
+    text-align: center;
+    color: #1e266d;
+    max-width: 1180px;
+    margin: 144px auto 0;
+
+    @include miniTablet {
+      font-size: 40px;
+      margin: 100px 20px 0;
+    }
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #455880;
+    margin-top: 27px;
+
+    @include miniTablet {
+      font-size: 14px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    margin-top: 29px;
+    justify-content: center;
+
+    @include miniTablet {
+      margin: 29px 20px 0;
+    }
+
+    &--buy {
+      background-color: #3751ff;
+      border-radius: 25px;
+      width: 148px;
+      height: 50px;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      margin-right: 22px;
+    }
+
+    &--see {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 50px;
+      text-align: center;
+      color: #455880;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 200px;
+      height: 50px;
+    }
+  }
+
+  &__images {
+    display: block;
+    width: 920px;
+    height: 570px;
+    margin: 32px auto 0;
+
+    @include miniTablet {
+      background-image: url(../images/graphic_all.png);
+      background-repeat: no-repeat;
+      width: 90%;
+      background-size: contain;
+    }
+
+    @include Tablet {
+      background-image: url(../images/graphic_all.png);
+      background-repeat: no-repeat;
+      width: 90%;
+      background-size: contain;
+    }
+
+    &--layer1 {
+
+      @include miniTablet {
+        display: none;
+      }
+
+      @include Tablet {
+        display: none;
+      }
+
+      &--1 {
+        display: inline-block;
+        background-image: url(../images/cube.png);
+        background-repeat: no-repeat;
+        width: 64px;
+        height: 64px;
+        position: relative;
+        top: 113px;
+        left: 760px;
+      }
+
+      &--2 {
+        display: inline-block;
+        background-image: url(../images/triangle.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 69px;
+        height: 71px;
+        position: relative;
+        top: -108px;
+        left: -68px;
+      }
+
+      &--3 {
+        display: inline-block;
+        background-image: url(../images/ellipse1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 179px;
+        height: 179px;
+        position: relative;
+        top: 297px;
+        left: -130px;
+      }
+
+      &--4 {
+        display: inline-block;
+        background-image: url(../images/ellipse2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 32px;
+        height: 32px;
+        position: relative;
+        top: -64px;
+        left: 540px;
+      }
+    }
+
+    &--layer2 {
+
+      @include miniTablet {
+        display: none;
+      }
+
+      @include Tablet {
+        display: none;
+      }
+
+      &--1 {
+        display: inline-block;
+        background-image: url(../images/card1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 800px;
+        height: 550px;
+        position: relative;
+        top: -720px;
+        left: 92px;
+      }
+
+      &--2 {
+        display: inline-block;
+        background-image: url(../images/ui.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 339px;
+        height: 408px;
+        position: relative;
+        top: -1247px;
+        left: 172px;
+      }
+
+      &--3 {
+        display: inline-block;
+        background-image: url(../images/woman.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 208px;
+        height: 450px;
+        position: relative;
+        top: -1212px;
+        left: 260px;
+      }
+
+      &--4 {
+        display: inline-block;
+        background-image: url(../images/card2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 800px;
+        height: 550px;
+        position: relative;
+        top: -164px;
+        left: 92px;
+      }
+
+      &--5 {
+        display: inline-block;
+        background-image: url(../images/face.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 56px;
+        height: 56px;
+        position: relative;
+        top: -1540px;
+        left: -480px;
+        border-radius: 28px;
+      }
+    }
+  }
+
+  &__trust {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(69, 88, 128, 0.5);
+    margin-top: 20px;
+
+    @include miniTablet {
+      font-size: 14px;
+      margin: 20px;
+    }
+  }
+
+  &__sites {
+    display: flex;
+    justify-content: center;
+    margin: 50px 20px 0;
+
+    @include miniTablet {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      row-gap: 20px;
+    }
+
+    @include Tablet {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      row-gap: 20px;
+    }
+
+    &--1 {
+      background-image: url(../images/sites/logo-1.png);
+      height: 34px;
+      width: 110px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 70px;
+
+      @include miniTablet {
+        width: 80px;
+        margin-right: 0;
+      }
+    }
+
+    &--2 {
+      background-image: url(../images/sites/logo-2.png);
+      height: 33px;
+      width: 95px;
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 70px;
+
+      @include miniTablet {
+        width: 80px;
+        margin-right: 0;
+      }
+    }
+
+    &--3 {
+      background-image: url(../images/sites/logo-3.png);
+      height: 34px;
+      width: 80px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 70px;
+
+      @include miniTablet {
+        width: 80px;
+        margin-right: 0;
+      }
+    }
+
+    &--4 {
+      background-image: url(../images/sites/logo-4.png);
+      height: 33px;
+      width: 174px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 70px;
+
+      @include miniTablet {
+        width: 80px;
+        margin-right: 0;
+      }
+    }
+
+    &--5 {
+      background-image: url(../images/sites/logo-5.png);
+      height: 33px;
+      width: 115px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 70px;
+
+      @include miniTablet {
+        width: 80px;
+        margin-right: 0;
+      }
+    }
+
+    &--6 {
+      background-image: url(../images/sites/logo-6.png);
+      height: 34px;
+      width: 102px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 70px;
+
+      @include miniTablet {
+        width: 80px;
+        margin-right: 0;
+      }
+    }
+
+    &--7 {
+      background-image: url(../images/sites/logo-7.png);
+      height: 34px;
+      width: 71px;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @include Tablet {
+        margin-right: 0;
+        width: 80px;
+      }
+    }
+  }
+}

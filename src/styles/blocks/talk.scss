@@ -1,0 +1,109 @@
+.talk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-family: "Halyard Display", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #1e266d;
+    margin-top: 232px;
+
+    @include miniTablet {
+      font-size: 44px;
+      width: 280px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    max-width: 1180px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 56px;
+    margin-bottom: 150px;
+
+    @include miniTablet {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    @include Tablet {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 373px;
+    height: 467px;
+    border: 1px solid rgba(69, 88, 128, 0.2);
+    border-radius: 4px;
+
+    @include miniTablet {
+      margin: 0 20px;
+      height: 550px;
+    }
+
+    &--text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 180%;
+      color: #455880;
+      padding: 38px 43px 0;
+      margin-bottom: 55px;
+      height: 195px;
+
+      @include miniTablet {
+        height: 250px;
+      }
+    }
+
+    &--photo {
+      width: 64px;
+      height: 64px;
+
+      &-1 {
+        background-image: url(../images/cards/card1.png);
+      }
+
+      &-2 {
+        background-image: url(../images/cards/card2.png);
+      }
+
+      &-3 {
+        background-image: url(../images/cards/card3.png);
+      }
+    }
+
+    &--name {
+      font-family: "Halyard Display", sans-serif;
+      font-size: 22px;
+      line-height: 125%;
+      text-align: center;
+      color: #1e266d;
+      margin-top: 23px;
+    }
+
+    &--work {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 180%;
+      text-align: center;
+      color: #455880;
+      margin-bottom: 32px;
+      text-decoration: none;
+    }
+  }
+}

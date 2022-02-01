@@ -1,0 +1,132 @@
+.info {
+  background-color: #fff;
+  max-width: 1560px;
+  display: flex;
+  position: relative;
+  // flex-direction: column;
+  justify-content: space-between;
+
+  // @include Tablet {
+  //   justify-content: center;
+  // }
+  @include mobile {
+    justify-content: center;
+  }
+
+  @include miniTablet {
+    justify-content: center;
+  }
+
+  &__photo {
+    background-image: url(../images/autumn-goodman-242825.svg);
+    width: 570px;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+
+    @include mobile {
+      display: none;
+    }
+
+    @include miniTablet {
+      display: none;
+    }
+
+    @include Tablet {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    position: relative;
+    height: 380px;
+    align-items: center;
+ 
+
+    @include mobile {
+      height: 500px;
+      width: 300px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include miniTablet {
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include Tablet {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &--container {
+      display: flex;
+      // column-gap: 24px;
+      position: absolute;
+      right: 0;
+      // margin: 0 auto;
+      width: 700px;
+
+      @include mobile {
+        flex-direction: column;
+        width: 250px;
+      }
+
+      @include miniTablet {
+        position: relative;
+        width: 600px;
+      }
+
+      @include Tablet {
+        position: relative;
+      }
+
+      &-column {
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        margin-right: 20px;
+        border-right: 1px solid rgba(34, 53, 111, 0.5);
+
+        @include mobile {
+          margin-bottom: 30px;
+        }
+
+        &__title {
+          font-size: 14px;
+          line-height: 11px;
+          letter-spacing: -0.01em;
+          color: #22356f;
+          margin-bottom: 60px;
+          text-transform: uppercase;
+
+          @include mobile {
+            margin-bottom: 10px;
+          }
+        }
+
+        &__text {
+          font-size: 14px;
+          line-height: 23px;
+          letter-spacing: -0.01em;
+          color: rgba(34, 53, 111, 0.5);
+          text-decoration: none;
+        }
+
+        &__email {
+          font-size: 14px;
+          line-height: 23px;
+          letter-spacing: -0.01em;
+          color: blue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
