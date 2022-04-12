@@ -49,10 +49,23 @@
     margin-bottom: 57px;
   }
 
+  &__address {
+    text-decoration: none;
+  }
+
   &__text {
     font-size: 14px;
     line-height: 23px;
     letter-spacing: -0.01em;
+  }
+
+  &__phone {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.006em;
+    color: $textColor;
   }
 
   &__email {
