@@ -1,0 +1,39 @@
+.about-us {
+  background-color: #fff;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 150px 20px 0;
+
+    @include tabletScreen {
+      padding: 150px 30px 0;
+    }
+
+    @include laptopScreen {
+      flex-direction: row;
+      gap: 225px;
+      padding: 150px 36px 0;
+    }
+  }
+
+  &__title {
+    min-width: 93px;
+    letter-spacing: 0.06em;
+  }
+
+  &__text {
+    align-items: center;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+
+    color: $hColor;
+    text-align: justify;
+
+    @include laptopScreen {
+      max-width: 592px;
+    }
+  }
+}

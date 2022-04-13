@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+  display: list-item;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  color: #fff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -23px;
+    left: -27px;
+    right: 0;
+    background-color: #fff;
+
+    height: 1px;
+  }
+
+  &::marker {
+    color: $featuredColor;
+  }
+}

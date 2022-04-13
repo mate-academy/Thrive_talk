@@ -1,0 +1,28 @@
+.button {
+  height: 50px;
+  width: 150px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--header {
+    font-size: 14px;
+    line-height: 16px;
+    background-color: $logoColor;
+    border: 1px solid $logoColor;
+    border-radius: 50px;
+    z-index: 1;
+    @include hover(transform, scale(1.1));
+  }
+
+  &--bottom {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    background-color: $featuredColor;
+    border: 1px solid $featuredColor;
+    @include hover(transform, scale(1.1));
+  }
+}

@@ -1,0 +1,24 @@
+.icon {
+  display: flex;
+  z-index: 1;
+
+  &--menu {
+    @include laptopScreen {
+      display: none;
+    }
+
+    @include desktopScreen {
+      display: none;
+    }
+  }
+
+  &--cross {
+    @include laptopScreen {
+      display: none;
+    }
+
+    @include desktopScreen {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.menu {
+  background-color: $headerBackground;
+  z-index: 2;
+  @include laptopScreen {
+    display: none;
+  }
+
+  @include desktopScreen {
+    display: none;
+  }
+
+  &__logo-cross {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    padding: 27px 0 77px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 15px;
+
+    color: $hColor;
+    text-decoration: none;
+
+    @include hover(border-bottom, 1px solid $hColor);
+  }
+}

@@ -1,0 +1,78 @@
+.contact-us {
+  background-color: $hColor;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include laptopScreen {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__info-container {
+    padding: 30px;
+
+    @include laptopScreen {
+      padding: 43px 100px 32px 66px;
+    }
+
+    @include desktopScreen {
+      padding: 103px 201px 59px 180px;
+    }
+  }
+
+  &__title {
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: #fff;
+    margin-bottom: 115px;
+
+    @include laptopScreen {
+      margin-bottom: 230px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+    color: #fff;
+
+    margin-bottom: 35px;
+
+    @include laptopScreen {
+      margin-bottom: 75px;
+    }
+  }
+
+  &__text {
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    color: #fff;
+
+    margin-bottom: 35px;
+    @include laptopScreen {
+      margin-bottom: 85px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+
+    @include tabletScreen {
+      object-position: 0 -300px;
+    }
+
+    @include laptopScreen {
+      height: 100%;
+      width: inherit;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

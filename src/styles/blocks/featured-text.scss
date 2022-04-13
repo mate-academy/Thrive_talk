@@ -1,0 +1,19 @@
+.featured-text {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  &--orange {
+    color: $featuredColor;
+    font-weight: bold;
+    @include hover(color, $logoColor);
+  }
+
+  &--blue {
+    color: $logoColor;
+    @include hover(color, $featuredColor);
+  }
+}

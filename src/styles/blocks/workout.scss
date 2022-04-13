@@ -1,0 +1,63 @@
+.workout {
+  &__content {
+    padding: 76px 0 120px;
+  }
+
+  &__title {
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: $textColor;
+    text-align: center;
+
+    margin-bottom: 24px;
+  }
+
+  &__sports {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include laptopScreen {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__sport {
+    display: flex;
+    flex-basis: 100%;
+    height: 200px;
+    padding: 65px 58px 0;
+
+    @include tabletScreen {
+      flex-basis: 50%;
+      padding: 75px 58px 0;
+      height: 250px;
+    }
+
+    @include laptopScreen {
+      flex-basis: 25%;
+      height: 280px;
+    }
+
+    @include desktopScreen {
+      padding: 95px 78px 0;
+      height: 360px;
+    }
+
+    &:nth-child(1) {
+      background-color: #ffe2de;
+    }
+
+    &:nth-child(2) {
+      background-color: #c4e769;
+    }
+
+    &:nth-child(3) {
+      background-color: $logoColor;
+    }
+
+    &:nth-child(4) {
+      background-color: #0052c1;
+    }
+  }
+}
