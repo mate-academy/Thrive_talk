@@ -1,7 +1,32 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "nav.scss";
+@import "trive.scss";
+@import "question.scss";
+@import "about.scss";
+@import "exersise.scss";
+@import "kinds.scss";
+@import "nutritional.scss";
+@import "help.scss";
+@import "contact.scss";
+@import "info.scss";
+@import "footer.scss";
+@import "header.scss";
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Larsseit" , serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 
 body {
-  background: $c-gray;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
 }

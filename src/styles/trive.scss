@@ -1,0 +1,141 @@
+.trive {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-content: space-between;
+  z-index: 1;
+
+  &__main {
+
+    display: grid;
+    justify-content: center;
+  }
+
+  &__main--title {
+
+    height: 64px;
+    padding-top: 150px;
+  }
+
+  &__main--text {
+
+    color: $c-seablue;
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  &__title {
+    padding-bottom: 50px;
+
+  }
+
+  &__title--text {
+    font-size: 48px;
+    color: $c-blue;
+  }
+
+  &__contant {
+    box-sizing: border-box;
+  }
+
+  &__contant--text {
+    font-size: 24px;
+    line-height: 42px;
+    letter-spacing: -0.04em;
+  }
+
+  &__buttons {
+    display: flex;
+    padding-bottom: 50px;
+  }
+
+  &__buttons--contain {
+    height: 50px;
+    margin-top: 25px;
+    text-align: center;
+    color: $c-yellow;
+    transition: all 1s;
+  }
+
+  &__buttons--first {
+    margin-right: 25px;
+  }
+
+  &__buttons--text {
+    padding-top: 18px;
+    margin: 0;
+  }
+
+  &__buttons--contain:hover {
+    background-color: $c-yellowdark;
+    color: $c-white;
+  }
+
+  &__img {
+    background-image: url(../images/header.png) ;
+
+    width: 807px;
+    height: 544px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 320px;
+    transform: matrix(-0.87, 0.5, 0.5, 0.85, 0, 0);
+
+  }
+
+  &__back {
+    width: 807px;
+    height: 544px;
+
+    margin-left: -100px;
+    background: #edfdff;
+    border-radius: 320px;
+    transform: matrix(-0.5, 0.77, 0.77, 0.5, 0, 0);
+
+  }
+
+}
+
+@media screen and (max-width: $bp-large-kinds) {
+  .trive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__back {
+      display: none;
+    }
+    &__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-large-small) {
+  .trive {
+
+    &__main--title {
+      padding-top: 75px;
+    }
+
+    &__title {
+      padding: 0 10px 50px;
+    }
+
+    &__contant {
+      padding: 0 10px;
+    }
+
+    &__buttons {
+      flex-direction: column;
+    }
+    &__buttons--text {
+      width: 90vw;
+    }
+
+    &__buttons--first {
+      margin: 0;
+    }
+  }
+}

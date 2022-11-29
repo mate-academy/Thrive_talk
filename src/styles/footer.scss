@@ -1,0 +1,15 @@
+.footer {
+  height: 80px;
+  background-color: $c-seablue;
+  align-items: center;
+  box-sizing: border-box;
+  display: grid;
+
+  &__text {
+    color: $c-white;
+    padding-left: 12%;
+
+    font-size: 14px;
+    line-height: 11px;
+  }
+}
