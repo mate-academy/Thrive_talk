@@ -1,0 +1,79 @@
+.contact-us {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  grid-template-rows: 800px;
+
+  background: $step-color-dark;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 180px;
+
+    @media screen and (max-width: 1100px) {
+      padding-left: 80px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__header {
+    font-size: 16px;
+    line-height: 12px;
+    color: $step-color-light;
+  }
+
+  &__subtittle {
+    font-size: 64px;
+    line-height: 94px;
+    color: $step-color-light;
+
+    @media screen and (max-width: 600px) {
+      font-size: 36px;
+      line-height: 1.5;
+      padding: 0;
+    }
+  }
+
+  &__paragraph {
+    padding-right: 201px;
+    font-size: 36px;
+    line-height: 53px;
+    color: $step-color-light;
+
+    @media screen and (max-width: 600px) {
+      font-size: 24px;
+      line-height: 1.5;
+      padding: 0;
+    }
+  }
+
+  &__link {
+    padding-top: 42px;
+    font-size: 16px;
+    line-height: 23px;
+    color: $main-color;
+
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+
+  &__image {
+    height: 800px;
+
+    @media screen and (max-width: 900px) {
+      object-fit: cover;
+      height: 500px;
+      width: 100%;
+    }
+  }
+}

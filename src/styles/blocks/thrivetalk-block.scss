@@ -1,0 +1,111 @@
+.thrivetalk {
+  display: flex;
+  align-items: center;
+  height: 740px;
+
+  &__text {
+    padding-left: 179px;
+    height: 500px;
+    width: 650px;
+    color: $step-color-dark;
+
+    @media screen and (max-width: 1000px) {
+      padding: 30px;
+    }
+
+    @media screen and (max-width: 650px) {
+      height: 700px;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    width: 100%;
+
+    &--2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -2;
+    }
+  }
+
+  &__subtittle {
+    color: $main-color;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  &__title {
+    color: $step-color-dark;
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: bold;
+
+    @media screen and (max-width: 600px) {
+      font-size: 30px;
+      line-height: 1.5;
+    }
+  }
+
+  &__paragraph {
+    font-size: 24px;
+    line-height: 42px;
+    color: $step-color-dark;
+    padding-bottom: 63px;
+    z-index: 22;
+
+    @media screen and (max-width: 600px) {
+      font-size: 19px;
+      line-height: 1.5;
+      color: #fff;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 700px;
+    height: 840px;
+
+    z-index: -1;
+
+    background-image: url(../images/cropped.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $btn-color;
+    transition: all 1s;
+
+    @media screen and (max-width: 600px) {
+      width: 100px;
+      font-size: 14px;
+    }
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+    }
+
+    &--yellow {
+      background-color: $btn-color;
+      color: $step-color-light;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.about {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: end;
+  background-color: $step-color-light;
+  height: 361px;
+
+  @media screen and (max-width: 750px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  &__header {
+    display: block;
+    width: 200px;
+
+    padding-left: 106px;
+    align-self: center;
+
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: $step-color-dark;
+
+    @media screen and (max-width: 600px) {
+      padding-left: 50px;
+    }
+  }
+
+  &__info {
+    justify-self: center;
+    padding-bottom: 14px;
+    font-size: 24px;
+    color: $step-color-dark;
+    width: 592px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}
